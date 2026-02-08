@@ -1,7 +1,7 @@
 {
   "name": "ada-dispatch",
-  "version": "1.0.0",
-  "description": "ATS task watcher that routes tasks to the nanobot gateway (Ada)",
+  "version": "2.0.0",
+  "description": "WebSocket-based ATS task watcher that routes tasks to the nanobot gateway (Ada) with Telegram notifications",
   "type": "module",
   "main": "index.js",
   "scripts": {
