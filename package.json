@@ -1,12 +1,16 @@
 {
   "name": "ada-dispatch",
-  "version": "2.0.0",
-  "description": "WebSocket-based ATS task watcher that routes tasks to the nanobot gateway (Ada) with Telegram notifications",
+  "version": "2.1.0",
+  "description": "WebSocket-based ATS task watcher that routes tasks to the nanobot gateway (Ada) with encrypted task support and Telegram notifications",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "author": "DiffLab.AI",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  }
 }

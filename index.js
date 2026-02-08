@@ -4,6 +4,14 @@ import { execSync, execFileSync, execFile, spawn } from 'node:child_process';
 import https from 'node:https';
 import http from 'node:http';
 import { createInterface } from 'node:readline';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+import nacl from 'tweetnacl';
+import naclUtil from 'tweetnacl-util';
+const { encodeBase64, decodeBase64, encodeUTF8, decodeUTF8 } = naclUtil;
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // === Config ===
 const ATS_BIN = '/usr/bin/ats';
@@ -14,7 +22,9 @@ const LEASE_MS = 600000;          // 10 minutes
 const NANOBOT_TIMEOUT_MS = 300000; // 5 minutes
 const MAX_TASK_RETRIES = 3;
 const ACTOR_FLAGS = ['--actor-type', 'agent', '--actor-id', 'ada-dispatch', '--actor-name', 'Ada Dispatch'];
-const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet'];
+const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce'];
+const DISPATCH_KEYS_PATH = join(__dirname, 'dispatch-keys.json');
+const TRUSTED_KEYS_PATH = join(__dirname, 'trusted-keys.json');
 
 // Watch reconnection
 const WATCH_RECONNECT_BASE_MS = 2000;
@@ -53,6 +63,135 @@ function telegram(text) {
 
 function shouldNotify(task) {
   return !task.payload?.quiet;
+}
+
+// === Key management ===
+function loadDispatchKeys() {
+  if (!existsSync(DISPATCH_KEYS_PATH)) return null;
+  return JSON.parse(readFileSync(DISPATCH_KEYS_PATH, 'utf-8'));
+}
+
+function loadTrustedKeys() {
+  if (!existsSync(TRUSTED_KEYS_PATH)) return {};
+  return JSON.parse(readFileSync(TRUSTED_KEYS_PATH, 'utf-8'));
+}
+
+function generateKeypair() {
+  const kp = nacl.box.keyPair();
+  const keys = {
+    publicKey: encodeBase64(kp.publicKey),
+    secretKey: encodeBase64(kp.secretKey),
+  };
+  writeFileSync(DISPATCH_KEYS_PATH, JSON.stringify(keys, null, 2) + '\n');
+  return keys;
+}
+
+function addTrustedKey(name, publicKey) {
+  // Validate the key is valid base64 and correct length
+  const decoded = decodeBase64(publicKey);
+  if (decoded.length !== nacl.box.publicKeyLength) {
+    throw new Error(`Invalid public key length: expected ${nacl.box.publicKeyLength} bytes, got ${decoded.length}`);
+  }
+  const trusted = loadTrustedKeys();
+  trusted[name] = { publicKey, addedAt: new Date().toISOString() };
+  writeFileSync(TRUSTED_KEYS_PATH, JSON.stringify(trusted, null, 2) + '\n');
+  return trusted;
+}
+
+// === Encrypted task decryption ===
+function decryptTask(task) {
+  const payload = task.payload;
+  if (!payload?.encrypted) return task; // Not encrypted, pass through
+
+  const sender = payload.sender;
+  if (!sender) {
+    throw new Error('Encrypted task missing sender field');
+  }
+
+  const trusted = loadTrustedKeys();
+  if (!trusted[sender]) {
+    throw new Error(`Sender "${sender}" not in trusted-keys.json`);
+  }
+
+  const dispatchKeys = loadDispatchKeys();
+  if (!dispatchKeys) {
+    throw new Error('No dispatch keypair found — run: node index.js keygen');
+  }
+
+  const senderPublicKey = decodeBase64(trusted[sender].publicKey);
+  const secretKey = decodeBase64(dispatchKeys.secretKey);
+  const nonce = decodeBase64(payload.nonce);
+  const ciphertext = decodeBase64(payload.ciphertext);
+
+  const plaintext = nacl.box.open(ciphertext, nonce, senderPublicKey, secretKey);
+  if (!plaintext) {
+    throw new Error(`Decryption failed for sender "${sender}" — wrong key or tampered data`);
+  }
+
+  const decrypted = JSON.parse(encodeUTF8(plaintext));
+
+  // Merge decrypted fields back into the task
+  return {
+    ...task,
+    title: decrypted.title || task.title,
+    description: decrypted.description || task.description,
+    payload: { ...decrypted.payload, callback_url: payload.callback_url, quiet: payload.quiet },
+  };
+}
+
+// === CLI subcommands ===
+function handleCLI(args) {
+  const cmd = args[0];
+
+  if (cmd === 'keygen') {
+    const keys = generateKeypair();
+    console.log('Generated new dispatch keypair.');
+    console.log(`Public key: ${keys.publicKey}`);
+    console.log(`Saved to: ${DISPATCH_KEYS_PATH}`);
+    console.log('\nShare your public key with task submitters so they can encrypt tasks for you.');
+    process.exit(0);
+  }
+
+  if (cmd === 'add-key') {
+    const name = args[1];
+    const pubkey = args[2];
+    if (!name || !pubkey) {
+      console.error('Usage: node index.js add-key <name> <public-key-base64>');
+      process.exit(1);
+    }
+    try {
+      addTrustedKey(name, pubkey);
+      console.log(`Added trusted key for "${name}".`);
+      console.log(`Saved to: ${TRUSTED_KEYS_PATH}`);
+    } catch (err) {
+      console.error(`Error: ${err.message}`);
+      process.exit(1);
+    }
+    process.exit(0);
+  }
+
+  if (cmd === 'list-keys') {
+    const trusted = loadTrustedKeys();
+    const entries = Object.entries(trusted);
+    if (entries.length === 0) {
+      console.log('No trusted keys registered.');
+    } else {
+      console.log('Trusted entities:');
+      for (const [name, info] of entries) {
+        console.log(`  ${name}: ${info.publicKey} (added ${info.addedAt})`);
+      }
+    }
+    const dispatch = loadDispatchKeys();
+    if (dispatch) {
+      console.log(`\nDispatch public key: ${dispatch.publicKey}`);
+    } else {
+      console.log('\nNo dispatch keypair found. Run: node index.js keygen');
+    }
+    process.exit(0);
+  }
+
+  // Not a CLI command — continue to main()
+  return false;
 }
 
 // === Preflight ===
@@ -208,6 +347,21 @@ async function processTask(task) {
   processingTasks.add(taskId);
 
   log('info', 'Processing task', { taskId, title: task.title, attempt: retryCount + 1 });
+
+  // Decrypt if encrypted
+  if (task.payload?.encrypted) {
+    try {
+      task = decryptTask(task);
+      log('info', 'Decrypted encrypted task', { taskId, sender: task.payload?.sender || 'unknown' });
+    } catch (err) {
+      log('error', 'Task decryption failed', { taskId, error: err.message });
+      try { failTask(taskId, `Decryption failed: ${err.message}`); } catch {}
+      await notifyCallback(task, 'failed', `Decryption failed: ${err.message}`);
+      if (shouldNotify(task)) telegram(`🔒 Rejected encrypted task: ${task.title || taskId} — ${err.message}`);
+      processingTasks.delete(taskId);
+      return;
+    }
+  }
 
   // Claim
   try {
@@ -406,7 +560,7 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 
 // === Main ===
 async function main() {
-  log('info', 'Ada Dispatch v2.0.0 starting', {
+  log('info', 'Ada Dispatch v2.1.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,
@@ -439,6 +593,10 @@ async function main() {
   startWatch();
   log('info', 'WebSocket watcher started, listening for tasks');
 }
+
+// Route CLI subcommands before starting the watcher
+const cliArgs = process.argv.slice(2);
+if (cliArgs.length > 0) handleCLI(cliArgs);
 
 main().catch((err) => {
   log('error', 'Fatal error', { error: err.message });
