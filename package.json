@@ -1,0 +1,12 @@
+{
+  "name": "ada-dispatch",
+  "version": "1.0.0",
+  "description": "ATS task watcher that routes tasks to the nanobot gateway (Ada)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "DiffLab.AI",
+  "license": "MIT"
+}

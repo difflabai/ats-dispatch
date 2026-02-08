@@ -1,0 +1,166 @@
+=== Stop hook invoked: Sun Feb  8 12:08:35 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: pending-d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'pending-d70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: no
+  pending token detected: 'pending-d70f6398-047d-47e2-a4ad-8c968ff483ca'
+  -> CLAIMING (session-safe token matches our session_id)
+=== Stop hook invoked: Sun Feb  8 12:09:38 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:10:48 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:12:03 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:13:39 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:15:07 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:16:32 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:17:36 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:18:47 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:20:32 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)
+=== Stop hook invoked: Sun Feb  8 12:21:53 PM MST 2026 ===
+ROOT_DIR: /home/openclaw/projects/ada-dispatch
+HOOK_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+STATE_FILES found: 1
+  - /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332/state.local.md
+    .lock-owner: d70f6398-047d-47e2-a4ad-8c968ff483ca
+OUR_SESSION_ID: d70f6398-047d-47e2-a4ad-8c968ff483ca
+=== find_owned_loop called ===
+    Looking for loops owned by: d70f6398-047d-47e2-a4ad-8c968ff483ca
+Checking loop: /home/openclaw/projects/ada-dispatch/.claude/start/c2963164b332
+  lock_owner_file exists: yes
+  lock_owner content: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  OUR_SESSION_ID: 'd70f6398-047d-47e2-a4ad-8c968ff483ca'
+  match: yes
+  -> FOUND (we own this loop)

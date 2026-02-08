@@ -1,0 +1,26 @@
+{
+  "description": "DiffLab.AI plugin hooks (NOTE: Copy to .claude/settings.local.json to activate)",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude-plugin/hooks/pre-tool-use-hook.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude-plugin/hooks/stop-hook.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
