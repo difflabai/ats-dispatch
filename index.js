@@ -3,6 +3,7 @@
 import { execSync, execFileSync, execFile, spawn } from 'node:child_process';
 import https from 'node:https';
 import http from 'node:http';
+import crypto from 'node:crypto';
 import { createInterface } from 'node:readline';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -22,9 +23,11 @@ const LEASE_MS = 600000;          // 10 minutes
 const NANOBOT_TIMEOUT_MS = 300000; // 5 minutes
 const MAX_TASK_RETRIES = 3;
 const ACTOR_FLAGS = ['--actor-type', 'agent', '--actor-id', 'ada-dispatch', '--actor-name', 'Ada Dispatch'];
-const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce'];
+const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce', 'pubkey', 'from'];
 const DISPATCH_KEYS_PATH = join(__dirname, 'dispatch-keys.json');
 const TRUSTED_KEYS_PATH = join(__dirname, 'trusted-keys.json');
+const PENDING_REGISTRATIONS_PATH = join(__dirname, 'pending-registrations.json');
+const CONFIG_PATH = join(__dirname, 'config.json');
 
 // Watch reconnection
 const WATCH_RECONNECT_BASE_MS = 2000;
@@ -36,6 +39,15 @@ const taskRetries = new Map();
 const processingTasks = new Set();
 
 let running = true;
+
+// === Config management ===
+function loadConfig() {
+  const defaults = { require_encryption: false };
+  if (!existsSync(CONFIG_PATH)) return defaults;
+  try {
+    return { ...defaults, ...JSON.parse(readFileSync(CONFIG_PATH, 'utf-8')) };
+  } catch { return defaults; }
+}
 
 // === Logging ===
 function log(level, msg, data = {}) {
@@ -71,9 +83,31 @@ function loadDispatchKeys() {
   return JSON.parse(readFileSync(DISPATCH_KEYS_PATH, 'utf-8'));
 }
 
+function ensureDispatchKeys() {
+  let keys = loadDispatchKeys();
+  if (!keys) {
+    keys = generateKeypair();
+    log('info', 'Generated dispatch keypair on first run', { publicKey: keys.publicKey });
+  }
+  return keys;
+}
+
 function loadTrustedKeys() {
   if (!existsSync(TRUSTED_KEYS_PATH)) return {};
   return JSON.parse(readFileSync(TRUSTED_KEYS_PATH, 'utf-8'));
+}
+
+function saveTrustedKeys(trusted) {
+  writeFileSync(TRUSTED_KEYS_PATH, JSON.stringify(trusted, null, 2) + '\n');
+}
+
+function loadPendingRegistrations() {
+  if (!existsSync(PENDING_REGISTRATIONS_PATH)) return {};
+  return JSON.parse(readFileSync(PENDING_REGISTRATIONS_PATH, 'utf-8'));
+}
+
+function savePendingRegistrations(pending) {
+  writeFileSync(PENDING_REGISTRATIONS_PATH, JSON.stringify(pending, null, 2) + '\n');
 }
 
 function generateKeypair() {
@@ -86,31 +120,236 @@ function generateKeypair() {
   return keys;
 }
 
+function fingerprint(publicKeyBase64) {
+  const hash = crypto.createHash('sha256').update(publicKeyBase64).digest('hex');
+  return hash.slice(0, 16);
+}
+
 function addTrustedKey(name, publicKey) {
-  // Validate the key is valid base64 and correct length
   const decoded = decodeBase64(publicKey);
   if (decoded.length !== nacl.box.publicKeyLength) {
     throw new Error(`Invalid public key length: expected ${nacl.box.publicKeyLength} bytes, got ${decoded.length}`);
   }
   const trusted = loadTrustedKeys();
-  trusted[name] = { publicKey, addedAt: new Date().toISOString() };
-  writeFileSync(TRUSTED_KEYS_PATH, JSON.stringify(trusted, null, 2) + '\n');
+  trusted[name] = {
+    publicKey,
+    fingerprint: fingerprint(publicKey),
+    addedAt: new Date().toISOString(),
+  };
+  saveTrustedKeys(trusted);
   return trusted;
+}
+
+function findTrustedKeyByPubkey(publicKey) {
+  const trusted = loadTrustedKeys();
+  for (const [name, info] of Object.entries(trusted)) {
+    if (info.publicKey === publicKey) return { name, ...info };
+  }
+  return null;
+}
+
+function findTrustedKeyByFingerprint(fp) {
+  const trusted = loadTrustedKeys();
+  for (const [name, info] of Object.entries(trusted)) {
+    if (info.fingerprint === fp || fingerprint(info.publicKey) === fp) return { name, ...info };
+  }
+  return null;
+}
+
+// === Encryption helpers ===
+function encryptForRecipient(plaintext, recipientPublicKeyBase64, senderSecretKeyBase64) {
+  const nonce = nacl.randomBytes(nacl.box.nonceLength);
+  const messageBytes = decodeUTF8(plaintext);
+  const recipientPubKey = decodeBase64(recipientPublicKeyBase64);
+  const senderSecKey = decodeBase64(senderSecretKeyBase64);
+  const ciphertext = nacl.box(messageBytes, nonce, recipientPubKey, senderSecKey);
+  return {
+    nonce: encodeBase64(nonce),
+    ciphertext: encodeBase64(ciphertext),
+  };
+}
+
+function decryptFromSender(ciphertextBase64, nonceBase64, senderPublicKeyBase64, recipientSecretKeyBase64) {
+  const ciphertext = decodeBase64(ciphertextBase64);
+  const nonce = decodeBase64(nonceBase64);
+  const senderPubKey = decodeBase64(senderPublicKeyBase64);
+  const recipientSecKey = decodeBase64(recipientSecretKeyBase64);
+  const plaintext = nacl.box.open(ciphertext, nonce, senderPubKey, recipientSecKey);
+  if (!plaintext) return null;
+  return encodeUTF8(plaintext);
+}
+
+// === Registration flow ===
+function isRegistrationRequest(task) {
+  const title = (task.title || '').toLowerCase().trim();
+  return title === 'register' && task.payload?.pubkey;
+}
+
+function handleRegistration(task) {
+  const taskId = task.id || task.uuid;
+  const pubkey = task.payload.pubkey;
+  const fp = fingerprint(pubkey);
+
+  log('info', 'Registration request received', { taskId, fingerprint: fp });
+
+  // Validate key format
+  try {
+    const decoded = decodeBase64(pubkey);
+    if (decoded.length !== nacl.box.publicKeyLength) {
+      throw new Error(`Invalid key length: ${decoded.length}`);
+    }
+  } catch (err) {
+    log('warn', 'Registration rejected: invalid key', { taskId, error: err.message });
+    try {
+      claimTask(taskId);
+      failTask(taskId, `Invalid public key: ${err.message}`);
+    } catch {}
+    telegram(`🔑 Registration REJECTED — invalid key format.\nFingerprint: <code>${fp}</code>\nError: ${err.message}`);
+    return;
+  }
+
+  // Check if already trusted
+  const existing = findTrustedKeyByPubkey(pubkey);
+  if (existing) {
+    log('info', 'Registration request for already-trusted key', { taskId, name: existing.name });
+    try {
+      claimTask(taskId);
+      const dispatchKeys = ensureDispatchKeys();
+      completeTask(taskId, {
+        status: 'already_registered',
+        name: existing.name,
+        ada_public_key: dispatchKeys.publicKey,
+        message: `Key already registered as "${existing.name}".`,
+      });
+    } catch {}
+    return;
+  }
+
+  // Store pending registration
+  const pending = loadPendingRegistrations();
+  pending[fp] = {
+    pubkey,
+    requestedAt: new Date().toISOString(),
+    taskId,
+  };
+  savePendingRegistrations(pending);
+
+  // Claim and hold the task
+  try { claimTask(taskId); } catch {}
+
+  // Notify admin
+  telegram(
+    `🔑 <b>New registration request</b>\n` +
+    `Fingerprint: <code>${fp}</code>\n` +
+    `Public key: <code>${pubkey.slice(0, 24)}...</code>\n` +
+    `Task ID: ${taskId}\n\n` +
+    `To approve, run on gateway:\n<code>node /home/openclaw/projects/ada-dispatch/index.js approve ${fp} &lt;name&gt;</code>`
+  );
+
+  log('info', 'Registration pending admin approval', { taskId, fingerprint: fp });
+
+  // Complete the task with pending status so it doesn't block
+  try {
+    completeTask(taskId, {
+      status: 'pending_approval',
+      fingerprint: fp,
+      message: 'Registration request submitted. Admin has been notified. You will be approved shortly.',
+    });
+  } catch {}
+}
+
+function approveRegistration(fp, name) {
+  const pending = loadPendingRegistrations();
+  const reg = pending[fp];
+  if (!reg) {
+    // Check if fingerprint matches a partial match
+    const match = Object.entries(pending).find(([k]) => k.startsWith(fp));
+    if (!match) {
+      console.error(`No pending registration found for fingerprint: ${fp}`);
+      process.exit(1);
+    }
+    return approveRegistration(match[0], name);
+  }
+
+  // Add to trusted keys
+  addTrustedKey(name, reg.pubkey);
+
+  // Remove from pending
+  delete pending[fp];
+  savePendingRegistrations(pending);
+
+  const dispatchKeys = ensureDispatchKeys();
+
+  console.log(`Approved registration for "${name}".`);
+  console.log(`Fingerprint: ${fp}`);
+  console.log(`Public key: ${reg.pubkey}`);
+  console.log(`Ada's public key: ${dispatchKeys.publicKey}`);
+
+  // Notify via Telegram
+  telegram(
+    `✅ <b>Registration approved</b>\n` +
+    `Name: ${name}\n` +
+    `Fingerprint: <code>${fp}</code>\n` +
+    `Ada's public key: <code>${dispatchKeys.publicKey}</code>`
+  );
+
+  log('info', 'Registration approved', { name, fingerprint: fp });
+}
+
+function rejectRegistration(fp, reason) {
+  const pending = loadPendingRegistrations();
+  const reg = pending[fp];
+  if (!reg) {
+    const match = Object.entries(pending).find(([k]) => k.startsWith(fp));
+    if (!match) {
+      console.error(`No pending registration found for fingerprint: ${fp}`);
+      process.exit(1);
+    }
+    return rejectRegistration(match[0], reason);
+  }
+
+  delete pending[fp];
+  savePendingRegistrations(pending);
+
+  console.log(`Rejected registration for fingerprint: ${fp}`);
+
+  telegram(
+    `❌ <b>Registration rejected</b>\n` +
+    `Fingerprint: <code>${fp}</code>\n` +
+    `Reason: ${reason || 'Not approved by admin'}`
+  );
+
+  log('info', 'Registration rejected', { fingerprint: fp, reason });
 }
 
 // === Encrypted task decryption ===
 function decryptTask(task) {
   const payload = task.payload;
-  if (!payload?.encrypted) return task; // Not encrypted, pass through
+  if (!payload?.encrypted) return { task, sender: null };
 
-  const sender = payload.sender;
-  if (!sender) {
-    throw new Error('Encrypted task missing sender field');
-  }
+  // Support both "sender" (name lookup) and "from" (pubkey lookup)
+  const senderName = payload.sender;
+  const senderPubkey = payload.from;
 
-  const trusted = loadTrustedKeys();
-  if (!trusted[sender]) {
-    throw new Error(`Sender "${sender}" not in trusted-keys.json`);
+  let senderPublicKey;
+  let resolvedSender;
+
+  if (senderName) {
+    const trusted = loadTrustedKeys();
+    if (!trusted[senderName]) {
+      throw new Error(`Sender "${senderName}" not in trusted-keys.json`);
+    }
+    senderPublicKey = trusted[senderName].publicKey;
+    resolvedSender = senderName;
+  } else if (senderPubkey) {
+    const found = findTrustedKeyByPubkey(senderPubkey);
+    if (!found) {
+      throw new Error(`Public key not in trusted-keys.json (fingerprint: ${fingerprint(senderPubkey)})`);
+    }
+    senderPublicKey = found.publicKey;
+    resolvedSender = found.name;
+  } else {
+    throw new Error('Encrypted task missing sender/from field');
   }
 
   const dispatchKeys = loadDispatchKeys();
@@ -118,25 +357,80 @@ function decryptTask(task) {
     throw new Error('No dispatch keypair found — run: node index.js keygen');
   }
 
-  const senderPublicKey = decodeBase64(trusted[sender].publicKey);
-  const secretKey = decodeBase64(dispatchKeys.secretKey);
-  const nonce = decodeBase64(payload.nonce);
-  const ciphertext = decodeBase64(payload.ciphertext);
-
-  const plaintext = nacl.box.open(ciphertext, nonce, senderPublicKey, secretKey);
+  const plaintext = decryptFromSender(
+    payload.ciphertext, payload.nonce,
+    senderPublicKey, dispatchKeys.secretKey
+  );
   if (!plaintext) {
-    throw new Error(`Decryption failed for sender "${sender}" — wrong key or tampered data`);
+    throw new Error(`Decryption failed for sender "${resolvedSender}" — wrong key or tampered data`);
   }
 
-  const decrypted = JSON.parse(encodeUTF8(plaintext));
+  const decrypted = JSON.parse(plaintext);
+
+  log('info', 'AUTH: Decryption successful', {
+    sender: resolvedSender,
+    fingerprint: fingerprint(senderPublicKey),
+    taskId: task.id || task.uuid,
+  });
 
   // Merge decrypted fields back into the task
-  return {
+  const mergedTask = {
     ...task,
     title: decrypted.title || task.title,
     description: decrypted.description || task.description,
     payload: { ...decrypted.payload, callback_url: payload.callback_url, quiet: payload.quiet },
+    _sender: resolvedSender,
+    _senderPublicKey: senderPublicKey,
   };
+  return { task: mergedTask, sender: resolvedSender, senderPublicKey };
+}
+
+// === Encrypt response for sender ===
+function encryptResponse(responseText, senderPublicKey) {
+  const dispatchKeys = loadDispatchKeys();
+  if (!dispatchKeys || !senderPublicKey) return null;
+  try {
+    return encryptForRecipient(responseText, senderPublicKey, dispatchKeys.secretKey);
+  } catch (err) {
+    log('warn', 'Failed to encrypt response', { error: err.message });
+    return null;
+  }
+}
+
+// === Authentication check ===
+function authenticateTask(task) {
+  const config = loadConfig();
+  const payload = task.payload || {};
+  const taskId = task.id || task.uuid;
+
+  // Encrypted tasks are authenticated by the decryption process
+  if (payload.encrypted) {
+    return { authenticated: true, encrypted: true };
+  }
+
+  // Registration requests bypass auth
+  if (isRegistrationRequest(task)) {
+    return { authenticated: true, registration: true };
+  }
+
+  // Plaintext task
+  if (config.require_encryption) {
+    log('warn', 'AUTH: Plaintext task REJECTED (require_encryption=true)', {
+      taskId, title: task.title,
+    });
+    telegram(
+      `🚫 <b>Task rejected</b> — encryption required\n` +
+      `Task: ${task.title || taskId}\n` +
+      `Encryption is now mandatory. Use encrypt-task.js to submit encrypted tasks.`
+    );
+    return { authenticated: false, reason: 'Encryption required. Plaintext tasks are no longer accepted.' };
+  }
+
+  // Grace period: allow but warn
+  log('warn', 'AUTH: Plaintext task accepted (grace period)', {
+    taskId, title: task.title,
+  });
+  return { authenticated: true, encrypted: false, warning: 'plaintext_grace_period' };
 }
 
 // === CLI subcommands ===
@@ -147,6 +441,7 @@ function handleCLI(args) {
     const keys = generateKeypair();
     console.log('Generated new dispatch keypair.');
     console.log(`Public key: ${keys.publicKey}`);
+    console.log(`Fingerprint: ${fingerprint(keys.publicKey)}`);
     console.log(`Saved to: ${DISPATCH_KEYS_PATH}`);
     console.log('\nShare your public key with task submitters so they can encrypt tasks for you.');
     process.exit(0);
@@ -162,11 +457,29 @@ function handleCLI(args) {
     try {
       addTrustedKey(name, pubkey);
       console.log(`Added trusted key for "${name}".`);
+      console.log(`Fingerprint: ${fingerprint(pubkey)}`);
       console.log(`Saved to: ${TRUSTED_KEYS_PATH}`);
     } catch (err) {
       console.error(`Error: ${err.message}`);
       process.exit(1);
     }
+    process.exit(0);
+  }
+
+  if (cmd === 'remove-key') {
+    const name = args[1];
+    if (!name) {
+      console.error('Usage: node index.js remove-key <name>');
+      process.exit(1);
+    }
+    const trusted = loadTrustedKeys();
+    if (!trusted[name]) {
+      console.error(`No trusted key found for "${name}".`);
+      process.exit(1);
+    }
+    delete trusted[name];
+    saveTrustedKeys(trusted);
+    console.log(`Removed trusted key for "${name}".`);
     process.exit(0);
   }
 
@@ -178,15 +491,83 @@ function handleCLI(args) {
     } else {
       console.log('Trusted entities:');
       for (const [name, info] of entries) {
-        console.log(`  ${name}: ${info.publicKey} (added ${info.addedAt})`);
+        const fp = info.fingerprint || fingerprint(info.publicKey);
+        console.log(`  ${name}: ${info.publicKey} (fp: ${fp}, added ${info.addedAt})`);
       }
     }
     const dispatch = loadDispatchKeys();
     if (dispatch) {
       console.log(`\nDispatch public key: ${dispatch.publicKey}`);
+      console.log(`Dispatch fingerprint: ${fingerprint(dispatch.publicKey)}`);
     } else {
       console.log('\nNo dispatch keypair found. Run: node index.js keygen');
     }
+
+    const pending = loadPendingRegistrations();
+    const pendingEntries = Object.entries(pending);
+    if (pendingEntries.length > 0) {
+      console.log('\nPending registrations:');
+      for (const [fp, info] of pendingEntries) {
+        console.log(`  ${fp}: requested ${info.requestedAt} (task ${info.taskId})`);
+      }
+    }
+    process.exit(0);
+  }
+
+  if (cmd === 'approve') {
+    const fp = args[1];
+    const name = args[2];
+    if (!fp || !name) {
+      console.error('Usage: node index.js approve <fingerprint> <name>');
+      process.exit(1);
+    }
+    approveRegistration(fp, name);
+    process.exit(0);
+  }
+
+  if (cmd === 'reject') {
+    const fp = args[1];
+    const reason = args.slice(2).join(' ') || 'Not approved';
+    if (!fp) {
+      console.error('Usage: node index.js reject <fingerprint> [reason]');
+      process.exit(1);
+    }
+    rejectRegistration(fp, reason);
+    process.exit(0);
+  }
+
+  if (cmd === 'pending') {
+    const pending = loadPendingRegistrations();
+    const entries = Object.entries(pending);
+    if (entries.length === 0) {
+      console.log('No pending registrations.');
+    } else {
+      console.log('Pending registrations:');
+      for (const [fp, info] of entries) {
+        console.log(`  Fingerprint: ${fp}`);
+        console.log(`  Public key:  ${info.pubkey}`);
+        console.log(`  Requested:   ${info.requestedAt}`);
+        console.log(`  Task ID:     ${info.taskId}`);
+        console.log('');
+      }
+    }
+    process.exit(0);
+  }
+
+  if (cmd === 'config') {
+    const key = args[1];
+    const value = args[2];
+    if (!key) {
+      const config = loadConfig();
+      console.log(JSON.stringify(config, null, 2));
+      process.exit(0);
+    }
+    const config = loadConfig();
+    if (value === 'true') config[key] = true;
+    else if (value === 'false') config[key] = false;
+    else config[key] = value;
+    writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2) + '\n');
+    console.log(`Set ${key} = ${JSON.stringify(config[key])}`);
     process.exit(0);
   }
 
@@ -207,6 +588,9 @@ function preflight() {
       process.exit(1);
     }
   }
+
+  // Ensure dispatch keypair exists
+  ensureDispatchKeys();
 }
 
 // === ATS helpers ===
@@ -224,7 +608,6 @@ function ats(...args) {
 
 function atsJSON(...args) {
   const raw = ats(...args, '-f', 'json');
-  // Handle both array and single-object responses
   const arrayMatch = raw.match(/\[[\s\S]*\]/);
   if (arrayMatch) {
     try { return JSON.parse(arrayMatch[0]); } catch { return []; }
@@ -325,7 +708,7 @@ function runNanobot(prompt, sessionId) {
 }
 
 // === Task processing ===
-async function processTask(task) {
+function processTask(task) {
   const taskId = task.id || task.uuid;
 
   // Prevent duplicate processing
@@ -334,29 +717,58 @@ async function processTask(task) {
     return;
   }
 
+  // Handle registration requests first (before auth check)
+  if (isRegistrationRequest(task)) {
+    log('info', 'AUTH: Registration request detected', { taskId });
+    handleRegistration(task);
+    return;
+  }
+
+  // Authentication check
+  const auth = authenticateTask(task);
+  if (!auth.authenticated) {
+    log('warn', 'AUTH: Task rejected', { taskId, reason: auth.reason });
+    try {
+      claimTask(taskId);
+      failTask(taskId, auth.reason);
+    } catch {}
+    return;
+  }
+
+  if (auth.warning === 'plaintext_grace_period') {
+    log('warn', 'AUTH: Plaintext task in grace period', { taskId, title: task.title });
+  }
+
   // Poison task guard
   const retryCount = taskRetries.get(taskId) || 0;
   if (retryCount >= MAX_TASK_RETRIES) {
     log('error', 'Task exceeded max retries, skipping', { taskId, retryCount, title: task.title });
     try { failTask(taskId, `Exceeded max retry attempts (${MAX_TASK_RETRIES})`); } catch {}
-    await notifyCallback(task, 'failed', `Exceeded max retry attempts (${MAX_TASK_RETRIES})`);
+    notifyCallback(task, 'failed', `Exceeded max retry attempts (${MAX_TASK_RETRIES})`);
     if (shouldNotify(task)) telegram(`❌ Failed: ${task.title} — exceeded max retries`);
     return;
   }
   taskRetries.set(taskId, retryCount + 1);
   processingTasks.add(taskId);
 
-  log('info', 'Processing task', { taskId, title: task.title, attempt: retryCount + 1 });
+  log('info', 'Processing task', { taskId, title: task.title, attempt: retryCount + 1, encrypted: !!task.payload?.encrypted });
+
+  // Track sender info for encrypted response
+  let senderName = null;
+  let senderPublicKey = null;
 
   // Decrypt if encrypted
   if (task.payload?.encrypted) {
     try {
-      task = decryptTask(task);
-      log('info', 'Decrypted encrypted task', { taskId, sender: task.payload?.sender || 'unknown' });
+      const result = decryptTask(task);
+      task = result.task;
+      senderName = result.sender;
+      senderPublicKey = result.senderPublicKey;
+      log('info', 'AUTH: Decrypted encrypted task', { taskId, sender: senderName });
     } catch (err) {
-      log('error', 'Task decryption failed', { taskId, error: err.message });
+      log('error', 'AUTH: Task decryption failed', { taskId, error: err.message });
       try { failTask(taskId, `Decryption failed: ${err.message}`); } catch {}
-      await notifyCallback(task, 'failed', `Decryption failed: ${err.message}`);
+      notifyCallback(task, 'failed', `Decryption failed: ${err.message}`);
       if (shouldNotify(task)) telegram(`🔒 Rejected encrypted task: ${task.title || taskId} — ${err.message}`);
       processingTasks.delete(taskId);
       return;
@@ -375,15 +787,15 @@ async function processTask(task) {
     return;
   }
 
-  // Build prompt and run nanobot
+  // Build prompt and spawn nanobot in the background
   const prompt = buildPrompt(task);
   const sessionId = `ada-dispatch:${taskId}`;
-  log('info', 'Invoking nanobot', { taskId, sessionId, promptLength: prompt.length });
+  log('info', 'Invoking nanobot (background)', { taskId, sessionId, promptLength: prompt.length });
 
   // Lease renewal
   const renewInterval = setInterval(() => {
     try {
-      claimTask(taskId); // renew = re-claim
+      claimTask(taskId);
       postMessage(taskId, 'Agent still processing (lease renewed)');
       log('info', 'Lease renewed', { taskId });
     } catch (err) {
@@ -391,7 +803,7 @@ async function processTask(task) {
     }
   }, LEASE_MS / 2);
 
-  // Run nanobot with shutdown-aware cancellation
+  // Spawn nanobot with shutdown-aware cancellation
   const { promise: nanobotResult, child: nanobotChild } = runNanobot(prompt, sessionId);
   let cancelledByShutdown = false;
 
@@ -403,19 +815,39 @@ async function processTask(task) {
   process.on('SIGTERM', onShutdown);
   process.on('SIGINT', onShutdown);
 
-  try {
-    const output = await nanobotResult;
+  const cleanup = () => {
+    clearInterval(renewInterval);
+    process.removeListener('SIGTERM', onShutdown);
+    process.removeListener('SIGINT', onShutdown);
+    processingTasks.delete(taskId);
+  };
+
+  nanobotResult.then((output) => {
     log('info', 'Nanobot completed', { taskId, outputLength: output.length });
 
-    completeTask(taskId, { response: output.trim() });
+    const responseText = output.trim();
+    const outputs = { response: responseText };
+
+    // Encrypt response if the task was encrypted
+    if (senderPublicKey) {
+      const encrypted = encryptResponse(responseText, senderPublicKey);
+      if (encrypted) {
+        outputs.encrypted_response = encrypted;
+        outputs.response_encrypted = true;
+        log('info', 'AUTH: Response encrypted for sender', { taskId, sender: senderName });
+      }
+    }
+
+    completeTask(taskId, outputs);
     taskRetries.delete(taskId);
     log('info', 'Task completed', { taskId });
-    await notifyCallback(task, 'completed', output.trim());
+    notifyCallback(task, 'completed', responseText);
     if (shouldNotify(task)) {
-      const snippet = output.trim().slice(0, 200);
+      const snippet = responseText.slice(0, 200);
       telegram(`✅ Done: ${task.title} — ${snippet}`);
     }
-  } catch (err) {
+    cleanup();
+  }).catch((err) => {
     if (cancelledByShutdown) {
       log('info', 'Task interrupted by shutdown, will be retried', { taskId });
       taskRetries.delete(taskId);
@@ -424,23 +856,18 @@ async function processTask(task) {
       try {
         failTask(taskId, err.message);
         log('info', 'Task marked as failed', { taskId });
-        await notifyCallback(task, 'failed', err.message);
+        notifyCallback(task, 'failed', err.message);
         if (shouldNotify(task)) telegram(`❌ Failed: ${task.title} — ${err.message.slice(0, 200)}`);
       } catch (failErr) {
         log('error', 'Failed to mark task as failed', { taskId, error: failErr.message });
       }
     }
-  } finally {
-    clearInterval(renewInterval);
-    process.removeListener('SIGTERM', onShutdown);
-    process.removeListener('SIGINT', onShutdown);
-    processingTasks.delete(taskId);
-  }
+    cleanup();
+  });
 }
 
 // === Event handler ===
-async function handleEvent(event) {
-  // Only react to task.created events
+function handleEvent(event) {
   if (event.type !== 'task.created') return;
 
   const taskId = event.task_id || event.data?.id || event.data?.task_id;
@@ -451,7 +878,6 @@ async function handleEvent(event) {
 
   log('info', 'Received task.created event', { taskId });
 
-  // Fetch full task to get payload, description, etc.
   let task;
   try {
     task = getTask(taskId);
@@ -464,13 +890,12 @@ async function handleEvent(event) {
     return;
   }
 
-  // Only process pending tasks
   if (task.status !== 'pending') {
     log('debug', 'Task not pending, skipping', { taskId, status: task.status });
     return;
   }
 
-  await processTask(task);
+  processTask(task);
 }
 
 // === WebSocket watcher ===
@@ -489,35 +914,24 @@ function startWatch() {
 
     const rl = createInterface({ input: child.stdout });
 
-    // ats watch outputs human-readable lines:
-    //   [1:13:05 PM] task.created
-    //   Task #278: What is the current weather in Denver?
-    //   Status: pending, Channel: ada-dispatch
-    // We parse "Task #<ID>" lines to extract the task ID.
     rl.on('line', (line) => {
       const trimmed = line.trim();
       if (!trimmed || trimmed.startsWith('Connecting') || trimmed.startsWith('✓') || trimmed.startsWith('Watching')) return;
 
-      // Try JSON first (in case ats cli adds json support later)
       try {
         const event = JSON.parse(trimmed);
         reconnectDelay = WATCH_RECONNECT_BASE_MS;
-        handleEvent(event).catch(err => log('error', 'Event handler error', { error: err.message }));
+        try { handleEvent(event); } catch (err) { log('error', 'Event handler error', { error: err.message }); }
         return;
       } catch {}
 
-      // Parse human-readable: "[time] task.created" marks the event type
-      // "Task #<ID>: <title>" gives us the task ID
-      // Strip ANSI codes for clean matching
       const clean = trimmed.replace(/\x1b\[[0-9;]*m/g, '');
-
       const taskMatch = clean.match(/^Task #(\d+):/);
       if (taskMatch) {
         const taskId = taskMatch[1];
         reconnectDelay = WATCH_RECONNECT_BASE_MS;
         log('info', 'Watch detected task', { taskId, line: clean });
-        handleEvent({ type: 'task.created', task_id: taskId })
-          .catch(err => log('error', 'Event handler error', { error: err.message }));
+        try { handleEvent({ type: 'task.created', task_id: taskId }); } catch (err) { log('error', 'Event handler error', { error: err.message }); }
         return;
       }
 
@@ -540,7 +954,6 @@ function startWatch() {
       log('error', 'Watch process error', { error: err.message });
     });
 
-    // Kill watch on shutdown
     const killWatch = () => child.kill('SIGTERM');
     process.on('SIGTERM', killWatch);
     process.on('SIGINT', killWatch);
@@ -559,8 +972,9 @@ process.on('SIGINT', () => shutdown('SIGINT'));
 process.on('SIGTERM', () => shutdown('SIGTERM'));
 
 // === Main ===
-async function main() {
-  log('info', 'Ada Dispatch v2.1.0 starting', {
+function main() {
+  const config = loadConfig();
+  log('info', 'Ada Dispatch v3.0.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,
@@ -568,11 +982,20 @@ async function main() {
     atsBin: ATS_BIN,
     nanobotBin: NANOBOT_BIN,
     mode: 'websocket',
+    require_encryption: config.require_encryption,
   });
 
   preflight();
 
-  // Drain any pending tasks from before we started watching
+  const dispatchKeys = loadDispatchKeys();
+  if (dispatchKeys) {
+    log('info', 'Dispatch public key', { publicKey: dispatchKeys.publicKey, fingerprint: fingerprint(dispatchKeys.publicKey) });
+  }
+
+  const trusted = loadTrustedKeys();
+  log('info', 'Trusted keys loaded', { count: Object.keys(trusted).length });
+
+  // Drain pending tasks
   log('info', 'Draining pending tasks');
   try {
     const pending = listPending();
@@ -580,7 +1003,7 @@ async function main() {
       log('info', 'Found pending tasks to drain', { count: pending.length });
       for (const task of pending) {
         if (!running) break;
-        await processTask(task);
+        processTask(task);
       }
     } else {
       log('info', 'No pending tasks to drain');
@@ -589,7 +1012,6 @@ async function main() {
     log('error', 'Error draining pending tasks', { error: err.message });
   }
 
-  // Start WebSocket watcher — events drive task processing from here
   startWatch();
   log('info', 'WebSocket watcher started, listening for tasks');
 }
@@ -598,7 +1020,9 @@ async function main() {
 const cliArgs = process.argv.slice(2);
 if (cliArgs.length > 0) handleCLI(cliArgs);
 
-main().catch((err) => {
+try {
+  main();
+} catch (err) {
   log('error', 'Fatal error', { error: err.message });
   process.exit(1);
-});
+}

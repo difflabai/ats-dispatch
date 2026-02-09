@@ -1,3 +1,8 @@
 node_modules/
 dispatch-keys.json
 my-keys.json
+pending-registrations.json
+config.json
+.claude/
+.claude-plugin/
+.mcp.json
