@@ -15,12 +15,12 @@ const { encodeBase64, decodeBase64, encodeUTF8, decodeUTF8 } = naclUtil;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // === Config ===
-const ATS_BIN = '/usr/bin/ats';
-const NANOBOT_BIN = '/home/openclaw/nanobot/.venv/bin/nanobot';
+const ATS_BIN = '/ml2/nanobot/.nvm/versions/node/v24.13.0/bin/ats';
+const NANOBOT_BIN = '/ml2/nanobot/.nvm/versions/node/v24.13.0/bin/claude';
 const CHANNEL = 'ada-dispatch';
 const TELEGRAM_CHAT_ID = '6644666619';
-const LEASE_MS = 600000;          // 10 minutes
-const NANOBOT_TIMEOUT_MS = 300000; // 5 minutes
+const LEASE_MS = 7200000;          // 2 hours
+const NANOBOT_TIMEOUT_MS = 3600000; // 60 minutes
 const MAX_TASK_RETRIES = 3;
 const ACTOR_FLAGS = ['--actor-type', 'agent', '--actor-id', 'ada-dispatch', '--actor-name', 'Ada Dispatch'];
 const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce', 'pubkey', 'from'];
@@ -577,7 +577,7 @@ function handleCLI(args) {
 
 // === Preflight ===
 function preflight() {
-  for (const check of [{ name: 'ats', bin: ATS_BIN }, { name: 'nanobot', bin: NANOBOT_BIN }]) {
+  for (const check of [{ name: 'ats', bin: ATS_BIN }, { name: 'claude', bin: NANOBOT_BIN }]) {
     try {
       const version = execSync(`'${check.bin}' --version`, {
         encoding: 'utf-8', timeout: 10000, stdio: ['pipe', 'pipe', 'pipe'],
@@ -696,7 +696,7 @@ function runNanobot(prompt, sessionId) {
   const promise = new Promise((resolve, reject) => {
     child = execFile(
       NANOBOT_BIN,
-      ['agent', '-m', prompt, '-s', sessionId],
+      ['-p', prompt, '--dangerously-skip-permissions'],
       { timeout: NANOBOT_TIMEOUT_MS, maxBuffer: 10 * 1024 * 1024, encoding: 'utf-8' },
       (error, stdout) => {
         if (error) reject(new Error(error.killed ? 'Nanobot cancelled or timed out' : (error.message || 'Nanobot execution failed')));
@@ -795,13 +795,12 @@ function processTask(task) {
   // Lease renewal
   const renewInterval = setInterval(() => {
     try {
-      claimTask(taskId);
-      postMessage(taskId, 'Agent still processing (lease renewed)');
-      log('info', 'Lease renewed', { taskId });
+      postMessage(taskId, "Agent still processing (heartbeat)");
+      log("info", "Heartbeat posted", { taskId });
     } catch (err) {
-      log('warn', 'Lease renewal failed', { taskId, error: err.message });
+      log("warn", "Heartbeat failed", { taskId, error: err.message });
     }
-  }, LEASE_MS / 2);
+  }, LEASE_MS / 4);
 
   // Spawn nanobot with shutdown-aware cancellation
   const { promise: nanobotResult, child: nanobotChild } = runNanobot(prompt, sessionId);
@@ -974,7 +973,7 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 // === Main ===
 function main() {
   const config = loadConfig();
-  log('info', 'Ada Dispatch v3.0.0 starting', {
+  log('info', 'ats-dispatch v3.0.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,

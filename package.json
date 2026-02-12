@@ -1,7 +1,7 @@
 {
-  "name": "ada-dispatch",
+  "name": "ats-dispatch",
   "version": "3.0.0",
-  "description": "WebSocket-based ATS task watcher with NaCl authenticated encryption, key registration, and Telegram notifications",
+  "description": "Reference implementation of an ATS task executor — watches a channel, claims tasks, runs them via subprocess, reports results",
   "type": "module",
   "main": "index.js",
   "scripts": {
