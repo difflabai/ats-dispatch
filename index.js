@@ -69,7 +69,7 @@ function isGpuTask(task) {
   if (task.payload && task.payload.gpu === true) return true;
   // Keyword heuristic fallback (narrow keywords only — avoids false positives)
   const text = ((task.title || '') + ' ' + (task.description || '') + ' ' + JSON.stringify(task.payload || {})).toLowerCase();
-  const gpuKeywords = ['ace-step', 'acestep', 'cover mode', 'qwen tts', 'audio generation'];
+  const gpuKeywords = ['ace-step', 'acestep', 'cover mode', 'qwen tts', 'qwen3-tts'];
   return gpuKeywords.some(kw => text.includes(kw));
 }
 
