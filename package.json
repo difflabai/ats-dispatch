@@ -1,6 +1,6 @@
 {
   "name": "ats-dispatch",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Reference implementation of an ATS task executor — watches a channel, claims tasks, runs them via subprocess, reports results",
   "type": "module",
   "main": "index.js",
