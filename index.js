@@ -19,8 +19,8 @@ const ATS_BIN = '/ml2/nanobot/.nvm/versions/node/v24.13.0/bin/ats';
 const NANOBOT_BIN = '/ml2/nanobot/.nvm/versions/node/v24.13.0/bin/claude';
 const CHANNEL = 'ada-dispatch';
 const TELEGRAM_CHAT_ID = '6644666619';
-const LEASE_MS = 7200000;          // 2 hours
-const NANOBOT_TIMEOUT_MS = 3600000; // 60 minutes
+const LEASE_MS = 14400000;          // 4 hours
+const NANOBOT_TIMEOUT_MS = 14400000; // 4 hours (matches lease)
 const MAX_TASK_RETRIES = 3;
 const ACTOR_FLAGS = ['--actor-type', 'agent', '--actor-id', 'ada-dispatch', '--actor-name', 'Ada Dispatch'];
 const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce', 'pubkey', 'from'];
@@ -37,6 +37,41 @@ const WATCH_RECONNECT_MAX_MS = 60000;
 const taskRetries = new Map();
 // Track tasks currently being processed to avoid duplicates
 const processingTasks = new Set();
+
+// === GPU semaphore ===
+// Only GPU-heavy tasks (music generation, TTS, etc.) are serialized.
+// Non-GPU tasks run concurrently without waiting.
+const GPU_CONCURRENCY = parseInt(process.env.GPU_CONCURRENCY, 10) || 1;
+const gpuQueue = [];       // FIFO queue of { resolve } waiting for a GPU slot
+let gpuSlotsUsed = 0;      // how many GPU slots are currently held
+
+function gpuAcquire() {
+  if (gpuSlotsUsed < GPU_CONCURRENCY) {
+    gpuSlotsUsed++;
+    return Promise.resolve();
+  }
+  return new Promise((resolve) => gpuQueue.push({ resolve }));
+}
+
+function gpuRelease() {
+  if (gpuQueue.length > 0) {
+    const next = gpuQueue.shift();
+    next.resolve();
+    // slot count stays the same — transferred to next waiter
+  } else {
+    gpuSlotsUsed = Math.max(0, gpuSlotsUsed - 1);
+  }
+}
+
+function isGpuTask(task) {
+  // Explicit payload override: { gpu: false } skips GPU queue
+  if (task.payload && task.payload.gpu === false) return false;
+  if (task.payload && task.payload.gpu === true) return true;
+  // Keyword heuristic fallback (narrow keywords only — avoids false positives)
+  const text = ((task.title || '') + ' ' + (task.description || '') + ' ' + JSON.stringify(task.payload || {})).toLowerCase();
+  const gpuKeywords = ['ace-step', 'acestep', 'cover mode', 'qwen tts', 'audio generation'];
+  return gpuKeywords.some(kw => text.includes(kw));
+}
 
 let running = true;
 
@@ -692,39 +727,76 @@ function buildPrompt(task) {
 
 // === Nanobot execution ===
 function runNanobot(prompt, sessionId) {
-  let child;
+  const child = spawn(
+    NANOBOT_BIN,
+    ['-p', '--dangerously-skip-permissions'],
+    { stdio: ['pipe', 'pipe', 'pipe'] }
+  );
+
+  // Feed prompt via stdin (avoids arg-length and multi-line issues)
+  child.stdin.write(prompt);
+  child.stdin.end();
+
+  // Track whether the process has already exited to prevent timeout race
+  let processExited = false;
+  let killedByTimeout = false;
+
+  // Timeout guard — only kill if the process hasn't already exited
+  const timer = setTimeout(() => {
+    if (!processExited) {
+      killedByTimeout = true;
+      child.kill('SIGTERM');
+    }
+  }, NANOBOT_TIMEOUT_MS);
+
   const promise = new Promise((resolve, reject) => {
-    child = execFile(
-      NANOBOT_BIN,
-      ['-p', prompt, '--dangerously-skip-permissions'],
-      { timeout: NANOBOT_TIMEOUT_MS, maxBuffer: 10 * 1024 * 1024, encoding: 'utf-8' },
-      (error, stdout) => {
-        if (error) reject(new Error(error.killed ? 'Nanobot cancelled or timed out' : (error.message || 'Nanobot execution failed')));
-        else resolve(stdout);
+    let stdout = '';
+    child.stdout.on('data', (chunk) => { stdout += chunk; });
+    child.stderr.on('data', () => {}); // drain stderr
+    child.on('close', (code, signal) => {
+      processExited = true;
+      clearTimeout(timer);
+      // If the process exited with code 0, always resolve — even if a
+      // SIGTERM was sent (the process finished before the signal landed)
+      if (code === 0) {
+        resolve(stdout);
+      } else if (killedByTimeout) {
+        reject(new Error('Nanobot timed out (killed after timeout)'));
+      } else if (signal === 'SIGTERM' || code === 143) {
+        reject(new Error('Nanobot cancelled'));
+      } else {
+        reject(new Error(`Nanobot exited with code ${code}`));
       }
-    );
+    });
+    child.on('error', (err) => {
+      processExited = true;
+      clearTimeout(timer);
+      reject(new Error(err.message || 'Nanobot execution failed'));
+    });
   });
+
   return { promise, child };
 }
 
-// === Task processing ===
-function processTask(task) {
+// === Task dispatch ===
+// GPU tasks go through the semaphore; non-GPU tasks run immediately (concurrent).
+function dispatchTask(task) {
   const taskId = task.id || task.uuid;
 
-  // Prevent duplicate processing
+  // Prevent duplicate dispatch
   if (processingTasks.has(taskId)) {
-    log('debug', 'Task already being processed, skipping', { taskId });
+    log('debug', 'Task already processing, skipping', { taskId });
     return;
   }
 
-  // Handle registration requests first (before auth check)
+  // Handle registration requests immediately (no GPU needed)
   if (isRegistrationRequest(task)) {
-    log('info', 'AUTH: Registration request detected', { taskId });
+    log('info', 'AUTH: Registration request detected, handling immediately', { taskId });
     handleRegistration(task);
     return;
   }
 
-  // Authentication check
+  // Authentication check (reject early)
   const auth = authenticateTask(task);
   if (!auth.authenticated) {
     log('warn', 'AUTH: Task rejected', { taskId, reason: auth.reason });
@@ -748,10 +820,33 @@ function processTask(task) {
     if (shouldNotify(task)) telegram(`❌ Failed: ${task.title} — exceeded max retries`);
     return;
   }
-  taskRetries.set(taskId, retryCount + 1);
+
+  const gpu = isGpuTask(task);
+
+  if (gpu) {
+    log('info', 'GPU task detected, waiting for GPU slot', { taskId, title: task.title, gpuPending: gpuQueue.length });
+    gpuAcquire().then(() => {
+      if (!running) {
+        gpuRelease();
+        return;
+      }
+      log('info', 'GPU slot acquired', { taskId, title: task.title, gpuPending: gpuQueue.length });
+      processTask(task, true);
+    });
+  } else {
+    log('info', 'Non-GPU task, running immediately', { taskId, title: task.title });
+    processTask(task, false);
+  }
+}
+
+// === Task processing ===
+function processTask(task, gpuHeld) {
+  const taskId = task.id || task.uuid;
+
+  taskRetries.set(taskId, (taskRetries.get(taskId) || 0) + 1);
   processingTasks.add(taskId);
 
-  log('info', 'Processing task', { taskId, title: task.title, attempt: retryCount + 1, encrypted: !!task.payload?.encrypted });
+  log('info', 'Processing task', { taskId, title: task.title, attempt: taskRetries.get(taskId), encrypted: !!task.payload?.encrypted, gpu: gpuHeld });
 
   // Track sender info for encrypted response
   let senderName = null;
@@ -771,34 +866,49 @@ function processTask(task) {
       notifyCallback(task, 'failed', `Decryption failed: ${err.message}`);
       if (shouldNotify(task)) telegram(`🔒 Rejected encrypted task: ${task.title || taskId} — ${err.message}`);
       processingTasks.delete(taskId);
+      if (gpuHeld) gpuRelease();
       return;
     }
   }
 
-  // Claim
+  // Claim — gracefully handle already-terminal tasks
   try {
     claimTask(taskId);
     log('info', 'Claimed task', { taskId });
     postMessage(taskId, 'Agent processing started');
     if (shouldNotify(task)) telegram(`🎯 Ada picked up: ${task.title} (ID: ${taskId})`);
   } catch (err) {
-    log('error', 'Failed to claim task', { taskId, error: err.message });
+    const errMsg = (err.stderr || err.message || '').toLowerCase();
+    if (errMsg.includes('failed status') || errMsg.includes('completed status') || errMsg.includes('cancelled status')) {
+      log('warn', 'Task already in terminal state, skipping', { taskId, error: err.message });
+    } else {
+      log('error', 'Failed to claim task', { taskId, error: err.message });
+    }
     processingTasks.delete(taskId);
+    if (gpuHeld) gpuRelease();
     return;
   }
 
   // Build prompt and spawn nanobot in the background
   const prompt = buildPrompt(task);
   const sessionId = `ada-dispatch:${taskId}`;
-  log('info', 'Invoking nanobot (background)', { taskId, sessionId, promptLength: prompt.length });
+  log('info', 'Invoking nanobot', { taskId, sessionId, promptLength: prompt.length, gpu: gpuHeld });
 
-  // Lease renewal
+  // Lease renewal — re-claim to extend the lease, plus post a heartbeat message.
   const renewInterval = setInterval(() => {
     try {
-      postMessage(taskId, "Agent still processing (heartbeat)");
-      log("info", "Heartbeat posted", { taskId });
+      ats('claim', String(taskId), '--lease', String(LEASE_MS));
+      postMessage(taskId, "Agent still processing (heartbeat — lease renewed)");
+      log("info", "Heartbeat: lease renewed", { taskId, leaseMs: LEASE_MS });
     } catch (err) {
-      log("warn", "Heartbeat failed", { taskId, error: err.message });
+      const errMsg = (err.stderr || err.message || '').toLowerCase();
+      const isAlreadyClaimed = errMsg.includes('in_progress') || errMsg.includes('already claimed') || errMsg.includes('already in');
+      if (isAlreadyClaimed) {
+        log("debug", "Heartbeat: re-claim not needed (already in_progress)", { taskId });
+      } else {
+        log("warn", "Heartbeat: lease renewal failed", { taskId, error: err.message });
+      }
+      try { postMessage(taskId, "Agent still processing (heartbeat)"); } catch {}
     }
   }, LEASE_MS / 4);
 
@@ -819,6 +929,10 @@ function processTask(task) {
     process.removeListener('SIGTERM', onShutdown);
     process.removeListener('SIGINT', onShutdown);
     processingTasks.delete(taskId);
+    if (gpuHeld) {
+      gpuRelease();
+      log('info', 'GPU slot released', { taskId, gpuPending: gpuQueue.length });
+    }
   };
 
   nanobotResult.then((output) => {
@@ -894,7 +1008,7 @@ function handleEvent(event) {
     return;
   }
 
-  processTask(task);
+  dispatchTask(task);
 }
 
 // === WebSocket watcher ===
@@ -973,7 +1087,7 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 // === Main ===
 function main() {
   const config = loadConfig();
-  log('info', 'ats-dispatch v3.0.0 starting', {
+  log('info', 'ats-dispatch v3.2.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,
@@ -982,6 +1096,7 @@ function main() {
     nanobotBin: NANOBOT_BIN,
     mode: 'websocket',
     require_encryption: config.require_encryption,
+    gpuConcurrency: GPU_CONCURRENCY,
   });
 
   preflight();
@@ -994,7 +1109,7 @@ function main() {
   const trusted = loadTrustedKeys();
   log('info', 'Trusted keys loaded', { count: Object.keys(trusted).length });
 
-  // Drain pending tasks
+  // Drain pending tasks — GPU tasks go through semaphore, non-GPU run immediately
   log('info', 'Draining pending tasks');
   try {
     const pending = listPending();
@@ -1002,7 +1117,7 @@ function main() {
       log('info', 'Found pending tasks to drain', { count: pending.length });
       for (const task of pending) {
         if (!running) break;
-        processTask(task);
+        dispatchTask(task);
       }
     } else {
       log('info', 'No pending tasks to drain');
