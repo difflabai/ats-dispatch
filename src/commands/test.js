@@ -45,6 +45,7 @@ export function run(args) {
 
   console.log(`Labeling ${variants.length} variant PR(s) for project "${project.name || id}"...\n`);
 
+  let labeled = 0;
   for (const variant of variants) {
     const pr = variant.pr_number;
     try {
@@ -52,9 +53,15 @@ export function run(args) {
       addPrLabel(pr, 'pipeline:evaluating');
       addPrComment(pr, EVALUATION_COMMENT);
       console.log(`  PR #${pr} (${variant.branch}) — labeled and commented`);
+      labeled++;
     } catch (err) {
       console.error(`  PR #${pr} (${variant.branch}) — FAILED: ${err.message}`);
     }
+  }
+
+  if (labeled === 0) {
+    console.error('\nAll GitHub operations failed — project status unchanged.');
+    process.exit(1);
   }
 
   // Update project status
