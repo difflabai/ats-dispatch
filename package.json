@@ -4,6 +4,9 @@
   "description": "Reference implementation of an ATS task executor — watches a channel, claims tasks, runs them via subprocess, reports results",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "pipeline": "./bin/pipeline.js"
+  },
   "scripts": {
     "start": "node index.js"
   },

@@ -6,3 +6,4 @@ config.json
 .claude/
 .claude-plugin/
 .mcp.json
+.pipeline/
