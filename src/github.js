@@ -102,10 +102,9 @@ export function addPrComment(prNumber, body) {
  */
 export function closePr(prNumber, comment) {
   if (comment) {
-    gh(`pr close ${prNumber} --comment "${comment.replace(/"/g, '\\"')}"`);
-  } else {
-    gh(`pr close ${prNumber}`);
+    addPrComment(prNumber, comment);
   }
+  gh(`pr close ${prNumber}`);
 }
 
 /**
