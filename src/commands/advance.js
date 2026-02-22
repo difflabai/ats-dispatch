@@ -135,16 +135,19 @@ export function run(args) {
   console.log(`  Winner: PR #${winner.pr_number} (${winner.branch})\n`);
 
   // Label the winner
+  let winnerLabeled = false;
   try {
     addPrLabel(winner.pr_number, 'pipeline:picked');
     removePrLabel(winner.pr_number, 'pipeline:evaluating');
     console.log(`  PR #${winner.pr_number} — labeled pipeline:picked`);
+    winnerLabeled = true;
   } catch (err) {
     console.error(`  PR #${winner.pr_number} — label failed: ${err.message}`);
   }
 
   // Close losers
   const losers = variants.filter(v => v.pr_number !== winner.pr_number);
+  const closedPrNumbers = new Set();
   for (const loser of losers) {
     try {
       closePr(
@@ -153,19 +156,30 @@ export function run(args) {
       );
       removePrLabel(loser.pr_number, 'pipeline:evaluating');
       console.log(`  PR #${loser.pr_number} (${loser.branch}) — closed`);
+      closedPrNumbers.add(loser.pr_number);
     } catch (err) {
       console.error(`  PR #${loser.pr_number} (${loser.branch}) — close failed: ${err.message}`);
     }
   }
 
-  // Update state
+  // Update state only for successful GitHub operations
+  if (!winnerLabeled) {
+    console.error('\nAborting: winner PR could not be labeled on GitHub. Local state unchanged.');
+    process.exit(1);
+  }
+
   for (const v of project.variants) {
     if (v.pr_number === winner.pr_number) {
       v.status = 'picked';
-    } else if (losers.some(l => l.pr_number === v.pr_number)) {
+    } else if (closedPrNumbers.has(v.pr_number)) {
       v.status = 'closed';
     }
   }
+
+  if (closedPrNumbers.size < losers.length) {
+    console.error(`\nWarning: ${losers.length - closedPrNumbers.size} loser PR(s) could not be closed on GitHub — their local status was not updated.`);
+  }
+
   project.status = 'advanced';
   project.round = (project.round || 0) + 1;
   setProject(project);
