@@ -1,0 +1,67 @@
+{
+  "album": "stormlight-jasnah",
+  "album_title": "Heresy (The Jasnah Album)",
+  "b2_folder": "album-stormlight-jasnah",
+  "voice_instruct": "A woman in her mid-thirties with a commanding contralto. Intellectually precise, regal, and unflinching. The voice of a scholar-queen who considers empathy a tool and logic a weapon. Every syllable measured, every pause intentional.",
+  "performer": "Jasnah Kholin",
+  "cover_strength": 0.8,
+  "audio_duration": 180,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Heretic Queen",
+      "slug": "the-heretic-queen",
+      "prompt": "orchestral electronic, commanding female vocals, strings and analog synths, Bjork meets Fever Ray, D minor, 74 BPM",
+      "lyrics": "[verse 1]\nthey call me heretic in the corridors of Kharbranth\nHonor is dead, that is not heresy, that is fact\nthe god they worship shattered millennia back\n\n[chorus]\ncall me heretic, I have earned the name\nthe truth is not a kindness, the truth is not polite\nthe truth is what remains when you strip away the night\n\n[verse 2]\nI soulcast a man to smoke in a dark alley in Kharbranth\nKaladin calls it murder, I call it applied philosophy\nI do not mourn the wolves, I count the sheep they would have lost\n\n[bridge]\nIvory bonds me, a high spren, an inkspren of the mind\nbecause the truest oath is the one spoken from need\n\n[chorus]\ncall me heretic, I have earned the name\nthe truth is not a kindness, the truth is not polite\nthe truth is what remains when you strip away the night"
+    },
+    {
+      "num": 2,
+      "title": "Shadesmar",
+      "slug": "shadesmar",
+      "prompt": "dark ambient electronic, commanding female vocals, crystalline synths, Massive Attack meets Fever Ray, Ab minor, 68 BPM",
+      "lyrics": "[verse 1]\nI fell into Shadesmar when the assassins burned the ship\nand I sank through the ocean of glass beads, each one a soul\nthe Cognitive Realm inverts the sky, the ground is obsidian\n\n[chorus]\nShadesmar taught me what the scholars never could\nthat reality has layers and each layer is understood\nby those willing to abandon every comfort they have known\nand walk the other side of thought completely on their own\n\n[verse 2]\nI soulcast my way across the realm, transforming air to food\nand when I found the Perpendicularity, the path between the sides\nI stepped back into the Physical carrying everything the Cognitive provides\n\n[bridge]\nstrip away the physical, the body, the disguise\nand what remains is the pattern of the mind behind the eyes\n\n[chorus]\nShadesmar taught me what the scholars never could\nthat reality has layers and each layer is understood\nby those willing to abandon every comfort they have known\nand walk the other side of thought completely on their own"
+    },
+    {
+      "num": 3,
+      "title": "Soulcasting",
+      "slug": "soulcasting",
+      "prompt": "precise electronic, commanding female vocals, mathematical rhythms, Autechre meets Bjork, E minor, 76 BPM",
+      "lyrics": "[verse 1]\nevery object has a soul, a bead in the Cognitive sea\nthe stick said I am a stick, the most profound refusal\n\n[chorus]\nSoulcasting is philosophy made physical\nwhat are you, what could you be, what would you become\nif I offered you a different truth beneath a different sun\n\n[verse 2]\nI turned the air to stone and dropped it on an army's head\nStormlight is the currency, the fuel, the price of change\n\n[bridge]\nthe truth is that the universe is made of persuasion\nand I am very, very good at persuading men\n\n[chorus]\nSoulcasting is philosophy made physical\nwhat are you, what could you be, what would you become\nif I offered you a different truth beneath a different sun"
+    },
+    {
+      "num": 4,
+      "title": "Ivory",
+      "slug": "ivory",
+      "prompt": "elegant electronic, commanding female vocals, precise piano and synth, Olafur Arnalds meets Bjork, G minor, 72 BPM",
+      "lyrics": "[verse 1]\nIvory is an inkspren, precise as the edge of a page\nhe chose me because I think before I feel\n\n[chorus]\nIvory, you are the bond of the mind\nother spren bond passion, honor, truth, or lies\nyou bond the ones who question why the sun is in the skies\n\n[verse 2]\nthe Elsecallers are the order of the scholars and the seekers\nwe move between the realms, we are the cosmere's keepers\n\n[bridge]\nhe risked everything to bond a human, the other inkspren were afraid\nthe Recreance broke their trust, ten thousand spren betrayed\n\n[chorus]\nIvory, you are the bond of the mind\nother spren bond passion, honor, truth, or lies\nyou bond the ones who question why the sun is in the skies"
+    },
+    {
+      "num": 5,
+      "title": "The Alethi Throne",
+      "slug": "the-alethi-throne",
+      "prompt": "commanding electronic orchestral, powerful female vocals, Massive Attack meets Hans Zimmer, Bb minor, 78 BPM",
+      "lyrics": "[verse 1]\nElhokar is dead, stabbed by Moash on the steps of Kholinar\nthe crown passes to me, the heretic, the variant\nI did not want the throne, I wanted the library\n\n[chorus]\nthe Alethi throne is a weapon, not a seat\nit is a calculus of power that demands you not retreat\nI will rule because no one else can hold the contradictions\na queen who denies the church must navigate the frictions\n\n[verse 2]\nI must hold the coalition while Dalinar fights the war\nI must manage Taravangian, who is more than he appears, far more\n\n[bridge]\nthe irony is that the heretic is the one who holds the faith\nnot in gods but in the human capacity to create\n\n[chorus]\nthe Alethi throne is a weapon, not a seat\nit is a calculus of power that demands you not retreat\nI will rule because no one else can hold the contradictions\na queen who denies the church must navigate the frictions"
+    },
+    {
+      "num": 6,
+      "title": "Applied Philosophy",
+      "slug": "applied-philosophy",
+      "prompt": "sharp electronic, commanding female vocals, razor-precise percussion, Arca meets Bjork, C sharp minor, 80 BPM",
+      "lyrics": "[verse 1]\nthe lesson is that kindness without structure is a flood\nand cruelty with structure is a prison made of law\nbut intelligence with compassion is the sharpest thing I saw\n\n[chorus]\nphilosophy is not abstract, it is the blade you choose\nor win, depending on whether your axioms hold true\napplied philosophy means the book hits back when you hit you\n\n[verse 2]\nKaladin believes in protection, Dalinar believes in unity\nShallan believes in truth, and I believe in thinking clearly\n\n[bridge]\nthey say I have no heart, they say the heretic is cold\nbut I walked into Kholinar knowing I would not be consoled\n\n[chorus]\nphilosophy is not abstract, it is the blade you choose\nor win, depending on whether your axioms hold true\napplied philosophy means the book hits back when you hit you"
+    },
+    {
+      "num": 7,
+      "title": "What Gavilar Knew",
+      "slug": "what-gavilar-knew",
+      "prompt": "dark orchestral electronic, commanding female vocals, Dead Can Dance meets Portishead, F minor, 70 BPM",
+      "lyrics": "[verse 1]\nmy uncle held a sphere of Voidlight on the night he died\nhe was bargaining with the Parshendi, with the listeners\nhe wanted to restart the Desolations\n\n[chorus]\nwhat Gavilar knew could have saved us or destroyed us\nhe was not a villain, he was not a saint\nhe was a man with too much power and not enough restraint\n\n[verse 2]\nNale visited him, and Kalak, the mad and the precise\nand Gavilar collected their knowledge like a miser collects vice\n\n[bridge]\nintelligence without wisdom is the most dangerous weapon\na man who sees the cosmere but not his own reflection\nis a man who will burn the world and call it resurrection\n\n[chorus]\nwhat Gavilar knew could have saved us or destroyed us\nhe was not a villain, he was not a saint\nhe was a man with too much power and not enough restraint"
+    },
+    {
+      "num": 8,
+      "title": "The Theorem Holds",
+      "slug": "the-theorem-holds",
+      "prompt": "grand electronic orchestral finale, commanding female vocals, Bjork meets Max Richter, D major, 76 BPM",
+      "lyrics": "[verse 1]\nI began as a scholar in a library in Kharbranth\nand the theorem that I started with has held, has held alone\n\n[chorus]\nthe theorem holds, the mind is the greatest weapon\nknowledge is not power, knowledge is the light\nthat shows you where the power is and how to make it right\n\n[verse 2]\nDalinar fights with honor, Kaladin fights with grief\nbut I fight with the certainty that the universe makes sense\n\n[bridge]\nI am Jasnah Kholin, queen and heretic and scholar\nthe queen who reads is the one they should not overlook\n\n[chorus]\nthe theorem holds, the mind is the greatest weapon\nknowledge is not power, knowledge is the light\nthat shows you where the power is and how to make it right\n\n[outro]\nthe library does not burn\nthe theorem does not break\nthe heretic does not recant\nshe simply turns the page"
+    }
+  ]
+}

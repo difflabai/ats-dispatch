@@ -1,0 +1,67 @@
+{
+  "album": "stormlight-shallan",
+  "album_title": "Three Girls (The Shallan Album)",
+  "b2_folder": "album-stormlight-shallan",
+  "voice_instruct": "A young woman in her early twenties with a shifting, unstable voice. Three distinct registers: Shallan is bright and witty, Veil is low and streetwise, Radiant is measured and commanding. The voice shifts between these three without warning. Playful surface hiding deep fractures.",
+  "performer": "Shallan Davar",
+  "cover_strength": 0.8,
+  "audio_duration": 180,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "What I Did at Eleven",
+      "slug": "what-i-did-at-eleven",
+      "prompt": "dark art rock, shifting female vocals, piano and distorted strings, Bjork meets Radiohead, Eb minor, 70 BPM, childhood horror",
+      "lyrics": "[verse 1]\nI was eleven when my mother tried to kill me in the dark\nshe said I was corrupting, she said I carried a mark\nshe had a knife, my mother had a knife, her hand was on my arm\nand I reached for something underneath the panic and the harm\n\nPattern was already there, I did not know his name\na cryptic spren who bonded me before I understood the game\nI summoned a Blade at eleven years old, I summoned it and struck\nand my mother fell and my father saw and the whole house came unstuck\n\n[chorus]\nI killed my mother, that is the secret underneath\nthe one I buried so deep that even I could not breathe\nI killed my mother and my father took the blame\nand I split myself in three so I would never feel the same\n\n[verse 2]\nfather covered for me, told the world he did the deed\nhe wore the murderer's name like a coat, he wore it like a creed\nand I watched him change, the sorrow turned to sickness, turned to fists\nhe hit my brothers, drank the wine, and I drew pictures in the mist\n\nTestament, my first spren, she went deadeye when I broke the oath\nI forgot her, I forgot I had a Blade, I forgot the growth\nand Pattern came later, patient Pattern, who loves lies\nhe said mmm at my every deception like a scholar who keeps no ties\n\n[bridge]\nthe truth is a series of doors and I have locked them all\neach one holds a memory that would burn me if it falls\nI am Shallan, I am Veil, I am Radiant, I am none\nI am the girl who killed her mother before she was anyone\n\n[chorus]\nI killed my mother, that is the secret underneath\nthe one I buried so deep that even I could not breathe\nI killed my mother and my father took the blame\nand I split myself in three so I would never feel the same"
+    },
+    {
+      "num": 2,
+      "title": "Veil",
+      "slug": "veil",
+      "prompt": "smoky trip-hop, low female vocals, heavy bass, vinyl crackle, Portishead meets Massive Attack, Bb minor, 74 BPM",
+      "lyrics": "[verse 1]\nVeil wears a hat and a coat and a lie\nshe walks the underbelly of Urithiru like a spy\nthe Ghostbloods gave her missions and she played them like a hand\nbecause Shallan could not walk in shadow, Shallan could not stand\n\n[chorus]\nI am the mask she wears when the truth is too bright\nI am the woman in the tavern in the middle of the night\nI am not real, I know I am not real\nbut I am the only one of us who lets herself feel\n\n[verse 2]\nMraize watched me with those scarred eyes, the Ghostblood hunter\nhe collected trophies from across the cosmere, one from every wonder\nand I played double agent, Veil against the world\nwhile Shallan drew her pictures and Radiant stood unfurled\n\n[bridge]\nShallan thinks she made me up, she thinks I am the mask\nbut maybe I am the honest one, maybe she is the task\n\n[chorus]\nI am the mask she wears when the truth is too bright\nI am the woman in the tavern in the middle of the night\nI am not real, I know I am not real\nbut I am the only one of us who lets herself feel"
+    },
+    {
+      "num": 3,
+      "title": "Radiant",
+      "slug": "radiant",
+      "prompt": "commanding art pop, strong female vocals, martial drums, clean synths, Florence and the Machine meets Kate Bush, C minor, 78 BPM",
+      "lyrics": "[verse 1]\nRadiant stands where Shallan crumbles and where Veil would crawl\nshe wears the discipline like Shardplate, she does not fall\n\n[chorus]\nI am the armor and the armor has no heart\nI am the version that was built to never fall apart\nbut armor without a body is just metal in a room\nand I am starting to suspect that I am Shallan's tomb\n\n[verse 2]\nAdolin sees through all three of us, that is why she loves him\nhe calls her Shallan when she is pretending to be prim\n\n[bridge]\nthe integration is not a death, it is a coming home\nRadiant does not disappear, she settles in the bone\n\n[chorus]\nI am the armor and the armor has no heart\nI am the version that was built to never fall apart\nbut armor without a body is just metal in a room\nand I am starting to suspect that I am Shallan's tomb"
+    },
+    {
+      "num": 4,
+      "title": "Pattern",
+      "slug": "pattern",
+      "prompt": "glitchy art rock, female vocals with vocal processing, mathematical rhythms, Bjork meets Radiohead Kid A, F sharp minor, 72 BPM",
+      "lyrics": "[verse 1]\nmmm, he says, when I lie about my name\nmmm, he says, when I pretend away the shame\na cryptic spren is attracted to the lie itself\nthe complexity of deception, the pattern on the shelf\n\n[chorus]\nPattern, Pattern, you are the truth that feeds on lies\nyou bonded me because my self-deception was the prize\nyou needed someone fractured, someone layered, someone split\nand I needed someone patient enough to sit\n\n[verse 2]\nbut there was one before you, Pattern, there was Testament\na spren I bonded as a child and then abandoned in the rent\nwhen I broke my oaths at eleven, she went deadeye, she went dead\n\n[bridge]\nmmm, he says, you are the most complex pattern I have seen\na lie so beautiful it built three people from a single dream\n\n[chorus]\nPattern, Pattern, you are the truth that feeds on lies\nyou bonded me because my self-deception was the prize\nyou needed someone fractured, someone layered, someone split\nand I needed someone patient enough to sit"
+    },
+    {
+      "num": 5,
+      "title": "Lightweaving",
+      "slug": "lightweaving",
+      "prompt": "shimmering art rock, female vocals, layered harmonics, Cocteau Twins meets Talk Talk, A minor, 76 BPM",
+      "lyrics": "[verse 1]\nI draw because if I stop drawing I will have to look\nat what is real instead of what the stormlight took\nLightweaving is not just illusion, it is interpretation\nI take the light and tell it what to be, a transformation\n\n[chorus]\nevery drawing is a door I walk through sideways\nevery sketch is a confession in disguise\nI draw the world the way it should have been\nand somewhere in the light the truth survives\n\n[verse 2]\nI drew the Chasmfiend for Jasnah's research, every leg precise\nI drew Adolin in Shardplate standing like a cornerstone\nbut the drawings I keep hidden are the ones that matter most\nmy mother's face, my father's hands, the memories I host\n\n[bridge]\nstormlight bends to the shape of what I believe\nand what I believe is that beauty can hold what I grieve\n\n[chorus]\nevery drawing is a door I walk through sideways\nevery sketch is a confession in disguise\nI draw the world the way it should have been\nand somewhere in the light the truth survives"
+    },
+    {
+      "num": 6,
+      "title": "The Ghostbloods",
+      "slug": "the-ghostbloods",
+      "prompt": "dark trip-hop spy thriller, female vocals, menacing bass, Massive Attack meets Portishead, D minor, 74 BPM",
+      "lyrics": "[verse 1]\nMraize has a chicken from another world perched on his shoulder\nan Aviar, he calls it, a trophy from a cosmere hunt\nthe Ghostbloods recruited me through Tyn, who died for the mistake\nof thinking I was just a lighteyes scholar on the take\n\n[chorus]\nthe Ghostbloods see the cosmere like a map of trade routes\nInvestiture is the currency, the Shards are the disputes\nand I am in the middle holding secrets from all sides\ntelling truths to liars and lying where the truth resides\n\n[verse 2]\nThaidakar runs the Ghostbloods from a world I cannot name\na man who cannot die, they say, a lord of shadow and of flame\nI said I would not serve them, I said I would not be their tool\n\n[bridge]\nbut I took what they taught me, the cosmere awareness\nthe knowledge that Roshar is one world in a sea\nbecause the best lie is the one that sets you free\n\n[chorus]\nthe Ghostbloods see the cosmere like a map of trade routes\nInvestiture is the currency, the Shards are the disputes\nand I am in the middle holding secrets from all sides\ntelling truths to liars and lying where the truth resides"
+    },
+    {
+      "num": 7,
+      "title": "Testament",
+      "slug": "testament",
+      "prompt": "haunting sparse art rock, female vocals breaking, solo piano and distortion, Radiohead meets PJ Harvey, G minor, 66 BPM",
+      "lyrics": "[verse 1]\nI found her in Shadesmar, standing in the market with dead eyes\na deadeye cryptic, geometric patterns gone to ties\nof nothing, empty nothing, and the traders walked on by\nTestament, my first bond, my first oath, my first forsaking\n\n[chorus]\nTestament, I am sorry is not large enough a word\nI am sorry is a whisper and your silence is a sword\nyou gave me a Blade when I was a child and I used it in the dark\nand then I forgot you existed and that is the cruelest mark\n\n[verse 2]\nthe Shardblade I thought was my father's, the one hidden in the safe\nthat was Testament, a dead Blade, screaming when I held the hilt\nAdolin looked at her the way he looks at Maya\nwith a gentleness that says even the broken deserve a prayer\n\n[bridge]\nPattern is my bond now but Testament is my debt\nand I will carry both because I am not finished yet\n\n[chorus]\nTestament, I am sorry is not large enough a word\nI am sorry is a whisper and your silence is a sword\nyou gave me a Blade when I was a child and I used it in the dark\nand then I forgot you existed and that is the cruelest mark"
+    },
+    {
+      "num": 8,
+      "title": "I Am Shallan",
+      "slug": "i-am-shallan",
+      "prompt": "triumphant art rock finale, female vocals gaining clarity, full band, Florence and the Machine meets Kate Bush meets Bjork, D major, 78 BPM",
+      "lyrics": "[verse 1]\nVeil sits at the bar and Radiant stands at the door\nand Shallan is somewhere between them, standing on the floor\nI am the girl who drew flowers while her father hit her brothers\nI am the spy who played the Ghostbloods like a hand of cards\n\n[chorus]\nI am Shallan, I am finally just Shallan\nthe wit is mine, the grit is mine, the grief is mine, the plan\nthe lightweaving and the lying and the drawing and the dark\nI am Shallan and I hold the whole of it, every single spark\n\n[verse 2]\nAdolin stands in the doorway with his stupid perfect grin\nPattern hums approval, mmm, this is the most beautiful truth\nand Testament, somewhere in the Cognitive, stirs her empty gaze\n\n[bridge]\nI was eleven when I shattered, I was twenty when I healed\nnot healed like the wound is gone but healed like the wound is sealed\nwith light, with truth, with the understanding that the three\nwere always one, were always me, were always free\n\n[chorus]\nI am Shallan, I am finally just Shallan\nthe wit is mine, the grit is mine, the grief is mine, the plan\nthe lightweaving and the lying and the drawing and the dark\nI am Shallan and I hold the whole of it, every single spark\n\n[outro]\nthree girls walk into a room\nand one girl walks out\nand she is smiling\nbecause the drawing she holds in her hand\nis the first one she has ever drawn of herself"
+    }
+  ]
+}

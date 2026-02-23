@@ -1,0 +1,67 @@
+{
+  "album": "stormlight-adolin",
+  "album_title": "Golden Son (The Adolin Album)",
+  "b2_folder": "album-stormlight-adolin",
+  "voice_instruct": "A young man in his mid-twenties with a bright, confident voice full of warmth and energy. Charming and sincere. Think a beloved prince who fights with joy rather than duty, who cracks jokes in Shardplate, but who is discovering that being good might matter more than being great.",
+  "performer": "Adolin Kholin",
+  "cover_strength": 0.8,
+  "audio_duration": 180,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Shardbearer",
+      "slug": "shardbearer",
+      "prompt": "energetic arena rock, bright male vocals, driving guitar riff, Queens of the Stone Age meets Muse, E major, 84 BPM",
+      "lyrics": "[verse 1]\nShardplate locks around me and the crowd is on its feet\nI am Adolin Kholin, son of the Blackthorn, heir to the war\nstance one, Windstance, the opening position learned at eight\n\n[chorus]\nShardbearer, Shardbearer, golden boy of the Kholin line\nShardbearer, Shardbearer, the arena is mine\nBlade in hand, Plate on back, crowd screaming for the hit\nI was made for the spotlight and I will not quit\n\n[verse 2]\nthe real fight is not the duel, the real fight is the four\nShardbearers who ambushed me in the championship's core\nand Kaladin, the bridgeman, jumped in with a spear\n\n[bridge]\nI love the duel, I love the dance of Plate and Blade\nthe best fighter is the one who knows when not to play\n\n[chorus]\nShardbearer, Shardbearer, golden boy of the Kholin line\nShardbearer, Shardbearer, the arena is mine\nBlade in hand, Plate on back, crowd screaming for the hit\nI was made for the spotlight and I will not quit"
+    },
+    {
+      "num": 2,
+      "title": "Sadeas in the Corridor",
+      "slug": "sadeas-in-the-corridor",
+      "prompt": "dark power rock, bright male vocals turning grim, heavy guitar drop, Royal Blood meets Black Keys, D minor, 78 BPM",
+      "lyrics": "[verse 1]\nSadeas stood in the corridor with that smile, that knowing smile\nthe man who left my father's army on the Tower to die\nI did not plan it, I did not calculate, I did not think\nand my hand found his throat and my Blade found the need\n\n[chorus]\nI killed Sadeas in the corridor and I do not regret\nthe blood on the marble, the look in his eyes, the debt\nhe owed to every bridgeman, every Kholin soldier dead\nI killed Sadeas and the golden boy saw red\n\n[verse 2]\nthey would call it murder, father would call it wrong\nbut the battlefield was everywhere, Sadeas made it so\nand the corridor was just another plateau\n\n[bridge]\nI am not Kaladin, I do not carry guilt like a shrine\nI killed a man who deserved it and I would kill him twice\nand the golden boy learned that day that goodness has a price\n\n[chorus]\nI killed Sadeas in the corridor and I do not regret\nthe blood on the marble, the look in his eyes, the debt\nhe owed to every bridgeman, every Kholin soldier dead\nI killed Sadeas and the golden boy saw red"
+    },
+    {
+      "num": 3,
+      "title": "Maya",
+      "slug": "maya",
+      "prompt": "warm melodic rock, bright male vocals softening, acoustic guitar and electric, Foo Fighters meets Death Cab for Cutie, G major, 76 BPM",
+      "lyrics": "[verse 1]\nmy Shardblade screams when I summon her, ten heartbeats of pain\nbut I started talking to her anyway, the way you talk to rain\nhello, I said, I am Adolin, and I do not know your name\n\n[chorus]\nMaya, I am talking to you, can you hear\nMaya, I am holding you, I am right here\nthey say the deadeyes are gone, they say the bond is done\nbut I feel you pushing back against the nothing, reaching for the sun\n\n[verse 2]\nin Shadesmar she walked behind me, stumbling, eyes like glass\nthe honorspren said humans broke the oaths, the Recreance was our sin\nbut Maya chose to come with me despite what happened then\n\n[bridge]\nI am not a Radiant, I do not speak the Words\nbut I can talk to a dead woman and treat her like she is alive\nand sometimes that is all it takes for something to survive\n\n[chorus]\nMaya, I am talking to you, can you hear\nMaya, I am holding you, I am right here\nthey say the deadeyes are gone, they say the bond is done\nbut I feel you pushing back against the nothing, reaching for the sun"
+    },
+    {
+      "num": 4,
+      "title": "Lasting Integrity",
+      "slug": "lasting-integrity",
+      "prompt": "dramatic rock building to anthemic peak, bright male vocals, Muse meets Biffy Clyro, A minor to A major, 80 BPM",
+      "lyrics": "[verse 1]\nthe honorspren put humanity on trial in their fortress of glass\nI stood as defendant, Adolin Kholin, not a Radiant, not a sage\njust a man with a dead sword and a willingness to engage\n\n[chorus]\nbut Maya spoke, Maya spoke in the court of the dead\nMaya pushed through the deadeye silence and this is what she said\nwe chose, we chose, the spren were not the victims of the oath\nwe chose to die with our Radiants, we chose to honor both\n\n[verse 2]\nthe courtroom gasped, a deadeye had not spoken in millennia\nand she said we chose, three times she forced the words through the haze\nand Maya's testimony shattered every accusation\n\n[bridge]\na dead spren saying we chose is the brightest kind of flame\n\n[chorus]\nbut Maya spoke, Maya spoke in the court of the dead\nMaya pushed through the deadeye silence and this is what she said\nwe chose, we chose, the spren were not the victims of the oath\nwe chose to die with our Radiants, we chose to honor both"
+    },
+    {
+      "num": 5,
+      "title": "Not My Father",
+      "slug": "not-my-father",
+      "prompt": "honest melodic rock, bright male vocals with vulnerability, Jimmy Eat World meets Weezer, F major, 78 BPM",
+      "lyrics": "[verse 1]\nmy father is the Blackthorn, the most feared warrior alive\nI am not a Radiant, I do not hear the Words\nI am just good with a sword and I look good in the light\n\n[chorus]\nI am not my father, I am not the storm\nI am not the legend, I am not the form\nI am Adolin, the one who talks to swords\nand loves too easily and fights with joy, not lords\n\n[verse 2]\nfather writes books and builds coalitions and speaks with gods\nKaladin flies and Shallan shapeshifts\nand I am the guy who showed up with good hair and a training frame\n\n[bridge]\nmaybe the world needs the man who talks to his sword and means it\nwho loves his family openly and is not ashamed to be in it\n\n[chorus]\nI am not my father, I am not the storm\nI am not the legend, I am not the form\nI am Adolin, the one who talks to swords\nand loves too easily and fights with joy, not lords"
+    },
+    {
+      "num": 6,
+      "title": "Fashion and War",
+      "slug": "fashion-and-war",
+      "prompt": "fun upbeat rock, bright male vocals, catchy guitar hook, Weezer meets Fountains of Wayne, Bb major, 86 BPM",
+      "lyrics": "[verse 1]\nyes I care about my jacket, yes I coordinate the seams\nKaladin thinks it is vain, Shallan thinks it is a mask\n\n[chorus]\nfashion and war, they are not so different\nfashion and war, both require commitment\nthe right cut for the right occasion, the right stance for the right fight\nand looking good while doing good is not a lesser light\n\n[verse 2]\nShallan with her three faces and her artist's hand\nshe is the one who sees through the jacket and still wants to stand\nand this is love, the argument about the collar, not the fate\n\n[bridge]\nsomeone should write a song about the small things in between\nthe jacket, the joke, the held hand, the scene\n\n[chorus]\nfashion and war, they are not so different\nfashion and war, both require commitment\nthe right cut for the right occasion, the right stance for the right fight\nand looking good while doing good is not a lesser light"
+    },
+    {
+      "num": 7,
+      "title": "Renarin",
+      "slug": "renarin",
+      "prompt": "emotional power ballad rock, bright male vocals turning tender, Foo Fighters meets Gaslight Anthem, Eb major, 74 BPM",
+      "lyrics": "[verse 1]\nmy brother sees the future in stained glass behind his eyes\nRenarin shakes when it happens, his body locks and bends\nand I hold him through it every time\n\n[chorus]\nRenarin, little brother, I have got you, I am here\nRenarin, the bravest Kholin is the one who lives with fear\nyou see what is coming and you stand there anyway\nthat is more courage than a duel on any day\n\n[verse 2]\nhe picked up a Shardblade knowing it would scream in his hand\nhe charged into battle shaking, barely able to stand\n\n[bridge]\nmy brother is the strongest person I know, period, end of call\n\n[chorus]\nRenarin, little brother, I have got you, I am here\nRenarin, the bravest Kholin is the one who lives with fear\nyou see what is coming and you stand there anyway\nthat is more courage than a duel on any day"
+    },
+    {
+      "num": 8,
+      "title": "The Golden Son",
+      "slug": "the-golden-son",
+      "prompt": "triumphant arena rock finale, bright male vocals at full power, massive guitar hook, Muse meets Queens of the Stone Age, A major, 82 BPM",
+      "lyrics": "[verse 1]\nI am not the chosen one, I do not have a spren who glows\nI am the golden son of Alethkar and I am going to try\nMaya stirs in my grip, more alive each day\n\n[chorus]\nI am the golden son and I am not ashamed\nof being ordinary in a world of gods and flame\nI swing my Blade with joy, I wear my Plate with pride\nand I stand beside the Radiants with nothing left to hide\n\n[verse 2]\nand I am here, in the middle, holding them together\nnot with oaths or cosmic bonds but with leather\nand jokes and fashion tips and the willingness to show\nthat you do not need a destiny to be worth the glow\n\n[bridge]\nMaya reaches through the veil, her fingers finding mine\nthe proof that you can heal the dead if you refuse to let them die\n\n[chorus]\nI am the golden son and I am not ashamed\nof being ordinary in a world of gods and flame\nI swing my Blade with joy, I wear my Plate with pride\nand I stand beside the Radiants with nothing left to hide\n\n[outro]\nthe arena is empty now, the crowd has gone home\nbut the golden son is still here\npracticing his stances\ntalking to his sword\nand smiling"
+    }
+  ]
+}

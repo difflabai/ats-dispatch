@@ -1,0 +1,67 @@
+{
+  "album": "stormlight-dalinar",
+  "album_title": "The Blackthorn (The Dalinar Album)",
+  "b2_folder": "album-stormlight-dalinar",
+  "voice_instruct": "A man in his late fifties with a deep, commanding baritone. The voice of a warlord who has become a statesman. Heavy with authority and regret in equal measure. Deliberate, unhurried, like a man who once burned cities and now builds covenants. Military precision in every syllable.",
+  "performer": "Dalinar Kholin",
+  "cover_strength": 0.8,
+  "audio_duration": 180,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Blackthorn",
+      "slug": "the-blackthorn",
+      "prompt": "epic progressive rock, deep male vocals, heavy bass riff, complex time signatures, Tool meets King Crimson, D minor, 76 BPM",
+      "lyrics": "[verse 1]\nthey gave me the name Blackthorn when I was still a boy with red on my hands\nGavilar had the vision, I had the violence, that was how it began\nwe unified Alethkar one principality at a time by the sword\nand every highprince who refused to kneel was buried beneath his own accord\n\nthe Thrill would come like a second heartbeat, Nergaoul singing in my veins\na drumbeat underneath the battle, turning murder into champagne\nI loved it, I will not pretend I did not love the red\nI was the weapon and the wielder and I pointed where Gavilar said\n\n[chorus]\nI am the Blackthorn, I am the fist of Alethkar\nI broke ten armies on the Shattered Plains before I broke the war\nbut every name I earned in glory is a name that someone cursed\nand the Blackthorn's greatest victory was learning he was the worst\n\n[verse 2]\nthe Codes of War, the old ones, Nohadon's forgotten discipline\nI found them in a book that no one read and made them mine within\nno drinking on duty, no fighting without purpose, no retreat without reason\nthe other highprinces called me mad, they called it treason\n\nbut the visions came in every highstorm, Honor speaking from beyond the grave\nshowing me the Radiants, showing me what Roshar could not save\nand I realized the Blackthorn was not the answer, he was the problem\nthe weapon had to put itself away before it could solve them\n\n[bridge]\nunite them, the dead god keeps saying\nunite them, as if I know how\nI who divided every kingdom with a blade\nam now supposed to teach them to bow\n\n[chorus]\nI am the Blackthorn, I am the fist of Alethkar\nI broke ten armies on the Shattered Plains before I broke the war\nbut every name I earned in glory is a name that someone cursed\nand the Blackthorn's greatest victory was learning he was the worst"
+    },
+    {
+      "num": 2,
+      "title": "The Rift",
+      "slug": "the-rift",
+      "prompt": "dark heavy prog rock, deep male vocals, distorted bass, fire-crackle textures, Porcupine Tree meets Mastodon, F minor, 72 BPM",
+      "lyrics": "[verse 1]\nthe city of Rathalas stood on the edge of a rift in the earth\nTanalan's rebellion, a boy I had spared once, now a man with a sword\nEvi went to negotiate, my wife who hated every war I loved\nshe walked into the city with a white flag and a word\n\nI did not wait, the Thrill was in me and the army was a tide\nI gave the order and the oil went down and the fire went wide\nthe Rift became a furnace and the city became ash\nand somewhere in the burning I heard something that I could not unlash\n\n[chorus]\nEvi, Evi, I burned the city with you in it\nEvi, Evi, I heard your voice too late by a minute\nthe Rift took everything, the smoke took every prayer\nand I stood on the edge of the fire and I did not even know you were there\n\n[verse 2]\nI carried her body from the rubble and the char\nher face was gone, her hands were gone, I recognized the scar\nthe small one on her shoulder from the training yard in spring\nand I held what was left of my wife and I could not feel anything\n\nthe Thrill receded like a tide that leaves the wreckage on the sand\nand I looked at what I was, at what I held in my hand\nthe Blackthorn was not a hero, the Blackthorn was a fire\nand everything he touched eventually became his pyre\n\n[bridge]\nI went to the Nightwatcher because I could not carry her face\nI asked to forget, Cultivation listened, she took the weight\nbut she took more than grief, she took the memories of love\nshe pruned me like a plant and left the roots for something above\n\n[chorus]\nEvi, Evi, I burned the city with you in it\nEvi, Evi, I heard your voice too late by a minute\nthe Rift took everything, the smoke took every prayer\nand I stood on the edge of the fire and I did not even know you were there"
+    },
+    {
+      "num": 3,
+      "title": "Cultivation's Pruning",
+      "slug": "cultivations-pruning",
+      "prompt": "atmospheric prog rock, deep male vocals, clean arpeggios, Steven Wilson meets Opeth, Ab minor, 68 BPM",
+      "lyrics": "[verse 1]\nI asked to have my pain removed, the Nightwatcher grinned\nshe offered me a boon and curse but Cultivation intervened\nthe old god took my memories, not just the grief but everything\nmy wife became a blur, her name became a missing string\n\n[chorus]\nCultivation does not give you what you want\nshe gives you what you need to grow beyond the haunt\nshe pruned my memories like branches from a vine\nand what grew back was not the man, but something more aligned\n\n[verse 2]\nthe memories returned in pieces, in the worst possible order\nfirst the love, then the burning, then the body at the border\n\n[bridge]\nCultivation sees in seasons, not in days\nshe planted something in the grief, a seed inside the haze\n\n[chorus]\nCultivation does not give you what you want\nshe gives you what you need to grow beyond the haunt\nshe pruned my memories like branches from a vine\nand what grew back was not the man, but something more aligned"
+    },
+    {
+      "num": 4,
+      "title": "The Thrill",
+      "slug": "the-thrill",
+      "prompt": "aggressive prog metal, deep male vocals, heavy riff, Mastodon meets Tool, E minor, 84 BPM",
+      "lyrics": "[verse 1]\nNergaoul, the Unmade, they never told us he was there\na spren of ancient hatred wrapped in battle's electric air\nthe Thrill is what we called it, the joy of combat, the red song\n\n[chorus]\nthe Thrill, the Thrill, it tastes like copper and like fire\nthe Thrill, the Thrill, it lifts you up and pulls you higher\nbut the thing that makes you powerful is the thing that makes you blind\nand every battle won by Thrill leaves something human behind\n\n[verse 2]\nI chased it for forty years, the Thrill was my religion\nbetter than wine, better than love, better than any decision\n\n[bridge]\nthe hardest battle was the morning when the Thrill was not there anymore\nand I had to fight with only what I was, no chemical, no song\n\n[chorus]\nthe Thrill, the Thrill, it tastes like copper and like fire\nthe Thrill, the Thrill, it lifts you up and pulls you higher\nbut the thing that makes you powerful is the thing that makes you blind\nand every battle won by Thrill leaves something human behind"
+    },
+    {
+      "num": 5,
+      "title": "Oathbringer",
+      "slug": "oathbringer",
+      "prompt": "epic atmospheric prog rock, deep male vocals, orchestral swells, Pink Floyd meets Porcupine Tree, D minor to D major, 78 BPM",
+      "lyrics": "[verse 1]\nI am the man who burned Rathalas, that is the truth I owe\nthe memories came back and showed me everything below\n\n[chorus]\nthe most important words a man can say are I will do better\nnot I am sorry, not I was wrong, not I will try\nI will do better, that is the oath I hold together\nI will do better until the day I die\n\n[verse 2]\nI wrote a book, I called it Oathbringer, for the Blade I gave away\nI traded it to buy a bridgeman, Kaladin was worth the price\n\n[bridge]\nyou cannot have my pain, I told Odium to his face\nhe offered to take the guilt, to make the memories erase\nbut I had earned that pain, I had paid for it in fire\n\n[chorus]\nthe most important words a man can say are I will do better\nnot I am sorry, not I was wrong, not I will try\nI will do better, that is the oath I hold together\nI will do better until the day I die"
+    },
+    {
+      "num": 6,
+      "title": "Unite Them",
+      "slug": "unite-them",
+      "prompt": "building prog rock anthem, deep male vocals, Rush meets Porcupine Tree, G major, 80 BPM",
+      "lyrics": "[verse 1]\nunite them, the dead god said in every vision, every storm\nunite the highprinces, unite the kingdoms, reform the form\n\n[chorus]\nunite them, not by force, not by fear, not by the Blade\nunite them by the truth that none of us is self-made\nunite them by the confession that the Blackthorn was a sin\nunite them by the radical act of letting everyone in\n\n[verse 2]\nAzir and Thaylenah and Iri and the Makabaki states\nI brought them to the table not as conqueror but as peer\n\n[bridge]\nNavani beside me, the woman who sees the science in the divine\n\n[chorus]\nunite them, not by force, not by fear, not by the Blade\nunite them by the truth that none of us is self-made\nunite them by the confession that the Blackthorn was a sin\nunite them by the radical act of letting everyone in"
+    },
+    {
+      "num": 7,
+      "title": "You Cannot Have My Pain",
+      "slug": "you-cannot-have-my-pain",
+      "prompt": "intense dramatic prog rock, deep male vocals, Dream Theater meets Opeth, Bb minor, 82 BPM",
+      "lyrics": "[verse 1]\nOdium came to me in the storm with a face like golden warmth\nhe said I understand you, Dalinar, I was there at the Rift\n\n[chorus]\nyou cannot have my pain\nyou cannot have my guilt, you cannot have my grief\nyou cannot have my pain\nit is mine, I forged it in the fire of my belief\nyou cannot have my pain\nbecause the pain is what reminds me that the man inside was real\nyou cannot have my pain\nand you will never understand why I refuse to kneel\n\n[verse 2]\nhe screamed, the god of hatred screamed when I said no\nI said the Words, the Third Ideal, I am Unity\n\n[bridge]\nthe Perpendicularity opened at my feet\nthe realms collapsed together, Physical and Cognitive meet\n\n[chorus]\nyou cannot have my pain\nyou cannot have my guilt, you cannot have my grief\nyou cannot have my pain\nit is mine, I forged it in the fire of my belief"
+    },
+    {
+      "num": 8,
+      "title": "The Way of Kings",
+      "slug": "the-way-of-kings",
+      "prompt": "grand prog rock finale, deep male vocals, full band orchestral, Yes meets Genesis meets Pink Floyd, C major, 76 BPM",
+      "lyrics": "[verse 1]\nNohadon walked the path from Abamabar to Urithiru\na king who chose to walk when he could ride, who served when he could rule\n\n[chorus]\na king is not the one who takes, a king is one who gives\na king is not the one who breaks, a king is one who lives\nwith the weight of every failure worn as openly as gold\nthe Way of Kings is not a crown, it is a hand to hold\n\n[verse 2]\nI gave away Oathbringer the Blade to save one bridgeman's life\nmy sons think I am changed, Adolin still sees the old man in my eyes\nRenarin sees the future and it terrifies the skies\n\n[bridge]\nthe Way of Kings is not a destination, it is the road\nit is the moment when the Blackthorn puts the weapon down\n\n[chorus]\na king is not the one who takes, a king is one who gives\na king is not the one who breaks, a king is one who lives\nwith the weight of every failure worn as openly as gold\nthe Way of Kings is not a crown, it is a hand to hold\n\n[outro]\nthe highstorm breaks across the Shattered Plains\nand in its wake, the old soldier walks on\nnot because the path is clear\nbut because walking is the point"
+    }
+  ]
+}
