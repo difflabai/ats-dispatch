@@ -112,6 +112,38 @@ generate_interludes() {
   bash "$GENERATE_ALBUM" "$INTERLUDES_CONFIG"
 }
 
+generate_single_interlude() {
+  local track_index="$1"
+
+  if [ ! -f "$INTERLUDES_CONFIG" ]; then
+    echo "ERROR: Interludes config not found: $INTERLUDES_CONFIG"
+    return 1
+  fi
+
+  local interlude_title
+  interlude_title=$(python3 -c "import json; print(json.load(open('$INTERLUDES_CONFIG'))['tracks'][$track_index]['title'])")
+
+  local tmp_config
+  tmp_config=$(mktemp /tmp/interlude-XXXXXX.json)
+  python3 -c "
+import json, sys
+cfg = json.load(open('$INTERLUDES_CONFIG'))
+cfg['tracks'] = [cfg['tracks'][$track_index]]
+json.dump(cfg, open('$tmp_config', 'w'), indent=2)
+"
+
+  echo ""
+  echo "============================================================"
+  echo "  GENERATING INTERLUDE: $interlude_title"
+  echo "  Config: $INTERLUDES_CONFIG (track $track_index)"
+  echo "  Time: $(date)"
+  echo "============================================================"
+  echo ""
+
+  bash "$GENERATE_ALBUM" "$tmp_config"
+  rm -f "$tmp_config"
+}
+
 START_TIME=$(date +%s)
 
 echo "============================================================"
@@ -127,11 +159,13 @@ elif [ "$INTERLUDES_ONLY" = true ]; then
 else
   for i in "${!ALBUMS[@]}"; do
     generate_album "${ALBUMS[$i]}"
-  done
 
-  if [ "$SKIP_INTERLUDES" = false ]; then
-    generate_interludes
-  fi
+    # Generate the interlude that bridges this album to the next one
+    # (no interlude after the last album, szeth)
+    if [ "$SKIP_INTERLUDES" = false ] && [ "$i" -lt $((${#ALBUMS[@]} - 1)) ]; then
+      generate_single_interlude "$i"
+    fi
+  done
 fi
 
 END_TIME=$(date +%s)
