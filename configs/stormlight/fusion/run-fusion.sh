@@ -29,10 +29,12 @@ echo "Characters: ${CHARACTERS[*]}"
 echo "Config dir: ${SCRIPT_DIR}"
 echo ""
 
+missing=0
 for char in "${CHARACTERS[@]}"; do
   config="${SCRIPT_DIR}/${char}.json"
   if [[ ! -f "$config" ]]; then
     echo "ERROR: Config not found: ${config}"
+    missing=$((missing + 1))
     continue
   fi
   echo "--- Generating: ${char} ---"
@@ -42,4 +44,8 @@ for char in "${CHARACTERS[@]}"; do
   echo ""
 done
 
+if [[ $missing -gt 0 ]]; then
+  echo "=== Fusion albums finished with ${missing} missing config(s) ==="
+  exit 1
+fi
 echo "=== All fusion albums complete ==="
