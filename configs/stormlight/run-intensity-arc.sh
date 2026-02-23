@@ -86,7 +86,7 @@ generate_album() {
 
   echo ""
   echo "============================================================"
-  echo "  GENERATING: $(python3 -c "import json; print(json.load(open(\'$config\'))[\'album_title\'])")"
+  echo "  GENERATING: $(python3 -c "import json; print(json.load(open('$config'))['album_title'])")"
   echo "  Config: $config"
   echo "  Time: $(date)"
   echo "============================================================"
