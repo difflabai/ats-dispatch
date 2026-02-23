@@ -110,3 +110,7 @@ echo "  Acts completed: $COMPLETED"
 echo "  Acts failed:    $FAILED"
 echo "  Total time:     ${TOTAL_MIN} minutes"
 echo "=============================================="
+
+if [[ "$FAILED" -gt 0 ]]; then
+  exit 1
+fi
