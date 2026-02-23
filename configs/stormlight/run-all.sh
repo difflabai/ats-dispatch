@@ -15,7 +15,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-GENERATE="${GENERATE_ALBUM:-$HOME/bin/generate-album.sh}"
+GENERATE="${GENERATE_ALBUM:-$(command -v generate-album.sh 2>/dev/null || echo "$HOME/bin/generate-album.sh")}"
 
 ALL_ALBUMS=(kaladin dalinar shallan szeth jasnah adolin)
 
