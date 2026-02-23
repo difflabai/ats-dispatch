@@ -1,0 +1,46 @@
+{
+  "album": "truthless-ceremony",
+  "album_title": "Truthless Ceremony",
+  "b2_folder": "stormlight/fusion/szeth",
+  "voice_instruct": "Middle-aged man, precise and haunted diction. Trent Reznor's controlled rage meets the disciplined restraint of a Japanese Noh theater vocalist. Whispered passages of haiku-like brevity explode into industrial screams. Voice carries the weight of a man forced to kill against every moral fiber. Shakuhachi breath control in vocal delivery.",
+  "performer": "Szeth-son-son-Vallano",
+  "cover_strength": 0.8,
+  "audio_duration": 240,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Truthless",
+      "slug": "truthless",
+      "prompt": "industrial Japanese traditional fusion, opening: solo shakuhachi flute in empty space, then massive Nine Inch Nails distorted bass and mechanical drums crash in, taiko drums layered with industrial kick patterns, 100 BPM relentless, verse: haiku-paced vocal delivery over minimal industrial texture and shamisen, chorus: full NIN wall of noise with taiko thunder, male vocals shifting between Noh theater control and industrial screaming",
+      "lyrics": "[intro - shakuhachi solo]\n\n[verse 1 - haiku pacing, each line separated by silence]\nWhite stone on my chest,\nTruthless, they declared me so,\nI obey and kill,\n\nThe stone says I must,\nWhoever holds it commands,\nMy blade their justice,\n\n[chorus - industrial explosion]\nTruthless! Truthless! I am the weapon they wield!\nTruthless! Truthless! I am the blood on the field!\nShin meadows burning in my memory,\nWhile my hands perform their ceremony!\n\n[verse 2 - haiku pacing]\nBarefoot on the stone,\nShin believe the ground is holy,\nI have walked on graves,\n\nEach king that I killed,\nWas a prayer I couldn't speak,\nForgiveness denied,\n\n[chorus]\nTruthless! Truthless! I am the weapon they wield!\nTruthless! Truthless! I am the blood on the field!\nShakuhachi screaming through the industrial waste,\nEvery death a note in sequence placed!\n\n[bridge - taiko drums only, building]\nI did not choose this,\nI did not choose this,\nThe stone chose for me,\nThe stone chose for me,\n\n[outro - shakuhachi returns over fading distortion]\nTruthless in a world of lies,\nThe most honest man alive"
+    },
+    {
+      "num": 2,
+      "title": "Assassin in White",
+      "slug": "assassin-in-white",
+      "prompt": "industrial Japanese traditional fusion, kinetic and violent: rapid taiko patterns merged with breakbeat industrial drums, 130 BPM aggressive, shamisen riffs played through heavy distortion pedals, male vocal switching between whispered Japanese-influenced phrasing and screamed industrial rage, moments of absolute silence before violent sonic attacks",
+      "lyrics": "[verse 1 - whispered, precise]\nWhite clothes for mourning,\nI wear the funeral of every king,\nLashing upward, gravity reversed,\nThe ceiling is my killing floor,\nWalking on walls, walking on air,\nEvery surface is a prayer,\n\n[chorus - screamed over industrial]\nAssassin! In white! The sky breaks when I fight!\nAssassin! In white! Gravity bends to my might!\nHonorblade singing, Stormlight burning,\nA weapon weeping while the world is turning!\n\n[verse 2 - controlled]\nGavilar fell on a quiet night,\nI wept as I took his life,\nHe whispered words I didn't understand,\nThe Black Sphere heavy in my hand,\nEvery lashing costs a piece of soul,\nEvery target leaves me less whole,\n\n[chorus]\nAssassin! In white! The sky breaks when I fight!\nAssassin! In white! Gravity bends to my might!\nTaiko thunder, industrial rain,\nA holy man drowning in profane!\n\n[bridge - shakuhachi and distortion duet]\nForgive me, forgive me,\nI am the blade, not the hand,\nForgive me, forgive me,\nI am truthless in this land,\n\n[outro - silence, then single taiko hit]\nThe white clothes are not for stealth,\nThey are for the mourning of myself"
+    },
+    {
+      "num": 3,
+      "title": "Stone Shamans",
+      "slug": "stone-shamans",
+      "prompt": "industrial Japanese traditional fusion, ceremonial and oppressive: Noh theater percussion patterns with industrial bass drone, biwa lute samples processed through ring modulation, 85 BPM slow and ritualistic, male vocal in ceremonial chant style with industrial vocal processing, koto arpeggios glitching into machine noise",
+      "lyrics": "[verse 1 - ceremonial]\nThe Stone Shamans guard the truth,\nSeven Honorblades hidden in the roof\nOf a temple built on meadow grass,\nWhere no man walks with shoes of brass,\n\nSacred ground, they told me so,\nSacred lies, I've come to know,\nThey made me Truthless for the crime\nOf speaking truth before its time,\n\n[chorus - processed chant]\nStone Shamans, keepers of the lie,\nStone Shamans, taught me how to die,\nThe ceremony breaks the man,\nThe ritual executes the plan,\nShamans! Shamans! Stone and steel!\nShamans! Shamans! Kneel and kneel!\n\n[verse 2 - building intensity]\nShin are peaceful, Shin are kind,\nShin are masters of the blind\nObedience that chains a soul\nTo a white stone's absolute control,\nBut I saw the Voidbringers return,\nI spoke the truth and watched it burn,\nMy reward: a life of blood,\nMy punishment: an endless flood,\n\n[chorus]\nStone Shamans, keepers of the lie,\nStone Shamans, taught me how to die,\nThe ceremony breaks the man,\nThe ritual executes the plan,\nShamans! Shamans! Stone and steel!\nShamans! Shamans! Kneel and kneel!\n\n[bridge - koto solo into industrial breakdown]\nThe stone is a lie,\nThe stone is a lie,\nThe stone is a lie,\n\n[outro]\nAnd when the truth comes crashing down,\nThe shamans scatter, the temple drowns"
+    },
+    {
+      "num": 4,
+      "title": "Nightblood",
+      "slug": "nightblood",
+      "prompt": "industrial Japanese traditional fusion, alien and hungry: subsonic bass frequencies and dissonant industrial textures representing the sword's hunger, 95 BPM with irregular meter shifts, a duet between clean shakuhachi representing Szeth and distorted processed voice representing Nightblood, taiko drums becoming increasingly chaotic, NIN's The Fragile era production meets gagaku court music",
+      "lyrics": "[Nightblood voice - distorted, childlike]\nWould you like to destroy some evil today?\n\n[verse 1 - Szeth]\nBlack sword that drinks,\nA thousand souls in ink,\nNightblood asks me every dawn,\nShall we destroy? Shall we move on?\n\nThe sword cannot distinguish,\nBetween the wicked and the righteous,\nIt only knows the hunger,\nAnd the silence after thunder,\n\n[chorus - both voices]\nDestroy, destroy, destroy the evil,\n(Would you like to destroy some evil?)\nBut who decides what evil means,\n(I do, I do, I do, I do!)\nTwo broken weapons, one black, one white,\nConsuming darkness, consuming light!\n\n[verse 2 - Szeth]\nI was the blade without a will,\nNightblood is the will without the skill\nTo know the difference, mercy, grace,\nTogether we are empty space\nThat swallows everything it finds,\nTwo hungers of two different kinds,\n\n[chorus]\nDestroy, destroy, destroy the evil,\n(Would you like to destroy some evil?)\nBut who decides what evil means,\n(I do, I do, I do, I do!)\nTwo broken weapons, one black, one white,\nConsuming darkness, consuming light!\n\n[bridge - industrial chaos]\nThe sword sings in frequencies below hearing,\nThe man prays in frequencies above believing,\n\n[outro - shakuhachi and subsonic bass]\nWould you like to destroy some evil today?\nNo, Nightblood,\nToday we rest"
+    },
+    {
+      "num": 5,
+      "title": "Skybreaker's Oath",
+      "slug": "skybreakers-oath",
+      "prompt": "industrial Japanese traditional fusion, resolution and clarity: clean shamisen and shakuhachi over precise industrial beats, 105 BPM structured and purposeful, male vocal finding calm certainty, taiko accents marking oath moments, production cleaner than previous tracks representing clarity of purpose and law, Noh theater formality meeting industrial discipline, ending with solo shakuhachi over silence",
+      "lyrics": "[verse 1 - measured, certain]\nI swear to follow the law,\nThe Fifth Ideal: I am the law,\nSkybreaker's oath upon my tongue,\nThe hymn of justice finally sung,\n\nNo more the weapon of another's will,\nNo more the puppet, no more the kill\nWithout conviction, without creed,\nI choose the law above the need,\n\n[chorus]\nI am the law, the law is me,\nSkybreaker's oath has set me free,\nNot free from pain, not free from cost,\nBut free to choose what must be lost,\nSkybreaker! Skybreaker!\nThe truthless man becomes the truth maker!\n\n[verse 2]\nNin-son-God showed me the way,\nJustice older than the light of day,\nThe law is stone beneath my feet,\nShin ground made sacred, made complete,\nI walked on graves but now I see\nThe graves were lessons leading me\nTo stand on something absolute,\nThe law, the law, the final pursuit,\n\n[chorus]\nI am the law, the law is me,\nSkybreaker's oath has set me free,\nNot free from pain, not free from cost,\nBut free to choose what must be lost,\nSkybreaker! Skybreaker!\nThe truthless man becomes the truth maker!\n\n[bridge - haiku, final]\nBarefoot on the stone,\nThe white clothes clean for the first time,\nJustice is my home,\n\n[outro - solo shakuhachi fading to silence]\nTruthless no more,\nTruthless no more,\nI am Szeth-son-son-Vallano,\nAnd I speak only truth"
+    }
+  ]
+}
