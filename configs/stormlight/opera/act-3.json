@@ -1,0 +1,83 @@
+{
+  "album": "wor-opera-act3",
+  "album_title": "Words of Radiance: A Rock Opera — Act III: Cracks",
+  "b2_folder": "stormlight-opera/act3",
+  "voice_instruct": "A powerful rock vocalist with dramatic theatrical delivery, soaring range and emotional intensity, like a progressive rock frontman performing in a concept album",
+  "performer": "Words of Radiance Opera",
+  "cover_strength": 0.8,
+  "audio_duration": 240,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Three Girls",
+      "slug": "three-girls",
+      "performer": "Shallan",
+      "voice_instruct": "A bright, theatrical female soprano fracturing into three distinct vocal personalities, shifting between them mid-phrase",
+      "prompt": "progressive rock opera, cinematic, fractured art-rock with Honor's Theme hymn-like melody split into three competing variations in canon, shifting time signatures representing identity fragments, theatrical female vocals with personality shifts, concept album continuity, theatrical, identity crisis in music",
+      "lyrics": "[verse 1]\nShallan draws the world the way she wants,\nVeil walks the underworld and calmly taunts,\nRadiant stands with posture, poise, and blade,\nThree girls wearing masks that Shallan made.\n\n[verse 2]\nWhich one is real? The one who hides in art?\nThe one who fights? The one who plays the part?\nPattern buzzes, \"Mmm, a lie, a lie,\"\nThree versions of a girl who'd rather die\nThan face the truth of what she did at ten,\nThe blade, the mother, never speak again.\n\n[chorus]\nThree girls, three masks, three ways to run,\nFrom the one true Shallan underneath the sun,\nShe fractures like a gemstone, cracked and bright,\nEach piece pretending that she's doing right.\n\n[bridge]\nThe honor theme, but played in three-part round,\nEach version slightly off, a fractured sound,\nThey harmonize, they clash, they cannot stay,\nIn tune, and something's got to give someday.\n\n[verse 3]\nVeil says, \"Forget.\" Radiant says, \"Stand firm.\"\nAnd Shallan, little Shallan, starts to squirm,\nShe draws another face, another name,\nAnother mask to play another's game.\n\n[outro]\nThree girls, one body, one terrified heart,\nComing together, falling apart."
+    },
+    {
+      "num": 2,
+      "title": "Honor Is Dead",
+      "slug": "honor-is-dead",
+      "performer": "Kaladin",
+      "voice_instruct": "A raw, emotionally intense male baritone at his lowest point, bitter and defeated but with one stubborn ember of defiance that refuses to die",
+      "prompt": "progressive rock opera, cinematic, sparse acoustic desolation, deliberate silence where Honor's Theme should play, building to single piano note at the end echoing the hymn, minimal arrangement, isolated male vocals, concept album continuity, theatrical, the lowest point before the climb",
+      "lyrics": "[verse 1]\nThey threw me in a cell for standing tall,\nFor daring to protect, for crossing walls\nBetween the lighteyes and the darkeyed ranks,\nAnd this is how the world returns its thanks.\n\n[verse 2]\nThe arena duel, I jumped to save a prince,\nAnd every lighteyes wants my head ever since,\nElhokar, the king, he wanted me to die,\nFor the crime of honor, what a lie.\n\n[chorus]\nHonor is dead, I'll see what I can do,\nHonor is dead, and I am dying too,\nBut somewhere in the ashes of the phrase,\nA stubborn ember refuses to be razed.\n\n[bridge]\nSyl is gone, or nearly, barely there,\nA spren of honor in a world that doesn't care,\nThe cistern fills with water, dark and cold,\nAnd I am so tired of being brave and bold.\n\n[verse 3]\nBut the men of Bridge Four stand outside my door,\nRock and Teft and Sigzil, they implore,\n\"Captain, captain, we're still here, we're still yours,\"\nAnd something, one small note, begins to thaw the floors.\n\n[outro]\nHonor is dead, but I, I am not,\nNot yet, not yet, not yet, I am not."
+    },
+    {
+      "num": 3,
+      "title": "The Scholar's Oath",
+      "slug": "the-scholars-oath",
+      "performer": "Jasnah",
+      "voice_instruct": "A commanding, precise female mezzo-soprano with intellectual authority, measured delivery like a lecturer who could also command armies, cool and controlled with hidden passion",
+      "prompt": "progressive rock opera, cinematic, intellectual progressive rock with Honor's Theme hymn-like melody as intellectual variation on harpsichord and cello, complex time signatures, precise female vocals, baroque-influenced arrangements, concept album continuity, theatrical, character introduction",
+      "lyrics": "[verse 1]\nWhile soldiers swing their Blades and call it art,\nI wage my war with logic, mind, and heart,\nThe Voidbringers are coming, this I know,\nBecause the evidence has told me so.\n\n[verse 2]\nMy mother called me heretic and wrong,\nAn atheist who doesn't sing the song,\nBut I have read what others will not read,\nAnd I have pulled the truth from history's seed.\n\n[chorus]\nThe scholar's oath is this: I will not turn\nFrom any truth, no matter how it burns,\nI'll follow where the evidence will lead,\nThrough heresy and exile, word and deed.\n\n[bridge]\nHonor's melody on cello, dark and slow,\nAn intellectual variation, measured, low,\nNot a battle cry, but something just as strong,\nThe quiet oath to prove the world is wrong.\n\n[verse 3]\nShallan was my ward, my student, my mistake,\nI should have seen the cracks about to break,\nBut I was buried in my research deep,\nAnd now the Desolation wakes from sleep.\n\n[outro]\nLet them call me cold, let them call me vain,\nThe scholar's oath remains through every pain."
+    },
+    {
+      "num": 4,
+      "title": "Ivory Tower",
+      "slug": "ivory-tower",
+      "performer": "Jasnah",
+      "voice_instruct": "A commanding, precise female mezzo-soprano with intellectual authority, measured delivery that breaks into urgency during the attack sequence",
+      "prompt": "progressive rock opera, cinematic, tense intellectual rock building to violent attack sequence, Honor's Theme echoed from Dalinar's unite-them on distant choir, rising chromatic stormwall motif for the assassination attack, dramatic female vocals, orchestral arrangements, concept album continuity, theatrical, apparent death scene",
+      "lyrics": "[verse 1]\nThe Parshendi, the Parshmen, all the same,\nAn ancient people wearing different names,\nThe Voidbringers were never some dark race,\nThey were the ones we kept in servile place.\n\n[verse 2]\nI told Dalinar, sent the evidence,\nBut will he listen? Will it make a dent?\n\"Unite them,\" said the voice in his visions' light,\nBut unity means seeing with new sight.\n\n[chorus]\nMy ivory tower crumbles, stone by stone,\nThe truth I've found means I cannot atone\nFor what we've done, for how we've lived this lie,\nAnd someone on this ship wants me to die.\n\n[bridge]\nThe blade comes in the dark, the assassins' creep,\nI Soulcast air to smoke but the cut is deep,\nThe stormwall of betrayal, steel and night,\nAnd Jasnah Kholin falls from mortal sight.\n\n[verse 3]\nBut scholars do not die so easily,\nI pull myself through pain to Shadesmar's sea,\nA realm of thought where flesh can still endure,\nIf you are cold enough, if you are sure.\n\n[outro]\nThey'll think I'm dead, let them believe the tale,\nThe ivory tower stands beyond the veil."
+    },
+    {
+      "num": 5,
+      "title": "Shadesmar",
+      "slug": "shadesmar",
+      "performer": "Jasnah",
+      "voice_instruct": "A commanding, precise female mezzo-soprano navigating alien landscape, cool intellectual delivery with growing wonder and isolation",
+      "prompt": "progressive rock opera, cinematic, ambient progressive rock with inverted stormwall motif rising from ground on reversed strings, Honor's Theme as compass on solo cello, otherworldly synth pads and bead-ocean sound design, atmospheric female vocals, concept album continuity, theatrical, Shadesmar exploration",
+      "lyrics": "[verse 1]\nAn ocean made of beads, a sky of black,\nNo sun, no stars, no way of going back,\nThe spren here walk like people, tall and strange,\nAnd I am mortal, fragile, out of range.\n\n[verse 2]\nIvory, my spren, a figure wrought of ink,\nHe guides me past the places where I'd sink,\n\"The perpendicularity,\" he says, \"will lead you home,\"\nBut it's a world away through cognitive foam.\n\n[chorus]\nShadesmar, the mind behind the mask,\nWhere every object answers if you ask,\nI walk the realm of thought without a map,\nAnd the stormwall here inverts, a thunder-clap\nThat rises from the ground into the air,\nA scholar lost but never in despair.\n\n[bridge]\nHonor's theme is my compass, faint but true,\nA melody that tells me what to do,\nKeep walking, Jasnah, logic is your blade,\nThe world needs what the scholar's mind has made.\n\n[verse 3]\nWeeks become a blur, the landscape shifts,\nI trade with spren, I navigate the rifts,\nAnd slowly, slowly, I can feel the seam\nBetween the worlds, the edge of waking dream.\n\n[outro]\nShadesmar is a mirror, dark and deep,\nBut Jasnah Kholin does not fall asleep."
+    },
+    {
+      "num": 6,
+      "title": "The Kill List",
+      "slug": "the-kill-list",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted, controlled male tenor with Middle Eastern inflections, mechanical and emotionless delivery as if the humanity has been drained out, precise and cold",
+      "prompt": "progressive rock opera, cinematic, mechanical industrial rock with relentless distorted industrial Thrill riff as mechanical heartbeat, drop-tuned bitcrushed power chord, glitched percussion, complete absence of Honor's Theme, robotic precision in rhythm, haunted male vocals, concept album continuity, theatrical, assassination montage",
+      "lyrics": "[verse 1]\nA list of names, each written clean and clear,\nThe highprinces of Roshar, the kings of fear,\nMy masters say to cut them, one by one,\nUntil the constellation's come undone.\n\n[verse 2]\nI walk through walls, I walk on ceilings high,\nEach Lashing makes the gravity comply,\nThey send their guards, their Shardbearers, their best,\nAnd one by one, I put them all to rest.\n\n[chorus]\nThe kill list, the kill list, name by name,\nEach face a stranger, each death just the same,\nThe Thrill, a heartbeat, mechanical and cold,\nI am a weapon, doing what I'm told.\n\n[bridge]\nNo honor here, no melody, no hymn,\nJust silence in the places growing dim,\nI am the Assassin in White, they say,\nAnd Szeth-son-Vallano dies a bit each day.\n\n[verse 3]\nTaravangian gave the order, drew the plan,\nA diagram of murder, spoke the man,\n\"For the good of all, these leaders have to fall,\"\nAnd I obey, because I'm nothing, nothing at all.\n\n[outro]\nThe kill list shortens, but the dead remain,\nA truthless man, dissolving in the rain."
+    },
+    {
+      "num": 7,
+      "title": "The Rift",
+      "slug": "the-rift",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone consumed by horror at his own past, the voice of a man remembering the worst thing he ever did, raw and unguarded",
+      "prompt": "progressive rock opera, cinematic, devastating heavy rock with distorted industrial Thrill riff dominating entire track as Nergaoul corruption motif, fire-as-stormwall with ascending chromatic phrase, massive wall of sound, agonized male vocals, concept album continuity, theatrical, the Blackthorn's worst memory",
+      "lyrics": "[verse 1]\nThe city of the Rift, they would not kneel,\nI brought the army, brought the blood and steel,\nMy wife said, \"Mercy,\" and I heard the word,\nBut the Thrill was louder, louder than a bird\nCould scream, louder than a mother's prayer,\nI gave the order and I burned the air.\n\n[verse 2]\nThe fires climbed like storms against the walls,\nAnd somewhere in the screaming, someone calls\nMy name, but I am lost inside the red,\nThe mist of hunger, painting everything in dead.\n\n[chorus]\nThe Rift, the Rift, I burned it to the ground,\nMy wife inside it, and I heard the sound\nOf everything I loved becoming ash,\nThe Thrill released me, and I felt the crash.\n\n[bridge]\nThe heartbeat, drums, the distorted chord,\nThe Thrill like a god I'd chosen to be lord,\nIt gave me Rathalas in ruins, smoke, and bone,\nAnd left me standing, utterly alone.\n\n[verse 3]\nI cannot remember, Cultivation took the price,\nShe carved my wife from memory like ice,\nBut the guilt remains without a name or face,\nA void where Evi was, an empty space.\n\n[outro]\nThe Rift still burns in every dream I find,\nThe Blackthorn's sin, forever in his mind."
+    },
+    {
+      "num": 8,
+      "title": "The Shattered Sword",
+      "slug": "the-shattered-sword",
+      "performer": "Adolin",
+      "voice_instruct": "A bright, youthful male tenor dropping his usual swagger to become quiet and wondering, talking to something no one else can hear",
+      "prompt": "progressive rock opera, cinematic, atmospheric prog rock with dissonant Honor's Theme played slightly wrong and out of tune, haunting string arrangements suggesting something trapped, introspective male vocals, concept album continuity, theatrical, dead spren mystery",
+      "lyrics": "[verse 1]\nTen heartbeats, and the Blade appears in hand,\nA weapon that the world can't understand,\nBut every time I call it, something screams,\nA voice behind the metal, lost in dreams.\n\n[verse 2]\nThe others never hear it, never feel\nThe sickness in the way these weapons deal\nTheir damage, cutting souls but leaving flesh,\nThere's something trapped inside this ancient mesh.\n\n[chorus]\nA shattered sword, a broken song inside,\nA spren that died the day the Radiants lied,\nI hold her in my hand, this nameless blade,\nAnd wonder at the promise that was made\nAnd broken, and I cannot look away,\nFrom the scream that follows me through every fray.\n\n[bridge]\nA note of honor, but it's out of tune,\nLike someone tried to play it to the moon\nAnd missed, and now it echoes, wrong and wide,\nA dissonance I carry by my side.\n\n[verse 3]\n\"What's your name?\" I whisper to the steel,\nShe cannot answer, dead spren cannot feel,\nOr can they? Something flickers in the dark,\nA memory, a ghost, the faintest spark.\n\n[outro]\nThe shattered sword screams on, and Adolin holds tight,\nWaiting for the dawn inside the night."
+    }
+  ]
+}

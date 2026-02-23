@@ -1,0 +1,83 @@
+{
+  "album": "wor-opera-act5",
+  "album_title": "Words of Radiance: A Rock Opera — Act V: Unmasked",
+  "b2_folder": "stormlight-opera/act5",
+  "voice_instruct": "A powerful rock vocalist with dramatic theatrical delivery, soaring range and emotional intensity, like a progressive rock frontman performing in a concept album",
+  "performer": "Words of Radiance Opera",
+  "cover_strength": 0.8,
+  "audio_duration": 240,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Veil",
+      "slug": "veil",
+      "performer": "Shallan as Veil",
+      "voice_instruct": "A hard-edged, smoky female alto channeling noir detective energy, confident and dangerous, the opposite of Shallan's usual brightness",
+      "prompt": "progressive rock opera, cinematic, noir jazz-rock with Honor's Theme in minor key jazz variation on muted trumpet, smoky atmosphere, walking bass line, theatrical female vocals with attitude, concept album continuity, theatrical, undercover infiltration",
+      "lyrics": "[verse 1]\nWhite hat, dark coat, a smirk that hides the fear,\nVeil walks the underworld and draws them near,\nThe Ghostbloods think they've found a useful tool,\nBut Veil is Shallan's sharpest, darkest jewel.\n\n[verse 2]\nI drink their wine and laugh their thieves' laugh,\nI trade in secrets, working on their behalf,\nMraize, the hunter, watches with keen eyes,\nBut Veil has better masks, has better lies.\n\n[chorus]\nI am Veil, I am the shadow's friend,\nI am the knife that cuts around the bend,\nDon't look for Shallan here, she's locked away,\nVeil handles what the good girl cannot say.\n\n[bridge]\nHonor's melody in minor jazz, a twist,\nA theme disguised, a truth the night has kissed,\nEven my ideals wear different clothes tonight,\nA Lightweaver's honor is an act of sleight.\n\n[verse 3]\nBut the Ghostbloods want more than I can give,\nThey want Shallan's truths, the ones that let me live,\nAnd Veil can lie to everyone but one,\nThe girl behind the hat who's come undone.\n\n[outro]\nVeil tips her hat and disappears in smoke,\nBut somewhere, Shallan weeps beneath the cloak."
+    },
+    {
+      "num": 2,
+      "title": "Radiant",
+      "slug": "radiant",
+      "performer": "Shallan as Radiant",
+      "voice_instruct": "A rigid, crystalline female soprano performing martial perfection, too controlled, too precise, brittle beneath the polish",
+      "prompt": "progressive rock opera, cinematic, martial progressive rock with distorted Honor's Theme played too perfectly and too rigidly like a music box winding down, precise percussion, crystalline synths, controlled female vocals, concept album continuity, theatrical, the mask of perfection",
+      "lyrics": "[verse 1]\nStand straight, stand tall, the way a Radiant should,\nSpeak clearly, fight bravely, be the force for good,\nThis version of me carries Blade and light,\nA warrior-scholar, everything done right.\n\n[verse 2]\nI train with Pattern, Lightweaving grows strong,\nIllusions thick as armor, nothing wrong,\nRadiant commands the room, Radiant never breaks,\nRadiant is everything that Shallan fakes.\n\n[chorus]\nI am Radiant, I am the ideal,\nThe version of myself that's meant to heal,\nBut ideals and oaths are different from a mask,\nAnd Radiant breaks whenever truths are asked.\n\n[bridge]\nThe honor theme, distorted, bright but wrong,\nAn oath that's built on running from the song,\nI swore to speak the truth, but every word\nIs layered, is a painting, is absurd.\n\n[verse 3]\nPattern whispers, \"Shallan, truth, the truth,\"\nThe lie of Radiant cracks beneath the proof\nThat you can't become an ideal to escape,\nYou have to face the monster's actual shape.\n\n[outro]\nRadiant salutes, but her eyes are wet,\nThe truth is coming, and Shallan's not ready yet."
+    },
+    {
+      "num": 3,
+      "title": "I Killed My Mother",
+      "slug": "i-killed-my-mother",
+      "performer": "Shallan",
+      "voice_instruct": "A bright, theatrical female soprano finally stripped of all pretense, the raw unmasked voice of a child confessing the worst thing she has ever done, trembling but refusing to stop",
+      "prompt": "progressive rock opera, cinematic, devastating ballad building to cathartic crescendo, internal stormwall motif as emotional dam breaking, Honor's Theme finally pure and honest for Shallan on clean piano and strings, raw emotional female vocals, concept album continuity, theatrical, the truth at last",
+      "lyrics": "[verse 1]\nI was ten years old, the Blade came to my hand,\nA spren I'd bonded, too young to understand,\nMy mother saw and screamed, \"She'll destroy us all,\"\nShe came at me, and I, so small, so small—\n\n[verse 2]\nI killed her. I killed my mother with a blade,\nA child in a nightmare, terrified, afraid,\nAnd then I locked it deep, I buried it in art,\nDrew over the memory, sealed my broken heart.\n\n[chorus]\nI killed my mother, and I killed my father too,\nThe poison and the blade, I saw them through,\nThese are the truths a Lightweaver must speak,\nAnd I am speaking now, though I am weak.\n\n[bridge]\nThe stormwall breaks inside me, wall by wall,\nThe masks of Veil and Radiant start to fall,\nAnd Honor's Theme, for once, is clear and real,\nNot a performance, but the way I feel.\n\n[verse 3]\nPattern glows, the words are accepted here,\n\"I killed them,\" and the world becomes more clear,\nNot forgiven, not forgotten, just confessed,\nThe truth, the terrible truth, laid to rest.\n\n[outro]\nShallan stands without a mask, at last,\nHolding every piece of her shattered past."
+    },
+    {
+      "num": 4,
+      "title": "The Murder of Sadeas",
+      "slug": "the-murder-of-sadeas",
+      "performer": "Adolin",
+      "voice_instruct": "A bright, youthful male tenor gone ice-cold, the charm stripped away to reveal something harder underneath, disturbingly calm in the verses, hollow in the chorus",
+      "prompt": "progressive rock opera, cinematic, tense noir rock with distorted industrial Thrill riff erupting for one beat then cutting to dead silence, stark contrast between violence and quiet, chilling male vocals, minimal arrangement with sudden dynamic shifts, concept album continuity, theatrical, calculated murder",
+      "lyrics": "[verse 1]\nI see him in the corridor, alone,\nThat smile, that snake, his voice a grinding stone,\n\"Your father's codes will get you all killed, boy,\"\nHe says it like my family's just a toy.\n\n[verse 2]\nHe'll betray us again, he's said as much,\nHe'll leave us dying, and he'll smile and such,\nAnd something in me, cold and diamond-hard,\nDecides that Sadeas has played his final card.\n\n[chorus]\nI pushed the blade through Sadeas and the world went still,\nNo Thrill, no rage, no vengeance, just the will\nTo end a man who'd end my family's name,\nAnd the silence after is my only shame.\n\n[bridge]\nThe Thrill erupts, one beat, one chord, then dies,\nThe silence after is the real surprise,\nI feel, I feel, nothing, nothing at all,\nAnd that's the thing that terrifies Adolin.\n\n[verse 3]\nI clean the blade, I straighten my cravat,\nI walk away and no one sees where I was at,\nThe prince who duels with honor, kills in dark,\nAnd carries in his chest a different mark.\n\n[outro]\nSadeas is dead, the world should feel more light,\nBut Adolin just walks into the night."
+    },
+    {
+      "num": 5,
+      "title": "The Return",
+      "slug": "the-return",
+      "performer": "Jasnah",
+      "voice_instruct": "A commanding, precise female mezzo-soprano making a dramatic entrance, the voice of someone returning from the dead with purpose, regal and fierce",
+      "prompt": "progressive rock opera, cinematic, triumphant progressive rock with Honor's Theme as triumphant return on full orchestra and choir, echoes of stormwall motif from her Shadesmar crossing, grand entrance dynamics, powerful female vocals, concept album continuity, theatrical, the scholar returns",
+      "lyrics": "[verse 1]\nThe tower of Urithiru, ancient stone and light,\nI climb the steps, returned from endless night,\nThey gasp to see me, dead woman walking tall,\nJasnah Kholin, back from Shadesmar's thrall.\n\n[verse 2]\nDalinar has bonded, Kaladin has sworn,\nShallan has three faces, battered, torn,\nThe world I left is burning, just as I feared,\nBut the Knights are rising, just as I'd engineered.\n\n[chorus]\nI have returned, and I will take my place,\nNot queen, not soldier, but the scholar's grace,\nThe knowledge that I carry from beyond\nWill arm us for the war, will build the bond.\n\n[bridge]\nHonor's theme triumphant, I am home,\nThe stormwall echoes from the realms I've roamed,\nBut home is not a tower, home is the fight,\nThe endless, thankless labor of the right.\n\n[verse 3]\nShallan, child, look at what you've become,\nFractured but still standing, still the sum\nOf all your pain and talent, all your art,\nI should have stayed, I should have played my part.\n\n[outro]\nJasnah sits at the table, clears her throat,\nAnd begins to plan the most important vote."
+    },
+    {
+      "num": 6,
+      "title": "Queen of Alethkar",
+      "slug": "queen-of-alethkar",
+      "performer": "Jasnah",
+      "voice_instruct": "A commanding, precise female mezzo-soprano wearing the crown's weight, regal authority with the undertone of someone who never wanted a throne but will not shirk the duty",
+      "prompt": "progressive rock opera, cinematic, regal progressive rock with Honor's Theme in regal variation with gravitas and weight on full orchestra, political tension in minor key passages, authoritative female vocals, concept album continuity, theatrical, coronation and coalition politics",
+      "lyrics": "[verse 1]\nThey crown me in a room of shattered glass,\nElhokar dead, the monarchy must pass,\nTo the heretic, the woman, the one who reads,\nWhile soldiers want a warrior for their deeds.\n\n[verse 2]\nThe coalition fractures every day,\nAzir, Thaylenah, all pulling their own way,\nI hold them with logic, with evidence and proof,\nWhile Dalinar holds them from the temple roof.\n\n[chorus]\nQueen of Alethkar, a title made of fire,\nI never wanted thrones, but kingdoms require\nSomeone cold enough to see the math,\nAnd wise enough to choose the narrower path.\n\n[bridge]\nThe honor melody in regal dress,\nA queen's variation of the oath, no less,\nI will lead them with the truth as my blade,\nAnd the decisions that must, regretfully, be made.\n\n[verse 3]\nI argue with Dalinar through the night,\nAbout the Parshendi, about what's truly right,\nCan we win a war while seeking peace as well?\nThe scholar-queen must answer, time will tell.\n\n[outro]\nThe crown is heavier than any Shard,\nAnd Jasnah wears it, brilliant, cold, and hard."
+    },
+    {
+      "num": 7,
+      "title": "The Fourth Ideal",
+      "slug": "the-fourth-ideal",
+      "performer": "Kaladin",
+      "voice_instruct": "A raw, emotionally intense male baritone wrestling with the hardest truth of his life, the voice cracking between determination and grief, a man learning to accept his own limits",
+      "prompt": "progressive rock opera, cinematic, emotional progressive rock with Honor's Theme bridge melody that echoes into Dalinar's Act VI track on clean guitar and strings, approaching stormwall motif for Thaylen Field on distant thunder and ascending strings, intense male vocals, concept album continuity, theatrical, the hardest oath",
+      "lyrics": "[verse 1]\nThe words won't come, they stick inside my throat,\nA bridge too far, a wall around my moat,\n\"I accept,\" but I cannot accept,\nThat some will fall no matter what I've kept.\n\n[verse 2]\nMoash has fallen, my brother, my friend,\nHe chose the darkness, chose the bitter end,\nAnd I could not protect him, could not save,\nThe man who walked with me from slave to brave.\n\n[chorus]\nI will accept that there will be those I cannot protect,\nThe hardest words, the ones I can't deflect,\nBut the storm is coming, Thaylen Field awaits,\nAnd a Windrunner must fly despite the weights.\n\n[bridge]\nHonor's Theme, my melody, my song,\nI hear it echo from where Dalinar's strong,\nHis unity and my protection intertwined,\nTwo threads of the same oath, two of a kind.\nThe stormwall approaches, and I must choose,\nTo fly, even knowing some I'll lose.\n\n[verse 3]\nSyl blazes bright, a Blade of living light,\n\"Kaladin,\" she says, \"you've always had the right\nTo grieve, to break, to fail, and still to stand,\nThat is the oath. Reach out and take my hand.\"\n\n[outro]\nThe Fourth Ideal, the hardest and the true,\nI cannot save them all, but I'll save you."
+    },
+    {
+      "num": 8,
+      "title": "The Thrill Unchained",
+      "slug": "the-thrill-unchained",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone in his ultimate crisis, the voice torn between the Blackthorn's rage and Dalinar's redemption, massive dynamic range from whisper to roar",
+      "prompt": "progressive rock opera, cinematic, massive collision track with full-power distorted industrial Thrill riff unchained Nergaoul corruption motif, Honor's Theme competing in opposite key, rising chromatic stormwall motif as battle crashes over Thaylen Field, all three motifs in simultaneous counterpoint, epic orchestral metal, dramatic male vocals, concept album continuity, theatrical, the ultimate confrontation",
+      "lyrics": "[verse 1]\nThaylen Field is burning, ships aground,\nThe Fused descend, the thundering warhorn sound,\nAnd in my chest, the Thrill ignites like flame,\nNergaoul whispers, \"Blackthorn, play the game.\"\n\n[verse 2]\nThe red mist closes, blood is singing loud,\nI feel the hunger rising through the crowd,\nEvery soldier, every blade is drawn,\nThe Thrill unchained, and reason nearly gone.\n\n[chorus]\nThe Thrill, the Thrill, it wants me back,\nIt pulls the Blackthorn down the burning track,\nBut I am not that man, I am not that sword,\nI am the words I chose, I am the Lord\nOf nothing, if I cannot rule my rage,\nThe Thrill unchained, or Dalinar uncaged.\n\n[bridge]\nThe Thrill riff and Honor's Theme collide,\nIn D minor and D major, side by side,\nThe stormwall crashes over Thaylen bay,\nAnd everything depends on what I say.\n\n[verse 3]\nOdium stands before me, God of hate,\n\"Give me your pain,\" he says, \"and I'll be great\nOn your behalf, just give me this one thing,\"\nAnd I feel the Thrill inside me start to sing.\n\n[outro]\nThe collision, the collision, three motifs at war,\nDalinar on his knees on Thaylen's shore."
+    }
+  ]
+}

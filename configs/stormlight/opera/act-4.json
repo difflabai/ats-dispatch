@@ -1,0 +1,83 @@
+{
+  "album": "wor-opera-act4",
+  "album_title": "Words of Radiance: A Rock Opera — Act IV: The Climbs",
+  "b2_folder": "stormlight-opera/act4",
+  "voice_instruct": "A powerful rock vocalist with dramatic theatrical delivery, soaring range and emotional intensity, like a progressive rock frontman performing in a concept album",
+  "performer": "Words of Radiance Opera",
+  "cover_strength": 0.8,
+  "audio_duration": 240,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "I Will Protect",
+      "slug": "i-will-protect",
+      "performer": "Kaladin",
+      "voice_instruct": "A raw, emotionally intense male baritone erupting from darkness into blazing defiance, the voice of a man finally speaking the words he was born to speak, triumphant and breaking with emotion",
+      "prompt": "progressive rock opera, cinematic, explosive anthem building from silence to full orchestral rock, full Honor's Theme hymn-like major key melody on choir unison oath motif, triumphant rising chromatic stormwall motif on ascending strings, soaring male vocals, full band with orchestra, concept album continuity, theatrical, the Second Ideal spoken at last",
+      "lyrics": "[verse 1]\nThe storm inside me breaks, and I am clear,\nFor the first time in forever, I am here,\nThe words are rising, burning in my chest,\nA promise I've been running from, a test.\n\n[verse 2]\nSyl blazes into light, a spear of blue,\nShe shouts, \"The words, Kaladin! Speak them true!\"\nAnd everything I am, and everything I've been,\nPours into four words that burn beneath my skin.\n\n[chorus]\nI will protect those who cannot protect themselves,\nThe Second Ideal, ringing clear as bells,\nHonor's Theme erupts, a hymn of war and grace,\nAnd Stormlight floods through every broken place.\n\n[bridge]\nThe stormwall rises, but it's mine to ride,\nNo longer beaten, no longer terrified,\nThe wind obeys, the sky is mine to claim,\nAnd Bridge Four follows, calling out my name.\n\n[verse 3]\nRock and Teft and Sigzil, Skar and Drehy too,\nLopen laughing, \"Gancho, look what you can do!\"\nWe are the bridgemen, we are the unwanted dead,\nAnd now we fly on storms of blue and red.\n\n[outro]\nI will protect, these words are accepted,\nThe Windrunner rises, broken and perfected."
+    },
+    {
+      "num": 2,
+      "title": "Bridge Four",
+      "slug": "bridge-four",
+      "performer": "Kaladin & Bridge Four",
+      "voice_instruct": "A raw, emotionally intense male baritone leading a chorus of rough male voices in military-anthem style, the sound of brothers-in-arms, joyful and fierce",
+      "prompt": "progressive rock opera, cinematic, triumphant military rock anthem with rising chromatic stormwall motif charging forward, Honor's Theme hymn-like melody as marching song with choir, driving drums and brass, anthemic male group vocals, concept album continuity, theatrical, Bridge Four's transformation anthem",
+      "lyrics": "[verse 1]\nWe carried death upon our backs for miles,\nThrough arrow fire and highprinces' smiles,\nThey used us, burned us, never learned our names,\nBut we are still here, we outlived their games.\n\n[verse 2]\nNow Teft glows, and Rock can see the spren,\nAnd Sigzil calculates our strength again,\nWe train with spears, we train with light and wind,\nA crew of broken men who will not bend.\n\n[chorus]\nBridge Four! Bridge Four! The cry that shakes the Plains,\nWe are the storm that breaks the master's chains,\nFrom slaves to soldiers, from the damned to free,\nBridge Four forever, this is what we'll be.\n\n[bridge]\nThe stormwall charges with us, not against,\nThe wind that broke us now becomes our fence,\nAnd Honor's melody is our marching song,\nThe bridge crew rises, forty thousand strong\nIn spirit, if not numbers, heart, and will,\nBridge Four, Bridge Four, unconquerable still.\n\n[verse 3]\nMoash has questions, doubts behind his eyes,\nAbout the lighteyes, about their pretty lies,\nBut I say, \"Trust me, brother, trust the Four,\"\nAnd he salutes, though something in him's sore.\n\n[outro]\nBridge Four lifts the bridge, and the bridge lifts us,\nFrom the ashes of the chasm, from the dust."
+    },
+    {
+      "num": 3,
+      "title": "The Bondsmith's Burden",
+      "slug": "the-bondsmiths-burden",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone finding spiritual weight, the voice of a man accepting an impossible calling, grave and resolute",
+      "prompt": "progressive rock opera, cinematic, weighty prog rock with Honor's Theme hymn-like melody in minor key on clean guitar arpeggio over organ, fading distorted industrial Thrill riff being rejected, heavy bass and sustained organ chords, dramatic male vocals, concept album continuity, theatrical, Bondsmith bonding scene",
+      "lyrics": "[verse 1]\nThe Stormfather speaks, his voice like rolling tide,\n\"You are unworthy, Blackthorn, full of pride,\nBut Honor chose you, and I must obey,\nBond with me, and walk a narrow way.\"\n\n[verse 2]\nI feel the bond like chains of living light,\nThe weight of every storm, of every night,\nA Bondsmith holds the world together, seamed,\nAnd I'm the broken man who dared to dream.\n\n[chorus]\nThe Bondsmith's burden, heavier than stone,\nTo unite a world that wants to stand alone,\nI feel the Thrill still calling in my blood,\nBut I reject it, I reject the flood.\n\n[bridge]\nHonor's melody in minor key, I hear\nThe version meant for men who live in fear\nOf what they've done, of what they might become,\nThe echo says, \"Dalinar, you're not done.\"\n\n[verse 3]\nThe Thrill retreats, a riff that fades to hum,\nI will not be the Blackthorn, will not succumb,\n\"I am the man I choose to be today,\"\nAnd the Stormfather rumbles, \"Very well, then. Stay.\"\n\n[outro]\nThe Bondsmith walks, the burden on his back,\nHolding the world together, seam and crack."
+    },
+    {
+      "num": 4,
+      "title": "The Everstorm",
+      "slug": "the-everstorm",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone confronting apocalypse, urgent and desperate but holding firm, the voice of a leader who sees doom and refuses to flinch",
+      "prompt": "progressive rock opera, cinematic, apocalyptic prog metal with inverted stormwall motif from the wrong direction on reversed orchestral strings, distorted industrial Thrill riff erupting everywhere, massive orchestral chaos, urgent male vocals, concept album continuity, theatrical, the Desolation begins",
+      "lyrics": "[verse 1]\nThe storm comes from the west, and that's all wrong,\nA thousand years of highstorms, and the song\nHas always moved from east to west, but now\nThe sky inverts, the world forgets its vow.\n\n[verse 2]\nThe Parshmen glow with light that is not right,\nRed lightning where there should be amber bright,\nThey rise, ten million servants, in an hour,\nTransformed to Fused, consumed by ancient power.\n\n[chorus]\nThe Everstorm, the Everstorm has come,\nThe Desolation wakes, the world goes numb,\nA stormwall rising from the wrongest side,\nAnd nothing we have built can stem this tide.\n\n[bridge]\nThe Thrill erupts in soldiers on the Plains,\nIn Dalinar, the old familiar chains,\nBut this time, this time, the Blackthorn holds the line,\n\"This is not honor, this is not mine.\"\n\n[verse 3]\nThe Fused descend with powers long forgot,\nVoidlight in their eyes, their vengeance hot,\nAnd Roshar, peaceful, shattered, unaware,\nMust face the war that's always been right there.\n\n[outro]\nThe Everstorm circles, never going home,\nAnd Dalinar stands at the eye, alone."
+    },
+    {
+      "num": 5,
+      "title": "The Diagram",
+      "slug": "the-diagram",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted, controlled male tenor with Middle Eastern inflections, discovering the machinery behind his purpose, voice shifting between cold clarity and existential horror",
+      "prompt": "progressive rock opera, cinematic, calculating industrial rock with mechanical distorted Thrill riff as calculation motif, corrupted Honor's Theme on detuned piano, mathematical rhythmic patterns, concept album continuity, theatrical, the Diagram revealed",
+      "lyrics": "[verse 1]\nA wall of scribbled genius, edge to edge,\nEquations, names, and futures on a ledge,\nTaravangian wrote it in a single night,\nWhen Cultivation made him burning bright.\n\n[verse 2]\nOne day a genius, next day barely there,\nHe weeps for those he's killed, he tears his hair,\nBut the Diagram demands, the numbers say\nThat some must die so others get to stay.\n\n[chorus]\nThe Diagram, the Diagram, the plan,\nTo save the world by breaking every man\nWho stands between the calculus and hope,\nA genius, a tyrant, and a rope.\n\n[bridge]\nThe Thrill of calculation, cold as steel,\nA heartbeat made of numbers, what they feel\nIs nothing, they are variables and dust,\nAnd I, Szeth, am the function of their trust.\n\n[verse 3]\nHe says, \"Forgive me,\" as he signs the list,\nAnother king to fall beneath my fist,\nThe Diagram corrupts what honor means,\nAnd I obey, a weapon in between.\n\n[outro]\nThe Diagram unfolds, the numbers grow,\nAnd Szeth wonders what the truthless truly know."
+    },
+    {
+      "num": 6,
+      "title": "Skybreaker",
+      "slug": "skybreaker",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted, controlled male tenor reaching for something beyond his grasp, tentative hope cracking through layers of shame, Middle Eastern inflections with a searching quality",
+      "prompt": "progressive rock opera, cinematic, searching prog rock with tentative Honor's Theme hymn-like melody that Szeth reaches for but cannot fully grasp on distant clean guitar, legal and judicial percussion patterns, restrained male vocals building to desperate plea, concept album continuity, theatrical, Skybreaker recruitment",
+      "lyrics": "[verse 1]\nI've killed a hundred men for masters' gain,\nEach death a stone that adds onto the chain,\nBut now Nale stands before me, Herald, judge,\nAnd says, \"The law, not masters, will not budge.\"\n\n[verse 2]\nThe Skybreakers follow codes of ancient writ,\nNot honor's wavering flame, but justice lit\nBy statute, by the letter, by the book,\nA different chain, but still, the world's a hook.\n\n[chorus]\nSkybreaker, Skybreaker, show me the way,\nBetween the truthless night and honor's day,\nI've followed orders all my broken life,\nNow show me law that's sharper than a knife.\n\n[bridge]\nA hymn, half-heard, the honor melody,\nI reach for it, but it's too far from me,\nI've killed too many, stained my hands too deep,\nBut maybe law can teach a stone to weep.\n\n[verse 3]\nNale says, \"Choose your truth, your highest lord,\nA person or a principle, a sword\nThat serves not kings but justice, cold and fair,\"\nAnd Szeth kneels in the cold and broken air.\n\n[outro]\nThe Skybreaker rises, Truthless no more,\nBut the truthless wounds still fester at the core."
+    },
+    {
+      "num": 7,
+      "title": "Shardbearer",
+      "slug": "shardbearer",
+      "performer": "Adolin",
+      "voice_instruct": "A bright, youthful male tenor in full warrior mode, the swagger replaced by genuine conviction, fighting for something beyond himself",
+      "prompt": "progressive rock opera, cinematic, epic battle rock with rising chromatic stormwall motif in battle orchestra, resisted distorted industrial Thrill riff, driving battle drums and orchestral brass, powerful male vocals, concept album continuity, theatrical, Battle of Narak",
+      "lyrics": "[verse 1]\nThe Shattered Plains erupt in war tonight,\nA thousand soldiers marching toward the fight,\nMy Plate is cracked, my Blade is in my hand,\nThe prince of Alethkar makes his final stand.\n\n[verse 2]\nThey send the Parshendi, singing as they come,\nTheir rhythms strange, their war a different drum,\nI cut through ranks, I do what I was trained,\nBut every face I see is someone's unnamed.\n\n[chorus]\nShardbearer, Shardbearer, prince and blade,\nIs this the man my father's honor made?\nI swing, I cut, the bodies fall like rain,\nAnd the Thrill says, \"More, more, do it again.\"\n\n[bridge]\nBut I say, \"No,\" the way my father taught,\nThe Thrill is not the victory I sought,\nI fight because I must, not for the rush,\nAnd the stormwall parts, and there is only hush.\n\n[verse 3]\nRenarin is somewhere in the lines behind,\nMy brother, fragile, with a brilliant mind,\nI fight for him, I fight for father's dream,\nThat war can serve a purpose, not a scream.\n\n[outro]\nThe Shardbearer kneels when the battle's done,\nAnd wonders if the war was truly won."
+    },
+    {
+      "num": 8,
+      "title": "The Perpendicularity",
+      "slug": "the-perpendicularity",
+      "performer": "Jasnah",
+      "voice_instruct": "A commanding, precise female mezzo-soprano emerging from isolation with renewed steel, the voice of someone forged by solitude, triumphant but changed",
+      "prompt": "progressive rock opera, cinematic, transcendent prog rock with stormwall motif as realm-crossing on shimmering orchestral strings, Honor's Theme as Jasnah's resolve on full cello and strings, blinding light sound design, powerful female vocals, concept album continuity, theatrical, return from Shadesmar",
+      "lyrics": "[verse 1]\nThe perpendicularity, a column of raw light,\nWhere the realms converge, where Shadesmar meets the night,\nI step through, and the world crashes back,\nSunlight, air, the physical world's intact.\n\n[verse 2]\nI've walked the cognitive realm for weeks alone,\nI've bartered with the spren, I've made my throne\nOf knowledge, dark and burning, what I've learned\nWould make a lesser scholar crash and turn.\n\n[chorus]\nI'm back, and I am not the same,\nJasnah Kholin, but a different flame,\nShadesmar forged me, hammered out the doubt,\nThe perpendicularity let me out.\n\n[bridge]\nHonor's theme is mine now, cold and clear,\nA scholar's resolution, void of fear,\nThe stormwall between worlds, I've walked it through,\nAnd now I know exactly what to do.\n\n[verse 3]\nThe Desolation's coming, Voidbringers rise,\nAnd I carry answers that will crystallize\nThe war ahead, the alliances we need,\nBut first, I have a student's wounds to read.\n\n[outro]\nThe perpendicularity closes behind,\nAnd Jasnah returns with fire in her mind."
+    }
+  ]
+}

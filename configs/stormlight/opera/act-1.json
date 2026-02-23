@@ -1,0 +1,83 @@
+{
+  "album": "wor-opera-act1",
+  "album_title": "Words of Radiance: A Rock Opera — Act I: The Assassination",
+  "b2_folder": "stormlight-opera/act1",
+  "voice_instruct": "A powerful male rock vocalist with dramatic theatrical delivery, soaring range and emotional intensity, like a progressive rock frontman performing in a concept album",
+  "performer": "Words of Radiance Opera",
+  "cover_strength": 0.8,
+  "audio_duration": 240,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Assassin Descends",
+      "slug": "the-assassin-descends",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted, controlled male tenor with Middle Eastern inflections, restrained power barely containing anguish, breathy and precise",
+      "prompt": "progressive rock opera, cinematic, dark orchestral metal, rising chromatic stormwall motif in strings, distorted industrial Thrill riff with drop-tuned bitcrushed power chord, thunderous tympani crescendo, dramatic male vocals, Middle Eastern scales, concept album continuity, theatrical, intense opening number",
+      "lyrics": "[verse 1]\nWhite on white, I walk these palace halls,\nA truthless man who answers when duty calls,\nMy Oathstone heavy, my spirit hollowed clean,\nThe storm is rising on this treaty's dying dream.\n\n[verse 2]\nThe king stands tall beneath the chandeliers,\nHis words of peace still ringing in their ears,\nBut I was sent, my masters gave the word,\nAnd heaven forgive, their will must be heard.\n\n[chorus]\nI am the storm that walks on silent feet,\nI am the blade that makes the world complete,\nSzeth-son-son-Vallano, Truthless, shamed,\nThe wind obeys, and Gavilar is claimed.\n\n[bridge]\nLash the ceiling, lash the floor,\nGravity bends and kings are kings no more,\nThe Thrill, red mist in another man's eye,\nTonight a kingdom learns its king must die.\n\n[verse 3]\nHe whispers something, presses a dark sphere,\n\"Brother, you must find the most important words,\"\nBut I am only wind, I cannot hear,\nI am only duty, sharper than the swords.\n\n[outro]\nThe stormwall breaks across the Shattered Plains,\nAnd nothing, nothing will be whole again."
+    },
+    {
+      "num": 2,
+      "title": "Truthless",
+      "slug": "truthless",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted, controlled male tenor with Middle Eastern inflections, restrained power barely containing anguish, breathy and precise",
+      "prompt": "progressive rock opera, cinematic, melancholic post-rock, fading industrial Thrill riff, distant distorted Honor's Theme echo, atmospheric guitar layers, haunted male vocals, sparse percussion building to crescendo, concept album continuity, theatrical",
+      "lyrics": "[verse 1]\nI killed a king and wore his blood like rain,\nPassed hand to hand, a weapon without name,\nEach master smaller than the one before,\nA living blade behind a beggar's door.\n\n[verse 2]\nThe spheres have gone dark but one still glows,\nA black sphere burning where no stormlight flows,\nHis final words keep circling in my skull,\nThe most important words, and I am null.\n\n[chorus]\nTruthless, they call me, stone around my neck,\nI am the consequence they do not check,\nI walk through nations, leave them stained and red,\nThe assassin lives, but Szeth may be dead.\n\n[bridge]\nSomewhere there's a theme, a hymn, a prayer,\nHonor's distant echo in the frozen air,\nBut I have forfeited the right to hear,\nI am only purpose, I am only fear.\n\n[verse 3]\nThey'll send me back, I know they will, in time,\nTo Alethkar, to finish what was mine,\nAnd I will go, because the stone commands,\nA storm that only moves at other hands.\n\n[outro]\nTruthless, truthless, stone and shame,\nThe wind remembers Szeth's forgotten name."
+    },
+    {
+      "num": 3,
+      "title": "Branded",
+      "slug": "branded",
+      "performer": "Kaladin",
+      "voice_instruct": "A raw, emotionally intense male baritone with grit and defiance, like a wounded soldier singing through pain, powerful chest voice with breaks of vulnerability",
+      "prompt": "progressive rock opera, cinematic, raw acoustic opening building to heavy rock, no recurring motifs yet, stark silence and isolation, military snare drums, defiant male vocals, gritty electric guitar, concept album continuity, theatrical, bridgeman's march rhythm",
+      "lyrics": "[verse 1]\nThey carved the brand into my forehead's skin,\nThree lines of shame for crimes I did not win,\nA surgeon's son who tried to save a life,\nNow sold and chained and sharpened like a knife.\n\n[verse 2]\nThe Shattered Plains, a graveyard made of stone,\nWhere bridges run on backs of flesh and bone,\nThey call it Bridge Four, where the hopeless go,\nWhere men stop praying, where the dead march slow.\n\n[chorus]\nBranded, broken, bridgeman, slave,\nThey stole my name and dug my grave,\nBut I am still the man who held the spear,\nAnd something in the wind says, \"I am here.\"\n\n[bridge]\nTien, little brother, I can see your face,\nYou smiled at rocks and found the light in every place,\nThey took you from me, took you with a war,\nAnd I became this thing I stand before.\n\n[verse 3]\nThe bridge is heavy, and the arrows fly,\nAnd one by one the bridgemen drop and die,\nBut something stubborn in me will not break,\nI carry them, I carry, for their sake.\n\n[outro]\nBranded, bridgeman, not yet done,\nThe darkest night still waits upon the sun."
+    },
+    {
+      "num": 4,
+      "title": "Syl",
+      "slug": "syl",
+      "performer": "Kaladin",
+      "voice_instruct": "A raw, emotionally intense male baritone with grit and defiance, softening to tenderness, powerful chest voice with breaks of vulnerability",
+      "prompt": "progressive rock opera, cinematic, gentle acoustic verses with ethereal synth pads, faint half-formed Honor's Theme hymn-like major key melody on clean guitar arpeggio, windchime textures, building to anthemic rock chorus, tender male vocals, concept album continuity, theatrical",
+      "lyrics": "[verse 1]\nA little light that dances on the breeze,\nShe laughs at gravity, she laughs at me,\n\"What are you?\" but she only tilts her head,\nA thousand words behind the things unsaid.\n\n[verse 2]\nShe sits upon my shoulder in the rain,\nAnd something in her presence dulls the pain,\nI used to lead, I used to hold the line,\nI used to be a man, before the brine.\n\n[chorus]\nSyl, Syl, little wisp of light,\nYou remind me I was born to fight,\nNot for glory, not for any throne,\nBut for the ones who cannot stand alone.\n\n[bridge]\nA melody, half-heard, a hymn, a thread,\nHonor's promise whispered to the dead,\nI cannot name it, but I feel it stir,\nThe man I was is waking up in her.\n\n[verse 3]\nShe says I spoke some words once, in a dream,\nA promise burning brighter than it seemed,\n\"I will protect,\" she says, and waits for more,\nBut I'm not ready, not ready for that door.\n\n[outro]\nLittle light, keep shining, keep me whole,\nThere are storms ahead that need a bridgeman's soul."
+    },
+    {
+      "num": 5,
+      "title": "Highstorm",
+      "slug": "highstorm",
+      "performer": "Kaladin",
+      "voice_instruct": "A raw, emotionally intense male baritone with grit and defiance, building from suffering to transcendence, powerful chest voice breaking into soaring high notes",
+      "prompt": "progressive rock opera, cinematic, epic storm sequence, full rising chromatic stormwall motif ascending half-step string run with thunderous tympani crescendo, Honor's Theme hymn-like melody breaking through on choir unison, massive orchestral rock, rain and wind sound design, dramatic male vocals, concept album continuity, theatrical, transformative climax",
+      "lyrics": "[verse 1]\nThey lashed me to the wall and left me bare,\nThe highstorm coming, thunder splits the air,\nA punishment for daring to resist,\nA bridgeman hanging in the tempest's fist.\n\n[verse 2]\nThe wall of rain, the wind that strips the stone,\nI feel the world dissolve, I'm all alone,\nBut in the eye, between the lightning's flash,\nA light pours in through every wound and gash.\n\n[chorus]\nThe stormwall breaks and I am not destroyed,\nI breathe the light, I fill the empty void,\nStormlight in my veins like liquid fire,\nThe storm that broke me lifts me ever higher.\n\n[bridge]\nI see the face of something vast and old,\nA figure in the storm, a story told,\n\"The words,\" it whispers through the hurricane,\n\"Speak them, and you'll never break again.\"\n\n[verse 3]\nI land upon the ground, the storm moves on,\nThe ropes are burned, the chains of doubt are gone,\nThe bridgemen stare, they do not understand,\nBut Syl is glowing, landing on my hand.\n\n[outro]\nThe storm has passed but something new remains,\nStormlight burning through a bridgeman's veins."
+    },
+    {
+      "num": 6,
+      "title": "The Girl Who Looked Up",
+      "slug": "the-girl-who-looked-up",
+      "performer": "Shallan",
+      "voice_instruct": "A bright, theatrical female soprano with an undercurrent of darkness, witty delivery that cracks into raw emotion, versatile between playful and devastating",
+      "prompt": "progressive rock opera, cinematic, folk-rock verses with dark undertones, deliberate absence of motifs, acoustic guitar and strings, theatrical female vocals, building to dramatic chorus, concept album continuity, theatrical, character introduction",
+      "lyrics": "[verse 1]\nFather's dead by my own hand, by my own blade,\nMother before him, a truth I've carefully unmade,\nI paint the world in colors that are kind,\nAnd lock the real Shallan far behind.\n\n[verse 2]\nA carriage to Kharbranth, a scholar's dream,\nI'll steal a Soulcaster, I'll run a scheme,\nFor my brothers, for the house that's falling down,\nI'll wear a smile and play the clever clown.\n\n[chorus]\nI am the girl who looked up at the wall,\nI am the one who wanted to see it all,\nBut every truth I find just breaks apart,\nAnother mask to hide my shattered heart.\n\n[bridge]\nDraw the world, Shallan, draw it bright,\nSketch the lies until they look like light,\nMemories are monsters, keep them locked away,\nPretend the girl you were died yesterday.\n\n[verse 3]\nJasnah Kholin waits with questions sharp as steel,\nShe'll see right through the masks, she'll make me feel,\nBut I am good at hiding, good at art,\nI'll sketch my way around her scholar's heart.\n\n[outro]\nThe girl who looked up, the girl who lied,\nThe girl who killed and never even cried."
+    },
+    {
+      "num": 7,
+      "title": "Kharbranth",
+      "slug": "kharbranth",
+      "performer": "Shallan",
+      "voice_instruct": "A bright, theatrical female soprano with an undercurrent of darkness, witty delivery that cracks into raw emotion, versatile between playful and devastating",
+      "prompt": "progressive rock opera, cinematic, Mediterranean-flavored rock with ascending chromatic stormwall motif for shipwreck sequence, faint Honor's Theme hymn-like melody in background strings during lecture scenes, dramatic female vocals, orchestral arrangements, concept album continuity, theatrical",
+      "lyrics": "[verse 1]\nThe ship went down in walls of wind and sea,\nI drew the storm to keep my sanity,\nSalt and chaos, timbers cracking wide,\nThe stormwall rose, but I survived the tide.\n\n[verse 2]\nKharbranth, city carved into the cliff,\nA thousand books behind each marble rift,\nJasnah stands like certainty made flesh,\nAnd I, a liar tangled in my mesh.\n\n[chorus]\nLearn the words, learn the ancient text,\nSteal the stone, before she sees what's next,\nKharbranth holds the knowledge of the world,\nBut I'm just a desperate, scheming girl.\n\n[bridge]\nShe lectures on the fall of old Natanatan,\nOn oaths and honor, how it all began,\nThere's something in her voice, a melody,\nA hymn of purpose, calling out to me.\n\n[verse 3]\nThe Soulcaster gleams upon her wrist,\nA tool that bends the world with just a twist,\nI need it, storms, I need it for my kin,\nForgive me, Jasnah, for what I'll begin.\n\n[outro]\nIn Kharbranth, between the books and lies,\nShallan Davar learns to wear disguise."
+    },
+    {
+      "num": 8,
+      "title": "The Blackthorn Remembers",
+      "slug": "the-blackthorn-remembers",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone with gravelly warmth, like a war-weary general finding redemption, powerful low register with occasional breaks into desperate intensity",
+      "prompt": "progressive rock opera, cinematic, heavy military rock with distorted industrial Thrill riff pulsing under war drums, Honor's Theme hymn-like major key melody emerging from clean guitar arpeggio over organ during book-reading scenes, dramatic male vocals, orchestral arrangements, concept album continuity, theatrical",
+      "lyrics": "[verse 1]\nThey called me Blackthorn when I burned the world,\nWhen every banner shook and every flag unfurled,\nI was the fist of Alethkar, the blade,\nThe Thrill sang in my blood with every raid.\n\n[verse 2]\nBut now I read a dead man's words at night,\nThe Way of Kings, a lantern in the blight,\n\"A leader's duty is to those he leads,\"\nAnd something cracks inside me as I read.\n\n[chorus]\nThe Blackthorn remembers, the Blackthorn atones,\nFor cities burned to ash, for broken bones,\nThe visions come in every highstorm's eye,\nA voice that says, \"Unite them, or they die.\"\n\n[bridge]\nThe Thrill, the hunger, heartbeat like a drum,\nIt calls me back to what I used to become,\nBut the book says there is another way,\nA kingdom built on honor, not on prey.\n\n[verse 3]\nMy brother died upon a treaty night,\nAnd I cannot remember, lost the fight,\nWith my own past, a gap where memory should be,\nThe Blackthorn is a stranger, even to me.\n\n[outro]\nUnite them, says the vision in the storm,\nUnite them, before the Everstorm is born."
+    }
+  ]
+}

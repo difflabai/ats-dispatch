@@ -1,0 +1,83 @@
+{
+  "album": "wor-opera-act2",
+  "album_title": "Words of Radiance: A Rock Opera — Act II: The Shattered Plains",
+  "b2_folder": "stormlight-opera/act2",
+  "voice_instruct": "A powerful male rock vocalist with dramatic theatrical delivery, soaring range and emotional intensity, like a progressive rock frontman performing in a concept album",
+  "performer": "Words of Radiance Opera",
+  "cover_strength": 0.8,
+  "audio_duration": 240,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Visions",
+      "slug": "visions",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone with gravelly warmth, like a war-weary general finding redemption, powerful low register with occasional breaks into desperate intensity",
+      "prompt": "progressive rock opera, cinematic, ethereal prog rock with rising chromatic stormwall motif as vision trigger on ascending half-step string run, Honor's Theme hymn-like melody as the Almighty's voice on choir unison over organ, sweeping orchestral dynamics, dramatic male vocals, concept album continuity, theatrical, dreamlike sequences breaking into heavy riffs",
+      "lyrics": "[verse 1]\nThe storm takes me, I'm standing somewhere else,\nA world of spren and stone and ancient bells,\nKnights Radiant in armor, silver-white,\nThey hold the line against eternal night.\n\n[verse 2]\nBut then they break, they lay their blades on stone,\nTen thousand Shardblades screaming as they're thrown,\nThe Recreance, the day that honor died,\nAnd I am left here, weeping, terrified.\n\n[chorus]\nVisions in the highstorm, visions in the rain,\nThe Almighty speaks but no one hears His pain,\n\"Unite them, Dalinar, before the end,\"\nThe world is breaking, and it needs to mend.\n\n[bridge]\nThe stormwall rises, ancient, climbing high,\nA chromatic scream against the sky,\nAnd in its peak I see what must be done,\nBut when I wake, I stand alone at dawn.\n\n[verse 3]\nSadeas whispers, \"Dalinar's gone mad,\"\nThe highprinces laugh at all the visions I have had,\nBut I have seen the end of everything,\nAnd I will be the fool who tries to bring\nThem together, storms, I'll drag them whole,\nA united Alethkar, or ashes in a hole.\n\n[outro]\nThe vision fades, the highstorm passes by,\nBut the voice still echoes: \"Unite, or die.\""
+    },
+    {
+      "num": 2,
+      "title": "The Codes",
+      "slug": "the-codes",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone with gravelly warmth, like a war-weary general finding redemption, powerful low register with occasional breaks into desperate intensity",
+      "prompt": "progressive rock opera, cinematic, military march building to epic battle sequence, Honor's Theme hymn-like major key melody on clean guitar arpeggio during code-reading, distorted industrial Thrill riff erupting at the Tower betrayal, orchestral arrangements with brass fanfares, dramatic male vocals, concept album continuity, theatrical, betrayal climax",
+      "lyrics": "[verse 1]\nI wear the uniform, I keep the codes,\nThe ancient laws that mark a soldier's roads,\nNo wine on duty, armor always on,\nI am the man who leads by what he's drawn.\n\n[verse 2]\nA joint assault, Sadeas and I will ride,\nTogether to the Tower, side by side,\nHe swears it on his Blade, he swears it true,\nAnd I believe, because that's what I do.\n\n[chorus]\nThe codes demand we stand for something more,\nThan gemhearts bleeding on the canyon floor,\n\"Unite them,\" said the voice from ancient days,\nAnd I will lead, though I am lost in maze.\n\n[bridge]\nBut Sadeas pulls back, the bridges turn away,\nHe leaves us on the Tower, leaves us there to stay,\nAnd die. The Thrill erupts, the blood runs hot,\nAnd honor is the only thing I've got.\n\n[verse 3]\nMy men are falling, arrows in the rain,\nThe Parshendi surging, screaming, and the pain,\nI lift my Blade and stand upon the edge,\nA Blackthorn's final, desperate pledge.\n\n[outro]\nA bridge comes running, carried by the damned,\nAnd Kaladin, a bridgeman, takes his stand."
+    },
+    {
+      "num": 3,
+      "title": "The Duelist",
+      "slug": "the-duelist",
+      "performer": "Adolin",
+      "voice_instruct": "A bright, youthful male tenor with swagger and charm, confident delivery with flashes of sincerity, like a young prince who is more thoughtful than he appears",
+      "prompt": "progressive rock opera, cinematic, energetic arena rock with flashy guitar solos, no recurring motifs yet for Adolin, driving rhythm section, confident male vocals with swagger, brass stabs, crowd-roar sound design, concept album continuity, theatrical, character introduction",
+      "lyrics": "[verse 1]\nShardplate, Shardblade, born into the fight,\nA Kholin prince who burns a little bright,\nFather reads his book and walks the codes,\nBut I was made for dueling, made for roads.\n\n[verse 2]\nThe arena cheers, the crowd demands a show,\nI dance with steel and lay the challengers low,\nEach Shard I win, a step toward the plan,\nTo prove my father right, to prove the man.\n\n[chorus]\nI am the duelist, I am the blade,\nFashionably lethal, never afraid,\nBut when the fighting's done and silence falls,\nI hear my father's honor through the walls.\n\n[bridge]\nRenarin watches from behind his books,\nMy brother, fragile, gets the pitying looks,\nBut I would break the world for him, you know,\nHe's stronger than the Shards will ever show.\n\n[verse 3]\nThey say my father's mad, they say he's done,\nBut every man who says it answers to his son,\nI'll win the duels, I'll win the Shards, I'll win,\nUntil the world sees what I see in him.\n\n[outro]\nThe duelist salutes, the crowd roars on,\nBut the real fight hasn't even begun."
+    },
+    {
+      "num": 4,
+      "title": "Fashion and Fury",
+      "slug": "fashion-and-fury",
+      "performer": "Adolin",
+      "voice_instruct": "A bright, youthful male tenor with swagger and charm, confident delivery with flashes of sincerity, like a young prince who is more thoughtful than he appears",
+      "prompt": "progressive rock opera, cinematic, high-energy arena rock with distorted industrial Thrill riff temptation in arena, glitched percussion heartbeat during battle, driving drums and dual guitar harmonies, energetic male vocals, concept album continuity, theatrical, four-on-one duel sequence",
+      "lyrics": "[verse 1]\nNew boots, new cape, I dress to win the room,\nBefore I win the duel, before the bloom\nOf Stormlight on my Plate, the crack of glass,\nI make them watch, I make the moment last.\n\n[verse 2]\nBut four on one, they've rigged the bracket wide,\nSadeas's friends, they want my father's hide,\nThey circle me, they think they'll break me down,\nThe Thrill, that hunger, wants to paint the town.\n\n[chorus]\nFashion and fury, silk and steel,\nI'll show them what a Kholin heart can feel,\nThe blood is singing, red mist in my eyes,\nThe Thrill says, \"Let them fall, let none survive.\"\n\n[bridge]\nNo. No, I'm better than the rage inside,\nI fight with honor, I fight with pride,\nThe arena's not a slaughterhouse, it's art,\nAnd I will master every single part.\n\n[verse 3]\nKaladin leaps into the ring, a slave,\nA bridgeman standing where no bridgemen brave,\nTogether, back to back, we hold the line,\nAnd something shifts, a partnership, a sign.\n\n[outro]\nThe Thrill retreats, the duel is won with grace,\nA prince and bridgeman, standing face to face."
+    },
+    {
+      "num": 5,
+      "title": "Patterns",
+      "slug": "patterns",
+      "performer": "Adolin & Shallan",
+      "voice_instruct": "A bright, youthful male tenor with swagger and charm alternating with a witty, bright female soprano, romantic duet energy with playful banter",
+      "prompt": "progressive rock opera, cinematic, romantic acoustic rock with quiet Honor's Theme hymn-like major key melody as love theme variation on clean guitar arpeggio over organ, gentle strings, playful rhythm section, male-female vocal interplay, concept album continuity, theatrical, courtship duet",
+      "lyrics": "[verse 1]\nShe steps off the carriage, red hair in the wind,\nA wit so sharp it cuts before it's pinned,\nI was expecting someone meek and small,\nInstead she makes me trip before I fall.\n\n[verse 2]\nHer drawings catch the world in ink and light,\nHer lies are almost prettier than right,\nA spren of fractals buzzes at her side,\n\"Mmm, truth,\" it hums, and Shallan tries to hide.\n\n[chorus]\nPatterns in the fabric, patterns in the stone,\nPatterns in the way she makes me feel less alone,\nEvery conversation is a duel of wit,\nAnd I am losing, and I love every bit.\n\n[bridge]\nA hymn plays somewhere, soft, in major key,\nThe honor of a promise, you and me,\nNot oaths of war or codes of ancient days,\nJust, \"Let me walk beside you through the haze.\"\n\n[verse 3]\nFather would approve, he's said as much,\nA Kholin and a Davar, a strategic touch,\nBut I don't care about the politics,\nI care about the way her laughter sticks.\n\n[outro]\nPatterns, patterns, everywhere they bloom,\nLove starts quiet in a war camp's gloom."
+    },
+    {
+      "num": 6,
+      "title": "The Chasms",
+      "slug": "the-chasms",
+      "performer": "Shallan & Kaladin",
+      "voice_instruct": "A female soprano and male baritone alternating, tense and reluctant cooperation building to mutual respect, raw acoustic delivery in a confined space",
+      "prompt": "progressive rock opera, cinematic, claustrophobic acoustic rock building to chasmfiend battle, approaching rising chromatic stormwall motif for the storm in chasms, brief distorted industrial Thrill riff for chasmfiend attack, echoing vocals as if in a canyon, concept album continuity, theatrical, duet of enemies becoming allies",
+      "lyrics": "[verse 1]\nDown in the chasms where the dead men fall,\nWhere rotspren gather on the chasm wall,\nA lighteyes and a bridgeman, forced to share\nThe darkness, and the weight of what we bear.\n\n[verse 2]\nHe hates me for my station, for my name,\nI hate him for his anger, for his blame,\nBut something's moving in the deeper dark,\nA chasmfiend hunting, drawn to our small spark.\n\n[chorus]\nDown in the chasms, stripped of rank and pride,\nTwo broken people, standing side by side,\nThe storm is coming, water's going to rise,\nAnd all that matters is we both survive.\n\n[bridge]\nThe Thrill, a heartbeat in the monster's chest,\nIt charges and we give it all our best,\nHe holds the spear, I draw the Pattern's light,\nTwo strangers learning how to trust and fight.\n\n[verse 3]\nHe tells me about Tien, I tell him lies,\nWe trade our broken pieces, compromise,\nThe water rises, and we climb the wall,\nAnd for one moment, neither of us falls.\n\n[outro]\nThe chasms keep our secrets, dark and deep,\nTwo people, cracked, but learning how to leap."
+    },
+    {
+      "num": 7,
+      "title": "Soulcaster",
+      "slug": "soulcaster",
+      "performer": "Shallan",
+      "voice_instruct": "A bright, theatrical female soprano with an undercurrent of darkness, witty delivery that cracks into raw emotion, versatile between playful and devastating",
+      "prompt": "progressive rock opera, cinematic, psychedelic prog rock with Shadesmar inverted stormwall motif on reversed strings, ethereal synth layers, otherworldly vocal effects, dramatic female vocals, concept album continuity, theatrical, first Shadesmar sequence",
+      "lyrics": "[verse 1]\nThe bead of glass, I hold it in my hand,\n\"What are you?\" and it answers, \"I am sand,\"\nI breathe and something shifts behind the veil,\nA sea of beads, a dark and endless trail.\n\n[verse 2]\nShadesmar, the realm of thought and spren,\nA sky of blackness, ocean without end,\nEach bead a soul of something in our world,\nAnd I am standing here, my power unfurled.\n\n[chorus]\nSoulcaster, they will call me,\nRadiant, if I dare to see\nThe truth of what I am, of what I've done,\nA girl who breaks the world and calls it fun.\n\n[bridge]\nThe storm is different here, inverted, wrong,\nA stormwall rising where it don't belong,\nBut I can feel the power in my bones,\nI reshape matter, I remake the stones.\n\n[verse 3]\nPattern whispers, \"Truth, Shallan, truth,\"\nBut every truth I've buried since my youth,\nIs sharper than a Shardblade, cuts more deep,\nAnd I'm not ready, not ready for that leap.\n\n[outro]\nThe Soulcaster has no fabrial, no stone,\nThe power lives in Shallan, and Shallan alone."
+    },
+    {
+      "num": 8,
+      "title": "The Wretch",
+      "slug": "the-wretch",
+      "performer": "Kaladin",
+      "voice_instruct": "A raw, emotionally intense male baritone hollowed out by depression, barely above a whisper in verses, the vocal equivalent of a man drowning, with brief eruptions of bitter anger",
+      "prompt": "progressive rock opera, cinematic, sparse and minimal arrangement, brief distorted industrial Thrill riff eruption of rage, deliberate absence of Honor's Theme, hollow drums, isolated vocals, concept album continuity, theatrical, depression personified in music",
+      "lyrics": "[verse 1]\nThe men are training, learning how to fight,\nRock makes stew, and Teft calls out at night,\nBut I am sinking, I am going down,\nInto a darkness thick enough to drown.\n\n[verse 2]\nI nearly let him die, the lighteyes lord,\nI had the spear, I had the bridgeman's cord,\nBut something in me whispered, \"Let him fall,\nHe'd let you die, he wouldn't care at all.\"\n\n[chorus]\nThe wretch, the wretch, he lives inside my skin,\nHe pulls me under when the light grows thin,\nNo stormlight, no Syl, no gleam, no hope,\nJust a bridgeman hanging by a fraying rope.\n\n[bridge]\nWhere's the hymn? Where's the melody?\nThe honor and the purpose that once lived in me?\nThe silence is a chasm deeper than the Plains,\nAnd I am falling through it, through the rain.\n\n[verse 3]\nSyl is fading, I can barely see her glow,\nShe asks me, \"What's wrong?\" and I don't know,\nOr maybe I do, maybe that's the worst,\nI know exactly where the darkness nursed.\n\n[outro]\nThe wretch lies down, the bridgeman carries on,\nBut the light inside him might already be gone."
+    }
+  ]
+}

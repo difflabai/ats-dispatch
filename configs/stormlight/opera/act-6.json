@@ -1,0 +1,83 @@
+{
+  "album": "wor-opera-act6",
+  "album_title": "Words of Radiance: A Rock Opera — Act VI: Radiance",
+  "b2_folder": "stormlight-opera/act6",
+  "voice_instruct": "A powerful rock vocalist with dramatic theatrical delivery, soaring range and emotional intensity, like a progressive rock frontman performing in a concept album",
+  "performer": "Words of Radiance Opera",
+  "cover_strength": 0.8,
+  "audio_duration": 240,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "I Am Unity",
+      "slug": "i-am-unity",
+      "performer": "Dalinar",
+      "voice_instruct": "A deep, commanding male bass-baritone at his most transcendent, the voice breaking through mortal limits into something divine, from anguished whisper to earth-shaking declaration",
+      "prompt": "progressive rock opera, cinematic, climactic symphonic rock, all three motifs resolving — distorted industrial Thrill riff dissolving chromatically into silence, Honor's Theme hymn-like major key melody ascending to full-throated choir unison, rising chromatic stormwall motif transforming into triumphant fanfare, massive orchestral arrangement with full choir, transcendent male vocals, concept album continuity, theatrical, THE climax of the entire opera, perpendicularity opening",
+      "lyrics": "[verse 1]\n\"Give me your pain,\" the god of hatred said,\nAnd I was on my knees, the world in red,\nThe Rift, my wife, the fire, every sin,\nThe Thrill demanding that I let it in.\n\n[verse 2]\nBut I remember now, I remember her,\nEvi, gentle, kind, a truth I tried to blur,\nCultivation gave my memories their price,\nAnd now I pay it, standing on the ice.\n\n[chorus]\nYou cannot have my pain, it's mine to bear,\nThe most important step is the next one there,\nI am not the Blackthorn, I am something new,\nAnd the most important words: I will do better, too.\n\n[bridge]\nI am Unity!\nThe sky cracks open, perpendicularity,\nHonor's Theme in full-throated choir, ascending free,\nThe Thrill dissolves, the riff deconstructs to air,\nThe stormwall turns to fanfare, bright and fair,\nI hold the realms together with my hands,\nStormlight floods the field, the army stands.\n\n[verse 3]\nThe Fused recoil, Odium pulls away,\n\"No,\" he screams, \"this was not meant to be the way,\"\nBut a Bondsmith's oath is stronger than a god,\nAnd I am Unity, upon this bloodied sod.\n\n[outro]\nI am Unity, I am the words I speak,\nThe strongest man is he who dares be weak,\nThe perpendicularity shines gold,\nAnd Dalinar, at last, is finally whole."
+    },
+    {
+      "num": 2,
+      "title": "Nightblood",
+      "slug": "nightblood",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted, controlled male tenor with Middle Eastern inflections, encountering something beyond his comprehension, awe and horror mixed with dark fascination",
+      "prompt": "progressive rock opera, cinematic, dark progressive metal with reversed distorted industrial Thrill riff played backward, Honor's Theme entering on same industrial distorted instruments — redemption through corruption's tools, Nightblood's hum as subsonic drone, heavy male vocals, concept album continuity, theatrical, the inversion motif",
+      "lyrics": "[verse 1]\nA black sword in a silver sheath, it hums,\n\"Would you like to destroy some evil?\" it comes,\nThe voice like a child who doesn't understand,\nThat evil is a thing too vast to brand.\n\n[verse 2]\nNale gives it, says, \"You've earned a second blade,\nThe Skybreaker's justice, by your hands displayed,\"\nI draw it, and the world goes black around,\nInvestiture consumed without a sound.\n\n[chorus]\nNightblood, Nightblood, singing in my grip,\nA weapon on the edge of madness' tip,\nThe Thrill plays backward, violence undone,\nAnd in its place, a terrifying sun.\n\n[bridge]\nThe Thrill reversed, the industrial riff played back,\nThen Honor's Theme on distorted strings, a crack\nIn the universe, redemption through the blade,\nThe truthless given power, the murderer unmade.\n\n[verse 3]\n\"Destroy!\" it screams, and I must hold it tight,\nA weapon darker than the darkest night,\nBut Szeth chose Dalinar, his highest law,\nAnd Nightblood serves the oath without a flaw.\n\n[outro]\nThe sword sings evil, but the hand holds true,\nAnd Szeth-son-Vallano starts his life anew."
+    },
+    {
+      "num": 3,
+      "title": "Szeth Reborn",
+      "slug": "szeth-reborn",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted, controlled male tenor finally finding hope, Middle Eastern inflections warming from cold precision to tentative joy, the voice of a dead man learning to live",
+      "prompt": "progressive rock opera, cinematic, redemptive progressive rock with Honor's Theme growing from tentative to trumpet blast, rising chromatic stormwall motif as Szeth flies into battle, soaring arrangement, male vocals gaining strength, concept album continuity, theatrical, resurrection and purpose",
+      "lyrics": "[verse 1]\nThey killed me, and I died upon the storm,\nA Truthless man who'd outlived his own form,\nBut Nale brought me back, a second breath,\nAnd Szeth-son-Vallano returned from death.\n\n[verse 2]\nI choose Dalinar Kholin as my law,\nThe man who speaks of honor without flaw,\nMy Skybreaker ideal, my guiding star,\nThe Bondsmith who would heal the deepest scar.\n\n[chorus]\nSzeth reborn, the stone is lifted free,\nThe truthless man discovers what \"truth\" can be,\nNot orders, not the oathstone's heavy chain,\nBut a choice to fly, a choice to end the pain.\n\n[bridge]\nHonor's melody, I hear it now, at last,\nIt grows from whisper to a trumpet's blast,\nThe stormwall carries me on winds of white,\nAnd Szeth, the assassin, learns to fight for right.\n\n[verse 3]\nNightblood hums against my back, a friend,\nThe strangest, deadliest ally to the end,\nTogether we descend on Thaylen's field,\nA living weapon with a broken shield.\n\n[outro]\nSzeth rises, white against the dark,\nA Skybreaker carrying Honor's spark."
+    },
+    {
+      "num": 4,
+      "title": "The Assassin's Redemption",
+      "slug": "the-assassins-redemption",
+      "performer": "Szeth",
+      "voice_instruct": "A haunted male tenor fully transformed, Middle Eastern inflections now carrying pride and conviction, the voice of a man who has found his purpose at last",
+      "prompt": "progressive rock opera, cinematic, triumphant battle rock with Honor's Theme inverted then resolved — played backward then resolving forward on full orchestra, rising chromatic stormwall motif as battle glory, aerial combat energy, powerful male vocals, concept album continuity, theatrical, redemption completed",
+      "lyrics": "[verse 1]\nThe Fused descend on Thaylen Field like rain,\nAnd I descend to meet them, born again,\nNightblood blazing, consuming light and form,\nI am the calm inside the raging storm.\n\n[verse 2]\nI Lash the sky, I walk upon the air,\nThe Assassin in White, but the white I wear\nIs no longer shame, it is a Skybreaker's coat,\nAnd every kill I make is Dalinar's vote.\n\n[chorus]\nThe assassin's redemption, written in the sky,\nThe man who killed a king now learns to fly\nFor something greater than an oathstone's word,\nFor a Bondsmith's unity, the truest I have heard.\n\n[bridge]\nHonor's Theme inverted, backward, wrong,\nThen slowly, note by note, it rights the song,\nThe same melody that Kaladin once swore,\nNow Szeth carries it, forevermore.\n\n[verse 3]\nThe battle rages, Nightblood drinks its fill,\nBut I am Szeth, I am the master's will,\nNot truthless, not a weapon, not a shame,\nA Skybreaker who chose to speak his name.\n\n[outro]\nThe stormwall parts for Szeth-son-Vallano's flight,\nThe assassin, redeemed, ascending into light."
+    },
+    {
+      "num": 5,
+      "title": "Maya",
+      "slug": "maya",
+      "performer": "Adolin",
+      "voice_instruct": "A bright, youthful male tenor filled with wonder and fierce protective love, the voice of a man whose faith in something impossible is vindicated, breaking with emotion at the climax",
+      "prompt": "progressive rock opera, cinematic, emotionally devastating progressive rock with broken Honor's Theme dissonant note finally resolving into pure harmony, Maya's scream as a raw orchestral hit cutting through silence, building from courtroom tension to cathartic release, emotional male vocals, concept album continuity, theatrical, the dead spren speaks",
+      "lyrics": "[verse 1]\nThey put the Radiants on trial, the living dead,\nThe honorspren point fingers at what was said\nAnd broken, oaths discarded, bonds betrayed,\n\"You killed your spren!\" the prosecution weighed.\n\n[verse 2]\nMy Blade is in the court, a prop, a proof,\nA deadeye spren beneath Shadesmar's roof,\nTen thousand years of silence, ten of pain,\nAnd every Radiant on trial again.\n\n[chorus]\nThen Maya speaks, a scream that shakes the hall,\n\"We! Chose!\" she cries, and silences them all,\nThe spren chose too, they chose to break the bond,\nNot murdered, not abandoned, they were fond\nEnough to share the cost, to pay the toll,\nTwo broken halves of one connected soul.\n\n[bridge]\nThe honor note, dissonant for so long,\nFinally resolves, the broken becomes song,\nMaya's voice, a melody restored,\nThe Shardblade screams and heals the fractured chord.\n\n[verse 3]\nAdolin holds his Blade and feels her stir,\nNot dead, not quite, a ghost becoming her,\n\"I hear you,\" he whispers, \"I have always heard,\"\nAnd Maya, Maya speaks her second word.\n\n[outro]\nWe chose, she said, and the world remembers why,\nEven broken things deserve another try."
+    },
+    {
+      "num": 6,
+      "title": "The Weight of Command",
+      "slug": "the-weight-of-command",
+      "performer": "Adolin",
+      "voice_instruct": "A bright, youthful male tenor stripped of swagger and filled with quiet conviction, the voice of a man who knows he is ordinary among gods and chooses to stand anyway",
+      "prompt": "progressive rock opera, cinematic, human-scale rock anthem with Honor's Theme on mortal acoustic instruments — no choir, no Stormlight effects, just guitar and drums and heart, rising chromatic stormwall motif as battle backdrop, honest and unadorned male vocals, concept album continuity, theatrical, the human hero",
+      "lyrics": "[verse 1]\nNo Stormlight runs in me, no oaths I've sworn,\nNo nahel bond, no spren to keep me warm,\nI am a man with Plate and Blade and will,\nAnd that, my friends, is more than plenty still.\n\n[verse 2]\nThe Radiants glow and fly and move like light,\nKaladin streaks across the battlefield tonight,\nBut I'm down here, boots in blood and mud,\nLeading soldiers forward through the flood.\n\n[chorus]\nThe weight of command, no magic, just the trust\nOf people who believe because they must,\nIn something human, something they can see,\nA prince who bleeds the same as you and me.\n\n[bridge]\nHonor's melody, but played on mortal strings,\nNo choir, no Stormlight, just the song that sings\nWhen ordinary people choose to stand,\nA human heart, a steady human hand.\n\n[verse 3]\nMaya pulses in my grip, still waking, still,\nNot alive, not dead, somewhere between, until\nThe day she fully speaks, I'll hold her tight,\nA mortal prince, his blade, the long goodnight.\n\n[outro]\nAdolin charges, human, proud, and true,\nThe weight of command, and he will see it through."
+    },
+    {
+      "num": 7,
+      "title": "The Scholar's War",
+      "slug": "the-scholars-war",
+      "performer": "Jasnah",
+      "voice_instruct": "A commanding, precise female mezzo-soprano unleashed as a weapon of mass destruction, intellectual authority turned to devastating force, controlled fury",
+      "prompt": "progressive rock opera, cinematic, weaponized progressive rock with Honor's Theme as battle hymn — the scholar's oath becoming a war cry on full orchestra and aggressive choir, rising chromatic stormwall motif as battle chaos, Soulcasting sound design with matter-transformation effects, powerful female vocals, concept album continuity, theatrical, the scholar fights",
+      "lyrics": "[verse 1]\nThey think a scholar cannot hold a line,\nThey think my weapon's ink and not divine,\nBut Ivory stands with me, my spren of truth,\nAnd I Soulcast their armies proof by proof.\n\n[verse 2]\nThe air becomes fire, stone becomes the void,\nEach Fused that charges me is simply toyed\nWith, matter bending to the scholar's will,\nThe heretic queen upon Thaylen's hill.\n\n[chorus]\nThe scholar's war is waged with different arms,\nNot ignorance but knowledge does the harm,\nI speak the truths that reshape what is real,\nAnd the enemy learns how a scholar makes them kneel.\n\n[bridge]\nHonor's melody becomes a battle hymn,\nThe scholar's oath now sung in voices grim,\nI will not turn from truth, I will not break,\nAnd every life I take is for truth's sake.\n\n[verse 3]\nSmoke and crystal, flesh and flame,\nI am Jasnah Kholin, remember my name,\nThe woman who walked Shadesmar alone,\nNow turns a battlefield to dust and bone.\n\n[outro]\nThe scholar's war is never truly done,\nBut tonight we fight beneath a burning sun."
+    },
+    {
+      "num": 8,
+      "title": "Words of Radiance",
+      "slug": "words-of-radiance",
+      "performer": "Full Cast",
+      "voice_instruct": "All six voices converging — male baritone, male bass-baritone, male tenor, female soprano, female mezzo-soprano, youthful male tenor — building to unified choir, the voice of all Roshar singing together",
+      "prompt": "progressive rock opera, cinematic, grand symphonic finale combining all three motifs resolved — Honor's Theme dominant in full choir unison, dissolved Thrill leaving peaceful silence, Stormwall motif as triumphant resolution ascending to final chord, full orchestra with choir, all six character vocal timbres converging, concept album continuity, theatrical, THE FINALE of the entire 48-track opera, cathartic and triumphant",
+      "lyrics": "[verse 1]\nThe battle fades, the Everstorm withdraws,\nAnd on Thaylen Field we stand without a pause,\nDalinar glowing, perpendicularity sealed,\nThe Bondsmith's oath across the broken field.\n\n[verse 2]\nKaladin lands, his Bridge Four crew in tow,\nSzeth sheathes Nightblood, its hungry afterglow,\nShallan stands as Shallan, masks laid down,\nAnd Adolin, the human, wears no crown\nBut loyalty, which cannot be unmade,\nAnd Jasnah, queen and scholar, sheathes her blade.\n\n[chorus]\nWords of radiance, spoken in the dark,\nEach one an oath, each one a living spark,\n\"I will protect,\" and \"I am unity,\"\n\"We chose,\" and \"Truth,\" the words that set us free,\nThis is the opera of broken things made whole,\nThe stormlight burning in every single soul.\n\n[bridge]\nHonor's Theme, full choir, the final stand,\nEvery voice together, every hand,\nThe Thrill is gone, dissolved to quiet air,\nThe Stormwall parts to show the dawn is there,\nRising, rising, chromatic phrase resolved,\nEvery mystery, every pain, dissolved\nInto the light of Radiance, the glow,\nOf people who refused to let hope go.\n\n[verse 3]\nThe war continues, Odium still waits,\nThe Fused will return, will test the gates,\nBut tonight, on Thaylen's blood-soaked sand,\nThe Knights Radiant have made their stand.\n\n[outro]\nJourney before destination, strength before weakness,\nLife before death, these are the words of Radiance,\nAnd we will speak them, again and again,\nUntil the last storm passes, until the end."
+    }
+  ]
+}
