@@ -1,0 +1,67 @@
+{
+  "album": "three-of-me",
+  "album_title": "Three of Me",
+  "b2_folder": "stormlight-three-of-me",
+  "voice_instruct": "A young woman's voice that shifts between playful wit, trembling vulnerability, and cold detached confidence, as if three people share one throat, haunting and beautiful",
+  "performer": "Shallan Davar",
+  "cover_strength": 0.8,
+  "audio_duration": 180,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Little Lies",
+      "slug": "little-lies",
+      "prompt": "dreamy indie pop with shimmering synths and reverb-soaked vocals, ethereal and slightly unsettling, like a lullaby hiding a secret, dream pop atmosphere",
+      "lyrics": "[verse 1]\nI drew my mother's face from memory and made her kind\nI drew my father sober with a gentle mind\nI drew a girl named Shallan with a scholar's grace\nAnd colored over every bruise upon her face\n\n[chorus]\nLittle lies, little lies\nPaint them pretty, paint them wise\nIf I draw the world the way I need it seen\nMaybe I'll forget what lives between\n\n[verse 2]\nLightweaving isn't magic, it's just what I do\nI've been wearing other faces since before I knew\nThat the girl beneath the illusions doesn't have a name\nShe burned it with the house and walked away from shame\n\n[chorus]\nLittle lies, little lies\nPaint them pretty, paint them wise\nIf I draw the world the way I need it seen\nMaybe I'll become my favorite dream\n\n[bridge]\nBut the sketchbook knows\nEvery face I've worn\nIs a page I tore\nFrom the girl I mourn\n\n[chorus]\nLittle lies, little lies\nCrumbling slowly, crumbling wise\nSomeday I'll draw the truth and let it breathe\nBut not today, today I need to leave"
+    },
+    {
+      "num": 2,
+      "title": "Veil",
+      "slug": "veil",
+      "prompt": "dark sultry dream pop with trip-hop undertones, confident and dangerous, smoky bassline and clipped drums, a spy's anthem",
+      "lyrics": "[verse 1]\nHat pulled low and lies pulled high\nI walk through Kharbranth with a stranger's eye\nShallan's scared but I don't flinch\nGive me a con and I won't give an inch\n\n[chorus]\nI'm Veil, I'm the one who walks the night\nI'm Veil, I'm the blade behind the light\nShallan can't handle what the darkness brings\nSo I step in and pull the strings\n\n[verse 2]\nLightweaving wraps me like a second skin\nDarkeyed and sharp, I blend right in\nThe Ghostbloods think they've found their mark\nBut I'm the fire they brought to the dark\n\n[chorus]\nI'm Veil, I'm the one who walks the night\nI'm Veil, I'm the blade behind the light\nShallan can't handle what the darkness brings\nSo I step in and pull the strings\n\n[bridge]\nBut I'm not real, am I\nJust a mask she built to survive\nA shield of swagger and street-sharp lies\nKeeping the broken girl alive\n\n[chorus]\nI'm Veil, I was the one who walked the night\nI'm Veil, I was the blade behind the light\nBut Shallan found the strength that darkness brings\nSo I let go, I let go of the strings"
+    },
+    {
+      "num": 3,
+      "title": "Radiant",
+      "slug": "radiant",
+      "prompt": "powerful ethereal pop with crystalline synths and martial precision, regal and controlled, dream pop meets military march, beautiful and terrifying",
+      "lyrics": "[verse 1]\nStand up straight, the Lightweavers are watching\nSpeak with grace, the court demands the show\nShallan breaks and Veil would rather vanish\nSo I appear when neither one can go\n\n[chorus]\nI am Radiant, the armor and the crown\nI am Radiant, I never let us down\nPerfect posture, perfect blade\nI'm the soldier Shallan made\n\n[verse 2]\nI hold the sword when Shallan's hands are shaking\nI speak the words when Veil has lost her nerve\nPattern hums beside me, always waiting\nI'm the face that duty taught to serve\n\n[chorus]\nI am Radiant, the armor and the crown\nI am Radiant, I never let us down\nPerfect posture, perfect blade\nI'm the soldier Shallan made\n\n[bridge]\nBut who am I when no one needs protecting\nWhen the war is done and all the masks come down\nI am the strongest of the three reflecting\nAnd the first to turn to mist without a sound\n\n[outro]\nI am Radiant\nI am fading\nI am Radiant\nI am waiting"
+    },
+    {
+      "num": 4,
+      "title": "The Sketchbook",
+      "slug": "the-sketchbook",
+      "prompt": "intimate acoustic dream pop with delicate fingerpicking and soft vocal layers, fragile and beautiful, an artist's confession",
+      "lyrics": "[verse 1]\nI draw because the world is more than I can hold\nI draw because the colors keep the terrors from the cold\nSymmetrical designs that Pattern taught me how to see\nAnd portraits of the people I pretend that I can be\n\n[chorus]\nThe sketchbook holds the truth I cannot speak\nEvery line a memory, every shade a week\nOf hiding in the pages where the lies are drawn in ink\nThe sketchbook knows me better than I think\n\n[verse 2]\nI drew the Shattered Plains from Jasnah's balcony\nI drew Kaladin's despair when he refused to see\nI drew Adolin in sunlight with that careless grin\nAnd drew myself three times without the girl within\n\n[chorus]\nThe sketchbook holds the truth I cannot speak\nEvery line a memory, every shade a week\nOf hiding in the pages where the lies are drawn in ink\nThe sketchbook knows me better than I think\n\n[bridge]\nSomeday I'll draw the night my father died\nSomeday I'll draw the mother I tried to hide\nSomeday the sketchbook and the girl will be the same\nSomeday I'll sign my real name\n\n[outro]\nThe sketchbook knows\nThe sketchbook sees\nEvery version, every me"
+    },
+    {
+      "num": 5,
+      "title": "Pattern's Hum",
+      "slug": "patterns-hum",
+      "prompt": "quirky dream pop with unusual time signature elements, playful but eerie, whimsical synth patterns over warm bass, like a nursery rhyme from another dimension",
+      "lyrics": "[verse 1]\nMmm, mmm, the lies are delicious\nMmm, mmm, the truths are nutritious\nI am Pattern, I am the hum in the wall\nI am the one who remembers it all\n\n[chorus]\nHum hum hum, the pattern is forming\nHum hum hum, the Cryptic is storming\nShe says I am annoying, I find this amusing\nThe truth is she needs me, the truth is confusing\n\n[verse 2]\nShallan killed her first spren, yes, a terrible fact\nShe locked it away in the back of her back\nI came because the lie was so magnificently bright\nA Lightweaver's truth is hidden in the night\n\n[chorus]\nHum hum hum, the pattern is forming\nHum hum hum, the Cryptic is storming\nShe says I am terrible at humor and jest\nBut I am her bond-spren, I know she's the best\n\n[bridge]\nWhat is a lie but a pattern inverted\nWhat is the truth but a lie that's been converted\nI hum because mathematics is song\nAnd Shallan has been singing along\n\n[chorus]\nHum hum hum, the pattern is forming\nHum hum hum, this bond is transforming\nShe speaks the truth at last and I feel complete\nThe girl and the Cryptic, a pattern replete"
+    },
+    {
+      "num": 6,
+      "title": "Red Hair and Ruin",
+      "slug": "red-hair-and-ruin",
+      "prompt": "dark emotional dream pop with trembling vocals and heavy reverb, slow build from whisper to wail, deeply haunting, a trauma song wrapped in beauty",
+      "lyrics": "[verse 1]\nRed hair like my mother's, burning bright\nShe smiled in the morning and she killed in the night\nI found her with the poison and the intent laid bare\nA daughter shouldn't have to know her mother doesn't care\n\n[chorus]\nRed hair and ruin, that's my bloodline's gift\nRed hair and ruin and an ever-widening rift\nBetween who I was born to be and who I had to become\nThe day I killed my mother, I became everyone and no one\n\n[verse 2]\nFather took the blame to shield me from the dark\nBut the secret was a Soulcaster eating through his heart\nHe broke my brothers one by one with fury and with drink\nAnd I just stood there drawing at the edge of every brink\n\n[chorus]\nRed hair and ruin, that's my bloodline's gift\nRed hair and ruin and an ever-widening rift\nBetween who I was born to be and who I had to become\nThe day I killed my father, I became three, and then none\n\n[bridge]\nTestament screamed when I broke the bond\nA living blade turned deadeye, gone beyond\nI buried that truth so deep inside\nThat I invented two more girls to hide\n\n[outro]\nRed hair and ruin\nRed hair and ruin\nBut the girl beneath the red\nIs still alive, not dead"
+    },
+    {
+      "num": 7,
+      "title": "Lightweaver's Oath",
+      "slug": "lightweavers-oath",
+      "prompt": "building dream pop anthem with layers of vocals and shimmer, starting spare and ending massive, each verse unlocking more sound, transformative",
+      "lyrics": "[verse 1]\nI killed my mother\nThere, I said the words that burn\nThe first truth spoken, the first page I turn\nPattern hums louder, the Stormlight responds\nA Lightweaver's oath is built on her wrongs\n\n[chorus]\nSpeak the truth, speak it loud\nEvery word a crack in the shroud\nI am Shallan, not Veil, not Radiant, just me\nAnd the truth will set the Lightweaver free\n\n[verse 2]\nI killed my father with a blade of living light\nThe second truth extracted from the darkest night\nHe begged me, and I did it, and I'd do it again\nBecause the monster wore my father's face but wasn't him by then\n\n[chorus]\nSpeak the truth, speak it loud\nEvery word a crack in the shroud\nI am Shallan, not Veil, not Radiant, just me\nAnd the truth will set the Lightweaver free\n\n[bridge]\nI am terrified\nI am three girls stitched into one\nBut the thread that holds me is the truth I've spun\nPattern hums, Testament stirs\nAnd I accept that all the pain is hers, is mine, is ours\n\n[outro]\nI am Shallan Davar\nI have always been enough\nI am Shallan Davar\nAnd the truth is, I am loved"
+    },
+    {
+      "num": 8,
+      "title": "Becoming One",
+      "slug": "becoming-one",
+      "prompt": "triumphant dream pop with full lush production, walls of shimmering sound, cathartic and beautiful, three melodies weaving into one, album closer that resolves all tension",
+      "lyrics": "[verse 1]\nVeil takes off her hat and sets it down\nRadiant sheathes the blade without a sound\nTwo phantoms made of fear and need and pride\nReturning to the girl they lived inside\n\n[chorus]\nI'm becoming one, I'm becoming whole\nEvery fractured piece returning to my soul\nThree of me was how I stayed alive\nOne of me is how I'll finally thrive\n\n[verse 2]\nThe lies I told were shelters from the rain\nThe truths I speak are windows through the pain\nPattern hums a frequency of peace\nAnd Testament stirs gently, finding release\n\n[chorus]\nI'm becoming one, I'm becoming whole\nEvery fractured piece returning to my soul\nThree of me was how I stayed alive\nOne of me is how I'll finally thrive\n\n[bridge]\nAdolin holds my hand and doesn't flinch\nAt the girl who killed her parents, inch by inch\nHe sees the real Shallan, scars and all\nAnd loves me standing, loves me when I fall\n\n[outro]\nOne of me\nFinally, one of me\nShallan, just Shallan\nAnd that's enough to be"
+    }
+  ]
+}

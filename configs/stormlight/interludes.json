@@ -1,0 +1,46 @@
+{
+  "album": "stormlight-interludes",
+  "album_title": "Stormlight Interludes",
+  "b2_folder": "stormlight-interludes",
+  "voice_instruct": "",
+  "performer": "Stormlight Archive",
+  "cover_strength": 0.8,
+  "audio_duration": 100,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Shattered Plains",
+      "slug": "the-shattered-plains",
+      "prompt": "instrumental interlude, pop-rock guitars dissolving into shimmering dream pop pads, 90 seconds, bright major chords crumbling into reverb-soaked minor keys, the sound of a landscape breaking apart and becoming beautiful, transition from confident energy to ethereal wonder",
+      "lyrics": "[instrumental]\n\n[verse 1]\nAh, ah, ah\nAh, ah, ah\n\n[instrumental]"
+    },
+    {
+      "num": 2,
+      "title": "Urithiru Ascending",
+      "slug": "urithiru-ascending",
+      "prompt": "instrumental interlude, dream pop shimmering synths morphing into baroque harpsichord and chamber strings, 90 seconds, ascending melodic lines climbing like a tower, ethereal beauty giving way to intellectual grandeur, the sound of elevation and revelation",
+      "lyrics": "[instrumental]\n\n[verse 1]\nAh, ah, ah\nAh, ah, ah\n\n[instrumental]"
+    },
+    {
+      "num": 3,
+      "title": "Stormwall",
+      "slug": "stormwall",
+      "prompt": "instrumental interlude, baroque chamber elements crashing into massive post-rock wall of sound, 90 seconds, precise ornamental melodies overwhelmed by thunderous distortion and rolling drums, the sound of a highstorm destroying everything refined, chaos swallowing order",
+      "lyrics": "[instrumental]\n\n[verse 1]\nAh, ah, ah\nAh, ah, ah\n\n[instrumental]"
+    },
+    {
+      "num": 4,
+      "title": "The Thrill",
+      "slug": "the-thrill-interlude",
+      "prompt": "instrumental interlude, post-rock tremolo guitars building into progressive rock war drums and synth layers, 90 seconds, emotional intensity transforming into martial grandeur, the transition from grief to battle fury, addictive escalation",
+      "lyrics": "[instrumental]\n\n[verse 1]\nAh, ah, ah\nAh, ah, ah\n\n[instrumental]"
+    },
+    {
+      "num": 5,
+      "title": "Shin Silence",
+      "slug": "shin-silence",
+      "prompt": "instrumental interlude, progressive rock complexity fading into industrial silence and drone, 90 seconds, epic grandeur dissolving into cold empty space, the sound of all music being stripped away leaving only mechanical breathing and distant wind, the quiet before horror",
+      "lyrics": "[instrumental]\n\n[verse 1]\nAh, ah, ah\nAh, ah, ah\n\n[instrumental]"
+    }
+  ]
+}

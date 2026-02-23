@@ -1,0 +1,67 @@
+{
+  "album": "blackthorns-requiem",
+  "album_title": "The Blackthorn's Requiem",
+  "b2_folder": "stormlight-blackthorns-requiem",
+  "voice_instruct": "A deep, weathered baritone of a man in his fifties, heavy with authority and buried grief, a warlord turned statesman confessing sins with the gravity of someone who burned cities and now builds covenants",
+  "performer": "Dalinar Kholin",
+  "cover_strength": 0.8,
+  "audio_duration": 180,
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Blackthorn",
+      "slug": "the-blackthorn",
+      "prompt": "epic progressive rock with thunderous war drums and heavy distorted guitar riffs, martial and devastating, the sound of an unstoppable conqueror, relentless forward momentum",
+      "lyrics": "[verse 1]\nThey gave me a name on the fields of Gavilar's ambition\nBlackthorn, the brother who turned warfare to religion\nI walked through armies like a storm through paper walls\nAnd left a trail of kingdoms in the wake of my footfalls\n\n[chorus]\nI am the Blackthorn, the blade of Alethkar\nI am the Blackthorn, I've shattered every bar\nBetween a man and violence there is no line\nWhen the Thrill is singing and the blood tastes like wine\n\n[verse 2]\nGavilar made the speeches, I made the silences\nThe silence after battle when the field is full of fences\nMade of broken bodies, men who someone loved\nBut the Thrill kept pumping and I couldn't get enough\n\n[chorus]\nI am the Blackthorn, the blade of Alethkar\nI am the Blackthorn, I've broken every star\nThat any soldier wished upon the night before I came\nThe Blackthorn doesn't conquer, the Blackthorn is the flame\n\n[bridge]\nBut every flame burns out\nAnd every conqueror sits alone\nIn a room full of the memories\nOf the cities he has sown\nWith ashes\n\n[chorus]\nI was the Blackthorn, the blade of Alethkar\nI was the Blackthorn, but that man's gone too far\nThe monster in the mirror wears my younger face\nAnd I cannot remember how to put him in his place"
+    },
+    {
+      "num": 2,
+      "title": "Evi",
+      "slug": "evi",
+      "prompt": "devastating slow progressive rock ballad with aching strings and quiet piano, grief made into music, a requiem for a wife murdered by her own husband's ambition",
+      "lyrics": "[verse 1]\nShe came from Iri with her golden hair and gentle hands\nA political arrangement from the western Riran lands\nI didn't love her then, too full of war and Thrill\nShe deserved a husband, not a man built just to kill\n\n[chorus]\nEvi, I burned the city with you inside\nEvi, the Thrill was singing and my honor died\nI can't remember your face, the Almighty took it away\nBut I remember the fire every single day\n\n[verse 2]\nShe gave me Adolin with sunlight in his smile\nShe gave me Renarin with wisdom all the while\nI gave her nothing but a husband gone to war\nA man who couldn't love her, always craving more\n\n[chorus]\nEvi, I burned the city with you inside\nEvi, the Thrill was screaming and my soul died\nI asked to have the memories taken, scoured clean\nBut the absence is a wound where your face should have been\n\n[bridge]\nCultivation cut you from my mind\nBut she left the guilt, the burning kind\nA hole shaped like a woman I forgot to love\nUntil she was ash rising above\n\n[chorus]\nEvi, I burned the city with you inside\nEvi, I will carry this until I've died\nThe Blackthorn's greatest victory\nWas the night he became the monster in the story"
+    },
+    {
+      "num": 3,
+      "title": "The Thrill",
+      "slug": "the-thrill",
+      "prompt": "intense progressive rock with dissonant crescendos and pounding tribal drums, the music itself feels addictive and dangerous, seductive heaviness that makes you want to give in",
+      "lyrics": "[verse 1]\nIt starts beneath the ribs, a heat that isn't mine\nA singing in the blood that crosses every line\nThe Thrill is not emotion, it's a god's intoxicant\nNergaoul wrapped around my soul, a parasite in a chant\n\n[chorus]\nThe Thrill is calling, the Thrill is here\nThe Thrill turns cowardice into no fear\nThe Thrill turns men into instruments of war\nAnd I was its greatest weapon, asking always for more\n\n[verse 2]\nIn battle everything is simple, blade and bone\nNo politics, no grief, no sitting on a throne\nJust the red song rising and the bodies at my feet\nThe Thrill made murder feel like a heartbeat\n\n[chorus]\nThe Thrill is calling, the Thrill is here\nThe Thrill turns mercy into disappear\nThe Thrill turns fathers into weapons of the crown\nAnd I let it ride me, let it burn my city down\n\n[bridge]\nI didn't know it was an Unmade\nI thought the battle-joy was just my own\nBut the monster feeding on my rage\nWas never me, I was never alone\nAnd knowing that is somehow worse\n\n[chorus]\nThe Thrill is silent now, the Thrill is gone\nBut I still hear the echo of its song\nAnd every time I lift a blade in honest fight\nI wonder if the singing will return tonight"
+    },
+    {
+      "num": 4,
+      "title": "The Way of Kings",
+      "slug": "the-way-of-kings",
+      "prompt": "majestic progressive rock with complex arrangements, layered keyboards and guitar interplay, building through movements like a symphony condensed, scholarly and powerful",
+      "lyrics": "[verse 1]\nI found the book in ruins of a life I'd left behind\nNohadon's words like water on the wasteland of my mind\nLife before death, the first time that the words had weight\nA drunken warlord reading by the light of his estate\n\n[chorus]\nThe way of kings is not the way of war\nThe way of kings is what you're living for\nI read the words a hundred times and still they crack me open\nThe way of kings is every oath I've spoken\n\n[verse 2]\nThe most important step a man can take is the next one\nNot the first, not the last, the one when you want to be done\nNohadon walked from Abamabar through the desolation's face\nTo prove that leaders lead by walking, not by taking place\n\n[chorus]\nThe way of kings is not the way of war\nThe way of kings is what you're bleeding for\nI held this book while my kingdom fell apart\nAnd it rebuilt me, page by page, heart by heart\n\n[bridge]\nThe lighteyes mock my reading, say a man should fight not think\nBut I've done enough fighting and I've stood on every brink\nThe way of kings is knowing when the blade must rest\nAnd the mind must carry what the arm cannot best\n\n[chorus]\nThe way of kings is not the way of swords\nThe way of kings is found in ancient words\nI'll unite instead of conquer, build instead of burn\nThe way of kings is what the Blackthorn had to learn"
+    },
+    {
+      "num": 5,
+      "title": "Unite Them",
+      "slug": "unite-them",
+      "prompt": "soaring epic progressive rock with choir-like vocal harmonies and massive orchestral guitar layers, a rallying cry turned hymn, commanding and stirring",
+      "lyrics": "[verse 1]\nThe Stormfather spoke in thunder and in grief\nHonor is dead, he said, beyond belief\nBut Honor's dying wish was etched in stone\nUnite them, echoing from the Almighty's throne\n\n[chorus]\nUnite them, the dead god whispered to the sky\nUnite them, before the last Desolation's nigh\nThe Blackthorn heard the order and he understood\nNot through conquest this time, but through something good\n\n[verse 2]\nI knelt before the nations and I opened up my hands\nAzir, Thaylenah, Iri, all the scattered lands\nA warlord asking allies, not demanding their submission\nThe hardest battle I have fought, swallowing my ambition\n\n[chorus]\nUnite them, across every border drawn in blood\nUnite them, before Odium brings the flood\nThe coalition is a fragile, fracturing thing\nBut it's the only chance this world has left to bring\n\n[bridge]\nThey say I hear voices, they say I've gone mad\nA highprince who talks to storms, the worst Kholin ever had\nBut the Stormfather and I have bound our oath\nAnd I will unite this world, or die for the growth\n\n[chorus]\nUnite them, I'll stand before the kings and queens\nUnite them, show them what a Bondsmith means\nThe man who burned the world will be the one to mend\nUnite them, from beginning to the end"
+    },
+    {
+      "num": 6,
+      "title": "Oathbringer",
+      "slug": "oathbringer",
+      "prompt": "climactic progressive rock with crushing dynamics, alternating between brutal heavy sections and transcendent melodic passages, a man confronting the worst version of himself",
+      "lyrics": "[verse 1]\nI stood before the Stormfather as Odium showed my sin\nEvery murder, every fire, every city I'd marched in\nHe offered me release, said give me all your pain\nLet me carry your remorse and be the Blackthorn once again\n\n[chorus]\nI am the one who will take responsibility\nI am the monster and the man who set them free\nYou cannot have my pain, Odium, it's mine\nMy pain is the proof that I have crossed the line\nAnd chosen to come back\n\n[verse 2]\nThe memories returned like fire in reverse\nEvi's face, the burning city, every unforgivable verse\nCultivation gave them back so I could face the truth\nThe Blackthorn and the Bondsmith share the same man's proof\n\n[chorus]\nI am the one who will take responsibility\nFor every broken oath and every cruelty\nYou cannot have my pain, it is the price I pay\nFor choosing to be better every single day\n\n[bridge]\nThe most important step is the next one\nNot the first step, not when you are done\nThe next step after you have burned it all\nThe next step after the fall\n\n[outro]\nYou cannot have my pain\nYou cannot have my pain\nI will carry what I've done\nI am the Blackthorn's requiem, and I have just begun"
+    },
+    {
+      "num": 7,
+      "title": "Bondsmith",
+      "slug": "bondsmith",
+      "prompt": "expansive progressive rock with cosmic scale, layers building upon layers, orchestral grandeur meeting raw power, a man bonding with the storm itself",
+      "lyrics": "[verse 1]\nI spoke the words and lightning answered from the sky\nThe Stormfather, ancient and grieving, asked me why\nWhy would a mortal bond with something so immense\nI said because the world needs someone who makes sense\nOf all this scattered honor, all this broken trust\nA Bondsmith welds the fractures, turns the rubble back to just\n\n[chorus]\nBondsmith, I bind the oaths that others break\nBondsmith, I mend the world for honor's sake\nThe Stormfather weeps for what has been undone\nAnd I stand in the storm because I am the one\n\n[verse 2]\nI open perpendicularities between the realms\nI seal the bonds that Odium attempts to overwhelm\nThe Connection Surge flows through me like a river finds the sea\nI feel every oath on Roshar, every broken plea\n\n[chorus]\nBondsmith, I bind the oaths that others break\nBondsmith, I carry more than one man's stake\nThe Stormfather roars and I roar with him\nTwo broken beings filling grief to the brim\nWith purpose\n\n[bridge]\nDalinar Kholin, Blackthorn, Bondsmith, father, king\nSo many names for one man carrying everything\nBut the Bondsmith's work is simple at its core\nJoin what is broken, and make it something more\n\n[outro]\nI am the Bondsmith\nI am the storm's right hand\nAnd I will hold this world together\nAs long as I can stand"
+    },
+    {
+      "num": 8,
+      "title": "The Blackthorn's Requiem",
+      "slug": "the-blackthorns-requiem",
+      "prompt": "epic progressive rock finale, sweeping from devastating heaviness to transcendent beauty, a full journey compressed into one song, requiem mass meets stadium rock, the album's emotional apex",
+      "lyrics": "[verse 1]\nI was a monster and I've never run from that\nI burned a city with my wife inside, a fact\nThat follows me through every hall I build in hope\nThe Blackthorn is my shadow and we share the same rope\n\n[chorus]\nThis is the Blackthorn's requiem\nA prayer for the man I was and the man I am\nRequiem for the conquered and the lost\nA funeral hymn for every cost\n\n[verse 2]\nMy sons forgave me though I don't deserve the grace\nNavani loves the man who finally shows his face\nThe coalition stands because I chose to bleed\nNot with a sword, but with the words that kingdoms need\n\n[chorus]\nThis is the Blackthorn's requiem\nA prayer for the monster and the lamb\nRequiem for the cities burned to dust\nA Bondsmith's oath built on the ruins of trust\n\n[bridge]\nLife before death, I've died a thousand times\nStrength before weakness, I've committed a thousand crimes\nJourney before destination, the hardest truth to own\nIs that the journey never ends and you walk it alone\nBut you walk it\nYou walk it\nYou take the next step\n\n[outro]\nThe Blackthorn's requiem is not a song of sorrow\nIt is a promise that there's always one more tomorrow\nOne more step, one more oath, one more chance to mend\nThe Blackthorn's requiem will never end"
+    }
+  ]
+}
