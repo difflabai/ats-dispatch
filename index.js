@@ -23,7 +23,7 @@ const LEASE_MS = 14400000;          // 4 hours
 const NANOBOT_TIMEOUT_MS = 14400000; // 4 hours (matches lease)
 const MAX_TASK_RETRIES = 3;
 const ACTOR_FLAGS = ['--actor-type', 'agent', '--actor-id', 'ada-dispatch', '--actor-name', 'Ada Dispatch'];
-const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce', 'pubkey', 'from'];
+const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce', 'pubkey', 'from', 'depends_on'];
 const DISPATCH_KEYS_PATH = join(__dirname, 'dispatch-keys.json');
 const TRUSTED_KEYS_PATH = join(__dirname, 'trusted-keys.json');
 const PENDING_REGISTRATIONS_PATH = join(__dirname, 'pending-registrations.json');
@@ -37,6 +37,9 @@ const WATCH_RECONNECT_MAX_MS = 60000;
 const taskRetries = new Map();
 // Track tasks currently being processed to avoid duplicates
 const processingTasks = new Set();
+// Tasks deferred while waiting for dependencies to complete
+const deferredTasks = new Map();
+const DEP_CHECK_INTERVAL_MS = 15000; // Re-check deferred tasks every 15s
 
 // === GPU semaphore ===
 // Only GPU-heavy tasks (music generation, TTS, etc.) are serialized.
@@ -778,6 +781,81 @@ function runNanobot(prompt, sessionId) {
   return { promise, child };
 }
 
+// === Dependency resolution ===
+// Tasks with payload.depends_on = [id1, id2, ...] are deferred until all
+// dependency tasks reach "completed" status.  If any dependency fails or is
+// cancelled, the dependent task is marked failed immediately.
+
+function getTaskDeps(task) {
+  const deps = task.payload?.depends_on;
+  if (!Array.isArray(deps) || deps.length === 0) return [];
+  return deps.map(id => String(id));
+}
+
+/** Returns { ready } | { blocked, reason } | { waiting, pending[] } */
+function checkDependencies(task) {
+  const deps = getTaskDeps(task);
+  if (deps.length === 0) return { ready: true };
+
+  const waiting = [];
+  for (const depId of deps) {
+    let depTask;
+    try {
+      depTask = getTask(depId);
+    } catch (err) {
+      log('warn', 'Failed to fetch dependency task', { depId, error: err.message });
+      waiting.push(depId);
+      continue;
+    }
+
+    if (!depTask) {
+      return { blocked: true, reason: `Dependency task ${depId} not found` };
+    }
+
+    if (depTask.status === 'completed') continue;
+    if (depTask.status === 'failed' || depTask.status === 'cancelled') {
+      return { blocked: true, reason: `Dependency task ${depId} ${depTask.status}` };
+    }
+    waiting.push(depId);
+  }
+
+  if (waiting.length > 0) return { waiting: true, pending: waiting };
+  return { ready: true };
+}
+
+function checkDeferredTasks() {
+  if (deferredTasks.size === 0) return;
+
+  log('debug', 'Checking deferred tasks', { count: deferredTasks.size });
+
+  for (const [taskId, task] of deferredTasks) {
+    // Re-fetch to make sure it's still pending (may have been cancelled externally)
+    let fresh;
+    try { fresh = getTask(taskId); } catch { continue; }
+    if (!fresh || fresh.status !== 'pending') {
+      deferredTasks.delete(taskId);
+      continue;
+    }
+
+    const depStatus = checkDependencies(task);
+
+    if (depStatus.ready) {
+      deferredTasks.delete(taskId);
+      log('info', 'Deferred task dependencies satisfied, dispatching', { taskId, title: task.title });
+      dispatchTask(task);
+    } else if (depStatus.blocked) {
+      deferredTasks.delete(taskId);
+      log('warn', 'Deferred task blocked by failed dependency', { taskId, reason: depStatus.reason });
+      try {
+        claimTask(taskId);
+        failTask(taskId, `Blocked: ${depStatus.reason}`);
+      } catch {}
+      if (shouldNotify(task)) telegram(`\u{1F6AB} Blocked: ${task.title} — ${depStatus.reason}`);
+    }
+    // If still waiting, leave in deferredTasks
+  }
+}
+
 // === Task dispatch ===
 // GPU tasks go through the semaphore; non-GPU tasks run immediately (concurrent).
 function dispatchTask(task) {
@@ -809,6 +887,28 @@ function dispatchTask(task) {
 
   if (auth.warning === 'plaintext_grace_period') {
     log('warn', 'AUTH: Plaintext task in grace period', { taskId, title: task.title });
+  }
+
+  // Dependency check — defer if dependencies aren't met
+  const deps = getTaskDeps(task);
+  if (deps.length > 0) {
+    const depStatus = checkDependencies(task);
+    if (depStatus.blocked) {
+      log('warn', 'Task blocked by failed dependency', { taskId, reason: depStatus.reason });
+      try {
+        claimTask(taskId);
+        failTask(taskId, `Blocked: ${depStatus.reason}`);
+      } catch {}
+      if (shouldNotify(task)) telegram(`\u{1F6AB} Blocked: ${task.title} — ${depStatus.reason}`);
+      return;
+    }
+    if (depStatus.waiting) {
+      log('info', 'Task deferred, waiting for dependencies', { taskId, title: task.title, waiting: depStatus.pending });
+      deferredTasks.set(taskId, task);
+      try { postMessage(taskId, `Waiting for dependencies: ${depStatus.pending.join(', ')}`); } catch {}
+      return;
+    }
+    log('info', 'All dependencies satisfied', { taskId, deps });
   }
 
   // Poison task guard
@@ -960,6 +1060,8 @@ function processTask(task, gpuHeld) {
       telegram(`✅ Done: ${task.title} — ${snippet}`);
     }
     cleanup();
+    // Trigger deferred task check — dependents may now be ready
+    checkDeferredTasks();
   }).catch((err) => {
     if (cancelledByShutdown) {
       log('info', 'Task interrupted by shutdown, will be retried', { taskId });
@@ -976,6 +1078,8 @@ function processTask(task, gpuHeld) {
       }
     }
     cleanup();
+    // Trigger deferred task check — dependents may now be blocked
+    checkDeferredTasks();
   });
 }
 
@@ -1087,7 +1191,7 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 // === Main ===
 function main() {
   const config = loadConfig();
-  log('info', 'ats-dispatch v3.2.0 starting', {
+  log('info', 'ats-dispatch v3.3.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,
@@ -1125,6 +1229,12 @@ function main() {
   } catch (err) {
     log('error', 'Error draining pending tasks', { error: err.message });
   }
+
+  // Periodically re-check deferred tasks (safety net for externally completed deps)
+  const depCheckInterval = setInterval(() => {
+    if (!running) { clearInterval(depCheckInterval); return; }
+    checkDeferredTasks();
+  }, DEP_CHECK_INTERVAL_MS);
 
   startWatch();
   log('info', 'WebSocket watcher started, listening for tasks');
