@@ -23,7 +23,7 @@ const LEASE_MS = 14400000;          // 4 hours
 const NANOBOT_TIMEOUT_MS = 14400000; // 4 hours (matches lease)
 const MAX_TASK_RETRIES = 3;
 const ACTOR_FLAGS = ['--actor-type', 'agent', '--actor-id', 'ada-dispatch', '--actor-name', 'Ada Dispatch'];
-const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce', 'pubkey', 'from'];
+const INTERNAL_PAYLOAD_FIELDS = ['callback_url', 'quiet', 'encrypted', 'sender', 'ciphertext', 'nonce', 'pubkey', 'from', 'depends_on'];
 const DISPATCH_KEYS_PATH = join(__dirname, 'dispatch-keys.json');
 const TRUSTED_KEYS_PATH = join(__dirname, 'trusted-keys.json');
 const PENDING_REGISTRATIONS_PATH = join(__dirname, 'pending-registrations.json');
@@ -72,6 +72,12 @@ function isGpuTask(task) {
   const gpuKeywords = ['ace-step', 'acestep', 'cover mode', 'qwen tts', 'qwen3-tts'];
   return gpuKeywords.some(kw => text.includes(kw));
 }
+
+// === Dependency tracking ===
+// Tasks waiting for dependencies to complete. Map<taskId, task>
+const waitingOnDeps = new Map();
+const DEP_CHECK_INTERVAL_MS = 10000; // Re-check waiting tasks every 10s
+let depCheckInterval = null;
 
 let running = true;
 
@@ -589,6 +595,121 @@ function handleCLI(args) {
     process.exit(0);
   }
 
+  if (cmd === 'create') {
+    // Wrapper around `ats create` with --depends-on support
+    const title = args[1];
+    if (!title) {
+      console.error('Usage: node index.js create <title> [--description <text>] [--depends-on <id,...>] [--payload <json>] [--channel <ch>] [--priority <1-10>]');
+      process.exit(1);
+    }
+    const createArgs = ['create', title, '--channel', CHANNEL];
+    let dependsOn = null;
+    let existingPayload = {};
+
+    for (let i = 2; i < args.length; i++) {
+      if (args[i] === '--depends-on' && args[i + 1]) {
+        dependsOn = args[i + 1].split(',').map(s => s.trim()).filter(Boolean);
+        i++;
+      } else if (args[i] === '--payload' && args[i + 1]) {
+        try { existingPayload = JSON.parse(args[i + 1]); } catch { existingPayload = {}; }
+        i++;
+      } else {
+        createArgs.push(args[i]);
+        if (args[i].startsWith('--') && args[i + 1] && !args[i + 1].startsWith('--')) {
+          createArgs.push(args[i + 1]);
+          i++;
+        }
+      }
+    }
+
+    // Validate depends_on targets exist
+    if (dependsOn) {
+      for (const depId of dependsOn) {
+        try {
+          const dep = getTask(depId);
+          if (!dep) {
+            console.error(`Error: dependency task #${depId} not found`);
+            process.exit(1);
+          }
+        } catch (err) {
+          console.error(`Error: cannot verify dependency task #${depId}: ${err.message}`);
+          process.exit(1);
+        }
+      }
+      existingPayload.depends_on = dependsOn;
+    }
+
+    if (Object.keys(existingPayload).length > 0) {
+      createArgs.push('--payload', JSON.stringify(existingPayload));
+    }
+
+    try {
+      const result = ats(...createArgs);
+      process.stdout.write(result);
+      if (dependsOn) {
+        console.log(`Dependencies: ${dependsOn.map(d => '#' + d).join(', ')}`);
+      }
+    } catch (err) {
+      console.error('Failed to create task:', err.stderr || err.message);
+      process.exit(1);
+    }
+    process.exit(0);
+  }
+
+  if (cmd === 'deps') {
+    // Show dependency graph for channel tasks
+    let filterTaskId = null;
+    let statusFilter = null;
+    for (let i = 1; i < args.length; i++) {
+      if (args[i] === '--task' && args[i + 1]) { filterTaskId = args[i + 1]; i++; }
+      if (args[i] === '--status' && args[i + 1]) { statusFilter = args[i + 1]; i++; }
+    }
+
+    const listArgs = ['list', '--channel', CHANNEL, '-f', 'json'];
+    if (statusFilter && statusFilter !== 'all') {
+      listArgs.push('--status', statusFilter);
+    } else {
+      listArgs.push('--all');
+    }
+
+    const tasks = atsJSON(...listArgs);
+    const taskList = Array.isArray(tasks) ? tasks : [];
+
+    const taskMap = new Map();
+    for (const t of taskList) taskMap.set(String(t.id || t.uuid), t);
+
+    const relevant = filterTaskId
+      ? taskList.filter(t => String(t.id || t.uuid) === filterTaskId)
+      : taskList.filter(t => getTaskDependencies(t).length > 0);
+
+    if (relevant.length === 0) {
+      console.log(filterTaskId ? `Task #${filterTaskId} has no dependencies.` : 'No tasks with dependencies found.');
+      process.exit(0);
+    }
+
+    const statusIcon = (s) => ({ pending: '\u25CB', in_progress: '\u25D1', completed: '\u25CF', failed: '\u2717', cancelled: '\u2298' }[s] || '?');
+
+    console.log('Dependency Graph:');
+    console.log('');
+    for (const t of relevant) {
+      const id = t.id || t.uuid;
+      const deps = getTaskDependencies(t);
+      console.log(`  ${statusIcon(t.status)} #${id} ${t.title || '(untitled)'} [${t.status}]`);
+      for (let i = 0; i < deps.length; i++) {
+        const depId = deps[i];
+        const dep = taskMap.get(depId);
+        const connector = i === deps.length - 1 ? '\u2514\u2500' : '\u251C\u2500';
+        if (dep) {
+          console.log(`    ${connector} depends on ${statusIcon(dep.status)} #${depId} ${dep.title || '(untitled)'} [${dep.status}]`);
+        } else {
+          console.log(`    ${connector} depends on ? #${depId} (not found)`);
+        }
+      }
+      console.log('');
+    }
+    process.exit(0);
+  }
+
   if (cmd === 'config') {
     const key = args[1];
     const value = args[2];
@@ -778,6 +899,85 @@ function runNanobot(prompt, sessionId) {
   return { promise, child };
 }
 
+// === Dependency resolution ===
+function getTaskDependencies(task) {
+  const deps = task.payload?.depends_on;
+  if (!deps) return [];
+  const arr = Array.isArray(deps) ? deps : [deps];
+  return arr.map(String);
+}
+
+function checkDependencies(task) {
+  const deps = getTaskDependencies(task);
+  if (deps.length === 0) return { ready: true };
+
+  const pending = [];
+  const failed = [];
+  const completed = [];
+
+  for (const depId of deps) {
+    try {
+      const depTask = getTask(depId);
+      if (!depTask) {
+        failed.push({ id: depId, reason: 'not found' });
+        continue;
+      }
+      const status = depTask.status;
+      if (status === 'completed') {
+        completed.push(depId);
+      } else if (status === 'failed' || status === 'cancelled') {
+        failed.push({ id: depId, reason: status });
+      } else {
+        pending.push(depId);
+      }
+    } catch (err) {
+      log('warn', 'Failed to check dependency status', { depId, error: err.message });
+      pending.push(depId);
+    }
+  }
+
+  if (failed.length > 0) {
+    return { ready: false, blocked: true, failed, pending, completed };
+  }
+  if (pending.length > 0) {
+    return { ready: false, blocked: false, pending, completed };
+  }
+  return { ready: true, completed };
+}
+
+function recheckWaitingTasks() {
+  if (waitingOnDeps.size === 0) return;
+
+  log('debug', 'Re-checking dependency queue', { count: waitingOnDeps.size });
+
+  for (const [taskId, task] of waitingOnDeps) {
+    const depStatus = checkDependencies(task);
+
+    if (depStatus.ready) {
+      log('info', 'Dependencies satisfied, dispatching', { taskId, deps: getTaskDependencies(task) });
+      waitingOnDeps.delete(taskId);
+      if (!running) {
+        log('info', 'Shutdown in progress, skipping dispatch of deferred task', { taskId });
+        continue;
+      }
+      dispatchTask(task);
+    } else if (depStatus.blocked) {
+      const reasons = depStatus.failed.map(f => `#${f.id} (${f.reason})`).join(', ');
+      log('warn', 'Task blocked by failed dependencies', { taskId, failed: reasons });
+      waitingOnDeps.delete(taskId);
+      try {
+        claimTask(taskId);
+        failTask(taskId, `Blocked: dependency ${reasons} failed`);
+        if (shouldNotify(task)) telegram(`🚫 Blocked: ${task.title} — dependency ${reasons} failed`);
+      } catch (err) {
+        log('error', 'Failed to mark blocked task', { taskId, error: err.message });
+      }
+      notifyCallback(task, 'failed', `Blocked: dependency ${reasons} failed`);
+    }
+    // else: still waiting, leave in queue
+  }
+}
+
 // === Task dispatch ===
 // GPU tasks go through the semaphore; non-GPU tasks run immediately (concurrent).
 function dispatchTask(task) {
@@ -819,6 +1019,35 @@ function dispatchTask(task) {
     notifyCallback(task, 'failed', `Exceeded max retry attempts (${MAX_TASK_RETRIES})`);
     if (shouldNotify(task)) telegram(`❌ Failed: ${task.title} — exceeded max retries`);
     return;
+  }
+
+  // Dependency check — defer tasks whose dependencies aren't yet complete
+  // (skip for encrypted tasks — deps are only visible after decryption in processTask)
+  const deps = task.payload?.encrypted ? [] : getTaskDependencies(task);
+  if (deps.length > 0) {
+    const depStatus = checkDependencies(task);
+    if (!depStatus.ready) {
+      if (depStatus.blocked) {
+        const reasons = depStatus.failed.map(f => `#${f.id} (${f.reason})`).join(', ');
+        log('warn', 'Task blocked by failed dependencies', { taskId, failed: reasons });
+        try {
+          claimTask(taskId);
+          failTask(taskId, `Blocked: dependency ${reasons} failed`);
+          if (shouldNotify(task)) telegram(`🚫 Blocked: ${task.title} — dependency ${reasons} failed`);
+        } catch {}
+        notifyCallback(task, 'failed', `Blocked: dependency ${reasons} failed`);
+        return;
+      }
+      // Dependencies still in progress — defer
+      if (!waitingOnDeps.has(taskId)) {
+        log('info', 'Task deferred, waiting on dependencies', {
+          taskId, title: task.title, waiting: depStatus.pending, completed: depStatus.completed,
+        });
+        waitingOnDeps.set(taskId, task);
+      }
+      return;
+    }
+    log('info', 'All dependencies satisfied', { taskId, deps });
   }
 
   const gpu = isGpuTask(task);
@@ -868,6 +1097,35 @@ function processTask(task, gpuHeld) {
       processingTasks.delete(taskId);
       if (gpuHeld) gpuRelease();
       return;
+    }
+
+    // Dependency check for encrypted tasks (deps only visible after decryption)
+    const deps = getTaskDependencies(task);
+    if (deps.length > 0) {
+      const depStatus = checkDependencies(task);
+      if (!depStatus.ready) {
+        if (depStatus.blocked) {
+          const reasons = depStatus.failed.map(f => `#${f.id} (${f.reason})`).join(', ');
+          log('warn', 'Task blocked by failed dependencies', { taskId, failed: reasons });
+          try {
+            failTask(taskId, `Blocked: dependency ${reasons} failed`);
+            if (shouldNotify(task)) telegram(`🚫 Blocked: ${task.title} — dependency ${reasons} failed`);
+          } catch {}
+          notifyCallback(task, 'failed', `Blocked: dependency ${reasons} failed`);
+          processingTasks.delete(taskId);
+          if (gpuHeld) gpuRelease();
+          return;
+        }
+        // Dependencies still in progress — defer
+        log('info', 'Encrypted task deferred, waiting on dependencies', {
+          taskId, title: task.title, waiting: depStatus.pending, completed: depStatus.completed,
+        });
+        waitingOnDeps.set(taskId, task);
+        processingTasks.delete(taskId);
+        if (gpuHeld) gpuRelease();
+        return;
+      }
+      log('info', 'All dependencies satisfied (post-decrypt)', { taskId, deps });
     }
   }
 
@@ -960,6 +1218,8 @@ function processTask(task, gpuHeld) {
       telegram(`✅ Done: ${task.title} — ${snippet}`);
     }
     cleanup();
+    // Re-check tasks waiting on this dependency
+    recheckWaitingTasks();
   }).catch((err) => {
     if (cancelledByShutdown) {
       log('info', 'Task interrupted by shutdown, will be retried', { taskId });
@@ -976,6 +1236,8 @@ function processTask(task, gpuHeld) {
       }
     }
     cleanup();
+    // Re-check tasks waiting on dependencies (failures cascade)
+    recheckWaitingTasks();
   });
 }
 
@@ -1079,6 +1341,7 @@ function startWatch() {
 function shutdown(signal) {
   log('info', 'Shutdown requested', { signal });
   running = false;
+  if (depCheckInterval) clearInterval(depCheckInterval);
 }
 
 process.on('SIGINT', () => shutdown('SIGINT'));
@@ -1087,7 +1350,7 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 // === Main ===
 function main() {
   const config = loadConfig();
-  log('info', 'ats-dispatch v3.2.0 starting', {
+  log('info', 'ats-dispatch v4.0.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,
@@ -1125,6 +1388,12 @@ function main() {
   } catch (err) {
     log('error', 'Error draining pending tasks', { error: err.message });
   }
+
+  // Start periodic dependency re-check for waiting tasks
+  depCheckInterval = setInterval(() => {
+    if (!running) return;
+    recheckWaitingTasks();
+  }, DEP_CHECK_INTERVAL_MS);
 
   startWatch();
   log('info', 'WebSocket watcher started, listening for tasks');

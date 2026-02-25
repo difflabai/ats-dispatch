@@ -38,6 +38,7 @@ ATS Channel (WebSocket)
 - **Poison task guard** — if a task fails 3 times, it's marked permanently failed instead of retrying forever
 - **Graceful shutdown** — on SIGINT/SIGTERM, in-flight tasks aren't marked failed; they return to pending after lease expiry
 - **Optional encryption** — supports NaCl public-key encryption for sensitive task payloads
+- **Dependency graph** — tasks with `depends_on` are deferred until all dependencies complete; failures cascade to dependents
 
 ## Quick start
 
@@ -91,6 +92,39 @@ ats create "Generate weekly report" \
 ```
 
 The callback receives a JSON POST with `task_id`, `status`, `result`, and `completed_at`.
+
+## Task dependencies
+
+Tasks can declare dependencies on other tasks using `depends_on`. A task with dependencies won't run until all dependencies reach `completed` status. If any dependency fails or is cancelled, the dependent task is automatically marked as failed.
+
+```bash
+# Create a chain of dependent tasks
+node index.js create "Step 1: Generate data" --description "..."
+# → Created task #100
+
+node index.js create "Step 2: Process data" --description "..." --depends-on 100
+# → Created task #101, depends on #100
+
+node index.js create "Step 3: Upload results" --description "..." --depends-on 101
+# → Created task #102, depends on #101
+
+# Multiple dependencies
+node index.js create "Final report" --description "..." --depends-on 100,101,102
+```
+
+View the dependency graph:
+
+```bash
+node index.js deps              # Show all tasks with dependencies
+node index.js deps --task 102   # Show deps for a specific task
+```
+
+When using `ats create` directly, pass dependencies via payload:
+
+```bash
+ats create "Step 2" --channel ada-dispatch \
+  --payload '{"depends_on": ["100"]}'
+```
 
 ## Encrypted tasks
 
