@@ -1017,7 +1017,8 @@ function dispatchTask(task) {
   }
 
   // Dependency check — defer tasks whose dependencies aren't yet complete
-  const deps = getTaskDependencies(task);
+  // (skip for encrypted tasks — deps are only visible after decryption in processTask)
+  const deps = task.payload?.encrypted ? [] : getTaskDependencies(task);
   if (deps.length > 0) {
     const depStatus = checkDependencies(task);
     if (!depStatus.ready) {
@@ -1090,6 +1091,35 @@ function processTask(task, gpuHeld) {
       processingTasks.delete(taskId);
       if (gpuHeld) gpuRelease();
       return;
+    }
+
+    // Dependency check for encrypted tasks (deps only visible after decryption)
+    const deps = getTaskDependencies(task);
+    if (deps.length > 0) {
+      const depStatus = checkDependencies(task);
+      if (!depStatus.ready) {
+        if (depStatus.blocked) {
+          const reasons = depStatus.failed.map(f => `#${f.id} (${f.reason})`).join(', ');
+          log('warn', 'Task blocked by failed dependencies', { taskId, failed: reasons });
+          try {
+            failTask(taskId, `Blocked: dependency ${reasons} failed`);
+            if (shouldNotify(task)) telegram(`🚫 Blocked: ${task.title} — dependency ${reasons} failed`);
+          } catch {}
+          notifyCallback(task, 'failed', `Blocked: dependency ${reasons} failed`);
+          processingTasks.delete(taskId);
+          if (gpuHeld) gpuRelease();
+          return;
+        }
+        // Dependencies still in progress — defer
+        log('info', 'Encrypted task deferred, waiting on dependencies', {
+          taskId, title: task.title, waiting: depStatus.pending, completed: depStatus.completed,
+        });
+        waitingOnDeps.set(taskId, task);
+        processingTasks.delete(taskId);
+        if (gpuHeld) gpuRelease();
+        return;
+      }
+      log('info', 'All dependencies satisfied (post-decrypt)', { taskId, deps });
     }
   }
 
