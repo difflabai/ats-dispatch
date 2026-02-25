@@ -956,6 +956,10 @@ function recheckWaitingTasks() {
     if (depStatus.ready) {
       log('info', 'Dependencies satisfied, dispatching', { taskId, deps: getTaskDependencies(task) });
       waitingOnDeps.delete(taskId);
+      if (!running) {
+        log('info', 'Shutdown in progress, skipping dispatch of deferred task', { taskId });
+        continue;
+      }
       dispatchTask(task);
     } else if (depStatus.blocked) {
       const reasons = depStatus.failed.map(f => `#${f.id} (${f.reason})`).join(', ');
