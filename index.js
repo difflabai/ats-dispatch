@@ -972,6 +972,7 @@ function recheckWaitingTasks() {
       } catch (err) {
         log('error', 'Failed to mark blocked task', { taskId, error: err.message });
       }
+      notifyCallback(task, 'failed', `Blocked: dependency ${reasons} failed`);
     }
     // else: still waiting, leave in queue
   }
@@ -1034,6 +1035,7 @@ function dispatchTask(task) {
           failTask(taskId, `Blocked: dependency ${reasons} failed`);
           if (shouldNotify(task)) telegram(`🚫 Blocked: ${task.title} — dependency ${reasons} failed`);
         } catch {}
+        notifyCallback(task, 'failed', `Blocked: dependency ${reasons} failed`);
         return;
       }
       // Dependencies still in progress — defer
