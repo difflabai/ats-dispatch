@@ -1,0 +1,1526 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #111116;
+  --bg-card: #16161c;
+  --bg-card-hover: #1c1c24;
+  --text-primary: #e8e6e3;
+  --text-secondary: #9a9a9a;
+  --text-muted: #5a5a5a;
+  --accent-ember: #d4631d;
+  --accent-ember-glow: #ff7b2e;
+  --accent-purple: #6b3fa0;
+  --accent-purple-glow: #8b5fc0;
+  --border: #222228;
+  --player-bg: #0d0d10;
+  --scrollbar-track: #111116;
+  --scrollbar-thumb: #2a2a32;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(10,10,12,0.98) 0%, rgba(10,10,12,0.9) 80%, transparent 100%);
+  padding: 20px 40px;
+  backdrop-filter: blur(20px);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--accent-ember) 0%, var(--accent-ember-glow) 50%, var(--accent-purple-glow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.site-subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.nav-home {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: none;
+}
+.nav-home:hover {
+  border-color: var(--accent-ember);
+  color: var(--accent-ember);
+}
+.nav-home.visible {
+  display: inline-block;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 140px 40px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212,99,29,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-ember-glow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.wheel-symbol {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 24px;
+  opacity: 0.3;
+}
+
+.wheel-symbol svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== ALBUM GRID ===== */
+.albums-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.album-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+.album-card:hover {
+  transform: translateY(-4px);
+  background: var(--bg-card-hover);
+  border-color: var(--accent-ember);
+  box-shadow: 0 20px 60px rgba(212,99,29,0.1), 0 0 0 1px rgba(212,99,29,0.1);
+}
+
+.album-card-art {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.album-card-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.album-card:hover .album-card-art img {
+  transform: scale(1.05);
+}
+
+.album-card-art::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(transparent, var(--bg-card));
+  pointer-events: none;
+}
+
+.album-card-info {
+  padding: 16px 20px 20px;
+  position: relative;
+}
+
+.album-card-character {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent-ember);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.album-card-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.album-card-tracks {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.album-card-play {
+  position: absolute;
+  top: -24px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background: var(--accent-ember);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s;
+  box-shadow: 0 8px 24px rgba(212,99,29,0.4);
+}
+
+.album-card:hover .album-card-play {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.album-card-play svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-left: 2px;
+}
+
+/* ===== ALBUM DETAIL VIEW ===== */
+.album-detail {
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 40px;
+}
+
+.album-detail.active {
+  display: block;
+}
+
+.album-detail-header {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 48px;
+  align-items: flex-start;
+}
+
+.album-detail-art {
+  width: 300px;
+  min-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.album-detail-art img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.album-detail-info {
+  flex: 1;
+}
+
+.album-detail-character {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent-ember);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.album-detail-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 900;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.album-detail-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.album-detail-meta {
+  display: flex;
+  gap: 24px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.album-detail-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ===== ALBUM DETAIL BODY (side-by-side layout) ===== */
+.album-detail-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.album-detail-body.has-lyrics {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ===== TRACK LIST ===== */
+.track-list {
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+.track-list-header {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 0 16px 12px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  gap: 16px;
+}
+
+.track-item:hover {
+  background: var(--bg-card);
+}
+
+.track-item.active {
+  background: rgba(212,99,29,0.1);
+}
+
+.track-item.active .track-title {
+  color: var(--accent-ember);
+}
+
+.track-number {
+  width: 24px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.track-item:hover .track-number,
+.track-item.active .track-number {
+  color: var(--accent-ember);
+}
+
+.track-title {
+  flex: 1;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.track-duration {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== LYRICS PANEL ===== */
+.lyrics-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px;
+  display: none;
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 180px);
+  overflow: hidden;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.lyrics-panel.active {
+  display: flex;
+}
+
+.lyrics-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.lyrics-panel-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.lyrics-panel-close {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.lyrics-panel-close:hover {
+  border-color: var(--accent-ember);
+  color: var(--accent-ember);
+}
+
+.lyrics-content {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 300;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Line-based lyrics highlight */
+.lyrics-line {
+  opacity: 1;
+  transition: opacity 0.6s ease, color 0.6s ease;
+  padding: 1px 0;
+}
+
+.lyrics-line-dim {
+  opacity: 0.3;
+}
+
+.lyrics-line-near {
+  opacity: 0.55;
+}
+
+.lyrics-line-active {
+  opacity: 1;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+/* Word-level highlighting */
+.lyrics-word {
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+}
+
+.lyrics-word-active {
+  color: var(--accent-ember-glow);
+  text-shadow: 0 0 8px var(--accent-ember);
+}
+
+.lyrics-word-sung {
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+
+.lyrics-line-section {
+  color: var(--accent-ember);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: opacity 0.6s ease;
+}
+
+.lyrics-line-section:first-child {
+  margin-top: 0;
+}
+
+.lyrics-line-blank {
+  height: 8px;
+  transition: opacity 0.6s ease;
+}
+
+/* ===== SYNC VISUALIZATION ===== */
+:root {
+  --sync-perfect: #4CAF50;
+  --sync-good: #8BC34A;
+  --sync-drifting: #FF9800;
+  --sync-misaligned: #F44336;
+}
+
+/* Sync toggle button in lyrics header */
+.sync-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  margin-right: 8px;
+}
+
+.sync-toggle:hover {
+  border-color: var(--sync-perfect);
+  color: var(--sync-perfect);
+}
+
+.sync-toggle.active {
+  background: rgba(76, 175, 80, 0.12);
+  border-color: var(--sync-perfect);
+  color: var(--sync-perfect);
+}
+
+/* Metrics bar */
+.sync-metrics {
+  display: none;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.sync-metrics.visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sync-metric {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.sync-metric-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sync-metric-value {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.sync-metric-sep {
+  color: var(--border);
+  font-size: 0.6rem;
+}
+
+/* Drift timeline */
+.sync-drift-timeline {
+  display: none;
+  height: 40px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sync-drift-timeline.visible {
+  display: block;
+}
+
+.sync-drift-baseline {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border);
+}
+
+.sync-drift-tolerance {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 0;
+  right: 0;
+  height: 16px;
+  background: rgba(76, 175, 80, 0.06);
+  border-top: 1px dashed rgba(76, 175, 80, 0.15);
+  border-bottom: 1px dashed rgba(76, 175, 80, 0.15);
+}
+
+.sync-drift-bar {
+  position: absolute;
+  width: 2px;
+  border-radius: 1px;
+  transition: opacity 0.2s;
+}
+
+.sync-drift-bar:hover {
+  opacity: 1 !important;
+  width: 3px;
+  z-index: 2;
+}
+
+/* Per-line sync indicators */
+.lyrics-panel.sync-active .lyrics-line {
+  padding-left: 12px;
+  border-left: 3px solid transparent;
+  transition: opacity 0.6s ease, color 0.6s ease, border-color 0.3s ease;
+}
+
+.lyrics-panel.sync-active .lyrics-line[data-sync-tier="perfect"] {
+  border-left-color: var(--sync-perfect);
+}
+
+.lyrics-panel.sync-active .lyrics-line[data-sync-tier="good"] {
+  border-left-color: var(--sync-good);
+}
+
+.lyrics-panel.sync-active .lyrics-line[data-sync-tier="drifting"] {
+  border-left-color: var(--sync-drifting);
+}
+
+.lyrics-panel.sync-active .lyrics-line[data-sync-tier="misaligned"] {
+  border-left-color: var(--sync-misaligned);
+}
+
+/* Keep section/blank lines neutral in sync view */
+.lyrics-panel.sync-active .lyrics-line-section,
+.lyrics-panel.sync-active .lyrics-line-blank {
+  border-left-color: transparent !important;
+  padding-left: 12px;
+}
+
+/* Sync tooltip */
+.sync-tooltip {
+  position: fixed;
+  background: #1a1a22;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  z-index: 300;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  max-width: 260px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.sync-tooltip.visible {
+  opacity: 1;
+}
+
+.sync-tooltip-title {
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+
+.sync-tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 2px 0;
+}
+
+.sync-tooltip-label {
+  color: var(--text-muted);
+}
+
+.sync-tooltip-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tier distribution bar in metrics */
+.sync-tier-bar {
+  display: flex;
+  height: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 80px;
+  max-width: 160px;
+}
+
+.sync-tier-segment {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+/* Legend under drift timeline */
+.sync-legend {
+  display: none;
+  gap: 12px;
+  font-size: 0.65rem;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+
+.sync-legend.visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sync-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sync-legend-swatch {
+  width: 10px;
+  height: 3px;
+  border-radius: 1px;
+}
+
+/* No reference data state */
+.sync-no-data {
+  display: none;
+  padding: 16px;
+  text-align: center;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.sync-no-data.visible {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sync-metrics {
+    gap: 8px;
+    padding: 8px 12px;
+    font-size: 0.7rem;
+  }
+  .sync-drift-timeline {
+    height: 32px;
+  }
+  .sync-tooltip {
+    max-width: 200px;
+    font-size: 0.7rem;
+  }
+}
+
+/* ===== AUDIO PLAYER ===== */
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--player-bg);
+  border-top: 1px solid var(--border);
+  padding: 12px 24px;
+  z-index: 200;
+  display: none;
+  backdrop-filter: blur(20px);
+}
+
+.audio-player.active {
+  display: block;
+}
+
+.player-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.player-track-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+  max-width: 280px;
+}
+
+.player-art {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.player-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-track-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-album-name {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.player-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.player-btn:hover {
+  color: var(--text-primary);
+}
+
+.player-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.player-btn-play {
+  width: 40px;
+  height: 40px;
+  background: var(--accent-ember);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.player-btn-play:hover {
+  background: var(--accent-ember-glow);
+  transform: scale(1.05);
+}
+
+.player-btn-play svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+.player-progress-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-time {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 40px;
+}
+
+.player-progress {
+  flex: 1;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-progress-fill {
+  height: 100%;
+  background: var(--accent-ember);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.player-progress:hover .player-progress-fill {
+  background: var(--accent-ember-glow);
+}
+
+.player-volume {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.player-volume-slider {
+  width: 80px;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-volume-fill {
+  height: 100%;
+  background: var(--text-secondary);
+  border-radius: 2px;
+  width: 70%;
+}
+
+/* ===== PLACEHOLDER STATES ===== */
+.no-audio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 16px 20px;
+  }
+  .hero {
+    padding: 110px 20px 40px;
+  }
+  .albums-grid {
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .album-detail {
+    padding: 100px 20px 20px;
+  }
+  .album-detail-header {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .album-detail-art {
+    width: 200px;
+    min-width: 200px;
+    margin: 0 auto;
+  }
+  .album-detail-art img {
+    height: 200px;
+  }
+  .player-content {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .player-track-info {
+    min-width: unset;
+    flex: 1;
+  }
+  .player-volume {
+    display: none;
+  }
+  .player-progress-container {
+    order: 10;
+    width: 100%;
+  }
+  .album-detail-body.has-lyrics {
+    grid-template-columns: 1fr;
+  }
+  .lyrics-panel {
+    padding: 20px;
+    position: static;
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .albums-grid {
+    grid-template-columns: 1fr;
+  }
+  .album-card {
+    display: flex;
+    flex-direction: row;
+  }
+  .album-card-art {
+    width: 100px;
+    min-width: 100px;
+    aspect-ratio: 1;
+  }
+  .album-card-art::after {
+    display: none;
+  }
+  .album-card-play {
+    display: none;
+  }
+  .album-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.album-card {
+  animation: fadeIn 0.5s ease backwards;
+}
+
+.album-card:nth-child(1) { animation-delay: 0.05s; }
+.album-card:nth-child(2) { animation-delay: 0.1s; }
+.album-card:nth-child(3) { animation-delay: 0.15s; }
+.album-card:nth-child(4) { animation-delay: 0.2s; }
+.album-card:nth-child(5) { animation-delay: 0.25s; }
+.album-card:nth-child(6) { animation-delay: 0.3s; }
+.album-card:nth-child(7) { animation-delay: 0.35s; }
+.album-card:nth-child(8) { animation-delay: 0.4s; }
+.album-card:nth-child(9) { animation-delay: 0.45s; }
+.album-card:nth-child(10) { animation-delay: 0.5s; }
+.album-card:nth-child(11) { animation-delay: 0.55s; }
+.album-card:nth-child(12) { animation-delay: 0.6s; }
+
+/* ===== AMBIENT BACKGROUND ===== */
+.ambient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.03;
+  animation: float 20s infinite;
+}
+
+.ambient-orb:nth-child(1) {
+  width: 600px;
+  height: 600px;
+  background: var(--accent-ember);
+  top: -200px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.ambient-orb:nth-child(2) {
+  width: 500px;
+  height: 500px;
+  background: var(--accent-purple);
+  bottom: -200px;
+  left: -100px;
+  animation-delay: -10s;
+}
+
+.ambient-orb:nth-child(3) {
+  width: 400px;
+  height: 400px;
+  background: var(--accent-ember-glow);
+  top: 50%;
+  left: 50%;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* ===== CHARACTER SECTION HEADER EFFECTS ===== */
+
+/* Base: active section headers get full opacity and smooth transition */
+.lyrics-line-section.lyrics-section-active {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease, color 0.3s ease, text-shadow 0.3s ease, letter-spacing 0.4s ease;
+  position: relative;
+}
+
+/* --- Dragon Reborn (Rand al'Thor): Burning fire flicker --- */
+@keyframes dragonFire {
+  0%   { text-shadow: 0 0 6px #cb4335, 0 0 15px #922b21, 0 0 30px rgba(203,67,53,0.4); color: #e74c3c; }
+  25%  { text-shadow: 0 0 10px #ff6b35, 0 0 20px #cb4335, 0 0 40px rgba(255,107,53,0.5); color: #ff7b2e; }
+  50%  { text-shadow: 0 0 8px #ffa500, 0 0 18px #ff6b35, 0 0 35px rgba(255,165,0,0.4); color: #ff8c00; }
+  75%  { text-shadow: 0 0 12px #cb4335, 0 0 22px #922b21, 0 0 45px rgba(203,67,53,0.6); color: #e74c3c; }
+  100% { text-shadow: 0 0 6px #cb4335, 0 0 15px #922b21, 0 0 30px rgba(203,67,53,0.4); color: #e74c3c; }
+}
+
+.lyrics-panel[data-album="dragon-reborn"] .lyrics-line-section.lyrics-section-active {
+  animation: dragonFire 1.5s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- Amyrlin's Fire (Egwene al'Vere): White Flame of Tar Valon --- */
+@keyframes amyrlinFlame {
+  0%   { text-shadow: 0 0 8px #f5f0e1, 0 0 20px rgba(255,215,0,0.5), 0 0 35px rgba(245,240,225,0.3); color: #f5f0e1; }
+  50%  { text-shadow: 0 0 14px #ffd700, 0 0 28px rgba(245,240,225,0.7), 0 0 50px rgba(255,215,0,0.4); color: #fff8dc; }
+  100% { text-shadow: 0 0 8px #f5f0e1, 0 0 20px rgba(255,215,0,0.5), 0 0 35px rgba(245,240,225,0.3); color: #f5f0e1; }
+}
+
+.lyrics-panel[data-album="amyrlins-fire"] .lyrics-line-section.lyrics-section-active {
+  animation: amyrlinFlame 2s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- Wolves and Hammers (Perrin Aybara): Golden eyes / forge glow --- */
+@keyframes wolfForge {
+  0%   { text-shadow: 0 0 6px #d4a017, 0 0 15px rgba(212,160,23,0.5), 0 0 25px rgba(184,134,11,0.3); color: #daa520; }
+  30%  { text-shadow: 0 0 10px #ffc107, 0 0 22px rgba(255,193,7,0.6), 0 0 35px rgba(255,152,0,0.3); color: #ffc107; }
+  60%  { text-shadow: 0 0 8px #ff9800, 0 0 18px rgba(255,152,0,0.5), 0 0 30px rgba(212,160,23,0.4); color: #ffb300; }
+  100% { text-shadow: 0 0 6px #d4a017, 0 0 15px rgba(212,160,23,0.5), 0 0 25px rgba(184,134,11,0.3); color: #daa520; }
+}
+
+.lyrics-panel[data-album="wolves-and-hammers"] .lyrics-line-section.lyrics-section-active {
+  animation: wolfForge 2.5s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- The Chess Player (Moiraine Damodred): Blue Aes Sedai ethereal glow --- */
+@keyframes moiraineBlue {
+  0%   { text-shadow: 0 0 8px #4a86c8, 0 0 18px rgba(74,134,200,0.5), 0 0 30px rgba(100,149,237,0.3); color: #6495ed; }
+  50%  { text-shadow: 0 0 14px #87ceeb, 0 0 28px rgba(135,206,235,0.6), 0 0 45px rgba(74,134,200,0.4); color: #87ceeb; }
+  100% { text-shadow: 0 0 8px #4a86c8, 0 0 18px rgba(74,134,200,0.5), 0 0 30px rgba(100,149,237,0.3); color: #6495ed; }
+}
+
+.lyrics-panel[data-album="the-chess-player"] .lyrics-line-section.lyrics-section-active {
+  animation: moiraineBlue 3s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- Duty Heavier Than a Mountain (Lan Mandragoran): Cold steel gleam --- */
+@keyframes lanSteel {
+  0%   { text-shadow: 0 0 5px #8899aa, 0 0 12px rgba(136,153,170,0.4), 0 0 20px rgba(176,196,222,0.2); color: #a8b8c8; }
+  40%  { text-shadow: 0 0 8px #b0c4de, 0 0 18px rgba(176,196,222,0.6), 0 0 28px rgba(200,220,240,0.3); color: #c8d8e8; }
+  100% { text-shadow: 0 0 5px #8899aa, 0 0 12px rgba(136,153,170,0.4), 0 0 20px rgba(176,196,222,0.2); color: #a8b8c8; }
+}
+
+.lyrics-panel[data-album="duty-heavier-than-a-mountain"] .lyrics-line-section.lyrics-section-active {
+  animation: lanSteel 3.5s ease-in-out infinite;
+  letter-spacing: 4px;
+}
+
+/* --- Spear and Flame (Aviendha): Desert fire / spear heat shimmer --- */
+@keyframes spearFlame {
+  0%   { text-shadow: 0 0 6px #e65100, 0 0 14px rgba(230,81,0,0.5), 0 0 25px rgba(255,111,0,0.3); color: #ff6f00; }
+  33%  { text-shadow: 0 0 10px #ff8f00, 0 0 20px rgba(255,143,0,0.6), 0 0 35px rgba(255,183,77,0.4); color: #ffab00; }
+  66%  { text-shadow: 0 0 8px #d84315, 0 0 16px rgba(216,67,21,0.5), 0 0 28px rgba(230,81,0,0.3); color: #ff5722; }
+  100% { text-shadow: 0 0 6px #e65100, 0 0 14px rgba(230,81,0,0.5), 0 0 25px rgba(255,111,0,0.3); color: #ff6f00; }
+}
+
+.lyrics-panel[data-album="spear-and-flame"] .lyrics-line-section.lyrics-section-active {
+  animation: spearFlame 1.8s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- The Gleeman's Tale (Thom Merrilin): Patchwork / multicolor stage lights --- */
+@keyframes gleemanPatch {
+  0%   { text-shadow: 0 0 8px #e74c3c, 0 0 18px rgba(231,76,60,0.5); color: #e74c3c; }
+  25%  { text-shadow: 0 0 8px #3498db, 0 0 18px rgba(52,152,219,0.5); color: #3498db; }
+  50%  { text-shadow: 0 0 8px #2ecc71, 0 0 18px rgba(46,204,113,0.5); color: #2ecc71; }
+  75%  { text-shadow: 0 0 8px #f39c12, 0 0 18px rgba(243,156,18,0.5); color: #f39c12; }
+  100% { text-shadow: 0 0 8px #e74c3c, 0 0 18px rgba(231,76,60,0.5); color: #e74c3c; }
+}
+
+.lyrics-panel[data-album="the-gleemans-tale"] .lyrics-line-section.lyrics-section-active {
+  animation: gleemanPatch 4s linear infinite;
+  letter-spacing: 3px;
+}
+
+/* --- The Viewings (Min Farshaw): Prismatic vision aura shimmer --- */
+@keyframes minVisions {
+  0%   { text-shadow: 0 0 8px #9b59b6, 0 0 15px rgba(155,89,182,0.4), 0 0 25px rgba(142,68,173,0.2); color: #bb8fce; }
+  33%  { text-shadow: 0 0 10px #e8daef, 0 0 20px rgba(232,218,239,0.5), 0 0 35px rgba(175,122,197,0.3); color: #d2b4de; }
+  66%  { text-shadow: 0 0 12px #af7ac5, 0 0 22px rgba(175,122,197,0.6), 0 0 40px rgba(155,89,182,0.4); color: #c39bd3; }
+  100% { text-shadow: 0 0 8px #9b59b6, 0 0 15px rgba(155,89,182,0.4), 0 0 25px rgba(142,68,173,0.2); color: #bb8fce; }
+}
+
+.lyrics-panel[data-album="the-viewings"] .lyrics-line-section.lyrics-section-active {
+  animation: minVisions 2.8s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- The Fisher Queen (Siuan Sanche): Blue water ripple --- */
+@keyframes fisherWater {
+  0%   { text-shadow: 0 0 6px #1a5276, 0 0 14px rgba(26,82,118,0.5), 0 0 24px rgba(52,152,219,0.3); color: #2e86c1; }
+  50%  { text-shadow: 0 0 10px #5dade2, 0 0 22px rgba(93,173,226,0.6), 0 0 38px rgba(133,193,233,0.4); color: #5dade2; }
+  100% { text-shadow: 0 0 6px #1a5276, 0 0 14px rgba(26,82,118,0.5), 0 0 24px rgba(52,152,219,0.3); color: #2e86c1; }
+}
+
+.lyrics-panel[data-album="the-fisher-queen"] .lyrics-line-section.lyrics-section-active {
+  animation: fisherWater 2.2s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- The Shepherd's Sword (Tam al'Thor): Warm heron-blade steel --- */
+@keyframes shepherdBlade {
+  0%   { text-shadow: 0 0 5px #8b7355, 0 0 12px rgba(139,115,85,0.4), 0 0 20px rgba(160,140,110,0.2); color: #c4a882; }
+  50%  { text-shadow: 0 0 9px #d4c4a8, 0 0 20px rgba(212,196,168,0.5), 0 0 32px rgba(192,170,130,0.3); color: #d4c4a8; }
+  100% { text-shadow: 0 0 5px #8b7355, 0 0 12px rgba(139,115,85,0.4), 0 0 20px rgba(160,140,110,0.2); color: #c4a882; }
+}
+
+.lyrics-panel[data-album="the-shepherds-sword"] .lyrics-line-section.lyrics-section-active {
+  animation: shepherdBlade 3s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- Shadow and the Flame (Ishamael): Dark fire / shadow pulse --- */
+@keyframes shadowFlame {
+  0%   { text-shadow: 0 0 8px #8b0000, 0 0 18px rgba(139,0,0,0.6), 0 0 30px rgba(40,0,0,0.4); color: #c0392b; }
+  30%  { text-shadow: 0 0 5px #1a1a2e, 0 0 12px rgba(26,26,46,0.8), 0 0 22px rgba(139,0,0,0.3); color: #922b21; }
+  60%  { text-shadow: 0 0 12px #ff4444, 0 0 25px rgba(255,68,68,0.5), 0 0 40px rgba(139,0,0,0.5); color: #e74c3c; }
+  100% { text-shadow: 0 0 8px #8b0000, 0 0 18px rgba(139,0,0,0.6), 0 0 30px rgba(40,0,0,0.4); color: #c0392b; }
+}
+
+.lyrics-panel[data-album="shadow-and-the-flame"] .lyrics-line-section.lyrics-section-active {
+  animation: shadowFlame 1.8s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- Dice Stop Rolling (Mat Cauthon): Dice tumble / foxhead medallion shimmer --- */
+@keyframes diceLuck {
+  0%   { text-shadow: 0 0 6px #c0c0c0, 0 0 14px rgba(192,192,192,0.5), 0 0 22px rgba(218,165,32,0.2); color: #c0c0c0; }
+  25%  { text-shadow: 0 0 10px #ffd700, 0 0 20px rgba(255,215,0,0.6), 0 0 35px rgba(255,215,0,0.3); color: #ffd700; }
+  50%  { text-shadow: 0 0 6px #e8e8e8, 0 0 16px rgba(232,232,232,0.5), 0 0 26px rgba(192,192,192,0.3); color: #e0e0e0; }
+  75%  { text-shadow: 0 0 10px #daa520, 0 0 20px rgba(218,165,32,0.6), 0 0 35px rgba(255,215,0,0.3); color: #daa520; }
+  100% { text-shadow: 0 0 6px #c0c0c0, 0 0 14px rgba(192,192,192,0.5), 0 0 22px rgba(218,165,32,0.2); color: #c0c0c0; }
+}
+
+.lyrics-panel[data-album="dice-stop-rolling"] .lyrics-line-section.lyrics-section-active {
+  animation: diceLuck 1.6s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- Daughter of the Night (Lanfear): Moonlight / silver-dark pulse --- */
+@keyframes nightMoon {
+  0%   { text-shadow: 0 0 8px #c0c0c0, 0 0 18px rgba(192,192,192,0.5), 0 0 30px rgba(75,0,130,0.3); color: #d4d4d4; }
+  40%  { text-shadow: 0 0 12px #e8e8ff, 0 0 25px rgba(232,232,255,0.6), 0 0 42px rgba(138,43,226,0.3); color: #e8e8ff; }
+  70%  { text-shadow: 0 0 6px #4b0082, 0 0 14px rgba(75,0,130,0.5), 0 0 24px rgba(192,192,192,0.3); color: #9370db; }
+  100% { text-shadow: 0 0 8px #c0c0c0, 0 0 18px rgba(192,192,192,0.5), 0 0 30px rgba(75,0,130,0.3); color: #d4d4d4; }
+}
+
+.lyrics-panel[data-album="daughter-of-the-night"] .lyrics-line-section.lyrics-section-active {
+  animation: nightMoon 3s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* --- Nynaeve al'Meara: Lightning crackle / healing light --- */
+@keyframes nynaeveLightning {
+  0%   { text-shadow: 0 0 6px #4fc3f7, 0 0 14px rgba(79,195,247,0.4), 0 0 22px rgba(3,169,244,0.2); color: #4fc3f7; }
+  15%  { text-shadow: 0 0 18px #ffffff, 0 0 35px rgba(255,255,255,0.8), 0 0 50px rgba(79,195,247,0.6); color: #ffffff; }
+  20%  { text-shadow: 0 0 6px #4fc3f7, 0 0 12px rgba(79,195,247,0.3), 0 0 20px rgba(3,169,244,0.2); color: #81d4fa; }
+  55%  { text-shadow: 0 0 8px #29b6f6, 0 0 16px rgba(41,182,246,0.5), 0 0 28px rgba(3,169,244,0.3); color: #4fc3f7; }
+  60%  { text-shadow: 0 0 20px #e0f7fa, 0 0 38px rgba(224,247,250,0.7), 0 0 55px rgba(79,195,247,0.5); color: #e0f7fa; }
+  65%  { text-shadow: 0 0 6px #4fc3f7, 0 0 14px rgba(79,195,247,0.4), 0 0 22px rgba(3,169,244,0.2); color: #4fc3f7; }
+  100% { text-shadow: 0 0 6px #4fc3f7, 0 0 14px rgba(79,195,247,0.4), 0 0 22px rgba(3,169,244,0.2); color: #4fc3f7; }
+}
+
+.lyrics-panel[data-album="nynaeve-al-meara"] .lyrics-line-section.lyrics-section-active {
+  animation: nynaeveLightning 2s ease-in-out infinite;
+  letter-spacing: 3px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  text-align: center;
+  padding: 60px 20px 120px;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-footer a {
+  color: var(--accent-ember);
+  text-decoration: none;
+}
+
+/* ===== A/B VARIANT TOGGLE ===== */
+.variant-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.variant-opt {
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.variant-opt:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.variant-opt:hover {
+  color: var(--text-secondary);
+  background: rgba(255,255,255,0.03);
+}
+
+.variant-opt.variant-active {
+  background: var(--accent-ember);
+  color: white;
+}
+
+/* Report button */
+.variant-report-btn {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.variant-report-btn:hover {
+  border-color: var(--accent-ember);
+  color: var(--accent-ember);
+  background: rgba(212,99,29,0.05);
+}
+
+/* Report modal */
+.variant-report-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.variant-report-content {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.variant-report-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.variant-report-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.variant-report-close:hover {
+  color: var(--text-primary);
+}
+
+.variant-report-desc {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.variant-report-desc code {
+  background: rgba(212,99,29,0.15);
+  color: var(--accent-ember-glow);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+.variant-report-json {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  overflow-x: auto;
+  white-space: pre;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.variant-report-copy {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: var(--accent-ember);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.variant-report-copy:hover {
+  background: var(--accent-ember-glow);
+}
