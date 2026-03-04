@@ -717,9 +717,42 @@
     });
 
     document.addEventListener('keydown', function(e) {
-      if (e.code === 'Space' && e.target === document.body) {
+      // Ignore keyboard shortcuts when focus is inside an input/textarea
+      var tag = e.target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+      if (e.target.isContentEditable) return;
+
+      if (e.code === 'Space') {
         e.preventDefault();
         togglePlay();
+        return;
+      }
+
+      // Arrow keys: Left/Right seek within track, Up/Down skip tracks
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        if (!currentTrack || !currentTrack.url || !audio.duration) return;
+        e.preventDefault();
+        var step = e.shiftKey ? 10 : 5; // 5s default, 10s with Shift
+        if (e.key === 'ArrowLeft') {
+          audio.currentTime = Math.max(0, audio.currentTime - step);
+        } else {
+          audio.currentTime = Math.min(audio.duration, audio.currentTime + step);
+        }
+        return;
+      }
+
+      if (e.key === 'ArrowUp') {
+        if (!currentAlbum || currentTrackIndex <= 0) return;
+        e.preventDefault();
+        playPrev();
+        return;
+      }
+
+      if (e.key === 'ArrowDown') {
+        if (!currentAlbum || currentTrackIndex < 0) return;
+        e.preventDefault();
+        playNext();
+        return;
       }
     });
   }
