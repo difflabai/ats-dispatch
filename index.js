@@ -629,6 +629,41 @@ function preflight() {
   ensureDispatchKeys();
 }
 
+// Kill orphaned watch processes from previous ada-dispatch instances
+function cleanupOrphanWatchers() {
+  try {
+    const result = execSync(
+      `pgrep -f "ats-wrapper.*watch.*--channel.*${CHANNEL}" 2>/dev/null || true`,
+      { encoding: 'utf-8', timeout: 5000 }
+    ).trim();
+    if (!result) return;
+    const pids = result.split('\n').map(p => p.trim()).filter(Boolean).map(Number);
+    const myPid = process.pid;
+    for (const pid of pids) {
+      if (pid === myPid) continue;
+      try {
+        process.kill(pid, 'SIGTERM');
+        log('info', 'Killed orphaned watch process', { pid });
+      } catch {}
+    }
+    // Also kill any orphaned ats-cli watch processes
+    const cliResult = execSync(
+      `pgrep -f "ats-cli.*watch.*--channel.*${CHANNEL}" 2>/dev/null || true`,
+      { encoding: 'utf-8', timeout: 5000 }
+    ).trim();
+    if (!cliResult) return;
+    const cliPids = cliResult.split('\n').map(p => p.trim()).filter(Boolean).map(Number);
+    for (const pid of cliPids) {
+      try {
+        process.kill(pid, 'SIGTERM');
+        log('info', 'Killed orphaned ats-cli watch process', { pid });
+      } catch {}
+    }
+  } catch (err) {
+    log('warn', 'Failed to clean up orphan watchers', { error: err.message });
+  }
+}
+
 // === ATS helpers ===
 function ats(...args) {
   const fullArgs = [...ACTOR_FLAGS, ...args];
@@ -1019,22 +1054,39 @@ function startWatch() {
   let watchChild = null;
   let killWatch = null; // named handler so we can remove it
   let connectedSince = null; // timestamp when connection started receiving events
+  let watchdogTimer = null; // kills zombie connections with no activity
+  let lastActivity = Date.now(); // updated on every stdout line
   const STABLE_THRESHOLD_MS = 30000; // 30s of uptime before resetting backoff
+  const WATCHDOG_MS = 120000; // restart if no stdout activity for 2 min
 
   function cleanupChild() {
+    // Clear watchdog
+    if (watchdogTimer) {
+      clearInterval(watchdogTimer);
+      watchdogTimer = null;
+    }
     // Remove signal handlers for the current child
     if (killWatch) {
       process.removeListener('SIGTERM', killWatch);
       process.removeListener('SIGINT', killWatch);
       killWatch = null;
     }
-    // Kill previous child if still alive
+    // Kill previous child and its entire process group (ats-wrapper + ats-cli)
     if (watchChild) {
       const pid = watchChild.pid;
-      try { watchChild.kill('SIGTERM'); } catch {}
+      try { if (!watchChild.killed) process.kill(-pid, 'SIGTERM'); } catch {}
+      try { if (!watchChild.killed) watchChild.kill('SIGTERM'); } catch {}
       log('info', 'Killed previous watch child', { pid });
       watchChild = null;
     }
+  }
+
+  function scheduleReconnect() {
+    if (!running) return;
+    const delay = reconnectDelay;
+    reconnectDelay = Math.min(reconnectDelay * 2, WATCH_RECONNECT_MAX_MS);
+    log('info', 'Scheduling watch reconnect', { delayMs: delay, attempt: reconnectAttempts });
+    setTimeout(launchWatch, delay);
   }
 
   function launchWatch() {
@@ -1055,24 +1107,63 @@ function startWatch() {
 
     reconnectAttempts++;
     connectedSince = null;
+    lastActivity = Date.now();
 
     const args = [...ACTOR_FLAGS, 'watch', '--channel', CHANNEL, '--events', 'task.created'];
     log('info', 'Starting ATS watch', { args: [ATS_BIN, ...args].join(' '), attempt: reconnectAttempts, reconnectDelay });
 
-    const child = spawn(ATS_BIN, args, {
-      stdio: ['pipe', 'pipe', 'pipe'],
-    });
-    watchChild = child;
+    let child;
+    try {
+      child = spawn(ATS_BIN, args, {
+        stdio: ['pipe', 'pipe', 'pipe'],
+        detached: true, // own process group so we can kill wrapper + ats-cli together
+      });
+    } catch (err) {
+      log('error', 'Failed to spawn watch process', { error: err.message });
+      scheduleReconnect();
+      return;
+    }
 
+    watchChild = child;
     const pid = child.pid;
     log('info', 'Watch child spawned', { pid });
 
     // Aggregate stderr for crash diagnosis
     let stderrBuf = '';
+    // Guard against double-reconnection from both close and error events
+    let reconnectHandled = false;
+
+    function handleChildExit(source, code, signal) {
+      if (reconnectHandled) return;
+      reconnectHandled = true;
+
+      const uptime = connectedSince ? Date.now() - connectedSince : 0;
+
+      // Guard: only handle reconnection for the CURRENT watch child.
+      // If cleanupChild() already killed this child and spawned a new one,
+      // this close event is stale — ignore it to prevent orphaned processes.
+      if (watchChild !== child) {
+        log('debug', 'Ignoring exit from stale watch child', { pid, code, signal, source });
+        return;
+      }
+
+      log('warn', 'Watch process exited', {
+        pid, code, signal, source,
+        uptime: `${Math.round(uptime / 1000)}s`,
+        reconnectMs: reconnectDelay,
+        attempt: reconnectAttempts,
+        stderr: stderrBuf.trim().slice(-500) || '(none)',
+      });
+
+      watchChild = null;
+      connectedSince = null;
+      scheduleReconnect();
+    }
 
     const rl = createInterface({ input: child.stdout });
 
     rl.on('line', (line) => {
+      lastActivity = Date.now();
       const trimmed = line.trim();
       if (!trimmed || trimmed.startsWith('Connecting') || trimmed.startsWith('✓') || trimmed.startsWith('Watching')) {
         // Mark connection as alive on status messages too
@@ -1114,41 +1205,38 @@ function startWatch() {
       stderrBuf += text;
       // Keep stderr buffer bounded (last 4KB)
       if (stderrBuf.length > 4096) stderrBuf = stderrBuf.slice(-4096);
+      // Log stderr in real-time for crash diagnosis
+      const lines = text.trim();
+      if (lines) log('warn', 'Watch stderr', { pid, text: lines.slice(-300) });
     });
 
     child.on('close', (code, signal) => {
-      const uptime = connectedSince ? Date.now() - connectedSince : 0;
-
-      // Guard: only handle reconnection for the CURRENT watch child.
-      // If cleanupChild() already killed this child and spawned a new one,
-      // this close event is stale — ignore it to prevent orphaned processes.
-      if (watchChild !== child) {
-        log('debug', 'Ignoring close from stale watch child', { pid, code, signal });
-        return;
-      }
-
-      log('warn', 'Watch process exited', {
-        pid, code, signal,
-        uptime: `${Math.round(uptime / 1000)}s`,
-        reconnectMs: reconnectDelay,
-        attempt: reconnectAttempts,
-        stderr: stderrBuf.trim().slice(-500) || '(none)',
-      });
-
-      watchChild = null;
-      connectedSince = null;
-      if (!running) return;
-      setTimeout(launchWatch, reconnectDelay);
-      reconnectDelay = Math.min(reconnectDelay * 2, WATCH_RECONNECT_MAX_MS);
+      handleChildExit('close', code, signal);
     });
 
     child.on('error', (err) => {
       log('error', 'Watch process error', { pid, error: err.message, stderr: stderrBuf.trim().slice(-500) || '(none)' });
+      // Safety net: if close doesn't fire within 5s, trigger reconnection
+      setTimeout(() => handleChildExit('error-fallback', null, null), 5000);
     });
+
+    // Watchdog: restart if no stdout activity for WATCHDOG_MS
+    // Detects zombie connections that are alive but not producing output
+    watchdogTimer = setInterval(() => {
+      const idleMs = Date.now() - lastActivity;
+      if (idleMs > WATCHDOG_MS) {
+        log('warn', 'Watch child idle too long, restarting', { pid, idleMs, watchdogMs: WATCHDOG_MS });
+        if (watchChild === child && !child.killed) {
+          try { process.kill(-child.pid, 'SIGTERM'); } catch {}
+          try { child.kill('SIGTERM'); } catch {}
+        }
+      }
+    }, WATCHDOG_MS / 2);
 
     // Register signal handlers for this child (replace any previous)
     killWatch = () => {
-      if (watchChild) {
+      if (watchChild && !watchChild.killed) {
+        try { process.kill(-watchChild.pid, 'SIGTERM'); } catch {}
         try { watchChild.kill('SIGTERM'); } catch {}
       }
     };
@@ -1171,7 +1259,7 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 // === Main ===
 function main() {
   const config = loadConfig();
-  log('info', 'ats-dispatch v3.4.0 starting', {
+  log('info', 'ats-dispatch v3.5.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,
@@ -1210,17 +1298,27 @@ function main() {
     log('error', 'Error draining pending tasks', { error: err.message });
   }
 
+  cleanupOrphanWatchers();
   startWatch();
   log('info', 'WebSocket watcher started, listening for tasks');
 }
 
 // Route CLI subcommands before starting the watcher
 const cliArgs = process.argv.slice(2);
-if (cliArgs.length > 0) handleCLI(cliArgs);
-
-try {
-  main();
-} catch (err) {
-  log('error', 'Fatal error', { error: err.message });
-  process.exit(1);
+if (cliArgs.length > 0) {
+  const handled = handleCLI(cliArgs);
+  // If handleCLI returned false, the args were unrecognized — don't start the watcher
+  if (handled === false) {
+    console.error(`Unknown command: ${cliArgs[0]}`);
+    console.error('Usage: node index.js [keygen|add-key|remove-key|list-keys|approve|reject|pending|config]');
+    console.error('Run without arguments to start the watcher.');
+    process.exit(1);
+  }
+} else {
+  try {
+    main();
+  } catch (err) {
+    log('error', 'Fatal error', { error: err.message });
+    process.exit(1);
+  }
 }
