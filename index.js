@@ -15,7 +15,7 @@ const { encodeBase64, decodeBase64, encodeUTF8, decodeUTF8 } = naclUtil;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // === Config ===
-const ATS_BIN = '/ml2/nanobot/.nvm/versions/node/v24.13.0/bin/ats';
+const ATS_BIN = '/ml2/nanobot/bin/ats-wrapper';
 const NANOBOT_BIN = '/ml2/nanobot/.nvm/versions/node/v24.13.0/bin/claude';
 const CHANNEL = 'ada-dispatch';
 const TELEGRAM_CHAT_ID = '6644666619';
@@ -32,6 +32,7 @@ const CONFIG_PATH = join(__dirname, 'config.json');
 // Watch reconnection
 const WATCH_RECONNECT_BASE_MS = 2000;
 const WATCH_RECONNECT_MAX_MS = 60000;
+const WATCH_MAX_RECONNECTS = 25; // ~35 min of total backoff before giving up
 
 // Track retry counts per task ID to detect poison tasks
 const taskRetries = new Map();
@@ -1014,27 +1015,80 @@ function handleEvent(event) {
 // === WebSocket watcher ===
 function startWatch() {
   let reconnectDelay = WATCH_RECONNECT_BASE_MS;
+  let reconnectAttempts = 0;
+  let watchChild = null;
+  let killWatch = null; // named handler so we can remove it
+  let connectedSince = null; // timestamp when connection started receiving events
+  const STABLE_THRESHOLD_MS = 30000; // 30s of uptime before resetting backoff
+
+  function cleanupChild() {
+    // Remove signal handlers for the current child
+    if (killWatch) {
+      process.removeListener('SIGTERM', killWatch);
+      process.removeListener('SIGINT', killWatch);
+      killWatch = null;
+    }
+    // Kill previous child if still alive
+    if (watchChild) {
+      const pid = watchChild.pid;
+      try { watchChild.kill('SIGTERM'); } catch {}
+      log('info', 'Killed previous watch child', { pid });
+      watchChild = null;
+    }
+  }
 
   function launchWatch() {
     if (!running) return;
 
+    // Kill any lingering previous child before spawning a new one
+    cleanupChild();
+
+    // Max reconnect guard
+    if (reconnectAttempts >= WATCH_MAX_RECONNECTS) {
+      log('error', 'Watch exceeded max reconnect attempts, giving up', {
+        attempts: reconnectAttempts,
+        maxReconnects: WATCH_MAX_RECONNECTS,
+      });
+      telegram(`🚨 <b>ada-dispatch watch died</b> — exceeded ${WATCH_MAX_RECONNECTS} reconnect attempts. Manual restart required.`);
+      return;
+    }
+
+    reconnectAttempts++;
+    connectedSince = null;
+
     const args = [...ACTOR_FLAGS, 'watch', '--channel', CHANNEL, '--events', 'task.created'];
-    log('info', 'Starting ATS watch', { args: [ATS_BIN, ...args].join(' ') });
+    log('info', 'Starting ATS watch', { args: [ATS_BIN, ...args].join(' '), attempt: reconnectAttempts, reconnectDelay });
 
     const child = spawn(ATS_BIN, args, {
       stdio: ['pipe', 'pipe', 'pipe'],
     });
+    watchChild = child;
+
+    const pid = child.pid;
+    log('info', 'Watch child spawned', { pid });
+
+    // Aggregate stderr for crash diagnosis
+    let stderrBuf = '';
 
     const rl = createInterface({ input: child.stdout });
 
     rl.on('line', (line) => {
       const trimmed = line.trim();
-      if (!trimmed || trimmed.startsWith('Connecting') || trimmed.startsWith('✓') || trimmed.startsWith('Watching')) return;
+      if (!trimmed || trimmed.startsWith('Connecting') || trimmed.startsWith('✓') || trimmed.startsWith('Watching')) {
+        // Mark connection as alive on status messages too
+        if (!connectedSince) connectedSince = Date.now();
+        return;
+      }
 
       try {
         const event = JSON.parse(trimmed);
-        reconnectDelay = WATCH_RECONNECT_BASE_MS;
-        try { handleEvent(event); } catch (err) { log('error', 'Event handler error', { error: err.message }); }
+        // Successful event — reset backoff only if connection has been stable
+        if (!connectedSince) connectedSince = Date.now();
+        if (Date.now() - connectedSince >= STABLE_THRESHOLD_MS) {
+          reconnectDelay = WATCH_RECONNECT_BASE_MS;
+          reconnectAttempts = 0;
+        }
+        try { handleEvent(event); } catch (err) { log('error', 'Event handler error', { error: err.message, stack: err.stack }); }
         return;
       } catch {}
 
@@ -1042,9 +1096,13 @@ function startWatch() {
       const taskMatch = clean.match(/^Task #(\d+):/);
       if (taskMatch) {
         const taskId = taskMatch[1];
-        reconnectDelay = WATCH_RECONNECT_BASE_MS;
+        if (!connectedSince) connectedSince = Date.now();
+        if (Date.now() - connectedSince >= STABLE_THRESHOLD_MS) {
+          reconnectDelay = WATCH_RECONNECT_BASE_MS;
+          reconnectAttempts = 0;
+        }
         log('info', 'Watch detected task', { taskId, line: clean });
-        try { handleEvent({ type: 'task.created', task_id: taskId }); } catch (err) { log('error', 'Event handler error', { error: err.message }); }
+        try { handleEvent({ type: 'task.created', task_id: taskId }); } catch (err) { log('error', 'Event handler error', { error: err.message, stack: err.stack }); }
         return;
       }
 
@@ -1052,22 +1110,48 @@ function startWatch() {
     });
 
     child.stderr.on('data', (chunk) => {
-      const text = chunk.toString().trim();
-      if (text) log('debug', 'Watch stderr', { text });
+      const text = chunk.toString();
+      stderrBuf += text;
+      // Keep stderr buffer bounded (last 4KB)
+      if (stderrBuf.length > 4096) stderrBuf = stderrBuf.slice(-4096);
     });
 
-    child.on('close', (code) => {
+    child.on('close', (code, signal) => {
+      const uptime = connectedSince ? Date.now() - connectedSince : 0;
+
+      // Guard: only handle reconnection for the CURRENT watch child.
+      // If cleanupChild() already killed this child and spawned a new one,
+      // this close event is stale — ignore it to prevent orphaned processes.
+      if (watchChild !== child) {
+        log('debug', 'Ignoring close from stale watch child', { pid, code, signal });
+        return;
+      }
+
+      log('warn', 'Watch process exited', {
+        pid, code, signal,
+        uptime: `${Math.round(uptime / 1000)}s`,
+        reconnectMs: reconnectDelay,
+        attempt: reconnectAttempts,
+        stderr: stderrBuf.trim().slice(-500) || '(none)',
+      });
+
+      watchChild = null;
+      connectedSince = null;
       if (!running) return;
-      log('warn', 'Watch process exited', { code, reconnectMs: reconnectDelay });
       setTimeout(launchWatch, reconnectDelay);
       reconnectDelay = Math.min(reconnectDelay * 2, WATCH_RECONNECT_MAX_MS);
     });
 
     child.on('error', (err) => {
-      log('error', 'Watch process error', { error: err.message });
+      log('error', 'Watch process error', { pid, error: err.message, stderr: stderrBuf.trim().slice(-500) || '(none)' });
     });
 
-    const killWatch = () => child.kill('SIGTERM');
+    // Register signal handlers for this child (replace any previous)
+    killWatch = () => {
+      if (watchChild) {
+        try { watchChild.kill('SIGTERM'); } catch {}
+      }
+    };
     process.on('SIGTERM', killWatch);
     process.on('SIGINT', killWatch);
   }
@@ -1087,7 +1171,7 @@ process.on('SIGTERM', () => shutdown('SIGTERM'));
 // === Main ===
 function main() {
   const config = loadConfig();
-  log('info', 'ats-dispatch v3.2.0 starting', {
+  log('info', 'ats-dispatch v3.4.0 starting', {
     channel: CHANNEL,
     leaseMs: LEASE_MS,
     nanobotTimeoutMs: NANOBOT_TIMEOUT_MS,
