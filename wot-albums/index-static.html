@@ -502,6 +502,15 @@ body {
   padding: 1px 0;
 }
 
+.lyrics-line-clickable {
+  cursor: pointer;
+}
+
+.lyrics-line-clickable:hover {
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+
 .lyrics-line-dim {
   opacity: 0.3;
 }
@@ -36142,13 +36151,32 @@ window.syncReference["wolves-and-hammers"] = {
         lyricsLines.push({ el: div, isContent: false });
         lineSectionOwner[lineIdx] = currentSectionIdx;
       } else {
-        div.className = 'lyrics-line';
+        div.className = 'lyrics-line lyrics-line-clickable';
         div.textContent = line;
+        div.setAttribute('data-content-index', contentIdx);
         lyricsLines.push({ el: div, isContent: true });
         lineSectionOwner[lineIdx] = currentSectionIdx;
         contentIdx++;
       }
       lyricsContent.appendChild(div);
+    });
+
+    // Click-to-seek: clicking a content lyric line seeks audio to that line's timestamp
+    lyricsContent.addEventListener('click', function(e) {
+      var target = e.target.closest('.lyrics-line-clickable');
+      if (!target) return;
+      var ci = parseInt(target.getAttribute('data-content-index'), 10);
+      if (isNaN(ci)) return;
+      var timingData = getTimingData();
+      if (!timingData || ci >= timingData.length) return;
+      var lineStart = timingData[ci].start !== undefined ? timingData[ci].start : timingData[ci].time;
+      if (!currentTrack || !currentTrack.url) return;
+      audio.currentTime = lineStart;
+      // Resume playback if paused
+      if (!isPlaying) {
+        var p = audio.play();
+        if (p) p.catch(function() {});
+      }
     });
 
     // Reset auto-scroll pause state for new track

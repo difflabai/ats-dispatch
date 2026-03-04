@@ -493,6 +493,15 @@ body {
   padding: 1px 0;
 }
 
+.lyrics-line-clickable {
+  cursor: pointer;
+}
+
+.lyrics-line-clickable:hover {
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+
 .lyrics-line-dim {
   opacity: 0.3;
 }
