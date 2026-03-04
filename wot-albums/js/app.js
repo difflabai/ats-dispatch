@@ -384,6 +384,23 @@
         }
         return;
       }
+      // During outro after last vocal line: clear highlight
+      var lastLineData = timingData[timingData.length - 1];
+      var lastLineEnd = lastLineData.endTime !== undefined ? lastLineData.endTime : null;
+      if (lastLineEnd !== null && t > lastLineEnd) {
+        if (lastHighlightIndex !== -1) {
+          for (var k = 0; k < lyricsLines.length; k++) {
+            lyricsLines[k].el.className = lyricsLines[k].el.className.replace(/ lyrics-line-active| lyrics-line-near| lyrics-line-dim/g, '');
+          }
+          lastHighlightIndex = -1;
+          // Also clear section highlight
+          if (lastActiveSectionIndex >= 0 && lyricsLines[lastActiveSectionIndex]) {
+            lyricsLines[lastActiveSectionIndex].el.classList.remove('lyrics-section-active');
+          }
+          lastActiveSectionIndex = -1;
+        }
+        return;
+      }
       for (var ti = timingData.length - 1; ti >= 0; ti--) {
         var lineStart = timingData[ti].start !== undefined ? timingData[ti].start : timingData[ti].time;
         if (t >= lineStart) {
