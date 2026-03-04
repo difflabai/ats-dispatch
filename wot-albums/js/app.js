@@ -348,13 +348,58 @@
     }
   }
 
+  // Cache sanitized timing data so we only process once per track
+  var sanitizedTimingsCache = { albumId: null, trackTitle: null, lines: null };
+
   function getTimingData() {
     if (!window.lyricsTimings || !currentAlbum || !currentTrack) return null;
     var albumTimings = window.lyricsTimings[currentAlbum.id];
     if (!albumTimings) return null;
     var trackTimings = albumTimings[currentTrack.title];
     if (!trackTimings || !trackTimings.lines || !trackTimings.lines.length) return null;
-    return trackTimings.lines;
+
+    // Return cached result if same track
+    if (sanitizedTimingsCache.albumId === currentAlbum.id &&
+        sanitizedTimingsCache.trackTitle === currentTrack.title &&
+        sanitizedTimingsCache.lines) {
+      return sanitizedTimingsCache.lines;
+    }
+
+    // Sanitize: ensure monotonic time ordering and valid endTime > time
+    var raw = trackTimings.lines;
+    var sanitized = [];
+    for (var i = 0; i < raw.length; i++) {
+      var line = { time: raw[i].time, endTime: raw[i].endTime, text: raw[i].text };
+
+      // Ensure time never goes backwards relative to previous line
+      if (i > 0 && line.time < sanitized[i - 1].time) {
+        line.time = sanitized[i - 1].time + 0.01;
+      }
+
+      // Ensure endTime > time (minimum 0.5s duration)
+      if (line.endTime === undefined || line.endTime === null || line.endTime <= line.time) {
+        // Use next line's start as endTime, or add a reasonable default
+        var nextStart = (i + 1 < raw.length) ? raw[i + 1].time : null;
+        if (nextStart !== null && nextStart > line.time) {
+          line.endTime = nextStart;
+        } else {
+          line.endTime = line.time + 3.0;
+        }
+      }
+
+      // Ensure endTime does not extend past the next line's start time
+      if (i + 1 < raw.length) {
+        var nextTime = Math.max(raw[i + 1].time, line.time + 0.01);
+        if (line.endTime > nextTime + 0.05) {
+          line.endTime = nextTime;
+        }
+      }
+
+      sanitized.push(line);
+    }
+
+    sanitizedTimingsCache = { albumId: currentAlbum.id, trackTitle: currentTrack.title, lines: sanitized };
+    return sanitized;
   }
 
   function updateLyricsHighlight() {
