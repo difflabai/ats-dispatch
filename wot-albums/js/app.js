@@ -749,6 +749,8 @@
     audio.addEventListener('playing', function() {
       isPlaying = true;
       updatePlayButton();
+      var btn = document.getElementById('play-btn');
+      if (btn) btn.classList.remove('loading');
     });
 
     audio.addEventListener('pause', function() {
@@ -775,10 +777,48 @@
       playNext();
     });
 
+    // --- Audio loading / buffering / error feedback ---
+    // Insert an error message element after the player controls
+    var playerControls = document.querySelector('.player-controls');
+    var errorMsg = document.createElement('span');
+    errorMsg.className = 'player-error-msg';
+    errorMsg.id = 'player-error-msg';
+    if (playerControls && playerControls.parentNode) {
+      playerControls.parentNode.insertBefore(errorMsg, playerControls.nextSibling);
+    }
+
+    audio.addEventListener('loadstart', function() {
+      var btn = document.getElementById('play-btn');
+      if (btn) { btn.classList.add('loading'); btn.classList.remove('error'); }
+      var msg = document.getElementById('player-error-msg');
+      if (msg) { msg.classList.remove('visible'); msg.textContent = ''; }
+    });
+
+    audio.addEventListener('waiting', function() {
+      var btn = document.getElementById('play-btn');
+      if (btn) btn.classList.add('loading');
+    });
+
+    audio.addEventListener('canplay', function() {
+      var btn = document.getElementById('play-btn');
+      if (btn) btn.classList.remove('loading');
+    });
+
     audio.addEventListener('error', function(e) {
       console.log('Audio error:', audio.error);
       isPlaying = false;
       updatePlayButton();
+      var btn = document.getElementById('play-btn');
+      if (btn) { btn.classList.remove('loading'); btn.classList.add('error'); }
+      var msg = document.getElementById('player-error-msg');
+      if (msg) {
+        msg.textContent = 'Unable to load audio';
+        msg.classList.add('visible');
+        // Auto-hide after 4s
+        setTimeout(function() { msg.classList.remove('visible'); }, 4000);
+      }
+      // Remove error flash class after animation ends
+      if (btn) setTimeout(function() { btn.classList.remove('error'); }, 1600);
     });
 
     document.addEventListener('keydown', function(e) {
