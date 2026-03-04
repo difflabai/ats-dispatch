@@ -81,6 +81,13 @@
   let lyricsLines = [];       // array of {el, isContent} for each rendered line
   let lastHighlightIndex = -1; // avoid redundant DOM updates
 
+  // Auto-scroll pause: when user manually scrolls lyrics, pause auto-scroll
+  // for a cooldown period so the user can read without being yanked back.
+  let userScrolledLyrics = false;
+  let userScrollCooldownTimer = null;
+  var USER_SCROLL_COOLDOWN_MS = 5000; // resume auto-scroll after 5s of no manual scrolling
+  let programmaticScroll = false; // flag to distinguish our scrollTo from user scroll
+
   // Sync visualization state
   let syncActive = false;
   let currentAnalysis = null;
@@ -333,6 +340,34 @@
       lyricsContent.appendChild(div);
     });
 
+    // Reset auto-scroll pause state for new track
+    userScrolledLyrics = false;
+    if (userScrollCooldownTimer) {
+      clearTimeout(userScrollCooldownTimer);
+      userScrollCooldownTimer = null;
+    }
+
+    // Listen for manual scroll on lyrics-content to pause auto-scroll
+    var lc = document.getElementById('lyrics-content');
+    if (lc) {
+      // Remove previous listener if any (stored on element)
+      if (lc._userScrollHandler) {
+        lc.removeEventListener('scroll', lc._userScrollHandler);
+      }
+      lc._userScrollHandler = function() {
+        // Ignore scroll events triggered by our own programmatic scrollTo
+        if (programmaticScroll) return;
+        userScrolledLyrics = true;
+        // Reset cooldown timer on each manual scroll
+        if (userScrollCooldownTimer) clearTimeout(userScrollCooldownTimer);
+        userScrollCooldownTimer = setTimeout(function() {
+          userScrolledLyrics = false;
+          userScrollCooldownTimer = null;
+        }, USER_SCROLL_COOLDOWN_MS);
+      };
+      lc.addEventListener('scroll', lc._userScrollHandler);
+    }
+
     // Show/hide sync toggle based on reference data availability
     var syncToggle = document.getElementById('sync-toggle');
     if (syncToggle) {
@@ -500,12 +535,17 @@
       lastActiveSectionIndex = newSectionIdx;
     }
 
-    // Auto-scroll current line within lyrics-content container only
+    // Auto-scroll current line within lyrics-content container only.
+    // Skip if user has manually scrolled recently (cooldown period).
     var lc = document.getElementById('lyrics-content');
-    if (lc) {
+    if (lc && !userScrolledLyrics) {
       var lineEl = lyricsLines[activeIndex].el;
       var scrollTarget = lineEl.offsetTop - lc.offsetTop - (lc.clientHeight / 2) + (lineEl.offsetHeight / 2);
+      programmaticScroll = true;
       lc.scrollTo({ top: scrollTarget, behavior: 'smooth' });
+      // Clear programmatic flag after smooth scroll has time to fire scroll events.
+      // Smooth scroll dispatches multiple scroll events over ~300-400ms.
+      setTimeout(function() { programmaticScroll = false; }, 500);
     }
   }
 
@@ -523,6 +563,12 @@
     lineSectionOwner = [];
     lastHighlightIndex = -1;
     lastActiveSectionIndex = -1;
+    // Reset auto-scroll pause state
+    userScrolledLyrics = false;
+    if (userScrollCooldownTimer) {
+      clearTimeout(userScrollCooldownTimer);
+      userScrollCooldownTimer = null;
+    }
   }
 
   function formatTime(seconds) {
