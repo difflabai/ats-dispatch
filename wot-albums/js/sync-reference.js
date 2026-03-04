@@ -1,1611 +1,1011 @@
 // Reference (ground-truth) timing data for sync quality analysis
 // Generated from forced alignment via Demucs + stable-ts (Whisper)
-// Generated: 2026-02-28
+// Generated: 2026-03-03
 // confidence: model confidence score (0-1), 1.0 = manually verified
 window.syncReference = window.syncReference || {};
 
 window.syncReference["amyrlins-fire"] = {
-  "The Novice": {
+  "Innkeeper's Daughter": {
     "lines": [
       {
-        "time": 3.02,
-        "endTime": 6.98,
-        "text": "These halls are older than my name",
-        "confidence": 0.78
-      },
-      {
-        "time": 8.02,
-        "endTime": 13.16,
-        "text": "Cold stone whispers what I came to claim",
-        "confidence": 0.9
-      },
-      {
-        "time": 14.94,
-        "endTime": 18.28,
-        "text": "They stripped the Two Rivers from my tongue",
-        "confidence": 0.81
-      },
-      {
-        "time": 18.84,
-        "endTime": 24.48,
-        "text": "Said kneel and learn, girl, you are young",
-        "confidence": 0.59
-      },
-      {
-        "time": 24.8,
-        "endTime": 29.22,
-        "text": "I felt the Source before they called it mine",
-        "confidence": 0.83
-      },
-      {
-        "time": 29.58,
-        "endTime": 36.32,
-        "text": "A river made of light and burning wine",
-        "confidence": 0.78
-      },
-      {
-        "time": 38.76,
-        "endTime": 43.58,
-        "text": "I am the novice at the gate",
-        "confidence": 0.85
-      },
-      {
-        "time": 44.12,
-        "endTime": 49.12,
-        "text": "Small hands holding something great",
-        "confidence": 0.74
-      },
-      {
-        "time": 49.72,
-        "endTime": 54.46,
-        "text": "They see a girl from river lands",
-        "confidence": 0.78
-      },
-      {
-        "time": 54.82,
-        "endTime": 60.66,
-        "text": "They do not see the fire in my hands",
-        "confidence": 0.97
-      },
-      {
-        "time": 60.88,
-        "endTime": 62.94,
-        "text": "White dress, white walls, white empty days",
-        "confidence": 0.12
-      },
-      {
-        "time": 62.94,
-        "endTime": 70.5,
-        "text": "But underneath the silk, a blaze",
-        "confidence": 0.08
-      },
-      {
-        "time": 70.5,
-        "endTime": 78.07,
-        "text": "Nynaeve says be careful what you reach for",
-        "confidence": 0.11
-      },
-      {
-        "time": 78.07,
-        "endTime": 85.64,
-        "text": "But I have always wanted more",
-        "confidence": 0.03
-      },
-      {
-        "time": 85.64,
-        "endTime": 93.2,
-        "text": "The Mistress of Novices marks my name",
-        "confidence": 0.4
-      },
-      {
-        "time": 93.2,
-        "endTime": 99.26,
-        "text": "Another candle, I become the flame",
-        "confidence": 0.68
-      },
-      {
-        "time": 101.2,
-        "endTime": 106.28,
-        "text": "I am the novice at the gate",
-        "confidence": 0.77
-      },
-      {
-        "time": 107.36,
-        "endTime": 112.08,
-        "text": "Small hands holding something great",
-        "confidence": 0.85
-      },
-      {
-        "time": 112.42,
-        "endTime": 117.22,
-        "text": "They see a girl from river lands",
-        "confidence": 0.8
-      },
-      {
-        "time": 117.7,
-        "endTime": 126.78,
-        "text": "They do not see the fire in my hands",
-        "confidence": 0.77
-      },
-      {
-        "time": 126.78,
-        "endTime": 130.44,
-        "text": "Every woman here was once like me",
-        "confidence": 0.56
-      },
-      {
-        "time": 130.5,
-        "endTime": 135.52,
-        "text": "Afraid of what she'd grow to be",
-        "confidence": 0.93
-      },
-      {
-        "time": 136.02,
-        "endTime": 140.96,
-        "text": "But I was never truly scared",
-        "confidence": 0.96
-      },
-      {
-        "time": 141.78,
-        "endTime": 147.78,
-        "text": "I was just waiting, being prepared",
-        "confidence": 0.92
-      },
-      {
-        "time": 150.8,
-        "endTime": 155.34,
-        "text": "These halls will know my name",
-        "confidence": 0.65
-      },
-      {
-        "time": 156.74,
-        "endTime": 160.86,
-        "text": "These halls will know my name",
-        "confidence": 0.68
-      },
-      {
-        "time": 161.86,
-        "endTime": 167.9,
-        "text": "Before the end, these halls will know my flame",
-        "confidence": 0.52
-      }
-    ]
-  },
-  "Accepted": {
-    "lines": [
-      {
-        "time": 11.06,
-        "endTime": 13.52,
-        "text": "Three arches made of silver light",
-        "confidence": 0.79
-      },
-      {
-        "time": 15.72,
-        "endTime": 18.68,
-        "text": "Step through and face your deepest night",
-        "confidence": 0.87
-      },
-      {
-        "time": 20.72,
-        "endTime": 23.76,
-        "text": "The first one showed me home again",
-        "confidence": 0.98
-      },
-      {
-        "time": 26.04,
-        "endTime": 29.36,
-        "text": "Tam alive, no war, no pain",
-        "confidence": 0.74
-      },
-      {
-        "time": 30.64,
-        "endTime": 35.8,
-        "text": "I almost stayed inside that dream",
-        "confidence": 0.98
-      },
-      {
-        "time": 35.8,
-        "endTime": 39.84,
-        "text": "But something called me back, a gleam",
-        "confidence": 0.75
-      },
-      {
-        "time": 41.94,
-        "endTime": 45.92,
-        "text": "The way back will come but once",
-        "confidence": 0.73
-      },
-      {
-        "time": 47.36,
-        "endTime": 50.96,
-        "text": "Choose the tower or the life you want",
-        "confidence": 0.83
-      },
-      {
-        "time": 52.3,
-        "endTime": 56.12,
-        "text": "Leave behind the girl you were",
-        "confidence": 0.95
-      },
-      {
-        "time": 57.42,
-        "endTime": 61.26,
-        "text": "Become the woman, become the blur",
-        "confidence": 0.7
-      },
-      {
-        "time": 61.62,
-        "endTime": 66.24,
-        "text": "Between what's real and what you fear",
-        "confidence": 0.97
-      },
-      {
-        "time": 67.14,
-        "endTime": 75.48,
-        "text": "Accepted now, the path is clear",
-        "confidence": 0.5
-      },
-      {
-        "time": 75.48,
-        "endTime": 78.18,
-        "text": "The second arch, they offered love",
-        "confidence": 0.34
-      },
-      {
-        "time": 80.56,
-        "endTime": 83.3,
-        "text": "Rand reaching down from stars above",
-        "confidence": 0.82
-      },
-      {
-        "time": 85.18,
-        "endTime": 88.46,
-        "text": "A quiet life, a gentle end",
-        "confidence": 0.78
-      },
-      {
-        "time": 90.06,
-        "endTime": 93.58,
-        "text": "But I was never one to bend",
-        "confidence": 0.95
-      },
-      {
-        "time": 95.24,
-        "endTime": 100.38,
-        "text": "The third showed power, dark and sweet",
-        "confidence": 0.94
-      },
-      {
-        "time": 100.56,
-        "endTime": 104.3,
-        "text": "A throne of shadows at my feet",
-        "confidence": 0.96
-      },
-      {
-        "time": 104.3,
-        "endTime": 110.42,
-        "text": "The way back will come but once",
-        "confidence": 0.61
-      },
-      {
-        "time": 111.74,
-        "endTime": 115.52,
-        "text": "Choose the tower or the life you want",
-        "confidence": 0.82
-      },
-      {
-        "time": 117.08,
-        "endTime": 120.66,
-        "text": "Leave behind the girl you were",
-        "confidence": 0.64
-      },
-      {
-        "time": 121.9,
-        "endTime": 125.8,
-        "text": "Become the woman, become the blur",
-        "confidence": 0.87
-      },
-      {
-        "time": 126.12,
-        "endTime": 130.8,
-        "text": "Between what's real and what you fear",
-        "confidence": 0.95
-      },
-      {
-        "time": 132.16,
-        "endTime": 136.44,
-        "text": "Accepted now, the path is clear",
-        "confidence": 0.54
-      },
-      {
-        "time": 136.7,
-        "endTime": 141.2,
-        "text": "Tel'aran'rhiod called my sleeping mind",
-        "confidence": 0.48
-      },
-      {
-        "time": 142.24,
-        "endTime": 146.5,
-        "text": "A world where will and dream combined",
-        "confidence": 0.57
-      },
-      {
-        "time": 146.88,
-        "endTime": 151.62,
-        "text": "I walked in places no one dared",
-        "confidence": 0.96
-      },
-      {
-        "time": 152.02,
-        "endTime": 157.36,
-        "text": "And found the strength that I declared",
-        "confidence": 0.86
-      },
-      {
-        "time": 157.72,
-        "endTime": 162.02,
-        "text": "I chose the tower every time",
-        "confidence": 0.81
-      },
-      {
-        "time": 162.9,
-        "endTime": 167.06,
-        "text": "I chose the tower, I chose to climb",
-        "confidence": 0.69
-      },
-      {
-        "time": 167.42,
-        "endTime": 172.04,
-        "text": "Accepted now, with banded hem",
-        "confidence": 0.24
-      },
-      {
-        "time": 173.02,
-        "endTime": 175.44,
-        "text": "I am becoming more than them",
-        "confidence": 0.29
-      }
-    ]
-  },
-  "Captured": {
-    "lines": [
-      {
-        "time": 26.6,
-        "endTime": 28.16,
-        "text": "They put a collar on my throat",
-        "confidence": 0.12
-      },
-      {
-        "time": 28.16,
-        "endTime": 29.43,
-        "text": "A silver leash, a silver note",
-        "confidence": 0.06
-      },
-      {
-        "time": 29.43,
-        "endTime": 30.69,
-        "text": "That sang obedience through my veins",
-        "confidence": 0.04
-      },
-      {
-        "time": 30.69,
-        "endTime": 31.96,
-        "text": "They gave me numbers, not my name",
-        "confidence": 0.18
-      },
-      {
-        "time": 31.96,
-        "endTime": 34.22,
-        "text": "The sul'dam holds the other end",
-        "confidence": 0.28
-      },
-      {
-        "time": 36.04,
-        "endTime": 41.4,
-        "text": "She says I'll learn, she says I'll bend",
-        "confidence": 0.85
-      },
-      {
-        "time": 42.88,
-        "endTime": 43.46,
-        "text": "I am not your weapon",
-        "confidence": 0.02
-      },
-      {
-        "time": 43.46,
-        "endTime": 43.96,
-        "text": "I am not your dog",
-        "confidence": 0.33
-      },
-      {
-        "time": 43.92,
-        "endTime": 44.42,
-        "text": "You can chain the lightning",
-        "confidence": 0.03
-      },
-      {
-        "time": 44.39,
-        "endTime": 44.89,
-        "text": "But you cannot chain the storm",
-        "confidence": 0.12
-      },
-      {
-        "time": 44.86,
-        "endTime": 45.36,
-        "text": "Call me damane, call me nothing",
-        "confidence": 0.27
-      },
-      {
-        "time": 45.32,
-        "endTime": 50.38,
-        "text": "I remember what I am",
-        "confidence": 0.12
-      },
-      {
-        "time": 50.38,
-        "endTime": 53.1,
-        "text": "You will never break this woman",
-        "confidence": 0.62
-      },
-      {
-        "time": 53.66,
-        "endTime": 56.66,
-        "text": "You will never break Egwene",
-        "confidence": 0.4
-      },
-      {
-        "time": 71.96,
-        "endTime": 72.46,
-        "text": "They made me channel at their word",
-        "confidence": 0.03
-      },
-      {
-        "time": 71.96,
-        "endTime": 76.22,
-        "text": "Each weave a cage, each praise absurd",
-        "confidence": 0.43
-      },
-      {
-        "time": 78.34,
-        "endTime": 80.26,
-        "text": "The a'dam burns against my skin",
-        "confidence": 0.01
-      },
-      {
-        "time": 80.26,
-        "endTime": 83.24,
-        "text": "A punishment for what burns within",
-        "confidence": 0.71
-      },
-      {
-        "time": 84.62,
-        "endTime": 90.82,
-        "text": "Days became a blur of shame",
-        "confidence": 0.62
-      },
-      {
-        "time": 92.74,
-        "endTime": 101.6,
-        "text": "But I held onto my own name",
-        "confidence": 0.66
-      },
-      {
-        "time": 102.5,
-        "endTime": 105.34,
-        "text": "I am not your weapon",
-        "confidence": 0.4
-      },
-      {
-        "time": 105.34,
-        "endTime": 105.84,
-        "text": "I am not your dog",
-        "confidence": 0.42
-      },
-      {
-        "time": 108.24,
-        "endTime": 109.26,
-        "text": "You can chain the lightning",
-        "confidence": 0.1
-      },
-      {
-        "time": 109.26,
-        "endTime": 109.83,
-        "text": "But you cannot chain the storm",
-        "confidence": 0.12
-      },
-      {
-        "time": 109.83,
-        "endTime": 110.4,
-        "text": "Call me damane, call me nothing",
-        "confidence": 0.37
-      },
-      {
-        "time": 110.4,
-        "endTime": 110.97,
-        "text": "I remember what I am",
-        "confidence": 0.23
-      },
-      {
-        "time": 110.97,
-        "endTime": 111.54,
-        "text": "You will never break this woman",
-        "confidence": 0.4
-      },
-      {
-        "time": 111.54,
-        "endTime": 115.12,
-        "text": "You will never break Egwene",
-        "confidence": 0.79
-      },
-      {
-        "time": 116.24,
-        "endTime": 121.48,
-        "text": "In the darkness of my cell",
-        "confidence": 0.89
-      },
-      {
-        "time": 122.52,
-        "endTime": 128.06,
-        "text": "I built a fortress in my hell",
-        "confidence": 0.79
-      },
-      {
-        "time": 128.92,
-        "endTime": 134.66,
-        "text": "Every order I obeyed",
-        "confidence": 0.73
-      },
-      {
-        "time": 134.66,
-        "endTime": 147.1,
-        "text": "Was another plan I made",
-        "confidence": 0.47
-      },
-      {
-        "time": 147.1,
-        "endTime": 152.74,
-        "text": "You can collar flesh and bone",
-        "confidence": 0.57
-      },
-      {
-        "time": 152.74,
-        "endTime": 162.39,
-        "text": "But the fire walks alone",
-        "confidence": 0.65
-      },
-      {
-        "time": 164.7,
-        "endTime": 168.32,
-        "text": "I will wear your chains today",
-        "confidence": 0.67
-      },
-      {
-        "time": 173.21,
-        "endTime": 180,
-        "text": "Tomorrow I will burn them away",
-        "confidence": 0
-      }
-    ]
-  },
-  "The Flame of Tar Valon": {
-    "lines": [
-      {
-        "time": 11.18,
-        "endTime": 13.36,
-        "text": "They raised me on a broken throne",
-        "confidence": 0.85
-      },
-      {
-        "time": 15,
-        "endTime": 19.16,
-        "text": "Eighteen years old, already grown",
-        "confidence": 0.82
-      },
-      {
-        "time": 21.12,
-        "endTime": 24.28,
-        "text": "The Hall divided, Tower split",
-        "confidence": 0.59
-      },
-      {
-        "time": 26.12,
-        "endTime": 29.28,
-        "text": "They thought a puppet they could sit",
-        "confidence": 0.9
-      },
-      {
-        "time": 30.48,
-        "endTime": 34.6,
-        "text": "Upon the seat of Amyrlin flame",
-        "confidence": 0.7
-      },
-      {
-        "time": 36.22,
-        "endTime": 40.42,
-        "text": "A girl they could control and tame",
-        "confidence": 0.89
-      },
-      {
-        "time": 42.14,
-        "endTime": 46.02,
-        "text": "I am the Flame of Tar Valon",
-        "confidence": 0.29
-      },
-      {
-        "time": 46.02,
-        "endTime": 48.46,
-        "text": "Try me, try to prove me wrong",
-        "confidence": 0.14
-      },
-      {
-        "time": 50.74,
-        "endTime": 55.72,
-        "text": "I did not ask for this seat",
-        "confidence": 0.69
-      },
-      {
-        "time": 55.96,
-        "endTime": 57.86,
-        "text": "I claimed it with my own heartbeat",
-        "confidence": 0.62
-      },
-      {
-        "time": 57.9,
-        "endTime": 62.9,
-        "text": "Young and fierce and unafraid",
-        "confidence": 0.55
-      },
-      {
-        "time": 63.44,
-        "endTime": 67.58,
-        "text": "Watch me lead this whole crusade",
-        "confidence": 0.95
-      },
-      {
-        "time": 69.6,
-        "endTime": 72.7,
-        "text": "Elaida sits upon my chair",
-        "confidence": 0.8
-      },
-      {
-        "time": 73.02,
-        "endTime": 77.78,
-        "text": "With stolen power, stolen air",
-        "confidence": 0.72
-      },
-      {
-        "time": 78.3,
-        "endTime": 80.9,
-        "text": "But I built an army in the field",
-        "confidence": 0.95
-      },
-      {
-        "time": 80.9,
-        "endTime": 83.6,
-        "text": "Made every rebel sister kneel",
-        "confidence": 0.9
-      },
-      {
-        "time": 83.72,
-        "endTime": 86.22,
-        "text": "Not through force but through my will",
-        "confidence": 0.9
-      },
-      {
-        "time": 86.26,
-        "endTime": 89.44,
-        "text": "The Tower breaks, the Tower heals",
-        "confidence": 0.75
-      },
-      {
-        "time": 89.54,
-        "endTime": 93.92,
-        "text": "I am the Flame of Tar Valon",
-        "confidence": 0.66
-      },
-      {
-        "time": 94.92,
-        "endTime": 100.82,
-        "text": "Try me, try to prove me wrong",
-        "confidence": 0.14
-      },
-      {
-        "time": 101.4,
-        "endTime": 103.68,
-        "text": "I did not ask for this seat",
-        "confidence": 0.59
-      },
-      {
-        "time": 103.86,
-        "endTime": 105.84,
-        "text": "I claimed it with my own heartbeat",
-        "confidence": 0.69
-      },
-      {
-        "time": 105.9,
-        "endTime": 110.94,
-        "text": "Young and fierce and unafraid",
-        "confidence": 0.44
-      },
-      {
-        "time": 111.46,
-        "endTime": 116.14,
-        "text": "Watch me lead this whole crusade",
-        "confidence": 0.76
-      },
-      {
-        "time": 116.64,
-        "endTime": 121.02,
-        "text": "Let them whisper she's too young",
-        "confidence": 0.91
-      },
-      {
-        "time": 121.88,
-        "endTime": 126.18,
-        "text": "Let them say the war's not won",
-        "confidence": 0.93
-      },
-      {
-        "time": 126.68,
-        "endTime": 131.12,
-        "text": "I have walked through silver rings",
-        "confidence": 0.67
-      },
-      {
-        "time": 131.8,
-        "endTime": 136.22,
-        "text": "I have worn the collar's sting",
-        "confidence": 0.64
-      },
-      {
-        "time": 136.88,
-        "endTime": 141.64,
-        "text": "Nothing they can do or say",
-        "confidence": 0.88
-      },
-      {
-        "time": 141.98,
-        "endTime": 149.46,
-        "text": "Will make this flame turn away",
-        "confidence": 0.54
-      },
-      {
-        "time": 149.74,
-        "endTime": 153.76,
-        "text": "Tar Valon stands because I stand",
-        "confidence": 0.5
-      },
-      {
-        "time": 154.66,
-        "endTime": 158.92,
-        "text": "The Tower rises at my command",
-        "confidence": 0.62
-      },
-      {
-        "time": 159.48,
-        "endTime": 162.34,
-        "text": "I am the youngest, I am the one",
-        "confidence": 0.6
-      },
-      {
-        "time": 162.72,
-        "endTime": 171.72,
-        "text": "The Amyrlin Seat, the rising sun",
-        "confidence": 0.47
-      }
-    ]
-  },
-  "Dreamwalker": {
-    "lines": [
-      {
-        "time": 8.56,
-        "endTime": 11.52,
-        "text": "Close my eyes and slip between",
-        "confidence": 0.81
-      },
-      {
-        "time": 11.8,
-        "endTime": 15.98,
-        "text": "The waking world and lucid dream",
-        "confidence": 0.84
-      },
-      {
-        "time": 16.34,
-        "endTime": 19.74,
-        "text": "Tel'aran'rhiod opens wide",
-        "confidence": 0.65
-      },
-      {
-        "time": 19.74,
-        "endTime": 23.9,
-        "text": "A place where thought and matter collide",
-        "confidence": 0.95
-      },
-      {
-        "time": 24.5,
-        "endTime": 27.76,
-        "text": "Here the strong reshape the ground",
-        "confidence": 0.58
-      },
-      {
-        "time": 28.46,
-        "endTime": 31.8,
-        "text": "Here the weak are never found",
-        "confidence": 0.97
-      },
-      {
-        "time": 32.28,
-        "endTime": 36.1,
-        "text": "I am the dreamwalker, I am the dream",
-        "confidence": 0.82
-      },
-      {
-        "time": 36.24,
-        "endTime": 38.04,
-        "text": "Nothing here is quite what it seems",
-        "confidence": 0.59
-      },
-      {
-        "time": 38.04,
-        "endTime": 42.42,
-        "text": "I bend the towers with my mind",
-        "confidence": 0.7
-      },
-      {
-        "time": 42.86,
-        "endTime": 46.56,
-        "text": "I walk through walls I redesign",
-        "confidence": 0.84
-      },
-      {
-        "time": 46.96,
-        "endTime": 51.08,
-        "text": "In this world my will is law",
-        "confidence": 0.75
-      },
-      {
-        "time": 51.68,
-        "endTime": 61.28,
-        "text": "I am everything you saw",
-        "confidence": 0.49
-      },
-      {
-        "time": 63.8,
-        "endTime": 67.64,
-        "text": "The Wise Ones warned me, stay away",
-        "confidence": 0.55
-      },
-      {
-        "time": 67.7,
-        "endTime": 71.38,
-        "text": "But I could never just obey",
-        "confidence": 0.86
-      },
-      {
-        "time": 72.02,
-        "endTime": 75.72,
-        "text": "I found Moghedien in these halls",
-        "confidence": 0.81
-      },
-      {
-        "time": 75.76,
-        "endTime": 79.68,
-        "text": "A Forsaken hiding behind walls",
-        "confidence": 0.76
-      },
-      {
-        "time": 79.78,
-        "endTime": 83.72,
-        "text": "I trapped her with a weave of thought",
-        "confidence": 0.65
-      },
-      {
-        "time": 83.74,
-        "endTime": 87.86,
-        "text": "A victory that can't be bought",
-        "confidence": 0.82
-      },
-      {
-        "time": 88.54,
-        "endTime": 92.22,
-        "text": "I am the dreamwalker, I am the dream",
-        "confidence": 0.77
-      },
-      {
-        "time": 92.22,
-        "endTime": 94.22,
-        "text": "Nothing here is quite what it seems",
-        "confidence": 0.54
-      },
-      {
-        "time": 94.8,
-        "endTime": 98.4,
-        "text": "I bend the towers with my mind",
-        "confidence": 0.87
-      },
-      {
-        "time": 98.72,
-        "endTime": 102.48,
-        "text": "I walk through walls I redesign",
-        "confidence": 0.81
-      },
-      {
-        "time": 102.98,
-        "endTime": 107,
-        "text": "In this world my will is law",
-        "confidence": 0.8
-      },
-      {
-        "time": 109.44,
-        "endTime": 116.96,
-        "text": "I am everything you saw",
-        "confidence": 0.55
-      },
-      {
-        "time": 117.78,
-        "endTime": 120.86,
-        "text": "Every nightmare bows to me",
-        "confidence": 0.87
-      },
-      {
-        "time": 121.54,
-        "endTime": 125.44,
-        "text": "Every shadow sets me free",
-        "confidence": 0.97
-      },
-      {
-        "time": 127.12,
-        "endTime": 128.54,
-        "text": "This is where I learned to fight",
-        "confidence": 0.32
-      },
-      {
-        "time": 129.02,
-        "endTime": 134.5,
-        "text": "In the spaces between night",
-        "confidence": 0.73
-      },
-      {
-        "time": 134.92,
-        "endTime": 138.82,
-        "text": "When the waking world falls dark",
-        "confidence": 0.83
-      },
-      {
-        "time": 139.74,
-        "endTime": 143.74,
-        "text": "I carry the dream like a burning spark",
-        "confidence": 0.05
-      },
-      {
-        "time": 178.4,
-        "endTime": 178.9,
-        "text": "Dreamwalker, dreamwalker",
-        "confidence": 0.1
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "Between the worlds I walk forever",
-        "confidence": 0
-      }
-    ]
-  },
-  "The Last Battle": {
-    "lines": [
-      {
-        "time": 3.72,
-        "endTime": 7.46,
-        "text": "The sky is breaking, dark descends",
-        "confidence": 0.75
-      },
-      {
-        "time": 8.08,
-        "endTime": 11.5,
-        "text": "This is where the whole world ends",
-        "confidence": 0.93
-      },
-      {
-        "time": 12,
-        "endTime": 17.8,
-        "text": "Or where we make it start again",
-        "confidence": 0.82
-      },
-      {
-        "time": 20.04,
-        "endTime": 24.02,
-        "text": "I lead my sisters into rain",
-        "confidence": 0.95
-      },
-      {
-        "time": 24.26,
-        "endTime": 28.04,
-        "text": "Of fire and shadow, blood and light",
-        "confidence": 0.86
-      },
-      {
-        "time": 28.4,
-        "endTime": 34.8,
-        "text": "The last battle, the longest night",
-        "confidence": 0.83
-      },
-      {
-        "time": 35.84,
-        "endTime": 39.8,
-        "text": "Hold the line, hold the weave",
-        "confidence": 0.67
-      },
-      {
-        "time": 40.64,
-        "endTime": 43.82,
-        "text": "We are everything they need",
-        "confidence": 0.9
-      },
-      {
-        "time": 44.66,
-        "endTime": 48.54,
-        "text": "Gawyn falls, and I feel the bond",
-        "confidence": 0.59
-      },
-      {
-        "time": 48.72,
-        "endTime": 52.7,
-        "text": "Go silent like a severed song",
-        "confidence": 0.65
-      },
-      {
-        "time": 52.84,
-        "endTime": 57.08,
-        "text": "But I cannot stop, I cannot mourn",
-        "confidence": 0.94
-      },
-      {
-        "time": 57.26,
-        "endTime": 65.8,
-        "text": "The world is dying to be reborn",
-        "confidence": 0.73
-      },
-      {
-        "time": 65.8,
-        "endTime": 69.78,
-        "text": "His blood is cooling on my hands",
-        "confidence": 0.81
-      },
-      {
-        "time": 69.9,
-        "endTime": 73.56,
-        "text": "Three rings gone, our final stand",
-        "confidence": 0.81
-      },
-      {
-        "time": 73.92,
-        "endTime": 77.74,
-        "text": "The warder bond tears through my chest",
-        "confidence": 0.79
-      },
-      {
-        "time": 78.16,
-        "endTime": 82.08,
-        "text": "A wound that will not let me rest",
-        "confidence": 0.98
-      },
-      {
-        "time": 82.16,
-        "endTime": 86.06,
-        "text": "But there are thousands at my back",
-        "confidence": 0.98
-      },
-      {
-        "time": 86.26,
-        "endTime": 91.7,
-        "text": "I swallow grief, I channel black",
-        "confidence": 0.84
-      },
-      {
-        "time": 93.66,
-        "endTime": 97.88,
-        "text": "Hold the line, hold the weave",
-        "confidence": 0.65
-      },
-      {
-        "time": 98.28,
-        "endTime": 101.72,
-        "text": "We are everything they need",
-        "confidence": 0.84
-      },
-      {
-        "time": 102.56,
-        "endTime": 106.4,
-        "text": "Gawyn falls, and I feel the bond",
-        "confidence": 0.56
-      },
-      {
-        "time": 106.68,
-        "endTime": 110.62,
-        "text": "Go silent like a severed song",
-        "confidence": 0.8
-      },
-      {
-        "time": 110.78,
-        "endTime": 114.18,
-        "text": "But I cannot stop, I cannot mourn",
-        "confidence": 0.93
-      },
-      {
-        "time": 115.2,
-        "endTime": 120.14,
-        "text": "The world is dying to be reborn",
-        "confidence": 0.84
-      },
-      {
-        "time": 121.62,
-        "endTime": 125.62,
-        "text": "Love was never meant to last",
-        "confidence": 0.74
-      },
-      {
-        "time": 126.24,
-        "endTime": 129.44,
-        "text": "Not for women holding fast",
-        "confidence": 0.77
-      },
-      {
-        "time": 129.52,
-        "endTime": 133,
-        "text": "To the world upon their shoulders",
-        "confidence": 0.87
-      },
-      {
-        "time": 133.92,
-        "endTime": 137.22,
-        "text": "Growing fiercer, growing older",
-        "confidence": 0.89
-      },
-      {
-        "time": 137.68,
-        "endTime": 144.18,
-        "text": "In a single burning day",
-        "confidence": 0.44
-      },
-      {
-        "time": 144.18,
-        "endTime": 149.64,
-        "text": "I will cry when this is done",
-        "confidence": 0.68
-      },
-      {
-        "time": 150.36,
-        "endTime": 153.56,
-        "text": "I will break when we have won",
-        "confidence": 0.93
-      },
-      {
-        "time": 154.08,
-        "endTime": 158.02,
-        "text": "But right now the battle calls",
-        "confidence": 0.84
-      },
-      {
-        "time": 158.56,
-        "endTime": 161.76,
-        "text": "And the Amyrlin never falls",
-        "confidence": 0.72
-      }
-    ]
-  },
-  "Vora's Wand": {
-    "lines": [
-      {
-        "time": 5.48,
-        "endTime": 8.08,
-        "text": "A crystal wand inside my grip",
-        "confidence": 0.7
-      },
-      {
-        "time": 9.96,
-        "endTime": 12.86,
-        "text": "Pure power flowing from my lips",
-        "confidence": 0.89
-      },
-      {
-        "time": 14.56,
-        "endTime": 17.12,
-        "text": "Vora held this once before",
-        "confidence": 0.75
-      },
-      {
-        "time": 18.2,
-        "endTime": 21.36,
-        "text": "Now I hold it, I hold more",
-        "confidence": 0.96
-      },
-      {
-        "time": 21.86,
-        "endTime": 26.86,
-        "text": "The Dark One's armies crash like waves",
-        "confidence": 0.66
-      },
-      {
-        "time": 29.58,
-        "endTime": 35.46,
-        "text": "Against the light that Egwene saves",
-        "confidence": 0.68
-      },
-      {
-        "time": 37.92,
-        "endTime": 42.78,
-        "text": "I draw deeper than they said was safe",
-        "confidence": 0.69
-      },
-      {
-        "time": 43.06,
-        "endTime": 46.66,
-        "text": "I channel past the point of break",
-        "confidence": 0.9
-      },
-      {
-        "time": 47.66,
-        "endTime": 50.88,
-        "text": "Vora's wand becomes my spine",
-        "confidence": 0.68
-      },
-      {
-        "time": 51.36,
-        "endTime": 54.84,
-        "text": "Every weave a battle line",
-        "confidence": 0.81
-      },
-      {
-        "time": 55.48,
-        "endTime": 58.86,
-        "text": "Let them come with shadow's teeth",
-        "confidence": 0.72
-      },
-      {
-        "time": 59.1,
-        "endTime": 63.26,
-        "text": "I will burn them underneath",
-        "confidence": 0.77
-      },
-      {
-        "time": 70.28,
-        "endTime": 73.6,
-        "text": "Taim has broken through our shields",
-        "confidence": 0.75
-      },
-      {
-        "time": 73.96,
-        "endTime": 77.76,
-        "text": "Dreadlords pouring through the fields",
-        "confidence": 0.88
-      },
-      {
-        "time": 78.38,
-        "endTime": 81.68,
-        "text": "Black tower turning, darkness winning",
-        "confidence": 0.56
-      },
-      {
-        "time": 82.48,
-        "endTime": 85.84,
-        "text": "But I feel a new beginning",
-        "confidence": 0.94
-      },
-      {
-        "time": 86.76,
-        "endTime": 89.88,
-        "text": "A weave that no one's ever spun",
-        "confidence": 0.75
-      },
-      {
-        "time": 90.56,
-        "endTime": 101.46,
-        "text": "The Flame of Tar Valon, undone",
-        "confidence": 0.57
-      },
-      {
-        "time": 101.56,
-        "endTime": 106.8,
-        "text": "I draw deeper than they said was safe",
-        "confidence": 0.74
-      },
-      {
-        "time": 107.02,
-        "endTime": 110.86,
-        "text": "I channel past the point of break",
-        "confidence": 0.85
-      },
-      {
-        "time": 111.58,
-        "endTime": 114.88,
-        "text": "Vora's wand becomes my spine",
-        "confidence": 0.71
-      },
-      {
-        "time": 115.6,
-        "endTime": 118.86,
-        "text": "Every weave a battle line",
-        "confidence": 0.88
-      },
-      {
-        "time": 119.28,
-        "endTime": 122.84,
-        "text": "Let them come with shadow's teeth",
-        "confidence": 0.68
-      },
-      {
-        "time": 123.08,
-        "endTime": 127.2,
-        "text": "I will burn them underneath",
-        "confidence": 0.79
-      },
-      {
-        "time": 127.2,
-        "endTime": 128.76,
-        "text": "They told me there were limits",
-        "confidence": 0.16
-      },
-      {
-        "time": 128.76,
-        "endTime": 135.17,
-        "text": "They told me I would die",
-        "confidence": 0.32
-      },
-      {
-        "time": 135.17,
-        "endTime": 141.58,
-        "text": "But dying is a small price",
-        "confidence": 0.07
-      },
-      {
-        "time": 141.58,
-        "endTime": 148,
-        "text": "When the alternative's goodbye",
-        "confidence": 0.02
-      },
-      {
-        "time": 148,
-        "endTime": 154.41,
-        "text": "To everything I've ever loved",
-        "confidence": 0.04
-      },
-      {
-        "time": 154.41,
-        "endTime": 160.82,
-        "text": "To everything worth fighting for",
-        "confidence": 0.28
-      },
-      {
-        "time": 160.82,
-        "endTime": 163.8,
-        "text": "Crystal singing, power rising",
-        "confidence": 0.21
-      },
-      {
-        "time": 164.26,
-        "endTime": 167.08,
-        "text": "One last weave, one last horizon",
-        "confidence": 0.4
-      },
-      {
-        "time": 167.58,
-        "endTime": 171.02,
-        "text": "Vora's wand in burning hands",
-        "confidence": 0.35
-      },
-      {
-        "time": 171.82,
-        "endTime": 175.38,
-        "text": "This is where Egwene makes her stand",
-        "confidence": 0.75
-      }
-    ]
-  },
-  "The Flame Goes Out": {
-    "lines": [
-      {
-        "time": 7.2,
+        "time": 2.88,
         "endTime": 9.94,
-        "text": "The cracks are spreading through the world",
-        "confidence": 0.84
+        "text": "The Winespring Inn smelled like barley and my father's quiet pride,",
+        "confidence": 0.46
       },
       {
-        "time": 10.3,
-        "endTime": 13.88,
-        "text": "Where darkness bleeds and flags are furled",
-        "confidence": 0.68
+        "time": 11.64,
+        "endTime": 17.5,
+        "text": "he polished every table like the wood itself could hide",
+        "confidence": 0.88
       },
       {
-        "time": 14.42,
-        "endTime": 17.68,
-        "text": "I see the Pattern coming loose",
-        "confidence": 0.84
-      },
-      {
-        "time": 18.7,
-        "endTime": 21.68,
-        "text": "And I know what I must choose",
-        "confidence": 0.97
-      },
-      {
-        "time": 22.42,
-        "endTime": 25.72,
-        "text": "There is a weave beyond all weaves",
+        "time": 18.24,
+        "endTime": 24.48,
+        "text": "the smallness of the world he built between the river and the road.",
         "confidence": 0.87
       },
       {
-        "time": 26.3,
-        "endTime": 29.72,
-        "text": "The Flame of Tar Valon believes",
-        "confidence": 0.75
+        "time": 26.98,
+        "endTime": 33.9,
+        "text": "I served the ale and smiled and swept and carried every load.",
+        "confidence": 0.81
       },
       {
-        "time": 33.44,
-        "endTime": 35.76,
-        "text": "Let me be the seal",
+        "time": 33.92,
+        "endTime": 40.54,
+        "text": "But something in the Women's Circle whispers made me lean too close,",
+        "confidence": 0.81
+      },
+      {
+        "time": 41.62,
+        "endTime": 47.56,
+        "text": "the stories about channeling, about the ones the Tower chose.",
         "confidence": 0.54
       },
       {
-        "time": 36.06,
-        "endTime": 36.56,
-        "text": "Let me be the light that heals",
-        "confidence": 0.4
+        "time": 53.22,
+        "endTime": 59.96,
+        "text": "I was not the mayor's daughter, not the Wisdom with her braid,",
+        "confidence": 0.78
       },
       {
-        "time": 36.56,
-        "endTime": 37.07,
-        "text": "Every crack that darkness made",
-        "confidence": 0.04
-      },
-      {
-        "time": 37.07,
-        "endTime": 37.58,
-        "text": "I will fill with what I gave",
-        "confidence": 0.09
-      },
-      {
-        "time": 37.58,
-        "endTime": 38.08,
-        "text": "My life, my power, my last breath",
-        "confidence": 0.32
-      },
-      {
-        "time": 38.08,
-        "endTime": 38.58,
-        "text": "I choose the world, I choose my death",
-        "confidence": 0.4
-      },
-      {
-        "time": 38.3,
-        "endTime": 38.8,
-        "text": "I think of Rand beneath his sky",
-        "confidence": 0.4
-      },
-      {
-        "time": 38.52,
-        "endTime": 39.02,
-        "text": "I think of Nynaeve, I don't say goodbye",
-        "confidence": 0.32
-      },
-      {
-        "time": 38.73,
-        "endTime": 39.23,
-        "text": "The Two Rivers girl is still in here",
-        "confidence": 0.02
-      },
-      {
-        "time": 38.95,
-        "endTime": 39.45,
-        "text": "Somewhere past the smoke and fear",
-        "confidence": 0.07
-      },
-      {
-        "time": 39.17,
-        "endTime": 39.67,
-        "text": "But she would do this too, I know",
-        "confidence": 0.04
-      },
-      {
-        "time": 39.38,
-        "endTime": 39.88,
-        "text": "She would let her body go",
-        "confidence": 0.06
-      },
-      {
-        "time": 39.6,
-        "endTime": 40.1,
-        "text": "Let me be the seal",
-        "confidence": 0.3
-      },
-      {
-        "time": 39.82,
-        "endTime": 41.22,
-        "text": "Let me be the light that heals",
+        "time": 61.82,
+        "endTime": 68.18,
+        "text": "just the innkeeper's girl with steady hands who was not afraid.",
         "confidence": 0.63
       },
       {
-        "time": 42.16,
-        "endTime": 45.44,
-        "text": "Every crack that darkness made",
-        "confidence": 0.72
-      },
-      {
-        "time": 45.94,
-        "endTime": 50,
-        "text": "I will fill with what I gave",
-        "confidence": 0.97
-      },
-      {
-        "time": 50.52,
-        "endTime": 55.4,
-        "text": "My life, my power, my last breath",
-        "confidence": 0.73
-      },
-      {
-        "time": 57.98,
-        "endTime": 62.76,
-        "text": "I choose the world, I choose my death",
-        "confidence": 0.88
-      },
-      {
-        "time": 65.68,
-        "endTime": 68.8,
-        "text": "Crystal growing from my skin",
-        "confidence": 0.01
-      },
-      {
-        "time": 97.9,
-        "endTime": 100.78,
-        "text": "The weave pours out, the light pours in",
-        "confidence": 0.16
-      },
-      {
-        "time": 132.7,
-        "endTime": 136.02,
-        "text": "I am becoming something more",
-        "confidence": 0.51
-      },
-      {
-        "time": 136.76,
-        "endTime": 140.02,
-        "text": "Than anything I was before",
-        "confidence": 0.79
-      },
-      {
-        "time": 141.66,
-        "endTime": 145.9,
-        "text": "Not death, but transformation deep",
+        "time": 69.46,
+        "endTime": 76.22,
+        "text": "But underneath the hearthstone and the Bel Tine lantern light,",
         "confidence": 0.56
       },
       {
-        "time": 147.44,
-        "endTime": 153.64,
-        "text": "The Amyrlin's final, endless sleep",
-        "confidence": 0.34
+        "time": 76.22,
+        "endTime": 87.73,
+        "text": "I could feel a river pulling me beyond the Waterwood at night.",
+        "confidence": 0.49
       },
       {
-        "time": 156.18,
-        "endTime": 159.34,
-        "text": "The flame goes out but left its mark",
-        "confidence": 0.73
+        "time": 88.61,
+        "endTime": 95.35,
+        "text": "Rand was looking at the sky like it owed him something vast,",
+        "confidence": 0.78
       },
       {
-        "time": 160.32,
-        "endTime": 163.1,
-        "text": "A column of crystal in the dark",
-        "confidence": 0.84
+        "time": 96.36,
+        "endTime": 102.37,
+        "text": "Perrin at his anvil, Mat pretending nothing lasts.",
+        "confidence": 0.61
       },
       {
-        "time": 164.14,
-        "endTime": 166.9,
-        "text": "Egwene al'Vere, remember me",
+        "time": 104.43,
+        "endTime": 110.31,
+        "text": "Moiraine rode into town like weather no one could predict,",
+        "confidence": 0.88
+      },
+      {
+        "time": 112.09,
+        "endTime": 119.97,
+        "text": "and every certainty I carried crumbled quick.",
+        "confidence": 0.64
+      },
+      {
+        "time": 120.05,
+        "endTime": 125.87,
+        "text": "She looked at me, I looked at her, the knowing passed like flame,",
+        "confidence": 0.78
+      },
+      {
+        "time": 126.59,
+        "endTime": 133.85,
+        "text": "and Emond's Field became a place I'd never see the same.",
+        "confidence": 0.67
+      },
+      {
+        "time": 138.43,
+        "endTime": 146.25,
+        "text": "My mother said be careful, girl, the world will swallow you.",
+        "confidence": 0.74
+      },
+      {
+        "time": 146.59,
+        "endTime": 155.17,
+        "text": "I said the world is small, mama, and I am passing through.",
+        "confidence": 0.21
+      },
+      {
+        "time": 155.17,
+        "endTime": 164.43,
+        "text": "The Winespring runs behind me now, the inn gets very small,",
+        "confidence": 0.81
+      },
+      {
+        "time": 164.67,
+        "endTime": 172.85,
+        "text": "the innkeeper's daughter walks the road and does not look back at all.",
+        "confidence": 0.77
+      }
+    ]
+  },
+  "The A'dam": {
+    "lines": [
+      {
+        "time": 34.69,
+        "endTime": 47.34,
+        "text": "They called me damane, called me nothing, said I was not mine anymore.",
+        "confidence": 0.17
+      },
+      {
+        "time": 47.34,
+        "endTime": 57.31,
+        "text": "Renna held the bracelet end and smiled like she was kind,",
+        "confidence": 0.06
+      },
+      {
+        "time": 57.31,
+        "endTime": 64.98,
+        "text": "she said good girl, she said now channel, she said empty out your mind.",
+        "confidence": 0.25
+      },
+      {
+        "time": 64.98,
+        "endTime": 64.94,
+        "text": "The metal was warm, not cold, that's what I remember first,",
+        "confidence": 0.3
+      },
+      {
+        "time": 64.94,
+        "endTime": 67.88,
+        "text": "like it was alive and waiting, like it had rehearsed",
+        "confidence": 0.3
+      },
+      {
+        "time": 67.88,
+        "endTime": 71.23,
+        "text": "the shape of every throat it closed around since Luthair's war.",
+        "confidence": 0.3
+      },
+      {
+        "time": 71.23,
+        "endTime": 73.96,
+        "text": "You can lock the lightning in a leash of silver thread,",
+        "confidence": 0.3
+      },
+      {
+        "time": 73.96,
+        "endTime": 80.04,
+        "text": "you can teach the body to obey what fills it full of dread.",
+        "confidence": 0.67
+      },
+      {
+        "time": 80.5,
+        "endTime": 84.78,
+        "text": "But somewhere underneath the collar, underneath the pain,",
+        "confidence": 0.58
+      },
+      {
+        "time": 84.78,
+        "endTime": 90.9,
+        "text": "I kept a room inside my skull where Egwene was my name.",
+        "confidence": 0.58
+      },
+      {
+        "time": 93.2,
+        "endTime": 99.84,
+        "text": "I learned to flinch before the thought, to weep before the rod,",
+        "confidence": 0.75
+      },
+      {
+        "time": 99.92,
+        "endTime": 103.58,
+        "text": "to channel on command like breathing was a gift from God.",
+        "confidence": 0.51
+      },
+      {
+        "time": 103.9,
+        "endTime": 108.74,
+        "text": "The worst was not the punishment, the worst was feeling grateful",
+        "confidence": 0.89
+      },
+      {
+        "time": 109.28,
+        "endTime": 114.54,
+        "text": "when she praised me, when the a'dam hummed approval, something hateful",
         "confidence": 0.54
       },
       {
-        "time": 168,
-        "endTime": 179.98,
-        "text": "I was the fire that set you free",
+        "time": 115.56,
+        "endTime": 120.54,
+        "text": "grew inside the gratitude, a fury made of shame,",
+        "confidence": 0.77
+      },
+      {
+        "time": 121.06,
+        "endTime": 128.96,
+        "text": "and I would lie awake rehearsing every sul'dam's name.",
+        "confidence": 0.64
+      },
+      {
+        "time": 129.56,
+        "endTime": 135.02,
+        "text": "They broke the girl from Emond's Field, I'll give them that for free.",
+        "confidence": 0.7
+      },
+      {
+        "time": 135.02,
+        "endTime": 145.16,
+        "text": "But what grew back between the cracks was something worse to leash than me.",
+        "confidence": 0.79
+      },
+      {
+        "time": 146.72,
+        "endTime": 150.13,
+        "text": "I wore the collar thirty days, I wore it thirty nights.",
+        "confidence": 0.79
+      },
+      {
+        "time": 150.13,
+        "endTime": 153.13,
+        "text": "I took it off and kept the scars to remind me how to fight.",
+        "confidence": 0.3
+      }
+    ]
+  },
+  "World of Dreams": {
+    "lines": [
+      {
+        "time": 3.42,
+        "endTime": 7.36,
+        "text": "I close my eyes and fall between the pages of the real,",
+        "confidence": 0.34
+      },
+      {
+        "time": 9.68,
+        "endTime": 13.48,
+        "text": "Tel'aran'rhiod opens like a wound the world won't heal.",
+        "confidence": 0.2
+      },
+      {
+        "time": 14.8,
+        "endTime": 20.98,
+        "text": "The towers shift like breathing, every stone remembers hands",
+        "confidence": 0.76
+      },
+      {
+        "time": 21.74,
+        "endTime": 28.16,
+        "text": "that built it in another age on long-forgotten lands.",
+        "confidence": 0.52
+      },
+      {
+        "time": 30.62,
+        "endTime": 35.64,
+        "text": "Amys said be careful, said the dream will eat you whole,",
+        "confidence": 0.56
+      },
+      {
+        "time": 35.86,
+        "endTime": 43.42,
+        "text": "but I was born to walk in places that the waking can't control.",
+        "confidence": 0.81
+      },
+      {
+        "time": 45.52,
+        "endTime": 53.02,
+        "text": "In the world of dreams I am the architect of air,",
+        "confidence": 0.91
+      },
+      {
+        "time": 53.3,
+        "endTime": 59.96,
+        "text": "I reshape the ground beneath me, I dissolve the stair.",
+        "confidence": 0.8
+      },
+      {
+        "time": 61.42,
+        "endTime": 68.14,
+        "text": "Every nightmare has a grammar and I learned to speak it young.",
+        "confidence": 0.75
+      },
+      {
+        "time": 68.28,
+        "endTime": 75.06,
+        "text": "I trapped a Forsaken in this world with nothing but my tongue.",
+        "confidence": 0.85
+      },
+      {
+        "time": 79.38,
+        "endTime": 86,
+        "text": "Moghedien, the Spider, ancient, patient, dripping guile,",
+        "confidence": 0.41
+      },
+      {
+        "time": 86.4,
+        "endTime": 92.86,
+        "text": "she thought the world of dreams belonged to her by rank and file.",
+        "confidence": 0.9
+      },
+      {
+        "time": 93.06,
+        "endTime": 100.42,
+        "text": "But I was faster in the shifting, I was fiercer in the will,",
+        "confidence": 0.89
+      },
+      {
+        "time": 100.76,
+        "endTime": 107.34,
+        "text": "I wrapped her in an a'dam made of thought and held her still.",
+        "confidence": 0.64
+      },
+      {
+        "time": 108.02,
+        "endTime": 114.44,
+        "text": "The Wise Ones would be furious, the Tower would not care,",
+        "confidence": 0.69
+      },
+      {
+        "time": 114.64,
+        "endTime": 122.1,
+        "text": "but I leashed a living legend in her own forbidden lair.",
+        "confidence": 0.73
+      },
+      {
+        "time": 122.38,
+        "endTime": 128.86,
+        "text": "Bel'al walked here, Ishamael walked here, Lanfear shaped the sky.",
+        "confidence": 0.65
+      },
+      {
+        "time": 128.92,
+        "endTime": 140.02,
+        "text": "And a girl from Emond's Field walked in and did not even blink an eye.",
+        "confidence": 0.78
+      },
+      {
+        "time": 141.56,
+        "endTime": 148.48,
+        "text": "The dream dissolves at morning like a breath on winter glass.",
+        "confidence": 0.65
+      },
+      {
+        "time": 148.78,
+        "endTime": 159.66,
+        "text": "But I remember every room, and every room remembers that I passed.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  "Puppet Seat": {
+    "lines": [
+      {
+        "time": 21.9,
+        "endTime": 26.1,
+        "text": "They chose me because I was young, because I could be bent,",
+        "confidence": 0.79
+      },
+      {
+        "time": 26.26,
+        "endTime": 31.74,
+        "text": "a puppet on the Amyrlin Seat, a girl they could invent.",
+        "confidence": 0.75
+      },
+      {
+        "time": 36.22,
+        "endTime": 40.3,
+        "text": "Sheriam and Romanda pulling strings on either side,",
+        "confidence": 0.71
+      },
+      {
+        "time": 40.46,
+        "endTime": 44.62,
+        "text": "the rebel camp a powder keg of politics and pride.",
+        "confidence": 0.83
+      },
+      {
+        "time": 44.62,
+        "endTime": 48.98,
+        "text": "Eighteen years old with Siuan whispering tactics in my ear,",
+        "confidence": 0.79
+      },
+      {
+        "time": 49.08,
+        "endTime": 53.54,
+        "text": "I wore the stole and smiled at wolves and swallowed every fear.",
+        "confidence": 0.93
+      },
+      {
+        "time": 53.86,
+        "endTime": 58.02,
+        "text": "They wanted a figurehead, they got a flame.",
+        "confidence": 0.72
+      },
+      {
+        "time": 58.06,
+        "endTime": 63.14,
+        "text": "They handed me a title and I turned it to a claim.",
+        "confidence": 0.82
+      },
+      {
+        "time": 63.3,
+        "endTime": 67.08,
+        "text": "Every vote they thought they'd won, I'd won it first.",
+        "confidence": 0.77
+      },
+      {
+        "time": 67.4,
+        "endTime": 72.18,
+        "text": "The puppet learned the strings and then she cut them at the worst.",
+        "confidence": 0.88
+      },
+      {
+        "time": 73.44,
+        "endTime": 78.24,
+        "text": "I played the Hall like Daes Dae'mar, let them think I was naive,",
+        "confidence": 0.67
+      },
+      {
+        "time": 78.24,
+        "endTime": 82.64,
+        "text": "the youngest Amyrlin in history and the hardest to deceive.",
+        "confidence": 0.75
+      },
+      {
+        "time": 82.72,
+        "endTime": 86.68,
+        "text": "I bound the sisters to the siege with oaths they chose to give,",
+        "confidence": 0.89
+      },
+      {
+        "time": 87.24,
+        "endTime": 91.2,
+        "text": "I moved the army toward the Tower with a reason just to live.",
+        "confidence": 0.7
+      },
+      {
+        "time": 91.98,
+        "endTime": 96.14,
+        "text": "The law of war says march, so march, and do not let them see",
+        "confidence": 0.69
+      },
+      {
+        "time": 96.14,
+        "endTime": 101.76,
+        "text": "the girl behind the stolen stole is terrified to be.",
+        "confidence": 0.75
+      },
+      {
+        "time": 105.62,
+        "endTime": 112.42,
+        "text": "Siuan said the Amyrlin has no friends, only subjects and the Seat.",
+        "confidence": 0.7
+      },
+      {
+        "time": 113.98,
+        "endTime": 121.5,
+        "text": "I said the Amyrlin has no fear, only purpose and the heat.",
+        "confidence": 0.85
+      },
+      {
+        "time": 125.92,
+        "endTime": 134.44,
+        "text": "They put a crown on me to keep me small.",
+        "confidence": 0.68
+      },
+      {
+        "time": 134.44,
+        "endTime": 139.44,
+        "text": "I wore it until small was ten feet tall.",
+        "confidence": 0.6
+      }
+    ]
+  },
+  "Honey in the Tea": {
+    "lines": [
+      {
+        "time": 9.4,
+        "endTime": 14.22,
+        "text": "Elaida's Tower smelled like fear dressed up in protocol,",
+        "confidence": 0.64
+      },
+      {
+        "time": 15.36,
+        "endTime": 19.76,
+        "text": "they dragged me through the corridors and stripped away the stole.",
+        "confidence": 0.83
+      },
+      {
+        "time": 21.4,
+        "endTime": 26.3,
+        "text": "Novice white again, the penance served with Silviana's rod,",
+        "confidence": 0.63
+      },
+      {
+        "time": 27.02,
+        "endTime": 33.26,
+        "text": "they beat me every morning like a prayer delivered to a god.",
+        "confidence": 0.88
+      },
+      {
+        "time": 33.36,
+        "endTime": 38.72,
+        "text": "The welts across my shoulders, I could catalog by day,",
+        "confidence": 0.41
+      },
+      {
+        "time": 39.02,
+        "endTime": 46.02,
+        "text": "but every night I'd sit with sisters and I'd find a word to say.",
+        "confidence": 0.4
+      },
+      {
+        "time": 54.41,
+        "endTime": 59.84,
+        "text": "I did not shout, I did not weep, I did not beg for less.",
+        "confidence": 0.85
+      },
+      {
+        "time": 59.85,
+        "endTime": 64.34,
+        "text": "I took the beating, took the penance, smoothed my novice dress.",
+        "confidence": 0.9
+      },
+      {
+        "time": 65.22,
+        "endTime": 70.69,
+        "text": "I asked for honey in my tea and thanked them for the meal,",
+        "confidence": 0.88
+      },
+      {
+        "time": 70.69,
+        "endTime": 76.15,
+        "text": "and every act of quiet grace was sharpened into steel.",
+        "confidence": 0.96
+      },
+      {
+        "time": 76.21,
+        "endTime": 81.37,
+        "text": "The sisters watched me bleed and bow and never lose my spine,",
+        "confidence": 0.93
+      },
+      {
+        "time": 82.05,
+        "endTime": 87.45,
+        "text": "and one by one they started asking questions that were mine.",
+        "confidence": 0.85
+      },
+      {
+        "time": 88.25,
+        "endTime": 92.47,
+        "text": "Honey in the tea, a steady hand, a level voice.",
+        "confidence": 0.78
+      },
+      {
+        "time": 93.01,
+        "endTime": 98.39,
+        "text": "They called it punishment, I called it choice.",
+        "confidence": 0.92
+      },
+      {
+        "time": 98.45,
+        "endTime": 102.95,
+        "text": "Every stripe across my back a letter that they read,",
+        "confidence": 0.88
+      },
+      {
+        "time": 103.79,
+        "endTime": 109.29,
+        "text": "the Amyrlin does not break, she bends until they bend instead.",
+        "confidence": 0.4
+      },
+      {
+        "time": 121.75,
+        "endTime": 125.01,
+        "text": "Elaida thought she held a prisoner inside a cage of stone.",
+        "confidence": 0.53
+      },
+      {
+        "time": 126.07,
+        "endTime": 132.57,
+        "text": "She held a siege inside a girl who made the Tower her own.",
+        "confidence": 0.4
+      },
+      {
+        "time": 153.71,
+        "endTime": 159.41,
+        "text": "They beat me every morning. Every evening I won more.",
+        "confidence": 0.36
+      },
+      {
+        "time": 159.41,
+        "endTime": 165.41,
+        "text": "The honey in the tea was sweeter than the day day before.",
+        "confidence": 0.4
+      }
+    ]
+  },
+  "The Tower Whole": {
+    "lines": [
+      {
+        "time": 104,
+        "endTime": 109.33,
+        "text": "The sky tore open and the Seanchan poured like oil through the crack,",
+        "confidence": 0.3
+      },
+      {
+        "time": 109.33,
+        "endTime": 115,
+        "text": "to'raken shadows blotting out the moon and there was no turning back.",
+        "confidence": 0.3
+      },
+      {
+        "time": 115,
+        "endTime": 119.67,
+        "text": "The novices were screaming in the hallways full of smoke,",
+        "confidence": 0.3
+      },
+      {
+        "time": 119.67,
+        "endTime": 125,
+        "text": "I grabbed Vora's sa'angreal from the wall before the ceiling broke.",
+        "confidence": 0.3
+      },
+      {
+        "time": 125,
+        "endTime": 129.67,
+        "text": "No time for politics, no time for who was right or wrong,",
+        "confidence": 0.3
+      },
+      {
+        "time": 129.67,
+        "endTime": 135.67,
+        "text": "the Tower that had stood three thousand years would not fall to a Seanchan song.",
+        "confidence": 0.3
+      },
+      {
+        "time": 135.67,
+        "endTime": 139.67,
+        "text": "I am the Tower and the Tower is the flame,",
+        "confidence": 0.3
+      },
+      {
+        "time": 139.67,
+        "endTime": 145.67,
+        "text": "every corridor I walked through, every sister heard my name.",
+        "confidence": 0.3
+      },
+      {
+        "time": 145.67,
+        "endTime": 151.5,
+        "text": "I burned the sky above Tar Valon, I turned the raken into rain,",
+        "confidence": 0.3
+      },
+      {
+        "time": 151.5,
+        "endTime": 154.6,
+        "text": "and the novices who followed me will never kneel in chains again.",
+        "confidence": 0.3
+      },
+      {
+        "time": 154.6,
+        "endTime": 156.63,
+        "text": "I wove destruction floor by floor, the hallways full of light,",
+        "confidence": 0.3
+      },
+      {
+        "time": 156.63,
+        "endTime": 158.94,
+        "text": "the damane on their leashes channeling against me in the night.",
+        "confidence": 0.3
+      },
+      {
+        "time": 158.94,
+        "endTime": 161.4,
+        "text": "I thought of Renna, thought of silver, thought of every girl in chains,",
+        "confidence": 0.3
+      },
+      {
+        "time": 161.4,
+        "endTime": 163.71,
+        "text": "and the fury that I'd carried since Falme was flooding through my veins.",
+        "confidence": 0.3
+      },
+      {
+        "time": 163.71,
+        "endTime": 165.88,
+        "text": "Sisters rallied to my voice, the rebels and the Tower-sworn,",
+        "confidence": 0.3
+      },
+      {
+        "time": 165.88,
+        "endTime": 168.05,
+        "text": "for one impossible bright hour the White Tower was reborn.",
+        "confidence": 0.3
+      },
+      {
+        "time": 168.05,
+        "endTime": 170.07,
+        "text": "They came to take our sisters, came to collar and to cage.",
+        "confidence": 0.3
+      },
+      {
+        "time": 170.07,
+        "endTime": 172.53,
+        "text": "They met a girl who wore a collar once and turned it into rage.",
+        "confidence": 0.3
+      },
+      {
+        "time": 172.53,
+        "endTime": 174.99,
+        "text": "When the morning came the Tower stood, divided lines erased.",
+        "confidence": 0.3
+      },
+      {
+        "time": 174.99,
+        "endTime": 179.19,
+        "text": "The Amyrlin called the Hall to order, and every faction bowed to grace.",
+        "confidence": 0.3
+      }
+    ]
+  },
+  "Three Rings": {
+    "lines": [
+      {
+        "time": 9.48,
+        "endTime": 13.56,
+        "text": "He was the wrong man by every measure that the Seat demands,",
+        "confidence": 0.76
+      },
+      {
+        "time": 15.06,
+        "endTime": 20.34,
+        "text": "a prince who lost two thrones and fought with nothing but his hands.",
+        "confidence": 0.87
+      },
+      {
+        "time": 20.44,
+        "endTime": 24.28,
+        "text": "Gawyn Trakand, the beautiful, the reckless, the sincere,",
+        "confidence": 0.76
+      },
+      {
+        "time": 25.14,
+        "endTime": 29.14,
+        "text": "he followed me through politics he did not want to hear.",
+        "confidence": 0.89
+      },
+      {
+        "time": 30.04,
+        "endTime": 34.26,
+        "text": "I should have sent him home, I should have been the colder voice,",
+        "confidence": 0.83
+      },
+      {
+        "time": 34.76,
+        "endTime": 40.34,
+        "text": "but the Amyrlin's heart is still a heart and it still makes a choice.",
+        "confidence": 0.87
+      },
+      {
+        "time": 45.62,
+        "endTime": 49.38,
+        "text": "Three rings on my finger, three promises I made,",
+        "confidence": 0.8
+      },
+      {
+        "time": 50.22,
+        "endTime": 54.6,
+        "text": "to the Tower, to the world, and to the boy who never stayed.",
         "confidence": 0.86
+      },
+      {
+        "time": 55.38,
+        "endTime": 59.66,
+        "text": "I bonded him because the love was louder than the law,",
+        "confidence": 0.88
+      },
+      {
+        "time": 60.26,
+        "endTime": 63.81,
+        "text": "and the strongest weave I ever held was the one without a flaw.",
+        "confidence": 0.96
+      },
+      {
+        "time": 63.81,
+        "endTime": 64.5,
+        "text": "He wore Laman's sword and carried guilt like it was armor plate,",
+        "confidence": 0.3
+      },
+      {
+        "time": 64.5,
+        "endTime": 67.5,
+        "text": "protecting me from shadows with a fury I called fate.",
+        "confidence": 0.3
+      },
+      {
+        "time": 96.02,
+        "endTime": 99.88,
+        "text": "The Bloodknives in the dark, the poison singing through his blood,",
+        "confidence": 0.74
+      },
+      {
+        "time": 101.08,
+        "endTime": 104.9,
+        "text": "I felt the bond go thin like thread dissolving in a flood.",
+        "confidence": 0.85
+      },
+      {
+        "time": 105.96,
+        "endTime": 110.4,
+        "text": "He died defending something that was never his to save,",
+        "confidence": 0.96
+      },
+      {
+        "time": 110.92,
+        "endTime": 115.4,
+        "text": "the Amyrlin's own bodyguard, the bravest and the brave.",
+        "confidence": 0.79
+      },
+      {
+        "time": 118.04,
+        "endTime": 123.54,
+        "text": "The bond went silent and the world went white with pain.",
+        "confidence": 0.4
+      },
+      {
+        "time": 137.02,
+        "endTime": 146.42,
+        "text": "I kept channeling because the dead don't need me to explain.",
+        "confidence": 0.61
+      },
+      {
+        "time": 149.34,
+        "endTime": 154.04,
+        "text": "Three rings. One empty. The bond a scar I wear.",
+        "confidence": 0.69
+      },
+      {
+        "time": 154.3,
+        "endTime": 158.98,
+        "text": "I loved him like a burning thing. The burning's still right there.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "Crystal and Flame": {
+    "lines": [
+      {
+        "time": 6.14,
+        "endTime": 11.78,
+        "text": "The ground is cracking open and the Dark One's breath is here,",
+        "confidence": 0.68
+      },
+      {
+        "time": 13.66,
+        "endTime": 20.7,
+        "text": "M'Hael has turned the Dreadlords loose and balefire splits the air.",
+        "confidence": 0.64
+      },
+      {
+        "time": 20.8,
+        "endTime": 26.94,
+        "text": "The Pattern unravels with every thread they burn undone,",
+        "confidence": 0.85
+      },
+      {
+        "time": 27.9,
+        "endTime": 34.7,
+        "text": "and I can see the places where reality has come undone.",
+        "confidence": 0.87
+      },
+      {
+        "time": 36.06,
+        "endTime": 41.54,
+        "text": "Vora's wand is singing in my hands like living wire,",
+        "confidence": 0.69
+      },
+      {
+        "time": 42.92,
+        "endTime": 52.4,
+        "text": "and I can feel a weave assembling that is made of something higher.",
+        "confidence": 0.79
+      },
+      {
+        "time": 55.5,
+        "endTime": 62.34,
+        "text": "Let me be the answer to the thing that breaks the world,",
+        "confidence": 0.94
+      },
+      {
+        "time": 62.98,
+        "endTime": 69.9,
+        "text": "let me be the counterweave, the flame, the flag unfurled.",
+        "confidence": 0.78
+      },
+      {
+        "time": 70.2,
+        "endTime": 76.92,
+        "text": "I am drawing deeper than the living ought to draw,",
+        "confidence": 0.74
+      },
+      {
+        "time": 77.34,
+        "endTime": 88.14,
+        "text": "I am weaving something that the Age of Legends never saw.",
+        "confidence": 0.77
+      },
+      {
+        "time": 88.14,
+        "endTime": 92.62,
+        "text": "The Flame of Tar Valon, they will call it when I'm gone,",
+        "confidence": 0.4
+      },
+      {
+        "time": 92.64,
+        "endTime": 100.76,
+        "text": "the opposite of unraveling, the thing that sews the dawn.",
+        "confidence": 0.66
+      },
+      {
+        "time": 103.96,
+        "endTime": 107.46,
+        "text": "I can feel my body crystallizing, feel the light pour in,",
+        "confidence": 0.43
+      },
+      {
+        "time": 107.46,
+        "endTime": 108.94,
+        "text": "every crack the balefire opened, I am sealing from within.",
+        "confidence": 0.03
+      },
+      {
+        "time": 108.94,
+        "endTime": 111.74,
+        "text": "I think of Rand beneath the mountain holding back the dark,",
+        "confidence": 0.25
+      },
+      {
+        "time": 112.32,
+        "endTime": 119,
+        "text": "and I match him weave for weave because we both were just a spark.",
+        "confidence": 0.51
+      },
+      {
+        "time": 119.32,
+        "endTime": 126.54,
+        "text": "I was the innkeeper's daughter. I was the girl in chains.",
+        "confidence": 0.09
+      },
+      {
+        "time": 126.84,
+        "endTime": 141.62,
+        "text": "I was the dreamer. I was the seat. I was the one who remains.",
+        "confidence": 0.37
+      },
+      {
+        "time": 142.2,
+        "endTime": 150.94,
+        "text": "Not as flesh, not as memory, but as crystal in the ground,",
+        "confidence": 0.53
+      },
+      {
+        "time": 150.94,
+        "endTime": 164.92,
+        "text": "a monument to every fire that refused to be put down.",
+        "confidence": 0.68
+      },
+      {
+        "time": 165.08,
+        "endTime": 170.04,
+        "text": "The flame goes out. The crystal grows. The Tower still stands tall.",
+        "confidence": 0.77
+      },
+      {
+        "time": 170.22,
+        "endTime": 177.32,
+        "text": "Egwene al'Vere, the Amyrlin's fire, the brightest of them all.",
+        "confidence": 0.59
       }
     ]
   }
@@ -8269,124 +7669,124 @@ window.syncReference["nynaeve-al-meara"] = {
   "I Will Not Break": {
     "lines": [
       {
-        "time": 8.44,
-        "endTime": 12.54,
+        "time": 31,
+        "endTime": 34.92,
         "text": "The collar closed around my throat and the world went very small",
-        "confidence": 0.02
+        "confidence": 0.3
       },
       {
-        "time": 32.9,
-        "endTime": 41.98,
+        "time": 34.92,
+        "endTime": 39.58,
         "text": "Every breath belonged to someone else, every thought against a wall",
-        "confidence": 0.07
+        "confidence": 0.3
       },
       {
-        "time": 41.98,
-        "endTime": 42.48,
+        "time": 39.58,
+        "endTime": 44,
         "text": "They called it training, called it purpose, called it being made complete",
-        "confidence": 0.22
+        "confidence": 0.3
       },
       {
-        "time": 42.2,
-        "endTime": 42.7,
+        "time": 52,
+        "endTime": 57.77,
         "text": "I called it drowning with my lungs still full, still standing on my feet",
-        "confidence": 0.12
+        "confidence": 0.3
       },
       {
-        "time": 42.43,
-        "endTime": 42.93,
+        "time": 57.77,
+        "endTime": 62.52,
         "text": "I will not break, I will not bend, I will not learn to kneel",
-        "confidence": 0.4
+        "confidence": 0.3
       },
       {
-        "time": 42.66,
-        "endTime": 43.16,
+        "time": 62.52,
+        "endTime": 68.29,
         "text": "You can take the Power from my hands but you can't take the way I feel",
-        "confidence": 0.1
+        "confidence": 0.3
       },
       {
-        "time": 42.88,
-        "endTime": 43.38,
+        "time": 68.29,
+        "endTime": 72.71,
         "text": "Chain me to the floor and watch me memorize the lock",
-        "confidence": 0.08
+        "confidence": 0.3
       },
       {
-        "time": 42.88,
-        "endTime": 48.88,
+        "time": 72.71,
+        "endTime": 76.78,
         "text": "I will not break \u2014 I am the thing you cannot stop",
-        "confidence": 0.14
+        "confidence": 0.3
       },
       {
-        "time": 108.96,
-        "endTime": 110.53,
+        "time": 76.78,
+        "endTime": 82.55,
         "text": "The sul'dam smiled like she was patient, like I was a child to teach",
-        "confidence": 0.09
+        "confidence": 0.3
       },
       {
-        "time": 110.53,
-        "endTime": 112.11,
+        "time": 82.55,
+        "endTime": 89,
         "text": "Like obedience was a river I would learn if she just widened the reach",
-        "confidence": 0.06
+        "confidence": 0.3
       },
       {
-        "time": 112.11,
-        "endTime": 113.68,
+        "time": 106,
+        "endTime": 113.34,
         "text": "But every time the a'dam pulsed I bit down on the pain",
-        "confidence": 0.4
+        "confidence": 0.3
       },
       {
-        "time": 113.68,
-        "endTime": 118.92,
+        "time": 113.34,
+        "endTime": 121.14,
         "text": "Filed the edges of my fury into something I'd reclaim",
-        "confidence": 0.85
+        "confidence": 0.3
       },
       {
-        "time": 122.04,
-        "endTime": 129.64,
+        "time": 121.14,
+        "endTime": 127.56,
         "text": "There is a place inside me where the leash does not arrive",
-        "confidence": 0.76
+        "confidence": 0.3
       },
       {
-        "time": 130.78,
-        "endTime": 140.2,
+        "time": 127.56,
+        "endTime": 134.9,
         "text": "A room with no door, no window, just the stubborn fact I'm alive",
-        "confidence": 0.76
+        "confidence": 0.3
       },
       {
-        "time": 141.16,
-        "endTime": 150.3,
+        "time": 134.9,
+        "endTime": 143.16,
         "text": "They can collar every woman from the shore to the Spine of the World",
-        "confidence": 0.79
+        "confidence": 0.3
       },
       {
-        "time": 150.64,
-        "endTime": 155.64,
+        "time": 143.16,
+        "endTime": 148.66,
         "text": "But they will never cage the storm inside this girl",
-        "confidence": 0.4
+        "confidence": 0.3
       },
       {
-        "time": 177.22,
-        "endTime": 177.92,
+        "time": 148.66,
+        "endTime": 150.5,
         "text": "I will not break",
-        "confidence": 0.03
+        "confidence": 0.3
       },
       {
-        "time": 177.92,
-        "endTime": 178.42,
+        "time": 150.5,
+        "endTime": 152.33,
         "text": "Say it again",
-        "confidence": 0.05
+        "confidence": 0.3
       },
       {
-        "time": 177.95,
-        "endTime": 178.45,
+        "time": 152.33,
+        "endTime": 154.17,
         "text": "I will not break",
-        "confidence": 0.4
+        "confidence": 0.3
       },
       {
-        "time": 177.99,
-        "endTime": 178.49,
+        "time": 154.17,
+        "endTime": 156,
         "text": "I will not break",
-        "confidence": 0.29
+        "confidence": 0.3
       }
     ]
   },
@@ -12093,38 +11493,38 @@ window.syncReference["spear-and-flame"] = {
   "The Last Dance": {
     "lines": [
       {
-        "time": 32.0,
-        "endTime": 34.0,
+        "time": 32,
+        "endTime": 34,
         "text": "Tarmon Gai'don opens like a mouth of black fire",
         "confidence": 0.3
       },
       {
-        "time": 34.0,
-        "endTime": 36.0,
+        "time": 34,
+        "endTime": 36,
         "text": "Every thread the Pattern wove pulled to the wire",
         "confidence": 0.3
       },
       {
-        "time": 36.0,
-        "endTime": 38.0,
+        "time": 36,
+        "endTime": 38,
         "text": "I stand with sisters, Wise Ones, spears aligned as one",
         "confidence": 0.3
       },
       {
-        "time": 38.0,
-        "endTime": 40.0,
+        "time": 38,
+        "endTime": 40,
         "text": "The last battle of the world beneath a dying sun",
         "confidence": 0.3
       },
       {
-        "time": 40.0,
-        "endTime": 42.0,
+        "time": 40,
+        "endTime": 42,
         "text": "Everything I trained for, everything I lost",
         "confidence": 0.3
       },
       {
-        "time": 42.0,
-        "endTime": 44.0,
+        "time": 42,
+        "endTime": 44,
         "text": "Comes down to this moment \u2014 every single cost",
         "confidence": 0.3
       },

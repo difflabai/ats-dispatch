@@ -1007,6 +1007,44 @@ body {
   margin-top: 8px;
 }
 
+/* ===== LYRICS-OPEN: lock body scroll, fill viewport ===== */
+body.lyrics-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body.lyrics-open .album-detail.active {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+body.lyrics-open .album-detail-header {
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+body.lyrics-open .album-detail-body.has-lyrics {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+body.lyrics-open .track-list {
+  overflow-y: auto;
+  min-height: 0;
+}
+
+body.lyrics-open .lyrics-panel {
+  position: static;
+  max-height: none;
+  min-height: 0;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .site-header {
@@ -1053,10 +1091,42 @@ body {
   .album-detail-body.has-lyrics {
     grid-template-columns: 1fr;
   }
+  /* Mobile lyrics: fullscreen overlay */
+  body.lyrics-open .album-detail.active {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  body.lyrics-open .album-detail-header {
+    display: none;
+  }
+  body.lyrics-open .lyrics-panel.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 150;
+    max-height: none;
+    border-radius: 0;
+    border: none;
+    padding: 16px;
+    padding-top: calc(16px + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px));
+    margin: 0;
+    background: var(--bg-primary);
+  }
+  body.lyrics-open .lyrics-panel-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  body.lyrics-open .lyrics-panel-close {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
   .lyrics-panel {
     padding: 20px;
     position: static;
-    max-height: 50vh;
+    max-height: none;
   }
 }
 
@@ -1369,158 +1439,55 @@ body {
   text-decoration: none;
 }
 
-/* ===== A/B VARIANT TOGGLE ===== */
-.variant-toggle {
+/* ===== GLOBAL MIX TOGGLE (Header) ===== */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mix-toggle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mix-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.mix-toggle {
   display: inline-flex;
   border: 1px solid var(--border);
   border-radius: 4px;
   overflow: hidden;
-  flex-shrink: 0;
-  margin-left: auto;
-  margin-right: 8px;
+  cursor: pointer;
 }
 
-.variant-opt {
-  padding: 2px 8px;
+.mix-opt {
+  padding: 3px 10px;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--text-muted);
-  cursor: pointer;
   transition: all 0.2s;
   user-select: none;
 }
 
-.variant-opt:first-child {
+.mix-opt:first-child {
   border-right: 1px solid var(--border);
 }
 
-.variant-opt:hover {
+.mix-opt:hover {
   color: var(--text-secondary);
   background: rgba(255,255,255,0.03);
 }
 
-.variant-opt.variant-active {
+.mix-opt.mix-active {
   background: var(--accent-ember);
   color: white;
-}
-
-/* Report button */
-.variant-report-btn {
-  display: block;
-  width: 100%;
-  margin-top: 16px;
-  padding: 10px 16px;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  color: var(--text-secondary);
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.variant-report-btn:hover {
-  border-color: var(--accent-ember);
-  color: var(--accent-ember);
-  background: rgba(212,99,29,0.05);
-}
-
-/* Report modal */
-.variant-report-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.variant-report-content {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 32px;
-  max-width: 600px;
-  width: 100%;
-  max-height: 80vh;
-  overflow-y: auto;
-}
-
-.variant-report-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-  font-family: 'Cinzel', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.variant-report-close {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0 4px;
-  line-height: 1;
-}
-
-.variant-report-close:hover {
-  color: var(--text-primary);
-}
-
-.variant-report-desc {
-  color: var(--text-secondary);
-  font-size: 0.8rem;
-  margin-bottom: 16px;
-  line-height: 1.5;
-}
-
-.variant-report-desc code {
-  background: rgba(212,99,29,0.15);
-  color: var(--accent-ember-glow);
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 0.75rem;
-}
-
-.variant-report-json {
-  background: var(--bg-primary);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
-  font-size: 0.8rem;
-  color: var(--text-primary);
-  overflow-x: auto;
-  white-space: pre;
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-
-.variant-report-copy {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background: var(--accent-ember);
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.variant-report-copy:hover {
-  background: var(--accent-ember-glow);
 }

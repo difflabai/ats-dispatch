@@ -39,7 +39,16 @@ cat >> "$OUT" <<'HTMLMID'
         <div class="site-title">The Wheel of Time</div>
         <div class="site-subtitle">Album Collection</div>
       </div>
-      <a href="#" class="nav-home" id="nav-home" onclick="event.preventDefault(); WOT.goHome();">All Albums</a>
+      <div class="header-right">
+        <div class="mix-toggle-wrap" id="mix-toggle-wrap">
+          <span class="mix-label">Mix</span>
+          <div class="mix-toggle" id="mix-toggle" onclick="WOT.toggleMix()">
+            <span class="mix-opt mix-active" id="mix-opt-a">A</span>
+            <span class="mix-opt" id="mix-opt-b">B</span>
+          </div>
+        </div>
+        <a href="#" class="nav-home" id="nav-home" onclick="event.preventDefault(); WOT.goHome();">All Albums</a>
+      </div>
     </div>
   </header>
 

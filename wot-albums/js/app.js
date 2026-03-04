@@ -34,48 +34,47 @@
   let currentTrackIndex = -1;
   let isPlaying = false;
 
-  // A/B variant selections: { "albumId": { trackIndex: "A"|"B", ... }, ... }
-  let variantSelections = {};
-  var VARIANT_STORAGE_KEY = 'wot-variant-selections';
+  // Global mix selection: 'A' or 'B' — applies to all tracks site-wide
+  var currentMix = 'A';
+  var MIX_STORAGE_KEY = 'wot-mix';
 
-  function saveVariantSelections() {
+  function saveMix() {
     try {
-      localStorage.setItem(VARIANT_STORAGE_KEY, JSON.stringify(variantSelections));
+      localStorage.setItem(MIX_STORAGE_KEY, currentMix);
     } catch (e) { /* quota exceeded or private browsing */ }
   }
 
-  function loadVariantSelections() {
+  function loadMix() {
     try {
-      var saved = localStorage.getItem(VARIANT_STORAGE_KEY);
-      if (saved) return JSON.parse(saved);
+      var saved = localStorage.getItem(MIX_STORAGE_KEY);
+      if (saved === 'A' || saved === 'B') return saved;
     } catch (e) { /* corrupted data */ }
-    return null;
+    return 'A';
   }
 
-  function initVariantSelections() {
-    var saved = loadVariantSelections();
-    ALBUMS.forEach(function(album) {
-      variantSelections[album.id] = {};
-      album.tracks.forEach(function(track, i) {
-        // Restore saved selection if available, otherwise use track default or "A"
-        var savedVariant = saved && saved[album.id] && saved[album.id][i];
-        variantSelections[album.id][i] = savedVariant || track.variant || 'A';
-      });
-    });
+  function initMix() {
+    currentMix = loadMix();
+    updateMixToggleUI();
   }
 
-  function getVariantUrl(url, variant) {
+  function updateMixToggleUI() {
+    var optA = document.getElementById('mix-opt-a');
+    var optB = document.getElementById('mix-opt-b');
+    if (optA) optA.className = 'mix-opt' + (currentMix === 'A' ? ' mix-active' : '');
+    if (optB) optB.className = 'mix-opt' + (currentMix === 'B' ? ' mix-active' : '');
+  }
+
+  function getMixUrl(url) {
     if (!url) return '';
-    if (variant === 'B') {
+    if (currentMix === 'B') {
       return url.replace(/-a\.mp3$/, '-b.mp3');
     }
     return url;
   }
 
-  function getActiveUrl(track, albumId, trackIndex) {
+  function getActiveUrl(track) {
     if (!track.url) return '';
-    var v = variantSelections[albumId] && variantSelections[albumId][trackIndex];
-    return getVariantUrl(track.url, v || 'A');
+    return getMixUrl(track.url);
   }
 
   // Lyrics highlight state
@@ -99,7 +98,7 @@
     navHome = document.getElementById('nav-home');
     lyricsPanel = document.getElementById('lyrics-panel');
 
-    initVariantSelections();
+    initMix();
     renderGrid();
     setupNavigation();
     setupPlayerControls();
@@ -190,33 +189,12 @@
     var trackList = document.getElementById('track-list-body');
     trackList.innerHTML = album.tracks.map(function(track, i) {
       var activeClass = (currentTrack && currentTrack.title === track.title) ? ' active' : '';
-      var currentVariant = variantSelections[album.id][i] || 'A';
-      var hasAudio = !!track.url;
-      var variantToggle = hasAudio
-        ? '<div class="variant-toggle" data-track-idx="' + i + '" onclick="event.stopPropagation(); WOT.toggleVariant(\'' + album.id + '\', ' + i + ')">' +
-            '<span class="variant-opt' + (currentVariant === 'A' ? ' variant-active' : '') + '">A</span>' +
-            '<span class="variant-opt' + (currentVariant === 'B' ? ' variant-active' : '') + '">B</span>' +
-          '</div>'
-        : '';
       return '<div class="track-item' + activeClass + '" data-track-index="' + i + '" onclick="WOT.selectTrack(' + i + ')">' +
         '<span class="track-number">' + (i + 1) + '</span>' +
         '<span class="track-title">' + track.title + '</span>' +
-        variantToggle +
         '<span class="track-duration">' + track.duration + '</span>' +
       '</div>';
     }).join('');
-
-    // Add report button below tracklist
-    var existingReport = document.getElementById('variant-report-btn');
-    if (existingReport) existingReport.remove();
-    if (albumHasAudio(album)) {
-      var reportBtn = document.createElement('button');
-      reportBtn.id = 'variant-report-btn';
-      reportBtn.className = 'variant-report-btn';
-      reportBtn.textContent = 'Report Variant Selection';
-      reportBtn.onclick = function() { showVariantReport(album); };
-      trackList.parentNode.appendChild(reportBtn);
-    }
 
     document.documentElement.style.setProperty('--accent-ember', album.color);
     document.documentElement.style.setProperty('--accent-ember-glow', album.accent);
@@ -278,7 +256,7 @@
     times[1].textContent = track.duration;
     document.querySelector('.player-progress-fill').style.width = '0%';
 
-    var activeUrl = getActiveUrl(track, currentAlbum.id, currentTrackIndex);
+    var activeUrl = getActiveUrl(track);
     if (activeUrl) {
       audio.src = activeUrl;
       audio.load();
@@ -312,6 +290,7 @@
     if (currentAlbum) lyricsPanel.setAttribute('data-album', currentAlbum.id);
     var body = document.querySelector('.album-detail-body');
     if (body) body.classList.add('has-lyrics');
+    document.body.classList.add('lyrics-open');
     if (syncActive) lyricsPanel.classList.add('sync-active');
     document.getElementById('lyrics-title').textContent = track.title;
 
@@ -394,6 +373,17 @@
 
     if (timingData && timingData.length === contentIndices.length) {
       // Use forced-alignment timing data (line-level)
+      var firstLineStart = timingData[0].start !== undefined ? timingData[0].start : timingData[0].time;
+      if (t < firstLineStart) {
+        // During intro before vocals: no line should be highlighted
+        if (lastHighlightIndex !== -1) {
+          for (var k = 0; k < lyricsLines.length; k++) {
+            lyricsLines[k].el.className = lyricsLines[k].el.className.replace(/ lyrics-line-active| lyrics-line-near| lyrics-line-dim/g, '');
+          }
+          lastHighlightIndex = -1;
+        }
+        return;
+      }
       for (var ti = timingData.length - 1; ti >= 0; ti--) {
         var lineStart = timingData[ti].start !== undefined ? timingData[ti].start : timingData[ti].time;
         if (t >= lineStart) {
@@ -465,6 +455,7 @@
     }
     var body = document.querySelector('.album-detail-body');
     if (body) body.classList.remove('has-lyrics');
+    document.body.classList.remove('lyrics-open');
     clearSyncOverlay();
     lyricsLines = [];
     lineSectionOwner = [];
@@ -497,7 +488,7 @@
       // pause event listener will set isPlaying = false
     } else {
       if (!audio.src || audio.ended) {
-        audio.src = getActiveUrl(currentTrack, currentAlbum.id, currentTrackIndex);
+        audio.src = getActiveUrl(currentTrack);
         audio.load();
       }
       var playPromise = audio.play();
@@ -870,28 +861,16 @@
     tooltip.style.top = y + 'px';
   }
 
-  function toggleVariant(albumId, trackIndex) {
-    var current = variantSelections[albumId][trackIndex] || 'A';
-    variantSelections[albumId][trackIndex] = current === 'A' ? 'B' : 'A';
-    saveVariantSelections();
+  function toggleMix() {
+    currentMix = currentMix === 'A' ? 'B' : 'A';
+    saveMix();
+    updateMixToggleUI();
 
-    // Update the toggle UI
-    var trackEl = document.querySelector('.track-item[data-track-index="' + trackIndex + '"]');
-    if (trackEl) {
-      var toggle = trackEl.querySelector('.variant-toggle');
-      if (toggle) {
-        var opts = toggle.querySelectorAll('.variant-opt');
-        var newVariant = variantSelections[albumId][trackIndex];
-        opts[0].className = 'variant-opt' + (newVariant === 'A' ? ' variant-active' : '');
-        opts[1].className = 'variant-opt' + (newVariant === 'B' ? ' variant-active' : '');
-      }
-    }
-
-    // If this is the currently playing track, swap the audio source
-    if (currentAlbum && currentAlbum.id === albumId && currentTrackIndex === trackIndex && currentTrack) {
+    // If a track is currently playing, swap the audio source
+    if (currentTrack && currentTrack.url && currentAlbum) {
       var wasPlaying = isPlaying;
       var savedTime = audio.currentTime;
-      audio.src = getActiveUrl(currentTrack, albumId, trackIndex);
+      audio.src = getActiveUrl(currentTrack);
       audio.load();
       audio.addEventListener('loadedmetadata', function onMeta() {
         audio.removeEventListener('loadedmetadata', onMeta);
@@ -904,59 +883,6 @@
     }
   }
 
-  function showVariantReport(album) {
-    var report = {
-      album: album.id,
-      title: album.title,
-      tracks: {}
-    };
-    album.tracks.forEach(function(track, i) {
-      if (track.url) {
-        report.tracks[track.title] = variantSelections[album.id][i] || 'A';
-      }
-    });
-
-    // Create modal
-    var existing = document.getElementById('variant-report-modal');
-    if (existing) existing.remove();
-
-    var modal = document.createElement('div');
-    modal.id = 'variant-report-modal';
-    modal.className = 'variant-report-modal';
-    modal.innerHTML =
-      '<div class="variant-report-content">' +
-        '<div class="variant-report-header">' +
-          '<span>Variant Selection Report</span>' +
-          '<button class="variant-report-close" onclick="WOT.closeReport()">&times;</button>' +
-        '</div>' +
-        '<div class="variant-report-desc">Copy this JSON and set <code>variant: "B"</code> on tracks in albums.js to make B the default.</div>' +
-        '<pre class="variant-report-json">' + JSON.stringify(report, null, 2) + '</pre>' +
-        '<button class="variant-report-copy" onclick="WOT.copyReport()">Copy to Clipboard</button>' +
-      '</div>';
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) closeReport();
-    });
-    document.body.appendChild(modal);
-  }
-
-  function closeReport() {
-    var modal = document.getElementById('variant-report-modal');
-    if (modal) modal.remove();
-  }
-
-  function copyReport() {
-    var pre = document.querySelector('.variant-report-json');
-    if (pre) {
-      navigator.clipboard.writeText(pre.textContent).then(function() {
-        var btn = document.querySelector('.variant-report-copy');
-        if (btn) {
-          btn.textContent = 'Copied!';
-          setTimeout(function() { btn.textContent = 'Copy to Clipboard'; }, 2000);
-        }
-      });
-    }
-  }
-
   window.WOT = {
     openAlbum: showAlbum,
     goHome: showGrid,
@@ -964,9 +890,7 @@
     hideLyrics: hideLyrics,
     togglePlay: togglePlay,
     toggleSync: toggleSync,
-    toggleVariant: toggleVariant,
-    closeReport: closeReport,
-    copyReport: copyReport
+    toggleMix: toggleMix
   };
 
   if (document.readyState === 'loading') {

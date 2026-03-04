@@ -215,6 +215,245 @@ def get_audio_duration(audio_path):
     return None
 
 
+def detect_vocal_regions(vocals_path, window_sec=1.0, threshold_percentile=30,
+                         threshold_multiplier=3.0, min_gap=3.0, min_region=2.0):
+    """
+    Detect vocal regions from Demucs-separated vocals using RMS energy.
+
+    Returns list of (start_sec, end_sec) tuples where vocals are active.
+    Merges nearby regions (< min_gap apart) and discards short ones (< min_region).
+    """
+    import numpy as np
+    import soundfile as sf
+
+    data, sr = sf.read(vocals_path)
+    if len(data.shape) > 1:
+        mono = np.mean(data, axis=1)
+    else:
+        mono = data
+
+    window_size = int(sr * window_sec)
+    n_windows = len(mono) // window_size
+
+    rms_values = []
+    for i in range(n_windows):
+        start = i * window_size
+        segment = mono[start:start + window_size]
+        rms_values.append(np.sqrt(np.mean(segment ** 2)))
+
+    rms_arr = np.array(rms_values)
+    threshold = np.percentile(rms_arr, threshold_percentile) * threshold_multiplier
+
+    # Detect raw regions
+    raw_regions = []
+    in_vocal = False
+    for i, rms in enumerate(rms_values):
+        if rms > threshold and not in_vocal:
+            region_start = i * window_sec
+            in_vocal = True
+        elif rms <= threshold and in_vocal:
+            raw_regions.append((region_start, i * window_sec))
+            in_vocal = False
+    if in_vocal:
+        raw_regions.append((region_start, n_windows * window_sec))
+
+    if not raw_regions:
+        return [(0, len(mono) / sr)]
+
+    # Merge nearby regions
+    merged = [raw_regions[0]]
+    for start, end in raw_regions[1:]:
+        if start - merged[-1][1] < min_gap:
+            merged[-1] = (merged[-1][0], end)
+        else:
+            merged.append((start, end))
+
+    # Filter short regions
+    merged = [(s, e) for s, e in merged if (e - s) >= min_region]
+
+    if not merged:
+        return [(0, len(mono) / sr)]
+
+    # Filter quiet regions: exclude regions whose peak RMS is below 25%
+    # of the loudest region's peak. This removes instrument bleed from intros.
+    region_peaks = []
+    for s, e in merged:
+        si, ei = int(s / window_sec), int(e / window_sec)
+        si, ei = max(0, si), min(len(rms_values), ei)
+        peak = max(rms_values[si:ei]) if si < ei else 0
+        region_peaks.append(peak)
+
+    max_peak = max(region_peaks) if region_peaks else 0
+    if max_peak > 0:
+        filtered = [
+            (s, e) for (s, e), peak in zip(merged, region_peaks)
+            if peak >= max_peak * 0.25
+        ]
+        if filtered:
+            merged = filtered
+
+    return merged
+
+
+def _vad_quality_check(aligned_lines, vocal_regions):
+    """Check alignment quality against VAD. Returns (score, details)."""
+    if not aligned_lines or not vocal_regions:
+        return 1.0, {}
+
+    def _in_any_region(t):
+        for rs, re_ in vocal_regions:
+            if rs - 2.0 <= t <= re_ + 2.0:
+                return True
+        return False
+
+    n = len(aligned_lines)
+    in_silence = sum(1 for l in aligned_lines if not _in_any_region(l["time"]))
+
+    # Check for lines with overlapping/identical timestamps
+    overlapping = 0
+    for i in range(n - 1):
+        if aligned_lines[i + 1]["time"] - aligned_lines[i]["time"] < 0.3:
+            overlapping += 1
+
+    # Check for large vocal regions with no lyrics
+    region_covered = [False] * len(vocal_regions)
+    for l in aligned_lines:
+        for ri, (rs, re_) in enumerate(vocal_regions):
+            if rs - 2.0 <= l["time"] <= re_ + 2.0:
+                region_covered[ri] = True
+
+    large_empty = sum(
+        1 for ri, (rs, re_) in enumerate(vocal_regions)
+        if not region_covered[ri] and (re_ - rs) >= 10.0
+    )
+
+    problem_ratio = (in_silence + overlapping) / n
+    return 1.0 - problem_ratio, {
+        "in_silence": in_silence,
+        "overlapping": overlapping,
+        "large_empty_regions": large_empty,
+    }
+
+
+def _full_vad_distribution(content_lines, vocal_regions, audio_duration):
+    """
+    Distribute ALL lyrics across vocal regions proportionally by duration.
+    Used as fallback when Whisper alignment is badly broken.
+
+    Skips very short/quiet intro regions (< 3s or first region if it looks
+    like bleed rather than real vocals).
+    """
+    # Filter out very short regions that are likely noise/bleed
+    usable_regions = []
+    for ri, (rs, re_) in enumerate(vocal_regions):
+        dur = re_ - rs
+        if dur < 3.0:
+            continue
+        usable_regions.append((rs, re_))
+
+    if not usable_regions:
+        usable_regions = list(vocal_regions)
+
+    total_vocal_dur = sum(re_ - rs for rs, re_ in usable_regions)
+    n_lines = len(content_lines)
+
+    # Allocate lines to regions proportional to duration
+    result = []
+    line_cursor = 0
+
+    for ri, (rs, re_) in enumerate(usable_regions):
+        rdur = re_ - rs
+        proportion = rdur / total_vocal_dur
+        n_assign = round(proportion * n_lines)
+
+        # Last region gets whatever is left
+        if ri == len(usable_regions) - 1:
+            n_assign = n_lines - line_cursor
+        else:
+            n_assign = max(1, min(n_assign, n_lines - line_cursor))
+
+        if n_assign <= 0 or line_cursor >= n_lines:
+            continue
+
+        assigned_lines = content_lines[line_cursor:line_cursor + n_assign]
+
+        # Syllable-weighted distribution within region
+        syllable_counts = [max(1, _line_syllables(text)) for text in assigned_lines]
+        total_syl = sum(syllable_counts)
+        cursor = rs
+
+        for ki, text in enumerate(assigned_lines):
+            line_dur = rdur * (syllable_counts[ki] / total_syl)
+            result.append({
+                "time": round(cursor, 2),
+                "endTime": round(cursor + line_dur, 2),
+                "text": text,
+                "confidence": 0.3,  # low confidence for VAD-estimated timings
+            })
+            cursor += line_dur
+
+        line_cursor += n_assign
+
+    return result
+
+
+def _assign_lines_to_vocal_regions(aligned_lines, vocal_regions, audio_duration):
+    """
+    Validate alignment against VAD regions. If quality is poor (>30% of
+    lines misplaced), fall back to full VAD distribution. Otherwise, fix
+    individual misplaced lines.
+    """
+    if not aligned_lines or not vocal_regions or len(vocal_regions) < 2:
+        return aligned_lines
+
+    n = len(aligned_lines)
+    fixed = [dict(l) for l in aligned_lines]
+
+    # Quality check
+    score, details = _vad_quality_check(fixed, vocal_regions)
+    print(f"  [vad] Alignment quality: {score:.0%} "
+          f"(silence={details.get('in_silence',0)}, "
+          f"overlap={details.get('overlapping',0)}, "
+          f"empty_regions={details.get('large_empty_regions',0)})")
+
+    # If alignment is badly broken, use full VAD distribution
+    if score < 0.7 or details.get("large_empty_regions", 0) >= 1:
+        content_lines = [l["text"] for l in fixed]
+        print(f"  [vad] Alignment too poor ({score:.0%}), using full VAD distribution")
+        return _full_vad_distribution(content_lines, vocal_regions, audio_duration)
+
+    # Otherwise, try to fix individual misplaced lines
+    def _find_region(t):
+        for ri, (rs, re_) in enumerate(vocal_regions):
+            if rs - 1.5 <= t <= re_ + 1.5:
+                return ri
+        return -1
+
+    line_regions = [_find_region(l["time"]) for l in fixed]
+    silent_lines = [i for i, ri in enumerate(line_regions) if ri == -1]
+
+    if not silent_lines:
+        return fixed
+
+    # For small number of misplaced lines, snap to nearest vocal region
+    for li in silent_lines:
+        t = fixed[li]["time"]
+        best_ri = min(range(len(vocal_regions)),
+                      key=lambda ri: min(abs(t - vocal_regions[ri][0]),
+                                         abs(t - vocal_regions[ri][1])))
+        rs, re_ = vocal_regions[best_ri]
+        # Place at the end of the nearest region
+        fixed[li]["time"] = round(max(rs, re_ - 3.0), 2)
+        fixed[li]["endTime"] = round(re_, 2)
+        fixed[li]["confidence"] = 0.3
+        print(f"  [vad] Snapped line {li+1} to region {rs:.0f}-{re_:.0f}s: "
+              f"{fixed[li]['text'][:40]}")
+
+    fixed.sort(key=lambda l: l["time"])
+
+    return fixed
+
+
 def _count_syllables(word):
     """English syllable estimation heuristic."""
     word = re.sub(r'[^a-z]', '', word.lower())
@@ -436,6 +675,25 @@ def align_track(model, audio_path, lyrics_text, track_title, use_demucs=True,
 
     # Post-process to fix degenerate alignments
     aligned_lines = postprocess_alignment(aligned_lines, audio_duration)
+
+    # VAD-aware validation: detect and fix lines placed in non-vocal regions
+    vocals_path = align_audio if use_demucs else None
+    if vocals_path and os.path.exists(vocals_path):
+        try:
+            vocal_regions = detect_vocal_regions(vocals_path)
+            if vocal_regions:
+                total_vocal = sum(e - s for s, e in vocal_regions)
+                print(f"  [vad] Detected {len(vocal_regions)} vocal regions "
+                      f"({total_vocal:.0f}s of {audio_duration:.0f}s)")
+                for rs, re_ in vocal_regions:
+                    print(f"  [vad]   {rs:.0f}s - {re_:.0f}s ({re_-rs:.0f}s)")
+                aligned_lines = _assign_lines_to_vocal_regions(
+                    aligned_lines, vocal_regions, audio_duration
+                )
+                # Re-run overlap/duration fixes after VAD redistribution
+                aligned_lines = postprocess_alignment(aligned_lines, audio_duration)
+        except Exception as e:
+            print(f"  [vad] WARNING: VAD failed, using alignment as-is: {e}")
 
     return aligned_lines
 
