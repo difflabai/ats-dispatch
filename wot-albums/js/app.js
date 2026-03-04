@@ -583,27 +583,85 @@
     if (controlBtns[0]) controlBtns[0].onclick = playPrev;
     if (controlBtns[1]) controlBtns[1].onclick = playNext;
 
+    // --- Progress bar: click + drag + touch scrubbing ---
     var progressBar = document.querySelector('.player-progress');
+    var progressFill = document.querySelector('.player-progress-fill');
     if (progressBar) {
       progressBar.style.cursor = 'pointer';
-      progressBar.addEventListener('click', function(e) {
+
+      function seekToX(clientX) {
         if (!audio.duration || !currentTrack || !currentTrack.url) return;
         var rect = progressBar.getBoundingClientRect();
-        var pct = (e.clientX - rect.left) / rect.width;
+        var pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
         audio.currentTime = pct * audio.duration;
+        if (progressFill) progressFill.style.width = (pct * 100) + '%';
+      }
+
+      var seekDragging = false;
+      progressBar.addEventListener('mousedown', function(e) {
+        seekDragging = true;
+        seekToX(e.clientX);
+        e.preventDefault();
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (seekDragging) seekToX(e.clientX);
+      });
+      document.addEventListener('mouseup', function() {
+        seekDragging = false;
+      });
+
+      // Touch support for mobile
+      progressBar.addEventListener('touchstart', function(e) {
+        seekDragging = true;
+        seekToX(e.touches[0].clientX);
+        e.preventDefault();
+      }, { passive: false });
+      progressBar.addEventListener('touchmove', function(e) {
+        if (seekDragging) seekToX(e.touches[0].clientX);
+      }, { passive: true });
+      progressBar.addEventListener('touchend', function() {
+        seekDragging = false;
       });
     }
 
+    // --- Volume slider: click + drag + touch ---
     var volumeSlider = document.querySelector('.player-volume-slider');
     var volumeFill = document.querySelector('.player-volume-fill');
     if (volumeSlider) {
       volumeSlider.style.cursor = 'pointer';
       if (volumeFill) volumeFill.style.width = (audio.volume * 100) + '%';
-      volumeSlider.addEventListener('click', function(e) {
+
+      function setVolumeFromX(clientX) {
         var rect = volumeSlider.getBoundingClientRect();
-        var pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+        var pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
         audio.volume = pct;
         if (volumeFill) volumeFill.style.width = (pct * 100) + '%';
+      }
+
+      var volumeDragging = false;
+      volumeSlider.addEventListener('mousedown', function(e) {
+        volumeDragging = true;
+        setVolumeFromX(e.clientX);
+        e.preventDefault();
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (volumeDragging) setVolumeFromX(e.clientX);
+      });
+      document.addEventListener('mouseup', function() {
+        volumeDragging = false;
+      });
+
+      // Touch support
+      volumeSlider.addEventListener('touchstart', function(e) {
+        volumeDragging = true;
+        setVolumeFromX(e.touches[0].clientX);
+        e.preventDefault();
+      }, { passive: false });
+      volumeSlider.addEventListener('touchmove', function(e) {
+        if (volumeDragging) setVolumeFromX(e.touches[0].clientX);
+      }, { passive: true });
+      volumeSlider.addEventListener('touchend', function() {
+        volumeDragging = false;
       });
     }
 

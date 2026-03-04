@@ -955,6 +955,12 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  transition: height 0.15s ease;
+}
+
+.player-progress:hover,
+.player-progress:active {
+  height: 6px;
 }
 
 .player-progress-fill {
@@ -965,7 +971,8 @@ body {
   transition: width 0.1s linear;
 }
 
-.player-progress:hover .player-progress-fill {
+.player-progress:hover .player-progress-fill,
+.player-progress:active .player-progress-fill {
   background: var(--accent-ember-glow);
 }
 
@@ -984,6 +991,12 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  transition: height 0.15s ease;
+}
+
+.player-volume-slider:hover,
+.player-volume-slider:active {
+  height: 6px;
 }
 
 .player-volume-fill {
