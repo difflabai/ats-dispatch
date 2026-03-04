@@ -24,6 +24,61 @@
   box-sizing: border-box;
 }
 
+/* ===== FOCUS VISIBILITY (keyboard accessibility) ===== */
+/* Only show focus ring for keyboard navigation, not mouse clicks */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-ember);
+  outline-offset: 2px;
+}
+
+/* Rounded focus rings for rounded elements */
+.player-btn-play:focus-visible,
+.album-card-play:focus-visible {
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+.album-card:focus-visible {
+  outline-offset: 0;
+  border-color: var(--accent-ember);
+  box-shadow: 0 0 0 2px var(--accent-ember), 0 20px 60px rgba(212,99,29,0.15);
+}
+
+.track-item:focus-visible {
+  outline-offset: -2px;
+  border-radius: 6px;
+  background: var(--bg-card);
+}
+
+.mix-toggle:focus-visible {
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.nav-home:focus-visible {
+  outline-offset: 2px;
+}
+
+.player-btn:focus-visible {
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.lyrics-panel-close:focus-visible,
+.sync-toggle:focus-visible {
+  outline-offset: 2px;
+}
+
+.lyrics-line-clickable:focus-visible {
+  outline-offset: 0;
+  background: rgba(212,99,29,0.08);
+  border-radius: 3px;
+}
+
 html {
   scroll-behavior: smooth;
 }

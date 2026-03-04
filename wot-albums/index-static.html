@@ -33,6 +33,61 @@
   box-sizing: border-box;
 }
 
+/* ===== FOCUS VISIBILITY (keyboard accessibility) ===== */
+/* Only show focus ring for keyboard navigation, not mouse clicks */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-ember);
+  outline-offset: 2px;
+}
+
+/* Rounded focus rings for rounded elements */
+.player-btn-play:focus-visible,
+.album-card-play:focus-visible {
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+.album-card:focus-visible {
+  outline-offset: 0;
+  border-color: var(--accent-ember);
+  box-shadow: 0 0 0 2px var(--accent-ember), 0 20px 60px rgba(212,99,29,0.15);
+}
+
+.track-item:focus-visible {
+  outline-offset: -2px;
+  border-radius: 6px;
+  background: var(--bg-card);
+}
+
+.mix-toggle:focus-visible {
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.nav-home:focus-visible {
+  outline-offset: 2px;
+}
+
+.player-btn:focus-visible {
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.lyrics-panel-close:focus-visible,
+.sync-toggle:focus-visible {
+  outline-offset: 2px;
+}
+
+.lyrics-line-clickable:focus-visible {
+  outline-offset: 0;
+  background: rgba(212,99,29,0.08);
+  border-radius: 3px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1592,9 +1647,9 @@ body.lyrics-open .lyrics-panel {
       <div class="header-right">
         <div class="mix-toggle-wrap" id="mix-toggle-wrap">
           <span class="mix-label">Mix</span>
-          <div class="mix-toggle" id="mix-toggle" onclick="WOT.toggleMix()">
-            <span class="mix-opt mix-active" id="mix-opt-a">A</span>
-            <span class="mix-opt" id="mix-opt-b">B</span>
+          <div class="mix-toggle" id="mix-toggle" tabindex="0" role="switch" aria-label="Mix variant" aria-checked="false" onclick="WOT.toggleMix()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();WOT.toggleMix()}">
+            <span class="mix-opt mix-active" id="mix-opt-a" aria-hidden="true">A</span>
+            <span class="mix-opt" id="mix-opt-b" aria-hidden="true">B</span>
           </div>
         </div>
         <a href="#" class="nav-home" id="nav-home" onclick="event.preventDefault(); WOT.goHome();">All Albums</a>
@@ -1719,30 +1774,30 @@ body.lyrics-open .lyrics-panel {
       </div>
 
       <div class="player-controls">
-        <button class="player-btn" title="Previous">
+        <button class="player-btn" title="Previous" aria-label="Previous track">
           <svg viewBox="0 0 24 24"><polygon points="19,20 9,12 19,4"/><line x1="5" y1="4" x2="5" y2="20" stroke="currentColor" stroke-width="2"/></svg>
         </button>
-        <button class="player-btn-play" id="play-btn" onclick="WOT.togglePlay()" title="Play">
+        <button class="player-btn-play" id="play-btn" onclick="WOT.togglePlay()" title="Play" aria-label="Play or pause">
           <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
         </button>
-        <button class="player-btn" title="Next">
+        <button class="player-btn" title="Next" aria-label="Next track">
           <svg viewBox="0 0 24 24"><polygon points="5,4 15,12 5,20"/><line x1="19" y1="4" x2="19" y2="20" stroke="currentColor" stroke-width="2"/></svg>
         </button>
       </div>
 
       <div class="player-progress-container">
         <span class="player-time">0:00</span>
-        <div class="player-progress">
+        <div class="player-progress" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
           <div class="player-progress-fill"></div>
         </div>
         <span class="player-time">0:00</span>
       </div>
 
       <div class="player-volume">
-        <button class="player-btn" title="Volume">
+        <button class="player-btn" title="Volume" aria-label="Mute or unmute">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
         </button>
-        <div class="player-volume-slider">
+        <div class="player-volume-slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" tabindex="0">
           <div class="player-volume-fill"></div>
         </div>
       </div>
@@ -35931,6 +35986,9 @@ window.syncReference["wolves-and-hammers"] = {
     var optB = document.getElementById('mix-opt-b');
     if (optA) optA.className = 'mix-opt' + (currentMix === 'A' ? ' mix-active' : '');
     if (optB) optB.className = 'mix-opt' + (currentMix === 'B' ? ' mix-active' : '');
+    // Update ARIA state for screen readers
+    var toggle = document.getElementById('mix-toggle');
+    if (toggle) toggle.setAttribute('aria-checked', currentMix === 'B' ? 'true' : 'false');
   }
 
   function getMixUrl(url) {
@@ -36001,7 +36059,7 @@ window.syncReference["wolves-and-hammers"] = {
     var container = document.getElementById('albums-container');
     container.innerHTML = ALBUMS.map(function(album) {
       var trackCount = album.tracks.length;
-      return '<div class="album-card" data-album="' + album.id + '" onclick="WOT.openAlbum(\'' + album.id + '\')">' +
+      return '<div class="album-card" data-album="' + album.id + '" tabindex="0" role="button" aria-label="' + album.title + ' by ' + album.character + '" onclick="WOT.openAlbum(\'' + album.id + '\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();WOT.openAlbum(\'' + album.id + '\')}">' +
         '<div class="album-card-art">' +
           '<img src="' + getArtUrl(album.id) + '" alt="' + album.title + '" loading="lazy" onerror="this.src=\'data:image/svg+xml,' + encodeURIComponent(generatePlaceholderSVG(album)) + '\'">' +
         '</div>' +
@@ -36065,7 +36123,7 @@ window.syncReference["wolves-and-hammers"] = {
     var trackList = document.getElementById('track-list-body');
     trackList.innerHTML = album.tracks.map(function(track, i) {
       var activeClass = (currentTrack && currentTrack.title === track.title) ? ' active' : '';
-      return '<div class="track-item' + activeClass + '" data-track-index="' + i + '" onclick="WOT.selectTrack(' + i + ')">' +
+      return '<div class="track-item' + activeClass + '" data-track-index="' + i + '" tabindex="0" role="button" aria-label="Track ' + (i + 1) + ', ' + track.title + ', ' + track.duration + '" onclick="WOT.selectTrack(' + i + ')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();WOT.selectTrack(' + i + ')}">' +
         '<span class="track-number">' + (i + 1) + '</span>' +
         '<span class="track-title">' + track.title + '</span>' +
         '<span class="track-duration">' + track.duration + '</span>' +
@@ -36570,6 +36628,7 @@ window.syncReference["wolves-and-hammers"] = {
         var pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
         audio.volume = pct;
         if (volumeFill) volumeFill.style.width = (pct * 100) + '%';
+        volumeSlider.setAttribute('aria-valuenow', Math.round(pct * 100));
       }
 
       var volumeDragging = false;
@@ -36635,7 +36694,10 @@ window.syncReference["wolves-and-hammers"] = {
         if (audio.duration) times[1].textContent = formatTime(audio.duration);
       }
       if (fill && audio.duration) {
-        fill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+        var pctNow = Math.round(audio.currentTime / audio.duration * 100);
+        fill.style.width = pctNow + '%';
+        var progBar = fill.parentElement;
+        if (progBar) progBar.setAttribute('aria-valuenow', pctNow);
       }
       updateLyricsHighlight();
     });

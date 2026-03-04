@@ -42,9 +42,9 @@ cat >> "$OUT" <<'HTMLMID'
       <div class="header-right">
         <div class="mix-toggle-wrap" id="mix-toggle-wrap">
           <span class="mix-label">Mix</span>
-          <div class="mix-toggle" id="mix-toggle" onclick="WOT.toggleMix()">
-            <span class="mix-opt mix-active" id="mix-opt-a">A</span>
-            <span class="mix-opt" id="mix-opt-b">B</span>
+          <div class="mix-toggle" id="mix-toggle" tabindex="0" role="switch" aria-label="Mix variant" aria-checked="false" onclick="WOT.toggleMix()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();WOT.toggleMix()}">
+            <span class="mix-opt mix-active" id="mix-opt-a" aria-hidden="true">A</span>
+            <span class="mix-opt" id="mix-opt-b" aria-hidden="true">B</span>
           </div>
         </div>
         <a href="#" class="nav-home" id="nav-home" onclick="event.preventDefault(); WOT.goHome();">All Albums</a>
@@ -169,30 +169,30 @@ cat >> "$OUT" <<'HTMLMID'
       </div>
 
       <div class="player-controls">
-        <button class="player-btn" title="Previous">
+        <button class="player-btn" title="Previous" aria-label="Previous track">
           <svg viewBox="0 0 24 24"><polygon points="19,20 9,12 19,4"/><line x1="5" y1="4" x2="5" y2="20" stroke="currentColor" stroke-width="2"/></svg>
         </button>
-        <button class="player-btn-play" id="play-btn" onclick="WOT.togglePlay()" title="Play">
+        <button class="player-btn-play" id="play-btn" onclick="WOT.togglePlay()" title="Play" aria-label="Play or pause">
           <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
         </button>
-        <button class="player-btn" title="Next">
+        <button class="player-btn" title="Next" aria-label="Next track">
           <svg viewBox="0 0 24 24"><polygon points="5,4 15,12 5,20"/><line x1="19" y1="4" x2="19" y2="20" stroke="currentColor" stroke-width="2"/></svg>
         </button>
       </div>
 
       <div class="player-progress-container">
         <span class="player-time">0:00</span>
-        <div class="player-progress">
+        <div class="player-progress" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
           <div class="player-progress-fill"></div>
         </div>
         <span class="player-time">0:00</span>
       </div>
 
       <div class="player-volume">
-        <button class="player-btn" title="Volume">
+        <button class="player-btn" title="Volume" aria-label="Mute or unmute">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
         </button>
-        <div class="player-volume-slider">
+        <div class="player-volume-slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" tabindex="0">
           <div class="player-volume-fill"></div>
         </div>
       </div>

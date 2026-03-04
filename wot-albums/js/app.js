@@ -62,6 +62,9 @@
     var optB = document.getElementById('mix-opt-b');
     if (optA) optA.className = 'mix-opt' + (currentMix === 'A' ? ' mix-active' : '');
     if (optB) optB.className = 'mix-opt' + (currentMix === 'B' ? ' mix-active' : '');
+    // Update ARIA state for screen readers
+    var toggle = document.getElementById('mix-toggle');
+    if (toggle) toggle.setAttribute('aria-checked', currentMix === 'B' ? 'true' : 'false');
   }
 
   function getMixUrl(url) {
@@ -132,7 +135,7 @@
     var container = document.getElementById('albums-container');
     container.innerHTML = ALBUMS.map(function(album) {
       var trackCount = album.tracks.length;
-      return '<div class="album-card" data-album="' + album.id + '" onclick="WOT.openAlbum(\'' + album.id + '\')">' +
+      return '<div class="album-card" data-album="' + album.id + '" tabindex="0" role="button" aria-label="' + album.title + ' by ' + album.character + '" onclick="WOT.openAlbum(\'' + album.id + '\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();WOT.openAlbum(\'' + album.id + '\')}">' +
         '<div class="album-card-art">' +
           '<img src="' + getArtUrl(album.id) + '" alt="' + album.title + '" loading="lazy" onerror="this.src=\'data:image/svg+xml,' + encodeURIComponent(generatePlaceholderSVG(album)) + '\'">' +
         '</div>' +
@@ -196,7 +199,7 @@
     var trackList = document.getElementById('track-list-body');
     trackList.innerHTML = album.tracks.map(function(track, i) {
       var activeClass = (currentTrack && currentTrack.title === track.title) ? ' active' : '';
-      return '<div class="track-item' + activeClass + '" data-track-index="' + i + '" onclick="WOT.selectTrack(' + i + ')">' +
+      return '<div class="track-item' + activeClass + '" data-track-index="' + i + '" tabindex="0" role="button" aria-label="Track ' + (i + 1) + ', ' + track.title + ', ' + track.duration + '" onclick="WOT.selectTrack(' + i + ')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();WOT.selectTrack(' + i + ')}">' +
         '<span class="track-number">' + (i + 1) + '</span>' +
         '<span class="track-title">' + track.title + '</span>' +
         '<span class="track-duration">' + track.duration + '</span>' +
@@ -701,6 +704,7 @@
         var pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
         audio.volume = pct;
         if (volumeFill) volumeFill.style.width = (pct * 100) + '%';
+        volumeSlider.setAttribute('aria-valuenow', Math.round(pct * 100));
       }
 
       var volumeDragging = false;
@@ -766,7 +770,10 @@
         if (audio.duration) times[1].textContent = formatTime(audio.duration);
       }
       if (fill && audio.duration) {
-        fill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+        var pctNow = Math.round(audio.currentTime / audio.duration * 100);
+        fill.style.width = pctNow + '%';
+        var progBar = fill.parentElement;
+        if (progBar) progBar.setAttribute('aria-valuenow', pctNow);
       }
       updateLyricsHighlight();
     });
