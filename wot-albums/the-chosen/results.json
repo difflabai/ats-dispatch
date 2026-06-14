@@ -1,0 +1,98 @@
+{
+  "i-betrayer": {
+    "num": 1,
+    "title": "I, Betrayer",
+    "slug": "i-betrayer",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/01-i-betrayer-a.mp3",
+        "local": "/tmp/the-chosen-audio/01-i-betrayer-a.mp3"
+      }
+    ]
+  },
+  "daughter-of-the-night": {
+    "num": 2,
+    "title": "Daughter of the Night",
+    "slug": "daughter-of-the-night",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/02-daughter-of-the-night-a.mp3",
+        "local": "/tmp/the-chosen-audio/02-daughter-of-the-night-a.mp3"
+      }
+    ]
+  },
+  "the-beautiful-voice": {
+    "num": 3,
+    "title": "The Beautiful Voice",
+    "slug": "the-beautiful-voice",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/03-the-beautiful-voice-a.mp3",
+        "local": "/tmp/the-chosen-audio/03-the-beautiful-voice-a.mp3"
+      }
+    ]
+  },
+  "spiders-web": {
+    "num": 4,
+    "title": "Spider's Web",
+    "slug": "spiders-web",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/04-spiders-web-a.mp3",
+        "local": "/tmp/the-chosen-audio/04-spiders-web-a.mp3"
+      }
+    ]
+  },
+  "the-golden-general": {
+    "num": 5,
+    "title": "The Golden General",
+    "slug": "the-golden-general",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/05-the-golden-general-a.mp3",
+        "local": "/tmp/the-chosen-audio/05-the-golden-general-a.mp3"
+      }
+    ]
+  },
+  "the-art-of-serving": {
+    "num": 6,
+    "title": "The Art of Serving",
+    "slug": "the-art-of-serving",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/06-the-art-of-serving-a.mp3",
+        "local": "/tmp/the-chosen-audio/06-the-art-of-serving-a.mp3"
+      }
+    ]
+  },
+  "the-music-of-the-spheres": {
+    "num": 7,
+    "title": "The Music of the Spheres",
+    "slug": "the-music-of-the-spheres",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/07-the-music-of-the-spheres-a.mp3",
+        "local": "/tmp/the-chosen-audio/07-the-music-of-the-spheres-a.mp3"
+      }
+    ]
+  },
+  "the-chosen": {
+    "num": 8,
+    "title": "The Chosen",
+    "slug": "the-chosen",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-the-chosen-v9/08-the-chosen-a.mp3",
+        "local": "/tmp/the-chosen-audio/08-the-chosen-a.mp3"
+      }
+    ]
+  }
+}

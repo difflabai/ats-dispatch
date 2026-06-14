@@ -1,0 +1,39 @@
+[skip] track 1 the-breaking already complete
+[submit] track 2 oily-light
+[poll] track 2 oily-light runId=e5443ec294c34ee1b37436141be4e78f
+  [dl] 02-oily-light-a.mp3 <- https://d2p7pge43lyniu.cloudfront.net/output/287a1c8e-c013-413e-83c9-3e679309196a.mp3
+  [b2] https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/02-oily-light-a.mp3
+[submit] track 3 voices-in-the-stone
+[poll] track 3 voices-in-the-stone runId=16c238523352453b97a0b1827e8f021b
+  [dl] 03-voices-in-the-stone-a.mp3 <- https://d2p7pge43lyniu.cloudfront.net/output/138acb7e-2f45-4ced-92bc-971ea327a7c5.mp3
+  [b2] https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/03-voices-in-the-stone-a.mp3
+[submit] track 4 gentled
+[poll] track 4 gentled runId=281a466b2c684dc1b488fa454a6eaa44
+  [dl] 04-gentled-a.mp3 <- https://d2p7pge43lyniu.cloudfront.net/output/faa3f8d0-cd7c-49cc-b4c2-3c8ec075db43.mp3
+  [b2] https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/04-gentled-a.mp3
+[submit] track 5 hundred-companions
+[poll] track 5 hundred-companions runId=cb60bf8fa44e49fc8fe6f852bb6037f6
+  [dl] 05-hundred-companions-a.mp3 <- https://d2p7pge43lyniu.cloudfront.net/output/1dc729a9-347f-45cd-b478-14dbb01334a6.mp3
+  [b2] https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/05-hundred-companions-a.mp3
+[submit] track 6 false-dragon
+[poll] track 6 false-dragon runId=be2b78e1a60c45708622150352e7fd22
+  [dl] 06-false-dragon-a.mp3 <- https://d2p7pge43lyniu.cloudfront.net/output/c16ec18b-9df2-4759-b89d-ca6379b72dc4.mp3
+  [b2] https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/06-false-dragon-a.mp3
+[submit] track 7 cleansing
+[poll] track 7 cleansing runId=b8ecd5733ae247e8a20add8d4e9e53c7
+  [dl] 07-cleansing-a.mp3 <- https://d2p7pge43lyniu.cloudfront.net/output/baa47fb9-a7f6-4549-b2b0-61646bf22261.mp3
+  [b2] https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/07-cleansing-a.mp3
+[submit] track 8 clean
+[poll] track 8 clean runId=2ce25cd540d5479abe949c8e9c6ca6a7
+  [dl] 08-clean-a.mp3 <- https://d2p7pge43lyniu.cloudfront.net/output/77d6e96d-ab51-49e4-815b-11e705497537.mp3
+  [b2] https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/08-clean-a.mp3
+
+DONE. results -> /ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/results.json
+  01 The Breaking: 1 variant(s)
+  02 Oily Light: 1 variant(s)
+  03 Voices in the Stone: 1 variant(s)
+  04 Gentled: 1 variant(s)
+  05 Hundred Companions: 1 variant(s)
+  06 False Dragon: 1 variant(s)
+  07 Cleansing: 1 variant(s)
+  08 Clean: 1 variant(s)

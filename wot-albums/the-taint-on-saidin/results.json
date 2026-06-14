@@ -1,0 +1,98 @@
+{
+  "the-breaking": {
+    "num": 1,
+    "title": "The Breaking",
+    "slug": "the-breaking",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/01-the-breaking-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/01-the-breaking-a.mp3"
+      }
+    ]
+  },
+  "oily-light": {
+    "num": 2,
+    "title": "Oily Light",
+    "slug": "oily-light",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/02-oily-light-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/02-oily-light-a.mp3"
+      }
+    ]
+  },
+  "voices-in-the-stone": {
+    "num": 3,
+    "title": "Voices in the Stone",
+    "slug": "voices-in-the-stone",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/03-voices-in-the-stone-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/03-voices-in-the-stone-a.mp3"
+      }
+    ]
+  },
+  "gentled": {
+    "num": 4,
+    "title": "Gentled",
+    "slug": "gentled",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/04-gentled-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/04-gentled-a.mp3"
+      }
+    ]
+  },
+  "hundred-companions": {
+    "num": 5,
+    "title": "Hundred Companions",
+    "slug": "hundred-companions",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/05-hundred-companions-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/05-hundred-companions-a.mp3"
+      }
+    ]
+  },
+  "false-dragon": {
+    "num": 6,
+    "title": "False Dragon",
+    "slug": "false-dragon",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/06-false-dragon-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/06-false-dragon-a.mp3"
+      }
+    ]
+  },
+  "cleansing": {
+    "num": 7,
+    "title": "Cleansing",
+    "slug": "cleansing",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/07-cleansing-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/07-cleansing-a.mp3"
+      }
+    ]
+  },
+  "clean": {
+    "num": 8,
+    "title": "Clean",
+    "slug": "clean",
+    "variants": [
+      {
+        "letter": "a",
+        "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-taint-on-saidin-v9/08-clean-a.mp3",
+        "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-taint-on-saidin/audio/08-clean-a.mp3"
+      }
+    ]
+  }
+}

@@ -19,7 +19,11 @@
     'shadow-and-the-flame': 'album-the-shadow-and-the-flame',
     'dice-stop-rolling': 'album-dice-stop-rolling',
     'daughter-of-the-night': 'album-daughter-of-the-night',
-    'nynaeve-al-meara': 'album-nynaeve-al-meara'
+    'nynaeve-al-meara': 'album-nynaeve-al-meara',
+    'kinslayer-sessions': 'album-kinslayer-sessions',
+    'the-chosen': 'the-chosen',
+    'the-taint-on-saidin': 'the-taint-on-saidin',
+    'the-bad-ending': 'the-bad-ending'
   };
 
   function getArtUrl(albumId) {
@@ -34,42 +38,61 @@
   let currentTrackIndex = -1;
   let isPlaying = false;
 
-  // Global mix selection: 'A' or 'B' — applies to all tracks site-wide
-  var currentMix = 'A';
-  var MIX_STORAGE_KEY = 'wot-mix';
+  // Per-track mix selection: each track remembers its own A/B choice
+  var trackMixes = {}; // key: "albumId:trackIndex" -> 'A' or 'B'
+  var MIX_STORAGE_KEY = 'wot-track-mixes';
 
-  function saveMix() {
+  function getTrackMixKey(albumId, trackIndex) {
+    return albumId + ':' + trackIndex;
+  }
+
+  function getCurrentTrackMix() {
+    if (!currentAlbum || currentTrackIndex < 0) return 'A';
+    var key = getTrackMixKey(currentAlbum.id, currentTrackIndex);
+    return trackMixes[key] || 'A';
+  }
+
+  function setTrackMix(albumId, trackIndex, mix) {
+    var key = getTrackMixKey(albumId, trackIndex);
+    trackMixes[key] = mix;
+    saveMixes();
+  }
+
+  function saveMixes() {
     try {
-      localStorage.setItem(MIX_STORAGE_KEY, currentMix);
+      localStorage.setItem(MIX_STORAGE_KEY, JSON.stringify(trackMixes));
     } catch (e) { /* quota exceeded or private browsing */ }
   }
 
-  function loadMix() {
+  function loadMixes() {
     try {
       var saved = localStorage.getItem(MIX_STORAGE_KEY);
-      if (saved === 'A' || saved === 'B') return saved;
+      if (saved) {
+        var parsed = JSON.parse(saved);
+        if (parsed && typeof parsed === 'object') return parsed;
+      }
     } catch (e) { /* corrupted data */ }
-    return 'A';
+    return {};
   }
 
   function initMix() {
-    currentMix = loadMix();
+    trackMixes = loadMixes();
     updateMixToggleUI();
   }
 
   function updateMixToggleUI() {
+    var mix = getCurrentTrackMix();
     var optA = document.getElementById('mix-opt-a');
     var optB = document.getElementById('mix-opt-b');
-    if (optA) optA.className = 'mix-opt' + (currentMix === 'A' ? ' mix-active' : '');
-    if (optB) optB.className = 'mix-opt' + (currentMix === 'B' ? ' mix-active' : '');
-    // Update ARIA state for screen readers
+    if (optA) optA.className = 'mix-opt' + (mix === 'A' ? ' mix-active' : '');
+    if (optB) optB.className = 'mix-opt' + (mix === 'B' ? ' mix-active' : '');
     var toggle = document.getElementById('mix-toggle');
-    if (toggle) toggle.setAttribute('aria-checked', currentMix === 'B' ? 'true' : 'false');
+    if (toggle) toggle.setAttribute('aria-checked', mix === 'B' ? 'true' : 'false');
   }
 
-  function getMixUrl(url) {
+  function getMixUrl(url, mix) {
     if (!url) return '';
-    if (currentMix === 'B') {
+    if (mix === 'B') {
       return url.replace(/-a\.mp3$/, '-b.mp3');
     }
     return url;
@@ -77,7 +100,74 @@
 
   function getActiveUrl(track) {
     if (!track.url) return '';
-    return getMixUrl(track.url);
+    return getMixUrl(track.url, getCurrentTrackMix());
+  }
+
+  function exportMixSelections() {
+    var selections = {};
+    ALBUMS.forEach(function(album) {
+      album.tracks.forEach(function(track, i) {
+        var key = getTrackMixKey(album.id, i);
+        var mix = trackMixes[key];
+        if (mix && mix !== 'A') {
+          if (!selections[album.id]) selections[album.id] = {};
+          selections[album.id][i] = mix;
+        }
+      });
+    });
+    return selections;
+  }
+
+  function importMixSelections(selections) {
+    Object.keys(selections).forEach(function(albumId) {
+      var tracks = selections[albumId];
+      Object.keys(tracks).forEach(function(idx) {
+        var mix = tracks[idx];
+        if (mix === 'A' || mix === 'B') {
+          trackMixes[getTrackMixKey(albumId, parseInt(idx))] = mix;
+        }
+      });
+    });
+    saveMixes();
+    updateMixToggleUI();
+  }
+
+  function showExportDialog() {
+    var selections = exportMixSelections();
+    var json = JSON.stringify(selections);
+    var encoded = encodeURIComponent(json);
+    var baseUrl = window.location.href.split('?')[0].split('#')[0];
+    var shareUrl = baseUrl + '?mixes=' + encoded;
+
+    var overlay = document.createElement('div');
+    overlay.className = 'export-overlay';
+    overlay.onclick = function(e) { if (e.target === overlay) overlay.remove(); };
+    overlay.innerHTML =
+      '<div class="export-dialog">' +
+        '<div class="export-dialog-title">Export A/B Mix Selections</div>' +
+        '<label class="export-label">JSON Config</label>' +
+        '<textarea class="export-textarea" readonly onclick="this.select()">' + json + '</textarea>' +
+        '<label class="export-label">Shareable URL</label>' +
+        '<input class="export-url-input" type="text" readonly value="' + shareUrl.replace(/"/g, '&quot;') + '" onclick="this.select()">' +
+        '<div class="export-actions">' +
+          '<button class="export-btn" id="export-copy-btn">Copy JSON</button>' +
+          '<button class="export-btn" id="export-copy-url-btn">Copy URL</button>' +
+          '<button class="export-btn export-btn-close" id="export-close-btn">Close</button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(overlay);
+
+    document.getElementById('export-copy-btn').onclick = function() {
+      navigator.clipboard.writeText(json).then(function() {
+        document.getElementById('export-copy-btn').textContent = 'Copied!';
+      });
+    };
+    document.getElementById('export-copy-url-btn').onclick = function() {
+      navigator.clipboard.writeText(shareUrl).then(function() {
+        document.getElementById('export-copy-url-btn').textContent = 'Copied!';
+      });
+    };
+    document.getElementById('export-close-btn').onclick = function() { overlay.remove(); };
   }
 
   // Lyrics highlight state
@@ -109,6 +199,16 @@
     lyricsPanel = document.getElementById('lyrics-panel');
 
     initMix();
+
+    // Import mix selections from URL if present
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var mixParam = params.get('mixes');
+      if (mixParam) {
+        importMixSelections(JSON.parse(decodeURIComponent(mixParam)));
+      }
+    } catch (e) { /* invalid mixes param */ }
+
     renderGrid();
     setupNavigation();
     setupPlayerControls();
@@ -196,6 +296,10 @@
       badge.style.display = albumHasAudio(album) ? 'none' : 'flex';
     }
 
+    // Mureka-only albums have no B variant — hide the A/B mix toggle.
+    var mixWrap = document.getElementById('mix-toggle-wrap');
+    if (mixWrap) mixWrap.style.display = album.murekaOnly ? 'none' : '';
+
     var trackList = document.getElementById('track-list-body');
     trackList.innerHTML = album.tracks.map(function(track, i) {
       var activeClass = (currentTrack && currentTrack.title === track.title) ? ' active' : '';
@@ -213,6 +317,7 @@
     detailView.classList.add('active');
     navHome.classList.add('visible');
     hideLyrics();
+    updateTrackMixIndicators();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -246,6 +351,7 @@
     var trackEl = document.querySelector('.track-item[data-track-index="' + index + '"]');
     if (trackEl) trackEl.classList.add('active');
 
+    updateMixToggleUI();
     showLyrics(track);
     loadAndPlay(track);
   }
@@ -265,6 +371,9 @@
     times[0].textContent = '0:00';
     times[1].textContent = track.duration;
     document.querySelector('.player-progress-fill').style.width = '0%';
+
+    var dlBtn = document.getElementById('download-btn');
+    if (dlBtn) dlBtn.style.display = getActiveUrl(track) ? '' : 'none';
 
     var activeUrl = getActiveUrl(track);
     if (activeUrl) {
@@ -345,7 +454,11 @@
     });
 
     // Click-to-seek: clicking a content lyric line seeks audio to that line's timestamp
-    lyricsContent.addEventListener('click', function(e) {
+    // Remove previous click-to-seek handler if any (prevents listener leak across track changes)
+    if (lyricsContent._clickSeekHandler) {
+      lyricsContent.removeEventListener('click', lyricsContent._clickSeekHandler);
+    }
+    lyricsContent._clickSeekHandler = function(e) {
       var target = e.target.closest('.lyrics-line-clickable');
       if (!target) return;
       var ci = parseInt(target.getAttribute('data-content-index'), 10);
@@ -360,7 +473,8 @@
         var p = audio.play();
         if (p) p.catch(function() {});
       }
-    });
+    };
+    lyricsContent.addEventListener('click', lyricsContent._clickSeekHandler);
 
     // Reset auto-scroll pause state for new track
     userScrolledLyrics = false;
@@ -1127,12 +1241,15 @@
   }
 
   function toggleMix() {
-    currentMix = currentMix === 'A' ? 'B' : 'A';
-    saveMix();
+    if (!currentAlbum || currentTrackIndex < 0) return;
+    var mix = getCurrentTrackMix();
+    var newMix = mix === 'A' ? 'B' : 'A';
+    setTrackMix(currentAlbum.id, currentTrackIndex, newMix);
     updateMixToggleUI();
+    updateTrackMixIndicators();
 
     // If a track is currently playing, swap the audio source
-    if (currentTrack && currentTrack.url && currentAlbum) {
+    if (currentTrack && currentTrack.url) {
       var wasPlaying = isPlaying;
       var savedTime = audio.currentTime;
       audio.src = getActiveUrl(currentTrack);
@@ -1148,6 +1265,37 @@
     }
   }
 
+  function updateTrackMixIndicators() {
+    if (!currentAlbum) return;
+    // Mureka-only albums have a single variant — no A/B badges.
+    if (currentAlbum.murekaOnly) return;
+    document.querySelectorAll('.track-item').forEach(function(el) {
+      var idx = parseInt(el.getAttribute('data-track-index'));
+      var key = getTrackMixKey(currentAlbum.id, idx);
+      var mix = trackMixes[key] || 'A';
+      var badge = el.querySelector('.track-mix-badge');
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'track-mix-badge';
+        el.querySelector('.track-duration').before(badge);
+      }
+      badge.textContent = mix;
+      badge.className = 'track-mix-badge' + (mix === 'B' ? ' mix-b' : '');
+    });
+  }
+
+  function downloadTrack() {
+    if (!currentTrack || !getActiveUrl(currentTrack)) return;
+    var a = document.createElement('a');
+    a.href = getActiveUrl(currentTrack);
+    var title = currentTrack.title || 'track';
+    var album = currentAlbum ? currentAlbum.title : '';
+    a.download = (album ? album + ' - ' : '') + title + '.mp3';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
   window.WOT = {
     openAlbum: showAlbum,
     goHome: showGrid,
@@ -1155,7 +1303,9 @@
     hideLyrics: hideLyrics,
     togglePlay: togglePlay,
     toggleSync: toggleSync,
-    toggleMix: toggleMix
+    toggleMix: toggleMix,
+    exportMixes: showExportDialog,
+    downloadTrack: downloadTrack
   };
 
   if (document.readyState === 'loading') {

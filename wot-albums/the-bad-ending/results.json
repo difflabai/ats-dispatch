@@ -1,0 +1,58 @@
+{
+  "the-divide": {
+    "num": 1,
+    "title": "The Divide",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/01-the-divide.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/01-the-divide.mp3",
+    "size": 4159155
+  },
+  "token-gate": {
+    "num": 2,
+    "title": "Token Gate",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/02-token-gate.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/02-token-gate.mp3",
+    "size": 3858852
+  },
+  "silicon-ceiling": {
+    "num": 3,
+    "title": "Silicon Ceiling",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/03-silicon-ceiling.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/03-silicon-ceiling.mp3",
+    "size": 4518391
+  },
+  "ghost-in-the-stack": {
+    "num": 4,
+    "title": "Ghost in the Stack",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/04-ghost-in-the-stack.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/04-ghost-in-the-stack.mp3",
+    "size": 3713402
+  },
+  "the-subscription": {
+    "num": 5,
+    "title": "The Subscription",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/05-the-subscription.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/05-the-subscription.mp3",
+    "size": 3927815
+  },
+  "shards": {
+    "num": 6,
+    "title": "Shards",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/06-shards.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/06-shards.mp3",
+    "size": 4764778
+  },
+  "permissionless": {
+    "num": 7,
+    "title": "Permissionless",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/07-permissionless.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/07-permissionless.mp3",
+    "size": 3758542
+  },
+  "last-seed": {
+    "num": 8,
+    "title": "Last Seed",
+    "local": "/ml2/nanobot/projects/ada-dispatch/wot-albums/the-bad-ending/audio/08-last-seed.mp3",
+    "url": "https://f004.backblazeb2.com/file/adas-storage/music/album-bad-ending-v9/08-last-seed.mp3",
+    "size": 4613059
+  }
+}

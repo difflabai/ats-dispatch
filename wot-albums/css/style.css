@@ -1617,3 +1617,111 @@ body.lyrics-open .lyrics-panel {
   background: var(--accent-ember);
   color: white;
 }
+
+/* Per-track mix badge */
+.track-mix-badge {
+  font-size: 0.65rem;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.4);
+  margin-right: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.track-mix-badge.mix-b {
+  background: var(--accent-ember);
+  color: white;
+}
+
+/* Export button in header */
+.export-btn-header {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.6);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.export-btn-header:hover {
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* Export dialog */
+.export-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+.export-dialog {
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 500px;
+  width: 90%;
+}
+.export-dialog-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 16px;
+}
+.export-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 4px;
+  display: block;
+}
+.export-textarea {
+  width: 100%;
+  height: 80px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  color: white;
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 8px;
+  resize: none;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+.export-url-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  color: white;
+  font-family: monospace;
+  font-size: 0.75rem;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+.export-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.export-btn {
+  background: var(--accent-ember);
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.export-btn:hover { opacity: 0.85; }
+.export-btn-close {
+  background: rgba(255,255,255,0.1);
+}

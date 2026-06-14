@@ -12,7 +12,7 @@ cat > "$OUT" <<'HTMLHEAD'
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Wheel of Time — Album Collection</title>
-  <meta name="description" content="A dark, moody music collection inspired by the Wheel of Time. Fifteen character albums with original lyrics.">
+  <meta name="description" content="A dark, moody music collection inspired by the Wheel of Time. Sixteen character albums with original lyrics.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
   <style>
 HTMLHEAD
@@ -40,6 +40,7 @@ cat >> "$OUT" <<'HTMLMID'
         <div class="site-subtitle">Album Collection</div>
       </div>
       <div class="header-right">
+        <button class="export-btn-header" onclick="WOT.exportMixes()" title="Export A/B mix selections">Export</button>
         <div class="mix-toggle-wrap" id="mix-toggle-wrap">
           <span class="mix-label">Mix</span>
           <div class="mix-toggle" id="mix-toggle" tabindex="0" role="switch" aria-label="Mix variant" aria-checked="false" onclick="WOT.toggleMix()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();WOT.toggleMix()}">
@@ -70,7 +71,7 @@ cat >> "$OUT" <<'HTMLMID'
         </svg>
       </div>
       <h1>The Wheel of Time</h1>
-      <p>Fifteen character albums. The Pattern weaves as the Pattern wills, and every thread has a song to sing.</p>
+      <p>Sixteen character albums. The Pattern weaves as the Pattern wills, and every thread has a song to sing.</p>
     </section>
 
     <div class="albums-grid" id="albums-container">
@@ -196,6 +197,9 @@ cat >> "$OUT" <<'HTMLMID'
           <div class="player-volume-fill"></div>
         </div>
       </div>
+      <button class="player-btn player-btn-download" id="download-btn" onclick="WOT.downloadTrack()" title="Download" style="display:none">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      </button>
     </div>
   </div>
 

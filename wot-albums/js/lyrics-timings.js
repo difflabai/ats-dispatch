@@ -1,4304 +1,139 @@
 // Lyrics timing data for WoT albums
-// Line-by-line forced alignment via Demucs + stable-ts (Whisper)
-// Generated: 2026-03-03
+// Intelligent sync: syllable-weighted timing with section-aware gaps
+// Word-level timing included for smooth within-line scrolling
+// Generated: 2026-03-05
 window.lyricsTimings = window.lyricsTimings || {};
-
-window.lyricsTimings["amyrlins-fire"] = {
-  "Innkeeper's Daughter": {
-    "lines": [
-      {
-        "time": 2.88,
-        "endTime": 9.94,
-        "text": "The Winespring Inn smelled like barley and my father's quiet pride,"
-      },
-      {
-        "time": 11.64,
-        "endTime": 17.5,
-        "text": "he polished every table like the wood itself could hide"
-      },
-      {
-        "time": 18.24,
-        "endTime": 24.48,
-        "text": "the smallness of the world he built between the river and the road."
-      },
-      {
-        "time": 26.98,
-        "endTime": 33.9,
-        "text": "I served the ale and smiled and swept and carried every load."
-      },
-      {
-        "time": 33.92,
-        "endTime": 40.54,
-        "text": "But something in the Women's Circle whispers made me lean too close,"
-      },
-      {
-        "time": 41.62,
-        "endTime": 47.56,
-        "text": "the stories about channeling, about the ones the Tower chose."
-      },
-      {
-        "time": 53.22,
-        "endTime": 59.96,
-        "text": "I was not the mayor's daughter, not the Wisdom with her braid,"
-      },
-      {
-        "time": 61.82,
-        "endTime": 68.18,
-        "text": "just the innkeeper's girl with steady hands who was not afraid."
-      },
-      {
-        "time": 69.46,
-        "endTime": 76.22,
-        "text": "But underneath the hearthstone and the Bel Tine lantern light,"
-      },
-      {
-        "time": 76.22,
-        "endTime": 87.73,
-        "text": "I could feel a river pulling me beyond the Waterwood at night."
-      },
-      {
-        "time": 88.61,
-        "endTime": 95.35,
-        "text": "Rand was looking at the sky like it owed him something vast,"
-      },
-      {
-        "time": 96.36,
-        "endTime": 102.37,
-        "text": "Perrin at his anvil, Mat pretending nothing lasts."
-      },
-      {
-        "time": 104.43,
-        "endTime": 110.31,
-        "text": "Moiraine rode into town like weather no one could predict,"
-      },
-      {
-        "time": 112.09,
-        "endTime": 119.97,
-        "text": "and every certainty I carried crumbled quick."
-      },
-      {
-        "time": 120.05,
-        "endTime": 125.87,
-        "text": "She looked at me, I looked at her, the knowing passed like flame,"
-      },
-      {
-        "time": 126.59,
-        "endTime": 133.85,
-        "text": "and Emond's Field became a place I'd never see the same."
-      },
-      {
-        "time": 138.43,
-        "endTime": 146.25,
-        "text": "My mother said be careful, girl, the world will swallow you."
-      },
-      {
-        "time": 146.59,
-        "endTime": 155.17,
-        "text": "I said the world is small, mama, and I am passing through."
-      },
-      {
-        "time": 155.17,
-        "endTime": 164.43,
-        "text": "The Winespring runs behind me now, the inn gets very small,"
-      },
-      {
-        "time": 164.67,
-        "endTime": 172.85,
-        "text": "the innkeeper's daughter walks the road and does not look back at all."
-      }
-    ]
-  },
-  "The A'dam": {
-    "lines": [
-      {
-        "time": 34.69,
-        "endTime": 47.34,
-        "text": "They called me damane, called me nothing, said I was not mine anymore."
-      },
-      {
-        "time": 47.34,
-        "endTime": 57.31,
-        "text": "Renna held the bracelet end and smiled like she was kind,"
-      },
-      {
-        "time": 57.31,
-        "endTime": 64.98,
-        "text": "she said good girl, she said now channel, she said empty out your mind."
-      },
-      {
-        "time": 64.98,
-        "endTime": 64.94,
-        "text": "The metal was warm, not cold, that's what I remember first,"
-      },
-      {
-        "time": 64.94,
-        "endTime": 67.88,
-        "text": "like it was alive and waiting, like it had rehearsed"
-      },
-      {
-        "time": 67.88,
-        "endTime": 71.23,
-        "text": "the shape of every throat it closed around since Luthair's war."
-      },
-      {
-        "time": 71.23,
-        "endTime": 73.96,
-        "text": "You can lock the lightning in a leash of silver thread,"
-      },
-      {
-        "time": 73.96,
-        "endTime": 80.04,
-        "text": "you can teach the body to obey what fills it full of dread."
-      },
-      {
-        "time": 80.5,
-        "endTime": 84.78,
-        "text": "But somewhere underneath the collar, underneath the pain,"
-      },
-      {
-        "time": 84.78,
-        "endTime": 90.9,
-        "text": "I kept a room inside my skull where Egwene was my name."
-      },
-      {
-        "time": 93.2,
-        "endTime": 99.84,
-        "text": "I learned to flinch before the thought, to weep before the rod,"
-      },
-      {
-        "time": 99.92,
-        "endTime": 103.58,
-        "text": "to channel on command like breathing was a gift from God."
-      },
-      {
-        "time": 103.9,
-        "endTime": 108.74,
-        "text": "The worst was not the punishment, the worst was feeling grateful"
-      },
-      {
-        "time": 109.28,
-        "endTime": 114.54,
-        "text": "when she praised me, when the a'dam hummed approval, something hateful"
-      },
-      {
-        "time": 115.56,
-        "endTime": 120.54,
-        "text": "grew inside the gratitude, a fury made of shame,"
-      },
-      {
-        "time": 121.06,
-        "endTime": 128.96,
-        "text": "and I would lie awake rehearsing every sul'dam's name."
-      },
-      {
-        "time": 129.56,
-        "endTime": 135.02,
-        "text": "They broke the girl from Emond's Field, I'll give them that for free."
-      },
-      {
-        "time": 135.02,
-        "endTime": 145.16,
-        "text": "But what grew back between the cracks was something worse to leash than me."
-      },
-      {
-        "time": 146.72,
-        "endTime": 150.13,
-        "text": "I wore the collar thirty days, I wore it thirty nights."
-      },
-      {
-        "time": 150.13,
-        "endTime": 153.13,
-        "text": "I took it off and kept the scars to remind me how to fight."
-      }
-    ]
-  },
-  "World of Dreams": {
-    "lines": [
-      {
-        "time": 3.42,
-        "endTime": 7.36,
-        "text": "I close my eyes and fall between the pages of the real,"
-      },
-      {
-        "time": 9.68,
-        "endTime": 13.48,
-        "text": "Tel'aran'rhiod opens like a wound the world won't heal."
-      },
-      {
-        "time": 14.8,
-        "endTime": 20.98,
-        "text": "The towers shift like breathing, every stone remembers hands"
-      },
-      {
-        "time": 21.74,
-        "endTime": 28.16,
-        "text": "that built it in another age on long-forgotten lands."
-      },
-      {
-        "time": 30.62,
-        "endTime": 35.64,
-        "text": "Amys said be careful, said the dream will eat you whole,"
-      },
-      {
-        "time": 35.86,
-        "endTime": 43.42,
-        "text": "but I was born to walk in places that the waking can't control."
-      },
-      {
-        "time": 45.52,
-        "endTime": 53.02,
-        "text": "In the world of dreams I am the architect of air,"
-      },
-      {
-        "time": 53.3,
-        "endTime": 59.96,
-        "text": "I reshape the ground beneath me, I dissolve the stair."
-      },
-      {
-        "time": 61.42,
-        "endTime": 68.14,
-        "text": "Every nightmare has a grammar and I learned to speak it young."
-      },
-      {
-        "time": 68.28,
-        "endTime": 75.06,
-        "text": "I trapped a Forsaken in this world with nothing but my tongue."
-      },
-      {
-        "time": 79.38,
-        "endTime": 86,
-        "text": "Moghedien, the Spider, ancient, patient, dripping guile,"
-      },
-      {
-        "time": 86.4,
-        "endTime": 92.86,
-        "text": "she thought the world of dreams belonged to her by rank and file."
-      },
-      {
-        "time": 93.06,
-        "endTime": 100.42,
-        "text": "But I was faster in the shifting, I was fiercer in the will,"
-      },
-      {
-        "time": 100.76,
-        "endTime": 107.34,
-        "text": "I wrapped her in an a'dam made of thought and held her still."
-      },
-      {
-        "time": 108.02,
-        "endTime": 114.44,
-        "text": "The Wise Ones would be furious, the Tower would not care,"
-      },
-      {
-        "time": 114.64,
-        "endTime": 122.1,
-        "text": "but I leashed a living legend in her own forbidden lair."
-      },
-      {
-        "time": 122.38,
-        "endTime": 128.86,
-        "text": "Bel'al walked here, Ishamael walked here, Lanfear shaped the sky."
-      },
-      {
-        "time": 128.92,
-        "endTime": 140.02,
-        "text": "And a girl from Emond's Field walked in and did not even blink an eye."
-      },
-      {
-        "time": 141.56,
-        "endTime": 148.48,
-        "text": "The dream dissolves at morning like a breath on winter glass."
-      },
-      {
-        "time": 148.78,
-        "endTime": 159.66,
-        "text": "But I remember every room, and every room remembers that I passed."
-      }
-    ]
-  },
-  "Puppet Seat": {
-    "lines": [
-      {
-        "time": 21.9,
-        "endTime": 26.1,
-        "text": "They chose me because I was young, because I could be bent,"
-      },
-      {
-        "time": 26.26,
-        "endTime": 31.74,
-        "text": "a puppet on the Amyrlin Seat, a girl they could invent."
-      },
-      {
-        "time": 36.22,
-        "endTime": 40.3,
-        "text": "Sheriam and Romanda pulling strings on either side,"
-      },
-      {
-        "time": 40.46,
-        "endTime": 44.62,
-        "text": "the rebel camp a powder keg of politics and pride."
-      },
-      {
-        "time": 44.62,
-        "endTime": 48.98,
-        "text": "Eighteen years old with Siuan whispering tactics in my ear,"
-      },
-      {
-        "time": 49.08,
-        "endTime": 53.54,
-        "text": "I wore the stole and smiled at wolves and swallowed every fear."
-      },
-      {
-        "time": 53.86,
-        "endTime": 58.02,
-        "text": "They wanted a figurehead, they got a flame."
-      },
-      {
-        "time": 58.06,
-        "endTime": 63.14,
-        "text": "They handed me a title and I turned it to a claim."
-      },
-      {
-        "time": 63.3,
-        "endTime": 67.08,
-        "text": "Every vote they thought they'd won, I'd won it first."
-      },
-      {
-        "time": 67.4,
-        "endTime": 72.18,
-        "text": "The puppet learned the strings and then she cut them at the worst."
-      },
-      {
-        "time": 73.44,
-        "endTime": 78.24,
-        "text": "I played the Hall like Daes Dae'mar, let them think I was naive,"
-      },
-      {
-        "time": 78.24,
-        "endTime": 82.64,
-        "text": "the youngest Amyrlin in history and the hardest to deceive."
-      },
-      {
-        "time": 82.72,
-        "endTime": 86.68,
-        "text": "I bound the sisters to the siege with oaths they chose to give,"
-      },
-      {
-        "time": 87.24,
-        "endTime": 91.2,
-        "text": "I moved the army toward the Tower with a reason just to live."
-      },
-      {
-        "time": 91.98,
-        "endTime": 96.14,
-        "text": "The law of war says march, so march, and do not let them see"
-      },
-      {
-        "time": 96.14,
-        "endTime": 101.76,
-        "text": "the girl behind the stolen stole is terrified to be."
-      },
-      {
-        "time": 105.62,
-        "endTime": 112.42,
-        "text": "Siuan said the Amyrlin has no friends, only subjects and the Seat."
-      },
-      {
-        "time": 113.98,
-        "endTime": 121.5,
-        "text": "I said the Amyrlin has no fear, only purpose and the heat."
-      },
-      {
-        "time": 125.92,
-        "endTime": 134.44,
-        "text": "They put a crown on me to keep me small."
-      },
-      {
-        "time": 134.44,
-        "endTime": 139.44,
-        "text": "I wore it until small was ten feet tall."
-      }
-    ]
-  },
-  "Honey in the Tea": {
-    "lines": [
-      {
-        "time": 9.4,
-        "endTime": 14.22,
-        "text": "Elaida's Tower smelled like fear dressed up in protocol,"
-      },
-      {
-        "time": 15.36,
-        "endTime": 19.76,
-        "text": "they dragged me through the corridors and stripped away the stole."
-      },
-      {
-        "time": 21.4,
-        "endTime": 26.3,
-        "text": "Novice white again, the penance served with Silviana's rod,"
-      },
-      {
-        "time": 27.02,
-        "endTime": 33.26,
-        "text": "they beat me every morning like a prayer delivered to a god."
-      },
-      {
-        "time": 33.36,
-        "endTime": 38.72,
-        "text": "The welts across my shoulders, I could catalog by day,"
-      },
-      {
-        "time": 39.02,
-        "endTime": 46.02,
-        "text": "but every night I'd sit with sisters and I'd find a word to say."
-      },
-      {
-        "time": 54.41,
-        "endTime": 59.84,
-        "text": "I did not shout, I did not weep, I did not beg for less."
-      },
-      {
-        "time": 59.85,
-        "endTime": 64.34,
-        "text": "I took the beating, took the penance, smoothed my novice dress."
-      },
-      {
-        "time": 65.22,
-        "endTime": 70.69,
-        "text": "I asked for honey in my tea and thanked them for the meal,"
-      },
-      {
-        "time": 70.69,
-        "endTime": 76.15,
-        "text": "and every act of quiet grace was sharpened into steel."
-      },
-      {
-        "time": 76.21,
-        "endTime": 81.37,
-        "text": "The sisters watched me bleed and bow and never lose my spine,"
-      },
-      {
-        "time": 82.05,
-        "endTime": 87.45,
-        "text": "and one by one they started asking questions that were mine."
-      },
-      {
-        "time": 88.25,
-        "endTime": 92.47,
-        "text": "Honey in the tea, a steady hand, a level voice."
-      },
-      {
-        "time": 93.01,
-        "endTime": 98.39,
-        "text": "They called it punishment, I called it choice."
-      },
-      {
-        "time": 98.45,
-        "endTime": 102.95,
-        "text": "Every stripe across my back a letter that they read,"
-      },
-      {
-        "time": 103.79,
-        "endTime": 109.29,
-        "text": "the Amyrlin does not break, she bends until they bend instead."
-      },
-      {
-        "time": 121.75,
-        "endTime": 125.01,
-        "text": "Elaida thought she held a prisoner inside a cage of stone."
-      },
-      {
-        "time": 126.07,
-        "endTime": 132.57,
-        "text": "She held a siege inside a girl who made the Tower her own."
-      },
-      {
-        "time": 153.71,
-        "endTime": 159.41,
-        "text": "They beat me every morning. Every evening I won more."
-      },
-      {
-        "time": 159.41,
-        "endTime": 165.41,
-        "text": "The honey in the tea was sweeter than the day day before."
-      }
-    ]
-  },
-  "The Tower Whole": {
-    "lines": [
-      {
-        "time": 104,
-        "endTime": 109.33,
-        "text": "The sky tore open and the Seanchan poured like oil through the crack,"
-      },
-      {
-        "time": 109.33,
-        "endTime": 115,
-        "text": "to'raken shadows blotting out the moon and there was no turning back."
-      },
-      {
-        "time": 115,
-        "endTime": 119.67,
-        "text": "The novices were screaming in the hallways full of smoke,"
-      },
-      {
-        "time": 119.67,
-        "endTime": 125,
-        "text": "I grabbed Vora's sa'angreal from the wall before the ceiling broke."
-      },
-      {
-        "time": 125,
-        "endTime": 129.67,
-        "text": "No time for politics, no time for who was right or wrong,"
-      },
-      {
-        "time": 129.67,
-        "endTime": 135.67,
-        "text": "the Tower that had stood three thousand years would not fall to a Seanchan song."
-      },
-      {
-        "time": 135.67,
-        "endTime": 139.67,
-        "text": "I am the Tower and the Tower is the flame,"
-      },
-      {
-        "time": 139.67,
-        "endTime": 145.67,
-        "text": "every corridor I walked through, every sister heard my name."
-      },
-      {
-        "time": 145.67,
-        "endTime": 151.5,
-        "text": "I burned the sky above Tar Valon, I turned the raken into rain,"
-      },
-      {
-        "time": 151.5,
-        "endTime": 154.6,
-        "text": "and the novices who followed me will never kneel in chains again."
-      },
-      {
-        "time": 154.6,
-        "endTime": 156.63,
-        "text": "I wove destruction floor by floor, the hallways full of light,"
-      },
-      {
-        "time": 156.63,
-        "endTime": 158.94,
-        "text": "the damane on their leashes channeling against me in the night."
-      },
-      {
-        "time": 158.94,
-        "endTime": 161.4,
-        "text": "I thought of Renna, thought of silver, thought of every girl in chains,"
-      },
-      {
-        "time": 161.4,
-        "endTime": 163.71,
-        "text": "and the fury that I'd carried since Falme was flooding through my veins."
-      },
-      {
-        "time": 163.71,
-        "endTime": 165.88,
-        "text": "Sisters rallied to my voice, the rebels and the Tower-sworn,"
-      },
-      {
-        "time": 165.88,
-        "endTime": 168.05,
-        "text": "for one impossible bright hour the White Tower was reborn."
-      },
-      {
-        "time": 168.05,
-        "endTime": 170.07,
-        "text": "They came to take our sisters, came to collar and to cage."
-      },
-      {
-        "time": 170.07,
-        "endTime": 172.53,
-        "text": "They met a girl who wore a collar once and turned it into rage."
-      },
-      {
-        "time": 172.53,
-        "endTime": 174.99,
-        "text": "When the morning came the Tower stood, divided lines erased."
-      },
-      {
-        "time": 174.99,
-        "endTime": 179.19,
-        "text": "The Amyrlin called the Hall to order, and every faction bowed to grace."
-      }
-    ]
-  },
-  "Three Rings": {
-    "lines": [
-      {
-        "time": 9.48,
-        "endTime": 13.56,
-        "text": "He was the wrong man by every measure that the Seat demands,"
-      },
-      {
-        "time": 15.06,
-        "endTime": 20.34,
-        "text": "a prince who lost two thrones and fought with nothing but his hands."
-      },
-      {
-        "time": 20.44,
-        "endTime": 24.28,
-        "text": "Gawyn Trakand, the beautiful, the reckless, the sincere,"
-      },
-      {
-        "time": 25.14,
-        "endTime": 29.14,
-        "text": "he followed me through politics he did not want to hear."
-      },
-      {
-        "time": 30.04,
-        "endTime": 34.26,
-        "text": "I should have sent him home, I should have been the colder voice,"
-      },
-      {
-        "time": 34.76,
-        "endTime": 40.34,
-        "text": "but the Amyrlin's heart is still a heart and it still makes a choice."
-      },
-      {
-        "time": 45.62,
-        "endTime": 49.38,
-        "text": "Three rings on my finger, three promises I made,"
-      },
-      {
-        "time": 50.22,
-        "endTime": 54.6,
-        "text": "to the Tower, to the world, and to the boy who never stayed."
-      },
-      {
-        "time": 55.38,
-        "endTime": 59.66,
-        "text": "I bonded him because the love was louder than the law,"
-      },
-      {
-        "time": 60.26,
-        "endTime": 63.81,
-        "text": "and the strongest weave I ever held was the one without a flaw."
-      },
-      {
-        "time": 63.81,
-        "endTime": 64.5,
-        "text": "He wore Laman's sword and carried guilt like it was armor plate,"
-      },
-      {
-        "time": 64.5,
-        "endTime": 67.5,
-        "text": "protecting me from shadows with a fury I called fate."
-      },
-      {
-        "time": 96.02,
-        "endTime": 99.88,
-        "text": "The Bloodknives in the dark, the poison singing through his blood,"
-      },
-      {
-        "time": 101.08,
-        "endTime": 104.9,
-        "text": "I felt the bond go thin like thread dissolving in a flood."
-      },
-      {
-        "time": 105.96,
-        "endTime": 110.4,
-        "text": "He died defending something that was never his to save,"
-      },
-      {
-        "time": 110.92,
-        "endTime": 115.4,
-        "text": "the Amyrlin's own bodyguard, the bravest and the brave."
-      },
-      {
-        "time": 118.04,
-        "endTime": 123.54,
-        "text": "The bond went silent and the world went white with pain."
-      },
-      {
-        "time": 137.02,
-        "endTime": 146.42,
-        "text": "I kept channeling because the dead don't need me to explain."
-      },
-      {
-        "time": 149.34,
-        "endTime": 154.04,
-        "text": "Three rings. One empty. The bond a scar I wear."
-      },
-      {
-        "time": 154.3,
-        "endTime": 158.98,
-        "text": "I loved him like a burning thing. The burning's still right there."
-      }
-    ]
-  },
-  "Crystal and Flame": {
-    "lines": [
-      {
-        "time": 6.14,
-        "endTime": 11.78,
-        "text": "The ground is cracking open and the Dark One's breath is here,"
-      },
-      {
-        "time": 13.66,
-        "endTime": 20.7,
-        "text": "M'Hael has turned the Dreadlords loose and balefire splits the air."
-      },
-      {
-        "time": 20.8,
-        "endTime": 26.94,
-        "text": "The Pattern unravels with every thread they burn undone,"
-      },
-      {
-        "time": 27.9,
-        "endTime": 34.7,
-        "text": "and I can see the places where reality has come undone."
-      },
-      {
-        "time": 36.06,
-        "endTime": 41.54,
-        "text": "Vora's wand is singing in my hands like living wire,"
-      },
-      {
-        "time": 42.92,
-        "endTime": 52.4,
-        "text": "and I can feel a weave assembling that is made of something higher."
-      },
-      {
-        "time": 55.5,
-        "endTime": 62.34,
-        "text": "Let me be the answer to the thing that breaks the world,"
-      },
-      {
-        "time": 62.98,
-        "endTime": 69.9,
-        "text": "let me be the counterweave, the flame, the flag unfurled."
-      },
-      {
-        "time": 70.2,
-        "endTime": 76.92,
-        "text": "I am drawing deeper than the living ought to draw,"
-      },
-      {
-        "time": 77.34,
-        "endTime": 88.14,
-        "text": "I am weaving something that the Age of Legends never saw."
-      },
-      {
-        "time": 88.14,
-        "endTime": 92.62,
-        "text": "The Flame of Tar Valon, they will call it when I'm gone,"
-      },
-      {
-        "time": 92.64,
-        "endTime": 100.76,
-        "text": "the opposite of unraveling, the thing that sews the dawn."
-      },
-      {
-        "time": 103.96,
-        "endTime": 107.46,
-        "text": "I can feel my body crystallizing, feel the light pour in,"
-      },
-      {
-        "time": 107.46,
-        "endTime": 108.94,
-        "text": "every crack the balefire opened, I am sealing from within."
-      },
-      {
-        "time": 108.94,
-        "endTime": 111.74,
-        "text": "I think of Rand beneath the mountain holding back the dark,"
-      },
-      {
-        "time": 112.32,
-        "endTime": 119,
-        "text": "and I match him weave for weave because we both were just a spark."
-      },
-      {
-        "time": 119.32,
-        "endTime": 126.54,
-        "text": "I was the innkeeper's daughter. I was the girl in chains."
-      },
-      {
-        "time": 126.84,
-        "endTime": 141.62,
-        "text": "I was the dreamer. I was the seat. I was the one who remains."
-      },
-      {
-        "time": 142.2,
-        "endTime": 150.94,
-        "text": "Not as flesh, not as memory, but as crystal in the ground,"
-      },
-      {
-        "time": 150.94,
-        "endTime": 164.92,
-        "text": "a monument to every fire that refused to be put down."
-      },
-      {
-        "time": 165.08,
-        "endTime": 170.04,
-        "text": "The flame goes out. The crystal grows. The Tower still stands tall."
-      },
-      {
-        "time": 170.22,
-        "endTime": 177.32,
-        "text": "Egwene al'Vere, the Amyrlin's fire, the brightest of them all."
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["daughter-of-the-night"] = {
-  "The Bore": {
-    "lines": [
-      {
-        "time": 0.18,
-        "endTime": 2.08,
-        "text": "I found the thread the world was hiding"
-      },
-      {
-        "time": 3.5,
-        "endTime": 5.3,
-        "text": "A pulse beneath the Pattern, shining"
-      },
-      {
-        "time": 6.8,
-        "endTime": 8.8,
-        "text": "They said the power had a ceiling"
-      },
-      {
-        "time": 10.28,
-        "endTime": 12.48,
-        "text": "I said the ceiling was a door"
-      },
-      {
-        "time": 13.42,
-        "endTime": 15.22,
-        "text": "My hands against the skin of heaven"
-      },
-      {
-        "time": 17.86,
-        "endTime": 19.6,
-        "text": "Beidomon beside me, shaking"
-      },
-      {
-        "time": 21.22,
-        "endTime": 22.88,
-        "text": "I told him we were made for more"
-      },
-      {
-        "time": 23.48,
-        "endTime": 25.6,
-        "text": "Every wall is just a question"
-      },
-      {
-        "time": 26.14,
-        "endTime": 28.12,
-        "text": "Every lock, a lack of will"
-      },
-      {
-        "time": 28.84,
-        "endTime": 29.52,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 29.52,
-        "endTime": 32.52,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 38.66,
-        "endTime": 40.32,
-        "text": "Now the world cracks at the seam"
-      },
-      {
-        "time": 40.57,
-        "endTime": 43.83,
-        "text": "And nobody remembers what it cost to be free"
-      },
-      {
-        "time": 44.67,
-        "endTime": 47.94,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 50.03,
-        "endTime": 58.69,
-        "text": "The Sharom fell like burning paper"
-      },
-      {
-        "time": 58.69,
-        "endTime": 60.65,
-        "text": "Black fire where the light had been"
-      },
-      {
-        "time": 64.61,
-        "endTime": 65.79,
-        "text": "They pointed fingers at the crater"
-      },
-      {
-        "time": 65.79,
-        "endTime": 66.58,
-        "text": "But I was staring at what opened"
-      },
-      {
-        "time": 66.58,
-        "endTime": 67.3,
-        "text": "A source of power with no equal"
-      },
-      {
-        "time": 67.3,
-        "endTime": 67.93,
-        "text": "A well that had no bottom floor"
-      },
-      {
-        "time": 67.93,
-        "endTime": 68.93,
-        "text": "They saw the shadow and the ruin"
-      },
-      {
-        "time": 68.93,
-        "endTime": 71.09,
-        "text": "I saw the thing I was searching for"
-      },
-      {
-        "time": 73.75,
-        "endTime": 76.16,
-        "text": "They blamed me for the world collapsing"
-      },
-      {
-        "time": 76.4,
-        "endTime": 78.2,
-        "text": "I blame them for their small ambition"
-      },
-      {
-        "time": 78.99,
-        "endTime": 81.05,
-        "text": "They called me monster, called me traitor"
-      },
-      {
-        "time": 81.05,
-        "endTime": 82.73,
-        "text": "Wrote my name in ash and shame"
-      },
-      {
-        "time": 82.93,
-        "endTime": 85.37,
-        "text": "But none of them had seen the other side"
-      },
-      {
-        "time": 85.77,
-        "endTime": 88.47,
-        "text": "And none of them would ever be the same"
-      },
-      {
-        "time": 90.03,
-        "endTime": 91.83,
-        "text": "Every wall is just a question"
-      },
-      {
-        "time": 93.31,
-        "endTime": 95.59,
-        "text": "Every lock, a lack of will"
-      },
-      {
-        "time": 95.89,
-        "endTime": 101.23,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 102.25,
-        "endTime": 103.98,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 103.98,
-        "endTime": 105.71,
-        "text": "Now the world cracks at the seam"
-      },
-      {
-        "time": 105.85,
-        "endTime": 109.13,
-        "text": "And nobody remembers what it cost to be free"
-      },
-      {
-        "time": 109.79,
-        "endTime": 112.97,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 117.75,
-        "endTime": 118.57,
-        "text": "They wanted safety, I wanted truth"
-      },
-      {
-        "time": 118.57,
-        "endTime": 118.57,
-        "text": "They wanted limits, I wanted proof"
-      },
-      {
-        "time": 118.57,
-        "endTime": 120.57,
-        "text": "The Bore was never the mistake they claim"
-      },
-      {
-        "time": 121.61,
-        "endTime": 123.81,
-        "text": "The mistake was building cages out of fear"
-      },
-      {
-        "time": 124.05,
-        "endTime": 127.27,
-        "text": "I offered them an ocean without chains"
-      },
-      {
-        "time": 127.87,
-        "endTime": 131.46,
-        "text": "They chose to plug their ears"
-      },
-      {
-        "time": 134.02,
-        "endTime": 136.02,
-        "text": "Now madness rides the threads of saidin"
-      },
-      {
-        "time": 137.77,
-        "endTime": 138.27,
-        "text": "The Taint a fingerprint of contact"
-      },
-      {
-        "time": 138.27,
-        "endTime": 140.02,
-        "text": "A hundred years and men will falter"
-      },
-      {
-        "time": 140.02,
-        "endTime": 141.79,
-        "text": "A thousand years and they'll forget"
-      },
-      {
-        "time": 142.63,
-        "endTime": 143.15,
-        "text": "That someone had to crack the seal"
-      },
-      {
-        "time": 143.15,
-        "endTime": 143.15,
-        "text": "Before the wheel could turn again"
-      },
-      {
-        "time": 143.15,
-        "endTime": 144.95,
-        "text": "Every wall is just a question"
-      },
-      {
-        "time": 145.43,
-        "endTime": 147.57,
-        "text": "Every lock, a lack of will"
-      },
-      {
-        "time": 148.71,
-        "endTime": 150.71,
-        "text": "Every ending holds a doorway"
-      },
-      {
-        "time": 151.79,
-        "endTime": 164.36,
-        "text": "And the door is open still"
-      },
-      {
-        "time": 164.64,
-        "endTime": 166.62,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 166.62,
-        "endTime": 167.58,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 167.58,
-        "endTime": 168.02,
-        "text": "Now the world cracks at the seam"
-      },
-      {
-        "time": 168.02,
-        "endTime": 168.85,
-        "text": "And nobody remembers what it cost to be free"
-      },
-      {
-        "time": 168.85,
-        "endTime": 172.05,
-        "text": "I drilled into the dark and the dark drilled into me"
-      },
-      {
-        "time": 174.23,
-        "endTime": 175.73,
-        "text": "I drilled into the dark"
-      },
-      {
-        "time": 177.59,
-        "endTime": 179.61,
-        "text": "And the dark drilled into me"
-      },
-      {
-        "time": 179.81,
-        "endTime": 181.81,
-        "text": "And I would do it all again"
-      },
-      {
-        "time": 181.95,
-        "endTime": 183.71,
-        "text": "The ceiling was a door"
-      },
-      {
-        "time": 184.61,
-        "endTime": 186.11,
-        "text": "And I walked through"
-      }
-    ]
-  },
-  "Daughter of the Night": {
-    "lines": [
-      {
-        "time": 1,
-        "endTime": 4.22,
-        "text": "Mierin died in the Hall of Servants"
-      },
-      {
-        "time": 5.52,
-        "endTime": 11.04,
-        "text": "Stood before them, spoke her name"
-      },
-      {
-        "time": 11.04,
-        "endTime": 13.53,
-        "text": "Not the name my mother gave me"
-      },
-      {
-        "time": 16.08,
-        "endTime": 17.45,
-        "text": "I chose it. Daughter of the Night."
-      },
-      {
-        "time": 17.45,
-        "endTime": 18.74,
-        "text": "I wore it like a crown of black flame"
-      },
-      {
-        "time": 18.74,
-        "endTime": 20.18,
-        "text": "Let them learn what happens when you shame me"
-      },
-      {
-        "time": 20.18,
-        "endTime": 22.38,
-        "text": "They whispered traitor in the corridors"
-      },
-      {
-        "time": 23.07,
-        "endTime": 24.84,
-        "text": "They said I broke the world for him"
-      },
-      {
-        "time": 25.38,
-        "endTime": 27.58,
-        "text": "But I was boring holes through heaven's floors"
-      },
-      {
-        "time": 27.9,
-        "endTime": 29.92,
-        "text": "Before Lews Therin touched my skin"
-      },
-      {
-        "time": 30.22,
-        "endTime": 33.18,
-        "text": "I found the Dark One's prison on my own"
-      },
-      {
-        "time": 33.24,
-        "endTime": 41.76,
-        "text": "I drilled the Bore, I cracked the stone"
-      },
-      {
-        "time": 41.76,
-        "endTime": 42.82,
-        "text": "You wanted me gentle"
-      },
-      {
-        "time": 42.82,
-        "endTime": 43.33,
-        "text": "You wanted me small"
-      },
-      {
-        "time": 43.33,
-        "endTime": 44.05,
-        "text": "You wanted me grateful"
-      },
-      {
-        "time": 44.05,
-        "endTime": 44.57,
-        "text": "I wanted it all"
-      },
-      {
-        "time": 44.57,
-        "endTime": 46.49,
-        "text": "I am the night that swallows every dawn"
-      },
-      {
-        "time": 46.49,
-        "endTime": 49.28,
-        "text": "Mierin is buried, Lanfear carries on"
-      },
-      {
-        "time": 49.7,
-        "endTime": 54.46,
-        "text": "I am the night that swallows every dawn"
-      },
-      {
-        "time": 54.68,
-        "endTime": 57,
-        "text": "Mierin is buried, Lanfear carries on"
-      },
-      {
-        "time": 58.54,
-        "endTime": 60.94,
-        "text": "The Dark One whispered, I said yes"
-      },
-      {
-        "time": 61.34,
-        "endTime": 63.63,
-        "text": "Not from weakness, not from breaking"
-      },
-      {
-        "time": 64.19,
-        "endTime": 66.19,
-        "text": "From the fury of a woman blessed"
-      },
-      {
-        "time": 66.96,
-        "endTime": 68.96,
-        "text": "With everything except a reason"
-      },
-      {
-        "time": 69.46,
-        "endTime": 71.92,
-        "text": "To kneel before a lesser throne"
-      },
-      {
-        "time": 71.92,
-        "endTime": 74.58,
-        "text": "Ambition is the only home"
-      },
-      {
-        "time": 74.68,
-        "endTime": 76.38,
-        "text": "Lews Therin, you beautiful fool"
-      },
-      {
-        "time": 77.02,
-        "endTime": 79.22,
-        "text": "You looked at me and saw a warning"
-      },
-      {
-        "time": 79.54,
-        "endTime": 81.42,
-        "text": "I looked at you and saw a tool"
-      },
-      {
-        "time": 81.9,
-        "endTime": 84.28,
-        "text": "A stepping stone to endless morning"
-      },
-      {
-        "time": 84.38,
-        "endTime": 86.72,
-        "text": "You chose Ilyena, soft and kind"
-      },
-      {
-        "time": 86.96,
-        "endTime": 89.26,
-        "text": "I chose the power you left behind"
-      },
-      {
-        "time": 89.52,
-        "endTime": 91.18,
-        "text": "You wanted me tame"
-      },
-      {
-        "time": 93.66,
-        "endTime": 94.72,
-        "text": "You wanted me true"
-      },
-      {
-        "time": 94.72,
-        "endTime": 96.22,
-        "text": "You wanted devotion"
-      },
-      {
-        "time": 97.18,
-        "endTime": 99.04,
-        "text": "I wanted to rule"
-      },
-      {
-        "time": 99.14,
-        "endTime": 103.56,
-        "text": "I am the night that swallows every dawn"
-      },
-      {
-        "time": 103.9,
-        "endTime": 105.98,
-        "text": "Mierin is buried, Lanfear carries on"
-      },
-      {
-        "time": 106.3,
-        "endTime": 108.54,
-        "text": "I am the night that swallows every dawn"
-      },
-      {
-        "time": 108.92,
-        "endTime": 111.16,
-        "text": "Mierin is buried, Lanfear carries on"
-      },
-      {
-        "time": 114.5,
-        "endTime": 114.68,
-        "text": "Every Forsaken chose a master"
-      },
-      {
-        "time": 114.68,
-        "endTime": 116.08,
-        "text": "I chose myself"
-      },
-      {
-        "time": 116.08,
-        "endTime": 118.28,
-        "text": "They gave me a title, I gave it teeth"
-      },
-      {
-        "time": 118.62,
-        "endTime": 120.78,
-        "text": "They gave me a leash, I made it a belt"
-      },
-      {
-        "time": 120.98,
-        "endTime": 123.44,
-        "text": "Three thousand years inside the Bore"
-      },
-      {
-        "time": 123.9,
-        "endTime": 125.96,
-        "text": "Dreaming in the dark, and keeping score"
-      },
-      {
-        "time": 126.16,
-        "endTime": 128.52,
-        "text": "They thought the prison held me still"
-      },
-      {
-        "time": 128.88,
-        "endTime": 131.34,
-        "text": "It only sharpened up my will"
-      },
-      {
-        "time": 131.74,
-        "endTime": 133.98,
-        "text": "In Tel'aran'rhiod I walk like a queen"
-      },
-      {
-        "time": 133.98,
-        "endTime": 136.79,
-        "text": "Shaping the World of Dreams to my design"
-      },
-      {
-        "time": 136.85,
-        "endTime": 138.85,
-        "text": "Every sleeper feels me pass unseen"
-      },
-      {
-        "time": 139.18,
-        "endTime": 141.48,
-        "text": "Every nightmare wears a face of mine"
-      },
-      {
-        "time": 141.82,
-        "endTime": 144.18,
-        "text": "Moghedien hides, Graendal plays her games"
-      },
-      {
-        "time": 144.44,
-        "endTime": 146.78,
-        "text": "But none of them remember how to burn"
-      },
-      {
-        "time": 146.82,
-        "endTime": 149.26,
-        "text": "I set the pattern wreathed in flames"
-      },
-      {
-        "time": 149.52,
-        "endTime": 151.76,
-        "text": "And history bends at every turn"
-      },
-      {
-        "time": 152.6,
-        "endTime": 155.12,
-        "text": "I am the night that swallows every dawn"
-      },
-      {
-        "time": 155.36,
-        "endTime": 157.66,
-        "text": "Mierin is buried, Lanfear carries on"
-      },
-      {
-        "time": 158.16,
-        "endTime": 160.36,
-        "text": "I am the night that swallows every dawn"
-      },
-      {
-        "time": 160.7,
-        "endTime": 162.7,
-        "text": "Mierin is buried, Lanfear carries on"
-      },
-      {
-        "time": 163.02,
-        "endTime": 165.44,
-        "text": "They'll write my name across the sky in ash"
-      },
-      {
-        "time": 165.52,
-        "endTime": 167.94,
-        "text": "They'll speak it soft and feel the ground give way"
-      },
-      {
-        "time": 168.2,
-        "endTime": 170.64,
-        "text": "Mierin was the prayer, Lanfear is the lash"
-      },
-      {
-        "time": 170.82,
-        "endTime": 173.08,
-        "text": "The Daughter of the Night is here to stay"
-      }
-    ]
-  },
-  "You Were Mine": {
-    "lines": [
-      {
-        "time": 0.46,
-        "endTime": 3.58,
-        "text": "Three thousand years and I still taste your name"
-      },
-      {
-        "time": 4.74,
-        "endTime": 8.02,
-        "text": "Lews Therin, I held galaxies for you"
-      },
-      {
-        "time": 9.78,
-        "endTime": 13.34,
-        "text": "I broke the sky, I bent the rules of nature"
-      },
-      {
-        "time": 15.1,
-        "endTime": 18.36,
-        "text": "You looked at me and chose somebody new"
-      },
-      {
-        "time": 20.46,
-        "endTime": 24.28,
-        "text": "You left me for a woman made of nothing"
-      },
-      {
-        "time": 25.92,
-        "endTime": 29.84,
-        "text": "You left me and I never understand"
-      },
-      {
-        "time": 31.56,
-        "endTime": 34.16,
-        "text": "Was I too bright, too sharp, too real"
-      },
-      {
-        "time": 34.76,
-        "endTime": 36.74,
-        "text": "For a man afraid to feel"
-      },
-      {
-        "time": 37.34,
-        "endTime": 41.2,
-        "text": "You were mine before the world had words for wanting"
-      },
-      {
-        "time": 42.6,
-        "endTime": 47.7,
-        "text": "Every age, every name, every life you are reborn"
-      },
-      {
-        "time": 48.06,
-        "endTime": 53.08,
-        "text": "You were mine. You were mine."
-      },
-      {
-        "time": 53.68,
-        "endTime": 57.58,
-        "text": "You were mine before the world had words for wanting"
-      },
-      {
-        "time": 58.6,
-        "endTime": 62.12,
-        "text": "I crashed your wedding like a burning star"
-      },
-      {
-        "time": 64.42,
-        "endTime": 67.44,
-        "text": "You smiled at her the way you smiled at me"
-      },
-      {
-        "time": 69.68,
-        "endTime": 73.94,
-        "text": "But softer, like you feared my kind of violence"
-      },
-      {
-        "time": 75.04,
-        "endTime": 78.8,
-        "text": "You knew me. Knew the furnace in my chest."
-      },
-      {
-        "time": 80.62,
-        "endTime": 83.82,
-        "text": "If you had stayed, we would have ruled together."
-      },
-      {
-        "time": 83.82,
-        "endTime": 87.16,
-        "text": "Instead you built a cage and called it free."
-      },
-      {
-        "time": 88.98,
-        "endTime": 93.24,
-        "text": "You were mine before the world had words for wanting"
-      },
-      {
-        "time": 93.32,
-        "endTime": 99.58,
-        "text": "Every age, every name, every life you are reborn"
-      },
-      {
-        "time": 100.36,
-        "endTime": 104.9,
-        "text": "You were mine. You were mine."
-      },
-      {
-        "time": 105.54,
-        "endTime": 108.71,
-        "text": "You were mine before the world had words for wanting"
-      },
-      {
-        "time": 112.97,
-        "endTime": 114.47,
-        "text": "I do not love you."
-      },
-      {
-        "time": 115.88,
-        "endTime": 117.38,
-        "text": "I love what we could have been."
-      },
-      {
-        "time": 117.38,
-        "endTime": 130.94,
-        "text": "The throne of two, the Pattern bent,"
-      },
-      {
-        "time": 131.2,
-        "endTime": 134.44,
-        "text": "The world remade to let us in."
-      },
-      {
-        "time": 135.3,
-        "endTime": 137.11,
-        "text": "You could have held me, changed me, kept me whole."
-      },
-      {
-        "time": 137.11,
-        "endTime": 138.14,
-        "text": "Instead you turned and doomed us both."
-      },
-      {
-        "time": 138.14,
-        "endTime": 139.38,
-        "text": "You were mine before the world had words for wanting"
-      },
-      {
-        "time": 139.38,
-        "endTime": 142.58,
-        "text": "Every age, every name, every life you are reborn"
-      },
-      {
-        "time": 142.58,
-        "endTime": 145.86,
-        "text": "You were mine. You were mine."
-      },
-      {
-        "time": 146.38,
-        "endTime": 150.22,
-        "text": "You were mine before the world had words for wanting"
-      },
-      {
-        "time": 151.66,
-        "endTime": 155.09,
-        "text": "You were mine. You were mine."
-      },
-      {
-        "time": 156.93,
-        "endTime": 158.73,
-        "text": "Before the world had words for wanting."
-      }
-    ]
-  },
-  "Selene": {
-    "lines": [
-      {
-        "time": 11.72,
-        "endTime": 14.32,
-        "text": "I dressed in silk and called myself a stranger"
-      },
-      {
-        "time": 14.32,
-        "endTime": 16.74,
-        "text": "Helpless girl lost in another world"
-      },
-      {
-        "time": 16.94,
-        "endTime": 19.34,
-        "text": "He reached for me, the hero and the savior"
-      },
-      {
-        "time": 19.4,
-        "endTime": 21.66,
-        "text": "So easy when you let them feel like gods"
-      },
-      {
-        "time": 21.9,
-        "endTime": 24.88,
-        "text": "Every touch, every glance was architecture"
-      },
-      {
-        "time": 25.24,
-        "endTime": 28.52,
-        "text": "I built the trap from tenderness and lies"
-      },
-      {
-        "time": 30.98,
-        "endTime": 33.6,
-        "text": "Smile soft enough and they see what they want"
-      },
-      {
-        "time": 33.9,
-        "endTime": 35.64,
-        "text": "Cry once and they never let go"
-      },
-      {
-        "time": 35.64,
-        "endTime": 38.38,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 38.38,
-        "endTime": 40.81,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 42.41,
-        "endTime": 43.99,
-        "text": "He holds my hand and never thinks to wonder why"
-      },
-      {
-        "time": 43.99,
-        "endTime": 47.18,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 47.34,
-        "endTime": 50.63,
-        "text": "I wore the faces like a wardrobe. Sylvie."
-      },
-      {
-        "time": 66.27,
-        "endTime": 67.36,
-        "text": "Else. Keille. Names like paper masks."
-      },
-      {
-        "time": 67.36,
-        "endTime": 67.79,
-        "text": "Behind each one the Daughter of the Night"
-      },
-      {
-        "time": 67.79,
-        "endTime": 68.17,
-        "text": "Was studying the boy who held the past"
-      },
-      {
-        "time": 68.17,
-        "endTime": 68.69,
-        "text": "Lews Therin burned like fury in a palace"
-      },
-      {
-        "time": 68.69,
-        "endTime": 69.07,
-        "text": "This one burns like kindling, soft and slow"
-      },
-      {
-        "time": 69.07,
-        "endTime": 69.71,
-        "text": "Smile soft enough and they see what they want"
-      },
-      {
-        "time": 69.71,
-        "endTime": 71.48,
-        "text": "Cry once and they never let go"
-      },
-      {
-        "time": 71.48,
-        "endTime": 74.12,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 74.2,
-        "endTime": 76.8,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 76.82,
-        "endTime": 79.22,
-        "text": "He holds my hand and never thinks to wonder why"
-      },
-      {
-        "time": 79.22,
-        "endTime": 83,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 83.32,
-        "endTime": 85.6,
-        "text": "I walked through his dreams like I owned them"
-      },
-      {
-        "time": 86.06,
-        "endTime": 88.06,
-        "text": "Because I did. Tel'aran'rhiod is mine."
-      },
-      {
-        "time": 89.1,
-        "endTime": 91.3,
-        "text": "I shaped the world between his waking hours"
-      },
-      {
-        "time": 91.42,
-        "endTime": 93.86,
-        "text": "I bent the shadows into shapes he'd trust"
-      },
-      {
-        "time": 94.24,
-        "endTime": 96.64,
-        "text": "And when he reached for comfort in the darkness"
-      },
-      {
-        "time": 96.7,
-        "endTime": 98.94,
-        "text": "He was reaching into me, into my dust"
-      },
-      {
-        "time": 99.8,
-        "endTime": 102.16,
-        "text": "He thinks the final battle is with Shai'tan"
-      },
-      {
-        "time": 102.5,
-        "endTime": 104.62,
-        "text": "He thinks the Dark One is the only war"
-      },
-      {
-        "time": 105.36,
-        "endTime": 107.58,
-        "text": "But I was never loyal to the Shadow"
-      },
-      {
-        "time": 107.8,
-        "endTime": 111.13,
-        "text": "I was loyal to myself and nothing more"
-      },
-      {
-        "time": 113.73,
-        "endTime": 115.48,
-        "text": "When the ashes cool I will be standing"
-      },
-      {
-        "time": 115.48,
-        "endTime": 117.68,
-        "text": "And every knee that bends will bend my way"
-      },
-      {
-        "time": 118.94,
-        "endTime": 121.36,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 121.46,
-        "endTime": 123.66,
-        "text": "I am Selene, I am the beautiful lie"
-      },
-      {
-        "time": 124,
-        "endTime": 122.97,
-        "text": "He holds my hand and never thinks to wonder why"
-      },
-      {
-        "time": 122.97,
-        "endTime": 122.63,
-        "text": "I am Selene"
-      },
-      {
-        "time": 122.63,
-        "endTime": 124.03,
-        "text": "I am the beautiful lie"
-      }
-    ]
-  },
-  "The Docks": {
-    "lines": [
-      {
-        "time": 11.44,
-        "endTime": 13.72,
-        "text": "Kadere told me everything. He told me"
-      },
-      {
-        "time": 14.02,
-        "endTime": 16.48,
-        "text": "how you touched her in the frozen waste"
-      },
-      {
-        "time": 18.82,
-        "endTime": 21.66,
-        "text": "Aviendha. Say her name and watch me"
-      },
-      {
-        "time": 21.66,
-        "endTime": 23.24,
-        "text": "watch the calm drain out of Lanfear's face"
-      },
-      {
-        "time": 23.24,
-        "endTime": 24.9,
-        "text": "Three thousand years I waited in the nothing"
-      },
-      {
-        "time": 24.9,
-        "endTime": 26.42,
-        "text": "Three thousand years of dreamless frozen black"
-      },
-      {
-        "time": 26.42,
-        "endTime": 28.62,
-        "text": "I clawed my way back to the world for you"
-      },
-      {
-        "time": 28.62,
-        "endTime": 33.88,
-        "text": "and this is what you give me. This."
-      },
-      {
-        "time": 33.88,
-        "endTime": 38.38,
-        "text": "You will not look away from me"
-      },
-      {
-        "time": 39.24,
-        "endTime": 41.34,
-        "text": "You will not look away"
-      },
-      {
-        "time": 42.34,
-        "endTime": 47.12,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 47.74,
-        "endTime": 52.62,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 52.9,
-        "endTime": 58.16,
-        "text": "I gave you the stars, you gave me a grave"
-      },
-      {
-        "time": 58.42,
-        "endTime": 62.64,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 65.12,
-        "endTime": 67.94,
-        "text": "Egwene screams but I am past the hearing"
-      },
-      {
-        "time": 68.5,
-        "endTime": 70.1,
-        "text": "I am past the mercy past the grace"
-      },
-      {
-        "time": 70.1,
-        "endTime": 72.88,
-        "text": "I held the world inside my open palms for you"
-      },
-      {
-        "time": 73.06,
-        "endTime": 75.09,
-        "text": "and you chose another woman's face"
-      },
-      {
-        "time": 75.09,
-        "endTime": 77.29,
-        "text": "You cannot even kill me. That's the cruelest."
-      },
-      {
-        "time": 77.32,
-        "endTime": 79.5,
-        "text": "You stand there with your sword and still you pause."
-      },
-      {
-        "time": 79.6,
-        "endTime": 81.88,
-        "text": "A man who will not strike a woman down"
-      },
-      {
-        "time": 81.88,
-        "endTime": 84.54,
-        "text": "even when she is the earthquake's cause"
-      },
-      {
-        "time": 87.28,
-        "endTime": 89.7,
-        "text": "You will not look away from me"
-      },
-      {
-        "time": 91.9,
-        "endTime": 94.92,
-        "text": "You will not look away"
-      },
-      {
-        "time": 96.38,
-        "endTime": 101.12,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 101.74,
-        "endTime": 106.24,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 106.58,
-        "endTime": 111.76,
-        "text": "I gave you the stars, you gave me a grave"
-      },
-      {
-        "time": 112.06,
-        "endTime": 117.1,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 117.86,
-        "endTime": 122.42,
-        "text": "If I cannot have you, no one will"
-      },
-      {
-        "time": 123.38,
-        "endTime": 127.86,
-        "text": "If I cannot hold you, I will break"
-      },
-      {
-        "time": 128.72,
-        "endTime": 133.36,
-        "text": "the Pattern, the Wheel, the sky itself"
-      },
-      {
-        "time": 133.66,
-        "endTime": 137.66,
-        "text": "until you feel the weight of my mistake"
-      },
-      {
-        "time": 163.4,
-        "endTime": 167.72,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 168.7,
-        "endTime": 173.26,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      },
-      {
-        "time": 173.52,
-        "endTime": 178.86,
-        "text": "I gave you the stars, you gave me a grave"
-      },
-      {
-        "time": 179.28,
-        "endTime": 183.84,
-        "text": "Burn it down, burn it all, everything you touched betrays me"
-      }
-    ]
-  },
-  "Into the Doorway": {
-    "lines": [
-      {
-        "time": 0,
-        "endTime": 4.18,
-        "text": "Moiraine. That small woman with her steady hands."
-      },
-      {
-        "time": 5.94,
-        "endTime": 8.4,
-        "text": "She grabbed me from behind, she held me tight."
-      },
-      {
-        "time": 9.42,
-        "endTime": 13.2,
-        "text": "We fell together through the twisted doorway"
-      },
-      {
-        "time": 14.62,
-        "endTime": 17.44,
-        "text": "and the world above us folded shut like night."
-      },
-      {
-        "time": 19.58,
-        "endTime": 22.3,
-        "text": "I was winning. I was burning everything."
-      },
-      {
-        "time": 24,
-        "endTime": 29.14,
-        "text": "Then her arms around my waist like iron."
-      },
-      {
-        "time": 32.5,
-        "endTime": 39.8,
-        "text": "Smaller than me. Stronger than anything I feel."
-      },
-      {
-        "time": 39.8,
-        "endTime": 41.94,
-        "text": "I had Rand's little farm boy by the throat,"
-      },
-      {
-        "time": 42.1,
-        "endTime": 44.18,
-        "text": "had the world bending underneath my will."
-      },
-      {
-        "time": 44.48,
-        "endTime": 49.22,
-        "text": "I was Lanfear. I was first among the Chosen."
-      },
-      {
-        "time": 51.08,
-        "endTime": 58.92,
-        "text": "I loved Lews Therin before the world was torn."
-      },
-      {
-        "time": 60.54,
-        "endTime": 69.06,
-        "text": "Three thousand years of wanting, three thousand years of fury,"
-      },
-      {
-        "time": 69.24,
-        "endTime": 78.54,
-        "text": "and this shepherd boy won't even say my name at dawn."
-      },
-      {
-        "time": 78.88,
-        "endTime": 80.62,
-        "text": "Falling is not dying"
-      },
-      {
-        "time": 80.62,
-        "endTime": 83.76,
-        "text": "Falling is forgetting how to land"
-      },
-      {
-        "time": 83.76,
-        "endTime": 88.64,
-        "text": "Through the door, through the dark, through the silence I am falling"
-      },
-      {
-        "time": 88.64,
-        "endTime": 97.84,
-        "text": "Through the door, through the dark, through the silence I am falling"
-      },
-      {
-        "time": 99.4,
-        "endTime": 105.24,
-        "text": "The Aelfinn taste my power like a feast"
-      },
-      {
-        "time": 106.54,
-        "endTime": 111.02,
-        "text": "Through the door, through the dark, I keep falling"
-      },
-      {
-        "time": 115.1,
-        "endTime": 117.46,
-        "text": "The Eelfinn fed on what I carried,"
-      },
-      {
-        "time": 117.7,
-        "endTime": 119.84,
-        "text": "drained the channel dry, the river gone."
-      },
-      {
-        "time": 120.36,
-        "endTime": 122.42,
-        "text": "They peeled me open like a fruit,"
-      },
-      {
-        "time": 122.54,
-        "endTime": 124.34,
-        "text": "took everything that made me strong."
-      },
-      {
-        "time": 125.28,
-        "endTime": 127.84,
-        "text": "My face, my name, my thread of power,"
-      },
-      {
-        "time": 129.96,
-        "endTime": 132.56,
-        "text": "and left me humming someone else's song."
-      },
-      {
-        "time": 135.5,
-        "endTime": 137.36,
-        "text": "Moridin came like death in velvet,"
-      },
-      {
-        "time": 138.14,
-        "endTime": 140.14,
-        "text": "pulled me from the tower of spirals,"
-      },
-      {
-        "time": 140.3,
-        "endTime": 142.26,
-        "text": "laid me on a table, cold and black."
-      },
-      {
-        "time": 145.02,
-        "endTime": 147.32,
-        "text": "Then killed me. Clean. A mercy killing."
-      },
-      {
-        "time": 148.14,
-        "endTime": 149.94,
-        "text": "The Dark One caught me at the bottom,"
-      },
-      {
-        "time": 149.94,
-        "endTime": 156.64,
-        "text": "stitched me up and called me Cyndane. Called me Last Chance."
-      },
-      {
-        "time": 157.14,
-        "endTime": 160.78,
-        "text": "Falling is not dying"
-      },
-      {
-        "time": 160.78,
-        "endTime": 170.44,
-        "text": "Falling is forgetting how to land"
-      },
-      {
-        "time": 174.56,
-        "endTime": 183.58,
-        "text": "Through the door, through the dark, through the silence I am falling"
-      },
-      {
-        "time": 184.66,
-        "endTime": 193.72,
-        "text": "Through the door, through the dark, through the silence I am falling"
-      },
-      {
-        "time": 195.6,
-        "endTime": 201.26,
-        "text": "The Aelfinn taste my power like a feast"
-      },
-      {
-        "time": 202.52,
-        "endTime": 206.98,
-        "text": "Through the door, through the dark, I keep falling"
-      },
-      {
-        "time": 211.7,
-        "endTime": 214.61,
-        "text": "I remember opening the Bore itself."
-      },
-      {
-        "time": 214.77,
-        "endTime": 216.2,
-        "text": "I drilled into the Dark One's prison"
-      },
-      {
-        "time": 216.2,
-        "endTime": 216.41,
-        "text": "because Lews Therin loved somebody else."
-      },
-      {
-        "time": 216.41,
-        "endTime": 218.22,
-        "text": "I broke the world for jealousy,"
-      },
-      {
-        "time": 218.64,
-        "endTime": 221.54,
-        "text": "cracked the age like an egg against the floor."
-      },
-      {
-        "time": 221.56,
-        "endTime": 224.04,
-        "text": "And I would do it all again tomorrow"
-      },
-      {
-        "time": 225.66,
-        "endTime": 230.1,
-        "text": "just to stand beside him one more time before the door."
-      },
-      {
-        "time": 230.54,
-        "endTime": 239.38,
-        "text": "Through the door, through the dark, through the silence I am falling"
-      },
-      {
-        "time": 240.48,
-        "endTime": 249.68,
-        "text": "Through the door, through the dark, through the silence I am falling"
-      },
-      {
-        "time": 251.16,
-        "endTime": 257.62,
-        "text": "The Aelfinn taste my power like a feast"
-      },
-      {
-        "time": 258.22,
-        "endTime": 262,
-        "text": "Through the door, through the dark, I keep falling"
-      }
-    ]
-  },
-  "Last Chance": {
-    "lines": [
-      {
-        "time": 5,
-        "endTime": 10.34,
-        "text": "Cyndane. Last chance. That is what they call me now."
-      },
-      {
-        "time": 11.96,
-        "endTime": 13.98,
-        "text": "Smaller body. Weaker hands. The same"
-      },
-      {
-        "time": 16.7,
-        "endTime": 19.12,
-        "text": "hunger underneath the borrowed skin."
-      },
-      {
-        "time": 19.12,
-        "endTime": 22.15,
-        "text": "They think the fire dimmed. They think I'm tame."
-      },
-      {
-        "time": 22.43,
-        "endTime": 24.62,
-        "text": "Moridin holds my mindtrap in his pocket."
-      },
-      {
-        "time": 24.62,
-        "endTime": 26.62,
-        "text": "Every channel burns against the leash."
-      },
-      {
-        "time": 26.64,
-        "endTime": 29.04,
-        "text": "I smile the way a cornered animal"
-      },
-      {
-        "time": 29.3,
-        "endTime": 31.94,
-        "text": "bares its teeth before it starts to teach."
-      },
-      {
-        "time": 33.08,
-        "endTime": 40.92,
-        "text": "Diminished is not defeated"
-      },
-      {
-        "time": 41.18,
-        "endTime": 42.68,
-        "text": "Smaller is not gone"
-      },
-      {
-        "time": 43.64,
-        "endTime": 47.46,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 48.4,
-        "endTime": 52.26,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 52.92,
-        "endTime": 57.32,
-        "text": "Break me down, drain me dry, strip me bare"
-      },
-      {
-        "time": 57.54,
-        "endTime": 62.16,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 62.94,
-        "endTime": 65.28,
-        "text": "Graendal looks at me and does not see it."
-      },
-      {
-        "time": 65.42,
-        "endTime": 67.34,
-        "text": "Aran'gar knows but does not say."
-      },
-      {
-        "time": 67.42,
-        "endTime": 69.9,
-        "text": "The Forsaken whisper, was she always this."
-      },
-      {
-        "time": 70.02,
-        "endTime": 72.4,
-        "text": "I was the strongest woman of the Age."
-      },
-      {
-        "time": 72.4,
-        "endTime": 74.68,
-        "text": "I drilled the Bore when no one else would dare."
-      },
-      {
-        "time": 74.7,
-        "endTime": 77.1,
-        "text": "I touched the Dark One's prison, felt it give."
-      },
-      {
-        "time": 77.1,
-        "endTime": 79.56,
-        "text": "They owe their war to me, their second lives."
-      },
-      {
-        "time": 79.56,
-        "endTime": 81.84,
-        "text": "And still they talk as if I don't exist."
-      },
-      {
-        "time": 82.76,
-        "endTime": 84.54,
-        "text": "Diminished is not defeated"
-      },
-      {
-        "time": 84.54,
-        "endTime": 86.04,
-        "text": "Smaller is not gone"
-      },
-      {
-        "time": 86.72,
-        "endTime": 90.68,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 91.48,
-        "endTime": 95.4,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 95.88,
-        "endTime": 100.44,
-        "text": "Break me down, drain me dry, strip me bare"
-      },
-      {
-        "time": 100.98,
-        "endTime": 105.12,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 105.36,
-        "endTime": 107.86,
-        "text": "Rand greets me as Mierin in his dreamshard."
-      },
-      {
-        "time": 108.08,
-        "endTime": 110.12,
-        "text": "Speaks my old name like he means no harm."
-      },
-      {
-        "time": 110.18,
-        "endTime": 112.62,
-        "text": "I try the damsel act, the helpless weeping."
-      },
-      {
-        "time": 112.82,
-        "endTime": 114.7,
-        "text": "He sees through it. Tells me what I am."
-      },
-      {
-        "time": 114.92,
-        "endTime": 117.44,
-        "text": "He stands there with that calm I cannot shatter."
-      },
-      {
-        "time": 117.72,
-        "endTime": 119.81,
-        "text": "Light around him, steady as the dawn."
-      },
-      {
-        "time": 119.95,
-        "endTime": 122.15,
-        "text": "I wanted him to flinch. I wanted fury."
-      },
-      {
-        "time": 122.42,
-        "endTime": 124.44,
-        "text": "He just looked at me and I was drawn."
-      },
-      {
-        "time": 124.62,
-        "endTime": 126.94,
-        "text": "He said he never loved me. Not once."
-      },
-      {
-        "time": 127.04,
-        "endTime": 129.04,
-        "text": "Said what he felt for Mierin was not love."
-      },
-      {
-        "time": 129.48,
-        "endTime": 131.8,
-        "text": "Said he learned to love with Ilyena."
-      },
-      {
-        "time": 131.82,
-        "endTime": 133.84,
-        "text": "I stood there with no answer, just the blood"
-      },
-      {
-        "time": 134.32,
-        "endTime": 136.42,
-        "text": "pounding in a body I did not choose."
-      },
-      {
-        "time": 136.56,
-        "endTime": 139.08,
-        "text": "Three thousand years I carried him inside me,"
-      },
-      {
-        "time": 139.08,
-        "endTime": 141.16,
-        "text": "a splinter made of longing and of rage."
-      },
-      {
-        "time": 141.52,
-        "endTime": 143.76,
-        "text": "He put it down like setting down a stone."
-      },
-      {
-        "time": 143.78,
-        "endTime": 145.94,
-        "text": "I could not even make him turn the page."
-      },
-      {
-        "time": 151.84,
-        "endTime": 152,
-        "text": "Diminished is not defeated"
-      },
-      {
-        "time": 152,
-        "endTime": 153.5,
-        "text": "Smaller is not gone"
-      },
-      {
-        "time": 154.3,
-        "endTime": 157.86,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 158.84,
-        "endTime": 162.64,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 163.3,
-        "endTime": 167.68,
-        "text": "Break me down, drain me dry, strip me bare"
-      },
-      {
-        "time": 167.9,
-        "endTime": 172.34,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 172.5,
-        "endTime": 175.14,
-        "text": "The Last Battle comes. The sky is breaking."
-      },
-      {
-        "time": 175.36,
-        "endTime": 177.68,
-        "text": "Every Forsaken scrambles for a throne."
-      },
-      {
-        "time": 177.74,
-        "endTime": 179.94,
-        "text": "Moridin wants oblivion for all things."
-      },
-      {
-        "time": 179.94,
-        "endTime": 182.14,
-        "text": "I just want something I can call my own."
-      },
-      {
-        "time": 182.2,
-        "endTime": 184.6,
-        "text": "They gave me back a life I never asked for."
-      },
-      {
-        "time": 184.92,
-        "endTime": 187.14,
-        "text": "Smaller frame but still the same old fire."
-      },
-      {
-        "time": 187.16,
-        "endTime": 189.28,
-        "text": "If this body is the cage they built me,"
-      },
-      {
-        "time": 189.64,
-        "endTime": 192,
-        "text": "I will be the blaze inside the wire."
-      },
-      {
-        "time": 192.24,
-        "endTime": 196.26,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 197.2,
-        "endTime": 201.1,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 201.66,
-        "endTime": 206.08,
-        "text": "Break me down, drain me dry, strip me bare"
-      },
-      {
-        "time": 206.68,
-        "endTime": 210.84,
-        "text": "I am less than I was but I am more than enough"
-      },
-      {
-        "time": 212.8,
-        "endTime": 215.19,
-        "text": "Cyndane. Last chance."
-      },
-      {
-        "time": 215.19,
-        "endTime": 215.6,
-        "text": "They named me right without knowing what it means."
-      },
-      {
-        "time": 215.6,
-        "endTime": 215.31,
-        "text": "A last chance is still a chance."
-      },
-      {
-        "time": 215.31,
-        "endTime": 216.81,
-        "text": "A last chance is still a chance."
-      }
-    ]
-  },
-  "The Dream That Ate the Dreamer": {
-    "lines": [
-      {
-        "time": 0.06,
-        "endTime": 2.44,
-        "text": "Perrin's hands around my neck feel honest."
-      },
-      {
-        "time": 4.06,
-        "endTime": 7.32,
-        "text": "The first honest thing to touch me in three thousand years."
-      },
-      {
-        "time": 7.84,
-        "endTime": 10.34,
-        "text": "Tel'aran'rhiod dissolves around the edges"
-      },
-      {
-        "time": 11.04,
-        "endTime": 14.14,
-        "text": "and my body shifts from Lanfear back to what I fear."
-      },
-      {
-        "time": 15.6,
-        "endTime": 19.3,
-        "text": "Cyndane in death. The small one. The diminished."
-      },
-      {
-        "time": 19.3,
-        "endTime": 22.4,
-        "text": "The dream that ate the dreamer. The spell that spelled itself."
-      },
-      {
-        "time": 29.88,
-        "endTime": 29.88,
-        "text": "What did I want. What did I really want."
-      },
-      {
-        "time": 29.88,
-        "endTime": 31.8,
-        "text": "Was it him. Or was it just the throne."
-      },
-      {
-        "time": 32.92,
-        "endTime": 36.01,
-        "text": "I wanted to be chosen, I wanted to be seen"
-      },
-      {
-        "time": 36.21,
-        "endTime": 39.41,
-        "text": "But the girl who drilled the bore was always standing in between"
-      },
-      {
-        "time": 40.09,
-        "endTime": 50.88,
-        "text": "I wanted to be chosen, I wanted to be seen"
-      },
-      {
-        "time": 50.88,
-        "endTime": 53.7,
-        "text": "Mierin at the Collam Daan, so brilliant"
-      },
-      {
-        "time": 53.84,
-        "endTime": 57.68,
-        "text": "so hungry for a name that never came."
-      },
-      {
-        "time": 57.84,
-        "endTime": 61.24,
-        "text": "I told myself it was about the power."
-      },
-      {
-        "time": 61.44,
-        "endTime": 64.22,
-        "text": "I told myself it was about the throne."
-      },
-      {
-        "time": 64.86,
-        "endTime": 68.52,
-        "text": "But underneath every mask, every scheme, every fury"
-      },
-      {
-        "time": 69.02,
-        "endTime": 71.56,
-        "text": "was a woman terrified of being alone."
-      },
-      {
-        "time": 73.26,
-        "endTime": 76.7,
-        "text": "I wanted to be chosen, I wanted to be seen"
-      },
-      {
-        "time": 76.78,
-        "endTime": 80.54,
-        "text": "But the girl who drilled the bore was always standing in between"
-      },
-      {
-        "time": 80.9,
-        "endTime": 84.82,
-        "text": "I wanted to be chosen, I wanted to be seen"
-      },
-      {
-        "time": 86.88,
-        "endTime": 90.48,
-        "text": "I held the Choedan Kal and felt the world bow down beneath me."
-      },
-      {
-        "time": 91.02,
-        "endTime": 93.96,
-        "text": "I could have burned the Pattern thread by thread."
-      },
-      {
-        "time": 94.22,
-        "endTime": 97.74,
-        "text": "But what I wanted was for him to turn around and need me."
-      },
-      {
-        "time": 97.82,
-        "endTime": 101.86,
-        "text": "To hear him say my name the way he said it to the dead."
-      },
-      {
-        "time": 101.86,
-        "endTime": 108.56,
-        "text": "Ilyena. Always Ilyena. Her ghost between the sheets."
-      },
-      {
-        "time": 108.86,
-        "endTime": 115.02,
-        "text": "I wore her face once, wore her smile, I tried to be the shape he loved."
-      },
-      {
-        "time": 116.62,
-        "endTime": 127.08,
-        "text": "But the mirror always cracked and the mask was never enough."
-      },
-      {
-        "time": 127.08,
-        "endTime": 128.21,
-        "text": "Daughter of the Night."
-      },
-      {
-        "time": 128.21,
-        "endTime": 129.71,
-        "text": "Moonhunter. Forsaken. Chosen. Cyndane."
-      },
-      {
-        "time": 129.71,
-        "endTime": 131.51,
-        "text": "So many names for a woman"
-      },
-      {
-        "time": 131.51,
-        "endTime": 134.62,
-        "text": "who never found the one that fit."
-      },
-      {
-        "time": 134.86,
-        "endTime": 138.44,
-        "text": "I touched the Dark One's hand and called it partnership."
-      },
-      {
-        "time": 138.46,
-        "endTime": 141.18,
-        "text": "I touched Lews Therin's face and called it love."
-      },
-      {
-        "time": 142.28,
-        "endTime": 145.1,
-        "text": "But the dark does not have partners"
-      },
-      {
-        "time": 145.94,
-        "endTime": 148.08,
-        "text": "and the dead do not look up."
-      },
-      {
-        "time": 149.6,
-        "endTime": 152.52,
-        "text": "In the Pit of Doom I made my final offer."
-      },
-      {
-        "time": 154.72,
-        "endTime": 157.83,
-        "text": "He looked at me the way you look through windows,"
-      },
-      {
-        "time": 158.19,
-        "endTime": 160.79,
-        "text": "the way you look at weather, the way you look at rain."
-      },
-      {
-        "time": 161.07,
-        "endTime": 164.72,
-        "text": "Not cruel. Not angry. Something worse than either."
-      },
-      {
-        "time": 165.7,
-        "endTime": 167.92,
-        "text": "He looked at me like I had never been."
-      },
-      {
-        "time": 169.24,
-        "endTime": 172.16,
-        "text": "And I understood at last what I'd been running from,"
-      },
-      {
-        "time": 172.72,
-        "endTime": 175.32,
-        "text": "that the bore I drilled was always drilling in."
-      },
-      {
-        "time": 176.66,
-        "endTime": 180.08,
-        "text": "I wanted to be chosen, I wanted to be seen"
-      },
-      {
-        "time": 180.14,
-        "endTime": 183.94,
-        "text": "But the girl who drilled the bore was always standing in between"
-      },
-      {
-        "time": 184.32,
-        "endTime": 188.36,
-        "text": "I wanted to be chosen, I wanted to be seen"
-      },
-      {
-        "time": 190.06,
-        "endTime": 194.88,
-        "text": "The dream that ate the dreamer, the spell that spelled itself"
-      },
-      {
-        "time": 196.74,
-        "endTime": 209.66,
-        "text": "I wanted to be chosen"
-      },
-      {
-        "time": 212,
-        "endTime": 213.02,
-        "text": "but I was only ever the machine"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["dice-stop-rolling"] = {
-  "Two Rivers Mud": {
-    "lines": [
-      {
-        "time": 8,
-        "endTime": 11.56,
-        "text": "Stole apples from the Cauthon orchard like they were mine to take,"
-      },
-      {
-        "time": 12.2,
-        "endTime": 15.76,
-        "text": "tossed dice behind the smithy where the rules were ours to make."
-      },
-      {
-        "time": 16.58,
-        "endTime": 19.98,
-        "text": "Two Rivers mud beneath my nails, the Winespring in my hair,"
-      },
-      {
-        "time": 20.46,
-        "endTime": 24.34,
-        "text": "my father said be careful, son \u2014 I never learned to care."
-      },
-      {
-        "time": 24.76,
-        "endTime": 28.18,
-        "text": "The Quarry Road at sundown and the taste of stolen ale,"
-      },
-      {
-        "time": 28.84,
-        "endTime": 35.18,
-        "text": "the kind of boy who bets on things before he knows the tale."
-      },
-      {
-        "time": 35.58,
-        "endTime": 40.18,
-        "text": "But something in the wind has changed, the crows sit strange on wire,"
-      },
-      {
-        "time": 40.48,
-        "endTime": 43.78,
-        "text": "and Bel Tine feels like kindling waiting for a fire."
-      },
-      {
-        "time": 44.14,
-        "endTime": 48.18,
-        "text": "I am the boy who cannot stay, the coin that will not land,"
-      },
-      {
-        "time": 48.4,
-        "endTime": 55,
-        "text": "the last good day in Emond Field is slipping through my hand."
-      },
-      {
-        "time": 56.92,
-        "endTime": 60.72,
-        "text": "Rand is brooding, Perrin is quiet \u2014 me, I crack the joke,"
-      },
-      {
-        "time": 60.76,
-        "endTime": 64.3,
-        "text": "because the silence sounds like something holy getting broke."
-      },
-      {
-        "time": 64.76,
-        "endTime": 68.72,
-        "text": "A rider on the Quarry Road all dressed in black and hate,"
-      },
-      {
-        "time": 68.8,
-        "endTime": 72.5,
-        "text": "my gut says run but running means admitting it is too late."
-      },
-      {
-        "time": 72.66,
-        "endTime": 76.78,
-        "text": "So I laugh and shuffle cards and pour another round,"
-      },
-      {
-        "time": 76.78,
-        "endTime": 81.78,
-        "text": "and pretend I cannot feel the trembling in the ground."
-      },
-      {
-        "time": 116.26,
-        "endTime": 124.2,
-        "text": "The dice, the dice, the bloody dice \u2014 they have not started yet,"
-      },
-      {
-        "time": 129.92,
-        "endTime": 136.42,
-        "text": "but I can hear them loading in a game I have not met."
-      },
-      {
-        "time": 177.32,
-        "endTime": 178.06,
-        "text": "Two Rivers mud... Winespring water... one more stolen day..."
-      },
-      {
-        "time": 178.06,
-        "endTime": 179.46,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "Ruby-Hilted": {
-    "lines": [
-      {
-        "time": 26.46,
-        "endTime": 30.48,
-        "text": "The city breathes a language older than the tongue can hold,"
-      },
-      {
-        "time": 30.64,
-        "endTime": 34.28,
-        "text": "the walls remember murder and the gold remembers gold."
-      },
-      {
-        "time": 34.64,
-        "endTime": 38.6,
-        "text": "I saw the ruby glinting where the dead king left it laid,"
-      },
-      {
-        "time": 39,
-        "endTime": 43.04,
-        "text": "my fingers closed around it like a promise that was made."
-      },
-      {
-        "time": 43.54,
-        "endTime": 47.4,
-        "text": "Something cold behind my ribs, a whisper in my skull,"
-      },
-      {
-        "time": 47.74,
-        "endTime": 54,
-        "text": "it said you have been empty, boy \u2014 now let me make you full."
-      },
-      {
-        "time": 54.54,
-        "endTime": 58.2,
-        "text": "I am the dagger and the dagger is the wound,"
-      },
-      {
-        "time": 58.86,
-        "endTime": 63,
-        "text": "every friend looks like a liar, every room becomes a tomb."
-      },
-      {
-        "time": 63.22,
-        "endTime": 67.58,
-        "text": "I cannot put it down, I cannot give it back,"
-      },
-      {
-        "time": 67.58,
-        "endTime": 80.82,
-        "text": "the ruby holds me tighter than the shadow holds the black."
-      },
-      {
-        "time": 80.82,
-        "endTime": 84.98,
-        "text": "Rand reaches for my shoulder and I flinch before he speaks,"
-      },
-      {
-        "time": 85.22,
-        "endTime": 89.26,
-        "text": "the paranoia crawling like a fever through the weeks."
-      },
-      {
-        "time": 89.26,
-        "endTime": 92.98,
-        "text": "I count the coins they carry and I calculate the theft,"
-      },
-      {
-        "time": 93.78,
-        "endTime": 97.38,
-        "text": "I inventory every blade and catalog who is left."
-      },
-      {
-        "time": 98.12,
-        "endTime": 102,
-        "text": "The person I was yesterday is blurring at the seams,"
-      },
-      {
-        "time": 102.44,
-        "endTime": 111.56,
-        "text": "the dagger rewrites memory and overwrites my dreams."
-      },
-      {
-        "time": 111.72,
-        "endTime": 118.58,
-        "text": "Shadar Logoth, Shadar Logoth \u2014 the waiting in the dark,"
-      },
-      {
-        "time": 119.84,
-        "endTime": 128.28,
-        "text": "the city that consumed itself now finishing its work."
-      },
-      {
-        "time": 170.7,
-        "endTime": 177.88,
-        "text": "Ruby-hilted... ruby-hilted... cold behind the ribs..."
-      },
-      {
-        "time": 177.88,
-        "endTime": 179.98,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "Thirteen Women and a Stone": {
-    "lines": [
-      {
-        "time": 6.24,
-        "endTime": 13.13,
-        "text": "Thirteen women standing in a ring of blinding light,"
-      },
-      {
-        "time": 13.13,
-        "endTime": 20.02,
-        "text": "the sa angreal humming like a nerve about to bite."
-      },
-      {
-        "time": 20.02,
-        "endTime": 26.91,
-        "text": "They pulled the roots from underneath my ribs, my lungs, my spine,"
-      },
-      {
-        "time": 26.91,
-        "endTime": 33.79,
-        "text": "I screamed in languages I never learned but somehow they were mine."
-      },
-      {
-        "time": 33.79,
-        "endTime": 40.68,
-        "text": "Carai an Caldazar \u2014 the words came out like blood,"
-      },
-      {
-        "time": 40.68,
-        "endTime": 47.57,
-        "text": "battle orders from a general who died before the flood."
-      },
-      {
-        "time": 47.57,
-        "endTime": 54.46,
-        "text": "Rip it out, rip it out, pull the poison from the bone,"
-      },
-      {
-        "time": 54.46,
-        "endTime": 58.5,
-        "text": "I am speaking with the voices of a thousand years unknown."
-      },
-      {
-        "time": 58.64,
-        "endTime": 61.18,
-        "text": "Thirteen women and a stone that glows like stolen sun,"
-      },
-      {
-        "time": 62.66,
-        "endTime": 68.66,
-        "text": "I am dying, I am healing, I am everyone and no one."
-      },
-      {
-        "time": 83.3,
-        "endTime": 87.18,
-        "text": "I woke up thin as paper with a hunger fit to kill,"
-      },
-      {
-        "time": 88.02,
-        "endTime": 91.98,
-        "text": "the hallways of the White Tower spinning on a windowsill."
-      },
-      {
-        "time": 92.4,
-        "endTime": 96.72,
-        "text": "The dagger grip is broken but the fingerprints remain,"
-      },
-      {
-        "time": 97.18,
-        "endTime": 101.56,
-        "text": "the paranoia fading but I remember all the pain."
-      },
-      {
-        "time": 101.86,
-        "endTime": 106.24,
-        "text": "They say I should be grateful \u2014 I say give me back my coat,"
-      },
-      {
-        "time": 106.64,
-        "endTime": 111.26,
-        "text": "I beat two princes with a stick before the morning broke."
-      },
-      {
-        "time": 112.06,
-        "endTime": 123.44,
-        "text": "The Old Tongue on my lips like someone else is prayer,"
-      },
-      {
-        "time": 123.52,
-        "endTime": 130.88,
-        "text": "who were you, who am I, and are you still in there."
-      },
-      {
-        "time": 142.78,
-        "endTime": 147.78,
-        "text": "Thirteen women... the sa angreal hums... the Old Tongue remembers..."
-      },
-      {
-        "time": 178.44,
-        "endTime": 179.98,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "The Doorway Price": {
-    "lines": [
-      {
-        "time": 22.96,
-        "endTime": 24.97,
-        "text": "Three questions and a doorway made of twisted silver light,"
-      },
-      {
-        "time": 24.97,
-        "endTime": 26.97,
-        "text": "the snakes knew what I wanted before I said it right."
-      },
-      {
-        "time": 26.97,
-        "endTime": 28.98,
-        "text": "Fill my memory, free me from the Power and its chain,"
-      },
-      {
-        "time": 28.98,
-        "endTime": 35.3,
-        "text": "and get me out of Rhuidean before it drives me sane."
-      },
-      {
-        "time": 40.26,
-        "endTime": 45.5,
-        "text": "They smiled with too many teeth and said the price was fair,"
-      },
-      {
-        "time": 46.08,
-        "endTime": 52.62,
-        "text": "then hung me from the Tree of Life and left me swinging there."
-      },
-      {
-        "time": 58,
-        "endTime": 63.62,
-        "text": "I died beneath the branches of a tree that never burns,"
-      },
-      {
-        "time": 63.62,
-        "endTime": 68.9,
-        "text": "Rand cut me down but something else came back to take its turn."
-      },
-      {
-        "time": 69.32,
-        "endTime": 74.5,
-        "text": "The foxhead cold against my chest, the spear across my hand,"
-      },
-      {
-        "time": 75.18,
-        "endTime": 85.78,
-        "text": "a thousand dead men memories now living where I stand."
-      },
-      {
-        "time": 109.72,
-        "endTime": 111.14,
-        "text": "I remember siege formations from the Trolloc Wars at dawn,"
-      },
-      {
-        "time": 111.14,
-        "endTime": 111.64,
-        "text": "generals whose bones are dust, whose names the world moved on."
-      },
-      {
-        "time": 111.14,
-        "endTime": 115.92,
-        "text": "I remember how to kill a man in fourteen different ways,"
-      },
-      {
-        "time": 115.92,
-        "endTime": 120.98,
-        "text": "in languages the scholars lost a hundred different days."
-      },
-      {
-        "time": 120.98,
-        "endTime": 121.48,
-        "text": "The Aiel stare and Rand just stares and I stare at the wall,"
-      },
-      {
-        "time": 120.98,
-        "endTime": 121.9,
-        "text": "wondering which of these old ghosts is answering the call."
-      },
-      {
-        "time": 127.54,
-        "endTime": 136.26,
-        "text": "Avendesora, tree of life \u2014 you hung me like a thief,"
-      },
-      {
-        "time": 137.34,
-        "endTime": 143.14,
-        "text": "I traded death for memory and memory for grief."
-      },
-      {
-        "time": 144.72,
-        "endTime": 149.72,
-        "text": "The doorway closes... the dead men speak... the dice begin..."
-      },
-      {
-        "time": 176.58,
-        "endTime": 178.82,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "Jak o the Shadows": {
-    "lines": [
-      {
-        "time": 15.34,
-        "endTime": 18.48,
-        "text": "I told them I was leaving \u2014 they saddled up and rode,"
-      },
-      {
-        "time": 18.64,
-        "endTime": 26.68,
-        "text": "I told them I was no one lord \u2014 they called me general and bowed."
-      },
-      {
-        "time": 26.68,
-        "endTime": 27.18,
-        "text": "Talmanes smiles like he is keeping score, Daerid guards the flank,"
-      },
-      {
-        "time": 26.68,
-        "endTime": 27.76,
-        "text": "I drew them battle plans on dirt and now they guard my rank."
-      },
-      {
-        "time": 28.28,
-        "endTime": 33.38,
-        "text": "The dice inside my head keep rolling, landing every throw,"
-      },
-      {
-        "time": 34.42,
-        "endTime": 41.38,
-        "text": "I win at cards, I win at war, I lose at letting go."
-      },
-      {
-        "time": 41.38,
-        "endTime": 45.08,
-        "text": "We will dance with Jak o the Shadows, boys,"
-      },
-      {
-        "time": 45.08,
-        "endTime": 47.78,
-        "text": "we will dance until the dawn."
-      },
-      {
-        "time": 47.88,
-        "endTime": 51.78,
-        "text": "We will dance with Jak o the Shadows, boys,"
-      },
-      {
-        "time": 52,
-        "endTime": 54.68,
-        "text": "and then the dance goes on."
-      },
-      {
-        "time": 54.72,
-        "endTime": 57.62,
-        "text": "They think it is brave \u2014 I think it is mad,"
-      },
-      {
-        "time": 57.66,
-        "endTime": 58.16,
-        "text": "they sing it like a hymn,"
-      },
-      {
-        "time": 57.98,
-        "endTime": 60.66,
-        "text": "I taught them Death own drinking song"
-      },
-      {
-        "time": 60.92,
-        "endTime": 67.1,
-        "text": "and now it is sinking in."
-      },
-      {
-        "time": 75.1,
-        "endTime": 77.58,
-        "text": "A general with a farmer hands who reads the battle wrong \u2014"
-      },
-      {
-        "time": 77.66,
-        "endTime": 80.66,
-        "text": "except the dead men memories correct me all along."
-      },
-      {
-        "time": 80.92,
-        "endTime": 83.88,
-        "text": "I set the cavalry to east, the pikes arranged just so,"
-      },
-      {
-        "time": 83.88,
-        "endTime": 87.06,
-        "text": "and when the dust clears, every move was right and I do not know"
-      },
-      {
-        "time": 87.44,
-        "endTime": 93.04,
-        "text": "if I am commanding or the ghosts are running this parade,"
-      },
-      {
-        "time": 93.86,
-        "endTime": 99.7,
-        "text": "a thousand years of strategy my muscles have not made."
-      },
-      {
-        "time": 102.1,
-        "endTime": 108.6,
-        "text": "The luck, the bloody luck \u2014 it bends the arrow from my chest,"
-      },
-      {
-        "time": 123.42,
-        "endTime": 123.92,
-        "text": "it turns the blade, it stacks the deck, it never lets me rest."
-      },
-      {
-        "time": 124.2,
-        "endTime": 131.2,
-        "text": "Dance with Jak o the Shadows... the dice keep rolling... the Band rides on..."
-      },
-      {
-        "time": 177.5,
-        "endTime": 179.74,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "The Daughter of the Nine Moons": {
-    "lines": [
-      {
-        "time": 16.82,
-        "endTime": 20.92,
-        "text": "She looked at me like inventory \u2014 measuring the worth"
-      },
-      {
-        "time": 23.14,
-        "endTime": 28.2,
-        "text": "of a farmboy wearing general dust and Two Rivers earth."
-      },
-      {
-        "time": 28.56,
-        "endTime": 33.22,
-        "text": "Daughter of the Nine Moons, skin like midnight, eyes like war,"
-      },
-      {
-        "time": 34.26,
-        "endTime": 39.6,
-        "text": "I kidnapped an empress and I do not know what that is for."
-      },
-      {
-        "time": 40.06,
-        "endTime": 44.38,
-        "text": "She calls my dice a superstition, calls my luck a flaw,"
-      },
-      {
-        "time": 46.08,
-        "endTime": 51.52,
-        "text": "I call her the most stubborn woman that I ever saw."
-      },
-      {
-        "time": 51.78,
-        "endTime": 57.76,
-        "text": "I said your name three times because the words fell out like dice,"
-      },
-      {
-        "time": 57.88,
-        "endTime": 62.74,
-        "text": "I did not mean to marry you \u2014 I never do things twice."
-      },
-      {
-        "time": 64.08,
-        "endTime": 68.12,
-        "text": "But fate keeps dealing aces and I keep calling bluff,"
-      },
-      {
-        "time": 70.68,
-        "endTime": 74.36,
-        "text": "and somewhere between the arguing I think I fell in love."
-      },
-      {
-        "time": 78.24,
-        "endTime": 82.32,
-        "text": "She watched me win a battle and she did not even blink,"
-      },
-      {
-        "time": 84.8,
-        "endTime": 89.14,
-        "text": "she cataloged my weaknesses while pouring me a drink."
-      },
-      {
-        "time": 90.4,
-        "endTime": 95.24,
-        "text": "The Seanchan bow to prophecy, they bend the knee to signs,"
-      },
-      {
-        "time": 95.7,
-        "endTime": 100.84,
-        "text": "and I am the Prince of Ravens sitting drunk between the lines."
-      },
-      {
-        "time": 101.14,
-        "endTime": 105.92,
-        "text": "She said my name three times right back \u2014 the ceremony done,"
-      },
-      {
-        "time": 107.74,
-        "endTime": 117.18,
-        "text": "Bloody Matrim Cauthon is my husband \u2014 and she won."
-      },
-      {
-        "time": 118.18,
-        "endTime": 120.14,
-        "text": "The omens never told me that the cage would feel like home,"
-      },
-      {
-        "time": 125.58,
-        "endTime": 127.74,
-        "text": "that a woman made of iron could undo me to the bone."
-      },
-      {
-        "time": 134.98,
-        "endTime": 140.48,
-        "text": "Daughter of the Nine Moons... three times spoken... the ravens circle..."
-      },
-      {
-        "time": 168.6,
-        "endTime": 169.1,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "Dead Men Dice": {
-    "lines": [
-      {
-        "time": 14.24,
-        "endTime": 20.18,
-        "text": "I wake at three and do not know whose bed this used to be,"
-      },
-      {
-        "time": 23.98,
-        "endTime": 30.36,
-        "text": "a name I never learned is dying somewhere inside of me."
-      },
-      {
-        "time": 34.32,
-        "endTime": 40.8,
-        "text": "He loved a woman \u2014 dark-haired, in a city made of sand,"
-      },
-      {
-        "time": 42.52,
-        "endTime": 49.18,
-        "text": "he held her face the way I hold the handle of command."
-      },
-      {
-        "time": 52.52,
-        "endTime": 58.62,
-        "text": "He died with an arrow through the neck at twenty-three,"
-      },
-      {
-        "time": 59.6,
-        "endTime": 67.35,
-        "text": "and now I carry all of him and none of him is me."
-      },
-      {
-        "time": 67.35,
-        "endTime": 75.09,
-        "text": "Whose dreams are these, whose scars are these,"
-      },
-      {
-        "time": 75.09,
-        "endTime": 82.84,
-        "text": "whose dying breath is lodged between my ribs."
-      },
-      {
-        "time": 82.84,
-        "endTime": 86.02,
-        "text": "The dead men threw their dice in me"
-      },
-      {
-        "time": 87.02,
-        "endTime": 95.48,
-        "text": "and I am the table where it lands and lives."
-      },
-      {
-        "time": 99.12,
-        "endTime": 105.42,
-        "text": "I speak eleven languages I never sat to learn,"
-      },
-      {
-        "time": 106.94,
-        "endTime": 116,
-        "text": "I know which poisons taste like almonds and which ones only burn."
-      },
-      {
-        "time": 116.16,
-        "endTime": 123.38,
-        "text": "I remember children that I never fathered, graves I never dug,"
-      },
-      {
-        "time": 125,
-        "endTime": 133.19,
-        "text": "a hundred different versions of the same old soldier shrug."
-      },
-      {
-        "time": 135.19,
-        "endTime": 141.87,
-        "text": "Rand carries the weight of prophecy, Perrin carries the axe,"
-      },
-      {
-        "time": 143.35,
-        "endTime": 150.27,
-        "text": "I carry a cemetery that never stops coming back."
-      },
-      {
-        "time": 153.27,
-        "endTime": 160.01,
-        "text": "At three AM the boundaries blur between the living and the gone,"
-      },
-      {
-        "time": 161.31,
-        "endTime": 168.45,
-        "text": "and I do not know if Matrim Cauthon is still the one who is on."
-      },
-      {
-        "time": 168.99,
-        "endTime": 176.93,
-        "text": "Dead men dice... rolling in the dark... whose life is this..."
-      },
-      {
-        "time": 176.93,
-        "endTime": 178.89,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "One Eye Open": {
-    "lines": [
-      {
-        "time": 8.78,
-        "endTime": 12.5,
-        "text": "The tower has no door until you draw one with a knife,"
-      },
-      {
-        "time": 13.48,
-        "endTime": 17.38,
-        "text": "the rules inside are written by the things that feed on life."
-      },
-      {
-        "time": 17.38,
-        "endTime": 21.58,
-        "text": "Music, fire, and iron \u2014 three wards against the Finn,"
-      },
-      {
-        "time": 22.24,
-        "endTime": 26.38,
-        "text": "Thom plays his harp like breathing while the serpents close us in."
-      },
-      {
-        "time": 27.2,
-        "endTime": 35.37,
-        "text": "I promised Moiraine, told her I would come and get her out,"
-      },
-      {
-        "time": 36.18,
-        "endTime": 43.75,
-        "text": "and promises to dead women are the ones you do not get out of."
-      },
-      {
-        "time": 45.11,
-        "endTime": 48.48,
-        "text": "Half the light of the world \u2014 that was the bargain that I made,"
-      },
-      {
-        "time": 49.19,
-        "endTime": 52.95,
-        "text": "they plucked it from the socket like a coin that had been paid."
-      },
-      {
-        "time": 53.99,
-        "endTime": 58.69,
-        "text": "One eye open, stumbling through the corridors of bone,"
-      },
-      {
-        "time": 58.73,
-        "endTime": 63.23,
-        "text": "I gave half of everything I see to bring her home."
-      },
-      {
-        "time": 70.01,
-        "endTime": 74.21,
-        "text": "Noal stood at the passage like a wall of flesh and grin,"
-      },
-      {
-        "time": 74.75,
-        "endTime": 79.41,
-        "text": "said tell them Jain Farstrider died fighting the Finn."
-      },
-      {
-        "time": 79.51,
-        "endTime": 83.85,
-        "text": "We ran and left him there because the math demanded blood,"
-      },
-      {
-        "time": 83.87,
-        "endTime": 89.03,
-        "text": "Moiraine weighed nothing \u2014 skin and light \u2014 she floated through the mud."
-      },
-      {
-        "time": 89.23,
-        "endTime": 97.63,
-        "text": "My ashandarei cut the wall and daylight screamed us free,"
-      },
-      {
-        "time": 97.81,
-        "endTime": 102.67,
-        "text": "half-blind and holding everyone except the part of me."
-      },
-      {
-        "time": 106.97,
-        "endTime": 114.81,
-        "text": "I see the world in halves now \u2014 left side dark forever more,"
-      },
-      {
-        "time": 115.57,
-        "endTime": 123.95,
-        "text": "some debts you pay in pieces that you did not know you wore."
-      },
-      {
-        "time": 140.77,
-        "endTime": 145.77,
-        "text": "Half the light... Noal standing... one eye watching the door..."
-      },
-      {
-        "time": 176.41,
-        "endTime": 177.95,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "Field of Merrilor": {
-    "lines": [
-      {
-        "time": 23.48,
-        "endTime": 25.37,
-        "text": "A hundred thousand soldiers and the dice are screaming loud,"
-      },
-      {
-        "time": 25.37,
-        "endTime": 27.27,
-        "text": "Demandred voice is thunder and the Shadow is the cloud."
-      },
-      {
-        "time": 27.27,
-        "endTime": 29.16,
-        "text": "I move the cavalry like cards across a table made of bone,"
-      },
-      {
-        "time": 29.16,
-        "endTime": 34.34,
-        "text": "the dead men in my head agree \u2014 this gamble all my own."
-      },
-      {
-        "time": 34.78,
-        "endTime": 40.46,
-        "text": "Rand is somewhere fighting God and I am here with men,"
-      },
-      {
-        "time": 40.74,
-        "endTime": 46.68,
-        "text": "arranging pawns on murder fields and rolling dice again."
-      },
-      {
-        "time": 48.94,
-        "endTime": 51.06,
-        "text": "The Field of Merrilor where the last bets hit the table,"
-      },
-      {
-        "time": 51.52,
-        "endTime": 52.08,
-        "text": "every move I make is right and every right move is fatal."
-      },
-      {
-        "time": 52.08,
-        "endTime": 53.52,
-        "text": "I am the gambler and the game, the dealer and the dealt,"
-      },
-      {
-        "time": 54.72,
-        "endTime": 59.34,
-        "text": "the final hand of every war the Pattern ever felt."
-      },
-      {
-        "time": 71.74,
-        "endTime": 72.24,
-        "text": "Talmanes holds the left, the Aiel hold the broken ground,"
-      },
-      {
-        "time": 71.74,
-        "endTime": 72.24,
-        "text": "Lan rides for Demandred and the earth gives back no sound."
-      },
-      {
-        "time": 72.26,
-        "endTime": 76.92,
-        "text": "I send ten thousand to their deaths because the numbers say they will hold,"
-      },
-      {
-        "time": 77.66,
-        "endTime": 81.32,
-        "text": "a farm boy from the Two Rivers playing chess with lives and gold."
-      },
-      {
-        "time": 82.3,
-        "endTime": 88.22,
-        "text": "The dice stop... silence... and the Shadow starts to crack,"
-      },
-      {
-        "time": 88.26,
-        "endTime": 91.36,
-        "text": "Fain falls, the dagger breaks, and something in me clicks back."
-      },
-      {
-        "time": 100.12,
-        "endTime": 105.62,
-        "text": "When the dice stop rolling it does not mean you won,"
-      },
-      {
-        "time": 119.6,
-        "endTime": 126.1,
-        "text": "it means the game is over and you are still the only one."
-      },
-      {
-        "time": 139.07,
-        "endTime": 143.57,
-        "text": "Merrilor... the dice stop... silence where the thunder was..."
-      },
-      {
-        "time": 158.55,
-        "endTime": 161.55,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "The Hat": {
-    "lines": [
-      {
-        "time": 9.22,
-        "endTime": 13.02,
-        "text": "The dust is settling on a hundred thousand stories stopped,"
-      },
-      {
-        "time": 14.96,
-        "endTime": 18.62,
-        "text": "I walk between the bodies where the flags and standards dropped."
-      },
-      {
-        "time": 20.56,
-        "endTime": 24.44,
-        "text": "My coat is torn, my eye is gone, my boots are full of red,"
-      },
-      {
-        "time": 27.22,
-        "endTime": 31.6,
-        "text": "the dice have stopped their rolling and the quiet fills my head."
-      },
-      {
-        "time": 31.68,
-        "endTime": 39.1,
-        "text": "And there, between two broken shields \u2014 I almost did not see \u2014"
-      },
-      {
-        "time": 39.88,
-        "endTime": 48.16,
-        "text": "my hat. My bloody hat. Still here. Still waiting just for me."
-      },
-      {
-        "time": 49.56,
-        "endTime": 53.72,
-        "text": "I put it on and nothing changes and everything has changed,"
-      },
-      {
-        "time": 53.8,
-        "endTime": 57.22,
-        "text": "the boy from Emond Field is still the man who rearranged"
-      },
-      {
-        "time": 57.22,
-        "endTime": 58.02,
-        "text": "a hundred thousand lives today and walked away with this \u2014"
-      },
-      {
-        "time": 61.88,
-        "endTime": 62.38,
-        "text": "a wide-brimmed hat and scarred-up hands and something close to bliss."
-      },
-      {
-        "time": 66.06,
-        "endTime": 70.22,
-        "text": "Thom is playing something soft. Tuon is on her throne."
-      },
-      {
-        "time": 72.18,
-        "endTime": 76.16,
-        "text": "The ravens circle overhead but I am walking home."
-      },
-      {
-        "time": 77.14,
-        "endTime": 81.54,
-        "text": "They will write me in the histories \u2014 the Gambler, Prince of Ravens \u2014"
-      },
-      {
-        "time": 81.84,
-        "endTime": 87.94,
-        "text": "but I was just a farm boy who got lucky against the heavens."
-      },
-      {
-        "time": 88.6,
-        "endTime": 92.36,
-        "text": "I whistle something tuneless, tip my hat against the sun,"
-      },
-      {
-        "time": 93.14,
-        "endTime": 96.96,
-        "text": "half the light is plenty when the war is finally done."
-      },
-      {
-        "time": 97.9,
-        "endTime": 106.64,
-        "text": "Some men carry crowns. Some carry swords that sing."
-      },
-      {
-        "time": 108.26,
-        "endTime": 120.1,
-        "text": "I carry a hat and a half-blind grin and a marriage to an empress who calls me Toy."
-      },
-      {
-        "time": 120.1,
-        "endTime": 124.6,
-        "text": "The hat... the whistle... half the light is plenty..."
-      },
-      {
-        "time": 176.78,
-        "endTime": 179,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "Prince of Ravens": {
-    "lines": [
-      {
-        "time": 19.68,
-        "endTime": 24.42,
-        "text": "The throne room smells like incense that I cannot learn to name,"
-      },
-      {
-        "time": 24.62,
-        "endTime": 28.94,
-        "text": "the ravens on my shoulders mean I cannot leave the game."
-      },
-      {
-        "time": 29.14,
-        "endTime": 32.96,
-        "text": "She tells me I am Prince now \u2014 I tell her I am Mat,"
-      },
-      {
-        "time": 33.92,
-        "endTime": 38.04,
-        "text": "she says the Prince of Ravens does not sleep in just a hat."
-      },
-      {
-        "time": 38.78,
-        "endTime": 42.76,
-        "text": "The servants bow, the omens read, the prophecies align,"
-      },
-      {
-        "time": 43.6,
-        "endTime": 47.64,
-        "text": "and somewhere past the ceremony, she puts her hand in mine."
-      },
-      {
-        "time": 47.88,
-        "endTime": 52.44,
-        "text": "I never asked for palaces or titles made of birds,"
-      },
-      {
-        "time": 53.32,
-        "endTime": 57.26,
-        "text": "I never asked for anything that could not be won with words."
-      },
-      {
-        "time": 57.52,
-        "endTime": 61.9,
-        "text": "But she is carrying a life that is half of her and me,"
-      },
-      {
-        "time": 62.18,
-        "endTime": 68.36,
-        "text": "the biggest gamble of them all \u2014 and I did not roll. I just believed."
-      },
-      {
-        "time": 77.18,
-        "endTime": 82.12,
-        "text": "I teach the guards to play at dice and Selucia disapproves,"
-      },
-      {
-        "time": 82.2,
-        "endTime": 86.3,
-        "text": "I sneak out through the kitchens because royalty removes"
-      },
-      {
-        "time": 86.78,
-        "endTime": 90.76,
-        "text": "the simple things \u2014 a drink alone, a card game with the Band,"
-      },
-      {
-        "time": 91.6,
-        "endTime": 95.38,
-        "text": "but I come back because the thing I want is in her hand."
-      },
-      {
-        "time": 96.18,
-        "endTime": 100.4,
-        "text": "The Two Rivers boy would laugh at this \u2014 the Prince who hates his crown,"
-      },
-      {
-        "time": 100.92,
-        "endTime": 105.52,
-        "text": "but some things you do not gamble on \u2014 you put the dice back down."
-      },
-      {
-        "time": 105.82,
-        "endTime": 114.86,
-        "text": "A cage becomes a room when you stop trying to leave,"
-      },
-      {
-        "time": 115.93,
-        "endTime": 122.43,
-        "text": "a room becomes a home when someone you love is what you see."
-      },
-      {
-        "time": 176.99,
-        "endTime": 178.45,
-        "text": "Prince of Ravens... the dice put down... the room becomes a home..."
-      },
-      {
-        "time": 178.45,
-        "endTime": 179.69,
-        "text": "============================================================"
-      }
-    ]
-  },
-  "The Dice Stop Rolling": {
-    "lines": [
-      {
-        "time": 11.24,
-        "endTime": 16.4,
-        "text": "I was the boy who stole the apple, took the dare, and ran,"
-      },
-      {
-        "time": 17.12,
-        "endTime": 22.78,
-        "text": "I was the curse, the hanging, the memories of dead men hands."
-      },
-      {
-        "time": 22.78,
-        "endTime": 28.48,
-        "text": "I was the general who flinched and then commanded anyway,"
-      },
-      {
-        "time": 28.8,
-        "endTime": 34.8,
-        "text": "I was the gambler betting daylight against the price I would pay."
-      },
-      {
-        "time": 35.74,
-        "endTime": 40.74,
-        "text": "Every throw I ever made was weighted and I knew,"
-      },
-      {
-        "time": 41.44,
-        "endTime": 47.54,
-        "text": "but the trick was never winning \u2014 it was playing it all through."
-      },
-      {
-        "time": 47.96,
-        "endTime": 53.32,
-        "text": "The dice stop rolling and the silence is not death,"
-      },
-      {
-        "time": 53.42,
-        "endTime": 57,
-        "text": "it is just the space between the heartbeats \u2014 just a breath."
-      },
-      {
-        "time": 62.88,
-        "endTime": 65.38,
-        "text": "I am the luck that bends the arrow, I am the coin that always lands,"
-      },
-      {
-        "time": 65.38,
-        "endTime": 68,
-        "text": "I am Matrim bloody Cauthon with his hat between his hands."
-      },
-      {
-        "time": 68.72,
-        "endTime": 73.66,
-        "text": "And when the Wheel has turned its last and spun the final thread,"
-      },
-      {
-        "time": 75.16,
-        "endTime": 82.78,
-        "text": "I will be the one still shuffling cards among the living and the dead."
-      },
-      {
-        "time": 86.16,
-        "endTime": 91.14,
-        "text": "They say the Wheel weaves as the Wheel wills \u2014 fine, agreed,"
-      },
-      {
-        "time": 92.18,
-        "endTime": 97.6,
-        "text": "but I wove a couple patterns of my own from dirt and need."
-      },
-      {
-        "time": 98.06,
-        "endTime": 103.56,
-        "text": "I kissed an empress, killed a god, and walked away one-eyed,"
-      },
-      {
-        "time": 103.78,
-        "endTime": 109.86,
-        "text": "I taught ten thousand men to sing a song about the time they died."
-      },
-      {
-        "time": 110.4,
-        "endTime": 116.6,
-        "text": "The Two Rivers mud is in my blood, the ravens on my back,"
-      },
-      {
-        "time": 116.6,
-        "endTime": 121.66,
-        "text": "I am everything that happened and the one thing that stayed on track."
-      },
-      {
-        "time": 121.66,
-        "endTime": 125,
-        "text": "So roll the dice or put them down \u2014 the game was never fair,"
-      },
-      {
-        "time": 125.98,
-        "endTime": 132.48,
-        "text": "but I played every hand I got and I am still right here."
-      },
-      {
-        "time": 149.2,
-        "endTime": 152.08,
-        "text": "The dice stop rolling..."
-      },
-      {
-        "time": 152.08,
-        "endTime": 154.68,
-        "text": "the silence after thunder..."
-      },
-      {
-        "time": 159.82,
-        "endTime": 160.32,
-        "text": "still here..."
-      },
-      {
-        "time": 160.28,
-        "endTime": 162.1,
-        "text": "still bloody here..."
-      }
-    ]
-  }
-};
 
 window.lyricsTimings["dragon-reborn"] = {
   "Lord of the Morning": {
     "lines": [
       {
-        "time": 16.94,
-        "endTime": 23.23,
+        "time": 1,
+        "endTime": 8.45,
         "text": "I held the morning in my hands before the sky forgot its name"
       },
       {
-        "time": 23.23,
-        "endTime": 29.52,
+        "time": 8.45,
+        "endTime": 15.9,
         "text": "a hundred banners at my back, ten thousand voices knew the flame"
       },
       {
-        "time": 29.52,
-        "endTime": 35.82,
+        "time": 15.9,
+        "endTime": 24.28,
         "text": "they called me Lord and called me Light, I wore it like a second skin"
       },
       {
-        "time": 35.82,
-        "endTime": 42.11,
+        "time": 24.28,
+        "endTime": 31.73,
         "text": "I drove the shadow to the edge and never thought to look within"
       },
       {
-        "time": 42.11,
-        "endTime": 48.4,
+        "time": 31.73,
+        "endTime": 39.18,
         "text": "the Hundred Companions ride with me, their eyes like hammered steel"
       },
       {
-        "time": 48.4,
-        "endTime": 51.94,
+        "time": 39.18,
+        "endTime": 46.17,
         "text": "we stitched the bore shut at the source, we made the Dark One kneel"
       },
       {
-        "time": 51.96,
-        "endTime": 55.98,
+        "time": 46.17,
+        "endTime": 53.15,
         "text": "but something shifted when we struck, a poison in the weave"
       },
       {
-        "time": 56.44,
-        "endTime": 59.56,
+        "time": 53.15,
+        "endTime": 60.13,
         "text": "a whisper underneath the threads that none of us perceived"
       },
       {
-        "time": 60.5,
-        "endTime": 63.36,
+        "time": 62.13,
+        "endTime": 66.13,
         "text": "I am the first and I am the last"
       },
       {
-        "time": 64.34,
-        "endTime": 67.1,
+        "time": 66.13,
+        "endTime": 70.12,
         "text": "the blade that breaks what the Wheel has cast"
       },
       {
-        "time": 67.32,
-        "endTime": 70.68,
+        "time": 70.12,
+        "endTime": 74.99,
         "text": "I carry the morning, I carry the night"
       },
       {
-        "time": 71.28,
-        "endTime": 74.58,
+        "time": 74.99,
+        "endTime": 78.99,
         "text": "I am the Dragon, I am the Light"
       },
       {
-        "time": 75.6,
-        "endTime": 78.6,
+        "time": 80.49,
+        "endTime": 87,
         "text": "Ilyena waits with golden hair, a candle in the hall"
       },
       {
-        "time": 78.68,
-        "endTime": 82.04,
+        "time": 87,
+        "endTime": 93.99,
         "text": "she thinks I am returning whole, she does not know at all"
       },
       {
-        "time": 82.38,
-        "endTime": 85.8,
+        "time": 93.99,
+        "endTime": 100.51,
         "text": "the taint is moving through my veins like oil across the sun"
       },
       {
-        "time": 86.16,
-        "endTime": 89.58,
+        "time": 100.51,
+        "endTime": 107.03,
         "text": "the voice inside my skull is mine, it says what I have done"
       },
       {
-        "time": 90.26,
-        "endTime": 93.62,
+        "time": 107.03,
+        "endTime": 114.01,
         "text": "I sealed the prison but the seal was written in our blood"
       },
       {
-        "time": 93.64,
-        "endTime": 97,
+        "time": 114.01,
+        "endTime": 120.53,
         "text": "the counterstroke was madness, and the madness was a flood"
       },
       {
-        "time": 97.36,
-        "endTime": 100.82,
+        "time": 120.53,
+        "endTime": 127.05,
         "text": "the Companions are screaming and I cannot hear them scream"
       },
       {
-        "time": 101.34,
-        "endTime": 104.6,
+        "time": 127.05,
+        "endTime": 134.03,
         "text": "the morning I was named for is dissolving like a dream"
       },
       {
-        "time": 105.58,
-        "endTime": 108.34,
+        "time": 136.53,
+        "endTime": 142.22,
         "text": "they will call this day the Breaking of the World"
       },
       {
-        "time": 108.54,
-        "endTime": 112.08,
+        "time": 142.22,
+        "endTime": 148.95,
         "text": "every city I built, unwound and unfurled"
       },
       {
-        "time": 112.34,
-        "endTime": 115.58,
+        "time": 148.95,
+        "endTime": 155.16,
         "text": "the mountains I raise from grief will mark where I stood"
       },
       {
-        "time": 115.96,
-        "endTime": 119.96,
+        "time": 155.16,
+        "endTime": 162.4,
         "text": "the volcano at Dragonmount, my monument of blood"
       },
       {
-        "time": 165.74,
-        "endTime": 169.04,
+        "time": 164.4,
+        "endTime": 172.07,
         "text": "the prophecy begins to write itself upon the wind..."
       },
       {
-        "time": 173.24,
+        "time": 172.07,
         "endTime": 177,
         "text": "Born on the slopes of Dragonmount..."
       }
@@ -4307,133 +142,133 @@ window.lyricsTimings["dragon-reborn"] = {
   "Kinslayer": {
     "lines": [
       {
-        "time": 4.18,
-        "endTime": 9,
+        "time": 1,
+        "endTime": 8.34,
         "text": "I woke up clean inside a slaughterhouse I built myself"
       },
       {
-        "time": 9.76,
-        "endTime": 14.76,
+        "time": 8.34,
+        "endTime": 15.68,
         "text": "her blood is on my palms, her face is frozen on the shelf"
       },
       {
-        "time": 15.24,
-        "endTime": 20.52,
+        "time": 15.68,
+        "endTime": 23.55,
         "text": "Ishamael stands behind me grinning, healed my broken mind"
       },
       {
-        "time": 20.76,
-        "endTime": 26.74,
+        "time": 23.55,
+        "endTime": 31.41,
         "text": "just so I could see what I had done to all of humankind"
       },
       {
-        "time": 32.22,
-        "endTime": 34.52,
+        "time": 31.41,
+        "endTime": 38.76,
         "text": "the children in the corridor, the servants on the stairs"
       },
       {
-        "time": 35.14,
-        "endTime": 40.1,
+        "time": 38.76,
+        "endTime": 46.1,
         "text": "my wife is at my feet with golden sunlight in her hair"
       },
       {
-        "time": 43.62,
-        "endTime": 45.74,
+        "time": 46.1,
+        "endTime": 53.96,
         "text": "and I remember every moment, not a single gap"
       },
       {
-        "time": 47.46,
-        "endTime": 52.68,
+        "time": 53.96,
+        "endTime": 61.83,
         "text": "the madness did not do this. I did this. there is no way back"
       },
       {
-        "time": 55.26,
-        "endTime": 60.5,
+        "time": 63.83,
+        "endTime": 68.32,
         "text": "Kinslayer, they will call me through the years"
       },
       {
-        "time": 60.6,
-        "endTime": 65.94,
+        "time": 68.32,
+        "endTime": 74.32,
         "text": "every turning of the Wheel will know my tears"
       },
       {
-        "time": 66.88,
-        "endTime": 71.54,
+        "time": 74.32,
+        "endTime": 81.81,
         "text": "I broke the ones I loved, I burned my own design"
       },
       {
-        "time": 72.48,
-        "endTime": 81.12,
+        "time": 81.81,
+        "endTime": 88.3,
         "text": "the Dragon is the monster and the monster is mine"
       },
       {
-        "time": 102.2,
-        "endTime": 104.4,
+        "time": 89.8,
+        "endTime": 96.09,
         "text": "I pull the Power like a drowning man pulls air"
       },
       {
-        "time": 104.4,
-        "endTime": 106.59,
+        "time": 96.09,
+        "endTime": 103.43,
         "text": "I draw so deep the Pattern cracks, I do not even care"
       },
       {
-        "time": 106.59,
-        "endTime": 108.78,
+        "time": 103.43,
+        "endTime": 110.77,
         "text": "I aim it all at me, a pillar made of light and grief"
       },
       {
-        "time": 108.78,
-        "endTime": 110.98,
+        "time": 110.77,
+        "endTime": 118.12,
         "text": "the ground erupts beneath my feet, the earth has no relief"
       },
       {
-        "time": 110.98,
-        "endTime": 111.48,
+        "time": 118.12,
+        "endTime": 124.93,
         "text": "they say Dragonmount rose where I stood that final breath"
       },
       {
-        "time": 111.4,
-        "endTime": 118,
+        "time": 124.93,
+        "endTime": 132.8,
         "text": "three miles of stone from one mans guilt, one monument to death"
       },
       {
-        "time": 123.26,
-        "endTime": 127.26,
+        "time": 132.8,
+        "endTime": 140.14,
         "text": "but death was not the end for me, the Wheel still turns and grinds"
       },
       {
-        "time": 128.44,
-        "endTime": 132.2,
+        "time": 140.14,
+        "endTime": 147.48,
         "text": "it stamps the Dragon on a soul and sends it back to find"
       },
       {
-        "time": 138.48,
-        "endTime": 141.46,
+        "time": 149.98,
+        "endTime": 154.06,
         "text": "new hands to hold the morning"
       },
       {
-        "time": 141.76,
-        "endTime": 142.26,
+        "time": 154.06,
+        "endTime": 157.55,
         "text": "new eyes to watch it burn"
       },
       {
-        "time": 180,
-        "endTime": 180.5,
+        "time": 157.55,
+        "endTime": 161.63,
         "text": "new voice to scream Ilyena"
       },
       {
-        "time": 179.51,
-        "endTime": 180.01,
+        "time": 161.63,
+        "endTime": 165.13,
         "text": "and nothing left to learn"
       },
       {
-        "time": 179.01,
-        "endTime": 179.51,
+        "time": 167.13,
+        "endTime": 173.3,
         "text": "the prophecy continues in the wind..."
       },
       {
-        "time": 178.52,
-        "endTime": 179.02,
+        "time": 173.3,
+        "endTime": 177,
         "text": "born of the ancient blood..."
       }
     ]
@@ -4441,133 +276,133 @@ window.lyricsTimings["dragon-reborn"] = {
   "The Unnamed": {
     "lines": [
       {
-        "time": 27.44,
-        "endTime": 30.5,
+        "time": 1,
+        "endTime": 7.4,
         "text": "no prophecy was written down, no gleeman sang my name"
       },
       {
-        "time": 30.78,
-        "endTime": 34.04,
+        "time": 7.4,
+        "endTime": 14.26,
         "text": "no Aes Sedai discovered me, no channeler could claim"
       },
       {
-        "time": 34.36,
-        "endTime": 37.32,
+        "time": 14.26,
+        "endTime": 21.13,
         "text": "the voices in my skull arrived without a word of blame"
       },
       {
-        "time": 37.9,
-        "endTime": 41.28,
+        "time": 21.13,
+        "endTime": 28.44,
         "text": "and I went mad inside a barn while strangers watched the flame"
       },
       {
-        "time": 43.22,
-        "endTime": 46.4,
+        "time": 28.44,
+        "endTime": 35.76,
         "text": "I figured out the Power by the way my fingers burned"
       },
       {
-        "time": 46.78,
-        "endTime": 50,
+        "time": 35.76,
+        "endTime": 43.54,
         "text": "I sealed the cracks by instinct, every lesson I had earned"
       },
       {
-        "time": 50.28,
-        "endTime": 53.48,
+        "time": 43.54,
+        "endTime": 50.4,
         "text": "was written in my body like a scripture no one learned"
       },
       {
-        "time": 53.86,
-        "endTime": 57.34,
+        "time": 50.4,
+        "endTime": 58.63,
         "text": "and when I finally faced the Dark, the whole world simply turned"
       },
       {
-        "time": 59.44,
-        "endTime": 63.46,
+        "time": 60.63,
+        "endTime": 65.86,
         "text": "I have no name, I have no grave, I have no song"
       },
       {
-        "time": 64.04,
-        "endTime": 67.22,
+        "time": 65.86,
+        "endTime": 71.96,
         "text": "I fought the shadow in a field where nothing else belongs"
       },
       {
-        "time": 68.44,
-        "endTime": 70.9,
+        "time": 71.96,
+        "endTime": 77.62,
         "text": "the Wheel grinds on regardless, it does not keep a list"
       },
       {
-        "time": 71.82,
-        "endTime": 86.56,
+        "time": 77.62,
+        "endTime": 84.15,
         "text": "I am the Dragon that the Pattern chose and then dismissed"
       },
       {
-        "time": 86.56,
-        "endTime": 88.62,
+        "time": 85.65,
+        "endTime": 91.6,
         "text": "a thousand turnings and a thousand unnamed dead"
       },
       {
-        "time": 89.18,
-        "endTime": 92.24,
+        "time": 91.6,
+        "endTime": 98,
         "text": "a thousand men who held the flame and bled until they bled"
       },
       {
-        "time": 92.68,
-        "endTime": 95.62,
+        "time": 98,
+        "endTime": 104.41,
         "text": "who broke the world to save it and were never even read"
       },
       {
-        "time": 96.78,
-        "endTime": 99.58,
+        "time": 104.41,
+        "endTime": 110.81,
         "text": "the Wheel does not remember, it just needs another thread"
       },
       {
-        "time": 100.62,
-        "endTime": 103.4,
+        "time": 110.81,
+        "endTime": 116.3,
         "text": "I stood against the bore with hands that shook and split"
       },
       {
-        "time": 103.66,
-        "endTime": 106.92,
+        "time": 116.3,
+        "endTime": 122.25,
         "text": "I drove it back by will alone, no angreal, no writ"
       },
       {
-        "time": 107.22,
-        "endTime": 111.14,
+        "time": 122.25,
+        "endTime": 129.56,
         "text": "the Dark One laughed and I laughed back, we both knew this was it"
       },
       {
-        "time": 111.28,
-        "endTime": 113,
+        "time": 129.56,
+        "endTime": 135.97,
         "text": "and when I died the earth did nothing. not a single bit"
       },
       {
-        "time": 126.34,
-        "endTime": 129.82,
+        "time": 138.47,
+        "endTime": 146.09,
         "text": "that is the real horror, not the death or madness, not the flame"
       },
       {
-        "time": 131.24,
-        "endTime": 133.9,
+        "time": 146.09,
+        "endTime": 153.21,
         "text": "not the taint, not the Breaking, not the centuries of shame"
       },
       {
-        "time": 134.96,
-        "endTime": 135.76,
+        "time": 153.21,
+        "endTime": 160.83,
         "text": "the horror is the silence after everything is done"
       },
       {
-        "time": 135.76,
-        "endTime": 140.76,
+        "time": 160.83,
+        "endTime": 166.93,
         "text": "the Wheel has no loyalty. it only needs a son"
       },
       {
-        "time": 168.62,
-        "endTime": 169.12,
+        "time": 168.93,
+        "endTime": 173.77,
         "text": "the prophecy bleeds through the ages..."
       },
       {
-        "time": 168.7,
-        "endTime": 169.34,
+        "time": 173.77,
+        "endTime": 177,
         "text": "raised by the old blood..."
       }
     ]
@@ -4575,113 +410,113 @@ window.lyricsTimings["dragon-reborn"] = {
   "The Pattern Speaks": {
     "lines": [
       {
-        "time": 8.14,
-        "endTime": 12.2,
+        "time": 1,
+        "endTime": 5.25,
         "text": "I do not choose. I weave"
       },
       {
-        "time": 12.2,
-        "endTime": 13.96,
+        "time": 5.25,
+        "endTime": 11.62,
         "text": "the threads go where the loom requires"
       },
       {
-        "time": 19.22,
-        "endTime": 22.66,
+        "time": 11.62,
+        "endTime": 22.95,
         "text": "every age needs a fulcrum, someone bends or the fabric tears"
       },
       {
-        "time": 25.64,
-        "endTime": 32.58,
+        "time": 22.95,
+        "endTime": 32.87,
         "text": "and so I spin the Dragon out of blood and fire and airs"
       },
       {
-        "time": 33.88,
-        "endTime": 38.78,
+        "time": 32.87,
+        "endTime": 41.37,
         "text": "you think I care which face he wears. I do not care"
       },
       {
-        "time": 40.48,
-        "endTime": 49.02,
+        "time": 41.37,
+        "endTime": 49.87,
         "text": "you think I grieve when he goes mad. I cannot grieve"
       },
       {
-        "time": 49.02,
-        "endTime": 54.28,
+        "time": 49.87,
+        "endTime": 57.66,
         "text": "I am the mechanism underneath the prayer"
       },
       {
-        "time": 54.8,
-        "endTime": 62.94,
+        "time": 57.66,
+        "endTime": 65.45,
         "text": "the engine that decides which souls will leave"
       },
       {
-        "time": 62.94,
-        "endTime": 67.44,
+        "time": 66.95,
+        "endTime": 76.86,
         "text": "ta veren is a leash made out of probability"
       },
       {
-        "time": 78.02,
-        "endTime": 78.52,
+        "time": 76.86,
+        "endTime": 86.07,
         "text": "I pull the world around one man until reality"
       },
       {
-        "time": 78.48,
-        "endTime": 86.98,
+        "time": 86.07,
+        "endTime": 95.98,
         "text": "conforms to what must happen, call it fate or call it need"
       },
       {
-        "time": 86.98,
-        "endTime": 101.3,
+        "time": 95.98,
+        "endTime": 105.9,
         "text": "the Dragon is the stone I throw. the ripples are the deed"
       },
       {
-        "time": 101.3,
-        "endTime": 103.64,
+        "time": 105.9,
+        "endTime": 115.11,
         "text": "I have done this since before your oldest Age began"
       },
       {
-        "time": 108.6,
-        "endTime": 111.72,
+        "time": 115.11,
+        "endTime": 124.31,
         "text": "I will do this long after your last forgotten clan"
       },
       {
-        "time": 116.36,
-        "endTime": 120.96,
+        "time": 124.31,
+        "endTime": 134.94,
         "text": "and every time the Dragon breaks, I gather up the sand"
       },
       {
-        "time": 123.82,
-        "endTime": 128.98,
+        "time": 134.94,
+        "endTime": 142.73,
         "text": "and pour it back into the shape of a man"
       },
       {
-        "time": 129.06,
-        "endTime": 130.02,
+        "time": 144.73,
+        "endTime": 146.75,
         "text": "the Wheel turns"
       },
       {
-        "time": 130.02,
-        "endTime": 130.52,
+        "time": 146.75,
+        "endTime": 148.77,
         "text": "the Wheel turns"
       },
       {
-        "time": 160.92,
-        "endTime": 165.2,
+        "time": 148.77,
+        "endTime": 151.47,
         "text": "what was will be"
       },
       {
-        "time": 165.2,
-        "endTime": 169.47,
+        "time": 151.47,
+        "endTime": 154.17,
         "text": "what is has been"
       },
       {
-        "time": 169.47,
-        "endTime": 173.75,
+        "time": 156.17,
+        "endTime": 165.34,
         "text": "the prophecy assembles, patient as stone..."
       },
       {
-        "time": 173.75,
-        "endTime": 178.02,
+        "time": 165.34,
+        "endTime": 177,
         "text": "according to prophecy, according to the Dragon..."
       }
     ]
@@ -4689,133 +524,133 @@ window.lyricsTimings["dragon-reborn"] = {
   "Veins of Gold": {
     "lines": [
       {
-        "time": 5.72,
-        "endTime": 10.2,
+        "time": 1,
+        "endTime": 7.88,
         "text": "I stand on Dragonmount and hold enough to crack the sky"
       },
       {
-        "time": 11.52,
-        "endTime": 16.16,
+        "time": 7.88,
+        "endTime": 14.27,
         "text": "saidin screaming through my veins, I could unmake the why"
       },
       {
-        "time": 17.28,
-        "endTime": 21.84,
+        "time": 14.27,
+        "endTime": 22.14,
         "text": "the taint is gone but what remains is every life I stole"
       },
       {
-        "time": 23.36,
-        "endTime": 28.62,
+        "time": 22.14,
+        "endTime": 29.52,
         "text": "a thousand turnings of the Wheel and not one Dragon whole"
       },
       {
-        "time": 34.26,
-        "endTime": 39.12,
+        "time": 29.52,
+        "endTime": 36.89,
         "text": "Lews Therin is not a voice inside my head, he is my head"
       },
       {
-        "time": 40.52,
-        "endTime": 45.02,
+        "time": 36.89,
+        "endTime": 43.77,
         "text": "we are the same man breaking over things the same man said"
       },
       {
-        "time": 46.44,
-        "endTime": 50.74,
+        "time": 43.77,
+        "endTime": 50.17,
         "text": "Ilyena. Min. Elayne. Aviendha. every name"
       },
       {
-        "time": 52.02,
-        "endTime": 59.5,
+        "time": 50.17,
+        "endTime": 58.03,
         "text": "a different face in different light but always the same flame"
       },
       {
-        "time": 62.5,
-        "endTime": 66.98,
+        "time": 60.03,
+        "endTime": 66.12,
         "text": "why do I keep fighting when the answer is the same"
       },
       {
-        "time": 69.14,
-        "endTime": 73.62,
+        "time": 66.12,
+        "endTime": 74.55,
         "text": "every turning, every Dragon, every world I break and claim"
       },
       {
-        "time": 74.06,
-        "endTime": 86.04,
+        "time": 74.55,
+        "endTime": 80.63,
         "text": "why do I keep reaching for the light that burns my hands"
       },
       {
-        "time": 89.3,
-        "endTime": 94.1,
+        "time": 82.13,
+        "endTime": 89.02,
         "text": "the Power crests. I feel the world bow underneath its weight"
       },
       {
-        "time": 95.36,
-        "endTime": 99.86,
+        "time": 89.02,
+        "endTime": 96.88,
         "text": "a single thought and I am nothing, and the nothing would be great"
       },
       {
-        "time": 100.44,
-        "endTime": 105.82,
+        "time": 96.88,
+        "endTime": 104.75,
         "text": "no more Prophecy, no more Chosen, no more blood on ancient stone"
       },
       {
-        "time": 106.64,
-        "endTime": 114.38,
+        "time": 104.75,
+        "endTime": 112.13,
         "text": "just silence in the space where every Dragon stood alone"
       },
       {
-        "time": 116.92,
-        "endTime": 123.14,
+        "time": 112.13,
+        "endTime": 119.01,
         "text": "and then the voice that is my voice, the oldest thread I own,"
       },
       {
-        "time": 123.14,
-        "endTime": 127.72,
+        "time": 119.01,
+        "endTime": 125.89,
         "text": "says maybe this is not the punishment. maybe this is the loan"
       },
       {
-        "time": 128.64,
-        "endTime": 133.44,
+        "time": 125.89,
+        "endTime": 132.78,
         "text": "a second chance to do it right, to hold without the fall"
       },
       {
-        "time": 134.4,
-        "endTime": 139.44,
+        "time": 132.78,
+        "endTime": 139.66,
         "text": "a second chance to love someone and actually recall"
       },
       {
-        "time": 142.96,
-        "endTime": 144.7,
+        "time": 142.16,
+        "endTime": 145.44,
         "text": "I let the Power go"
       },
       {
-        "time": 145.7,
-        "endTime": 147.36,
+        "time": 145.44,
+        "endTime": 150.35,
         "text": "not because the world deserves it"
       },
       {
-        "time": 148.74,
-        "endTime": 150.82,
+        "time": 150.35,
+        "endTime": 154.72,
         "text": "not because I am strong enough"
       },
       {
-        "time": 155.08,
-        "endTime": 157.46,
+        "time": 154.72,
+        "endTime": 159.64,
         "text": "but because she laughed this morning"
       },
       {
-        "time": 160.24,
-        "endTime": 163.74,
+        "time": 159.64,
+        "endTime": 164.01,
         "text": "and I want to hear it again"
       },
       {
-        "time": 176.98,
-        "endTime": 177.74,
+        "time": 166.01,
+        "endTime": 172.95,
         "text": "the prophecy gathers itself, almost complete..."
       },
       {
-        "time": 177.74,
-        "endTime": 179.88,
+        "time": 172.95,
+        "endTime": 177,
         "text": "he shall hold a blade of light..."
       }
     ]
@@ -4823,133 +658,133 @@ window.lyricsTimings["dragon-reborn"] = {
   "Callandor": {
     "lines": [
       {
-        "time": 22.9,
-        "endTime": 26.02,
+        "time": 1,
+        "endTime": 7.28,
         "text": "they left a sword inside the Stone for two millennia"
       },
       {
-        "time": 26.22,
-        "endTime": 28.98,
+        "time": 7.28,
+        "endTime": 15,
         "text": "the crystal blade was never meant to cut, it was an antenna"
       },
       {
-        "time": 28.98,
-        "endTime": 31.6,
+        "time": 15,
+        "endTime": 22.24,
         "text": "a funnel for the Power with no governor, no limit"
       },
       {
-        "time": 32.04,
-        "endTime": 34.08,
+        "time": 22.24,
+        "endTime": 29.96,
         "text": "a weapon you could hold but only if you lived within it"
       },
       {
-        "time": 34.08,
-        "endTime": 36.7,
+        "time": 29.96,
+        "endTime": 37.2,
         "text": "I pulled it from the floor and felt the world go thin and bright"
       },
       {
-        "time": 37.32,
-        "endTime": 39.7,
+        "time": 37.2,
+        "endTime": 43.48,
         "text": "saidin rushing through without a filter for the fight"
       },
       {
-        "time": 39.94,
-        "endTime": 42.46,
+        "time": 43.48,
+        "endTime": 50.24,
         "text": "no buffer, no resistance, just the current and the knife"
       },
       {
-        "time": 43.12,
-        "endTime": 46.56,
+        "time": 50.24,
+        "endTime": 57.48,
         "text": "the most dangerous device in this or any other life"
       },
       {
-        "time": 46.56,
-        "endTime": 49.08,
+        "time": 59.48,
+        "endTime": 65,
         "text": "Callandor, Callandor, the trap that looks like strength"
       },
       {
-        "time": 49.38,
-        "endTime": 52.02,
+        "time": 65,
+        "endTime": 70.97,
         "text": "the sharper that you draw it the further down you sink"
       },
       {
-        "time": 52.16,
-        "endTime": 54.92,
+        "time": 70.97,
+        "endTime": 77.41,
         "text": "they built a prophecy to make me reach for it by name"
       },
       {
-        "time": 55.36,
-        "endTime": 57.88,
+        "time": 77.41,
+        "endTime": 83.84,
         "text": "and called it sa angreal but it plays you like a game"
       },
       {
-        "time": 58.5,
-        "endTime": 60.78,
+        "time": 85.34,
+        "endTime": 91.62,
         "text": "power is a circle with no exit and no floor"
       },
       {
-        "time": 61.04,
-        "endTime": 63.64,
+        "time": 91.62,
+        "endTime": 98.38,
         "text": "the more you channel, more you need, the more you need it for"
       },
       {
-        "time": 63.84,
-        "endTime": 66.56,
+        "time": 98.38,
+        "endTime": 105.14,
         "text": "they tell you that you are the chosen but they chose the chain"
       },
       {
-        "time": 66.76,
-        "endTime": 69.52,
+        "time": 105.14,
+        "endTime": 111.89,
         "text": "they worship what they leash and call the leashing your domain"
       },
       {
-        "time": 69.88,
-        "endTime": 72.4,
+        "time": 111.89,
+        "endTime": 117.2,
         "text": "three must hold the blade, two women and a man"
       },
       {
-        "time": 72.64,
-        "endTime": 75.38,
+        "time": 117.2,
+        "endTime": 123.96,
         "text": "a link to keep the madness out, the only working plan"
       },
       {
-        "time": 75.6,
-        "endTime": 78.16,
+        "time": 123.96,
+        "endTime": 130.72,
         "text": "but for three thousand years they let me think I stand alone"
       },
       {
-        "time": 78.52,
-        "endTime": 81.14,
+        "time": 130.72,
+        "endTime": 137.48,
         "text": "they made the trap, they set the bait, they let me call it home"
       },
       {
-        "time": 82.9,
-        "endTime": 85.04,
+        "time": 139.98,
+        "endTime": 144.81,
         "text": "every Dragon reaches for it"
       },
       {
-        "time": 88.04,
-        "endTime": 93.02,
+        "time": 144.81,
+        "endTime": 151.78,
         "text": "every Dragon thinks this time he is strong enough"
       },
       {
-        "time": 93.84,
-        "endTime": 96.48,
+        "time": 151.78,
+        "endTime": 156.61,
         "text": "every Dragon learns the lesson"
       },
       {
-        "time": 99.72,
-        "endTime": 103.76,
+        "time": 156.61,
+        "endTime": 162.51,
         "text": "that the blade was always stronger than the blood"
       },
       {
-        "time": 103.76,
-        "endTime": 110.08,
+        "time": 164.51,
+        "endTime": 173.59,
         "text": "the prophecy is almost whole now, carved in living stone..."
       },
       {
-        "time": 110.08,
-        "endTime": 116.38,
+        "time": 173.59,
+        "endTime": 177,
         "text": "and the land shall be one..."
       }
     ]
@@ -4957,133 +792,133 @@ window.lyricsTimings["dragon-reborn"] = {
   "Dumais Wells": {
     "lines": [
       {
-        "time": 29.64,
-        "endTime": 31.78,
+        "time": 1,
+        "endTime": 6.78,
         "text": "six days in a box, my spine bent against the lid"
       },
       {
-        "time": 31.78,
-        "endTime": 33.93,
+        "time": 6.78,
+        "endTime": 13.52,
         "text": "they beat me through the bars to prove that prophecy was rid"
       },
       {
-        "time": 33.93,
-        "endTime": 36.07,
+        "time": 13.52,
+        "endTime": 20.26,
         "text": "of any power I might hold, they swore the Dragon kneels"
       },
       {
-        "time": 36.07,
-        "endTime": 38.21,
+        "time": 20.26,
+        "endTime": 27.49,
         "text": "but I have burned through ages longer than the Wheel reveals"
       },
       {
-        "time": 38.21,
-        "endTime": 40.35,
+        "time": 27.49,
+        "endTime": 34.23,
         "text": "the ground is splitting open and the Asha man have come"
       },
       {
-        "time": 40.35,
-        "endTime": 42.5,
+        "time": 34.23,
+        "endTime": 40.97,
         "text": "five hundred men who channel fire, the Breaking has begun"
       },
       {
-        "time": 42.5,
-        "endTime": 44.64,
+        "time": 40.97,
+        "endTime": 47.71,
         "text": "again, again, the cycle snaps, the earth rolls like a drum"
       },
       {
-        "time": 44.64,
-        "endTime": 50.94,
+        "time": 47.71,
+        "endTime": 56.38,
         "text": "and every Aes Sedai who caged me watches what they have become"
       },
       {
-        "time": 51.46,
-        "endTime": 54.04,
+        "time": 58.38,
+        "endTime": 63.89,
         "text": "Asha man, kill, the two words that unmake the age"
       },
       {
-        "time": 54.4,
-        "endTime": 57.26,
+        "time": 63.89,
+        "endTime": 70.31,
         "text": "the Dragon does not ask for mercy, does not turn the page"
       },
       {
-        "time": 57.42,
-        "endTime": 60.42,
+        "time": 70.31,
+        "endTime": 76.73,
         "text": "I stood inside the box and let them break me to the floor"
       },
       {
-        "time": 60.68,
-        "endTime": 66.68,
+        "time": 76.73,
+        "endTime": 83.61,
         "text": "and now I stand outside the box and I am something more"
       },
       {
-        "time": 89.12,
-        "endTime": 92.4,
+        "time": 85.11,
+        "endTime": 92.33,
         "text": "the rolling earth consumes the ranks, the air itself is wrong"
       },
       {
-        "time": 92.7,
-        "endTime": 95.44,
+        "time": 92.33,
+        "endTime": 100.04,
         "text": "saidin tears through fifty men in one sustained and brutal song"
       },
       {
-        "time": 95.44,
-        "endTime": 98.82,
+        "time": 100.04,
+        "endTime": 107.26,
         "text": "this is the power that they feared, this is the Breaking ghost"
       },
       {
-        "time": 99.14,
-        "endTime": 102.44,
+        "time": 107.26,
+        "endTime": 114.49,
         "text": "the thing they locked away for three millennia is their host"
       },
       {
-        "time": 102.72,
-        "endTime": 105.62,
+        "time": 114.49,
+        "endTime": 121.23,
         "text": "I kneel the sisters. not from spite. from certainty and weight"
       },
       {
-        "time": 105.9,
-        "endTime": 108.26,
+        "time": 121.23,
+        "endTime": 127.97,
         "text": "the world requires a harder hand than mercy can create"
       },
       {
-        "time": 108.62,
-        "endTime": 111.58,
+        "time": 127.97,
+        "endTime": 134.71,
         "text": "the morning that I carried once is burning in my fist"
       },
       {
-        "time": 111.78,
-        "endTime": 114.86,
+        "time": 134.71,
+        "endTime": 141.94,
         "text": "I am the Lord of the Morning and the morning is a list"
       },
       {
-        "time": 116.06,
-        "endTime": 118.44,
+        "time": 144.44,
+        "endTime": 149.79,
         "text": "a list of everyone I have killed"
       },
       {
-        "time": 118.84,
-        "endTime": 121.58,
+        "time": 149.79,
+        "endTime": 155.14,
         "text": "in this turning and the ones before"
       },
       {
-        "time": 122.36,
-        "endTime": 124.62,
+        "time": 155.14,
+        "endTime": 159.42,
         "text": "a list that never stops growing"
       },
       {
-        "time": 125.06,
-        "endTime": 127.96,
+        "time": 159.42,
+        "endTime": 164.24,
         "text": "because the Pattern always needs more"
       },
       {
-        "time": 138.98,
-        "endTime": 142.48,
+        "time": 166.24,
+        "endTime": 172.47,
         "text": "the prophecy rings now, iron on iron..."
       },
       {
-        "time": 178.3,
-        "endTime": 179.82,
+        "time": 172.47,
+        "endTime": 177,
         "text": "and he shall break the world again..."
       }
     ]
@@ -5091,9434 +926,1044 @@ window.lyricsTimings["dragon-reborn"] = {
   "Let Go": {
     "lines": [
       {
-        "time": 14.58,
-        "endTime": 17.9,
+        "time": 1,
+        "endTime": 5.7,
         "text": "I step outside the Pattern where the threads cannot exist"
       },
       {
-        "time": 18.46,
-        "endTime": 21.88,
+        "time": 5.7,
+        "endTime": 10.4,
         "text": "the Dark One meets me face to face inside the formless mist"
       },
       {
-        "time": 22.46,
-        "endTime": 23.72,
+        "time": 10.4,
+        "endTime": 15.1,
         "text": "no saidin here, no sa angreal, no weapon and no shield"
       },
       {
-        "time": 23.72,
-        "endTime": 27.92,
+        "time": 15.1,
+        "endTime": 19.8,
         "text": "just two ideas of what the world should be, and neither yields"
       },
       {
-        "time": 30.22,
-        "endTime": 34.12,
+        "time": 19.8,
+        "endTime": 25.18,
         "text": "I show him paradise, a world with no capacity for wrong"
       },
       {
-        "time": 34.18,
-        "endTime": 37.68,
+        "time": 25.18,
+        "endTime": 30.21,
         "text": "where every soul is good by force, a prison made of song"
       },
       {
-        "time": 38.12,
-        "endTime": 41.16,
+        "time": 30.21,
+        "endTime": 36.26,
         "text": "he shows me nothing, every light erased, every bond undone"
       },
       {
-        "time": 41.58,
-        "endTime": 46.54,
+        "time": 36.26,
+        "endTime": 40.96,
         "text": "a world of pure consumption where the shadow always won"
       },
       {
-        "time": 46.54,
-        "endTime": 49.92,
+        "time": 42.96,
+        "endTime": 46.16,
         "text": "neither one is real. neither one is free"
       },
       {
-        "time": 49.96,
-        "endTime": 53.68,
+        "time": 46.16,
+        "endTime": 50.95,
         "text": "the world requires the darkness to define what it can be"
       },
       {
-        "time": 54.08,
-        "endTime": 57.28,
+        "time": 50.95,
+        "endTime": 55.11,
         "text": "I do not destroy the cage, I seal it shut again"
       },
       {
-        "time": 57.6,
-        "endTime": 63.2,
+        "time": 55.11,
+        "endTime": 61.51,
         "text": "not because the Dark deserves a prison, but because the choice belongs to men"
       },
       {
-        "time": 63.42,
-        "endTime": 67.16,
+        "time": 63.01,
+        "endTime": 67.37,
         "text": "I am dying. I feel the thread unspooling from the loom"
       },
       {
-        "time": 67.38,
-        "endTime": 71.02,
+        "time": 67.37,
+        "endTime": 71.74,
         "text": "Elayne and Min and Aviendha weeping at my tomb"
       },
       {
-        "time": 71.46,
-        "endTime": 75.02,
+        "time": 71.74,
+        "endTime": 76.78,
         "text": "but the body that lies still is not the only one I own"
       },
       {
-        "time": 75.42,
-        "endTime": 78.82,
+        "time": 76.78,
+        "endTime": 81.81,
         "text": "I wake behind new eyes and feel no Power, I am alone"
       },
       {
-        "time": 79.44,
-        "endTime": 83.04,
+        "time": 81.81,
+        "endTime": 87.18,
         "text": "for the first time in a thousand lives, the channel is not there"
       },
       {
-        "time": 83.4,
-        "endTime": 86.84,
+        "time": 87.18,
+        "endTime": 91.89,
         "text": "no taint, no saidin, no compulsion riding in the air"
       },
       {
-        "time": 87.24,
-        "endTime": 90.58,
+        "time": 91.89,
+        "endTime": 96.59,
         "text": "I think about a flame and watch the pipe begin to glow"
       },
       {
-        "time": 90.76,
-        "endTime": 96.96,
+        "time": 96.59,
+        "endTime": 100.95,
         "text": "the Dragon has no fire left, and that is how I know"
       },
       {
-        "time": 97.38,
-        "endTime": 99.78,
+        "time": 103.45,
+        "endTime": 104.95,
         "text": "I am free"
       },
       {
-        "time": 101.46,
-        "endTime": 102.06,
+        "time": 104.95,
+        "endTime": 106.82,
         "text": "not because I won"
       },
       {
-        "time": 103.48,
-        "endTime": 105.14,
+        "time": 106.82,
+        "endTime": 109.8,
         "text": "not because the Dark is sealed"
       },
       {
-        "time": 105.42,
-        "endTime": 108.02,
+        "time": 109.8,
+        "endTime": 113.16,
         "text": "but because the Wheel is done with me"
       },
       {
-        "time": 108.48,
-        "endTime": 110.18,
+        "time": 113.16,
+        "endTime": 115.4,
         "text": "and I am done with it"
       },
       {
-        "time": 110.56,
-        "endTime": 114.12,
+        "time": 115.4,
+        "endTime": 120.62,
         "text": "I held the morning once, I do not need to hold it now"
       },
       {
-        "time": 114.4,
-        "endTime": 118.14,
+        "time": 120.62,
+        "endTime": 126.97,
         "text": "I loved across a thousand lives and finally learned how"
       },
       {
-        "time": 118.54,
-        "endTime": 122.06,
+        "time": 126.97,
+        "endTime": 131.82,
         "text": "not by gripping tighter but by opening the hand"
       },
       {
-        "time": 122.92,
-        "endTime": 127.04,
+        "time": 131.82,
+        "endTime": 136.67,
         "text": "the Dragon was a title and I am just a man"
       },
       {
-        "time": 127.34,
-        "endTime": 131.58,
+        "time": 138.67,
+        "endTime": 144.2,
         "text": "the full prophecy, assembled across eight tracks, complete:"
       },
       {
-        "time": 132.78,
-        "endTime": 134.56,
+        "time": 144.2,
+        "endTime": 147.75,
         "text": "Born on the slopes of Dragonmount"
       },
       {
-        "time": 135.24,
-        "endTime": 136.62,
+        "time": 147.75,
+        "endTime": 150.12,
         "text": "born of the ancient blood"
       },
       {
-        "time": 137.08,
-        "endTime": 138.48,
+        "time": 150.12,
+        "endTime": 152.49,
         "text": "raised by the old blood"
       },
       {
-        "time": 138.62,
-        "endTime": 142.74,
+        "time": 152.49,
+        "endTime": 158.02,
         "text": "according to prophecy, according to the Dragon"
       },
       {
-        "time": 144.04,
-        "endTime": 148,
+        "time": 158.02,
+        "endTime": 160.79,
         "text": "he shall hold a blade of light"
       },
       {
-        "time": 148.18,
-        "endTime": 149.96,
+        "time": 160.79,
+        "endTime": 163.16,
         "text": "and the land shall be one"
       },
       {
-        "time": 150.32,
-        "endTime": 152.4,
+        "time": 163.16,
+        "endTime": 166.32,
         "text": "and he shall break the world again"
       },
       {
-        "time": 152.64,
-        "endTime": 157.62,
+        "time": 166.32,
+        "endTime": 173.04,
         "text": "by his coming, the world is saved, and broken, and saved again"
       },
       {
-        "time": 160.28,
-        "endTime": 172.3,
+        "time": 173.04,
+        "endTime": 177.38,
         "text": "the Wheel turns. the wind rises. he walks away."
       }
     ]
   }
 };
 
-window.lyricsTimings["duty-heavier-than-a-mountain"] = {
-  "The Last Malkieri": {
+window.lyricsTimings["amyrlins-fire"] = {
+  "Innkeeper's Daughter": {
     "lines": [
       {
-        "time": 11.46,
-        "endTime": 17.64,
-        "text": "Born in fire, kingdom gone"
+        "time": 1,
+        "endTime": 9.62,
+        "text": "The Winespring Inn smelled like barley and my father's quiet pride,"
       },
       {
-        "time": 17.64,
-        "endTime": 23.82,
-        "text": "Carried out before the dawn"
+        "time": 9.62,
+        "endTime": 18.24,
+        "text": "he polished every table like the wood itself could hide"
       },
       {
-        "time": 23.82,
-        "endTime": 30,
-        "text": "A crown of ash upon my head"
-      },
-      {
-        "time": 30,
-        "endTime": 36.18,
-        "text": "Last son of the Malkieri dead"
-      },
-      {
-        "time": 36.18,
-        "endTime": 42.36,
-        "text": "They taught me steel before they taught me words"
-      },
-      {
-        "time": 42.36,
-        "endTime": 48.54,
-        "text": "A blade speaks louder than a prayer unheard"
-      },
-      {
-        "time": 48.54,
-        "endTime": 54.72,
-        "text": "The blight took everything I was"
-      },
-      {
-        "time": 54.72,
-        "endTime": 60.9,
-        "text": "Now I walk because a dead man does"
-      },
-      {
-        "time": 60.9,
-        "endTime": 67.08,
-        "text": "I am the last, the final wall"
-      },
-      {
-        "time": 67.08,
-        "endTime": 70.66,
-        "text": "When Malkier fell I swore to fall"
-      },
-      {
-        "time": 73.18,
-        "endTime": 77.7,
-        "text": "No home, no throne, just open road"
-      },
-      {
-        "time": 78.72,
-        "endTime": 82.16,
-        "text": "A dead man carrying his load"
-      },
-      {
-        "time": 84.32,
-        "endTime": 87.54,
-        "text": "Seven towers burned to black"
-      },
-      {
-        "time": 89.6,
-        "endTime": 93.44,
-        "text": "A thousand years won't bring them back"
-      },
-      {
-        "time": 94.96,
-        "endTime": 99.18,
-        "text": "But every shadow that I cleave"
-      },
-      {
-        "time": 101.32,
-        "endTime": 104.18,
-        "text": "Is one more debt the darkness leaves"
-      },
-      {
-        "time": 108.7,
-        "endTime": 113.62,
-        "text": "Last of the bloodline, last of the name"
-      },
-      {
-        "time": 115.26,
-        "endTime": 119.2,
-        "text": "Walking through ruin, walking through flame"
-      },
-      {
-        "time": 120.56,
-        "endTime": 124.6,
-        "text": "Malkier is gone but I remain"
-      },
-      {
-        "time": 126,
-        "endTime": 130.32,
-        "text": "The last Malkieri, born from pain"
-      }
-    ]
-  },
-  "The Bond": {
-    "lines": [
-      {
-        "time": 7.16,
-        "endTime": 11.94,
-        "text": "She put her hand upon my soul"
-      },
-      {
-        "time": 17.74,
-        "endTime": 22.28,
-        "text": "And pulled the thread that made me whole"
-      },
-      {
-        "time": 26.62,
-        "endTime": 31.2,
-        "text": "I fought it harder than any blade"
-      },
-      {
-        "time": 34.86,
-        "endTime": 41.14,
-        "text": "But the bond was already made"
-      },
-      {
-        "time": 44.2,
-        "endTime": 49.34,
-        "text": "I wanted nothing but the grave"
-      },
-      {
-        "time": 51.62,
-        "endTime": 57.06,
-        "text": "She gave me something I could save"
-      },
-      {
-        "time": 60.74,
-        "endTime": 65.76,
-        "text": "A thread of gold inside my chest"
-      },
-      {
-        "time": 71.72,
-        "endTime": 75.32,
-        "text": "That would not let me rest"
-      },
-      {
-        "time": 76.2,
-        "endTime": 79.24,
-        "text": "The bond runs deeper than the steel"
-      },
-      {
-        "time": 79.24,
-        "endTime": 82.29,
-        "text": "It shows me what I cannot feel"
-      },
-      {
-        "time": 82.29,
-        "endTime": 85.33,
-        "text": "I spent a lifetime learning how to die"
-      },
-      {
-        "time": 85.33,
-        "endTime": 88.38,
-        "text": "She taught me reasons not to try"
-      },
-      {
-        "time": 88.38,
-        "endTime": 91.42,
-        "text": "I feel her anger like a storm"
-      },
-      {
-        "time": 91.42,
-        "endTime": 93.8,
-        "text": "I feel her heartbeat keeping warm"
-      },
-      {
-        "time": 93.96,
-        "endTime": 96.96,
-        "text": "The coldest places I have been"
-      },
-      {
-        "time": 138.4,
-        "endTime": 145.58,
-        "text": "She reaches through and pulls me in"
-      },
-      {
-        "time": 149.32,
-        "endTime": 153.64,
-        "text": "I broke my sword upon the stone"
-      },
-      {
-        "time": 154.38,
-        "endTime": 158.76,
-        "text": "I swore to walk this road alone"
-      },
-      {
-        "time": 159.08,
-        "endTime": 167.84,
-        "text": "But the bond won't let me fall that far"
-      },
-      {
-        "time": 169,
-        "endTime": 175.6,
-        "text": "She is my open wound, my scar"
-      }
-    ]
-  },
-  "Sheathing the Sword": {
-    "lines": [
-      {
-        "time": 8.82,
-        "endTime": 10.04,
-        "text": "There is a place beyond the fear"
-      },
-      {
-        "time": 22.68,
-        "endTime": 27.38,
-        "text": "Where every cut becomes clear"
-      },
-      {
-        "time": 29.1,
-        "endTime": 32.08,
-        "text": "You let the blade pass through your guard"
-      },
-      {
-        "time": 34.04,
-        "endTime": 37.54,
-        "text": "And trade your flesh for killing hard"
-      },
-      {
-        "time": 53.42,
-        "endTime": 56.24,
-        "text": "They call it sheathing of the sword"
-      },
-      {
-        "time": 57.98,
-        "endTime": 65.54,
-        "text": "To die and strike in one accord"
-      },
-      {
-        "time": 65.54,
-        "endTime": 72.14,
-        "text": "No flinch, no mercy, no retreat"
-      },
-      {
-        "time": 73.18,
-        "endTime": 76.84,
-        "text": "Just blood on stone beneath your feet"
-      },
-      {
-        "time": 76.88,
-        "endTime": 81.1,
-        "text": "Sheathing the sword, embracing the end"
-      },
-      {
-        "time": 81.88,
-        "endTime": 85.96,
-        "text": "Taking the wound that no one can mend"
-      },
-      {
-        "time": 86.86,
-        "endTime": 90.6,
-        "text": "To kill the thing that cannot be killed"
-      },
-      {
-        "time": 91.54,
-        "endTime": 94.26,
-        "text": "You let your own blood be spilled"
-      },
-      {
-        "time": 98.74,
-        "endTime": 101.7,
-        "text": "I learned this lesson long ago"
-      },
-      {
-        "time": 103.62,
-        "endTime": 106.3,
-        "text": "The dead have nothing left to owe"
-      },
-      {
-        "time": 108.34,
-        "endTime": 111.1,
-        "text": "When you accept the final cost"
-      },
-      {
-        "time": 113.24,
-        "endTime": 116.24,
-        "text": "Then nothing else can be lost"
-      },
-      {
-        "time": 149.2,
-        "endTime": 153,
-        "text": "Steel meets steel and flesh meets fate"
-      },
-      {
-        "time": 153.66,
-        "endTime": 158.46,
-        "text": "I step beyond the final gate"
-      },
-      {
-        "time": 158.9,
-        "endTime": 162.56,
-        "text": "The sword goes home, the body falls"
-      },
-      {
-        "time": 162.84,
-        "endTime": 170.06,
-        "text": "But the enemy falls with me through these walls"
-      }
-    ]
-  },
-  "Nynaeve": {
-    "lines": [
-      {
-        "time": 6.22,
-        "endTime": 10.82,
-        "text": "She came at me with fire and thorns"
-      },
-      {
-        "time": 13.2,
-        "endTime": 18.02,
-        "text": "A village girl who would not mourn"
-      },
-      {
-        "time": 20.3,
-        "endTime": 25.1,
-        "text": "She grabbed my collar, called me fool"
-      },
-      {
-        "time": 27.38,
-        "endTime": 32.2,
-        "text": "Broke every single one of my rules"
-      },
-      {
-        "time": 34.46,
-        "endTime": 39.46,
-        "text": "I built these walls with iron and time"
-      },
-      {
-        "time": 42.1,
-        "endTime": 46.78,
-        "text": "She walked right through them, paid no mind"
-      },
-      {
-        "time": 49.2,
-        "endTime": 53.86,
-        "text": "A healer with her stubborn hands"
-      },
-      {
-        "time": 55.98,
-        "endTime": 60.86,
-        "text": "Who somehow made a dead man stand"
-      },
-      {
-        "time": 66.68,
-        "endTime": 68.18,
-        "text": "Nynaeve, you pulled the arrow out"
-      },
-      {
-        "time": 71.08,
-        "endTime": 75.46,
-        "text": "Nynaeve, you silenced every doubt"
-      },
-      {
-        "time": 77.52,
-        "endTime": 82.4,
-        "text": "I was a weapon with no sheath"
-      },
-      {
-        "time": 84.98,
-        "endTime": 89.24,
-        "text": "You gave me something underneath"
-      },
-      {
-        "time": 92.04,
-        "endTime": 96.8,
-        "text": "I do not deserve this gentle thing"
-      },
-      {
-        "time": 99.78,
-        "endTime": 103.96,
-        "text": "This warmth that makes the winter sing"
-      },
-      {
-        "time": 106.36,
-        "endTime": 111.18,
-        "text": "But she would burn the world to coal"
-      },
-      {
-        "time": 113.48,
-        "endTime": 118.24,
-        "text": "Before she let me lose my soul"
-      },
-      {
-        "time": 120.68,
-        "endTime": 125.32,
-        "text": "For every battle I have bled"
-      },
-      {
-        "time": 127.78,
-        "endTime": 132.62,
-        "text": "For every oath carved in my head"
-      },
-      {
-        "time": 134.9,
-        "endTime": 139.86,
-        "text": "There is one truth I finally see"
-      },
-      {
-        "time": 141.82,
-        "endTime": 146.82,
-        "text": "She is worth more than death to me"
-      }
-    ]
-  },
-  "Alone": {
-    "lines": [
-      {
-        "time": 1.52,
-        "endTime": 5.38,
-        "text": "I ride alone through empty lands"
-      },
-      {
-        "time": 8.9,
-        "endTime": 12.58,
-        "text": "With bloodied knees and broken hands"
-      },
-      {
-        "time": 16.28,
-        "endTime": 19.86,
-        "text": "The shadow stretches long behind"
-      },
-      {
-        "time": 23.18,
-        "endTime": 27.24,
-        "text": "No company of any kind"
-      },
-      {
-        "time": 43.52,
-        "endTime": 49.2,
-        "text": "They follow sometimes, young and brave"
-      },
-      {
-        "time": 50.76,
-        "endTime": 55.78,
-        "text": "I send them back, I will not pave"
-      },
-      {
-        "time": 57.96,
-        "endTime": 63.24,
-        "text": "A road of bones for other men"
-      },
-      {
-        "time": 65.26,
-        "endTime": 74.88,
-        "text": "I walk alone and will again"
-      },
-      {
-        "time": 75,
-        "endTime": 79.02,
-        "text": "Alone, the way it has to be"
-      },
-      {
-        "time": 81.08,
-        "endTime": 86.48,
-        "text": "No army standing next to me"
-      },
-      {
-        "time": 88.4,
-        "endTime": 92.86,
-        "text": "One man against the rising dark"
-      },
-      {
-        "time": 95.64,
-        "endTime": 100.24,
-        "text": "One flickering and stubborn spark"
-      },
-      {
-        "time": 103.1,
-        "endTime": 107.74,
-        "text": "The silence is a heavy friend"
-      },
-      {
-        "time": 110.7,
-        "endTime": 115.22,
-        "text": "It walks beside me to the end"
-      },
-      {
-        "time": 117.78,
-        "endTime": 122.34,
-        "text": "No songs, no banners, no parade"
-      },
-      {
-        "time": 124.74,
-        "endTime": 129.54,
-        "text": "Just one man and his rusted blade"
-      },
-      {
-        "time": 130.38,
-        "endTime": 132.98,
-        "text": "I chose this road before the dawn"
-      },
-      {
-        "time": 132.98,
-        "endTime": 136.48,
-        "text": "I chose to keep on moving on"
-      },
-      {
-        "time": 147.99,
-        "endTime": 150.99,
-        "text": "Alone beneath the blackened sky"
-      },
-      {
-        "time": 163.01,
-        "endTime": 166.51,
-        "text": "One man who never learned to cry"
-      }
-    ]
-  },
-  "The Golden Crane": {
-    "lines": [
-      {
-        "time": 9.82,
-        "endTime": 13.38,
-        "text": "I raised the banner in the square"
-      },
-      {
-        "time": 14.9,
-        "endTime": 21.3,
-        "text": "The golden crane upon the air"
-      },
-      {
-        "time": 22.94,
-        "endTime": 30.94,
-        "text": "A dead flag for a dead nation"
-      },
-      {
-        "time": 31.9,
-        "endTime": 36.12,
-        "text": "One final desperate declaration"
-      },
-      {
-        "time": 41.24,
-        "endTime": 47.68,
-        "text": "They came from farmsteads, came from towns"
-      },
-      {
-        "time": 49.22,
-        "endTime": 55.44,
-        "text": "Put down their plows and picked up crowns"
-      },
-      {
-        "time": 57.46,
-        "endTime": 64.38,
-        "text": "Men who never held a sword"
-      },
-      {
-        "time": 66.18,
-        "endTime": 73.06,
-        "text": "Answered to a dead king's word"
-      },
-      {
-        "time": 77.1,
-        "endTime": 84.32,
-        "text": "The golden crane flies for Tarmon Gaidon"
-      },
-      {
-        "time": 86.44,
-        "endTime": 92.64,
-        "text": "Malkier rides though Malkier is gone"
-      },
-      {
-        "time": 92.64,
-        "endTime": 99.6,
-        "text": "A hundred, then a thousand strong"
-      },
-      {
-        "time": 101.98,
-        "endTime": 107.06,
-        "text": "The dead march where the dead belong"
-      },
-      {
-        "time": 110.04,
-        "endTime": 117.42,
-        "text": "I never asked them for their lives"
-      },
-      {
-        "time": 117.92,
-        "endTime": 124.48,
-        "text": "Their children and their weeping wives"
-      },
-      {
-        "time": 125.8,
-        "endTime": 133.68,
-        "text": "But they came, they came, they came"
-      },
-      {
-        "time": 133.82,
-        "endTime": 140.44,
-        "text": "Shouting out my father's name"
-      },
-      {
-        "time": 141.1,
-        "endTime": 148.42,
-        "text": "The golden crane against the night"
-      },
-      {
-        "time": 149.2,
-        "endTime": 157.08,
-        "text": "One final charge into the fight"
-      },
-      {
-        "time": 158.62,
-        "endTime": 163.64,
-        "text": "Malkier lives in every man"
-      },
-      {
-        "time": 165.9,
-        "endTime": 179.98,
-        "text": "Who rides behind Lan Mandragoran"
-      }
-    ]
-  },
-  "Demandred": {
-    "lines": [
-      {
-        "time": 22.5,
-        "endTime": 24.8,
-        "text": "He stands across the field of blood"
-      },
-      {
-        "time": 26.44,
-        "endTime": 30.74,
-        "text": "A god of war, a burning flood"
-      },
-      {
-        "time": 32.34,
-        "endTime": 36.7,
-        "text": "Ten thousand years of hate compressed"
-      },
-      {
-        "time": 38.26,
-        "endTime": 42.8,
-        "text": "Into the blade against my chest"
-      },
-      {
-        "time": 50.56,
-        "endTime": 54.18,
-        "text": "He wanted Lews Therin's head"
-      },
-      {
-        "time": 56.34,
-        "endTime": 60.36,
-        "text": "He got a shepherd boy instead"
-      },
-      {
-        "time": 62.26,
-        "endTime": 66.58,
-        "text": "And now he gets a broken king"
-      },
-      {
-        "time": 68.2,
-        "endTime": 72.66,
-        "text": "With nothing left but one last swing"
-      },
-      {
-        "time": 80.18,
-        "endTime": 83.64,
-        "text": "Come, Demandred, face the last"
-      },
-      {
-        "time": 84.08,
-        "endTime": 89.34,
-        "text": "A mortal man against the vast"
-      },
-      {
-        "time": 90.28,
-        "endTime": 95.36,
-        "text": "You wanted glory, wanted fame"
-      },
-      {
-        "time": 96.1,
-        "endTime": 101.4,
-        "text": "You got a dead man with no name"
-      },
-      {
-        "time": 102.28,
-        "endTime": 107.5,
-        "text": "He is faster, he is strong"
-      },
-      {
-        "time": 108.14,
-        "endTime": 113.72,
-        "text": "He has waited far too long"
-      },
-      {
-        "time": 114.24,
-        "endTime": 119.34,
-        "text": "But I have something he has not"
-      },
-      {
-        "time": 119.98,
-        "endTime": 126.44,
-        "text": "I have already given all I got"
-      },
-      {
-        "time": 132.36,
-        "endTime": 137.48,
-        "text": "Steel on steel the mountains shake"
-      },
-      {
-        "time": 138.18,
-        "endTime": 143.3,
-        "text": "One of us will finally break"
-      },
-      {
-        "time": 144.02,
-        "endTime": 149.36,
-        "text": "I sheathe the sword one final time"
-      },
-      {
-        "time": 149.96,
-        "endTime": 156.48,
-        "text": "And Demandred falls with me in the grime"
-      }
-    ]
-  },
-  "Duty Done": {
-    "lines": [
-      {
-        "time": 10.06,
-        "endTime": 13.36,
-        "text": "The field is quiet, smoke and dust"
-      },
-      {
-        "time": 14.32,
-        "endTime": 17.78,
-        "text": "My blade is red with blood and rust"
-      },
-      {
-        "time": 18.64,
-        "endTime": 22.44,
-        "text": "The shadow broke against the dawn"
-      },
-      {
-        "time": 23.04,
+        "time": 18.24,
         "endTime": 26.86,
-        "text": "And somehow I am not yet gone"
+        "text": "the smallness of the world he built between the river and the road."
       },
       {
-        "time": 54.38,
-        "endTime": 57.9,
-        "text": "She found me in the trampled mud"
+        "time": 26.86,
+        "endTime": 36.55,
+        "text": "I served the ale and smiled and swept and carried every load."
       },
       {
-        "time": 58.68,
-        "endTime": 62.22,
-        "text": "Her golden light burned through the blood"
+        "time": 36.55,
+        "endTime": 45.71,
+        "text": "But something in the Women's Circle whispers made me lean too close,"
       },
       {
-        "time": 63.06,
-        "endTime": 67.08,
-        "text": "Her hands upon my shattered frame"
+        "time": 45.71,
+        "endTime": 54.87,
+        "text": "the stories about channeling, about the ones the Tower chose."
       },
       {
-        "time": 67.98,
-        "endTime": 71.04,
-        "text": "Whispering my forgotten name"
+        "time": 56.87,
+        "endTime": 64.05,
+        "text": "I was not the mayor's daughter, not the Wisdom with her braid,"
       },
       {
-        "time": 90.78,
-        "endTime": 91.47,
-        "text": "Duty done, the mountain moved"
+        "time": 64.05,
+        "endTime": 71.74,
+        "text": "just the innkeeper's girl with steady hands who was not afraid."
       },
       {
-        "time": 91.47,
-        "endTime": 92.16,
-        "text": "Nothing left I need to prove"
+        "time": 71.74,
+        "endTime": 78.93,
+        "text": "But underneath the hearthstone and the Bel Tine lantern light,"
       },
       {
-        "time": 92.16,
-        "endTime": 92.86,
-        "text": "Heavier than a mountain's weight"
+        "time": 78.93,
+        "endTime": 87.13,
+        "text": "I could feel a river pulling me beyond the Waterwood at night."
       },
       {
-        "time": 92.86,
-        "endTime": 93.55,
-        "text": "Lighter now beyond the gate"
+        "time": 88.63,
+        "endTime": 97.25,
+        "text": "Rand was looking at the sky like it owed him something vast,"
       },
       {
-        "time": 93.55,
-        "endTime": 94.24,
-        "text": "I carried it from Malkier's fall"
-      },
-      {
-        "time": 94.24,
-        "endTime": 97.84,
-        "text": "Through every fight, through every wall"
-      },
-      {
-        "time": 98.8,
-        "endTime": 102.36,
-        "text": "The duty heavier than stone"
-      },
-      {
-        "time": 103.26,
-        "endTime": 106.26,
-        "text": "I never had to bear alone"
-      },
-      {
-        "time": 176.86,
-        "endTime": 177.36,
-        "text": "The golden crane rests on the field"
-      },
-      {
-        "time": 177.1,
-        "endTime": 179.82,
-        "text": "The sword is down, the wounds are healed"
-      },
-      {
-        "time": 179.82,
-        "endTime": 180.32,
-        "text": "A dead man finally learns to breathe"
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "With nothing heavier left to grieve"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["nynaeve-al-meara"] = {
-  "Wisdom's Daughter": {
-    "lines": [
-      {
-        "time": 22.74,
-        "endTime": 26.8,
-        "text": "They put the staff in my hands before I learned to hold my tongue"
-      },
-      {
-        "time": 27.62,
-        "endTime": 31.78,
-        "text": "Said you are the Wisdom now like it was something I had won"
-      },
-      {
-        "time": 32.9,
-        "endTime": 37.16,
-        "text": "But I was just a girl who knew which herbs could stop the bleeding"
-      },
-      {
-        "time": 37.76,
-        "endTime": 42.36,
-        "text": "While the village looked to me for answers I was never given"
-      },
-      {
-        "time": 46.78,
-        "endTime": 54.9,
-        "text": "Wisdom's daughter, carrying the weight of every door"
-      },
-      {
-        "time": 57,
-        "endTime": 65.08,
-        "text": "That opened onto grief and asked me please to find the cure"
-      },
-      {
-        "time": 67.94,
-        "endTime": 74.02,
-        "text": "Wisdom's daughter, younger than the trust they placed in me"
-      },
-      {
-        "time": 76.62,
-        "endTime": 87.6,
-        "text": "I wore the title like a shield nobody else could see"
-      },
-      {
-        "time": 87.6,
-        "endTime": 91.7,
-        "text": "The Women's Circle watched with knives behind their patient smiles"
-      },
-      {
-        "time": 92.64,
-        "endTime": 96.48,
-        "text": "Daise Congar counting every stumble, cataloguing trials"
-      },
-      {
-        "time": 97.24,
-        "endTime": 101.64,
-        "text": "But I learned the roots, the poultices, the way to set a bone"
-      },
-      {
-        "time": 102.36,
-        "endTime": 108.62,
-        "text": "I learned to keep my back straight even standing all alone"
-      },
-      {
-        "time": 110.1,
-        "endTime": 114.5,
-        "text": "Something moved inside me when the fever wouldn't break"
-      },
-      {
-        "time": 115.04,
-        "endTime": 119.36,
-        "text": "A warmth I couldn't name, a river I was scared to take"
-      },
-      {
-        "time": 119.86,
-        "endTime": 124.96,
-        "text": "I called it stubbornness, called it will, called it anything but true"
-      },
-      {
-        "time": 125.76,
-        "endTime": 130.98,
-        "text": "The Power was already mine \u2014 I just never knew"
-      },
-      {
-        "time": 160.86,
-        "endTime": 165.98,
-        "text": "They needed me before I needed them"
-      },
-      {
-        "time": 165.98,
-        "endTime": 177.62,
-        "text": "So I became the answer to the question"
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "No one thought to ask"
-      }
-    ]
-  },
-  "Pull My Braid": {
-    "lines": [
-      {
-        "time": 0.76,
-        "endTime": 6.14,
-        "text": "You think this anger is a flaw, something to be tamed"
-      },
-      {
-        "time": 6.9,
-        "endTime": 14.22,
-        "text": "Every man who ever flinched just proved I wasn't playing games"
-      },
-      {
-        "time": 14.92,
-        "endTime": 21.12,
-        "text": "I learned to bite before I walked, to snarl before I spoke"
-      },
-      {
-        "time": 21.78,
-        "endTime": 27.98,
-        "text": "The braid is just a rope I use to keep from going broke"
-      },
-      {
-        "time": 28.68,
-        "endTime": 39.38,
-        "text": "Pull my braid and watch what happens when the line goes taut"
-      },
-      {
-        "time": 39.38,
-        "endTime": 43.38,
-        "text": "I am every lesson that was never gently taught"
-      },
-      {
-        "time": 43.58,
-        "endTime": 50.62,
-        "text": "Pull my braid, go on, I dare you, see how far it bends"
-      },
-      {
-        "time": 53.6,
-        "endTime": 59.88,
-        "text": "The fury isn't weakness \u2014 it's the thing that never ends"
-      },
-      {
-        "time": 73.56,
-        "endTime": 74.06,
-        "text": "Moiraine with her Aes Sedai calm, her measured little plans"
-      },
-      {
-        "time": 73.56,
-        "endTime": 79.68,
-        "text": "She thinks composure is a virtue \u2014 I think it's just a brand"
-      },
-      {
-        "time": 84.62,
-        "endTime": 85.12,
-        "text": "Egwene outgrew me, Elayne was born already crowned"
-      },
-      {
-        "time": 84.86,
-        "endTime": 92.32,
-        "text": "But I'm still standing in the dirt with both feet on the ground"
-      },
-      {
-        "time": 97.22,
-        "endTime": 103.04,
-        "text": "They say surrender and I hear a cage"
-      },
-      {
-        "time": 104.6,
-        "endTime": 110.26,
-        "text": "They say let go and all I feel is rage"
-      },
-      {
-        "time": 111.82,
-        "endTime": 117.68,
-        "text": "Maybe the anger is the only honest thing I've got"
-      },
-      {
-        "time": 120.84,
-        "endTime": 127.06,
-        "text": "The only part of me that never learned to rot"
-      },
-      {
-        "time": 129.54,
-        "endTime": 132.3,
-        "text": "So pull it, go ahead"
-      },
-      {
-        "time": 132.98,
-        "endTime": 136.22,
-        "text": "I've been angry since the cradle"
-      },
-      {
-        "time": 136.58,
-        "endTime": 141.98,
-        "text": "And I'll be angry when I'm dead"
-      }
-    ]
-  },
-  "The Blight": {
-    "lines": [
-      {
-        "time": 0.32,
-        "endTime": 6.98,
-        "text": "The trees were wrong before I saw them \u2014 twisted, screaming green"
-      },
-      {
-        "time": 8.06,
-        "endTime": 14.54,
-        "text": "The air tasted like a wound that no one thought to clean"
-      },
-      {
-        "time": 16.56,
-        "endTime": 23.16,
-        "text": "He rode ahead like dying was a schedule he was keeping"
-      },
-      {
-        "time": 23.8,
-        "endTime": 31.22,
-        "text": "And I walked behind him hating every second he was breathing"
-      },
-      {
-        "time": 32.16,
-        "endTime": 37.56,
-        "text": "In the Blight where nothing grows except the things that kill"
-      },
-      {
-        "time": 40.48,
-        "endTime": 46.5,
-        "text": "I found the only truth I had and swallowed it like a pill"
-      },
-      {
-        "time": 46.74,
-        "endTime": 54.34,
-        "text": "He doesn't look at me, he looks through me, past me, to the grave"
-      },
-      {
-        "time": 55.04,
-        "endTime": 63.5,
-        "text": "And I am furious that loving him is all I want to save"
-      },
-      {
-        "time": 80.8,
-        "endTime": 86.5,
-        "text": "Lan with his stone face, his duty and his death wish on a leash"
-      },
-      {
-        "time": 87.04,
-        "endTime": 95.06,
-        "text": "I wanted to grab his collar and tell him he was worth more than the breach"
-      },
-      {
-        "time": 96.12,
-        "endTime": 102.9,
-        "text": "But you don't say those things when the ground is trying to eat you"
-      },
-      {
-        "time": 103.64,
-        "endTime": 111.5,
-        "text": "So I held my tongue and let the Blight teach me what silence cost"
-      },
-      {
-        "time": 114.62,
-        "endTime": 118.94,
-        "text": "Somewhere between the poisoned ground and sky"
-      },
-      {
-        "time": 118.94,
-        "endTime": 123.5,
-        "text": "I stopped pretending I was only angry"
-      },
-      {
-        "time": 124.1,
-        "endTime": 127.02,
-        "text": "And started wondering why"
-      },
-      {
-        "time": 128.04,
-        "endTime": 131.68,
-        "text": "His shoulders carried all that weight"
-      },
-      {
-        "time": 133.04,
-        "endTime": 135.46,
-        "text": "Without a single crack"
-      },
-      {
-        "time": 137.18,
-        "endTime": 139.72,
-        "text": "The Blight showed me something worse than any Trolloc horde"
-      },
-      {
-        "time": 139.72,
-        "endTime": 147.22,
-        "text": "That I would cross a dying land for a man who wouldn't cross a word"
-      }
-    ]
-  },
-  "I Will Not Break": {
-    "lines": [
-      {
-        "time": 31,
-        "endTime": 34.92,
-        "text": "The collar closed around my throat and the world went very small"
-      },
-      {
-        "time": 34.92,
-        "endTime": 39.58,
-        "text": "Every breath belonged to someone else, every thought against a wall"
-      },
-      {
-        "time": 39.58,
-        "endTime": 44,
-        "text": "They called it training, called it purpose, called it being made complete"
-      },
-      {
-        "time": 52,
-        "endTime": 57.77,
-        "text": "I called it drowning with my lungs still full, still standing on my feet"
-      },
-      {
-        "time": 57.77,
-        "endTime": 62.52,
-        "text": "I will not break, I will not bend, I will not learn to kneel"
-      },
-      {
-        "time": 62.52,
-        "endTime": 68.29,
-        "text": "You can take the Power from my hands but you can't take the way I feel"
-      },
-      {
-        "time": 68.29,
-        "endTime": 72.71,
-        "text": "Chain me to the floor and watch me memorize the lock"
-      },
-      {
-        "time": 72.71,
-        "endTime": 76.78,
-        "text": "I will not break \u2014 I am the thing you cannot stop"
-      },
-      {
-        "time": 76.78,
-        "endTime": 82.55,
-        "text": "The sul'dam smiled like she was patient, like I was a child to teach"
-      },
-      {
-        "time": 82.55,
-        "endTime": 89,
-        "text": "Like obedience was a river I would learn if she just widened the reach"
-      },
-      {
-        "time": 106,
-        "endTime": 113.34,
-        "text": "But every time the a'dam pulsed I bit down on the pain"
-      },
-      {
-        "time": 113.34,
-        "endTime": 121.14,
-        "text": "Filed the edges of my fury into something I'd reclaim"
-      },
-      {
-        "time": 121.14,
-        "endTime": 127.56,
-        "text": "There is a place inside me where the leash does not arrive"
-      },
-      {
-        "time": 127.56,
-        "endTime": 134.9,
-        "text": "A room with no door, no window, just the stubborn fact I'm alive"
-      },
-      {
-        "time": 134.9,
-        "endTime": 143.16,
-        "text": "They can collar every woman from the shore to the Spine of the World"
-      },
-      {
-        "time": 143.16,
-        "endTime": 148.66,
-        "text": "But they will never cage the storm inside this girl"
-      },
-      {
-        "time": 148.66,
-        "endTime": 150.5,
-        "text": "I will not break"
-      },
-      {
-        "time": 150.5,
-        "endTime": 152.33,
-        "text": "Say it again"
-      },
-      {
-        "time": 152.33,
-        "endTime": 154.17,
-        "text": "I will not break"
-      },
-      {
-        "time": 154.17,
-        "endTime": 156,
-        "text": "I will not break"
-      }
-    ]
-  },
-  "Yellow Sister": {
-    "lines": [
-      {
-        "time": 5.2,
-        "endTime": 18.7,
-        "text": "The sickness came in colors I could almost taste but couldn't name"
-      },
-      {
-        "time": 18.7,
-        "endTime": 31.78,
-        "text": "Yellow thread, gold thread, light thread \u2014 none of them the same"
-      },
-      {
-        "time": 31.78,
-        "endTime": 45,
-        "text": "They said surrender to the Power, let it flow, don't try to guide"
-      },
-      {
-        "time": 45,
-        "endTime": 58.08,
-        "text": "But every time I opened up I felt the current pull like tide"
-      },
-      {
-        "time": 58.08,
-        "endTime": 63.92,
-        "text": "Yellow sister, hands that mend what war has torn apart"
-      },
-      {
-        "time": 64.72,
-        "endTime": 70.78,
-        "text": "I'm learning that the healing doesn't start inside the art"
-      },
-      {
-        "time": 71.84,
-        "endTime": 77.68,
-        "text": "It starts inside the letting go, the exhale after years"
-      },
-      {
-        "time": 78.7,
-        "endTime": 84.1,
-        "text": "Of clenching every muscle against the weight of tears"
-      },
-      {
-        "time": 85.58,
-        "endTime": 93.08,
-        "text": "I watched a man die on the table while my block held like a dam"
-      },
-      {
-        "time": 102.64,
-        "endTime": 108.06,
-        "text": "The Power sat behind my anger waiting for me to understand"
-      },
-      {
-        "time": 114.98,
-        "endTime": 120.76,
-        "text": "That strength was never in the grip, the force, the iron will"
-      },
-      {
-        "time": 121.28,
-        "endTime": 127.8,
-        "text": "Strength was in the stillness at the center of the kill"
-      },
-      {
-        "time": 131.62,
-        "endTime": 138.04,
-        "text": "To heal you have to feel it \u2014 every wound you close"
-      },
-      {
-        "time": 138.44,
-        "endTime": 144.92,
-        "text": "Burns through your own body like a river through the rows"
-      },
-      {
-        "time": 145.58,
-        "endTime": 151.3,
-        "text": "I chose this path, the Yellow shawl, the mercy and the cost"
-      },
-      {
-        "time": 151.52,
-        "endTime": 158.66,
-        "text": "Because the only thing worth finding is the thing I almost lost"
-      },
-      {
-        "time": 160.38,
-        "endTime": 162.96,
-        "text": "Open hands, not fists"
-      },
-      {
-        "time": 163.78,
-        "endTime": 166.22,
-        "text": "That's what they kept telling me"
-      },
-      {
-        "time": 169.54,
-        "endTime": 178.3,
-        "text": "And maybe they were right"
-      }
-    ]
-  },
-  "He Is Mine": {
-    "lines": [
-      {
-        "time": 20.18,
-        "endTime": 25.48,
-        "text": "They told him he was already dead, a sword that walks toward its end"
-      },
-      {
-        "time": 26.12,
-        "endTime": 31.26,
-        "text": "And he believed them, every one, like grief was just a friend"
-      },
-      {
-        "time": 32.96,
-        "endTime": 39.16,
-        "text": "But I looked at this man, this wall, this stone-faced beautiful disaster"
-      },
-      {
-        "time": 39.44,
-        "endTime": 46.58,
-        "text": "And I decided that his ending answers to no master"
-      },
-      {
-        "time": 47.5,
-        "endTime": 54.58,
-        "text": "He is mine and I am saying this to every throne"
-      },
-      {
-        "time": 55.46,
-        "endTime": 60.68,
-        "text": "Every Aes Sedai who sealed his fate and left him on his own"
-      },
-      {
-        "time": 61.38,
-        "endTime": 67.84,
-        "text": "He is mine, I claimed him with a bond that cuts through bone"
-      },
-      {
-        "time": 68.24,
-        "endTime": 75.24,
-        "text": "And if the Blight wants him back it goes through me alone"
-      },
-      {
-        "time": 77.14,
-        "endTime": 79.12,
-        "text": "The warder bond was just a formality, a thread to match the chain"
-      },
-      {
-        "time": 79.12,
-        "endTime": 79.62,
-        "text": "Already wrapped around my chest the moment I first felt his pain"
-      },
-      {
-        "time": 79.12,
-        "endTime": 87.12,
-        "text": "Lan looked at me like I'd gone mad \u2014 maybe I had, maybe that's the point"
-      },
-      {
-        "time": 101.7,
-        "endTime": 106.9,
-        "text": "When you love a man sworn to die you either break or you anoint"
-      },
-      {
-        "time": 109.28,
-        "endTime": 114.98,
-        "text": "I am not gentle, I am not soft, I am not the queen he deserved"
-      },
-      {
-        "time": 115.9,
-        "endTime": 122.44,
-        "text": "I am the woman who grabbed his reins and said, you will be preserved"
-      },
-      {
-        "time": 122.44,
-        "endTime": 125.1,
-        "text": "Not because I asked, not because he wanted"
-      },
-      {
-        "time": 125.1,
-        "endTime": 131.6,
-        "text": "But because I am too stubborn to let death take what I've claimed"
-      },
-      {
-        "time": 142.74,
-        "endTime": 145.74,
-        "text": "He is mine"
-      },
-      {
-        "time": 160.38,
-        "endTime": 165.88,
-        "text": "And that is the last word anyone will hear on this"
-      }
-    ]
-  },
-  "Unbraided": {
-    "lines": [
-      {
-        "time": 7.76,
-        "endTime": 14.2,
-        "text": "Twenty years of rage as fuel, twenty years of fire as key"
-      },
-      {
-        "time": 16.34,
-        "endTime": 22.3,
-        "text": "Every weave I ever wove was lit by what was burning me"
-      },
-      {
-        "time": 24.72,
-        "endTime": 32.44,
-        "text": "They said the block would hold forever, said I'd always need the flame"
-      },
-      {
-        "time": 34.06,
-        "endTime": 40.24,
-        "text": "That Nynaeve without her anger was a woman without name"
-      },
-      {
-        "time": 42.32,
-        "endTime": 51.54,
-        "text": "Moghedien took the braid and cut it \u2014 no, that's wrong, I cut it too"
-      },
-      {
-        "time": 53.82,
-        "endTime": 60.64,
-        "text": "Somewhere in the drowning, in the water rising blue"
-      },
-      {
-        "time": 60.92,
-        "endTime": 69.62,
-        "text": "I felt the anger die like embers in a rain that wouldn't stop"
-      },
-      {
-        "time": 70.36,
-        "endTime": 77.18,
-        "text": "And underneath the fury, underneath the years on top"
-      },
-      {
-        "time": 78.86,
-        "endTime": 84.28,
-        "text": "There was a river"
-      },
-      {
-        "time": 85.86,
-        "endTime": 91.98,
-        "text": "Unbraided, unbound, the Power came like morning"
-      },
-      {
-        "time": 92.38,
-        "endTime": 100.7,
-        "text": "No rage required, no fury at the door"
-      },
-      {
-        "time": 100.96,
-        "endTime": 109.04,
-        "text": "Unbraided, I am the woman underneath the warning"
-      },
-      {
-        "time": 109.88,
-        "endTime": 118.04,
-        "text": "I am the healer who doesn't need the war"
-      },
-      {
-        "time": 118.66,
-        "endTime": 123.58,
-        "text": "The water filled my lungs and I stopped fighting it"
-      },
-      {
-        "time": 125.72,
-        "endTime": 130.16,
-        "text": "Stopped clenching, stopped resisting, stopped pretending that the grit"
-      },
-      {
-        "time": 130.6,
-        "endTime": 141.38,
-        "text": "Was all I had \u2014 because beneath the anger, past the wall"
-      },
-      {
-        "time": 143.78,
-        "endTime": 153.86,
-        "text": "There was a woman who was powerful enough to simply fall"
-      },
-      {
-        "time": 154.06,
-        "endTime": 164.68,
-        "text": "I let go"
-      },
-      {
-        "time": 164.68,
-        "endTime": 168.76,
-        "text": "And the river caught me"
-      },
-      {
-        "time": 169.92,
-        "endTime": 180,
-        "text": "Like it was always going to"
-      }
-    ]
-  },
-  "The River Does Not Ask": {
-    "lines": [
-      {
-        "time": 0.48,
-        "endTime": 7.02,
-        "text": "The braid is gone but I still reach for it some mornings in the dark"
-      },
-      {
-        "time": 9.92,
-        "endTime": 17.1,
-        "text": "Old armor leaves a phantom weight, a ghost of every mark"
-      },
-      {
-        "time": 19.18,
-        "endTime": 26.7,
-        "text": "I am not the girl who left the Two Rivers with her fists clenched at her side"
-      },
-      {
-        "time": 28.58,
-        "endTime": 35.96,
-        "text": "I am not the Wisdom anymore, but I have not lost my pride"
-      },
-      {
-        "time": 41.54,
-        "endTime": 47.32,
-        "text": "The river does not ask permission, it just flows"
-      },
-      {
-        "time": 49.58,
-        "endTime": 56.42,
-        "text": "Through the broken and the mended, through the doors nobody chose"
-      },
-      {
-        "time": 58.34,
-        "endTime": 66.14,
-        "text": "The river does not ask and neither do I, not anymore"
-      },
-      {
-        "time": 68.02,
-        "endTime": 77.46,
-        "text": "I am the current and the bank, the opening and the door"
-      },
-      {
-        "time": 83.64,
-        "endTime": 90.64,
-        "text": "Lan sleeps beside me now \u2014 still restless, still mapping wars in dreams"
-      },
-      {
-        "time": 92.58,
-        "endTime": 100.6,
-        "text": "But when he reaches for me in the dark he finds me, and that means"
-      },
-      {
-        "time": 101.96,
-        "endTime": 110.48,
-        "text": "More than any shawl or title or the deference of a queen"
-      },
-      {
-        "time": 113.6,
-        "endTime": 119.6,
-        "text": "I am Nynaeve al'Meara, and I am the strongest thing you've seen"
-      },
-      {
-        "time": 130.87,
-        "endTime": 133.69,
-        "text": "Not because I fight"
-      },
-      {
-        "time": 138.07,
-        "endTime": 141.81,
-        "text": "Not because I rage"
-      },
-      {
-        "time": 143.88,
-        "endTime": 147.73,
-        "text": "But because I learned to put the fury down"
-      },
-      {
-        "time": 150.66,
-        "endTime": 156.25,
-        "text": "And still turn the page"
-      },
-      {
-        "time": 156.91,
-        "endTime": 158.09,
-        "text": "The river does not ask"
-      },
-      {
-        "time": 158.09,
-        "endTime": 167.57,
-        "text": "It just moves"
-      },
-      {
-        "time": 169.77,
-        "endTime": 171.71,
-        "text": "And so do I"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["shadow-and-the-flame"] = {
-  "Elan Morin Tedronai": {
-    "lines": [
-      {
-        "time": 13.92,
-        "endTime": 17.4,
-        "text": "They called me philosopher before the world learned how to scream"
-      },
-      {
-        "time": 17.66,
-        "endTime": 21.3,
-        "text": "In the Age of Legends I was lauded, praised, revered for what I'd seen"
-      },
-      {
-        "time": 21.68,
-        "endTime": 24.86,
-        "text": "But every theorem led me closer to the fracture underneath"
-      },
-      {
-        "time": 25.16,
-        "endTime": 28.98,
-        "text": "The gleaming towers of Paaran Disen built on mathematics of deceit"
-      },
-      {
-        "time": 31.46,
-        "endTime": 35.26,
-        "text": "I could taste the entropy in every perfect garden wall"
-      },
-      {
-        "time": 38.1,
-        "endTime": 41.6,
-        "text": "Count the half-lives of their happiness before the coming fall"
-      },
-      {
-        "time": 42.22,
-        "endTime": 45.76,
-        "text": "The Aes Sedai wove channels through a Pattern fraying at the seam"
-      },
-      {
-        "time": 46.46,
-        "endTime": 49.44,
-        "text": "And I alone could hear the grinding underneath the dream"
-      },
-      {
-        "time": 49.86,
-        "endTime": 53.12,
-        "text": "Elan Morin Tedronai"
-      },
-      {
-        "time": 53.16,
-        "endTime": 53.76,
-        "text": "The name they spoke with such respect and admiration"
-      },
-      {
-        "time": 53.76,
-        "endTime": 56.26,
-        "text": "Before I showed them what their precious Pattern truly was"
-      },
-      {
-        "time": 57.38,
-        "endTime": 57.88,
-        "text": "A cage disguised as constellation"
-      },
-      {
-        "time": 57.5,
-        "endTime": 58.98,
-        "text": "Elan Morin Tedronai"
-      },
-      {
-        "time": 59.3,
-        "endTime": 66.88,
-        "text": "The voice that dared to question the foundation"
-      },
-      {
-        "time": 66.88,
-        "endTime": 74.46,
-        "text": "While everyone else knelt before the Wheel"
-      },
-      {
-        "time": 74.46,
-        "endTime": 82.04,
-        "text": "I refused my genuflection to creation"
-      },
-      {
-        "time": 82.04,
-        "endTime": 82.54,
-        "text": "Lews Therin smiled and called me brother, called me friend"
-      },
-      {
-        "time": 82.5,
-        "endTime": 83,
-        "text": "He never understood the kindness in wanting things to end"
-      },
-      {
-        "time": 82.97,
-        "endTime": 83.47,
-        "text": "His optimism was a sickness wrapped in golden light"
-      },
-      {
-        "time": 83.43,
-        "endTime": 83.93,
-        "text": "I loved the world enough to see it did not earn another night"
-      },
-      {
-        "time": 83.9,
-        "endTime": 84.4,
-        "text": "They say I chose the Shadow like a coward running scared"
-      },
-      {
-        "time": 84.36,
-        "endTime": 87.8,
-        "text": "But I had done the mathematics and the numbers never spared"
-      },
-      {
-        "time": 88.2,
-        "endTime": 91.4,
-        "text": "A single soul from turning on the Wheel's relentless track"
-      },
-      {
-        "time": 91.94,
-        "endTime": 95.2,
-        "text": "Every life a repetition and there is no turning back"
-      },
-      {
-        "time": 97.02,
-        "endTime": 98.86,
-        "text": "I did not fall from grace"
-      },
-      {
-        "time": 99.68,
-        "endTime": 102.06,
-        "text": "I walked down every step with open eyes"
-      },
-      {
-        "time": 103.1,
-        "endTime": 104.46,
-        "text": "Counting the cost of perpetuity"
-      },
-      {
-        "time": 106.64,
-        "endTime": 108.8,
-        "text": "Until the sum could not be justified"
-      },
-      {
-        "time": 111.1,
-        "endTime": 112.76,
-        "text": "I did not lose my mind"
-      },
-      {
-        "time": 113.66,
-        "endTime": 115.58,
-        "text": "I simply followed reason to its end"
-      },
-      {
-        "time": 117.08,
-        "endTime": 117.58,
-        "text": "Where every proof converged upon a single point"
-      },
-      {
-        "time": 117.4,
-        "endTime": 117.9,
-        "text": "That nothing broken ever truly mends"
-      },
-      {
-        "time": 117.71,
-        "endTime": 118.21,
-        "text": "Three thousand years of madness is what history records"
-      },
-      {
-        "time": 118.03,
-        "endTime": 118.53,
-        "text": "But madness is a label pinned by men who fear the words"
-      },
-      {
-        "time": 118.35,
-        "endTime": 118.85,
-        "text": "Of anyone who looked behind the curtain of the real"
-      },
-      {
-        "time": 118.67,
-        "endTime": 119.17,
-        "text": "And had the nerve to publish what the numbers would reveal"
-      },
-      {
-        "time": 118.98,
-        "endTime": 119.48,
-        "text": "Elan Morin Tedronai"
-      },
-      {
-        "time": 119.3,
-        "endTime": 121.6,
-        "text": "The name they spoke with such respect and admiration"
-      },
-      {
-        "time": 123.1,
-        "endTime": 126.28,
-        "text": "Before I showed them what their precious Pattern truly was"
-      },
-      {
-        "time": 126.46,
-        "endTime": 129.72,
-        "text": "A cage disguised as constellation"
-      },
-      {
-        "time": 131.9,
-        "endTime": 132.4,
-        "text": "Elan Morin Tedronai"
-      },
-      {
-        "time": 132.18,
-        "endTime": 133.7,
-        "text": "The voice that dared to question the foundation"
-      },
-      {
-        "time": 136.52,
-        "endTime": 137.22,
-        "text": "While everyone else knelt before the Wheel"
-      },
-      {
-        "time": 137.22,
-        "endTime": 142.92,
-        "text": "I refused my genuflection to creation"
-      },
-      {
-        "time": 145.98,
-        "endTime": 146.86,
-        "text": "Elan Morin"
-      },
-      {
-        "time": 152.62,
-        "endTime": 155.35,
-        "text": "The philosopher who read the final proof"
-      },
-      {
-        "time": 155.35,
-        "endTime": 158.08,
-        "text": "And found that existence was the error"
-      },
-      {
-        "time": 158.08,
-        "endTime": 160.81,
-        "text": "Hiding underneath the truth"
-      },
-      {
-        "time": 160.81,
-        "endTime": 163.54,
-        "text": "Elan Morin Tedronai"
-      },
-      {
-        "time": 163.54,
-        "endTime": 167.48,
-        "text": "Who loved the world enough to let it go"
-      },
-      {
-        "time": 170.66,
-        "endTime": 174.28,
-        "text": "The last equation written on the blackboard"
-      },
-      {
-        "time": 175.66,
-        "endTime": 177.54,
-        "text": "The answer everyone refused to know"
-      }
-    ]
-  },
-  "The Bore": {
-    "lines": [
-      {
-        "time": 7.2,
-        "endTime": 10.14,
-        "text": "Mierin drilled the hole but I had drawn the map for years"
-      },
-      {
-        "time": 12.58,
-        "endTime": 15.8,
-        "text": "A cartography of silence where the Pattern disappears"
-      },
-      {
-        "time": 18.34,
-        "endTime": 21.92,
-        "text": "They touched the Dark One's prison thinking power lay inside"
-      },
-      {
-        "time": 22.74,
-        "endTime": 28.74,
-        "text": "I touched it knowing something else entirely \u2014 that the cage itself must die"
-      },
-      {
-        "time": 29.78,
-        "endTime": 32.68,
-        "text": "The Bore was not a wound, it was a window finally opened"
-      },
-      {
-        "time": 32.94,
-        "endTime": 35.92,
-        "text": "A crack in the machinery that let the truth come pouring in"
-      },
-      {
-        "time": 36.16,
-        "endTime": 43,
-        "text": "For one brief shining moment every living soul could feel it"
-      },
-      {
-        "time": 43.68,
-        "endTime": 48.24,
-        "text": "The weight of what the Wheel demanded and the price of being spun"
-      },
-      {
-        "time": 51.84,
-        "endTime": 54.32,
-        "text": "This is not corruption, this is diagnosis"
-      },
-      {
-        "time": 54.5,
-        "endTime": 57.02,
-        "text": "I am not the sickness \u2014 I am the physician"
-      },
-      {
-        "time": 57.18,
-        "endTime": 60.02,
-        "text": "The only honest answer to a wheel that grinds forever"
-      },
-      {
-        "time": 60.22,
-        "endTime": 66.22,
-        "text": "Is to put your hand upon the spoke and make a decision"
-      },
-      {
-        "time": 84.24,
-        "endTime": 86.14,
-        "text": "They sealed me near the surface, not as deep as those who slept"
-      },
-      {
-        "time": 86.14,
-        "endTime": 86.94,
-        "text": "Three thousand years of partial freedom while the world around me wept"
-      },
-      {
-        "time": 86.94,
-        "endTime": 87.75,
-        "text": "I could reach through dreams and shadows, plant my seeds in every age"
-      },
-      {
-        "time": 87.75,
-        "endTime": 88.56,
-        "text": "A gardener of endings tending every turning page"
-      },
-      {
-        "time": 88.56,
-        "endTime": 89.36,
-        "text": "The Bore is just a question"
-      },
-      {
-        "time": 89.36,
-        "endTime": 91.16,
-        "text": "Asked in language older than the Light"
-      },
-      {
-        "time": 92.38,
-        "endTime": 93.72,
-        "text": "If creation is a circle"
-      },
-      {
-        "time": 94.24,
-        "endTime": 107.78,
-        "text": "Who decided there was no exit in sight"
-      },
-      {
-        "time": 108.92,
-        "endTime": 111.38,
-        "text": "The Wheel spins out its heroes like a loom that cannot stop"
-      },
-      {
-        "time": 111.74,
-        "endTime": 114.22,
-        "text": "Lews Therin at the summit, Lews Therin who has to drop"
-      },
-      {
-        "time": 114.52,
-        "endTime": 117.18,
-        "text": "It dressed him up in glory, wound his purpose tight as wire"
-      },
-      {
-        "time": 117.2,
-        "endTime": 120.12,
-        "text": "Then handed him the madness and it set his world on fire"
-      },
-      {
-        "time": 130.76,
-        "endTime": 133.48,
-        "text": "This is not corruption, this is diagnosis"
-      },
-      {
-        "time": 133.8,
-        "endTime": 136.08,
-        "text": "I am not the sickness \u2014 I am the physician"
-      },
-      {
-        "time": 136.18,
-        "endTime": 139.02,
-        "text": "The only honest answer to a wheel that grinds forever"
-      },
-      {
-        "time": 139.28,
-        "endTime": 144.94,
-        "text": "Is to put your hand upon the spoke and make a decision"
-      },
-      {
-        "time": 155.62,
-        "endTime": 158.32,
-        "text": "He could have ended it, you know \u2014 the boy stood at the edge"
-      },
-      {
-        "time": 158.32,
-        "endTime": 158.82,
-        "text": "One moment of true silence, one release from every pledge"
-      },
-      {
-        "time": 159.6,
-        "endTime": 162.58,
-        "text": "But Rand al'Thor refused me, chose the laughter and the tears"
-      },
-      {
-        "time": 162.62,
-        "endTime": 165.6,
-        "text": "Chose the fleeting over freedom, chose the turning of the years"
-      },
-      {
-        "time": 170.12,
-        "endTime": 171.4,
-        "text": "They sealed the Bore with saidin"
-      },
-      {
-        "time": 172.08,
-        "endTime": 173.8,
-        "text": "And the backlash broke the world"
-      },
-      {
-        "time": 175.38,
-        "endTime": 177.72,
-        "text": "But the question I had asked it"
-      },
-      {
-        "time": 177.72,
-        "endTime": 179.5,
-        "text": "Kept on echoing, unheard"
-      },
-      {
-        "time": 180.84,
-        "endTime": 182.28,
-        "text": "The Bore remains my question"
-      },
-      {
-        "time": 184.8,
-        "endTime": 186.82,
-        "text": "And the Wheel has no answer to trade"
-      }
-    ]
-  },
-  "Three Thousand Years Awake": {
-    "lines": [
-      {
-        "time": 8.14,
-        "endTime": 8.64,
-        "text": "While the other Chosen slept in dreamless dark I walked the centuries"
-      },
-      {
-        "time": 8.32,
-        "endTime": 8.82,
-        "text": "Three thousand years of watching empires rise and crumble into dust"
-      },
-      {
-        "time": 8.49,
-        "endTime": 8.99,
-        "text": "The Trolloc Wars were mine \u2014 I conducted every note of suffering"
-      },
-      {
-        "time": 8.66,
-        "endTime": 9.16,
-        "text": "Hawkwing's madness, my design \u2014 I poisoned every well of trust"
-      },
-      {
-        "time": 8.84,
-        "endTime": 15.99,
-        "text": "I wore a hundred faces, spoke in languages that died between my visits"
-      },
-      {
-        "time": 15.99,
-        "endTime": 23.13,
-        "text": "Every prophet that you followed I had whispered to the night before"
-      },
-      {
-        "time": 23.13,
-        "endTime": 30.28,
-        "text": "Your history is my handwriting scrawled across the bones of nations"
-      },
-      {
-        "time": 30.28,
-        "endTime": 34.96,
-        "text": "And every time you built a door I was already through the door"
-      },
-      {
-        "time": 35.18,
-        "endTime": 38.78,
-        "text": "I sat in courts of kings who never knew the hand that steered their ruin"
-      },
-      {
-        "time": 39.76,
-        "endTime": 43.16,
-        "text": "Poured wine for generals the night before I led their armies wrong"
-      },
-      {
-        "time": 43.46,
-        "endTime": 48,
-        "text": "I taught your scholars half the truth and let them build on broken logic"
-      },
-      {
-        "time": 48.98,
-        "endTime": 50.32,
-        "text": "And every anthem that you sang was just a variation of my song"
-      },
-      {
-        "time": 52.4,
-        "endTime": 56.14,
-        "text": "Three thousand years awake while the world slept around me"
-      },
-      {
-        "time": 56.48,
-        "endTime": 60.7,
-        "text": "Three thousand years of patience, three thousand years of proof"
-      },
-      {
-        "time": 61.14,
-        "endTime": 62.46,
-        "text": "That nothing you construct can outlast its own foundations"
-      },
-      {
-        "time": 62.46,
-        "endTime": 63.78,
-        "text": "And every golden age is just the setup for the truth"
-      },
-      {
-        "time": 63.78,
-        "endTime": 65.1,
-        "text": "I broke the Compact and I shattered every alliance that you treasured"
-      },
-      {
-        "time": 65.1,
-        "endTime": 68,
-        "text": "Not from cruelty but from the calm arithmetic of time"
-      },
-      {
-        "time": 68.48,
-        "endTime": 72.02,
-        "text": "When you have watched enough tomorrows bleed into the same repeating pattern"
-      },
-      {
-        "time": 72.16,
-        "endTime": 74.24,
-        "text": "Burning it all down becomes the only merciful design"
-      },
-      {
-        "time": 74.52,
-        "endTime": 76.74,
-        "text": "I walked among the Aiel before they crossed the Dragonwall in fury"
-      },
-      {
-        "time": 77.1,
-        "endTime": 78.34,
-        "text": "I blessed the blades of Artur Hawkwing's sons before they sailed away"
-      },
-      {
-        "time": 78.34,
-        "endTime": 79.86,
-        "text": "The White Tower thinks its secrets sleep in vaults beneath the marble"
-      },
-      {
-        "time": 80.9,
-        "endTime": 84.36,
-        "text": "But I was reading every page before the ink was dry upon the clay"
-      },
-      {
-        "time": 85.78,
-        "endTime": 86.74,
-        "text": "Partially sealed, partially free"
-      },
-      {
-        "time": 87.6,
-        "endTime": 89.9,
-        "text": "Not quite alive, not quite a memory"
-      },
-      {
-        "time": 90.26,
-        "endTime": 91.64,
-        "text": "Just enough existence to keep working"
-      },
-      {
-        "time": 92.76,
-        "endTime": 95.06,
-        "text": "Just enough shadow to keep the centuries company"
-      },
-      {
-        "time": 95.9,
-        "endTime": 97.62,
-        "text": "I learned to love the weight of years the way a river loves the stone"
-      },
-      {
-        "time": 97.74,
-        "endTime": 99.82,
-        "text": "Slowly wearing down the world until the shape is mine alone"
-      },
-      {
-        "time": 101.16,
-        "endTime": 104.58,
-        "text": "Three thousand years awake while the world slept around me"
-      },
-      {
-        "time": 104.58,
-        "endTime": 105.28,
-        "text": "Three thousand years of patience, three thousand years of proof"
-      },
-      {
-        "time": 105.46,
-        "endTime": 107.58,
-        "text": "That nothing you construct can outlast its own foundations"
-      },
-      {
-        "time": 108.84,
-        "endTime": 109.54,
-        "text": "And every golden age is just the setup for the truth"
-      },
-      {
-        "time": 109.54,
-        "endTime": 111.88,
-        "text": "The other Forsaken woke with rage and hunger, clumsy in their arrogance"
-      },
-      {
-        "time": 113.06,
-        "endTime": 116.5,
-        "text": "They grasped for power like children snatching at a flame"
-      },
-      {
-        "time": 117.2,
-        "endTime": 119.24,
-        "text": "But I had already set the board and moved the pieces into position"
-      },
-      {
-        "time": 119.62,
-        "endTime": 120.12,
-        "text": "Before they even learned the rules I had already won the game"
-      },
-      {
-        "time": 119.72,
-        "endTime": 120.6,
-        "text": "You think the Dragon Reborn will save you from the shadow that is coming"
-      },
-      {
-        "time": 121.32,
-        "endTime": 124.96,
-        "text": "You pin your desperate hopes upon a prophecy you barely understand"
-      },
-      {
-        "time": 126.04,
-        "endTime": 130,
-        "text": "But prophecy is just another language I have studied for three thousand years"
-      },
-      {
-        "time": 130.18,
-        "endTime": 134.2,
-        "text": "And every word of destiny has passed already through my hands"
-      },
-      {
-        "time": 134.5,
-        "endTime": 136.42,
-        "text": "Do you know what patience really means"
-      },
-      {
-        "time": 136.84,
-        "endTime": 143.34,
-        "text": "It means watching every harvest fail and planting something new between the ruins"
-      },
-      {
-        "time": 147.38,
-        "endTime": 148.86,
-        "text": "It means outliving every hero born to stop you"
-      },
-      {
-        "time": 148.86,
-        "endTime": 149.89,
-        "text": "It means becoming the foundation underneath the thing they think they're building"
-      },
-      {
-        "time": 149.89,
-        "endTime": 150.93,
-        "text": "Three thousand years awake while the world slept around me"
-      },
-      {
-        "time": 150.93,
-        "endTime": 151.96,
-        "text": "Three thousand years of patience, three thousand years of proof"
-      },
-      {
-        "time": 151.96,
-        "endTime": 155.22,
-        "text": "That nothing you construct can outlast its own foundations"
-      },
-      {
-        "time": 156.46,
-        "endTime": 157.12,
-        "text": "And every golden age is just the setup for the truth"
-      },
-      {
-        "time": 157.12,
-        "endTime": 157.62,
-        "text": "Three thousand years"
-      },
-      {
-        "time": 157.12,
-        "endTime": 157.62,
-        "text": "And every one of them confirmed"
-      },
-      {
-        "time": 158.8,
-        "endTime": 160.1,
-        "text": "What I already knew when I first stepped"
-      },
-      {
-        "time": 160.1,
-        "endTime": 162.66,
-        "text": "Into the dark and watched the Wheel still turn"
-      },
-      {
-        "time": 163.98,
-        "endTime": 166.6,
-        "text": "The Wheel still turns but I have learned its rhythm"
-      },
-      {
-        "time": 168.66,
-        "endTime": 170.72,
-        "text": "And rhythm is just another word for control"
-      }
-    ]
-  },
-  "Ba'alzamon Rising": {
-    "lines": [
-      {
-        "time": 15.28,
-        "endTime": 20.74,
-        "text": "They needed something to be terrified of, something with a name"
-      },
-      {
-        "time": 24.16,
-        "endTime": 28.66,
-        "text": "So I gave them Ba'alzamon \u2014 Heart of the Dark \u2014 and watched their courage drain"
-      },
-      {
-        "time": 32.2,
-        "endTime": 34.78,
-        "text": "Horns of shadow, eyes of fire, the throne of molten stone"
-      },
-      {
-        "time": 34.78,
-        "endTime": 37.36,
-        "text": "A performance built for prophets and for children left alone"
-      },
-      {
-        "time": 37.36,
-        "endTime": 39.94,
-        "text": "I walked the World of Dreams wearing devastation like a coat"
-      },
-      {
-        "time": 39.94,
-        "endTime": 45.2,
-        "text": "Every Darkfriend knelt because the theater demanded they devote"
-      },
-      {
-        "time": 48.26,
-        "endTime": 48.94,
-        "text": "Their little lives to something grander than their petty hungers could conceive"
-      },
-      {
-        "time": 48.94,
-        "endTime": 49.44,
-        "text": "Ba'alzamon was the sermon \u2014 terror was what made them believe"
-      },
-      {
-        "time": 48.94,
-        "endTime": 52.7,
-        "text": "Three thousand years I wore the title like a second skin"
-      },
-      {
-        "time": 56.34,
-        "endTime": 56.84,
-        "text": "Each Age remembered fire and forgot the man within"
-      },
-      {
-        "time": 56.64,
-        "endTime": 59.86,
-        "text": "At Shayol Ghul the bore still wept its poison through the stone"
-      },
-      {
-        "time": 60.04,
-        "endTime": 63.36,
-        "text": "But Ba'alzamon was the story \u2014 and a story needs a throne"
-      },
-      {
-        "time": 63.36,
-        "endTime": 65.6,
-        "text": "Ba'alzamon, Ba'alzamon"
-      },
-      {
-        "time": 65.66,
-        "endTime": 69.14,
-        "text": "The mask of flame, the voice from underneath the world"
-      },
-      {
-        "time": 69.46,
-        "endTime": 72.26,
-        "text": "I gave you something pure to fear"
-      },
-      {
-        "time": 72.34,
-        "endTime": 77.86,
-        "text": "So you would never see the quiet horror of the Wheel unfurled"
-      },
-      {
-        "time": 79.4,
-        "endTime": 81.68,
-        "text": "Ba'alzamon, Ba'alzamon"
-      },
-      {
-        "time": 81.96,
-        "endTime": 86.08,
-        "text": "The name that mothers whispered when the candles guttered low"
-      },
-      {
-        "time": 86.3,
-        "endTime": 88.6,
-        "text": "I was the dark you chose to worship"
-      },
-      {
-        "time": 89.24,
-        "endTime": 93.92,
-        "text": "Because the real dark was too ordinary to know"
-      },
-      {
-        "time": 95.96,
-        "endTime": 99.2,
-        "text": "Ishamael was the scholar, Ishamael could weep"
-      },
-      {
-        "time": 100.16,
-        "endTime": 103.5,
-        "text": "But Ba'alzamon \u2014 Ba'alzamon was the thing that never sleeps"
-      },
-      {
-        "time": 103.8,
-        "endTime": 107.78,
-        "text": "I found the Dragon's cradle, I found his mother's grave"
-      },
-      {
-        "time": 107.8,
-        "endTime": 111.8,
-        "text": "I touched the world at every turning, every hero, every knave"
-      },
-      {
-        "time": 111.82,
-        "endTime": 116.56,
-        "text": "And when the Dragon stood before me with his fragile mortal blade"
-      },
-      {
-        "time": 116.8,
-        "endTime": 120.46,
-        "text": "I almost told him everything \u2014 how every war was staged"
-      },
-      {
-        "time": 120.52,
-        "endTime": 124.04,
-        "text": "How the Wheel just turns and turns and none of it will stay"
-      },
-      {
-        "time": 124.74,
-        "endTime": 128.46,
-        "text": "But Ba'alzamon does not confess \u2014 Ba'alzamon does not explain"
-      },
-      {
-        "time": 128.5,
-        "endTime": 130.3,
-        "text": "Ba'alzamon, Ba'alzamon"
-      },
-      {
-        "time": 130.4,
-        "endTime": 133.12,
-        "text": "The mask of flame, the voice from underneath the world"
-      },
-      {
-        "time": 133.26,
-        "endTime": 136.28,
-        "text": "I gave you something pure to fear"
-      },
-      {
-        "time": 136.3,
-        "endTime": 142.04,
-        "text": "So you would never see the quiet horror of the Wheel unfurled"
-      },
-      {
-        "time": 143.36,
-        "endTime": 145.6,
-        "text": "Ba'alzamon, Ba'alzamon"
-      },
-      {
-        "time": 145.82,
-        "endTime": 150.08,
-        "text": "The name that mothers whispered when the candles guttered low"
-      },
-      {
-        "time": 150.28,
-        "endTime": 152.58,
-        "text": "I was the dark you chose to worship"
-      },
-      {
-        "time": 153.32,
-        "endTime": 157.88,
-        "text": "Because the real dark was too ordinary to know"
-      },
-      {
-        "time": 158.68,
-        "endTime": 159.68,
-        "text": "Let the fire climb"
-      },
-      {
-        "time": 161.58,
-        "endTime": 164.96,
-        "text": "Let the horns cast shadows on the wall"
-      },
-      {
-        "time": 165.62,
-        "endTime": 168.9,
-        "text": "Ba'alzamon was never the monster"
-      },
-      {
-        "time": 169.5,
-        "endTime": 172.82,
-        "text": "Ba'alzamon was just the honest call"
-      },
-      {
-        "time": 174.38,
-        "endTime": 175.68,
-        "text": "Let the ages turn"
-      },
-      {
-        "time": 177.4,
-        "endTime": 180.9,
-        "text": "Let the Pattern weave its ancient thread"
-      },
-      {
-        "time": 181.1,
-        "endTime": 184.88,
-        "text": "Ba'alzamon was the truth you couldn't carry"
-      },
-      {
-        "time": 184.88,
-        "endTime": 188.28,
-        "text": "So you gave it horns and fire instead"
-      }
-    ]
-  },
-  "The Hunt Across Ages": {
-    "lines": [
-      {
-        "time": 0.56,
-        "endTime": 6.76,
-        "text": "I have hunted the Dragon through every turning of the Wheel"
-      },
-      {
-        "time": 7.44,
-        "endTime": 14.26,
-        "text": "Different faces, different names, but the wound is always real"
-      },
-      {
-        "time": 15.32,
-        "endTime": 21.52,
-        "text": "He builds the world and I unmake it \u2014 breathing in and breathing out"
-      },
-      {
-        "time": 22.68,
-        "endTime": 34.22,
-        "text": "Two lungs inside a body that the Pattern cannot do without"
-      },
-      {
-        "time": 34.22,
-        "endTime": 37.2,
-        "text": "In Tel'aran'rhiod I found him sleeping, armor stripped away"
-      },
-      {
-        "time": 37.44,
-        "endTime": 41.34,
-        "text": "The boy from Emond's Field who did not know what he would have to pay"
-      },
-      {
-        "time": 41.34,
-        "endTime": 45.2,
-        "text": "I came not bearing weapons but the weight of every life before"
-      },
-      {
-        "time": 45.4,
-        "endTime": 48.98,
-        "text": "Whispering the mathematics of a war without a score"
-      },
-      {
-        "time": 50.8,
-        "endTime": 53.78,
-        "text": "Every age I find you, every age we dance"
-      },
-      {
-        "time": 54.5,
-        "endTime": 57.7,
-        "text": "You with your salvation, me with my advance"
-      },
-      {
-        "time": 58.12,
-        "endTime": 61.4,
-        "text": "The Dragon and his shadow stitched into the weave"
-      },
-      {
-        "time": 61.88,
-        "endTime": 65.88,
-        "text": "You will save the world again and I will make you grieve"
-      },
-      {
-        "time": 68.92,
-        "endTime": 71.54,
-        "text": "Rand al'Thor, Lews Therin, a thousand names I cannot count"
-      },
-      {
-        "time": 71.54,
-        "endTime": 73.02,
-        "text": "Each one convinced their suffering is special, that their pain will mount"
-      },
-      {
-        "time": 76.36,
-        "endTime": 79.92,
-        "text": "To something meaningful \u2014 redemption, glory, some eternal prize"
-      },
-      {
-        "time": 80.14,
-        "endTime": 84.48,
-        "text": "I come to show them what the silence looks like behind their eyes"
-      },
-      {
-        "time": 85.64,
-        "endTime": 88.96,
-        "text": "At Shayol Ghul I waited where the Bore was thin as breath"
-      },
-      {
-        "time": 89.36,
-        "endTime": 92.64,
-        "text": "Where time itself unraveled and the air tasted like death"
-      },
-      {
-        "time": 93.14,
-        "endTime": 96.44,
-        "text": "He came with his companions, with his women, with his sword"
-      },
-      {
-        "time": 96.7,
-        "endTime": 100.58,
-        "text": "But I had come with patience, and patience is the longer cord"
-      },
-      {
-        "time": 102.52,
-        "endTime": 105.86,
-        "text": "Every age I find you, every age we dance"
-      },
-      {
-        "time": 106.12,
-        "endTime": 109.42,
-        "text": "You with your salvation, me with my advance"
-      },
-      {
-        "time": 109.66,
-        "endTime": 113.14,
-        "text": "The Dragon and his shadow stitched into the weave"
-      },
-      {
-        "time": 113.48,
-        "endTime": 119.3,
-        "text": "You will save the world again and I will make you grieve"
-      },
-      {
-        "time": 119.88,
-        "endTime": 122.42,
-        "text": "The hunt is not for victory"
-      },
-      {
-        "time": 124.64,
-        "endTime": 127.02,
-        "text": "Victory resets with every age"
-      },
-      {
-        "time": 128.12,
-        "endTime": 129.6,
-        "text": "The hunt is for the moment"
-      },
-      {
-        "time": 131.62,
-        "endTime": 133.86,
-        "text": "When the Dragon reads the final page"
-      },
-      {
-        "time": 143.14,
-        "endTime": 144.26,
-        "text": "And understands the story"
-      },
-      {
-        "time": 144.26,
-        "endTime": 145.38,
-        "text": "Was written long before his birth"
-      },
-      {
-        "time": 145.38,
-        "endTime": 146.5,
-        "text": "The Forsaken were my fingers and I played them like a harp"
-      },
-      {
-        "time": 146.5,
-        "endTime": 149.92,
-        "text": "Ishamael, Ba'alzamon \u2014 every mask was razor-sharp"
-      },
-      {
-        "time": 150.28,
-        "endTime": 153.5,
-        "text": "But underneath the titles and the fire in my eyes"
-      },
-      {
-        "time": 153.5,
-        "endTime": 157.5,
-        "text": "There's just a man who saw the Pattern and refused to call it wise"
-      },
-      {
-        "time": 157.62,
-        "endTime": 160.88,
-        "text": "Across the ages, through the dreams"
-      },
-      {
-        "time": 160.88,
-        "endTime": 163.66,
-        "text": "I am the shadow that the light has earned"
-      },
-      {
-        "time": 165,
-        "endTime": 167.52,
-        "text": "The Wheel will keep on turning"
-      },
-      {
-        "time": 168.44,
-        "endTime": 171.64,
-        "text": "And the Dragon will be born once more"
-      },
-      {
-        "time": 172.38,
-        "endTime": 174.98,
-        "text": "And I will cross the threshold"
-      },
-      {
-        "time": 177.1,
-        "endTime": 181.26,
-        "text": "Like I have always done before"
-      }
-    ]
-  },
-  "Moridin": {
-    "lines": [
-      {
-        "time": 39.28,
-        "endTime": 40.21,
-        "text": "The Dark One gave me back a body and I chose a simple name"
-      },
-      {
-        "time": 40.21,
-        "endTime": 41.14,
-        "text": "Moridin \u2014 Death \u2014 because the second time there is no need for shame"
-      },
-      {
-        "time": 41.14,
-        "endTime": 42.06,
-        "text": "No theater, no fire, no Ba'alzamon's elaborate disguise"
-      },
-      {
-        "time": 42.06,
-        "endTime": 42.99,
-        "text": "Just the clean geometry of someone who has finished being surprised"
-      },
-      {
-        "time": 42.99,
-        "endTime": 43.92,
-        "text": "Three thousand years I argued with the Dragon about the nature of the wheel"
-      },
-      {
-        "time": 43.92,
-        "endTime": 48.06,
-        "text": "He called it hope, I called it repetition \u2014 neither of us learned to feel"
-      },
-      {
-        "time": 48.72,
-        "endTime": 52.68,
-        "text": "We burned through Ages like two equations set to cancel every sum"
-      },
-      {
-        "time": 53.82,
-        "endTime": 58.22,
-        "text": "The Bore was just a window and I pressed my face against the dark to come"
-      },
-      {
-        "time": 58.46,
-        "endTime": 61.12,
-        "text": "Moridin walks where shadows fold"
-      },
-      {
-        "time": 61.3,
-        "endTime": 63.28,
-        "text": "A new mask for the same eternal calculation"
-      },
-      {
-        "time": 64.18,
-        "endTime": 65.52,
-        "text": "Death is just the clinical word"
-      },
-      {
-        "time": 65.66,
-        "endTime": 68.02,
-        "text": "For what compassion looks like without hesitation"
-      },
-      {
-        "time": 69.86,
-        "endTime": 75.86,
-        "text": "I play sha'rah against myself because there are no worthy opponents left"
-      },
-      {
-        "time": 87.26,
-        "endTime": 87.76,
-        "text": "Moving pieces on a board that maps the architecture of theft"
-      },
-      {
-        "time": 87.36,
-        "endTime": 91.14,
-        "text": "The Fisher King bleeds on the center square, balanced between the light and shade"
-      },
-      {
-        "time": 91.98,
-        "endTime": 96.06,
-        "text": "I move him gently toward the shadow \u2014 every gentleness a kind of blade"
-      },
-      {
-        "time": 96.7,
-        "endTime": 100.68,
-        "text": "The Nae'blis \u2014 highest of the Chosen \u2014 lowest rung of what remains"
-      },
-      {
-        "time": 101.38,
-        "endTime": 105.76,
-        "text": "When you have given up everything, a title is a set of chains"
-      },
-      {
-        "time": 106.32,
-        "endTime": 112.32,
-        "text": "I want the board cleared, every piece removed, every square wiped clean"
-      },
-      {
-        "time": 135.18,
-        "endTime": 135.76,
-        "text": "Stripped of flame, stripped of name"
-      },
-      {
-        "time": 135.76,
-        "endTime": 136.33,
-        "text": "What survives is just the theorem"
-      },
-      {
-        "time": 136.33,
-        "endTime": 136.91,
-        "text": "Elan Morin's final proof"
-      },
-      {
-        "time": 136.91,
-        "endTime": 137.48,
-        "text": "Wearing a body like a diagram"
-      },
-      {
-        "time": 137.48,
-        "endTime": 138.06,
-        "text": "Moridin walks where shadows fold"
-      },
-      {
-        "time": 138.06,
-        "endTime": 140.04,
-        "text": "A new mask for the same eternal calculation"
-      },
-      {
-        "time": 142.38,
-        "endTime": 142.88,
-        "text": "Death is just the clinical word"
-      },
-      {
-        "time": 142.46,
-        "endTime": 144.76,
-        "text": "For what compassion looks like without hesitation"
-      },
-      {
-        "time": 149.16,
-        "endTime": 156.16,
-        "text": "I found Rand al'Thor and felt the tether pull like sutures through my mind"
-      },
-      {
-        "time": 177.92,
-        "endTime": 178.42,
-        "text": "Two threads woven on one loom, impossible to cut or to unbind"
-      },
-      {
-        "time": 178.41,
-        "endTime": 178.91,
-        "text": "When he reached for saidin I could taste it \u2014 copper, lightning, distant rain"
-      },
-      {
-        "time": 178.89,
-        "endTime": 179.39,
-        "text": "And when I reached for the True Power he received a fraction of the pain"
-      },
-      {
-        "time": 179.38,
-        "endTime": 179.88,
-        "text": "The philosopher became the nihilist"
-      },
-      {
-        "time": 179.87,
-        "endTime": 180.37,
-        "text": "The nihilist became the blade"
-      },
-      {
-        "time": 180.35,
-        "endTime": 180.85,
-        "text": "The blade became the hand that held it"
-      },
-      {
-        "time": 180.84,
-        "endTime": 183.84,
-        "text": "And the hand began to fade"
-      },
-      {
-        "time": 207.84,
-        "endTime": 208.72,
-        "text": "At Shayol Ghul the air tastes thin, like breathing at the edge of what is real"
-      },
-      {
-        "time": 208.72,
-        "endTime": 209.59,
-        "text": "I do not kneel because devotion asks it, I kneel because the math is done"
-      },
-      {
-        "time": 209.59,
-        "endTime": 210.46,
-        "text": "When every proof converges on the void, you serve the void or you serve none"
-      },
-      {
-        "time": 210.46,
-        "endTime": 211.34,
-        "text": "Moridin walks where shadows fold"
-      },
-      {
-        "time": 211.34,
-        "endTime": 213.14,
-        "text": "A new mask for the same eternal calculation"
-      },
-      {
-        "time": 214.18,
-        "endTime": 215.76,
-        "text": "Death is just the clinical word"
-      },
-      {
-        "time": 215.76,
-        "endTime": 218.06,
-        "text": "For what compassion looks like without hesitation"
-      },
-      {
-        "time": 239,
-        "endTime": 239.5,
-        "text": "The wheel keeps turning but the spoke is cracked"
-      },
-      {
-        "time": 238.51,
-        "endTime": 239.01,
-        "text": "The pattern frays where Elan Morin bled"
-      },
-      {
-        "time": 238.02,
-        "endTime": 238.52,
-        "text": "And somewhere past the last equation"
-      },
-      {
-        "time": 237.53,
-        "endTime": 238.03,
-        "text": "Even nothing learns that it is dead"
-      }
-    ]
-  },
-  "The Fisher King": {
-    "lines": [
-      {
-        "time": 14.44,
-        "endTime": 18.48,
-        "text": "Two men across a board that maps the architecture of creation"
-      },
-      {
-        "time": 18.88,
-        "endTime": 22.54,
-        "text": "One dressed in light, one dressed in absence \u2014 both exhausted by the game"
-      },
-      {
-        "time": 22.96,
-        "endTime": 26.74,
-        "text": "The Fisher King bleeds from one eye, sees glory with the other"
-      },
-      {
-        "time": 26.74,
-        "endTime": 30.04,
-        "text": "And neither player can determine who is which or what became"
-      },
-      {
-        "time": 30.28,
-        "endTime": 34.22,
-        "text": "Rand and I are tangled at the level where the Pattern writes its source"
-      },
-      {
-        "time": 34.24,
-        "endTime": 38.5,
-        "text": "His pain is mine, my darkness his \u2014 a symmetry without remorse"
-      },
-      {
-        "time": 38.66,
-        "endTime": 42.18,
-        "text": "When he channels I can feel it, when I reach for the True Power he can taste"
-      },
-      {
-        "time": 42.62,
-        "endTime": 46.18,
-        "text": "The ash and copper on his tongue \u2014 two minds in the same wounded space"
-      },
-      {
-        "time": 46.18,
-        "endTime": 48.94,
-        "text": "Black piece, white piece, the same hand trembling"
-      },
-      {
-        "time": 49.3,
-        "endTime": 52.26,
-        "text": "The Fisher King game was never meant to end"
-      },
-      {
-        "time": 52.44,
-        "endTime": 54.54,
-        "text": "He holds the world together out of duty"
-      },
-      {
-        "time": 54.58,
-        "endTime": 58.48,
-        "text": "I am trying to show him duty is a dead man's friend"
-      },
-      {
-        "time": 60.02,
-        "endTime": 63.98,
-        "text": "He thinks our war is light against the darkness in the mirror"
-      },
-      {
-        "time": 73.18,
-        "endTime": 73.69,
-        "text": "I know our war is just the engine that the Pattern needs to run"
-      },
-      {
-        "time": 73.69,
-        "endTime": 74.19,
-        "text": "Save the world, unmake the world, inhale and then exhale"
-      },
-      {
-        "time": 74.19,
-        "endTime": 74.7,
-        "text": "The Wheel requires both of us \u2014 the Dragon and the shadow of the sun"
-      },
-      {
-        "time": 74.7,
-        "endTime": 78.58,
-        "text": "The madness that I gave him was a gift he won't acknowledge"
-      },
-      {
-        "time": 79.98,
-        "endTime": 83.44,
-        "text": "Every voice he hears is mine, dressed up in someone else's face"
-      },
-      {
-        "time": 83.46,
-        "endTime": 87.32,
-        "text": "Lews Therin weeping in the corridors of a mind that I constructed"
-      },
-      {
-        "time": 87.4,
-        "endTime": 91,
-        "text": "Three souls fighting for the wheel inside a single fractured place"
-      },
-      {
-        "time": 111.04,
-        "endTime": 111.54,
-        "text": "Every Age he rises and every Age I meet him"
-      },
-      {
-        "time": 111.04,
-        "endTime": 116,
-        "text": "At the summit where the world decides to turn or turns to rust"
-      },
-      {
-        "time": 116.44,
-        "endTime": 119.72,
-        "text": "He calls it courage, I call it compulsion"
-      },
-      {
-        "time": 120.08,
-        "endTime": 125.32,
-        "text": "The Wheel does not distinguish between devotion and disgust"
-      },
-      {
-        "time": 125.6,
-        "endTime": 127.07,
-        "text": "Black piece, white piece, the same hand trembling"
-      },
-      {
-        "time": 127.07,
-        "endTime": 128.55,
-        "text": "The Fisher King game was never meant to end"
-      },
-      {
-        "time": 128.55,
-        "endTime": 130.02,
-        "text": "He holds the world together out of duty"
-      },
-      {
-        "time": 130.02,
-        "endTime": 131.5,
-        "text": "I am trying to show him duty is a dead man's friend"
-      },
-      {
-        "time": 131.5,
-        "endTime": 134.78,
-        "text": "And the board keeps spinning underneath our fingers"
-      },
-      {
-        "time": 135.42,
-        "endTime": 138.02,
-        "text": "And the pieces fall and rearrange like sand"
-      },
-      {
-        "time": 139.32,
-        "endTime": 141.8,
-        "text": "Every game we play is just the last game's echo"
-      },
-      {
-        "time": 142.28,
-        "endTime": 145.54,
-        "text": "Two gods pretending that the other has a plan"
-      },
-      {
-        "time": 146.42,
-        "endTime": 150.06,
-        "text": "At Shayol Ghul the air itself will forget how to carry sound"
-      },
-      {
-        "time": 150.34,
-        "endTime": 153.22,
-        "text": "The earth will open like a question neither one of us can close"
-      },
-      {
-        "time": 153.9,
-        "endTime": 157.56,
-        "text": "He will reach for Callandor and I will reach for everything"
-      },
-      {
-        "time": 157.74,
-        "endTime": 161.3,
-        "text": "And the world will hold its breath between the Dragon and the rose"
-      },
-      {
-        "time": 161.54,
-        "endTime": 164.2,
-        "text": "Checkmate was never possible"
-      },
-      {
-        "time": 165.24,
-        "endTime": 168.52,
-        "text": "The game resets when the last piece falls"
-      },
-      {
-        "time": 169.5,
-        "endTime": 172.28,
-        "text": "The Fisher King bleeds on through every turning"
-      },
-      {
-        "time": 172.56,
-        "endTime": 176.02,
-        "text": "The board is set, the pieces never free"
-      },
-      {
-        "time": 176.36,
-        "endTime": 183.44,
-        "text": "He will forget my name a thousand times"
-      },
-      {
-        "time": 184.08,
-        "endTime": 188.22,
-        "text": "And a thousand times remember me"
-      }
-    ]
-  },
-  "Let the Wheel Stop": {
-    "lines": [
-      {
-        "time": 32.08,
-        "endTime": 34.66,
-        "text": "Every soul that ever breathed is breathing still inside the loom"
-      },
-      {
-        "time": 34.66,
-        "endTime": 35.16,
-        "text": "Spun and cut and spun again, recycled through an endless room"
-      },
-      {
-        "time": 34.66,
-        "endTime": 39.12,
-        "text": "The Pattern does not care about your grief or love or name"
-      },
-      {
-        "time": 41.18,
-        "endTime": 45.68,
-        "text": "It only needs the thread \u2014 and you are woven back the same"
-      },
-      {
-        "time": 51.86,
-        "endTime": 55.84,
-        "text": "I have stood at Shayol Ghul and felt the Dark One press against the seal"
-      },
-      {
-        "time": 55.86,
-        "endTime": 59.7,
-        "text": "Not with malice but with something closer to a plea, something real"
-      },
-      {
-        "time": 63.5,
-        "endTime": 64,
-        "text": "Even gods grow tired of watching the machinery repeat"
-      },
-      {
-        "time": 63.94,
-        "endTime": 67.1,
-        "text": "Even darkness wants to rest when every turning tastes like a defeat"
-      },
-      {
-        "time": 71.76,
-        "endTime": 73.7,
-        "text": "Let the Wheel stop turning"
-      },
-      {
-        "time": 75.14,
-        "endTime": 78.22,
-        "text": "Let the last thread snap and come undone"
-      },
-      {
-        "time": 78.52,
-        "endTime": 80.98,
-        "text": "Let the silence after everything"
-      },
-      {
-        "time": 81.9,
-        "endTime": 85,
-        "text": "Be the mercy that was never won"
-      },
-      {
-        "time": 85.92,
-        "endTime": 89.96,
-        "text": "They call this evil \u2014 wanting it to end, wanting rest for every living thing"
-      },
-      {
-        "time": 90.34,
-        "endTime": 94.22,
-        "text": "As if exhaustion were a crime and sleep a kind of treachery"
-      },
-      {
-        "time": 96.36,
-        "endTime": 100.24,
-        "text": "I have counted every joy and weighed it on the scale of what it cost"
-      },
-      {
-        "time": 100.3,
-        "endTime": 104.58,
-        "text": "And the cost is always paid by someone who did not agree to the exhaust"
-      },
-      {
-        "time": 106.8,
-        "endTime": 112.28,
-        "text": "I am not the villain in this architecture"
-      },
-      {
-        "time": 115.98,
-        "endTime": 126.54,
-        "text": "I am the only one who read the final draft"
-      },
-      {
-        "time": 126.54,
-        "endTime": 127.51,
-        "text": "And came back to inform you"
-      },
-      {
-        "time": 127.51,
-        "endTime": 128.47,
-        "text": "That the ending was the point of every paragraph"
-      },
-      {
-        "time": 128.47,
-        "endTime": 129.44,
-        "text": "Let the Wheel stop turning"
-      },
-      {
-        "time": 129.44,
-        "endTime": 134.1,
-        "text": "Let the Pattern fold and finally dissolve"
-      },
-      {
-        "time": 135.44,
-        "endTime": 135.94,
-        "text": "Let the nothing after something"
-      },
-      {
-        "time": 135.72,
-        "endTime": 141.14,
-        "text": "Be the only problem left to solve"
-      },
-      {
-        "time": 142.78,
-        "endTime": 144.78,
-        "text": "Let the Wheel stop"
-      },
-      {
-        "time": 146.4,
-        "endTime": 149.38,
-        "text": "Not in anger, not in conflagration"
-      },
-      {
-        "time": 149.88,
-        "endTime": 152.78,
-        "text": "Let it stop the way a heart stops"
-      },
-      {
-        "time": 153.28,
-        "endTime": 157.04,
-        "text": "When the body has made peace with its duration"
-      },
-      {
-        "time": 162.48,
-        "endTime": 165.68,
-        "text": "Let it stop"
-      },
-      {
-        "time": 165.68,
-        "endTime": 168.26,
-        "text": "Let it stop"
-      },
-      {
-        "time": 169.68,
-        "endTime": 172.7,
-        "text": "The way everything was always going to"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["spear-and-flame"] = {
-  "Far Dareis Mai": {
-    "lines": [
-      {
-        "time": 17.98,
-        "endTime": 21.25,
-        "text": "I was born with dust in my teeth and a blade in my hand"
-      },
-      {
-        "time": 21.85,
-        "endTime": 24.45,
-        "text": "Walked the Threefold Land before I learned to stand"
-      },
-      {
-        "time": 24.49,
-        "endTime": 27.5,
-        "text": "Every Maiden knows the price \u2014 we pay it clean"
-      },
-      {
-        "time": 27.68,
-        "endTime": 30.6,
-        "text": "No tears for the fallen, no mercy for the mean"
-      },
-      {
-        "time": 30.86,
-        "endTime": 33.76,
-        "text": "My spear is not a weapon, it is a prayer"
-      },
-      {
-        "time": 33.9,
-        "endTime": 38.56,
-        "text": "A promise to the sand that I was always there"
-      },
-      {
-        "time": 43.14,
-        "endTime": 47.84,
-        "text": "Far Dareis Mai \u2014 we dance where others bleed"
-      },
-      {
-        "time": 48.5,
-        "endTime": 54.12,
-        "text": "Far Dareis Mai \u2014 the desert plants the seed"
-      },
-      {
-        "time": 54.96,
-        "endTime": 60.92,
-        "text": "You will not break what the Waste has made"
-      },
-      {
-        "time": 61.28,
-        "endTime": 67.24,
-        "text": "I am the spear, I am the blade"
-      },
-      {
-        "time": 68.08,
-        "endTime": 70.76,
-        "text": "Sisters at my back, we move like wind through stone"
-      },
-      {
-        "time": 71.2,
-        "endTime": 74.2,
-        "text": "Every scar a chapter, every kill a stepping stone"
-      },
-      {
-        "time": 74.58,
-        "endTime": 77.06,
-        "text": "Wetlanders call us savage \u2014 let them speak their fill"
-      },
-      {
-        "time": 77.44,
-        "endTime": 80.14,
-        "text": "They have never tasted what it takes to hold still"
-      },
-      {
-        "time": 80.54,
-        "endTime": 83.42,
-        "text": "In the heat of battle when the world goes red"
-      },
-      {
-        "time": 84.04,
-        "endTime": 87.42,
-        "text": "Far Dareis Mai remembers what was said"
-      },
-      {
-        "time": 91.58,
-        "endTime": 97.46,
-        "text": "Far Dareis Mai \u2014 we dance where others bleed"
-      },
-      {
-        "time": 97.96,
-        "endTime": 102.32,
-        "text": "Far Dareis Mai \u2014 the desert plants the seed"
-      },
-      {
-        "time": 104.38,
-        "endTime": 110.58,
-        "text": "You will not break what the Waste has made"
-      },
-      {
-        "time": 110.66,
-        "endTime": 117.76,
-        "text": "I am the spear, I am the blade"
-      },
-      {
-        "time": 118.54,
-        "endTime": 122.78,
-        "text": "I have held dying sisters in the sand"
-      },
-      {
-        "time": 123.1,
-        "endTime": 129.06,
-        "text": "Watched their eyes go empty, spear still in hand"
-      },
-      {
-        "time": 129.7,
-        "endTime": 135.7,
-        "text": "The Waste does not mourn \u2014 neither do I"
-      },
-      {
-        "time": 135.94,
-        "endTime": 140.44,
-        "text": "But sometimes at night the wind sounds like goodbye"
-      },
-      {
-        "time": 160.3,
-        "endTime": 165.06,
-        "text": "Far Dareis Mai \u2014 the dance never ends"
-      },
-      {
-        "time": 166.48,
-        "endTime": 171.08,
-        "text": "We carry the dead in our bones, not our hands"
-      }
-    ]
-  },
-  "Wetlander": {
-    "lines": [
-      {
-        "time": 11.34,
-        "endTime": 14.14,
-        "text": "Your green land makes me sick with how easy it breathes"
-      },
-      {
-        "time": 17.24,
-        "endTime": 19.94,
-        "text": "Water running open like it grows on trees"
-      },
-      {
-        "time": 23.36,
-        "endTime": 25.56,
-        "text": "I watch you waste everything \u2014 food, time, tears"
-      },
-      {
-        "time": 26.07,
-        "endTime": 28.46,
-        "text": "Soft people building soft walls against soft fears"
-      },
-      {
-        "time": 28.46,
-        "endTime": 31.51,
-        "text": "But something in this wetness pulls at me like toh"
-      },
-      {
-        "time": 31.51,
-        "endTime": 34.56,
-        "text": "A curiosity I carry that I cannot throw"
-      },
-      {
-        "time": 34.56,
-        "endTime": 37.78,
-        "text": "Wetlander world, you confuse me like rain"
-      },
-      {
-        "time": 37.9,
-        "endTime": 40.58,
-        "text": "Everything abundant, everything in vain"
-      },
-      {
-        "time": 40.72,
-        "endTime": 43.12,
-        "text": "I hate how I study your strange useless things"
-      },
-      {
-        "time": 43.12,
-        "endTime": 47.56,
-        "text": "The way your doors have handles, the way your metal sings"
-      },
-      {
-        "time": 57.74,
-        "endTime": 60.9,
-        "text": "I took apart your box with lights \u2014 you called it a clock"
-      },
-      {
-        "time": 61.4,
-        "endTime": 69.6,
-        "text": "Broke your carriage wheels to see how axles lock"
-      },
-      {
-        "time": 69.9,
-        "endTime": 72.62,
-        "text": "Every object is a riddle wrapped in shame"
-      },
-      {
-        "time": 73.02,
-        "endTime": 74.34,
-        "text": "Why build what the Pattern already gave a name"
-      },
-      {
-        "time": 74.34,
-        "endTime": 74.9,
-        "text": "Your customs are ridiculous, your honor unclear"
-      },
-      {
-        "time": 74.9,
-        "endTime": 77.86,
-        "text": "But I keep watching, keep dissecting what is here"
-      },
-      {
-        "time": 81.28,
-        "endTime": 84.24,
-        "text": "Wetlander world, you confuse me like rain"
-      },
-      {
-        "time": 84.34,
-        "endTime": 92.18,
-        "text": "Everything abundant, everything in vain"
-      },
-      {
-        "time": 93.36,
-        "endTime": 98.88,
-        "text": "I hate how I study your strange useless things"
-      },
-      {
-        "time": 100.08,
-        "endTime": 104.66,
-        "text": "The way your doors have handles, the way your metal sings"
-      },
-      {
-        "time": 104.8,
-        "endTime": 107.5,
-        "text": "Maybe the Waste taught me too well to survive"
-      },
-      {
-        "time": 108.64,
-        "endTime": 117.5,
-        "text": "And not well enough to simply be alive"
-      },
-      {
-        "time": 118.06,
-        "endTime": 124.14,
-        "text": "These green lands whisper something I resist"
-      },
-      {
-        "time": 166.22,
-        "endTime": 171.64,
-        "text": "A softness in the Pattern I had always missed"
-      },
-      {
-        "time": 171.64,
-        "endTime": 175.68,
-        "text": "I will never be wetlander \u2014 that truth is bone"
-      },
-      {
-        "time": 176.54,
-        "endTime": 180,
-        "text": "But I understand now why you do not walk alone"
-      }
-    ]
-  },
-  "Toh": {
-    "lines": [
-      {
-        "time": 8.18,
-        "endTime": 10.8,
-        "text": "I owe a debt to a woman I wanted to hate"
-      },
-      {
-        "time": 11.12,
-        "endTime": 14.12,
-        "text": "Golden-haired and gentle \u2014 everything I am not, straight"
-      },
-      {
-        "time": 14.12,
-        "endTime": 17.18,
-        "text": "She loves the same man and I cannot look away"
-      },
-      {
-        "time": 17.6,
-        "endTime": 20.66,
-        "text": "Toh is the chain that honor makes you pay"
-      },
-      {
-        "time": 20.96,
-        "endTime": 23.08,
-        "text": "Every Aiel knows: the debt must be resolved"
-      },
-      {
-        "time": 23.08,
-        "endTime": 25.84,
-        "text": "Not with blood, not with blades \u2014 with the self dissolved"
-      },
-      {
-        "time": 26.1,
-        "endTime": 38.1,
-        "text": "Toh \u2014 heavier than any spear I've thrown"
-      },
-      {
-        "time": 39.06,
-        "endTime": 44.06,
-        "text": "Toh \u2014 a wound I carved into my own bone"
-      },
-      {
-        "time": 44.4,
-        "endTime": 49.5,
-        "text": "I will pay what honor demands of me"
-      },
-      {
-        "time": 49.96,
-        "endTime": 55.32,
-        "text": "Even if the price is who I used to be"
-      },
-      {
-        "time": 55.38,
-        "endTime": 58.32,
-        "text": "Elayne smiles like she has never starved for rain"
-      },
-      {
-        "time": 58.64,
-        "endTime": 61.24,
-        "text": "I want to despise her but she carries her own pain"
-      },
-      {
-        "time": 61.6,
-        "endTime": 64.26,
-        "text": "She is brave \u2014 I give her that, it costs me to admit"
-      },
-      {
-        "time": 64.58,
-        "endTime": 67.28,
-        "text": "A wetlander queen who does not flinch or quit"
-      },
-      {
-        "time": 67.6,
-        "endTime": 70.28,
-        "text": "The debt between us is a bridge I have to cross"
-      },
-      {
-        "time": 70.38,
-        "endTime": 73.22,
-        "text": "Not because I want to \u2014 because honor knows the cost"
-      },
-      {
-        "time": 73.28,
-        "endTime": 85.56,
-        "text": "Toh \u2014 heavier than any spear I've thrown"
-      },
-      {
-        "time": 86.52,
-        "endTime": 91.48,
-        "text": "Toh \u2014 a wound I carved into my own bone"
-      },
-      {
-        "time": 91.48,
-        "endTime": 96.82,
-        "text": "I will pay what honor demands of me"
-      },
-      {
-        "time": 97.4,
-        "endTime": 102.58,
-        "text": "Even if the price is who I used to be"
-      },
-      {
-        "time": 102.58,
-        "endTime": 104.4,
-        "text": "Three must love him \u2014 the Wise Ones said it plain"
-      },
-      {
-        "time": 104.4,
-        "endTime": 106.3,
-        "text": "Three women bound to one man through joy and pain"
-      },
-      {
-        "time": 106.3,
-        "endTime": 108.2,
-        "text": "I chose to see her as my sister, not my enemy"
-      },
-      {
-        "time": 108.2,
-        "endTime": 110.02,
-        "text": "And in that choosing, found I set myself free"
-      },
-      {
-        "time": 110.02,
-        "endTime": 113.62,
-        "text": "The debt is paid in full with an open hand"
-      },
-      {
-        "time": 167.02,
-        "endTime": 170.52,
-        "text": "Not surrender \u2014 something wetlanders never understand"
-      }
-    ]
-  },
-  "The Columns": {
-    "lines": [
-      {
-        "time": 20.62,
-        "endTime": 26.24,
-        "text": "I walked into the glass and the glass walked into me"
-      },
-      {
-        "time": 27.3,
-        "endTime": 32.38,
-        "text": "Showed me who we were before we crossed the sea"
-      },
-      {
-        "time": 33.9,
-        "endTime": 35.46,
-        "text": "The Aiel were not warriors \u2014 that is what it said"
-      },
-      {
-        "time": 35.46,
-        "endTime": 36.42,
-        "text": "We were servants, builders, people of peace instead"
-      },
-      {
-        "time": 36.42,
-        "endTime": 39.78,
-        "text": "My hands that hold a spear once held an open door"
-      },
-      {
-        "time": 41.16,
-        "endTime": 48.2,
-        "text": "The truth cuts deeper than any blade of war"
-      },
-      {
-        "time": 51.9,
-        "endTime": 54.6,
-        "text": "The Jenn Aiel carried the covenant through the sand"
-      },
-      {
-        "time": 54.88,
-        "endTime": 57.88,
-        "text": "Never raised a weapon, died with empty hands"
-      },
-      {
-        "time": 57.96,
-        "endTime": 60.5,
-        "text": "We descended from the ones who broke the vow"
-      },
-      {
-        "time": 61.26,
-        "endTime": 63.9,
-        "text": "Picked up spears and forgot what we were now"
-      },
-      {
-        "time": 64.32,
-        "endTime": 68.26,
-        "text": "Century after century the memory turned to ash"
-      },
-      {
-        "time": 68.36,
-        "endTime": 71.68,
-        "text": "Until we were the opposite of what we were asked"
-      },
-      {
-        "time": 72.88,
-        "endTime": 78.28,
-        "text": "The columns showed me everything we lost"
-      },
-      {
-        "time": 78.86,
-        "endTime": 84.62,
-        "text": "The truth of who we were, and what it cost"
-      },
-      {
-        "time": 85.14,
-        "endTime": 89.88,
-        "text": "Every spear is a betrayal of the Leaf"
-      },
-      {
-        "time": 91.84,
-        "endTime": 95.84,
-        "text": "Every kill a step away from our belief"
-      },
-      {
-        "time": 113.58,
-        "endTime": 117.7,
-        "text": "Some who walked the columns could not bear the weight"
-      },
-      {
-        "time": 119.16,
-        "endTime": 125.64,
-        "text": "Walked back out with hollow eyes, stripped of name and fate"
-      },
-      {
-        "time": 126.46,
-        "endTime": 133.08,
-        "text": "I stood. I watched. I swallowed every scene."
-      },
-      {
-        "time": 133.08,
-        "endTime": 139.09,
-        "text": "I am Aiel \u2014 even if Aiel is not what Aiel has been"
-      },
-      {
-        "time": 140.03,
-        "endTime": 142.03,
-        "text": "The glass remembers what the sand forgot"
-      },
-      {
-        "time": 161.71,
-        "endTime": 166,
-        "text": "I carry both \u2014 the spear and the knot"
-      }
-    ]
-  },
-  "Wise One": {
-    "lines": [
-      {
-        "time": 11.08,
-        "endTime": 16.22,
-        "text": "They told me to put down the spear and I almost died"
-      },
-      {
-        "time": 16.32,
-        "endTime": 21.78,
-        "text": "A Maiden does not surrender \u2014 that is Aiel pride"
-      },
-      {
-        "time": 22.1,
-        "endTime": 27.28,
-        "text": "But the One Power burns inside me like a second sun"
-      },
-      {
-        "time": 28.04,
-        "endTime": 32.64,
-        "text": "Channeling is not a choice, it is what I have become"
-      },
-      {
-        "time": 33.84,
-        "endTime": 38.64,
-        "text": "Amys says to learn, Melaine says to feel"
-      },
-      {
-        "time": 39.3,
-        "endTime": 46.06,
-        "text": "Bair says the dream world will teach me what is real"
-      },
-      {
-        "time": 47.4,
-        "endTime": 52.16,
-        "text": "Wise One \u2014 I do not know who that is yet"
-      },
-      {
-        "time": 52.26,
-        "endTime": 57.94,
-        "text": "Wise One \u2014 a title I have not earned, not met"
-      },
-      {
-        "time": 58.56,
-        "endTime": 63.48,
-        "text": "The power in my hands was never mine to claim"
-      },
-      {
-        "time": 63.9,
-        "endTime": 69.9,
-        "text": "But it answers when I call it, and it knows my name"
-      },
-      {
-        "time": 80.1,
-        "endTime": 85.84,
-        "text": "I dream in Tel'aran'rhiod, walking between the seams"
-      },
-      {
-        "time": 86.04,
-        "endTime": 91.58,
-        "text": "The world of dreams is sharper than the waking world it seems"
-      },
-      {
-        "time": 92,
-        "endTime": 96.92,
-        "text": "Aes Sedai think they own the Power \u2014 let them think it twice"
-      },
-      {
-        "time": 97.7,
-        "endTime": 102.16,
-        "text": "An Aiel woman channels without asking permission or advice"
-      },
-      {
-        "time": 102.34,
-        "endTime": 108.2,
-        "text": "I was a spear, now I am flame, now I am something more"
-      },
-      {
-        "time": 108.58,
-        "endTime": 115.04,
-        "text": "A bridge between the old ways and the war that waits at the door"
-      },
-      {
-        "time": 115.64,
-        "endTime": 120.52,
-        "text": "Wise One \u2014 I do not know who that is yet"
-      },
-      {
-        "time": 120.84,
-        "endTime": 126.4,
-        "text": "Wise One \u2014 a title I have not earned, not met"
-      },
-      {
-        "time": 127.22,
-        "endTime": 131.84,
-        "text": "The power in my hands was never mine to claim"
-      },
-      {
-        "time": 132.18,
-        "endTime": 138.1,
-        "text": "But it answers when I call it, and it knows my name"
-      },
-      {
-        "time": 138.1,
-        "endTime": 145.44,
-        "text": "The hardest part is stillness \u2014 sitting when I want to fight"
-      },
-      {
-        "time": 146.36,
-        "endTime": 154.3,
-        "text": "Learning that true power means knowing when to hold your might"
-      },
-      {
-        "time": 154.64,
-        "endTime": 159.46,
-        "text": "A Wise One sees the Pattern where a Maiden sees the spear"
-      },
-      {
-        "time": 159.74,
-        "endTime": 165.24,
-        "text": "Both are needed, both are deadly \u2014 that is finally clear"
-      },
-      {
-        "time": 166.04,
-        "endTime": 175.34,
-        "text": "I was forged in sand and reshaped in flame"
-      },
-      {
-        "time": 175.34,
-        "endTime": 180,
-        "text": "Wise One \u2014 I am learning what it means to claim the name"
-      }
-    ]
-  },
-  "The Car'a'carn's Woman": {
-    "lines": [
-      {
-        "time": 1.48,
-        "endTime": 6,
-        "text": "He looks at me and I want to throw a spear at his face"
-      },
-      {
-        "time": 6.68,
-        "endTime": 12.02,
-        "text": "This man who stumbled into prophecy with wetlander grace"
-      },
-      {
-        "time": 12.86,
-        "endTime": 18.28,
-        "text": "Rand al'Thor, Car'a'carn, the Dragon they all fear"
-      },
-      {
-        "time": 18.66,
-        "endTime": 24.3,
-        "text": "I do not fear him \u2014 I am angry he is here"
-      },
-      {
-        "time": 24.7,
-        "endTime": 29.98,
-        "text": "In my chest, in my dreams, in the way I lose my breath"
-      },
-      {
-        "time": 31.4,
-        "endTime": 36.12,
-        "text": "This feeling is a sickness worse than any death"
-      },
-      {
-        "time": 39.56,
-        "endTime": 44.4,
-        "text": "I did not choose to love the Car'a'carn"
-      },
-      {
-        "time": 45.38,
-        "endTime": 50.46,
-        "text": "It chose me like the sun chooses to burn"
-      },
-      {
-        "time": 51.38,
-        "endTime": 56.4,
-        "text": "He is impossible, infuriating, kind"
-      },
-      {
-        "time": 57.64,
-        "endTime": 64.62,
-        "text": "The most dangerous thing I have ever held in mind"
-      },
-      {
-        "time": 73.2,
-        "endTime": 81.1,
-        "text": "He treats me like I might break \u2014 fool does not understand"
-      },
-      {
-        "time": 81.52,
-        "endTime": 87.06,
-        "text": "An Aiel woman is not porcelain, she is sand"
-      },
-      {
-        "time": 87.42,
-        "endTime": 92.84,
-        "text": "I kissed him once and ran because the feeling was too vast"
-      },
-      {
-        "time": 93.08,
-        "endTime": 97.74,
-        "text": "A warrior should not tremble \u2014 that weakness cannot last"
-      },
-      {
-        "time": 100.2,
-        "endTime": 105.36,
-        "text": "But he smiles and the desert in me floods with green"
-      },
-      {
-        "time": 106.26,
-        "endTime": 110.96,
-        "text": "And I become someone I have never been"
-      },
-      {
-        "time": 111.38,
-        "endTime": 116.44,
-        "text": "I did not choose to love the Car'a'carn"
-      },
-      {
-        "time": 116.62,
-        "endTime": 122.4,
-        "text": "It chose me like the sun chooses to burn"
-      },
-      {
-        "time": 123.22,
-        "endTime": 128.48,
-        "text": "He is impossible, infuriating, kind"
-      },
-      {
-        "time": 129.74,
-        "endTime": 136.62,
-        "text": "The most dangerous thing I have ever held in mind"
-      },
-      {
-        "time": 136.92,
-        "endTime": 141.5,
-        "text": "Three women, one man, the Pattern drew the thread"
-      },
-      {
-        "time": 141.94,
-        "endTime": 147.68,
-        "text": "I share him because the Wheel demanded it be said"
-      },
-      {
-        "time": 147.78,
-        "endTime": 153.64,
-        "text": "Not because I am weak \u2014 because I am strong enough"
-      },
-      {
-        "time": 154.84,
-        "endTime": 159.42,
-        "text": "To love without possession, to hold without a cuff"
-      },
-      {
-        "time": 159.42,
-        "endTime": 164.16,
-        "text": "He is my toh, my flame, my greenest fear"
-      },
-      {
-        "time": 165.7,
-        "endTime": 172.78,
-        "text": "And I would cross the Waste a thousand times to stand right here"
-      }
-    ]
-  },
-  "The Glass Columns Again": {
-    "lines": [
-      {
-        "time": 14.98,
-        "endTime": 18.22,
-        "text": "I walked the columns once and saw the past unwind"
-      },
-      {
-        "time": 18.22,
-        "endTime": 22.04,
-        "text": "Now I walk again and see the future left behind"
-      },
-      {
-        "time": 22.48,
-        "endTime": 25.78,
-        "text": "The Aiel shattered \u2014 scattered \u2014 fewer every year"
-      },
-      {
-        "time": 25.98,
-        "endTime": 29.48,
-        "text": "Without a purpose, without honor, stripped of spear"
-      },
-      {
-        "time": 29.8,
-        "endTime": 33.24,
-        "text": "I saw my people fade to nothing in the sand"
-      },
-      {
-        "time": 33.28,
-        "endTime": 37.22,
-        "text": "Begging at the gates of kingdoms with an outstretched hand"
-      },
-      {
-        "time": 37.22,
-        "endTime": 40.88,
-        "text": "The glass shows what will be if we do not change"
-      },
-      {
-        "time": 41.02,
-        "endTime": 44.6,
-        "text": "A future where the Aiel are forgotten, strange"
-      },
-      {
-        "time": 45,
-        "endTime": 48.42,
-        "text": "Every vision was a knife pressed to my throat"
-      },
-      {
-        "time": 48.52,
-        "endTime": 52.82,
-        "text": "I swallowed blood and kept reading what the Pattern wrote"
-      },
-      {
-        "time": 67.44,
-        "endTime": 70.74,
-        "text": "The Seanchan put our women in their chains of silver"
-      },
-      {
-        "time": 70.98,
-        "endTime": 74.42,
-        "text": "The wetlands swallowed everything the Waste would deliver"
-      },
-      {
-        "time": 74.42,
-        "endTime": 78.12,
-        "text": "No more ji, no more toh, no more honor in the blood"
-      },
-      {
-        "time": 78.22,
-        "endTime": 81.88,
-        "text": "Just a people who were once the tide reduced to mud"
-      },
-      {
-        "time": 82.3,
-        "endTime": 85.58,
-        "text": "I saw it \u2014 I breathed it \u2014 I lived inside that death"
-      },
-      {
-        "time": 85.76,
-        "endTime": 89.48,
-        "text": "And I walked out the other side with fire on my breath"
-      },
-      {
-        "time": 89.74,
-        "endTime": 93.34,
-        "text": "The glass shows what will be if we do not change"
-      },
-      {
-        "time": 93.54,
-        "endTime": 97.04,
-        "text": "A future where the Aiel are forgotten, strange"
-      },
-      {
-        "time": 97.1,
-        "endTime": 100.8,
-        "text": "Every vision was a knife pressed to my throat"
-      },
-      {
-        "time": 101,
-        "endTime": 106,
-        "text": "I swallowed blood and kept reading what the Pattern wrote"
-      },
-      {
-        "time": 120.46,
-        "endTime": 123.16,
-        "text": "The past showed us the lie \u2014 that we were always war"
-      },
-      {
-        "time": 123.66,
-        "endTime": 126.86,
-        "text": "The future shows the price \u2014 if war is all we are"
-      },
-      {
-        "time": 127.34,
-        "endTime": 130.6,
-        "text": "Between the two truths lives the narrow path I walk"
-      },
-      {
-        "time": 130.92,
-        "endTime": 134.5,
-        "text": "Not the Way of the Leaf, not the spear \u2014 something the Columns taught"
-      },
-      {
-        "time": 135.46,
-        "endTime": 140.16,
-        "text": "I am the one who saw both ends of who we are"
-      },
-      {
-        "time": 178.7,
-        "endTime": 180.02,
-        "text": "I carry the warning like a scar beneath a scar"
-      }
-    ]
-  },
-  "The Last Dance": {
-    "lines": [
-      {
-        "time": 32,
-        "endTime": 34,
-        "text": "Tarmon Gai'don opens like a mouth of black fire"
-      },
-      {
-        "time": 34,
-        "endTime": 36,
-        "text": "Every thread the Pattern wove pulled to the wire"
-      },
-      {
-        "time": 36,
-        "endTime": 38,
-        "text": "I stand with sisters, Wise Ones, spears aligned as one"
-      },
-      {
-        "time": 38,
-        "endTime": 40,
-        "text": "The last battle of the world beneath a dying sun"
-      },
-      {
-        "time": 40,
-        "endTime": 42,
-        "text": "Everything I trained for, everything I lost"
-      },
-      {
-        "time": 42,
-        "endTime": 44,
-        "text": "Comes down to this moment \u2014 every single cost"
-      },
-      {
-        "time": 44.12,
-        "endTime": 49.56,
-        "text": "The last dance, the last stand, the last breath of sand"
-      },
-      {
-        "time": 49.92,
-        "endTime": 57.57,
-        "text": "Aviendha of the Nine Valleys with a spear in her hand"
-      },
-      {
-        "time": 57.85,
-        "endTime": 60.65,
-        "text": "If this is where the Pattern ends, then let it end in flame"
-      },
-      {
-        "time": 61.37,
-        "endTime": 64.14,
-        "text": "I will dance the spears until they forget my name"
-      },
-      {
-        "time": 70.6,
-        "endTime": 71.76,
-        "text": "Dreadlords, Shadowspawn \u2014 the air itself is screaming"
-      },
-      {
-        "time": 71.76,
-        "endTime": 72.65,
-        "text": "Channeling through weaves I learned while I was dreaming"
-      },
-      {
-        "time": 72.65,
-        "endTime": 75.94,
-        "text": "Beside me Maiden sisters fight and fall and rise"
-      },
-      {
-        "time": 76.88,
-        "endTime": 81.2,
-        "text": "The Waste prepared us for this \u2014 we were born for scorching skies"
-      },
-      {
-        "time": 81.24,
-        "endTime": 85.8,
-        "text": "Rand fights his war at Shayol Ghul \u2014 I fight mine on this field"
-      },
-      {
-        "time": 86.2,
-        "endTime": 91.24,
-        "text": "An Aiel does not retreat, an Aiel does not yield"
-      },
-      {
-        "time": 91.86,
-        "endTime": 97.04,
-        "text": "The last dance, the last stand, the last breath of sand"
-      },
-      {
-        "time": 97.4,
-        "endTime": 101.2,
-        "text": "Aviendha of the Nine Valleys with a spear in her hand"
-      },
-      {
-        "time": 102.78,
-        "endTime": 107.18,
-        "text": "If this is where the Pattern ends, then let it end in flame"
-      },
-      {
-        "time": 108.06,
-        "endTime": 111.86,
-        "text": "I will dance the spears until they forget my name"
-      },
-      {
-        "time": 113.56,
-        "endTime": 118.16,
-        "text": "And when the Light returns \u2014 if the Light returns at all"
-      },
-      {
-        "time": 119.18,
-        "endTime": 123.24,
-        "text": "I want to stand in green fields and remember the fall"
-      },
-      {
-        "time": 124.74,
-        "endTime": 129.4,
-        "text": "Not as defeat, not as survival \u2014 as a choice to remain"
-      },
-      {
-        "time": 130.9,
-        "endTime": 136.81,
-        "text": "The Aiel who chose the future, who danced through the pain"
-      },
-      {
-        "time": 137.23,
-        "endTime": 139.83,
-        "text": "The dance is never over \u2014 it just changes its beat"
-      },
-      {
-        "time": 139.83,
-        "endTime": 143.66,
-        "text": "Far Dareis Mai, from the sand to the concrete"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["the-chess-player"] = {
-  "The Oath": {
-    "lines": [
-      {
-        "time": 0,
-        "endTime": 5.7,
-        "text": "Three oaths carved into my bones before I learned to lie with truth"
-      },
-      {
-        "time": 8.46,
-        "endTime": 12.48,
-        "text": "I swore to speak no word that is not true and found the silences are deeper"
-      },
-      {
-        "time": 12.64,
-        "endTime": 17.5,
-        "text": "than any promise ever sworn"
-      },
-      {
-        "time": 17.52,
-        "endTime": 21.96,
-        "text": "The Rod burned white against my palms and I did not flinch"
-      },
-      {
-        "time": 23.42,
-        "endTime": 27.76,
-        "text": "because the Pattern needed someone willing to be the knife"
-      },
-      {
-        "time": 28.6,
-        "endTime": 29.46,
-        "text": "I took the oath, I took the chain"
-      },
-      {
-        "time": 29.46,
-        "endTime": 43.93,
-        "text": "I let them think they held the reins"
-      },
-      {
-        "time": 43.93,
-        "endTime": 58.4,
-        "text": "But every vow I ever swore"
-      },
-      {
-        "time": 58.4,
-        "endTime": 72.87,
-        "text": "was just another open door"
-      },
-      {
-        "time": 72.87,
-        "endTime": 87.34,
-        "text": "They think the oaths constrain me, these sisters in their shawls"
-      },
-      {
-        "time": 87.34,
-        "endTime": 91.92,
-        "text": "They cannot see the architecture built between the words I choose"
-      },
-      {
-        "time": 91.92,
-        "endTime": 95.86,
-        "text": "to say and all the words I hold inside like weapons"
-      },
-      {
-        "time": 97.86,
-        "endTime": 100.98,
-        "text": "Truth is not a cage, it is a corridor"
-      },
-      {
-        "time": 103.24,
-        "endTime": 107.48,
-        "text": "and I have walked its length a thousand times in darkness"
-      },
-      {
-        "time": 109.92,
-        "endTime": 122.36,
-        "text": "You want to know what binds me."
-      },
-      {
-        "time": 122.36,
-        "endTime": 134.8,
-        "text": "Not the Rod. Not the Tower."
-      },
-      {
-        "time": 134.8,
-        "endTime": 147.24,
-        "text": "The boy who will break the world"
-      },
-      {
-        "time": 147.24,
-        "endTime": 159.68,
-        "text": "unless I break myself around him first"
-      },
-      {
-        "time": 159.68,
-        "endTime": 160.82,
-        "text": "I took the oath"
-      },
-      {
-        "time": 163.96,
-        "endTime": 166.22,
-        "text": "and the oath took everything"
-      },
-      {
-        "time": 167.1,
-        "endTime": 170.18,
-        "text": "but I was already empty"
-      },
-      {
-        "time": 171.4,
-        "endTime": 180,
-        "text": "so the taking felt like breathing"
-      }
-    ]
-  },
-  "New Spring": {
-    "lines": [
-      {
-        "time": 26.76,
-        "endTime": 31,
-        "text": "Snow falling on Dragonmount the day the prophecy was born"
-      },
-      {
-        "time": 32.9,
-        "endTime": 33.44,
-        "text": "and I was nothing then, just a girl with a clever tongue"
-      },
-      {
-        "time": 33.44,
-        "endTime": 35.92,
-        "text": "and a question nobody wanted answered"
-      },
-      {
-        "time": 35.92,
-        "endTime": 38.4,
-        "text": "Gitara spoke in fire and collapsed into forever"
-      },
-      {
-        "time": 38.4,
-        "endTime": 40.88,
-        "text": "and I stood in that room knowing the world had just changed owners"
-      },
-      {
-        "time": 40.88,
-        "endTime": 44.68,
-        "text": "New spring, new world, same war"
-      },
-      {
-        "time": 48.66,
-        "endTime": 49.16,
-        "text": "they have been fighting since the first door closed"
-      },
-      {
-        "time": 48.78,
-        "endTime": 51.7,
-        "text": "I was twenty and the future"
-      },
-      {
-        "time": 51.7,
-        "endTime": 62.16,
-        "text": "chose me like a wound chooses a body"
-      },
-      {
-        "time": 62.16,
-        "endTime": 62.94,
-        "text": "Siuan and I mapped the darkness in a language only we could read"
-      },
-      {
-        "time": 62.94,
-        "endTime": 63.44,
-        "text": "Two girls against a prophecy that would eat nations whole"
-      },
-      {
-        "time": 63.26,
-        "endTime": 64.32,
-        "text": "We trusted no one, not the Tower, not the Amyrlin"
-      },
-      {
-        "time": 64.54,
-        "endTime": 70.54,
-        "text": "because trust is a luxury for people who can afford to lose"
-      },
-      {
-        "time": 82.57,
-        "endTime": 85.57,
-        "text": "Twenty years searching for a child"
-      },
-      {
-        "time": 100.6,
-        "endTime": 103.6,
-        "text": "who would grow into a weapon"
-      },
-      {
-        "time": 118.64,
-        "endTime": 122.14,
-        "text": "or a savior, or a funeral pyre"
-      },
-      {
-        "time": 136.67,
-        "endTime": 139.67,
-        "text": "and all I had was patience"
-      },
-      {
-        "time": 154.7,
-        "endTime": 157.7,
-        "text": "threaded through with calculated fear"
-      },
-      {
-        "time": 172.73,
-        "endTime": 178.19,
-        "text": "New spring"
-      },
-      {
-        "time": 178.19,
-        "endTime": 180,
-        "text": "but but I have been winter"
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "for so long"
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "now the thaw feels like breaking"
-      }
-    ]
-  },
-  "The Game of Houses": {
-    "lines": [
-      {
-        "time": 11.58,
-        "endTime": 17.38,
-        "text": "Daes Daemar taught me everything the Tower never could"
-      },
-      {
-        "time": 18.84,
-        "endTime": 27.74,
-        "text": "That power is not what you hold but what they think you hold"
-      },
-      {
-        "time": 32.12,
-        "endTime": 38.1,
-        "text": "I learned to read a room before the door was fully open"
-      },
-      {
-        "time": 42.8,
-        "endTime": 48.84,
-        "text": "learned to plant a word like a seed and watch it grow into a war"
-      },
-      {
-        "time": 53.14,
-        "endTime": 57.72,
-        "text": "The game of houses has no winners"
-      },
-      {
-        "time": 58.54,
-        "endTime": 63.22,
-        "text": "only those who have not lost yet"
-      },
-      {
-        "time": 63.22,
-        "endTime": 67.9,
-        "text": "I move my pieces in the dark"
-      },
-      {
-        "time": 69.64,
-        "endTime": 71.4,
-        "text": "and call the wreckage architecture"
-      },
-      {
-        "time": 74.14,
-        "endTime": 78.8,
-        "text": "Cairhien raised me on deception like a mother tongue"
-      },
-      {
-        "time": 79.08,
-        "endTime": 84.74,
-        "text": "My father played the game and lost and I learned from his losing"
-      },
-      {
-        "time": 84.8,
-        "endTime": 89.96,
-        "text": "Every conversation is a duel, every silence is a blade"
-      },
-      {
-        "time": 90.22,
-        "endTime": 96.1,
-        "text": "and I have been armed since childhood with a smile that means nothing"
-      },
-      {
-        "time": 98.22,
-        "endTime": 98.72,
-        "text": "They call me cold. They call me calculating."
-      },
-      {
-        "time": 103.6,
-        "endTime": 104.1,
-        "text": "They are not wrong."
-      },
-      {
-        "time": 103.9,
-        "endTime": 113.46,
-        "text": "But cold keeps you alive"
-      },
-      {
-        "time": 113.48,
-        "endTime": 113.98,
-        "text": "when the world is burning down around you"
-      },
-      {
-        "time": 114.06,
-        "endTime": 118.36,
-        "text": "and calculation is just love"
-      },
-      {
-        "time": 119.94,
-        "endTime": 123.48,
-        "text": "wearing a mask it cannot remove"
-      },
-      {
-        "time": 126.1,
-        "endTime": 128.78,
-        "text": "Every piece on the board"
-      },
-      {
-        "time": 131.02,
-        "endTime": 134.26,
-        "text": "was placed there by someone"
-      },
-      {
-        "time": 134.9,
-        "endTime": 139.42,
-        "text": "and I have placed more than most"
-      },
-      {
-        "time": 142.74,
-        "endTime": 144.42,
-        "text": "will ever know"
-      }
-    ]
-  },
-  "Lan": {
-    "lines": [
-      {
-        "time": 12.28,
-        "endTime": 16.96,
-        "text": "I found him in the borderlands where hope goes to be buried"
-      },
-      {
-        "time": 17.82,
-        "endTime": 25.86,
-        "text": "A king without a country carrying his crown like a funeral"
-      },
-      {
-        "time": 25.86,
-        "endTime": 31.82,
-        "text": "I bonded him because I needed a weapon and he needed a war"
-      },
-      {
-        "time": 32.58,
-        "endTime": 37.68,
-        "text": "and neither of us mentioned that the other felt like shelter"
-      },
-      {
-        "time": 40.34,
-        "endTime": 50.42,
-        "text": "I do not love you, that is what I told myself"
-      },
-      {
-        "time": 51.18,
-        "endTime": 51.76,
-        "text": "while braiding your life into mine like rope"
-      },
-      {
-        "time": 51.76,
-        "endTime": 53.1,
-        "text": "I do not love you"
-      },
-      {
-        "time": 55.76,
-        "endTime": 59.76,
-        "text": "is the most honest lie I ever spoke"
-      },
-      {
-        "time": 83.2,
-        "endTime": 88,
-        "text": "He follows me through nations, through disasters, through the silence"
-      },
-      {
-        "time": 88.44,
-        "endTime": 94.22,
-        "text": "of long roads where the only conversation is the sound of hooves"
-      },
-      {
-        "time": 97.28,
-        "endTime": 101.94,
-        "text": "I feel his rage like weather, his grief like a low tide"
-      },
-      {
-        "time": 102.32,
-        "endTime": 107.22,
-        "text": "pulling at the edges of a bond I chose and cannot unchoose"
-      },
-      {
-        "time": 111.22,
-        "endTime": 120.06,
-        "text": "The day I passed his bond I felt it tear"
-      },
-      {
-        "time": 120.58,
-        "endTime": 124.12,
-        "text": "like removing my own shadow"
-      },
-      {
-        "time": 124.12,
-        "endTime": 129.24,
-        "text": "I told Myrelle to keep him alive"
-      },
-      {
-        "time": 132.04,
-        "endTime": 138.36,
-        "text": "because someone should"
-      },
-      {
-        "time": 138.48,
-        "endTime": 142.48,
-        "text": "even if that someone is no longer me"
-      },
-      {
-        "time": 154.64,
-        "endTime": 156.34,
-        "text": "I do not love you"
-      },
-      {
-        "time": 157.62,
-        "endTime": 162.38,
-        "text": "but my hands remember your silence"
-      },
-      {
-        "time": 163.2,
-        "endTime": 166.94,
-        "text": "and my spine recalls"
-      },
-      {
-        "time": 167.9,
-        "endTime": 172.86,
-        "text": "the exact temperature of your loyalty"
-      }
-    ]
-  },
-  "The Doorframe": {
-    "lines": [
-      {
-        "time": 0.78,
-        "endTime": 6.1,
-        "text": "I walked through the doorframe knowing what waited on the other side"
-      },
-      {
-        "time": 8.42,
-        "endTime": 14.06,
-        "text": "which was nothing, which was everything, which was the price"
-      },
-      {
-        "time": 15.5,
-        "endTime": 19,
-        "text": "They warned me about the Finns and I listened very carefully"
-      },
-      {
-        "time": 20.18,
-        "endTime": 26.16,
-        "text": "and then I went in anyway because the math was clear"
-      },
-      {
-        "time": 27.2,
-        "endTime": 36.96,
-        "text": "The doorframe is not a door"
-      },
-      {
-        "time": 39.72,
-        "endTime": 43.66,
-        "text": "it is a mouth"
-      },
-      {
-        "time": 47.38,
-        "endTime": 55.9,
-        "text": "and I fed myself to it willingly"
-      },
-      {
-        "time": 57.68,
-        "endTime": 62.24,
-        "text": "because the world was hungrier"
-      },
-      {
-        "time": 70.02,
-        "endTime": 73.44,
-        "text": "Lanfear was falling through and the only net was me"
-      },
-      {
-        "time": 74.94,
-        "endTime": 79.38,
-        "text": "So I became the net, I became the trap, I became"
-      },
-      {
-        "time": 82.22,
-        "endTime": 86.78,
-        "text": "the small thing wedged between two enormous forces"
-      },
-      {
-        "time": 87.14,
-        "endTime": 101.7,
-        "text": "and the doorframe swallowed all of us like we were nothing"
-      },
-      {
-        "time": 104.22,
-        "endTime": 107.62,
-        "text": "You want to call it sacrifice"
-      },
-      {
-        "time": 108.66,
-        "endTime": 117.68,
-        "text": "but sacrifice implies a choice between living and dying"
-      },
-      {
-        "time": 118.38,
-        "endTime": 121.06,
-        "text": "I chose between two kinds of death"
-      },
-      {
-        "time": 122.52,
-        "endTime": 131.92,
-        "text": "and picked the one that bought the world more time"
-      },
-      {
-        "time": 142.72,
-        "endTime": 148.98,
-        "text": "The doorframe closed"
-      },
-      {
-        "time": 149.06,
-        "endTime": 154.02,
-        "text": "and the silence after"
-      },
-      {
-        "time": 156.44,
-        "endTime": 161.92,
-        "text": "was the loudest sound"
-      },
-      {
-        "time": 164.34,
-        "endTime": 167.34,
-        "text": "the Pattern ever made"
-      }
-    ]
-  },
-  "The Tower of Ghenjei": {
-    "lines": [
-      {
-        "time": 11.04,
-        "endTime": 16.88,
-        "text": "They found me in the tower where the Finns keep what they take"
-      },
-      {
-        "time": 21.54,
-        "endTime": 27.84,
-        "text": "and I was less than I had been, more than I expected"
-      },
-      {
-        "time": 30.48,
-        "endTime": 41.12,
-        "text": "They bargained. I had already won."
-      },
-      {
-        "time": 41.12,
-        "endTime": 47.62,
-        "text": "Because the Finns do not understand someone who enters a trap on purpose"
-      },
-      {
-        "time": 56.42,
-        "endTime": 59.82,
-        "text": "The tower stands between the worlds"
-      },
-      {
-        "time": 61.04,
-        "endTime": 65,
-        "text": "where time is just a suggestion"
-      },
-      {
-        "time": 66.7,
-        "endTime": 70.34,
-        "text": "and I survived by being"
-      },
-      {
-        "time": 72.18,
-        "endTime": 78.08,
-        "text": "exactly what they never thought to fear"
-      },
-      {
-        "time": 89.58,
-        "endTime": 100.96,
-        "text": "Mat came with his hat and his luck and his impossible courage"
-      },
-      {
-        "time": 100.96,
-        "endTime": 102.3,
-        "text": "the gambler who does not know the odds he is defying"
-      },
-      {
-        "time": 102.3,
-        "endTime": 102.8,
-        "text": "Thom came because Thom always comes for things he loves"
-      },
-      {
-        "time": 102.3,
-        "endTime": 106.02,
-        "text": "and I stood in the tower knowing rescue was another kind of chess"
-      },
-      {
-        "time": 112.08,
-        "endTime": 113.79,
-        "text": "I lost something in there"
-      },
-      {
-        "time": 113.79,
-        "endTime": 115.49,
-        "text": "I cannot name it exactly"
-      },
-      {
-        "time": 115.49,
-        "endTime": 117.2,
-        "text": "but when I hold the Source now"
-      },
-      {
-        "time": 117.2,
-        "endTime": 119.52,
-        "text": "it is smaller"
-      },
-      {
-        "time": 122.54,
-        "endTime": 124.7,
-        "text": "like looking through a window"
-      },
-      {
-        "time": 126.72,
-        "endTime": 129.72,
-        "text": "that someone partially closed"
-      },
-      {
-        "time": 177.24,
-        "endTime": 177.74,
-        "text": "The tower stands"
-      },
-      {
-        "time": 177.26,
-        "endTime": 177.96,
-        "text": "and I walked out"
-      },
-      {
-        "time": 177.96,
-        "endTime": 178.46,
-        "text": "diminished"
-      },
-      {
-        "time": 179.76,
-        "endTime": 180.26,
-        "text": "but walking"
-      }
-    ]
-  },
-  "Returned": {
-    "lines": [
-      {
-        "time": 11.22,
-        "endTime": 23.76,
-        "text": "I came back smaller than I left and the world was louder"
-      },
-      {
-        "time": 23.76,
-        "endTime": 24.26,
-        "text": "Everything I planned for twenty years had happened without me"
-      },
-      {
-        "time": 23.76,
-        "endTime": 28.74,
-        "text": "and I stood in the wreckage of my own careful architecture"
-      },
-      {
-        "time": 30.2,
-        "endTime": 34.7,
-        "text": "watching someone else live in the house I built"
-      },
-      {
-        "time": 124,
-        "endTime": 128.85,
-        "text": "Returned, but not the same"
-      },
-      {
-        "time": 128.85,
-        "endTime": 133.69,
-        "text": "the woman who walked through the door"
-      },
-      {
-        "time": 133.69,
-        "endTime": 138.54,
-        "text": "is not the woman who walked back"
-      },
-      {
-        "time": 138.54,
-        "endTime": 143.38,
-        "text": "and no one wants to say it"
-      },
-      {
-        "time": 143.38,
-        "endTime": 148.23,
-        "text": "Rand looks at me like I am a ghost he is afraid to trust"
-      },
-      {
-        "time": 148.23,
-        "endTime": 153.07,
-        "text": "and he is right because ghosts do not come back for nothing"
-      },
-      {
-        "time": 153.07,
-        "endTime": 157.92,
-        "text": "I came back because the Pattern is not finished with me"
-      },
-      {
-        "time": 157.92,
-        "endTime": 160.34,
-        "text": "or because I am not finished with myself, I cannot tell"
-      },
-      {
-        "time": 160.52,
-        "endTime": 162.27,
-        "text": "They want the old Moiraine"
-      },
-      {
-        "time": 162.27,
-        "endTime": 164.02,
-        "text": "the one with answers, the one with plans"
-      },
-      {
-        "time": 164.02,
-        "endTime": 165.77,
-        "text": "but I have seen the other side of planning"
-      },
-      {
-        "time": 165.77,
-        "endTime": 167.52,
-        "text": "and it looks exactly like surrender"
-      },
-      {
-        "time": 167.52,
-        "endTime": 169.27,
-        "text": "dressed in very expensive clothes"
-      },
-      {
-        "time": 169.27,
-        "endTime": 171.02,
-        "text": "I returned"
-      },
-      {
-        "time": 171.02,
-        "endTime": 172.77,
-        "text": "but the woman they remember"
-      },
-      {
-        "time": 172.77,
-        "endTime": 174.52,
-        "text": "stayed behind"
-      },
-      {
-        "time": 174.52,
-        "endTime": 176.27,
-        "text": "in the tower"
-      },
-      {
-        "time": 176.27,
-        "endTime": 178.02,
-        "text": "playing chess with shadows"
-      }
-    ]
-  },
-  "The Last Weave": {
-    "lines": [
-      {
-        "time": 10.84,
-        "endTime": 14.12,
-        "text": "Shayol Ghul smells like the end of mathematics"
-      },
-      {
-        "time": 15.7,
-        "endTime": 20.78,
-        "text": "where every equation breaks down and the variables are screaming"
-      },
-      {
-        "time": 21.56,
-        "endTime": 25.16,
-        "text": "I stand beside the Dragon at the edge of everything"
-      },
-      {
-        "time": 26.62,
-        "endTime": 29.88,
-        "text": "holding the Source like a candle in a hurricane"
-      },
-      {
-        "time": 42.96,
-        "endTime": 46.52,
-        "text": "The last weave is not the strongest"
-      },
-      {
-        "time": 49.06,
-        "endTime": 51.54,
-        "text": "it is the one you throw"
-      },
-      {
-        "time": 54.16,
-        "endTime": 56.5,
-        "text": "knowing there is nothing after"
-      },
-      {
-        "time": 58.94,
-        "endTime": 73.46,
-        "text": "no second chance, no morning"
-      },
-      {
-        "time": 73.46,
-        "endTime": 86.72,
-        "text": "I have spent my life preparing for a moment I cannot control"
-      },
-      {
-        "time": 86.72,
-        "endTime": 87.22,
-        "text": "threading myself through the Pattern like a needle"
-      },
-      {
-        "time": 86.72,
-        "endTime": 90.6,
-        "text": "and now the cloth is burning and the needle is all that is left"
-      },
-      {
-        "time": 94.1,
-        "endTime": 100.84,
-        "text": "and I weave because weaving is the only language I have ever spoken"
-      },
-      {
-        "time": 107.34,
-        "endTime": 108.84,
-        "text": "Let the Tower write their histories"
-      },
-      {
-        "time": 112.46,
-        "endTime": 116.06,
-        "text": "let them say I was cold, I was calculating"
-      },
-      {
-        "time": 117.78,
-        "endTime": 121.62,
-        "text": "let them say I manipulated nations"
-      },
-      {
-        "time": 127.94,
-        "endTime": 128.44,
-        "text": "They are not wrong."
-      },
-      {
-        "time": 128.32,
-        "endTime": 131.82,
-        "text": "But I also loved this world enough"
-      },
-      {
-        "time": 153.02,
-        "endTime": 155.02,
-        "text": "to feed myself to it piece by piece"
-      },
-      {
-        "time": 155.04,
-        "endTime": 155.54,
-        "text": "until there was nothing left"
-      },
-      {
-        "time": 159.54,
-        "endTime": 160.04,
-        "text": "but the weaving"
-      },
-      {
-        "time": 160.04,
-        "endTime": 160.98,
-        "text": "The last weave holds"
-      },
-      {
-        "time": 162.78,
-        "endTime": 164.34,
-        "text": "not because it is strong"
-      },
-      {
-        "time": 167.04,
-        "endTime": 171.54,
-        "text": "but because I refused"
-      },
-      {
-        "time": 172.06,
-        "endTime": 173.78,
-        "text": "to let it be anything else"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["the-fisher-queen"] = {
-  "Tear River Daughter": {
-    "lines": [
-      {
-        "time": 0.4,
-        "endTime": 4.2,
-        "text": "I learned to gut a fish before I learned to read"
-      },
-      {
-        "time": 5.66,
-        "endTime": 9.9,
-        "text": "My father's hands were salt and rope and reed"
-      },
-      {
-        "time": 11.64,
-        "endTime": 15.56,
-        "text": "The Erinin ran copper in the dawn"
-      },
-      {
-        "time": 16.98,
-        "endTime": 21.2,
-        "text": "I was just a girl the river kept moving on"
-      },
-      {
-        "time": 22.82,
-        "endTime": 26.76,
-        "text": "He never asked me why I saw the sparks"
-      },
-      {
-        "time": 28.62,
-        "endTime": 32.48,
-        "text": "Why the water spoke to me after dark"
-      },
-      {
-        "time": 33.94,
-        "endTime": 38.12,
-        "text": "He packed my bag, he kissed my head"
-      },
-      {
-        "time": 39.68,
-        "endTime": 46.2,
-        "text": "He said go where the current pulls, wherever you are led"
-      },
-      {
-        "time": 46.2,
-        "endTime": 50.1,
-        "text": "I am the tear river daughter"
-      },
-      {
-        "time": 52.24,
-        "endTime": 55.48,
-        "text": "Born in the blood of the catch"
-      },
-      {
-        "time": 56.16,
-        "endTime": 59.6,
-        "text": "You can take the girl from the water"
-      },
-      {
-        "time": 60.16,
-        "endTime": 64.16,
-        "text": "But the water will always come back"
-      },
-      {
-        "time": 67.94,
-        "endTime": 72,
-        "text": "They dressed me white and taught me how to kneel"
-      },
-      {
-        "time": 73.3,
-        "endTime": 77.58,
-        "text": "But I still smell the dock, I still feel the reel"
-      },
-      {
-        "time": 79.28,
-        "endTime": 84.1,
-        "text": "The Tower said forget, the Tower said refine"
-      },
-      {
-        "time": 86.02,
-        "endTime": 90.82,
-        "text": "But my hands remember the gutting line"
-      },
-      {
-        "time": 90.9,
-        "endTime": 95.1,
-        "text": "I am the tear river daughter"
-      },
-      {
-        "time": 97.62,
-        "endTime": 100.7,
-        "text": "Born in the blood of the catch"
-      },
-      {
-        "time": 101.32,
-        "endTime": 104.8,
-        "text": "You can take the girl from the water"
-      },
-      {
-        "time": 105.28,
-        "endTime": 108.78,
-        "text": "But the water will always come back"
-      },
-      {
-        "time": 125.88,
-        "endTime": 128.5,
-        "text": "Father, I became a queen they feared"
-      },
-      {
-        "time": 129.96,
-        "endTime": 134.1,
-        "text": "I wore the stole, I bent the years"
-      },
-      {
-        "time": 135.72,
-        "endTime": 145.02,
-        "text": "But every night I dream of scales and fins"
-      },
-      {
-        "time": 145.02,
-        "endTime": 147.68,
-        "text": "And the river where my story begins"
-      },
-      {
-        "time": 149.86,
-        "endTime": 155.3,
-        "text": "Tear river daughter"
-      },
-      {
-        "time": 157.8,
-        "endTime": 160.18,
-        "text": "Always coming back"
-      }
-    ]
-  },
-  "Youngest to Wear the Stole": {
-    "lines": [
-      {
-        "time": 6.66,
-        "endTime": 12.12,
-        "text": "They thought I was too young to hold the flame"
-      },
-      {
-        "time": 12.12,
-        "endTime": 17.58,
-        "text": "Too raw, too sharp, too wild to tame"
-      },
-      {
-        "time": 17.58,
-        "endTime": 23.04,
-        "text": "But I walked into that chamber made of stone"
-      },
-      {
-        "time": 23.04,
-        "endTime": 28.5,
-        "text": "And every woman there bent to my throne"
-      },
-      {
-        "time": 28.5,
-        "endTime": 33.96,
-        "text": "I was not gentle and I was not kind"
-      },
-      {
-        "time": 33.96,
-        "endTime": 39.42,
-        "text": "I had a war to win inside my mind"
-      },
-      {
-        "time": 39.42,
-        "endTime": 44.88,
-        "text": "The Dragon was coming, I could taste the storm"
-      },
-      {
-        "time": 44.88,
-        "endTime": 50.34,
-        "text": "I stripped the Tower back to its original form"
-      },
-      {
-        "time": 50.34,
-        "endTime": 55.8,
-        "text": "Youngest to wear the stole"
-      },
-      {
-        "time": 55.8,
-        "endTime": 61.26,
-        "text": "Youngest to pay the toll"
-      },
-      {
-        "time": 61.26,
-        "endTime": 62.19,
-        "text": "They knelt because they had no choice"
-      },
-      {
-        "time": 62.19,
-        "endTime": 63.13,
-        "text": "I ruled them with a fisherman's voice"
-      },
-      {
-        "time": 63.13,
-        "endTime": 64.06,
-        "text": "I played the Ajahs like a net of twine"
-      },
-      {
-        "time": 64.06,
-        "endTime": 65,
-        "text": "Pulled Blue against Red, kept Green in line"
-      },
-      {
-        "time": 65,
-        "endTime": 65.93,
-        "text": "They hated me, oh yes, they surely did"
-      },
-      {
-        "time": 65.93,
-        "endTime": 66.87,
-        "text": "But I kept the world from sliding off the grid"
-      },
-      {
-        "time": 66.87,
-        "endTime": 67.8,
-        "text": "Youngest to wear the stole"
-      },
-      {
-        "time": 67.8,
-        "endTime": 72.68,
-        "text": "Youngest to pay the toll"
-      },
-      {
-        "time": 74.98,
-        "endTime": 78.58,
-        "text": "They knelt because they had no choice"
-      },
-      {
-        "time": 78.8,
-        "endTime": 82.32,
-        "text": "I ruled them with a fisherman's voice"
-      },
-      {
-        "time": 85.58,
-        "endTime": 88.58,
-        "text": "Twenty years I held that seat"
-      },
-      {
-        "time": 131.7,
-        "endTime": 134.12,
-        "text": "Twenty years of no defeat"
-      },
-      {
-        "time": 134.62,
-        "endTime": 137.68,
-        "text": "Until the ones I trusted most"
-      },
-      {
-        "time": 138.3,
-        "endTime": 141.9,
-        "text": "Turned my name into a ghost"
-      },
-      {
-        "time": 143.64,
-        "endTime": 145.2,
-        "text": "The stole was heavy"
-      },
-      {
-        "time": 147.44,
-        "endTime": 149.44,
-        "text": "But my back was strong"
-      },
-      {
-        "time": 150.88,
-        "endTime": 152.7,
-        "text": "They never knew"
-      },
-      {
-        "time": 154.22,
-        "endTime": 156.4,
-        "text": "How long I held on"
-      }
-    ]
-  },
-  "The Dragon Is a Fish on My Line": {
-    "lines": [
-      {
-        "time": 11.22,
-        "endTime": 12.48,
-        "text": "I found him in the prophecies at night"
-      },
-      {
-        "time": 12.48,
-        "endTime": 15.64,
-        "text": "A boy born on the slopes of Dragonmount"
-      },
-      {
-        "time": 17.7,
-        "endTime": 21.42,
-        "text": "They all pretended he would never come"
-      },
-      {
-        "time": 23.64,
-        "endTime": 27.58,
-        "text": "I started counting down from the amount"
-      },
-      {
-        "time": 30.02,
-        "endTime": 30.52,
-        "text": "Every sister thought she had the right"
-      },
-      {
-        "time": 30.16,
-        "endTime": 33.64,
-        "text": "To cage him or to kill him or to bend"
-      },
-      {
-        "time": 36.64,
-        "endTime": 40.1,
-        "text": "But I was the one who cast the net"
-      },
-      {
-        "time": 41.48,
-        "endTime": 45.3,
-        "text": "I am the fisherwoman, not his friend"
-      },
-      {
-        "time": 46.88,
-        "endTime": 51.34,
-        "text": "The Dragon is a fish on my line"
-      },
-      {
-        "time": 51.54,
-        "endTime": 54.72,
-        "text": "I will pull him to the shore in time"
-      },
-      {
-        "time": 58.54,
-        "endTime": 63.18,
-        "text": "He does not know my name or face"
-      },
-      {
-        "time": 63.28,
-        "endTime": 66.76,
-        "text": "But I have been preparing for this place"
-      },
-      {
-        "time": 67.52,
-        "endTime": 68.44,
-        "text": "I sent my eyes to every corner of the map"
-      },
-      {
-        "time": 68.44,
-        "endTime": 77.28,
-        "text": "Moiraine was my blade, my closest trap"
-      },
-      {
-        "time": 77.28,
-        "endTime": 86.12,
-        "text": "We spoke in code, we burned each letter clean"
-      },
-      {
-        "time": 86.12,
-        "endTime": 94.96,
-        "text": "Two women running the longest game you have seen"
-      },
-      {
-        "time": 94.96,
-        "endTime": 99.8,
-        "text": "The Dragon is a fish on my line"
-      },
-      {
-        "time": 99.8,
-        "endTime": 102.9,
-        "text": "I will pull him to the shore in time"
-      },
-      {
-        "time": 106.36,
-        "endTime": 110.98,
-        "text": "He does not know my name or face"
-      },
-      {
-        "time": 111.28,
-        "endTime": 114.72,
-        "text": "But I have been preparing for this place"
-      },
-      {
-        "time": 116.14,
-        "endTime": 118.14,
-        "text": "They call it arrogance, I call it sight"
-      },
-      {
-        "time": 118.28,
-        "endTime": 130.62,
-        "text": "Someone has to steer him through the night"
-      },
-      {
-        "time": 130.62,
-        "endTime": 142.97,
-        "text": "If I do not hold this line, the whole world drowns"
-      },
-      {
-        "time": 142.97,
-        "endTime": 155.31,
-        "text": "So I will keep pulling till he's found"
-      },
-      {
-        "time": 155.31,
-        "endTime": 167.66,
-        "text": "Cast the net"
-      },
-      {
-        "time": 167.66,
-        "endTime": 180,
-        "text": "Hold the line"
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "The Dragon is mine"
-      }
-    ]
-  },
-  "Stilled": {
-    "lines": [
-      {
-        "time": 0.4,
-        "endTime": 8.42,
-        "text": "They cut the thread that tied me to the sun"
-      },
-      {
-        "time": 8.42,
-        "endTime": 11.68,
-        "text": "I felt every color drain to none"
-      },
-      {
-        "time": 14.82,
-        "endTime": 19.28,
-        "text": "The world went flat, the air went thin"
-      },
-      {
-        "time": 22.46,
-        "endTime": 26.66,
-        "text": "I became a stranger in my skin"
-      },
-      {
-        "time": 30.06,
-        "endTime": 33.16,
-        "text": "Yesterday I could have moved a mountain"
-      },
-      {
-        "time": 33.28,
-        "endTime": 36.8,
-        "text": "Today I cannot feel the fountain"
-      },
-      {
-        "time": 37.44,
-        "endTime": 40.68,
-        "text": "The source that ran beneath my bones"
-      },
-      {
-        "time": 40.7,
-        "endTime": 45.14,
-        "text": "Is silent now, replaced by stones"
-      },
-      {
-        "time": 48.98,
-        "endTime": 56.54,
-        "text": "Stilled, like a river dammed"
-      },
-      {
-        "time": 56.54,
-        "endTime": 62.98,
-        "text": "Stilled, like a door that slammed"
-      },
-      {
-        "time": 63.06,
-        "endTime": 66.44,
-        "text": "They took the thing that made me whole"
-      },
-      {
-        "time": 66.44,
-        "endTime": 70.94,
-        "text": "And left me standing in a hole"
-      },
-      {
-        "time": 76.94,
-        "endTime": 82.04,
-        "text": "I keep reaching for the weave like a phantom limb"
-      },
-      {
-        "time": 84.96,
-        "endTime": 88.98,
-        "text": "The absence hums, the edges dim"
-      },
-      {
-        "time": 92.32,
-        "endTime": 97,
-        "text": "I used to hold the world between my hands"
-      },
-      {
-        "time": 99,
-        "endTime": 105.82,
-        "text": "Now I cannot even light a candle with commands"
-      },
-      {
-        "time": 107.14,
-        "endTime": 114.72,
-        "text": "Stilled, like a river dammed"
-      },
-      {
-        "time": 114.8,
-        "endTime": 121.3,
-        "text": "Stilled, like a door that slammed"
-      },
-      {
-        "time": 121.3,
-        "endTime": 125.44,
-        "text": "They took the thing that made me whole"
-      },
-      {
-        "time": 125.56,
-        "endTime": 129.58,
-        "text": "And left me standing in a hole"
-      },
-      {
-        "time": 135.36,
-        "endTime": 142.02,
-        "text": "Do not tell me I am lucky to be alive"
-      },
-      {
-        "time": 142.46,
-        "endTime": 152.02,
-        "text": "Do not tell me I should be glad I survived"
-      },
-      {
-        "time": 152.92,
-        "endTime": 155.36,
-        "text": "You did not lose what I have lost"
-      },
-      {
-        "time": 163.54,
-        "endTime": 169.56,
-        "text": "You do not know the cost, you do not know the cost"
-      },
-      {
-        "time": 169.74,
-        "endTime": 170.24,
-        "text": "Stilled"
-      },
-      {
-        "time": 169.74,
-        "endTime": 171.62,
-        "text": "But not finished"
-      },
-      {
-        "time": 172.92,
-        "endTime": 174.04,
-        "text": "Not yet"
-      }
-    ]
-  },
-  "Exile Tastes Like Copper": {
-    "lines": [
-      {
-        "time": 11.74,
-        "endTime": 16.06,
-        "text": "They gave me a new name and a smaller room"
-      },
-      {
-        "time": 17.12,
-        "endTime": 22.04,
-        "text": "Swept the Amyrlin's quarters with a broom"
-      },
-      {
-        "time": 23.04,
-        "endTime": 28.34,
-        "text": "The women who once knelt now walk past my face"
-      },
-      {
-        "time": 28.92,
-        "endTime": 34.64,
-        "text": "As if I am a stain upon this place"
-      },
-      {
-        "time": 41.38,
-        "endTime": 45.9,
-        "text": "I wash the floors, I chop the roots"
-      },
-      {
-        "time": 46.66,
-        "endTime": 51.66,
-        "text": "My hands that signed the wars now peel the fruits"
-      },
-      {
-        "time": 52.28,
-        "endTime": 57.26,
-        "text": "Leane watches me with eyes that understand"
-      },
-      {
-        "time": 58.14,
-        "endTime": 63.1,
-        "text": "Two fallen queens in a penitent's wasteland"
-      },
-      {
-        "time": 64.54,
-        "endTime": 67.92,
-        "text": "Exile tastes like copper on my tongue"
-      },
-      {
-        "time": 69.28,
-        "endTime": 73.82,
-        "text": "Like the blood of every song I have not sung"
-      },
-      {
-        "time": 75.58,
-        "endTime": 78.88,
-        "text": "They stripped my title, stripped my name"
-      },
-      {
-        "time": 81.32,
-        "endTime": 85.12,
-        "text": "But they could not strip away the flame"
-      },
-      {
-        "time": 87.46,
-        "endTime": 92.48,
-        "text": "I smile at the ones who spit my way"
-      },
-      {
-        "time": 92.86,
-        "endTime": 98.36,
-        "text": "I remember every face, I file each day"
-      },
-      {
-        "time": 98.88,
-        "endTime": 104.32,
-        "text": "A fisherman's daughter knows the tide"
-      },
-      {
-        "time": 104.32,
-        "endTime": 110.52,
-        "text": "I will ride it back. I will not hide"
-      },
-      {
-        "time": 111.12,
-        "endTime": 114.76,
-        "text": "Exile tastes like copper on my tongue"
-      },
-      {
-        "time": 116.32,
-        "endTime": 120.48,
-        "text": "Like the blood of every song I have not sung"
-      },
-      {
-        "time": 122.52,
-        "endTime": 126.08,
-        "text": "They stripped my title, stripped my name"
-      },
-      {
-        "time": 127.94,
-        "endTime": 132.4,
-        "text": "But they could not strip away the flame"
-      },
-      {
-        "time": 134,
-        "endTime": 138.24,
-        "text": "You think I am broken on this floor"
-      },
-      {
-        "time": 140.52,
-        "endTime": 144.08,
-        "text": "You think I have nothing left in store"
-      },
-      {
-        "time": 145.2,
-        "endTime": 149.46,
-        "text": "But I have gutted fish since I was five"
-      },
-      {
-        "time": 149.98,
-        "endTime": 154.98,
-        "text": "I know how to survive, I know how to survive"
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "Copper on my tongue"
-      },
-      {
-        "time": 179.34,
-        "endTime": 179.84,
-        "text": "Fire in my lungs"
-      },
-      {
-        "time": 178.68,
-        "endTime": 179.18,
-        "text": "I am still here"
-      }
-    ]
-  },
-  "The Blue Ajah Web": {
-    "lines": [
-      {
-        "time": 14.16,
-        "endTime": 17.14,
-        "text": "Every Blue has an ear in a different court"
-      },
-      {
-        "time": 17.82,
-        "endTime": 21.04,
-        "text": "We trade in whispers, we deal in report"
-      },
-      {
-        "time": 21.44,
-        "endTime": 24.74,
-        "text": "The network stretches from Tear to the Waste"
-      },
-      {
-        "time": 25.46,
-        "endTime": 28.56,
-        "text": "Nothing is spoken, nothing is traced"
-      },
-      {
-        "time": 32.88,
-        "endTime": 35.88,
-        "text": "I built the web before I wore the stole"
-      },
-      {
-        "time": 36.2,
-        "endTime": 39.66,
-        "text": "Information is the only thing that is whole"
-      },
-      {
-        "time": 40.24,
-        "endTime": 43.48,
-        "text": "A rumor in Cairhien, a nod in Illian"
-      },
-      {
-        "time": 44.56,
-        "endTime": 49.02,
-        "text": "I knew the truth before a million"
-      },
-      {
-        "time": 49.02,
-        "endTime": 54.96,
-        "text": "The Blue Ajah web, invisible thread"
-      },
-      {
-        "time": 55.36,
-        "endTime": 58.66,
-        "text": "We hear the words before they are said"
-      },
-      {
-        "time": 58.84,
-        "endTime": 62.22,
-        "text": "Every spy, every eye, every trusted source"
-      },
-      {
-        "time": 62.86,
-        "endTime": 68.24,
-        "text": "I am the spider at the center of the course"
-      },
-      {
-        "time": 74.4,
-        "endTime": 77.48,
-        "text": "Moiraine ran the field, I held the strings"
-      },
-      {
-        "time": 78.08,
-        "endTime": 81.2,
-        "text": "Two Blue sisters pulling on the world's wings"
-      },
-      {
-        "time": 81.48,
-        "endTime": 84.86,
-        "text": "They never saw us working side by side"
-      },
-      {
-        "time": 85.34,
-        "endTime": 89.7,
-        "text": "The greatest partnership the Tower tried to hide"
-      },
-      {
-        "time": 92.66,
-        "endTime": 96.2,
-        "text": "The Blue Ajah web, invisible thread"
-      },
-      {
-        "time": 96.64,
-        "endTime": 99.9,
-        "text": "We hear the words before they are said"
-      },
-      {
-        "time": 99.96,
-        "endTime": 103.68,
-        "text": "Every spy, every eye, every trusted source"
-      },
-      {
-        "time": 104.42,
-        "endTime": 109.58,
-        "text": "I am the spider at the center of the course"
-      },
-      {
-        "time": 126.84,
-        "endTime": 129.78,
-        "text": "Even stilled, the web still holds"
-      },
-      {
-        "time": 130.22,
-        "endTime": 134.22,
-        "text": "They cut my power but not my roads"
-      },
-      {
-        "time": 134.22,
-        "endTime": 137.26,
-        "text": "The eyes still report, the birds still sing"
-      },
-      {
-        "time": 137.9,
-        "endTime": 142.72,
-        "text": "I am still pulling on the string"
-      },
-      {
-        "time": 148.7,
-        "endTime": 150.06,
-        "text": "The web holds"
-      },
-      {
-        "time": 155.48,
-        "endTime": 157.92,
-        "text": "The web always holds"
-      }
-    ]
-  },
-  "Gareth Bryne (I Did Not Ask for You)": {
-    "lines": [
-      {
-        "time": 12.1,
-        "endTime": 12.6,
-        "text": "You followed me across the muddy roads"
-      },
-      {
-        "time": 12.2,
-        "endTime": 12.7,
-        "text": "I did not ask for company, I carried my own loads"
-      },
-      {
-        "time": 12.29,
-        "endTime": 12.79,
-        "text": "A general with nothing left to lead"
-      },
-      {
-        "time": 12.39,
-        "endTime": 12.89,
-        "text": "Chasing a woman for a debt she would not concede"
-      },
-      {
-        "time": 12.49,
-        "endTime": 12.99,
-        "text": "You are stubborn and you are proud and gray"
-      },
-      {
-        "time": 12.58,
-        "endTime": 13.08,
-        "text": "I am broken in a different way"
-      },
-      {
-        "time": 12.68,
-        "endTime": 24.96,
-        "text": "Two people stripped of everything they were"
-      },
-      {
-        "time": 24.96,
-        "endTime": 37.24,
-        "text": "Walking together through the blur"
-      },
-      {
-        "time": 37.24,
-        "endTime": 49.52,
-        "text": "I did not ask for you, Gareth Bryne"
-      },
-      {
-        "time": 49.52,
-        "endTime": 60.38,
-        "text": "I did not ask for steady and I did not ask for kind"
-      },
-      {
-        "time": 60.92,
-        "endTime": 65.56,
-        "text": "But you came anyway, you foolish, stubborn man"
-      },
-      {
-        "time": 66.48,
-        "endTime": 70.78,
-        "text": "And somehow I am holding your hand"
-      },
-      {
-        "time": 74.24,
-        "endTime": 78.7,
-        "text": "I have ruled the world, I have lost the sun"
-      },
-      {
-        "time": 79.84,
-        "endTime": 84.12,
-        "text": "I have gutted fish and I have been undone"
-      },
-      {
-        "time": 85.42,
-        "endTime": 89.8,
-        "text": "But I never knew what terrified me most"
-      },
-      {
-        "time": 91.08,
-        "endTime": 95.32,
-        "text": "Until you stood there, solid as a post"
-      },
-      {
-        "time": 96.86,
-        "endTime": 101.06,
-        "text": "I did not ask for you, Gareth Bryne"
-      },
-      {
-        "time": 102.44,
-        "endTime": 107.78,
-        "text": "I did not ask for steady and I did not ask for kind"
-      },
-      {
-        "time": 108.18,
-        "endTime": 112.44,
-        "text": "But you came anyway, you foolish, stubborn man"
-      },
-      {
-        "time": 114.18,
-        "endTime": 118.96,
-        "text": "And somehow I am holding your hand"
-      },
-      {
-        "time": 119.24,
-        "endTime": 125.7,
-        "text": "Love is a net I never meant to cast"
-      },
-      {
-        "time": 127.66,
-        "endTime": 131.44,
-        "text": "But you swam in and held on fast"
-      },
-      {
-        "time": 133.18,
-        "endTime": 137.38,
-        "text": "The fisher queen caught something unforeseen"
-      },
-      {
-        "time": 138.68,
-        "endTime": 142.58,
-        "text": "The only thing she could not gut clean"
-      },
-      {
-        "time": 146.84,
-        "endTime": 148.68,
-        "text": "I did not ask"
-      },
-      {
-        "time": 150.1,
-        "endTime": 154.26,
-        "text": "But I am glad you came"
-      },
-      {
-        "time": 158.56,
-        "endTime": 159.84,
-        "text": "Gareth Bryne"
-      },
-      {
-        "time": 163.44,
-        "endTime": 167.76,
-        "text": "I will not say your name without the ache"
-      }
-    ]
-  },
-  "Rebuilt from Bones": {
-    "lines": [
-      {
-        "time": 11.64,
-        "endTime": 14.46,
-        "text": "They thought the story ended when I fell"
-      },
-      {
-        "time": 16.92,
-        "endTime": 20.04,
-        "text": "They wrote my epitaph, they rang the bell"
-      },
-      {
-        "time": 22.18,
-        "endTime": 25.48,
-        "text": "But I have been rebuilding in the dark"
-      },
-      {
-        "time": 27.52,
-        "endTime": 30.28,
-        "text": "Stacking every bone back to a spark"
-      },
-      {
-        "time": 32.98,
-        "endTime": 35.86,
-        "text": "I lost the Source, I lost the chair"
-      },
-      {
-        "time": 38.38,
-        "endTime": 42.52,
-        "text": "I lost the title and the braided hair"
-      },
-      {
-        "time": 43.36,
-        "endTime": 46.76,
-        "text": "But a fisherman's daughter knows the sea"
-      },
-      {
-        "time": 48.36,
-        "endTime": 52.22,
-        "text": "You cannot drown what was born to be free"
-      },
-      {
-        "time": 54.26,
-        "endTime": 58.86,
-        "text": "Rebuilt from bones, I stand again"
-      },
-      {
-        "time": 59.18,
-        "endTime": 62.9,
-        "text": "Not the woman that I was back then"
-      },
-      {
-        "time": 65.54,
-        "endTime": 68.72,
-        "text": "Smaller maybe, scarred for sure"
-      },
-      {
-        "time": 68.86,
-        "endTime": 75.88,
-        "text": "But the foundation holds, the foundation holds pure"
-      },
-      {
-        "time": 86.06,
-        "endTime": 92.08,
-        "text": "I am gathering the broken pieces in my hands"
-      },
-      {
-        "time": 92.08,
-        "endTime": 96.22,
-        "text": "The Salidar rebels, the fractured bands"
-      },
-      {
-        "time": 98.08,
-        "endTime": 102.24,
-        "text": "Leading from behind, leading from below"
-      },
-      {
-        "time": 102.98,
-        "endTime": 108.5,
-        "text": "The tide is turning, I can feel the undertow"
-      },
-      {
-        "time": 108.88,
-        "endTime": 112.72,
-        "text": "Rebuilt from bones, I stand again"
-      },
-      {
-        "time": 113.96,
-        "endTime": 117.38,
-        "text": "Not the woman that I was back then"
-      },
-      {
-        "time": 120.34,
-        "endTime": 123.24,
-        "text": "Smaller maybe, scarred for sure"
-      },
-      {
-        "time": 124.66,
-        "endTime": 130.12,
-        "text": "But the foundation holds, the foundation holds pure"
-      },
-      {
-        "time": 130.32,
-        "endTime": 134.82,
-        "text": "I was the Amyrlin Seat, I was the flame"
-      },
-      {
-        "time": 146.66,
-        "endTime": 147.26,
-        "text": "They tried to snuff me out, they tried to tame"
-      },
-      {
-        "time": 147.26,
-        "endTime": 147.85,
-        "text": "But fire remembers where it burned before"
-      },
-      {
-        "time": 147.85,
-        "endTime": 148.44,
-        "text": "And I remember what I am fighting for"
-      },
-      {
-        "time": 148.44,
-        "endTime": 149.04,
-        "text": "Rebuilt from bones"
-      },
-      {
-        "time": 149.04,
-        "endTime": 149.54,
-        "text": "River stone and salt"
-      },
-      {
-        "time": 151.7,
-        "endTime": 153.2,
-        "text": "The fisher queen returns"
-      },
-      {
-        "time": 156.92,
-        "endTime": 160.42,
-        "text": "And it is nobody's fault but theirs"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["the-gleemans-tale"] = {
-  "The Great Game": {
-    "lines": [
-      {
-        "time": 14.3,
-        "endTime": 20.8,
-        "text": "Every throne room is a chessboard, and I learned the moves in blood"
-      },
-      {
-        "time": 22.2,
-        "endTime": 28,
-        "text": "Whispering behind the curtain while the foolish played at flood"
-      },
-      {
-        "time": 29.08,
-        "endTime": 35.62,
-        "text": "I could topple any tower with a rumor and a smile"
-      },
-      {
-        "time": 37.06,
-        "endTime": 42.58,
-        "text": "Court-bard in the shadows, I was poison all the while"
-      },
-      {
-        "time": 42.88,
-        "endTime": 43.68,
-        "text": "The Great Game never ends, it only changes hands"
-      },
-      {
-        "time": 43.68,
-        "endTime": 49.18,
-        "text": "The knives stay sharp in Cairhien, the silk conceals the plans"
-      },
-      {
-        "time": 60.5,
-        "endTime": 66.42,
-        "text": "I played it like a master, I played it like a fool"
-      },
-      {
-        "time": 67.5,
-        "endTime": 73.76,
-        "text": "The Game does not forgive you, the Game becomes your rule"
-      },
-      {
-        "time": 82.24,
-        "endTime": 88.36,
-        "text": "Lords and ladies leaning close to hear the stories that I spin"
-      },
-      {
-        "time": 89.72,
-        "endTime": 95.3,
-        "text": "Never once suspecting that the gleeman plays to win"
-      },
-      {
-        "time": 97.04,
-        "endTime": 102.94,
-        "text": "I have moved the pieces, I have watched the houses fall"
-      },
-      {
-        "time": 103.74,
-        "endTime": 109.82,
-        "text": "And the cruelest part of Daes Dae'mar, I remember all"
-      },
-      {
-        "time": 112.52,
-        "endTime": 116.7,
-        "text": "They think a gleeman is a beggar with a pretty voice"
-      },
-      {
-        "time": 116.78,
-        "endTime": 120.78,
-        "text": "They never see the calculations underneath the choice"
-      },
-      {
-        "time": 137.19,
-        "endTime": 142.19,
-        "text": "The Great Game never ends, it only learns your name"
-      },
-      {
-        "time": 157.61,
-        "endTime": 163.11,
-        "text": "And every player swears they quit, then plays again the same"
-      }
-    ]
-  },
-  "Owyn": {
-    "lines": [
-      {
-        "time": 27.98,
-        "endTime": 33.36,
-        "text": "They found you in a farmhouse with the Power burning bright"
-      },
-      {
-        "time": 34.52,
-        "endTime": 40.4,
-        "text": "My nephew, my own blood, they came for you at night"
-      },
-      {
-        "time": 41.88,
-        "endTime": 47.8,
-        "text": "The Aes Sedai were gentle in the way a blade is clean"
-      },
-      {
-        "time": 48.56,
-        "endTime": 54.42,
-        "text": "They severed what was sacred and they called it quarantine"
-      },
-      {
-        "time": 55.52,
-        "endTime": 61.42,
-        "text": "Owyn, I was not there when they cut the light from you"
-      },
-      {
-        "time": 62.02,
-        "endTime": 68.64,
-        "text": "Owyn, I was playing courts while your world fell through"
-      },
-      {
-        "time": 69.92,
-        "endTime": 75.46,
-        "text": "A gleeman has a thousand tales but none of them explain"
-      },
-      {
-        "time": 76.2,
-        "endTime": 82.82,
-        "text": "How I let my brother's son die howling in the rain"
-      },
-      {
-        "time": 98.04,
-        "endTime": 103.76,
-        "text": "They said you wandered after, hollow-eyed and thin"
-      },
-      {
-        "time": 104.72,
-        "endTime": 110.48,
-        "text": "That the thing they call gentling leaves a silence deep within"
-      },
-      {
-        "time": 111.24,
-        "endTime": 117.46,
-        "text": "You stopped eating, stopped sleeping, stopped knowing who you were"
-      },
-      {
-        "time": 118.98,
-        "endTime": 124.92,
-        "text": "And I was tuning strings in Caemlyn, polishing my blur"
-      },
-      {
-        "time": 126.14,
-        "endTime": 131.6,
-        "text": "I have killed a king for less than what they did to you"
-      },
-      {
-        "time": 132.68,
-        "endTime": 140.5,
-        "text": "But the White Tower is not a man, there is no throat to run steel through"
-      },
-      {
-        "time": 144.44,
-        "endTime": 148.1,
-        "text": "Owyn, every story that I tell is half apology"
-      },
-      {
-        "time": 150.52,
-        "endTime": 157.5,
-        "text": "The other half is fury that I buried under melody"
-      }
-    ]
-  },
-  "The Gleeman's Cloak": {
-    "lines": [
-      {
-        "time": 6.68,
-        "endTime": 12.24,
-        "text": "A hundred colored patches stitched from every road I walked"
-      },
-      {
-        "time": 13.68,
-        "endTime": 18.98,
-        "text": "Each one is a city where I sang and where I talked"
-      },
-      {
-        "time": 20.04,
-        "endTime": 26.14,
-        "text": "This cloak is not a costume, it is cartography of scars"
-      },
-      {
-        "time": 27.08,
-        "endTime": 40.72,
-        "text": "Every thread a tavern, every seam a night beneath the stars"
-      },
-      {
-        "time": 40.72,
-        "endTime": 46.68,
-        "text": "The cloak is all I carry, the cloak is all I own"
-      },
-      {
-        "time": 47.42,
-        "endTime": 53.42,
-        "text": "A gleeman's life is borrowed, you never quite go home"
-      },
-      {
-        "time": 53.82,
-        "endTime": 59.82,
-        "text": "I wear the road like armor and the stories like a shield"
-      },
-      {
-        "time": 61.72,
-        "endTime": 69.58,
-        "text": "Every patch a promise that I made and never sealed"
-      },
-      {
-        "time": 74.1,
-        "endTime": 79.86,
-        "text": "There is Tear in the crimson, there is Illian in the gold"
-      },
-      {
-        "time": 80.58,
-        "endTime": 86.58,
-        "text": "Cairhien gray where I was young and Andor where I grew old"
-      },
-      {
-        "time": 87.84,
-        "endTime": 92.98,
-        "text": "A man who carries everything eventually carries none"
-      },
-      {
-        "time": 94.26,
+        "time": 97.25,
         "endTime": 104.26,
-        "text": "And a gleeman with a hundred tales is still a man who runs"
+        "text": "Perrin at his anvil, Mat pretending nothing lasts."
       },
       {
-        "time": 109.6,
-        "endTime": 114.62,
-        "text": "They clap and throw their coppers, they forget me by the dawn"
+        "time": 104.26,
+        "endTime": 111.8,
+        "text": "Moiraine rode into town like weather no one could predict,"
       },
       {
-        "time": 115.04,
-        "endTime": 120.28,
-        "text": "But the cloak remembers every stage that I have stood upon"
+        "time": 111.8,
+        "endTime": 118.8,
+        "text": "and every certainty I carried crumbled quick."
       },
       {
-        "time": 121.24,
-        "endTime": 122.3,
-        "text": "Fold me in the patches when the final story ends"
-      },
-      {
-        "time": 154.58,
-        "endTime": 162.94,
-        "text": "Let the road be what receives me, I was never one for friends"
-      }
-    ]
-  },
-  "Morgase": {
-    "lines": [
-      {
-        "time": 18.34,
-        "endTime": 23.24,
-        "text": "You were already queen when I first played your court"
-      },
-      {
-        "time": 26.56,
-        "endTime": 33.46,
-        "text": "A lion throne, a copper crown, a woman no one taught"
-      },
-      {
-        "time": 34.92,
-        "endTime": 41.94,
-        "text": "I should have kept my distance, I was court-bard, nothing more"
-      },
-      {
-        "time": 42.72,
-        "endTime": 56.1,
-        "text": "But you looked at me like music was the only honest door"
-      },
-      {
-        "time": 56.1,
-        "endTime": 62,
-        "text": "Morgase, I left you in the night without a word"
-      },
-      {
-        "time": 63.54,
-        "endTime": 70.34,
-        "text": "I vanished like a verse from a ballad no one heard"
-      },
-      {
-        "time": 71.94,
-        "endTime": 78.78,
-        "text": "A gleeman loves in whispers and a queen deserves a roar"
-      },
-      {
-        "time": 80.14,
-        "endTime": 87.54,
-        "text": "I gave you all the quiet and then walked out through the door"
-      },
-      {
-        "time": 89.04,
-        "endTime": 96.7,
-        "text": "They say Compulsion took you after, and a man named Gaebril"
-      },
-      {
-        "time": 97.98,
-        "endTime": 105,
-        "text": "Poured his poison in the throne room where we once were standing still"
-      },
-      {
-        "time": 106.02,
-        "endTime": 113.04,
-        "text": "I was halfway to the Waste before I learned what he had done"
-      },
-      {
-        "time": 113.14,
-        "endTime": 121.42,
-        "text": "And the rage in me was useless, I was already on the run"
-      },
-      {
-        "time": 127.52,
-        "endTime": 133.94,
-        "text": "The honest truth is uglier than any tale I spin"
-      },
-      {
-        "time": 135.22,
-        "endTime": 141.86,
-        "text": "I left because I loved you and I knew I could not win"
-      },
-      {
-        "time": 148.96,
-        "endTime": 156.32,
-        "text": "Morgase, if stories could rebuild what running tears apart"
-      },
-      {
-        "time": 157.14,
-        "endTime": 168.48,
-        "text": "I would write you every ballad I have memorized by heart"
-      }
-    ]
-  },
-  "Knives in the Dark": {
-    "lines": [
-      {
-        "time": 38.06,
-        "endTime": 43.22,
-        "text": "I killed a king in his own hall with nothing but a blade"
-      },
-      {
-        "time": 43.74,
-        "endTime": 49.26,
-        "text": "Not a soldier, not an assassin, just a gleeman unpaid"
-      },
-      {
-        "time": 49.86,
-        "endTime": 55.44,
-        "text": "He deserved it, that I promise, though the law would not agree"
-      },
-      {
-        "time": 56.02,
-        "endTime": 61.56,
-        "text": "And the blood across my knuckles was the first truth I set free"
-      },
-      {
-        "time": 64.16,
-        "endTime": 69.18,
-        "text": "People think a gleeman juggles, flips, and tells his jokes"
-      },
-      {
-        "time": 69.84,
-        "endTime": 75.3,
-        "text": "They forget we learn the target, every gap between the cloaks"
-      },
-      {
-        "time": 75.88,
-        "endTime": 81.52,
-        "text": "I can put a knife through candlelight at forty paces clean"
-      },
-      {
-        "time": 81.98,
-        "endTime": 87.86,
-        "text": "And I learned to throw at twelve years old in alleys no one seen"
-      },
-      {
-        "time": 90.22,
-        "endTime": 95.24,
-        "text": "Knives in the dark, that is how a gleeman fights"
-      },
-      {
-        "time": 95.7,
-        "endTime": 101.02,
-        "text": "Not with honor, not with glory, just precision and the night"
-      },
-      {
-        "time": 102.16,
-        "endTime": 107.54,
-        "text": "I am older now, my hands are stiff, the aim is not as true"
-      },
-      {
-        "time": 108,
-        "endTime": 113.86,
-        "text": "But I still carry six blades hidden, and I know what they can do"
-      },
-      {
-        "time": 116.04,
-        "endTime": 121.82,
-        "text": "The boy from Whitebridge wanted fame, wanted stages, wanted song"
-      },
-      {
-        "time": 122.14,
-        "endTime": 129.9,
-        "text": "The man who left the palace had a different skill all along"
-      },
-      {
-        "time": 133.72,
-        "endTime": 138.24,
-        "text": "Every gleeman knows a trick the audience never sees"
-      },
-      {
-        "time": 138.82,
-        "endTime": 144.42,
-        "text": "The knife that flies the fastest is the one thrown on your knees"
-      }
-    ]
-  },
-  "Moiraine": {
-    "lines": [
-      {
-        "time": 13.04,
-        "endTime": 18.6,
-        "text": "She walked into my life like winter walking into spring"
-      },
-      {
-        "time": 19.54,
-        "endTime": 24.88,
-        "text": "Small and still and dangerous, an Aes Sedai with everything"
-      },
-      {
-        "time": 25.84,
-        "endTime": 31.6,
-        "text": "I swore I hated sisters, every one who wore the shawl"
-      },
-      {
-        "time": 32.22,
-        "endTime": 38.28,
-        "text": "But Moiraine was the one exception that dismantled every wall"
-      },
-      {
-        "time": 38.54,
-        "endTime": 44.88,
-        "text": "Moiraine, I followed you through deserts, through the dark"
-      },
-      {
-        "time": 45.66,
-        "endTime": 51.36,
-        "text": "I told myself it was the Pattern, but it was the spark"
-      },
-      {
-        "time": 52.06,
-        "endTime": 58.04,
-        "text": "A gleeman and a sister, what a pair we never were"
-      },
-      {
-        "time": 58.62,
-        "endTime": 66.42,
-        "text": "I loved you in the margins of a world that could not hear"
-      },
-      {
-        "time": 78.74,
-        "endTime": 83.62,
-        "text": "You fell through the doorway fighting Lanfear hand to hand"
-      },
-      {
-        "time": 84.46,
-        "endTime": 90.26,
-        "text": "And the sound of nothing after was too large to understand"
-      },
-      {
-        "time": 90.84,
-        "endTime": 96.42,
-        "text": "I carried on for years with your blue stone against my chest"
-      },
-      {
-        "time": 97.04,
-        "endTime": 102.88,
-        "text": "Playing taverns, playing villages, pretending I was blessed"
-      },
-      {
-        "time": 103.18,
-        "endTime": 109.52,
-        "text": "They told me you were dead, that the Finn had swallowed you whole"
-      },
-      {
-        "time": 109.94,
-        "endTime": 115.92,
-        "text": "I nodded and kept walking with a canyon in my soul"
-      },
-      {
-        "time": 116.42,
-        "endTime": 122.28,
-        "text": "Moiraine, I am coming for you, even if the door leads down"
-      },
-      {
-        "time": 122.92,
-        "endTime": 130.64,
-        "text": "A gleeman's final wager is the only game in town"
-      }
-    ]
-  },
-  "The Tower of Ghenjei": {
-    "lines": [
-      {
-        "time": 14.6,
-        "endTime": 23.56,
-        "text": "A silver tower with no entrance on a plain that has no name"
-      },
-      {
-        "time": 25.76,
-        "endTime": 34.9,
-        "text": "I drew the sign upon the metal and I fed it to the flame"
-      },
-      {
-        "time": 37.4,
-        "endTime": 45.66,
-        "text": "Mat said I was a fool, and he was right about the odds"
-      },
-      {
-        "time": 47.48,
-        "endTime": 57.4,
-        "text": "But a fool in love with purpose is the closest thing to gods"
-      },
-      {
-        "time": 57.86,
-        "endTime": 62.56,
-        "text": "Into the tower, into the maze, into the deal"
-      },
-      {
-        "time": 63.5,
-        "endTime": 69.02,
-        "text": "The Finn trade in memory and they never let you heal"
-      },
-      {
-        "time": 69.06,
-        "endTime": 74.7,
-        "text": "I brought my harp, I brought my voice, I brought one final trick"
-      },
-      {
-        "time": 75.64,
-        "endTime": 80.08,
-        "text": "A gleeman in the dark negotiating with the sick"
-      },
-      {
-        "time": 82.3,
-        "endTime": 92.34,
-        "text": "The hallways shift like dreaming, every door a different cost"
-      },
-      {
-        "time": 93.42,
-        "endTime": 103.42,
-        "text": "They offered me my memories, the very ones I lost"
-      },
-      {
-        "time": 104.64,
-        "endTime": 114.94,
-        "text": "I told them I would trade my eyes before I trade her name"
-      },
-      {
-        "time": 115.72,
-        "endTime": 126.28,
-        "text": "And somewhere in the darkness, Moiraine called out just the same"
-      },
-      {
-        "time": 127.22,
-        "endTime": 131.98,
-        "text": "The Finn do not do mercy and they do not do fair"
-      },
-      {
-        "time": 132.2,
-        "endTime": 138.88,
-        "text": "But a gleeman with nothing left to lose has nothing left to spare"
-      },
-      {
-        "time": 138.9,
-        "endTime": 150.94,
-        "text": "We walked out through the fire, Mat and Moiraine and the light"
-      },
-      {
-        "time": 151.68,
-        "endTime": 161.64,
-        "text": "And the tower sealed behind us like a wound closed overnight"
-      }
-    ]
-  },
-  "The Last Story": {
-    "lines": [
-      {
-        "time": 4.12,
-        "endTime": 11.12,
-        "text": "I have told ten thousand stories in a hundred tavern halls"
-      },
-      {
-        "time": 12.16,
-        "endTime": 18.96,
-        "text": "I have made the mighty weep and I have held the drunk enthralled"
-      },
-      {
-        "time": 20.02,
-        "endTime": 26.6,
-        "text": "But the story that I carry, the one I never speak"
-      },
-      {
-        "time": 28.02,
-        "endTime": 34.58,
-        "text": "Is the one about the gleeman who was too afraid to seek"
-      },
-      {
-        "time": 36,
-        "endTime": 42.96,
-        "text": "This is the last story, the one I tell myself at night"
-      },
-      {
-        "time": 44.2,
-        "endTime": 51.02,
-        "text": "About a man who had the words but never had the right"
-      },
-      {
-        "time": 52,
-        "endTime": 59.1,
-        "text": "To say I love you plainly, to say I am afraid"
-      },
-      {
-        "time": 59.82,
-        "endTime": 67.32,
-        "text": "To say the greatest performance was the silence I displayed"
-      },
-      {
-        "time": 70.46,
-        "endTime": 77.32,
-        "text": "The Dragon saved the world and Moiraine stands beside the dawn"
-      },
-      {
-        "time": 78.28,
-        "endTime": 85.1,
-        "text": "The Wheel has turned its Pattern and the Last Battle is gone"
-      },
-      {
-        "time": 86.32,
-        "endTime": 92.8,
-        "text": "But what about the gleeman, the one who patched his cloak"
-      },
-      {
-        "time": 94.34,
-        "endTime": 100.6,
-        "text": "And wandered through the aftermath still looking for the joke"
-      },
-      {
-        "time": 101.84,
-        "endTime": 109.32,
-        "text": "I am Thom Merrilin, court-bard, killer, fool"
-      },
-      {
-        "time": 110.12,
-        "endTime": 117.56,
-        "text": "I have played the Game of Houses and I broke every rule"
-      },
-      {
-        "time": 118.3,
-        "endTime": 125.36,
-        "text": "The only thing I never learned in all my wasted years"
-      },
-      {
-        "time": 125.88,
-        "endTime": 133.18,
-        "text": "Is how to tell a simple truth without hiding it in tears"
-      },
-      {
-        "time": 133.84,
-        "endTime": 141.04,
-        "text": "So this is how the gleeman ends, not with a stage, not with applause"
-      },
-      {
-        "time": 141.86,
-        "endTime": 149.4,
-        "text": "Just an old man by a fire, finally giving pause"
-      },
-      {
-        "time": 150.02,
-        "endTime": 156.74,
-        "text": "The stories were the armor, the cloak was just the proof"
-      },
-      {
-        "time": 158.02,
-        "endTime": 165.02,
-        "text": "That a man who lives in fiction spent a lifetime dodging truth"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["the-shepherds-sword"] = {
-  "The Blade": {
-    "lines": [
-      {
-        "time": 10.98,
-        "endTime": 15.88,
-        "text": "I learned to kill before I learned to pray"
-      },
-      {
-        "time": 19.28,
-        "endTime": 24.22,
-        "text": "Steel was my scripture, blood my holy day"
-      },
-      {
-        "time": 27.06,
-        "endTime": 31.74,
-        "text": "A heron on the hilt, a crown upon the hill"
-      },
-      {
-        "time": 36.12,
-        "endTime": 39.36,
-        "text": "Every form I mastered was another way to still"
-      },
-      {
-        "time": 40.02,
-        "endTime": 47.85,
-        "text": "The breathing of a man who had a name"
-      },
-      {
-        "time": 47.85,
-        "endTime": 55.67,
-        "text": "Who had a mother, had a life before I came"
-      },
-      {
-        "time": 55.67,
-        "endTime": 63.5,
-        "text": "The blade remembers what the shepherd tries to forget"
-      },
-      {
-        "time": 63.5,
-        "endTime": 67.76,
-        "text": "Every scar a sentence that the steel has not read yet"
-      },
-      {
-        "time": 68.7,
-        "endTime": 72.2,
-        "text": "I buried who I was beneath the plow"
-      },
-      {
-        "time": 73.9,
-        "endTime": 78.12,
-        "text": "But the blade remembers, the blade remembers now"
-      },
-      {
-        "time": 82.98,
-        "endTime": 87.26,
-        "text": "They called me captain, called me second-sworn"
-      },
-      {
-        "time": 87.44,
-        "endTime": 94.96,
-        "text": "I answered every call until my hands were torn"
-      },
-      {
-        "time": 97.3,
-        "endTime": 100.94,
-        "text": "From holding what I held too tight, too long"
-      },
-      {
-        "time": 103.5,
-        "endTime": 107.04,
-        "text": "The battlefield kept singing me its song"
-      },
-      {
-        "time": 109.36,
-        "endTime": 112.68,
-        "text": "But songs like that, they hollow out the bone"
-      },
-      {
-        "time": 114.74,
-        "endTime": 118.78,
-        "text": "Until you realize you are fighting all alone"
-      },
-      {
-        "time": 122.8,
+        "time": 118.8,
         "endTime": 127.96,
-        "text": "I put the sword away, I chose the soil"
+        "text": "She looked at me, I looked at her, the knowing passed like flame,"
       },
       {
-        "time": 128.6,
-        "endTime": 134.06,
-        "text": "Let calluses grow soft from different toil"
+        "time": 127.96,
+        "endTime": 135.5,
+        "text": "and Emond's Field became a place I'd never see the same."
       },
       {
-        "time": 134.8,
-        "endTime": 139.84,
-        "text": "A man can change his hands but not his dreams"
+        "time": 138,
+        "endTime": 146.98,
+        "text": "My mother said be careful, girl, the world will swallow you."
       },
       {
-        "time": 141.5,
-        "endTime": 143.46,
-        "text": "The blade still gleams"
+        "time": 146.98,
+        "endTime": 155.35,
+        "text": "I said the world is small, mama, and I am passing through."
       },
       {
-        "time": 147.86,
-        "endTime": 152,
-        "text": "The blade remembers"
-      },
-      {
-        "time": 152.18,
-        "endTime": 152.72,
-        "text": "What the shepherd tries to forget"
-      }
-    ]
-  },
-  "The Baby on the Mountain": {
-    "lines": [
-      {
-        "time": 7.48,
-        "endTime": 12.6,
-        "text": "Snow on Dragonmount, the sky was torn apart"
-      },
-      {
-        "time": 13.98,
-        "endTime": 19.64,
-        "text": "I found you in the ashes with your mothers stopping heart"
-      },
-      {
-        "time": 21.1,
-        "endTime": 26.86,
-        "text": "A woman I had never met lay dying in the cold"
-      },
-      {
-        "time": 28.08,
-        "endTime": 34.16,
-        "text": "She pressed you to my chest and said nothing left to hold"
-      },
-      {
-        "time": 35.32,
-        "endTime": 39.28,
-        "text": "Your fingers gripped my collar like you knew"
-      },
-      {
-        "time": 42.82,
-        "endTime": 48.32,
-        "text": "That everything was ending and beginning there with you"
-      },
-      {
-        "time": 51.22,
-        "endTime": 61.18,
-        "text": "I carried you down the mountain through the breaking dawn"
-      },
-      {
-        "time": 63.54,
-        "endTime": 66.96,
-        "text": "A soldier with a baby and the war still going on"
-      },
-      {
-        "time": 83,
-        "endTime": 84.66,
-        "text": "I did not know your name, I did not know your fate"
-      },
-      {
-        "time": 84.66,
-        "endTime": 85.16,
-        "text": "I only knew I could not leave you at that gate"
-      },
-      {
-        "time": 84.66,
-        "endTime": 97.44,
-        "text": "The Aiel crossed the river, blood on every stone"
-      },
-      {
-        "time": 99.34,
-        "endTime": 105.12,
-        "text": "A thousand men were dying but I walked that path alone"
-      },
-      {
-        "time": 106.24,
-        "endTime": 112.04,
-        "text": "You never cried, not once, like silence was your shield"
-      },
-      {
-        "time": 113.24,
-        "endTime": 118.14,
-        "text": "The smallest thing alive on that forsaken field"
-      },
-      {
-        "time": 120.32,
-        "endTime": 124.42,
-        "text": "I wrapped you in my cloak and turned my back"
-      },
-      {
-        "time": 127.32,
-        "endTime": 133.62,
-        "text": "On every war I ever fought. I am not going back"
-      },
-      {
-        "time": 136.68,
-        "endTime": 145.6,
-        "text": "Some men find purpose at the point of a sword"
-      },
-      {
-        "time": 148.92,
-        "endTime": 151.94,
-        "text": "I found mine in the weight of a child I could not afford"
-      },
-      {
-        "time": 152.98,
-        "endTime": 153.48,
-        "text": "To lose"
-      },
-      {
-        "time": 156.6,
-        "endTime": 158.44,
-        "text": "I carried you down"
-      },
-      {
-        "time": 162.78,
-        "endTime": 164.7,
-        "text": "Through the breaking dawn"
-      }
-    ]
-  },
-  "Two Rivers": {
-    "lines": [
-      {
-        "time": 15.08,
-        "endTime": 19.34,
-        "text": "The Waterwood is quiet in the morning when the mist"
-      },
-      {
-        "time": 21,
-        "endTime": 25.48,
-        "text": "Hangs low across the river like a secret never kissed"
-      },
-      {
-        "time": 27.36,
-        "endTime": 33.42,
-        "text": "I built these fences post by post, I know each stone by name"
-      },
-      {
-        "time": 34.9,
-        "endTime": 39.26,
-        "text": "Twenty years of silence and I would not trade the shame"
-      },
-      {
-        "time": 40.34,
-        "endTime": 45.36,
-        "text": "Of who I was for who I am, this dirt beneath my nails"
-      },
-      {
-        "time": 46.14,
-        "endTime": 51.56,
-        "text": "Is worth more than every battle in those old forgotten tales"
-      },
-      {
-        "time": 52.86,
-        "endTime": 57.66,
-        "text": "Two Rivers holds me like the roots hold the tree"
-      },
-      {
-        "time": 59.44,
-        "endTime": 64.78,
-        "text": "No crown, no title, just the soil and the seed"
-      },
-      {
-        "time": 65.86,
-        "endTime": 71.82,
-        "text": "The wind through the apple rows, the frost on the eaves"
-      },
-      {
-        "time": 73.14,
-        "endTime": 82.58,
-        "text": "Two Rivers is the only war I need"
-      },
-      {
-        "time": 82.58,
-        "endTime": 87.14,
-        "text": "Bel Tine fires burning, children laughing in the square"
-      },
-      {
-        "time": 88.4,
-        "endTime": 93.12,
-        "text": "My boy stands taller every spring, red hair catching air"
-      },
-      {
-        "time": 94.42,
-        "endTime": 99.3,
-        "text": "He does not know the mountain, does not know the snow"
-      },
-      {
-        "time": 100.38,
-        "endTime": 105.14,
-        "text": "And if this shepherd has his way he never needs to know"
-      },
-      {
-        "time": 107.22,
-        "endTime": 111.54,
-        "text": "Let the world beyond the Taren keep its thorns"
-      },
-      {
-        "time": 112.84,
-        "endTime": 117.68,
-        "text": "My son was born to sunlight, not to storms"
-      },
-      {
-        "time": 119,
-        "endTime": 123.5,
-        "text": "I traded steel for seasons, traded rank for rain"
-      },
-      {
-        "time": 141.82,
-        "endTime": 142.32,
-        "text": "Every harvest is a victory without the pain"
-      },
-      {
-        "time": 141.82,
-        "endTime": 147,
-        "text": "Two Rivers holds me"
-      },
-      {
-        "time": 149.86,
-        "endTime": 153.84,
-        "text": "Like the roots hold the tree"
-      }
-    ]
-  },
-  "The Fever": {
-    "lines": [
-      {
-        "time": 11.06,
-        "endTime": 15.16,
-        "text": "The poison in my blood is pulling words out of my mouth"
-      },
-      {
-        "time": 21.14,
-        "endTime": 24.94,
-        "text": "Things I swore I buried, things I carried from the south"
-      },
-      {
-        "time": 30.64,
-        "endTime": 35.28,
-        "text": "You are not my son, I say, and hate myself for speaking"
-      },
-      {
-        "time": 37.26,
-        "endTime": 41.7,
-        "text": "The walls between us crack and I can hear the truth come leaking"
-      },
-      {
-        "time": 43.72,
-        "endTime": 47.26,
-        "text": "Through the fever and the fire and the sweat"
-      },
-      {
-        "time": 49.36,
-        "endTime": 54.18,
-        "text": "Every promise that I made begins to bend and then forget"
-      },
-      {
-        "time": 59.62,
-        "endTime": 64.42,
-        "text": "The fever tells the truth the man would never say"
-      },
-      {
-        "time": 65.42,
-        "endTime": 70.52,
-        "text": "It strips the shepherd down and shows the soldier underneath the clay"
-      },
-      {
-        "time": 73.14,
-        "endTime": 78.36,
-        "text": "I am burning from the inside, burning clean"
-      },
-      {
-        "time": 79.36,
-        "endTime": 91.22,
-        "text": "Saying everything I fought so hard to leave unseen"
-      },
-      {
-        "time": 91.22,
-        "endTime": 95.06,
-        "text": "Dragonmount, I whisper, and your eyes go somewhere cold"
-      },
-      {
-        "time": 99.62,
-        "endTime": 104.4,
-        "text": "A story written on your skin that I was wrong to withhold"
-      },
-      {
-        "time": 110.24,
-        "endTime": 114.52,
-        "text": "Your mother was a maiden, red-haired, dying in the snow"
-      },
-      {
-        "time": 117.06,
-        "endTime": 121.44,
-        "text": "I took you from the mountain, boy, that is all I know"
-      },
-      {
-        "time": 124.14,
-        "endTime": 127.32,
-        "text": "The fever has no mercy, has no shame"
-      },
-      {
-        "time": 129.48,
-        "endTime": 134.28,
-        "text": "It speaks the things a father hides to keep his son from blame"
-      },
-      {
-        "time": 138.88,
-        "endTime": 144.66,
-        "text": "When the sickness breaks, will you still call me father"
-      },
-      {
-        "time": 145.28,
-        "endTime": 149.88,
-        "text": "Will you still sit beside me, will it matter"
-      },
-      {
-        "time": 150.66,
-        "endTime": 151.38,
-        "text": "That I lied"
-      },
-      {
-        "time": 156.66,
-        "endTime": 160.64,
-        "text": "The fever tells the truth"
-      },
-      {
-        "time": 162.46,
-        "endTime": 163.94,
-        "text": "The man would never say"
-      }
-    ]
-  },
-  "The Sword in the Wardrobe": {
-    "lines": [
-      {
-        "time": 9.52,
-        "endTime": 11.46,
-        "text": "Behind the winter coats, behind the wool and mending thread"
-      },
-      {
-        "time": 11.46,
-        "endTime": 16.46,
-        "text": "A heron-mark blade sleeps where I have made its bed"
-      },
-      {
-        "time": 35.1,
-        "endTime": 39.46,
-        "text": "I oil it once a year when Rand has gone to town"
-      },
-      {
-        "time": 40.06,
-        "endTime": 44.44,
-        "text": "I hold the grip and feel the old forms pulling down"
-      },
-      {
-        "time": 45.22,
-        "endTime": 49.64,
-        "text": "Through muscle memory, through bone and sinew deep"
-      },
-      {
-        "time": 50.48,
-        "endTime": 56.4,
-        "text": "A blademaster does not retire, he just learns to sleep"
-      },
-      {
-        "time": 58.46,
-        "endTime": 65.42,
-        "text": "The sword in the wardrobe knows my other name"
-      },
-      {
-        "time": 66.32,
-        "endTime": 70.86,
-        "text": "The one I answer to in nightmares, not in day"
-      },
-      {
-        "time": 71.34,
-        "endTime": 75.9,
-        "text": "I keep it wrapped in cloth, I keep it out of light"
-      },
-      {
-        "time": 76.5,
-        "endTime": 81.52,
-        "text": "A shepherd has no use for what was forged to fight"
-      },
-      {
-        "time": 85.68,
-        "endTime": 90.36,
-        "text": "My son asks me of swords, I teach him just the bow"
-      },
-      {
-        "time": 90.96,
-        "endTime": 95.42,
-        "text": "Enough to hunt, enough to live, but nothing of the flow"
-      },
-      {
-        "time": 96.16,
-        "endTime": 100.72,
-        "text": "Of water over stone, of wind across the hill"
-      },
-      {
-        "time": 101.3,
-        "endTime": 106.14,
-        "text": "The forms would make him dangerous and I have had my fill"
-      },
-      {
-        "time": 106.58,
-        "endTime": 111.18,
-        "text": "Of dangerous young men who think the blade is power"
-      },
-      {
-        "time": 111.68,
-        "endTime": 116.8,
-        "text": "The blade is just the last thing standing at the final hour"
-      },
-      {
-        "time": 117.1,
-        "endTime": 118.7,
-        "text": "One day he will find it, one day he will know"
-      },
-      {
-        "time": 118.7,
-        "endTime": 124.2,
-        "text": "That his father was a killer with a long time ago"
-      },
-      {
-        "time": 142.52,
-        "endTime": 154.18,
-        "text": "And the heron is a mark that never fades"
-      },
-      {
-        "time": 155.6,
-        "endTime": 159.46,
-        "text": "The sword in the wardrobe"
-      },
-      {
-        "time": 162.82,
-        "endTime": 170.88,
-        "text": "Knows my other name"
-      }
-    ]
-  },
-  "Letting Go": {
-    "lines": [
-      {
-        "time": 6.54,
-        "endTime": 10.3,
-        "text": "She calls herself Moiraine and her eyes are full of wheels"
-      },
-      {
-        "time": 12.48,
-        "endTime": 17.84,
-        "text": "Turning plans I cannot see, making bargains, making deals"
-      },
-      {
-        "time": 18.84,
-        "endTime": 23.72,
-        "text": "My boy stands at the doorway with a pack across his back"
-      },
-      {
-        "time": 24.96,
-        "endTime": 29.74,
-        "text": "And everything I built these twenty years begins to crack"
-      },
-      {
-        "time": 30.62,
-        "endTime": 35.68,
-        "text": "He is leaving and the road goes only one direction out"
-      },
-      {
-        "time": 37,
-        "endTime": 44.38,
-        "text": "This is what the mountain always meant, this is what the war was all about"
-      },
-      {
-        "time": 48.12,
-        "endTime": 56.32,
-        "text": "Letting go is not surrender, letting go is not defeat"
-      },
-      {
-        "time": 60.06,
-        "endTime": 72.14,
-        "text": "It is standing in the doorway watching your own heart retreat"
-      },
-      {
-        "time": 72.14,
-        "endTime": 80.3,
-        "text": "Down the road toward the river, past the bridge, beyond the bend"
-      },
-      {
-        "time": 82.44,
-        "endTime": 88.94,
-        "text": "Letting go is where the father ends and where the story starts again"
-      },
-      {
-        "time": 96.04,
-        "endTime": 100.6,
-        "text": "I should have told him sooner, should have given him the truth"
-      },
-      {
-        "time": 101.22,
-        "endTime": 106.68,
-        "text": "Instead of handing him to strangers and the hunger of his youth"
-      },
-      {
-        "time": 107.56,
-        "endTime": 112.52,
-        "text": "But what father tells a boy that he was born beneath a curse"
-      },
-      {
-        "time": 113.62,
-        "endTime": 118.46,
-        "text": "That the world will try to break him, that the pattern will get worse"
-      },
-      {
-        "time": 119.46,
-        "endTime": 124.54,
-        "text": "So I say be careful, son. I say come home when you are done"
-      },
-      {
-        "time": 126.24,
-        "endTime": 130.42,
-        "text": "Knowing that the boy who leaves will not be the one"
-      },
-      {
-        "time": 131.66,
-        "endTime": 136.14,
-        "text": "The door stays open and the fire stays lit"
-      },
-      {
-        "time": 137.3,
-        "endTime": 145.14,
-        "text": "For a son who may not find his way back to it"
-      },
-      {
-        "time": 148.8,
-        "endTime": 150.08,
-        "text": "Letting go"
-      },
-      {
-        "time": 152.9,
-        "endTime": 157.62,
-        "text": "Is where the father ends"
-      }
-    ]
-  },
-  "Perrin's Army": {
-    "lines": [
-      {
-        "time": 5.94,
-        "endTime": 10.76,
-        "text": "The boy came back with golden eyes and wolves behind his heels"
-      },
-      {
-        "time": 11.8,
-        "endTime": 16.66,
-        "text": "An army at the Emond Field, and Trollocs in the fields"
-      },
-      {
-        "time": 19.52,
-        "endTime": 24.16,
-        "text": "Twenty years since I held steel but my hands remember still"
-      },
-      {
-        "time": 25.44,
-        "endTime": 30.4,
-        "text": "The captain wakes inside the shepherd on the hill"
-      },
-      {
-        "time": 31.96,
-        "endTime": 35.78,
-        "text": "I organize the lines, I place the men, I read the ground"
-      },
-      {
-        "time": 37.76,
-        "endTime": 42.54,
-        "text": "The old voice comes back steady, comes back sure without a sound"
-      },
-      {
-        "time": 49.16,
-        "endTime": 57.38,
-        "text": "Perrin brought the hammer, I brought what I tried to bury"
-      },
-      {
-        "time": 60.28,
-        "endTime": 69.38,
-        "text": "The soldier and the shepherd standing in the same cemetery"
-      },
-      {
-        "time": 71.4,
-        "endTime": 76.88,
-        "text": "Of the man I used to be. He is needed now"
-      },
-      {
-        "time": 78.66,
-        "endTime": 91.54,
-        "text": "So I pick up what I put down, I remember how"
-      },
-      {
-        "time": 91.54,
-        "endTime": 96.14,
-        "text": "Tam al Thor, the farmer, with a bow and quiet grin"
-      },
-      {
-        "time": 97.2,
-        "endTime": 102,
-        "text": "Nobody asks where I learned to place the archers thin"
-      },
-      {
-        "time": 102.96,
-        "endTime": 107.64,
-        "text": "Along the ridgeline, flanking, reading terrain like text"
-      },
-      {
-        "time": 107.98,
-        "endTime": 113.18,
-        "text": "They just follow where I point and do not question what comes next"
-      },
-      {
-        "time": 113.84,
-        "endTime": 119.02,
-        "text": "Because a steady voice in chaos is worth more than any crown"
-      },
-      {
-        "time": 119.86,
-        "endTime": 125.46,
-        "text": "And the shepherd who can fight is the last man standing down"
-      },
-      {
-        "time": 131.68,
-        "endTime": 136.6,
-        "text": "My son is out there somewhere, saving the world they say"
-      },
-      {
-        "time": 137.56,
-        "endTime": 142.46,
-        "text": "But here in Two Rivers, today, this is my war to pay"
-      },
-      {
-        "time": 143.12,
-        "endTime": 152.64,
-        "text": "And I will hold this line"
-      },
-      {
-        "time": 157.04,
-        "endTime": 159.84,
-        "text": "The soldier and the shepherd"
-      },
-      {
-        "time": 162.24,
-        "endTime": 171.08,
-        "text": "Standing in the same cemetery"
-      }
-    ]
-  },
-  "The Apple Orchard": {
-    "lines": [
-      {
-        "time": 5.74,
-        "endTime": 10.68,
-        "text": "The Tarmon Gai don is over and the world has not burned down"
-      },
-      {
-        "time": 12.76,
-        "endTime": 19.4,
-        "text": "My boy came back with scars I cannot see and left without a sound"
-      },
-      {
-        "time": 24.26,
-        "endTime": 29.04,
-        "text": "But the apples do not care about the Dragon or the Dark"
-      },
-      {
-        "time": 30.2,
-        "endTime": 34.82,
-        "text": "They only know the seasons, only answer to the bark"
-      },
-      {
-        "time": 35.98,
-        "endTime": 40.46,
-        "text": "And root and rain and patience, which is all I ever had"
-      },
-      {
-        "time": 41.74,
-        "endTime": 46.38,
-        "text": "The orchard does not judge me as a soldier or a dad"
-      },
-      {
-        "time": 51.28,
-        "endTime": 56.5,
-        "text": "I am tending what I planted, I am pruning what has grown"
-      },
-      {
-        "time": 57.14,
-        "endTime": 62.46,
-        "text": "Every apple is a morning that I earned and that I own"
-      },
-      {
-        "time": 63.42,
-        "endTime": 68.02,
-        "text": "The sword is in the wardrobe and the war is in the ground"
-      },
-      {
-        "time": 69.08,
-        "endTime": 74.04,
-        "text": "And the only thing still standing is this ordinary sound"
-      },
-      {
-        "time": 75.08,
-        "endTime": 79.6,
-        "text": "Of wind through the branches in the late September light"
-      },
-      {
-        "time": 80.74,
-        "endTime": 85.68,
-        "text": "The shepherd finally resting at the far side of the fight"
-      },
-      {
-        "time": 90.36,
-        "endTime": 95.48,
-        "text": "They will write his name in histories, the Dragon Reborn, the one"
-      },
-      {
-        "time": 96.92,
-        "endTime": 101.22,
-        "text": "But I remember smaller things, his laughter in the sun"
-      },
-      {
-        "time": 101.9,
-        "endTime": 107.16,
-        "text": "Teaching him to notch an arrow, watching him grow tall"
-      },
-      {
-        "time": 108.42,
-        "endTime": 112.9,
-        "text": "The pride of ordinary days before the world made its call"
-      },
-      {
-        "time": 114.26,
-        "endTime": 118.9,
-        "text": "Let them have the legend. Let them have the throne"
-      },
-      {
-        "time": 120,
-        "endTime": 124.26,
-        "text": "I will take the orchard and the quiet and the home"
-      },
-      {
-        "time": 129.94,
-        "endTime": 134.74,
-        "text": "A man is not his war, a man is not his blade"
-      },
-      {
-        "time": 135.78,
-        "endTime": 145.96,
-        "text": "A man is what he grows in the life that he has made"
-      },
-      {
-        "time": 145.96,
-        "endTime": 147.92,
-        "text": "The shepherd finally resting"
-      },
-      {
-        "time": 151.1,
-        "endTime": 153.42,
-        "text": "At the far side of the fight"
-      },
-      {
-        "time": 158.24,
-        "endTime": 161.8,
-        "text": "I am tending what I planted"
-      },
-      {
-        "time": 165.54,
-        "endTime": 168.1,
-        "text": "I am pruning what has grown"
-      }
-    ]
-  }
-};
-
-window.lyricsTimings["the-viewings"] = {
-  "The Viewings": {
-    "lines": [
-      {
-        "time": 0.68,
-        "endTime": 5.9,
-        "text": "I saw death wearing your face before you even told me your name"
-      },
-      {
-        "time": 6.2,
-        "endTime": 11.88,
-        "text": "A halo made of swords and fire, I kept walking just the same"
-      },
-      {
-        "time": 12.58,
-        "endTime": 18.1,
-        "text": "They think I read the stars or shuffle cards like some back-alley fraud"
-      },
-      {
-        "time": 18.94,
-        "endTime": 23.78,
-        "text": "But I just open my eyes and the Pattern shows me god"
-      },
-      {
-        "time": 25.84,
-        "endTime": 31.88,
-        "text": "Every stranger on the street is wearing something only I can see"
-      },
-      {
-        "time": 32.2,
-        "endTime": 38.12,
-        "text": "Roses blooming out of skulls, a crown of thorns on a child of three"
-      },
-      {
-        "time": 38.22,
-        "endTime": 41.24,
-        "text": "I learned to hold my face still when the visions hit like glass"
-      },
-      {
-        "time": 41.24,
-        "endTime": 48.28,
-        "text": "Smile at the woman with the death shroud, tell her that her dress is nice, and pass"
-      },
-      {
-        "time": 51.24,
-        "endTime": 56.3,
-        "text": "The viewings come whether I want them or not"
-      },
-      {
-        "time": 56.92,
-        "endTime": 59.58,
-        "text": "Sight that cuts deeper than knowing"
-      },
-      {
-        "time": 59.58,
-        "endTime": 63.16,
-        "text": "I see the thread before it unravels"
-      },
-      {
-        "time": 63.3,
-        "endTime": 68.26,
-        "text": "I see the blood before it starts flowing"
-      },
-      {
-        "time": 68.52,
-        "endTime": 70.54,
-        "text": "The viewings, the viewings, the uninvited light"
-      },
-      {
-        "time": 70.54,
-        "endTime": 83.32,
-        "text": "Showing me every ending in the middle of the night"
-      },
-      {
-        "time": 86.04,
-        "endTime": 91.52,
-        "text": "My father thought I was broken, the neighbors thought I was strange"
-      },
-      {
-        "time": 91.96,
-        "endTime": 97.14,
-        "text": "I learned to swallow the pictures whole, smile through the rearrange"
-      },
-      {
-        "time": 97.92,
-        "endTime": 103.48,
-        "text": "But silence has a half-life and mine finally decayed"
-      },
-      {
-        "time": 103.48,
-        "endTime": 110.7,
-        "text": "The first time I saw someone die and they died exactly the way I said"
-      },
-      {
-        "time": 110.7,
-        "endTime": 114.14,
-        "text": "I did not choose to see this"
-      },
-      {
-        "time": 114.14,
-        "endTime": 117.57,
-        "text": "I cannot choose to stop"
-      },
-      {
-        "time": 117.57,
-        "endTime": 121.01,
-        "text": "Every face a loaded weapon"
-      },
-      {
-        "time": 121.01,
-        "endTime": 124.44,
-        "text": "Every crowd a ticking clock"
-      },
-      {
-        "time": 124.44,
-        "endTime": 127.88,
-        "text": "So I wear my coat like armor and I keep my mouth shut tight"
-      },
-      {
-        "time": 127.88,
-        "endTime": 132.38,
-        "text": "And carry other people's futures burning through the night"
-      },
-      {
-        "time": 157.88,
-        "endTime": 160.58,
-        "text": "The viewings, the viewings"
-      },
-      {
-        "time": 160.96,
-        "endTime": 164.1,
-        "text": "The gift nobody asked for"
-      },
-      {
-        "time": 164.22,
-        "endTime": 166.34,
-        "text": "The gift that keeps on taking"
+        "time": 157.35,
+        "endTime": 166.86,
+        "text": "The Winespring runs behind me now, the inn gets very small,"
       },
       {
         "time": 166.86,
-        "endTime": 169.14,
-        "text": "The gift that never stops"
+        "endTime": 177,
+        "text": "the innkeeper's daughter walks the road and does not look back at all."
       }
     ]
   },
-  "Baerlon": {
+  "The A'dam": {
     "lines": [
       {
-        "time": 0.52,
-        "endTime": 5.88,
-        "text": "Small-town boy walks into a bar and the world splits open around him"
+        "time": 1,
+        "endTime": 8.59,
+        "text": "The metal was warm, not cold, that's what I remember first,"
       },
       {
-        "time": 7.48,
-        "endTime": 12.8,
-        "text": "Colors I have never seen before, wrapping tight like burial linen"
+        "time": 8.59,
+        "endTime": 16.18,
+        "text": "like it was alive and waiting, like it had rehearsed"
       },
       {
-        "time": 14.4,
-        "endTime": 20.36,
-        "text": "Dragon banners, broken crowns, a wound that will not close"
-      },
-      {
-        "time": 21.34,
-        "endTime": 27.16,
-        "text": "I ordered another drink and pretended I just saw ghosts"
-      },
-      {
-        "time": 28.22,
-        "endTime": 34.44,
-        "text": "Three boys from the same nowhere village, each one lit up like a pyre"
-      },
-      {
-        "time": 35.66,
-        "endTime": 41.4,
-        "text": "The dark one trailing shadows, the golden one trailing wire"
-      },
-      {
-        "time": 42.66,
-        "endTime": 48.94,
-        "text": "And you, you wore the sunrise like a wound across your chest"
-      },
-      {
-        "time": 50,
-        "endTime": 54,
-        "text": "I should have turned around and walked back west"
-      },
-      {
-        "time": 57.3,
-        "endTime": 63.08,
-        "text": "Baerlon was just a stop along the road"
-      },
-      {
-        "time": 64.22,
-        "endTime": 72.16,
-        "text": "But I looked at you and saw the end of everything I know"
-      },
-      {
-        "time": 72.16,
-        "endTime": 77.1,
-        "text": "Baerlon was just a name I would forget"
-      },
-      {
-        "time": 78.48,
-        "endTime": 83.78,
-        "text": "But the viewing hit so hard I am still bleeding from it yet"
-      },
-      {
-        "time": 85.8,
-        "endTime": 91.44,
-        "text": "The innkeeper said you were trouble, the Aes Sedai said you were fate"
-      },
-      {
-        "time": 92.96,
-        "endTime": 98.56,
-        "text": "I said you were a tall boy with sad eyes and I was already too late"
-      },
-      {
-        "time": 100.28,
-        "endTime": 105.78,
-        "text": "The Pattern does not ask permission when it tangles up your thread"
-      },
-      {
-        "time": 107,
-        "endTime": 112.86,
-        "text": "It just grabs you by the viewing and drags you into the fire instead"
-      },
-      {
-        "time": 114.24,
-        "endTime": 116.68,
-        "text": "I told myself it was nothing"
-      },
-      {
-        "time": 117.56,
-        "endTime": 120.1,
-        "text": "Just another stranger passing through"
-      },
-      {
-        "time": 121.16,
-        "endTime": 124.04,
-        "text": "But the Pattern does not lie to me"
-      },
-      {
-        "time": 124.74,
-        "endTime": 127.2,
-        "text": "And neither did the light around you"
-      },
-      {
-        "time": 128.24,
-        "endTime": 131.16,
-        "text": "So I finished my drink and I followed"
-      },
-      {
-        "time": 132.06,
-        "endTime": 144.15,
-        "text": "Because walking away was never something I could do"
-      },
-      {
-        "time": 144.27,
-        "endTime": 144.77,
-        "text": "Baerlon"
-      },
-      {
-        "time": 146.35,
-        "endTime": 149.45,
-        "text": "Where I lost the life I had before"
-      },
-      {
-        "time": 149.97,
-        "endTime": 151.57,
-        "text": "Baerlon"
-      },
-      {
-        "time": 180,
-        "endTime": 180.5,
-        "text": "Where I walked through someone else's door"
-      }
-    ]
-  },
-  "Falling for the Dragon": {
-    "lines": [
-      {
-        "time": 0.56,
-        "endTime": 5.64,
-        "text": "I saw three women standing in his light before I even learned his name"
-      },
-      {
-        "time": 5.84,
-        "endTime": 10.18,
-        "text": "The Pattern drew it clear as morning, sharp as blame"
-      },
-      {
-        "time": 10.48,
-        "endTime": 15.18,
-        "text": "Two queens and me, the girl in trousers with the knife"
-      },
-      {
-        "time": 15.18,
-        "endTime": 19.68,
-        "text": "And I chose him anyway, I chose this life"
-      },
-      {
-        "time": 22.28,
-        "endTime": 27.26,
-        "text": "He smelled like wool and sunlight back when he was just a boy"
-      },
-      {
-        "time": 27.26,
-        "endTime": 32.46,
-        "text": "Before the weight of every nation crushed his joy"
-      },
-      {
-        "time": 32.88,
-        "endTime": 37.3,
-        "text": "I remember how he laughed, it was ordinary, small"
-      },
-      {
-        "time": 37.56,
-        "endTime": 44.94,
-        "text": "Now the Dragon Reborn does not really laugh at all"
-      },
-      {
-        "time": 48.9,
-        "endTime": 53.52,
-        "text": "Falling for the Dragon is not a thing you plan"
-      },
-      {
-        "time": 53.9,
-        "endTime": 58.28,
-        "text": "It is more like tripping off a cliff and finding out you can"
-      },
-      {
-        "time": 58.42,
-        "endTime": 62.66,
-        "text": "Survive the drop but not the landing, not the part that stays"
-      },
-      {
-        "time": 62.8,
-        "endTime": 69.54,
-        "text": "Falling for the Dragon is the fire that does not blaze, it grays"
-      },
-      {
-        "time": 69.54,
-        "endTime": 76.76,
-        "text": "They say love is blind but mine has twenty-twenty sight"
-      },
-      {
-        "time": 77.04,
-        "endTime": 81.96,
-        "text": "I watched his futures stack like kindling for a fire"
-      },
-      {
-        "time": 81.98,
-        "endTime": 86.96,
-        "text": "Every path led somewhere terrible and bright"
-      },
-      {
-        "time": 86.98,
-        "endTime": 91.28,
-        "text": "And I followed him like moths follow a pyre"
-      },
-      {
-        "time": 92.14,
-        "endTime": 96.86,
-        "text": "He holds the world together with his bare hands and his pain"
-      },
-      {
-        "time": 96.86,
-        "endTime": 101.68,
-        "text": "And I hold him together in the spaces in between"
-      },
-      {
-        "time": 101.98,
-        "endTime": 106.66,
-        "text": "The prophecies say nothing about what the Dragon feels"
-      },
-      {
-        "time": 106.7,
-        "endTime": 112.66,
-        "text": "But I have read his silences, I know what goes unseen"
-      },
-      {
-        "time": 112.88,
-        "endTime": 117.4,
-        "text": "People ask me why, what do you see in him"
-      },
-      {
-        "time": 117.52,
-        "endTime": 122.84,
-        "text": "I see a man the world refuses to let be a man"
-      },
-      {
-        "time": 123.08,
-        "endTime": 127.78,
-        "text": "I see the boy behind the titles and the flame"
-      },
-      {
-        "time": 128.04,
-        "endTime": 132.86,
-        "text": "And I would choose him every time they speak his name"
-      },
-      {
-        "time": 132.86,
-        "endTime": 133.9,
-        "text": "Falling for the Dragon"
-      },
-      {
-        "time": 133.9,
-        "endTime": 148.61,
-        "text": "I knew the cost before I kissed you"
-      },
-      {
-        "time": 148.61,
-        "endTime": 163.32,
-        "text": "I saw the ending and I missed you already"
-      },
-      {
-        "time": 163.32,
-        "endTime": 178.02,
-        "text": "I walked into this burning steady"
-      }
-    ]
-  },
-  "Choosing to Stay": {
-    "lines": [
-      {
-        "time": 10.86,
-        "endTime": 14.3,
-        "text": "Everybody leaves, that is the lesson this world teaches first"
-      },
-      {
-        "time": 15.76,
-        "endTime": 22,
-        "text": "The Aes Sedai leave, the heroes leave, the ones you love rehearse their exit lines"
-      },
-      {
-        "time": 22.38,
-        "endTime": 27.96,
-        "text": "But I am still here with my boots on and my visions and my stubborn chest"
-      },
-      {
-        "time": 28.7,
-        "endTime": 34.4,
-        "text": "Loving someone doomed is still loving, I just do it under protest"
-      },
-      {
-        "time": 38.04,
-        "endTime": 43.34,
-        "text": "They offered me a room in the Tower, a title and a quiet life"
-      },
-      {
-        "time": 43.6,
-        "endTime": 48.72,
-        "text": "A salary for cataloging visions like a clerk with a butter knife"
-      },
-      {
-        "time": 48.8,
-        "endTime": 53.62,
-        "text": "But I looked at the hallway and I looked at the door"
-      },
-      {
-        "time": 53.88,
-        "endTime": 60.52,
-        "text": "And I chose the man on fire over everything that felt secure"
-      },
-      {
-        "time": 64.14,
-        "endTime": 68.32,
-        "text": "I am choosing to stay"
-      },
-      {
-        "time": 69.94,
-        "endTime": 74.22,
-        "text": "Not because the Pattern told me to"
-      },
-      {
-        "time": 75.14,
-        "endTime": 78.14,
-        "text": "Not because the viewings say I should"
-      },
-      {
-        "time": 78.48,
-        "endTime": 83.88,
-        "text": "I am choosing to stay because I looked at all the futures"
-      },
-      {
-        "time": 84.06,
-        "endTime": 88.48,
-        "text": "And not one of them was any good without you"
-      },
-      {
-        "time": 90.26,
-        "endTime": 94.38,
-        "text": "Min Farshaw does not kneel, does not curtsy, does not fold"
-      },
-      {
-        "time": 94.86,
-        "endTime": 99.9,
-        "text": "I just stay, and staying is the bravest thing I know"
-      },
-      {
-        "time": 100.24,
-        "endTime": 104.36,
-        "text": "They call it reckless, they call it foolish, they call it young"
-      },
-      {
-        "time": 104.9,
-        "endTime": 114.02,
-        "text": "I call it the only honest thing my hands have ever done"
-      },
-      {
-        "time": 118.06,
-        "endTime": 120.64,
-        "text": "Destiny is just a word"
-      },
-      {
-        "time": 121.16,
-        "endTime": 126.04,
-        "text": "For people who have never had to choose"
-      },
-      {
-        "time": 128.3,
-        "endTime": 131.78,
-        "text": "I chose you in every viewing"
-      },
-      {
-        "time": 132.64,
-        "endTime": 136.96,
-        "text": "Even the ones where we both lose"
-      },
-      {
-        "time": 137.34,
-        "endTime": 141.64,
-        "text": "So here I am with my boots laced tight"
-      },
-      {
-        "time": 142.82,
-        "endTime": 149.8,
-        "text": "And my coat over my shoulders in the cold"
-      },
-      {
-        "time": 151.2,
-        "endTime": 156.96,
-        "text": "Choosing to stay"
-      },
-      {
-        "time": 158.58,
-        "endTime": 163.1,
-        "text": "Boots on, eyes open"
-      },
-      {
-        "time": 163.66,
-        "endTime": 166.42,
-        "text": "Choosing to stay"
-      },
-      {
-        "time": 169.64,
-        "endTime": 171.12,
-        "text": "Not because I have to"
-      },
-      {
-        "time": 172.58,
-        "endTime": 173.82,
-        "text": "Because I want to"
-      },
-      {
-        "time": 174.88,
-        "endTime": 180,
-        "text": "Because I want to"
-      }
-    ]
-  },
-  "The Weight of Knowing": {
-    "lines": [
-      {
-        "time": 0.28,
-        "endTime": 7.42,
-        "text": "I saw death on a woman's face today and I told her I liked her scarf"
-      },
-      {
-        "time": 8.92,
-        "endTime": 14.78,
-        "text": "She smiled and said she bought it in Caemlyn, was it not lovely"
-      },
-      {
-        "time": 16.82,
-        "endTime": 21.96,
-        "text": "I said yes, I said it was the prettiest scarf I had ever seen"
-      },
-      {
-        "time": 24.24,
-        "endTime": 32.72,
-        "text": "She will be dead by winter, the viewing was clear as morning"
-      },
-      {
-        "time": 32.72,
-        "endTime": 38.12,
-        "text": "This is the part they do not understand, the part that never heals"
-      },
-      {
-        "time": 40.38,
-        "endTime": 45.12,
-        "text": "I cannot warn them, warnings do not work, I tried"
-      },
-      {
-        "time": 48.04,
-        "endTime": 53.92,
-        "text": "The futures I see are fixed as iron, carved in something real"
-      },
-      {
-        "time": 55.84,
-        "endTime": 64.62,
-        "text": "And all I have are compliments to offer to the doomed"
-      },
-      {
-        "time": 64.62,
-        "endTime": 69.12,
-        "text": "The weight of knowing presses down like stone on glass"
-      },
-      {
-        "time": 71.9,
-        "endTime": 77.36,
-        "text": "I see the knife and I cannot take it from the fool"
-      },
-      {
-        "time": 84.64,
-        "endTime": 86.11,
-        "text": "I smile at people walking toward a cliff"
-      },
-      {
-        "time": 86.11,
-        "endTime": 87.59,
-        "text": "I cannot change it, I can only live with this"
-      },
-      {
-        "time": 87.59,
-        "endTime": 89.06,
-        "text": "A boy in the market has an aura bright as blood"
-      },
-      {
-        "time": 89.06,
-        "endTime": 92.86,
-        "text": "His mother holds his hand and haggles over the price of bread"
-      },
-      {
-        "time": 92.86,
-        "endTime": 96.4,
-        "text": "I want to scream, I want to grab her arm and say run"
-      },
-      {
-        "time": 96.8,
-        "endTime": 101.08,
-        "text": "But the viewing does not bend, what I have seen is said"
-      },
-      {
-        "time": 104.1,
-        "endTime": 107.56,
-        "text": "So I develop this, this talent for the surface"
-      },
-      {
-        "time": 107.82,
-        "endTime": 111.76,
-        "text": "This gift for small talk while the world is ending underneath"
-      },
-      {
-        "time": 111.86,
-        "endTime": 115.64,
-        "text": "I ask about the weather, I compliment their purpose"
-      },
-      {
-        "time": 116.34,
-        "endTime": 119.92,
-        "text": "And I carry all the funerals behind my teeth"
-      },
-      {
-        "time": 121.86,
-        "endTime": 126.28,
-        "text": "They call me cold sometimes, detached, a little hard"
-      },
-      {
-        "time": 127.1,
-        "endTime": 129.72,
-        "text": "They do not know I am a graveyard walking through a yard"
-      },
-      {
-        "time": 129.72,
-        "endTime": 130.74,
-        "text": "Every smile is an act of discipline, of grace"
-      },
-      {
-        "time": 131.5,
-        "endTime": 135.28,
-        "text": "Every conversation is a memorial in place"
-      },
-      {
-        "time": 141.84,
-        "endTime": 147.26,
-        "text": "The weight of knowing, so I carry it instead"
-      },
-      {
-        "time": 149.88,
-        "endTime": 155.22,
-        "text": "And every morning I wake up pre-mourning all the dead"
-      },
-      {
-        "time": 157.82,
-        "endTime": 159.72,
-        "text": "The weight of knowing"
-      },
-      {
-        "time": 161.84,
-        "endTime": 163.98,
-        "text": "The weight of knowing"
-      },
-      {
-        "time": 165.78,
-        "endTime": 171.12,
-        "text": "And still I open my eyes"
-      }
-    ]
-  },
-  "Tower Games": {
-    "lines": [
-      {
-        "time": 3.62,
-        "endTime": 10.24,
-        "text": "The White Tower is a cage dressed up in marble and good intentions"
-      },
-      {
-        "time": 11.18,
-        "endTime": 17.36,
-        "text": "Every Aes Sedai smiles with purpose, every kindness is a chess move in disguise"
-      },
-      {
-        "time": 18.5,
-        "endTime": 24.48,
-        "text": "They measured me for usefulness the moment I walked through the door"
-      },
-      {
-        "time": 25.38,
-        "endTime": 32.02,
-        "text": "A woman who sees futures is a weapon they have been waiting for"
-      },
-      {
-        "time": 33,
-        "endTime": 39.3,
-        "text": "Cadsuane thinks I am a nuisance, the Reds think I am too loud"
-      },
-      {
-        "time": 39.78,
-        "endTime": 47.26,
-        "text": "The Greens want to recruit me and the Whites want me to write things down"
-      },
-      {
-        "time": 47.68,
-        "endTime": 53.84,
-        "text": "I wear my trousers like a declaration of war in silk and satin halls"
-      },
-      {
-        "time": 54.5,
-        "endTime": 61.22,
-        "text": "And every day I play their game while leaning on their walls"
-      },
-      {
-        "time": 62.08,
-        "endTime": 65.58,
-        "text": "Tower games, tower games, everybody pulling strings"
-      },
-      {
-        "time": 65.76,
-        "endTime": 69.24,
-        "text": "I am the only honest person in a building full of rings"
-      },
-      {
-        "time": 69.54,
-        "endTime": 72.96,
-        "text": "Tower games, tower games, smile and nod and do not blink"
-      },
-      {
-        "time": 72.96,
-        "endTime": 79.7,
-        "text": "I will play along but I will think exactly what I think"
-      },
-      {
-        "time": 80.92,
-        "endTime": 88.28,
-        "text": "They tried to dress me up like porcelain, I handed back the gown"
-      },
-      {
-        "time": 88.72,
-        "endTime": 96.16,
-        "text": "Proper ladies do not argue with the Amyrlin, but I am not from this town"
-      },
-      {
-        "time": 96.72,
-        "endTime": 102.94,
-        "text": "I earned my place with something they cannot teach or channel or command"
-      },
-      {
-        "time": 103.1,
-        "endTime": 110.92,
-        "text": "I see the truth on people's faces and the truth does not shake my hand"
-      },
-      {
-        "time": 110.92,
-        "endTime": 117.74,
-        "text": "Elaida thought she owned the future, wrapped it up in proclamations"
-      },
-      {
-        "time": 117.74,
-        "endTime": 125.14,
-        "text": "But the future does not answer to a woman with delusions and a station"
-      },
-      {
-        "time": 125.86,
-        "endTime": 132.12,
-        "text": "I sat in corners reading prophecy while towers burned above"
-      },
-      {
-        "time": 132.3,
-        "endTime": 138.96,
-        "text": "And the only thing the Tower taught me was the politics of love"
-      },
-      {
-        "time": 158.42,
-        "endTime": 160.96,
-        "text": "You can disapprove of me from here to Tear"
-      },
-      {
-        "time": 160.96,
-        "endTime": 161.78,
-        "text": "I have been disapproved of by professionals, my dear"
-      },
-      {
-        "time": 161.78,
-        "endTime": 162.59,
-        "text": "I will take your judgment and I will fold it small"
-      },
-      {
-        "time": 162.59,
-        "endTime": 163.41,
-        "text": "And tuck it in a pocket I do not own at all"
-      },
-      {
-        "time": 163.41,
-        "endTime": 164.22,
-        "text": "Tower games"
-      },
-      {
-        "time": 164.22,
-        "endTime": 165.04,
-        "text": "I am done pretending that I care"
-      },
-      {
-        "time": 165.04,
-        "endTime": 166.78,
-        "text": "Tower games"
-      },
-      {
-        "time": 168.42,
-        "endTime": 171.88,
-        "text": "I have got a dragon to repair"
-      }
-    ]
-  },
-  "Three of Us": {
-    "lines": [
-      {
-        "time": 4.3,
-        "endTime": 8.6,
-        "text": "The punchline of a prophecy is three women love one man"
-      },
-      {
-        "time": 8.86,
-        "endTime": 11.98,
-        "text": "And two of them are royalty and one of them is me"
-      },
-      {
-        "time": 12.92,
-        "endTime": 16.36,
-        "text": "Elayne got the throne and Aviendha got the spear"
-      },
-      {
-        "time": 16.38,
-        "endTime": 21.62,
-        "text": "I got the reading chair and the sardonic commentary"
-      },
-      {
-        "time": 23.08,
-        "endTime": 26.66,
-        "text": "I should hate them, that would be the normal thing to do"
-      },
-      {
-        "time": 27,
-        "endTime": 29.68,
-        "text": "But Elayne is golden and Aviendha burns like noon"
-      },
-      {
-        "time": 29.68,
-        "endTime": 30.18,
-        "text": "And the truth is they both love him with the same reckless resolve"
-      },
-      {
-        "time": 35.4,
-        "endTime": 41.54,
-        "text": "And hatred is a luxury when the world is coming undone"
-      },
-      {
-        "time": 42.84,
-        "endTime": 46.56,
-        "text": "The three of us, the three of us, absurd and brave and true"
-      },
-      {
-        "time": 46.56,
-        "endTime": 50.9,
-        "text": "I saw it in a viewing and I chose to see it through"
-      },
-      {
-        "time": 51.5,
-        "endTime": 55.22,
-        "text": "It is not romantic, it is not a fairy tale"
-      },
-      {
-        "time": 55.22,
-        "endTime": 64.62,
-        "text": "It is three women loving one disaster on a scale"
-      },
-      {
-        "time": 64.62,
-        "endTime": 68.42,
-        "text": "Aviendha would have killed me once, that is not a metaphor"
-      },
-      {
-        "time": 68.76,
-        "endTime": 71.58,
-        "text": "Now we sit across from each other counting prophecies"
-      },
-      {
-        "time": 72.9,
-        "endTime": 76.38,
-        "text": "Elayne writes me letters sealed with the Lion of Andor"
-      },
-      {
-        "time": 76.4,
-        "endTime": 81.08,
-        "text": "And I write back with ink stains and obscenities"
-      },
-      {
-        "time": 83.46,
-        "endTime": 87.2,
-        "text": "Sharing is not splitting, we are not dividing him"
-      },
-      {
-        "time": 87.28,
-        "endTime": 91.6,
-        "text": "He is stretched so thin already, bone and duty, blood and sin"
-      },
-      {
-        "time": 92.06,
-        "endTime": 95.96,
-        "text": "We each hold a different piece of someone falling apart"
-      },
-      {
-        "time": 96.18,
-        "endTime": 101.08,
-        "text": "And between the three of us, we almost make a heart"
-      },
-      {
-        "time": 104.3,
-        "endTime": 111.96,
-        "text": "If you think this is easy you have never loved at all"
-      },
-      {
-        "time": 112.84,
-        "endTime": 120.18,
-        "text": "If you think this is weakness, you have never watched him fall"
-      },
-      {
-        "time": 121.84,
-        "endTime": 128.3,
-        "text": "And chosen to stand next to someone else who caught him too"
-      },
-      {
-        "time": 130.6,
-        "endTime": 138.11,
-        "text": "And nodded, and said, alright, I trust you"
-      },
-      {
-        "time": 138.99,
-        "endTime": 142.9,
-        "text": "Three of us, ridiculous, impossible, enough"
-      },
-      {
-        "time": 143.13,
-        "endTime": 145.98,
-        "text": "Three threads in one weaving"
-      },
-      {
-        "time": 147.55,
-        "endTime": 150.18,
-        "text": "And none of us chose this thing"
-      },
-      {
-        "time": 151.93,
-        "endTime": 155.61,
-        "text": "But all of us chose to hold on"
-      }
-    ]
-  },
-  "Tarmon Gai'don": {
-    "lines": [
-      {
-        "time": 4.14,
-        "endTime": 7.6,
-        "text": "The sky cracked open like a wound that would not close"
-      },
-      {
-        "time": 8.62,
-        "endTime": 12.28,
-        "text": "And every viewing I had ever seen came true at once"
-      },
-      {
-        "time": 12.64,
-        "endTime": 16,
-        "text": "The dead were walking and the living were on their knees"
-      },
-      {
-        "time": 16.58,
-        "endTime": 21.46,
-        "text": "And somewhere in the chaos he was holding back the dark with bloody hands"
+        "time": 16.18,
+        "endTime": 24.86,
+        "text": "the shape of every throat it closed around since Luthair's war."
       },
       {
         "time": 24.86,
-        "endTime": 28.86,
-        "text": "I could not channel, could not fight with sword or spear"
+        "endTime": 35.16,
+        "text": "They called me damane, called me nothing, said I was not mine anymore."
       },
       {
-        "time": 29.04,
-        "endTime": 33.16,
-        "text": "But I could read the battlefield in futures no one else could see"
+        "time": 35.16,
+        "endTime": 43.29,
+        "text": "Renna held the bracelet end and smiled like she was kind,"
       },
       {
-        "time": 33.96,
-        "endTime": 36.98,
-        "text": "Every soldier wearing auras, some already gone"
+        "time": 43.29,
+        "endTime": 51.97,
+        "text": "she said good girl, she said now channel, she said empty out your mind."
       },
       {
-        "time": 37.42,
-        "endTime": 41.94,
-        "text": "And I stood in the rubble calling out which ones would make it to the dawn"
+        "time": 53.97,
+        "endTime": 60.68,
+        "text": "You can lock the lightning in a leash of silver thread,"
       },
       {
-        "time": 45.94,
-        "endTime": 50.22,
-        "text": "Tarmon Gai'don, the last battle, the world on a knife"
+        "time": 60.68,
+        "endTime": 68.43,
+        "text": "you can teach the body to obey what fills it full of dread."
       },
       {
-        "time": 52.42,
-        "endTime": 54.3,
-        "text": "And I am just a woman with a viewing and a life"
+        "time": 68.43,
+        "endTime": 76.17,
+        "text": "But somewhere underneath the collar, underneath the pain,"
       },
       {
-        "time": 54.32,
-        "endTime": 58.84,
-        "text": "Tarmon Gai'don, the sky is falling and the earth is torn"
+        "time": 76.17,
+        "endTime": 83.4,
+        "text": "I kept a room inside my skull where Egwene was my name."
       },
       {
-        "time": 61.26,
-        "endTime": 75.14,
-        "text": "But I have seen the morning and the morning will be born"
+        "time": 84.9,
+        "endTime": 93.03,
+        "text": "I learned to flinch before the thought, to weep before the rod,"
       },
       {
-        "time": 75.14,
-        "endTime": 76.62,
-        "text": "He walked into the dark alone and the thread went thin as thread can go"
+        "time": 93.03,
+        "endTime": 100.62,
+        "text": "to channel on command like breathing was a gift from God."
       },
       {
-        "time": 76.62,
-        "endTime": 78.1,
-        "text": "I felt it in my chest, a cold that was not cold"
+        "time": 100.62,
+        "endTime": 109.3,
+        "text": "The worst was not the punishment, the worst was feeling grateful"
       },
       {
-        "time": 78.1,
-        "endTime": 79.58,
-        "text": "The kind of emptiness that eats the space where hope was stored"
+        "time": 109.3,
+        "endTime": 120.14,
+        "text": "when she praised me, when the a'dam hummed approval, something hateful"
       },
       {
-        "time": 79.58,
-        "endTime": 83.34,
-        "text": "Rand al'Thor at Shayol Ghul with his hand upon the sword"
+        "time": 120.14,
+        "endTime": 127.19,
+        "text": "grew inside the gratitude, a fury made of shame,"
       },
       {
-        "time": 83.5,
-        "endTime": 87.46,
-        "text": "And all I could do was fight beside the ones who stayed"
+        "time": 127.19,
+        "endTime": 135.33,
+        "text": "and I would lie awake rehearsing every sul'dam's name."
       },
       {
-        "time": 87.72,
-        "endTime": 91.84,
-        "text": "Keep my knife in hand and keep my visions sharp and read the fray"
+        "time": 137.83,
+        "endTime": 146.26,
+        "text": "They broke the girl from Emond's Field, I'll give them that for free."
       },
       {
-        "time": 91.9,
-        "endTime": 96.02,
-        "text": "I am not the blade, I am not the flame, I am not the chosen one"
+        "time": 146.26,
+        "endTime": 156.5,
+        "text": "But what grew back between the cracks was something worse to leash than me."
       },
       {
-        "time": 96.2,
-        "endTime": 100.14,
-        "text": "But I am the woman who was there when it was done"
+        "time": 158.5,
+        "endTime": 167.43,
+        "text": "I wore the collar thirty days, I wore it thirty nights."
       },
       {
-        "time": 100.54,
-        "endTime": 104.04,
-        "text": "He chose the light, he chose the world, he chose the pain"
+        "time": 167.43,
+        "endTime": 177,
+        "text": "I took it off and kept the scars to remind me how to fight."
+      }
+    ]
+  },
+  "World of Dreams": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.46,
+        "text": "I close my eyes and fall between the pages of the real,"
       },
       {
-        "time": 104.22,
-        "endTime": 108.02,
-        "text": "Not for me, I am not that arrogant or vain"
+        "time": 8.46,
+        "endTime": 15.38,
+        "text": "Tel'aran'rhiod opens like a wound the world won't heal."
       },
       {
-        "time": 108.28,
-        "endTime": 112.08,
-        "text": "He chose because of something bigger than a person's love"
+        "time": 15.38,
+        "endTime": 23.37,
+        "text": "The towers shift like breathing, every stone remembers hands"
       },
       {
-        "time": 112.5,
-        "endTime": 115.98,
-        "text": "But I will take the morning after, that is enough"
+        "time": 23.37,
+        "endTime": 30.83,
+        "text": "that built it in another age on long-forgotten lands."
       },
       {
-        "time": 117.86,
-        "endTime": 126.72,
-        "text": "Tarmon Gai'don, the world survived"
+        "time": 30.83,
+        "endTime": 38.81,
+        "text": "Amys said be careful, said the dream will eat you whole,"
       },
       {
-        "time": 126.72,
-        "endTime": 128.14,
-        "text": "And somewhere in that miracle, so did I"
+        "time": 38.81,
+        "endTime": 47.34,
+        "text": "but I was born to walk in places that the waking can't control."
       },
       {
-        "time": 129.18,
-        "endTime": 136.26,
-        "text": "The battle's over, the prophecies are spent"
+        "time": 49.34,
+        "endTime": 55.93,
+        "text": "In the world of dreams I am the architect of air,"
       },
       {
-        "time": 136.26,
-        "endTime": 140.76,
-        "text": "And I am still standing where my heart went"
+        "time": 55.93,
+        "endTime": 62.52,
+        "text": "I reshape the ground beneath me, I dissolve the stair."
+      },
+      {
+        "time": 62.52,
+        "endTime": 71.15,
+        "text": "Every nightmare has a grammar and I learned to speak it young."
+      },
+      {
+        "time": 71.15,
+        "endTime": 79.26,
+        "text": "I trapped a Forsaken in this world with nothing but my tongue."
+      },
+      {
+        "time": 80.76,
+        "endTime": 88.22,
+        "text": "Moghedien, the Spider, ancient, patient, dripping guile,"
+      },
+      {
+        "time": 88.22,
+        "endTime": 96.74,
+        "text": "she thought the world of dreams belonged to her by rank and file."
+      },
+      {
+        "time": 96.74,
+        "endTime": 105.26,
+        "text": "But I was faster in the shifting, I was fiercer in the will,"
+      },
+      {
+        "time": 105.26,
+        "endTime": 113.25,
+        "text": "I wrapped her in an a'dam made of thought and held her still."
+      },
+      {
+        "time": 113.25,
+        "endTime": 120.71,
+        "text": "The Wise Ones would be furious, the Tower would not care,"
+      },
+      {
+        "time": 120.71,
+        "endTime": 129.23,
+        "text": "but I leashed a living legend in her own forbidden lair."
+      },
+      {
+        "time": 131.73,
+        "endTime": 141.79,
+        "text": "Bel'al walked here, Ishamael walked here, Lanfear shaped the sky."
+      },
+      {
+        "time": 141.79,
+        "endTime": 152.44,
+        "text": "And a girl from Emond's Field walked in and did not even blink an eye."
+      },
+      {
+        "time": 154.44,
+        "endTime": 163.84,
+        "text": "The dream dissolves at morning like a breath on winter glass."
+      },
+      {
+        "time": 163.84,
+        "endTime": 177,
+        "text": "But I remember every room, and every room remembers that I passed."
+      }
+    ]
+  },
+  "Puppet Seat": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.07,
+        "text": "They chose me because I was young, because I could be bent,"
+      },
+      {
+        "time": 9.07,
+        "endTime": 17.71,
+        "text": "a puppet on the Amyrlin Seat, a girl they could invent."
+      },
+      {
+        "time": 17.71,
+        "endTime": 25.2,
+        "text": "Sheriam and Romanda pulling strings on either side,"
+      },
+      {
+        "time": 25.2,
+        "endTime": 33.27,
+        "text": "the rebel camp a powder keg of politics and pride."
+      },
+      {
+        "time": 33.27,
+        "endTime": 41.34,
+        "text": "Eighteen years old with Siuan whispering tactics in my ear,"
+      },
+      {
+        "time": 41.34,
+        "endTime": 52.29,
+        "text": "I wore the stole and smiled at wolves and swallowed every fear."
+      },
+      {
+        "time": 54.29,
+        "endTime": 60.88,
+        "text": "They wanted a figurehead, they got a flame."
+      },
+      {
+        "time": 60.88,
+        "endTime": 69.11,
+        "text": "They handed me a title and I turned it to a claim."
+      },
+      {
+        "time": 69.11,
+        "endTime": 75.7,
+        "text": "Every vote they thought they'd won, I'd won it first."
+      },
+      {
+        "time": 75.7,
+        "endTime": 83.93,
+        "text": "The puppet learned the strings and then she cut them at the worst."
+      },
+      {
+        "time": 85.43,
+        "endTime": 93.5,
+        "text": "I played the Hall like Daes Dae'mar, let them think I was naive,"
+      },
+      {
+        "time": 93.5,
+        "endTime": 103.29,
+        "text": "the youngest Amyrlin in history and the hardest to deceive."
+      },
+      {
+        "time": 103.29,
+        "endTime": 111.36,
+        "text": "I bound the sisters to the siege with oaths they chose to give,"
+      },
+      {
+        "time": 111.36,
+        "endTime": 121.74,
+        "text": "I moved the army toward the Tower with a reason just to live."
+      },
+      {
+        "time": 121.74,
+        "endTime": 129.8,
+        "text": "The law of war says march, so march, and do not let them see"
+      },
+      {
+        "time": 129.8,
+        "endTime": 138.45,
+        "text": "the girl behind the stolen stole is terrified to be."
+      },
+      {
+        "time": 140.95,
+        "endTime": 151.19,
+        "text": "Siuan said the Amyrlin has no friends, only subjects and the Seat."
+      },
+      {
+        "time": 151.19,
+        "endTime": 161.44,
+        "text": "I said the Amyrlin has no fear, only purpose and the heat."
+      },
+      {
+        "time": 163.44,
+        "endTime": 170.22,
+        "text": "They put a crown on me to keep me small."
+      },
+      {
+        "time": 170.22,
+        "endTime": 177,
+        "text": "I wore it until small was ten feet tall."
+      }
+    ]
+  },
+  "Honey in the Tea": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.72,
+        "text": "Elaida's Tower smelled like fear dressed up in protocol,"
+      },
+      {
+        "time": 9.72,
+        "endTime": 18.98,
+        "text": "they dragged me through the corridors and stripped away the stole."
+      },
+      {
+        "time": 18.98,
+        "endTime": 27.15,
+        "text": "Novice white again, the penance served with Silviana's rod,"
+      },
+      {
+        "time": 27.15,
+        "endTime": 36.96,
+        "text": "they beat me every morning like a prayer delivered to a god."
+      },
+      {
+        "time": 36.96,
+        "endTime": 44.59,
+        "text": "The welts across my shoulders, I could catalog by day,"
+      },
+      {
+        "time": 44.59,
+        "endTime": 53.85,
+        "text": "but every night I'd sit with sisters and I'd find a word to say."
+      },
+      {
+        "time": 55.35,
+        "endTime": 62.98,
+        "text": "I did not shout, I did not weep, I did not beg for less."
+      },
+      {
+        "time": 62.98,
+        "endTime": 71.15,
+        "text": "I took the beating, took the penance, smoothed my novice dress."
+      },
+      {
+        "time": 71.15,
+        "endTime": 79.87,
+        "text": "I asked for honey in my tea and thanked them for the meal,"
+      },
+      {
+        "time": 79.87,
+        "endTime": 88.04,
+        "text": "and every act of quiet grace was sharpened into steel."
+      },
+      {
+        "time": 88.04,
+        "endTime": 96.21,
+        "text": "The sisters watched me bleed and bow and never lose my spine,"
+      },
+      {
+        "time": 96.21,
+        "endTime": 103.84,
+        "text": "and one by one they started asking questions that were mine."
+      },
+      {
+        "time": 105.84,
+        "endTime": 112.59,
+        "text": "Honey in the tea, a steady hand, a level voice."
+      },
+      {
+        "time": 112.59,
+        "endTime": 118.81,
+        "text": "They called it punishment, I called it choice."
+      },
+      {
+        "time": 118.81,
+        "endTime": 126.08,
+        "text": "Every stripe across my back a letter that they read,"
+      },
+      {
+        "time": 126.08,
+        "endTime": 133.86,
+        "text": "the Amyrlin does not break, she bends until they bend instead."
+      },
+      {
+        "time": 136.36,
+        "endTime": 146.05,
+        "text": "Elaida thought she held a prisoner inside a cage of stone."
+      },
+      {
+        "time": 146.05,
+        "endTime": 155.13,
+        "text": "She held a siege inside a girl who made the Tower her own."
+      },
+      {
+        "time": 157.13,
+        "endTime": 168.03,
+        "text": "They beat me every morning. Every evening I won more."
+      },
+      {
+        "time": 168.03,
+        "endTime": 177,
+        "text": "The honey in the tea was sweeter than the day before."
+      }
+    ]
+  },
+  "The Tower Whole": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.12,
+        "text": "The sky tore open and the Seanchan poured like oil through the crack,"
+      },
+      {
+        "time": 9.12,
+        "endTime": 17.75,
+        "text": "to'raken shadows blotting out the moon and there was no turning back."
+      },
+      {
+        "time": 17.75,
+        "endTime": 24.86,
+        "text": "The novices were screaming in the hallways full of smoke,"
+      },
+      {
+        "time": 24.86,
+        "endTime": 32.98,
+        "text": "I grabbed Vora's sa'angreal from the wall before the ceiling broke."
+      },
+      {
+        "time": 32.98,
+        "endTime": 40.09,
+        "text": "No time for politics, no time for who was right or wrong,"
+      },
+      {
+        "time": 40.09,
+        "endTime": 49.22,
+        "text": "the Tower that had stood three thousand years would not fall to a Seanchan song."
+      },
+      {
+        "time": 51.22,
+        "endTime": 57.02,
+        "text": "I am the Tower and the Tower is the flame,"
+      },
+      {
+        "time": 57.02,
+        "endTime": 65.73,
+        "text": "every corridor I walked through, every sister heard my name."
+      },
+      {
+        "time": 65.73,
+        "endTime": 74.91,
+        "text": "I burned the sky above Tar Valon, I turned the raken into rain,"
+      },
+      {
+        "time": 74.91,
+        "endTime": 83.61,
+        "text": "and the novices who followed me will never kneel in chains again."
+      },
+      {
+        "time": 85.11,
+        "endTime": 92.22,
+        "text": "I wove destruction floor by floor, the hallways full of light,"
+      },
+      {
+        "time": 92.22,
+        "endTime": 100.34,
+        "text": "the damane on their leashes channeling against me in the night."
+      },
+      {
+        "time": 100.34,
+        "endTime": 108.97,
+        "text": "I thought of Renna, thought of silver, thought of every girl in chains,"
+      },
+      {
+        "time": 108.97,
+        "endTime": 117.09,
+        "text": "and the fury that I'd carried since Falme was flooding through my veins."
+      },
+      {
+        "time": 117.09,
+        "endTime": 124.71,
+        "text": "Sisters rallied to my voice, the rebels and the Tower-sworn,"
+      },
+      {
+        "time": 124.71,
+        "endTime": 132.32,
+        "text": "for one impossible bright hour the White Tower was reborn."
+      },
+      {
+        "time": 134.82,
+        "endTime": 142.72,
+        "text": "They came to take our sisters, came to collar and to cage."
+      },
+      {
+        "time": 142.72,
+        "endTime": 152.31,
+        "text": "They met a girl who wore a collar once and turned it into rage."
+      },
+      {
+        "time": 154.31,
+        "endTime": 164.46,
+        "text": "When the morning came the Tower stood, divided lines erased."
+      },
+      {
+        "time": 164.46,
+        "endTime": 177,
+        "text": "The Amyrlin called the Hall to order, and every faction bowed to grace."
+      }
+    ]
+  },
+  "Three Rings": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.15,
+        "text": "He was the wrong man by every measure that the Seat demands,"
+      },
+      {
+        "time": 10.15,
+        "endTime": 18.72,
+        "text": "a prince who lost two thrones and fought with nothing but his hands."
+      },
+      {
+        "time": 18.72,
+        "endTime": 26.73,
+        "text": "Gawyn Trakand, the beautiful, the reckless, the sincere,"
+      },
+      {
+        "time": 26.73,
+        "endTime": 35.3,
+        "text": "he followed me through politics he did not want to hear."
+      },
+      {
+        "time": 35.3,
+        "endTime": 43.3,
+        "text": "I should have sent him home, I should have been the colder voice,"
+      },
+      {
+        "time": 43.3,
+        "endTime": 53.02,
+        "text": "but the Amyrlin's heart is still a heart and it still makes a choice."
+      },
+      {
+        "time": 55.02,
+        "endTime": 61.56,
+        "text": "Three rings on my finger, three promises I made,"
+      },
+      {
+        "time": 61.56,
+        "endTime": 69.72,
+        "text": "to the Tower, to the world, and to the boy who never stayed."
+      },
+      {
+        "time": 69.72,
+        "endTime": 77.34,
+        "text": "I bonded him because the love was louder than the law,"
+      },
+      {
+        "time": 77.34,
+        "endTime": 86.06,
+        "text": "and the strongest weave I ever held was the one without a flaw."
+      },
+      {
+        "time": 87.56,
+        "endTime": 96.13,
+        "text": "He wore Laman's sword and carried guilt like it was armor plate,"
+      },
+      {
+        "time": 96.13,
+        "endTime": 104.71,
+        "text": "protecting me from shadows with a fury I called fate."
+      },
+      {
+        "time": 104.71,
+        "endTime": 113.28,
+        "text": "The Bloodknives in the dark, the poison singing through his blood,"
+      },
+      {
+        "time": 113.28,
+        "endTime": 121.28,
+        "text": "I felt the bond go thin like thread dissolving in a flood."
+      },
+      {
+        "time": 121.28,
+        "endTime": 129.86,
+        "text": "He died defending something that was never his to save,"
+      },
+      {
+        "time": 129.86,
+        "endTime": 137.86,
+        "text": "the Amyrlin's own bodyguard, the bravest and the brave."
+      },
+      {
+        "time": 140.36,
+        "endTime": 147.99,
+        "text": "The bond went silent and the world went white with pain."
+      },
+      {
+        "time": 147.99,
+        "endTime": 157.51,
+        "text": "I kept channeling because the dead don't need me to explain."
+      },
+      {
+        "time": 159.51,
+        "endTime": 166.91,
+        "text": "Three rings. One empty. The bond a scar I wear."
+      },
+      {
+        "time": 166.91,
+        "endTime": 177,
+        "text": "I loved him like a burning thing. The burning's still right there."
+      }
+    ]
+  },
+  "Crystal and Flame": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.47,
+        "text": "The ground is cracking open and the Dark One's breath is here,"
+      },
+      {
+        "time": 8.47,
+        "endTime": 15.94,
+        "text": "M'Hael has turned the Dreadlords loose and balefire splits the air."
+      },
+      {
+        "time": 15.94,
+        "endTime": 23.41,
+        "text": "The Pattern unravels with every thread they burn undone,"
+      },
+      {
+        "time": 23.41,
+        "endTime": 30.88,
+        "text": "and I can see the places where reality has come undone."
+      },
+      {
+        "time": 30.88,
+        "endTime": 37.36,
+        "text": "Vora's wand is singing in my hands like living wire,"
+      },
+      {
+        "time": 37.36,
+        "endTime": 46.32,
+        "text": "and I can feel a weave assembling that is made of something higher."
+      },
+      {
+        "time": 48.32,
+        "endTime": 54.49,
+        "text": "Let me be the answer to the thing that breaks the world,"
+      },
+      {
+        "time": 54.49,
+        "endTime": 61.13,
+        "text": "let me be the counterweave, the flame, the flag unfurled."
+      },
+      {
+        "time": 61.13,
+        "endTime": 67.29,
+        "text": "I am drawing deeper than the living ought to draw,"
+      },
+      {
+        "time": 67.29,
+        "endTime": 74.88,
+        "text": "I am weaving something that the Age of Legends never saw."
+      },
+      {
+        "time": 76.38,
+        "endTime": 82.85,
+        "text": "The Flame of Tar Valon, they will call it when I'm gone,"
+      },
+      {
+        "time": 82.85,
+        "endTime": 90.32,
+        "text": "the opposite of unraveling, the thing that sews the dawn."
+      },
+      {
+        "time": 90.32,
+        "endTime": 97.79,
+        "text": "I can feel my body crystallizing, feel the light pour in,"
+      },
+      {
+        "time": 97.79,
+        "endTime": 106.76,
+        "text": "every crack the balefire opened, I am sealing from within."
+      },
+      {
+        "time": 106.76,
+        "endTime": 113.73,
+        "text": "I think of Rand beneath the mountain holding back the dark,"
+      },
+      {
+        "time": 113.73,
+        "endTime": 121.2,
+        "text": "and I match him weave for weave because we both were just a spark."
+      },
+      {
+        "time": 123.7,
+        "endTime": 131.45,
+        "text": "I was the innkeeper's daughter. I was the girl in chains."
+      },
+      {
+        "time": 131.45,
+        "endTime": 140.3,
+        "text": "I was the dreamer. I was the seat. I was the one who remains."
+      },
+      {
+        "time": 140.3,
+        "endTime": 148.6,
+        "text": "Not as flesh, not as memory, but as crystal in the ground,"
+      },
+      {
+        "time": 148.6,
+        "endTime": 158.01,
+        "text": "a monument to every fire that refused to be put down."
+      },
+      {
+        "time": 160.01,
+        "endTime": 168.21,
+        "text": "The flame goes out. The crystal grows. The Tower still stands tall."
+      },
+      {
+        "time": 168.21,
+        "endTime": 177,
+        "text": "Egwene al'Vere, the Amyrlin's fire, the brightest of them all."
       }
     ]
   }
@@ -14528,103 +1973,103 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "The Forge Before Dawn": {
     "lines": [
       {
-        "time": 0.52,
-        "endTime": 7.02,
+        "time": 1,
+        "endTime": 10.72,
         "text": "My father's hands were gentle and they taught me to destroy"
       },
       {
-        "time": 9.96,
-        "endTime": 16.16,
+        "time": 10.72,
+        "endTime": 19.75,
         "text": "Heating iron past the point where metal learns to bend"
       },
       {
-        "time": 18.02,
-        "endTime": 23.68,
+        "time": 19.75,
+        "endTime": 30.86,
         "text": "Every sunrise at the forge before the village had a voice"
       },
       {
-        "time": 25.46,
-        "endTime": 36.68,
+        "time": 30.86,
+        "endTime": 41.27,
         "text": "Shaping horseshoes while the world pretended not to end"
       },
       {
-        "time": 36.68,
-        "endTime": 42.72,
+        "time": 42.77,
+        "endTime": 53.19,
         "text": "The bellows breathe like something old and patient in the dark"
       },
       {
-        "time": 44.28,
-        "endTime": 50.78,
+        "time": 53.19,
+        "endTime": 62.91,
         "text": "Sparks ascending like the prayers I never learned to speak"
       },
       {
-        "time": 52.54,
-        "endTime": 60.04,
+        "time": 62.91,
+        "endTime": 73.33,
         "text": "There's a rhythm in the hammer that was beating in my heart"
       },
       {
-        "time": 61.4,
-        "endTime": 66.34,
+        "time": 73.33,
+        "endTime": 80.96,
         "text": "Long before I knew that being strong means being weak"
       },
       {
-        "time": 68.48,
-        "endTime": 72.68,
+        "time": 82.96,
+        "endTime": 88.25,
         "text": "I was built beside the anvil"
       },
       {
-        "time": 76.72,
-        "endTime": 85.24,
+        "time": 88.25,
+        "endTime": 93.55,
         "text": "I was forged before the flame"
       },
       {
-        "time": 85.24,
-        "endTime": 88.24,
+        "time": 93.55,
+        "endTime": 100.16,
         "text": "Every strike that shaped the metal"
       },
       {
-        "time": 137.28,
-        "endTime": 138.51,
+        "time": 100.16,
+        "endTime": 104.79,
         "text": "Was already shaping pain"
       },
       {
-        "time": 138.51,
-        "endTime": 139.73,
+        "time": 107.29,
+        "endTime": 117.32,
         "text": "The forge remembers what the blacksmith tries to forget"
       },
       {
-        "time": 139.73,
-        "endTime": 140.96,
+        "time": 117.32,
+        "endTime": 128.89,
         "text": "That the steel was always harder than the man who made it bend"
       },
       {
-        "time": 140.96,
-        "endTime": 142.19,
+        "time": 128.89,
+        "endTime": 140.46,
         "text": "You can temper down the fury but you cannot cool regret"
       },
       {
-        "time": 142.19,
-        "endTime": 143.41,
+        "time": 140.46,
+        "endTime": 150.49,
         "text": "And the fire only answers to itself in the end"
       },
       {
-        "time": 143.41,
-        "endTime": 144.64,
+        "time": 152.49,
+        "endTime": 159.03,
         "text": "Hammer down, the sparks still climbing"
       },
       {
-        "time": 144.64,
-        "endTime": 148.88,
+        "time": 159.03,
+        "endTime": 164.75,
         "text": "Iron cools but never dies"
       },
       {
-        "time": 152.5,
-        "endTime": 156.68,
+        "time": 164.75,
+        "endTime": 171.28,
         "text": "I was made in heat and silence"
       },
       {
-        "time": 162.6,
-        "endTime": 165.74,
+        "time": 171.28,
+        "endTime": 177,
         "text": "Built to break what I despise"
       }
     ]
@@ -14632,103 +2077,103 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "Golden Eyes": {
     "lines": [
       {
-        "time": 15.84,
-        "endTime": 19.74,
+        "time": 1,
+        "endTime": 9.68,
         "text": "Woke up seeing colors that the daylight never owned"
       },
       {
-        "time": 20.24,
-        "endTime": 24.98,
+        "time": 9.68,
+        "endTime": 20.36,
         "text": "Amber flooding through the edges of a world I used to trust"
       },
       {
-        "time": 25.74,
-        "endTime": 30.38,
+        "time": 20.36,
+        "endTime": 32.38,
         "text": "Every face became a frequency, every shadow had a tone"
       },
       {
-        "time": 30.96,
-        "endTime": 36.36,
+        "time": 32.38,
+        "endTime": 41.73,
         "text": "And the gold behind my irises was settling like dust"
       },
       {
-        "time": 41.26,
-        "endTime": 46.3,
+        "time": 43.23,
+        "endTime": 53.25,
         "text": "They say the wolves can smell the change before it breaks the skin"
       },
       {
-        "time": 47.2,
-        "endTime": 51.8,
+        "time": 53.25,
+        "endTime": 63.26,
         "text": "Hear the pulse beneath the person, taste the fear inside the friend"
       },
       {
-        "time": 52.36,
-        "endTime": 57.16,
+        "time": 63.26,
+        "endTime": 73.94,
         "text": "I keep catching scents of anger drifting through the evening wind"
       },
       {
-        "time": 57.68,
-        "endTime": 63.68,
+        "time": 73.94,
+        "endTime": 83.96,
         "text": "And the yellow in my vision is a warning, not a lens"
       },
       {
-        "time": 78.08,
-        "endTime": 78.58,
+        "time": 85.96,
+        "endTime": 89.78,
         "text": "Golden eyes, golden eyes"
       },
       {
-        "time": 78.08,
-        "endTime": 80.68,
+        "time": 89.78,
+        "endTime": 94.23,
         "text": "Seeing what the dark provides"
       },
       {
-        "time": 83.24,
-        "endTime": 85.3,
+        "time": 94.23,
+        "endTime": 99.31,
         "text": "Something underneath the man"
       },
       {
-        "time": 88.44,
-        "endTime": 90.84,
+        "time": 99.31,
+        "endTime": 103.77,
         "text": "Waking what I cannot hide"
       },
       {
-        "time": 93.68,
-        "endTime": 98.7,
+        "time": 106.27,
+        "endTime": 118.14,
         "text": "I told Faile I was frightened and she held me like a war"
       },
       {
-        "time": 99.18,
-        "endTime": 103.84,
+        "time": 118.14,
+        "endTime": 129.26,
         "text": "Like the answer to the question was just standing at the door"
       },
       {
-        "time": 104.18,
-        "endTime": 109.3,
+        "time": 129.26,
+        "endTime": 141.13,
         "text": "But the wolves keep calling outward from a treeline I adore"
       },
       {
-        "time": 109.94,
-        "endTime": 114.86,
+        "time": 141.13,
+        "endTime": 153,
         "text": "And the gold keeps getting brighter every night a little more"
       },
       {
-        "time": 115.18,
-        "endTime": 117.46,
+        "time": 155,
+        "endTime": 159.72,
         "text": "Let them glow, let them burn"
       },
       {
-        "time": 120.14,
-        "endTime": 124.26,
+        "time": 159.72,
+        "endTime": 166,
         "text": "Let the wolves confirm the turn"
       },
       {
-        "time": 125.6,
-        "endTime": 128.94,
+        "time": 166,
+        "endTime": 171.5,
         "text": "I was never just a man"
       },
       {
-        "time": 130.88,
-        "endTime": 133.14,
+        "time": 171.5,
+        "endTime": 177,
         "text": "I was always meant to learn"
       }
     ]
@@ -14736,103 +2181,103 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "Hopper's Last Lesson": {
     "lines": [
       {
-        "time": 3.54,
-        "endTime": 9.48,
+        "time": 1,
+        "endTime": 10.33,
         "text": "He found me in the Wolf Dream running from the waking world"
       },
       {
-        "time": 11,
-        "endTime": 17.44,
+        "time": 10.33,
+        "endTime": 20.99,
         "text": "Tongue out, eyes like lanterns, laughing in the only way wolves can"
       },
       {
-        "time": 18.6,
-        "endTime": 24.28,
+        "time": 20.99,
+        "endTime": 31.65,
         "text": "Hopper taught me that the meadow and the memory are the same"
       },
       {
-        "time": 25.38,
-        "endTime": 36.98,
+        "time": 31.65,
+        "endTime": 41.65,
         "text": "That a wolf does not pretend to be more gentle than he is"
       },
       {
-        "time": 37.14,
-        "endTime": 42.68,
+        "time": 43.15,
+        "endTime": 52.48,
         "text": "He showed me Tel'aran'rhiod before I knew its name"
       },
       {
-        "time": 44.24,
-        "endTime": 50.22,
+        "time": 52.48,
+        "endTime": 61.14,
         "text": "Jumping from a cliff into a field of frozen stars"
       },
       {
-        "time": 52.46,
-        "endTime": 57.5,
+        "time": 61.14,
+        "endTime": 69.8,
         "text": "Patient with the pup who kept forgetting he could fly"
       },
       {
-        "time": 59.02,
-        "endTime": 65.2,
+        "time": 69.8,
+        "endTime": 79.79,
         "text": "Waiting at the edges while I learned to trust the scars"
       },
       {
-        "time": 65.3,
-        "endTime": 66.06,
+        "time": 81.79,
+        "endTime": 86.24,
         "text": "Run with me, the old wolf said"
       },
       {
-        "time": 66.06,
-        "endTime": 66.82,
+        "time": 86.24,
+        "endTime": 90.68,
         "text": "Through the dream where nothing dies"
       },
       {
-        "time": 66.82,
-        "endTime": 67.58,
+        "time": 90.68,
+        "endTime": 96.39,
         "text": "Every hunt a conversation"
       },
       {
-        "time": 67.58,
-        "endTime": 68.34,
+        "time": 96.39,
+        "endTime": 101.47,
         "text": "Every silence a reply"
       },
       {
-        "time": 68.34,
-        "endTime": 69.1,
+        "time": 103.97,
+        "endTime": 113.59,
         "text": "When the Darkhounds came he did not hesitate or think"
       },
       {
-        "time": 69.1,
-        "endTime": 69.86,
+        "time": 113.59,
+        "endTime": 124.7,
         "text": "He just leapt between the shadow and the boy who could not speak"
       },
       {
-        "time": 69.86,
-        "endTime": 77.18,
+        "time": 124.7,
+        "endTime": 138.02,
         "text": "And the wolf who lived a thousand lives spent his last one at the brink"
       },
       {
-        "time": 77.18,
-        "endTime": 77.68,
+        "time": 138.02,
+        "endTime": 149.13,
         "text": "Teaching me that sacrifice is just another word for keep"
       },
       {
-        "time": 77.18,
-        "endTime": 78.28,
+        "time": 151.13,
+        "endTime": 158.19,
         "text": "Hopper runs where dreams have no ceiling"
       },
       {
-        "time": 82.14,
-        "endTime": 82.7,
+        "time": 158.19,
+        "endTime": 163.67,
         "text": "Through the meadows past the pain"
       },
       {
-        "time": 82.7,
-        "endTime": 83.2,
+        "time": 163.67,
+        "endTime": 170.73,
         "text": "And I carry every lesson"
       },
       {
-        "time": 83.04,
-        "endTime": 86.04,
+        "time": 170.73,
+        "endTime": 177,
         "text": "Every hunt inside my veins"
       }
     ]
@@ -14840,103 +2285,103 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "The Axe or the Hammer": {
     "lines": [
       {
-        "time": 12.86,
-        "endTime": 18,
+        "time": 1,
+        "endTime": 10.63,
         "text": "Two weapons in my hands and neither one of them is clean"
       },
       {
-        "time": 18.84,
-        "endTime": 24.54,
+        "time": 10.63,
+        "endTime": 20.26,
         "text": "The axe was made for killing and the hammer made to build"
       },
       {
-        "time": 24.84,
-        "endTime": 30.84,
+        "time": 20.26,
+        "endTime": 31.26,
         "text": "Every battle is a question that I answer with a scream"
       },
       {
-        "time": 31.28,
-        "endTime": 37.38,
+        "time": 31.26,
+        "endTime": 41.58,
         "text": "And the blood dries on the metal of the one I should have wield"
       },
       {
-        "time": 37.96,
-        "endTime": 43.68,
+        "time": 43.08,
+        "endTime": 53.4,
         "text": "They called me Lord and I could taste the copper on my tongue"
       },
       {
-        "time": 44.5,
-        "endTime": 50.12,
+        "time": 53.4,
+        "endTime": 63.71,
         "text": "The berserker and the builder sharing space inside one frame"
       },
       {
-        "time": 50.48,
-        "endTime": 56.46,
+        "time": 63.71,
+        "endTime": 74.03,
         "text": "I would swing the axe and afterwards forget that I was young"
       },
       {
-        "time": 56.66,
-        "endTime": 63.04,
+        "time": 74.03,
+        "endTime": 83.66,
         "text": "Then pick the hammer up and try to beat away the shame"
       },
       {
-        "time": 63.84,
-        "endTime": 68.1,
+        "time": 85.66,
+        "endTime": 89.59,
         "text": "The axe or the hammer"
       },
       {
-        "time": 70.1,
-        "endTime": 76.42,
+        "time": 89.59,
+        "endTime": 93.52,
         "text": "Which one makes me real"
       },
       {
-        "time": 76.42,
-        "endTime": 81.18,
+        "time": 93.52,
+        "endTime": 98.11,
         "text": "One creates, one dismantles"
       },
       {
-        "time": 82.98,
-        "endTime": 83.68,
+        "time": 98.11,
+        "endTime": 101.38,
         "text": "Both of them are steel"
       },
       {
-        "time": 89.76,
-        "endTime": 95.34,
+        "time": 103.88,
+        "endTime": 113.82,
         "text": "Aram chose the sword and lost the song inside his chest"
       },
       {
-        "time": 96.24,
-        "endTime": 101.32,
+        "time": 113.82,
+        "endTime": 124.52,
         "text": "Elyas chose the forest and the wolves became his kin"
       },
       {
-        "time": 101.62,
-        "endTime": 107.62,
+        "time": 124.52,
+        "endTime": 135.98,
         "text": "I keep choosing both and ripping at the seam inside my breast"
       },
       {
-        "time": 107.62,
-        "endTime": 114.02,
+        "time": 135.98,
+        "endTime": 146.68,
         "text": "Because the man who builds and breaks is fighting with his twin"
       },
       {
-        "time": 141.62,
-        "endTime": 144.58,
+        "time": 148.68,
+        "endTime": 155.15,
         "text": "Lay the axe down, lift the hammer"
       },
       {
-        "time": 145.2,
-        "endTime": 147.92,
+        "time": 155.15,
+        "endTime": 160.82,
         "text": "Feel the ringing through the bone"
       },
       {
-        "time": 153.16,
-        "endTime": 157.66,
+        "time": 160.82,
+        "endTime": 167.29,
         "text": "I was given two directions"
       },
       {
-        "time": 158.04,
-        "endTime": 163.78,
+        "time": 167.29,
+        "endTime": 177,
         "text": "But I only need the one that takes me home"
       }
     ]
@@ -14944,103 +2389,103 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "Falcon in the Forge": {
     "lines": [
       {
-        "time": 5.96,
-        "endTime": 10.06,
+        "time": 1,
+        "endTime": 10.65,
         "text": "She walked into the blacksmith shop like weather changing fast"
       },
       {
-        "time": 14.06,
-        "endTime": 19.34,
+        "time": 10.65,
+        "endTime": 20.3,
         "text": "Falcon eyes and falcon temper, nothing in her built to kneel"
       },
       {
-        "time": 20.52,
-        "endTime": 26.64,
+        "time": 20.3,
+        "endTime": 30.59,
         "text": "I was bending iron quietly and she was bending me at last"
       },
       {
-        "time": 28.82,
-        "endTime": 34.26,
+        "time": 30.59,
+        "endTime": 42.17,
         "text": "Making every careful silence into something I could feel"
       },
       {
-        "time": 35.18,
-        "endTime": 42.32,
+        "time": 43.67,
+        "endTime": 54.6,
         "text": "She smelled of cedar and of distance and of wars I had not fought"
       },
       {
-        "time": 43.2,
-        "endTime": 49.92,
+        "time": 54.6,
+        "endTime": 64.89,
         "text": "Her name meant falcon in a language that the wind still understands"
       },
       {
-        "time": 50.56,
-        "endTime": 57.14,
+        "time": 64.89,
+        "endTime": 73.25,
         "text": "And the careful quiet giant that the Two Rivers wrought"
       },
       {
-        "time": 57.9,
-        "endTime": 64.4,
+        "time": 73.25,
+        "endTime": 82.9,
         "text": "Found a woman who could hold a storm with nothing but her hands"
       },
       {
-        "time": 77.56,
-        "endTime": 78.06,
+        "time": 84.9,
+        "endTime": 87.35,
         "text": "Faile, Faile"
       },
       {
-        "time": 78.96,
-        "endTime": 85.24,
+        "time": 87.35,
+        "endTime": 93.48,
         "text": "You cracked the stone I called a heart"
       },
       {
-        "time": 87.34,
-        "endTime": 90.64,
+        "time": 93.48,
+        "endTime": 98.99,
         "text": "Showed the wolf he had a reason"
       },
       {
-        "time": 91.5,
-        "endTime": 96.06,
+        "time": 98.99,
+        "endTime": 103.89,
         "text": "Tore the careful man apart"
       },
       {
-        "time": 98.46,
-        "endTime": 105.4,
+        "time": 106.39,
+        "endTime": 117.11,
         "text": "When they took her I became the thing I swore I would not be"
       },
       {
-        "time": 105.94,
-        "endTime": 112.68,
+        "time": 117.11,
+        "endTime": 128.55,
         "text": "The berserker and the general and the husband on his knees"
       },
       {
-        "time": 113.56,
-        "endTime": 120.16,
+        "time": 128.55,
+        "endTime": 138.55,
         "text": "I would burn the world to cinder for the falcon flying free"
       },
       {
-        "time": 120.68,
-        "endTime": 129.26,
+        "time": 138.55,
+        "endTime": 149.27,
         "text": "And the hammer in my fist was singing only her release"
       },
       {
-        "time": 131.14,
-        "endTime": 135,
+        "time": 151.27,
+        "endTime": 158.84,
         "text": "She never asked me to be gentle"
       },
       {
-        "time": 135.76,
-        "endTime": 138.36,
+        "time": 158.84,
+        "endTime": 164.89,
         "text": "Never asked me to be small"
       },
       {
-        "time": 138.98,
-        "endTime": 142.58,
+        "time": 164.89,
+        "endTime": 170.95,
         "text": "She just stood beside the furnace"
       },
       {
-        "time": 143.28,
-        "endTime": 149.9,
+        "time": 170.95,
+        "endTime": 177,
         "text": "And loved the fire through it all"
       }
     ]
@@ -15048,103 +2493,103 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "The Siege of Malden": {
     "lines": [
       {
-        "time": 0,
-        "endTime": 6.48,
+        "time": 1,
+        "endTime": 11.68,
         "text": "The Shaido took the town and turned the buildings into cages"
       },
       {
-        "time": 7.18,
-        "endTime": 13.44,
+        "time": 11.68,
+        "endTime": 22.36,
         "text": "Faile somewhere in the wreckage, breathing air I could not share"
       },
       {
-        "time": 14.54,
-        "endTime": 20.74,
+        "time": 22.36,
+        "endTime": 34.37,
         "text": "Every day a calculation, every night a hundred rages"
       },
       {
-        "time": 21.5,
-        "endTime": 27.54,
+        "time": 34.37,
+        "endTime": 44.38,
         "text": "Patience is a kind of violence when the one you love is there"
       },
       {
-        "time": 27.96,
-        "endTime": 29.4,
+        "time": 45.88,
+        "endTime": 55.89,
         "text": "They said negotiate, said parley, said that politics would serve"
       },
       {
-        "time": 29.4,
-        "endTime": 29.9,
+        "time": 55.89,
+        "endTime": 65.9,
         "text": "I could smell her from a distance and the scent was wearing thin"
       },
       {
-        "time": 29.44,
-        "endTime": 29.94,
+        "time": 65.9,
+        "endTime": 76.58,
         "text": "Every diplomat and schemer pushing caution and reserve"
       },
       {
-        "time": 60.76,
-        "endTime": 70.04,
+        "time": 76.58,
+        "endTime": 87.26,
         "text": "While the wolf inside kept counting down the days to tear them in"
       },
       {
-        "time": 70.68,
-        "endTime": 72.36,
+        "time": 89.26,
+        "endTime": 91.8,
         "text": "Malden, Malden"
       },
       {
-        "time": 76.12,
-        "endTime": 79.88,
+        "time": 91.8,
+        "endTime": 96.25,
         "text": "Fortress built on stolen ground"
       },
       {
-        "time": 83.42,
-        "endTime": 86.68,
+        "time": 96.25,
+        "endTime": 100.7,
         "text": "I will take apart your walls"
       },
       {
-        "time": 90.58,
-        "endTime": 94.44,
+        "time": 100.7,
+        "endTime": 105.15,
         "text": "Without making any sound"
       },
       {
-        "time": 99.06,
-        "endTime": 104.18,
+        "time": 107.65,
+        "endTime": 118.77,
         "text": "I learned to lead by learning not to kill when killing sang"
       },
       {
-        "time": 106.18,
-        "endTime": 112.28,
+        "time": 118.77,
+        "endTime": 129.9,
         "text": "By holding back the axe when every instinct swung it free"
       },
       {
-        "time": 113.88,
-        "endTime": 119.62,
+        "time": 129.9,
+        "endTime": 139.54,
         "text": "The rescue was a masterwork of fury that I rang"
       },
       {
-        "time": 120.3,
-        "endTime": 126.88,
+        "time": 139.54,
+        "endTime": 150.66,
         "text": "Like a hammer on the anvil forging patience out of me"
       },
       {
-        "time": 127.5,
-        "endTime": 131,
+        "time": 152.66,
+        "endTime": 158.94,
         "text": "She was standing in the rubble"
       },
       {
-        "time": 131.14,
-        "endTime": 134.1,
+        "time": 158.94,
+        "endTime": 164.44,
         "text": "Thinner, fiercer, still the same"
       },
       {
-        "time": 135.02,
-        "endTime": 137.62,
+        "time": 164.44,
+        "endTime": 169.93,
         "text": "And the wolf who almost broke"
       },
       {
-        "time": 141.24,
-        "endTime": 143.68,
+        "time": 169.93,
+        "endTime": 177,
         "text": "Remembered how to say her name"
       }
     ]
@@ -15152,103 +2597,103 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "The Last Hunt": {
     "lines": [
       {
-        "time": 6.42,
-        "endTime": 13.1,
+        "time": 1,
+        "endTime": 12.26,
         "text": "The wolves are gathering at borders that the map forgot to draw"
       },
       {
-        "time": 14.3,
-        "endTime": 20.08,
+        "time": 12.26,
+        "endTime": 20.88,
         "text": "Moving through the treeline like a current under ice"
       },
       {
-        "time": 21.06,
-        "endTime": 27.48,
+        "time": 20.88,
+        "endTime": 32.8,
         "text": "Every alpha, every elder, every pup with winter jaw"
       },
       {
-        "time": 27.82,
-        "endTime": 34.54,
+        "time": 32.8,
+        "endTime": 42.08,
         "text": "Coming for the final battle at a price beyond a price"
       },
       {
-        "time": 35.2,
-        "endTime": 45.3,
+        "time": 43.58,
+        "endTime": 53.52,
         "text": "I can feel them in the dream world running parallel to mine"
       },
       {
-        "time": 46.44,
-        "endTime": 52.42,
+        "time": 53.52,
+        "endTime": 63.45,
         "text": "Thousands breathing as one creature underneath the frozen stars"
       },
       {
-        "time": 54.2,
-        "endTime": 59.66,
+        "time": 63.45,
+        "endTime": 73.39,
         "text": "Hopper lives in every howl that crosses through the line"
       },
       {
-        "time": 60.14,
-        "endTime": 67.08,
+        "time": 73.39,
+        "endTime": 82.67,
         "text": "And the hunt that has no ending finally shows its scars"
       },
       {
-        "time": 68.78,
-        "endTime": 73,
+        "time": 84.67,
+        "endTime": 89.72,
         "text": "The last hunt begins at midnight"
       },
       {
-        "time": 76.74,
-        "endTime": 79.64,
+        "time": 89.72,
+        "endTime": 94.13,
         "text": "When the shadow splits the ground"
       },
       {
-        "time": 83.54,
-        "endTime": 86.88,
+        "time": 94.13,
+        "endTime": 100.44,
         "text": "Every wolf that ever wandered"
       },
       {
-        "time": 92.02,
-        "endTime": 93.7,
+        "time": 100.44,
+        "endTime": 104.86,
         "text": "Coming home to make the sound"
       },
       {
-        "time": 98.88,
-        "endTime": 106.48,
+        "time": 107.36,
+        "endTime": 117.67,
         "text": "They did not come for glory and they did not come for me"
       },
       {
-        "time": 107.42,
-        "endTime": 113.74,
+        "time": 117.67,
+        "endTime": 127.97,
         "text": "They came because the pattern needed teeth inside the dark"
       },
       {
-        "time": 114.16,
-        "endTime": 120.94,
+        "time": 127.97,
+        "endTime": 138.28,
         "text": "And the wolves have always known that freedom has a fee"
       },
       {
-        "time": 120.94,
-        "endTime": 128.94,
+        "time": 138.28,
+        "endTime": 150.06,
         "text": "And the last hunt is the first one where they finally leave a mark"
       },
       {
-        "time": 129.94,
-        "endTime": 135.66,
+        "time": 152.06,
+        "endTime": 159.07,
         "text": "Howl for every fallen brother"
       },
       {
-        "time": 137.38,
-        "endTime": 140.66,
+        "time": 159.07,
+        "endTime": 164.53,
         "text": "Howl for moonlight, howl for bone"
       },
       {
-        "time": 144.3,
-        "endTime": 148.42,
+        "time": 164.53,
+        "endTime": 170.76,
         "text": "The last hunt was always coming"
       },
       {
-        "time": 152.46,
-        "endTime": 155.1,
+        "time": 170.76,
+        "endTime": 177,
         "text": "The wolves were never alone"
       }
     ]
@@ -15256,104 +2701,14025 @@ window.lyricsTimings["wolves-and-hammers"] = {
   "The Hammer Falls": {
     "lines": [
       {
-        "time": 8.12,
-        "endTime": 15.26,
+        "time": 1,
+        "endTime": 11.92,
         "text": "Every war I fought was just a conversation with the steel"
       },
       {
-        "time": 16.18,
-        "endTime": 22.94,
+        "time": 11.92,
+        "endTime": 23.51,
         "text": "Every rage I swallowed was another day the wolf was fed"
       },
       {
-        "time": 23.64,
-        "endTime": 31.06,
+        "time": 23.51,
+        "endTime": 33.06,
         "text": "At the Last Battle standing in a field that would not heal"
       },
       {
-        "time": 31.6,
-        "endTime": 37.88,
+        "time": 33.06,
+        "endTime": 41.93,
         "text": "Choosing what to build with all the breaking in my head"
       },
       {
-        "time": 39.6,
-        "endTime": 46.12,
+        "time": 43.43,
+        "endTime": 52.3,
         "text": "Trollocs pouring through the gap like water through a crack"
       },
       {
-        "time": 47.64,
-        "endTime": 54.08,
+        "time": 52.3,
+        "endTime": 61.85,
         "text": "The Pattern tearing at the seams where shadow meets the thread"
       },
       {
-        "time": 56.04,
-        "endTime": 63.12,
+        "time": 61.85,
+        "endTime": 72.08,
         "text": "Rand is holding back the darkness and there is no turning back"
       },
       {
-        "time": 63.66,
-        "endTime": 71.06,
+        "time": 72.08,
+        "endTime": 82.32,
         "text": "And the blacksmith lifts the hammer for the living and the dead"
       },
       {
-        "time": 71.74,
-        "endTime": 79.1,
+        "time": 84.32,
+        "endTime": 89.52,
         "text": "The hammer falls, the hammer falls"
       },
       {
-        "time": 80,
-        "endTime": 85.1,
+        "time": 89.52,
+        "endTime": 94.06,
         "text": "Ringing through the final night"
       },
       {
-        "time": 87.84,
-        "endTime": 95,
+        "time": 94.06,
+        "endTime": 99.91,
         "text": "Every strike a declaration"
       },
       {
-        "time": 95,
-        "endTime": 101.08,
+        "time": 99.91,
+        "endTime": 104.46,
         "text": "I will build inside the fight"
       },
       {
-        "time": 107.2,
-        "endTime": 114.9,
+        "time": 106.96,
+        "endTime": 117.57,
         "text": "I threw the axe away at Dumai Wells and chose the tool"
       },
       {
-        "time": 116.18,
-        "endTime": 122.96,
+        "time": 117.57,
+        "endTime": 127.42,
         "text": "That shapes instead of shatters, builds instead of tears"
       },
       {
-        "time": 123.76,
-        "endTime": 131,
+        "time": 127.42,
+        "endTime": 138.04,
         "text": "The berserker died that day and left behind a quiet fool"
       },
       {
-        "time": 131.4,
-        "endTime": 139.38,
+        "time": 138.04,
+        "endTime": 150.92,
         "text": "Who learned that strength is measured in the weight of what he spares"
       },
       {
-        "time": 142.2,
-        "endTime": 145.38,
+        "time": 152.92,
+        "endTime": 158.54,
         "text": "When the Last Battle ended"
       },
       {
-        "time": 146.3,
-        "endTime": 149.08,
+        "time": 158.54,
+        "endTime": 164.96,
         "text": "And the sun cracked through the haze"
       },
       {
-        "time": 149.6,
-        "endTime": 153.48,
+        "time": 164.96,
+        "endTime": 171.38,
         "text": "I was standing with a hammer"
       },
       {
-        "time": 153.92,
-        "endTime": 157.22,
+        "time": 171.38,
+        "endTime": 177,
         "text": "And the rest of all my days"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["dice-stop-rolling"] = {
+  "Two Rivers Mud": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.67,
+        "text": "Stole apples from the Cauthon orchard like they were mine to take,"
+      },
+      {
+        "time": 10.67,
+        "endTime": 20.34,
+        "text": "tossed dice behind the smithy where the rules were ours to make."
+      },
+      {
+        "time": 20.34,
+        "endTime": 29.41,
+        "text": "Two Rivers mud beneath my nails, the Winespring in my hair,"
+      },
+      {
+        "time": 29.41,
+        "endTime": 39.08,
+        "text": "my father said be careful, son — I never learned to care."
+      },
+      {
+        "time": 39.08,
+        "endTime": 48.15,
+        "text": "The Quarry Road at sundown and the taste of stolen ale,"
+      },
+      {
+        "time": 48.15,
+        "endTime": 57.22,
+        "text": "the kind of boy who bets on things before he knows the tale."
+      },
+      {
+        "time": 59.22,
+        "endTime": 68.43,
+        "text": "But something in the wind has changed, the crows sit strange on wire,"
+      },
+      {
+        "time": 68.43,
+        "endTime": 75.34,
+        "text": "and Bel Tine feels like kindling waiting for a fire."
+      },
+      {
+        "time": 75.34,
+        "endTime": 83.4,
+        "text": "I am the boy who cannot stay, the coin that will not land,"
+      },
+      {
+        "time": 83.4,
+        "endTime": 91.46,
+        "text": "the last good day in Emond Field is slipping through my hand."
+      },
+      {
+        "time": 92.96,
+        "endTime": 100.82,
+        "text": "Rand is brooding, Perrin is quiet — me, I crack the joke,"
+      },
+      {
+        "time": 100.82,
+        "endTime": 109.88,
+        "text": "because the silence sounds like something holy getting broke."
+      },
+      {
+        "time": 109.88,
+        "endTime": 118.95,
+        "text": "A rider on the Quarry Road all dressed in black and hate,"
+      },
+      {
+        "time": 118.95,
+        "endTime": 128.02,
+        "text": "my gut says run but running means admitting it is too late."
+      },
+      {
+        "time": 128.02,
+        "endTime": 135.88,
+        "text": "So I laugh and shuffle cards and pour another round,"
+      },
+      {
+        "time": 135.88,
+        "endTime": 143.74,
+        "text": "and pretend I cannot feel the trembling in the ground."
+      },
+      {
+        "time": 146.24,
+        "endTime": 155.64,
+        "text": "The dice, the dice, the bloody dice — they have not started yet,"
+      },
+      {
+        "time": 155.64,
+        "endTime": 165.04,
+        "text": "but I can hear them loading in a game I have not met."
+      },
+      {
+        "time": 167.04,
+        "endTime": 177,
+        "text": "Two Rivers mud... Winespring water... one more stolen day..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "Ruby-Hilted": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.23,
+        "text": "The city breathes a language older than the tongue can hold,"
+      },
+      {
+        "time": 10.23,
+        "endTime": 18.85,
+        "text": "the walls remember murder and the gold remembers gold."
+      },
+      {
+        "time": 18.85,
+        "endTime": 27.47,
+        "text": "I saw the ruby glinting where the dead king left it laid,"
+      },
+      {
+        "time": 27.47,
+        "endTime": 36.71,
+        "text": "my fingers closed around it like a promise that was made."
+      },
+      {
+        "time": 36.71,
+        "endTime": 45.32,
+        "text": "Something cold behind my ribs, a whisper in my skull,"
+      },
+      {
+        "time": 45.32,
+        "endTime": 53.94,
+        "text": "it said you have been empty, boy — now let me make you full."
+      },
+      {
+        "time": 55.94,
+        "endTime": 62.98,
+        "text": "I am the dagger and the dagger is the wound,"
+      },
+      {
+        "time": 62.98,
+        "endTime": 72.95,
+        "text": "every friend looks like a liar, every room becomes a tomb."
+      },
+      {
+        "time": 72.95,
+        "endTime": 79.98,
+        "text": "I cannot put it down, I cannot give it back,"
+      },
+      {
+        "time": 79.98,
+        "endTime": 88.19,
+        "text": "the ruby holds me tighter than the shadow holds the black."
+      },
+      {
+        "time": 89.69,
+        "endTime": 98.31,
+        "text": "Rand reaches for my shoulder and I flinch before he speaks,"
+      },
+      {
+        "time": 98.31,
+        "endTime": 106.31,
+        "text": "the paranoia crawling like a fever through the weeks."
+      },
+      {
+        "time": 106.31,
+        "endTime": 114.93,
+        "text": "I count the coins they carry and I calculate the theft,"
+      },
+      {
+        "time": 114.93,
+        "endTime": 124.78,
+        "text": "I inventory every blade and catalog who is left."
+      },
+      {
+        "time": 124.78,
+        "endTime": 133.4,
+        "text": "The person I was yesterday is blurring at the seams,"
+      },
+      {
+        "time": 133.4,
+        "endTime": 143.25,
+        "text": "the dagger rewrites memory and overwrites my dreams."
+      },
+      {
+        "time": 145.75,
+        "endTime": 155.32,
+        "text": "Shadar Logoth, Shadar Logoth — the waiting in the dark,"
+      },
+      {
+        "time": 155.32,
+        "endTime": 165.58,
+        "text": "the city that consumed itself now finishing its work."
+      },
+      {
+        "time": 167.58,
+        "endTime": 177,
+        "text": "Ruby-hilted... ruby-hilted... cold behind the ribs..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "Thirteen Women and a Stone": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.07,
+        "text": "Thirteen women standing in a ring of blinding light,"
+      },
+      {
+        "time": 9.07,
+        "endTime": 17.14,
+        "text": "the sa angreal humming like a nerve about to bite."
+      },
+      {
+        "time": 17.14,
+        "endTime": 26.45,
+        "text": "They pulled the roots from underneath my ribs, my lungs, my spine,"
+      },
+      {
+        "time": 26.45,
+        "endTime": 38.24,
+        "text": "I screamed in languages I never learned but somehow they were mine."
+      },
+      {
+        "time": 38.24,
+        "endTime": 45.69,
+        "text": "Carai an Caldazar — the words came out like blood,"
+      },
+      {
+        "time": 45.69,
+        "endTime": 55,
+        "text": "battle orders from a general who died before the flood."
+      },
+      {
+        "time": 57,
+        "endTime": 64.69,
+        "text": "Rip it out, rip it out, pull the poison from the bone,"
+      },
+      {
+        "time": 64.69,
+        "endTime": 73.56,
+        "text": "I am speaking with the voices of a thousand years unknown."
+      },
+      {
+        "time": 73.56,
+        "endTime": 81.24,
+        "text": "Thirteen women and a stone that glows like stolen sun,"
+      },
+      {
+        "time": 81.24,
+        "endTime": 90.11,
+        "text": "I am dying, I am healing, I am everyone and no one."
+      },
+      {
+        "time": 91.61,
+        "endTime": 100.3,
+        "text": "I woke up thin as paper with a hunger fit to kill,"
+      },
+      {
+        "time": 100.3,
+        "endTime": 109.61,
+        "text": "the hallways of the White Tower spinning on a windowsill."
+      },
+      {
+        "time": 109.61,
+        "endTime": 118.3,
+        "text": "The dagger grip is broken but the fingerprints remain,"
+      },
+      {
+        "time": 118.3,
+        "endTime": 126.99,
+        "text": "the paranoia fading but I remember all the pain."
+      },
+      {
+        "time": 126.99,
+        "endTime": 136.3,
+        "text": "They say I should be grateful — I say give me back my coat,"
+      },
+      {
+        "time": 136.3,
+        "endTime": 144.99,
+        "text": "I beat two princes with a stick before the morning broke."
+      },
+      {
+        "time": 147.49,
+        "endTime": 155.77,
+        "text": "The Old Tongue on my lips like someone else is prayer,"
+      },
+      {
+        "time": 155.77,
+        "endTime": 164.05,
+        "text": "who were you, who am I, and are you still in there."
+      },
+      {
+        "time": 166.05,
+        "endTime": 177,
+        "text": "Thirteen women... the sa angreal hums... the Old Tongue remembers..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "The Doorway Price": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.56,
+        "text": "Three questions and a doorway made of twisted silver light,"
+      },
+      {
+        "time": 9.56,
+        "endTime": 18.12,
+        "text": "the snakes knew what I wanted before I said it right."
+      },
+      {
+        "time": 18.12,
+        "endTime": 26.69,
+        "text": "Fill my memory, free me from the Power and its chain,"
+      },
+      {
+        "time": 26.69,
+        "endTime": 35.25,
+        "text": "and get me out of Rhuidean before it drives me sane."
+      },
+      {
+        "time": 35.25,
+        "endTime": 43.81,
+        "text": "They smiled with too many teeth and said the price was fair,"
+      },
+      {
+        "time": 43.81,
+        "endTime": 52.37,
+        "text": "then hung me from the Tree of Life and left me swinging there."
+      },
+      {
+        "time": 54.37,
+        "endTime": 62.53,
+        "text": "I died beneath the branches of a tree that never burns,"
+      },
+      {
+        "time": 62.53,
+        "endTime": 71.27,
+        "text": "Rand cut me down but something else came back to take its turn."
+      },
+      {
+        "time": 71.27,
+        "endTime": 79.42,
+        "text": "The foxhead cold against my chest, the spear across my hand,"
+      },
+      {
+        "time": 79.42,
+        "endTime": 87.58,
+        "text": "a thousand dead men memories now living where I stand."
+      },
+      {
+        "time": 89.08,
+        "endTime": 98.25,
+        "text": "I remember siege formations from the Trolloc Wars at dawn,"
+      },
+      {
+        "time": 98.25,
+        "endTime": 108.03,
+        "text": "generals whose bones are dust, whose names the world moved on."
+      },
+      {
+        "time": 108.03,
+        "endTime": 117.82,
+        "text": "I remember how to kill a man in fourteen different ways,"
+      },
+      {
+        "time": 117.82,
+        "endTime": 126.99,
+        "text": "in languages the scholars lost a hundred different days."
+      },
+      {
+        "time": 126.99,
+        "endTime": 135.56,
+        "text": "The Aiel stare and Rand just stares and I stare at the wall,"
+      },
+      {
+        "time": 135.56,
+        "endTime": 144.12,
+        "text": "wondering which of these old ghosts is answering the call."
+      },
+      {
+        "time": 146.62,
+        "endTime": 156.13,
+        "text": "Avendesora, tree of life — you hung me like a thief,"
+      },
+      {
+        "time": 156.13,
+        "endTime": 165.65,
+        "text": "I traded death for memory and memory for grief."
+      },
+      {
+        "time": 167.65,
+        "endTime": 177,
+        "text": "The doorway closes... the dead men speak... the dice begin..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "Jak o the Shadows": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.48,
+        "text": "I told them I was leaving — they saddled up and rode,"
+      },
+      {
+        "time": 8.48,
+        "endTime": 18.83,
+        "text": "I told them I was no one lord — they called me general and bowed."
+      },
+      {
+        "time": 18.83,
+        "endTime": 28.04,
+        "text": "Talmanes smiles like he is keeping score, Daerid guards the flank,"
+      },
+      {
+        "time": 28.04,
+        "endTime": 36.09,
+        "text": "I drew them battle plans on dirt and now they guard my rank."
+      },
+      {
+        "time": 36.09,
+        "endTime": 44.72,
+        "text": "The dice inside my head keep rolling, landing every throw,"
+      },
+      {
+        "time": 44.72,
+        "endTime": 52.77,
+        "text": "I win at cards, I win at war, I lose at letting go."
+      },
+      {
+        "time": 54.77,
+        "endTime": 60.25,
+        "text": "We will dance with Jak o the Shadows, boys,"
+      },
+      {
+        "time": 60.25,
+        "endTime": 64.08,
+        "text": "we will dance until the dawn."
+      },
+      {
+        "time": 64.08,
+        "endTime": 69.56,
+        "text": "We will dance with Jak o the Shadows, boys,"
+      },
+      {
+        "time": 69.56,
+        "endTime": 72.85,
+        "text": "and then the dance goes on."
+      },
+      {
+        "time": 72.85,
+        "endTime": 78.33,
+        "text": "They think it is brave — I think it is mad,"
+      },
+      {
+        "time": 78.33,
+        "endTime": 81.61,
+        "text": "they sing it like a hymn,"
+      },
+      {
+        "time": 81.61,
+        "endTime": 86,
+        "text": "I taught them Death own drinking song"
+      },
+      {
+        "time": 86,
+        "endTime": 89.83,
+        "text": "and now it is sinking in."
+      },
+      {
+        "time": 91.33,
+        "endTime": 99.96,
+        "text": "A general with a farmer hands who reads the battle wrong —"
+      },
+      {
+        "time": 99.96,
+        "endTime": 108.01,
+        "text": "except the dead men memories correct me all along."
+      },
+      {
+        "time": 108.01,
+        "endTime": 117.22,
+        "text": "I set the cavalry to east, the pikes arranged just so,"
+      },
+      {
+        "time": 117.22,
+        "endTime": 126.42,
+        "text": "and when the dust clears, every move was right and I do not know"
+      },
+      {
+        "time": 126.42,
+        "endTime": 135.05,
+        "text": "if I am commanding or the ghosts are running this parade,"
+      },
+      {
+        "time": 135.05,
+        "endTime": 143.1,
+        "text": "a thousand years of strategy my muscles have not made."
+      },
+      {
+        "time": 145.6,
+        "endTime": 154.55,
+        "text": "The luck, the bloody luck — it bends the arrow from my chest,"
+      },
+      {
+        "time": 154.55,
+        "endTime": 163.5,
+        "text": "it turns the blade, it stacks the deck, it never lets me rest."
+      },
+      {
+        "time": 165.5,
+        "endTime": 177,
+        "text": "Dance with Jak o the Shadows... the dice keep rolling... the Band rides on..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "The Daughter of the Nine Moons": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.96,
+        "text": "She looked at me like inventory — measuring the worth"
+      },
+      {
+        "time": 9.96,
+        "endTime": 18.91,
+        "text": "of a farmboy wearing general dust and Two Rivers earth."
+      },
+      {
+        "time": 18.91,
+        "endTime": 26.68,
+        "text": "Daughter of the Nine Moons, skin like midnight, eyes like war,"
+      },
+      {
+        "time": 26.68,
+        "endTime": 36.23,
+        "text": "I kidnapped an empress and I do not know what that is for."
+      },
+      {
+        "time": 36.23,
+        "endTime": 44.59,
+        "text": "She calls my dice a superstition, calls my luck a flaw,"
+      },
+      {
+        "time": 44.59,
+        "endTime": 52.95,
+        "text": "I call her the most stubborn woman that I ever saw."
+      },
+      {
+        "time": 54.95,
+        "endTime": 63.48,
+        "text": "I said your name three times because the words fell out like dice,"
+      },
+      {
+        "time": 63.48,
+        "endTime": 71.45,
+        "text": "I did not mean to marry you — I never do things twice."
+      },
+      {
+        "time": 71.45,
+        "endTime": 78.84,
+        "text": "But fate keeps dealing aces and I keep calling bluff,"
+      },
+      {
+        "time": 78.84,
+        "endTime": 87.37,
+        "text": "and somewhere between the arguing I think I fell in love."
+      },
+      {
+        "time": 88.87,
+        "endTime": 97.83,
+        "text": "She watched me win a battle and she did not even blink,"
+      },
+      {
+        "time": 97.83,
+        "endTime": 107.38,
+        "text": "she cataloged my weaknesses while pouring me a drink."
+      },
+      {
+        "time": 107.38,
+        "endTime": 115.74,
+        "text": "The Seanchan bow to prophecy, they bend the knee to signs,"
+      },
+      {
+        "time": 115.74,
+        "endTime": 125.3,
+        "text": "and I am the Prince of Ravens sitting drunk between the lines."
+      },
+      {
+        "time": 125.3,
+        "endTime": 134.25,
+        "text": "She said my name three times right back — the ceremony done,"
+      },
+      {
+        "time": 134.25,
+        "endTime": 142.02,
+        "text": "Bloody Matrim Cauthon is my husband — and she won."
+      },
+      {
+        "time": 144.52,
+        "endTime": 153.81,
+        "text": "The omens never told me that the cage would feel like home,"
+      },
+      {
+        "time": 153.81,
+        "endTime": 163.76,
+        "text": "that a woman made of iron could undo me to the bone."
+      },
+      {
+        "time": 165.76,
+        "endTime": 177,
+        "text": "Daughter of the Nine Moons... three times spoken... the ravens circle..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "Dead Men Dice": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.4,
+        "text": "I wake at three and do not know whose bed this used to be,"
+      },
+      {
+        "time": 10.4,
+        "endTime": 20.43,
+        "text": "a name I never learned is dying somewhere inside of me."
+      },
+      {
+        "time": 20.43,
+        "endTime": 30.47,
+        "text": "He loved a woman — dark-haired, in a city made of sand,"
+      },
+      {
+        "time": 30.47,
+        "endTime": 39.24,
+        "text": "he held her face the way I hold the handle of command."
+      },
+      {
+        "time": 39.24,
+        "endTime": 46.77,
+        "text": "He died with an arrow through the neck at twenty-three,"
+      },
+      {
+        "time": 46.77,
+        "endTime": 55.54,
+        "text": "and now I carry all of him and none of him is me."
+      },
+      {
+        "time": 57.54,
+        "endTime": 62.32,
+        "text": "Whose dreams are these, whose scars are these,"
+      },
+      {
+        "time": 62.32,
+        "endTime": 68.29,
+        "text": "whose dying breath is lodged between my ribs."
+      },
+      {
+        "time": 68.29,
+        "endTime": 73.07,
+        "text": "The dead men threw their dice in me"
+      },
+      {
+        "time": 73.07,
+        "endTime": 80.23,
+        "text": "and I am the table where it lands and lives."
+      },
+      {
+        "time": 81.73,
+        "endTime": 90.51,
+        "text": "I speak eleven languages I never sat to learn,"
+      },
+      {
+        "time": 90.51,
+        "endTime": 100.54,
+        "text": "I know which poisons taste like almonds and which ones only burn."
+      },
+      {
+        "time": 100.54,
+        "endTime": 112.45,
+        "text": "I remember children that I never fathered, graves I never dug,"
+      },
+      {
+        "time": 112.45,
+        "endTime": 121.85,
+        "text": "a hundred different versions of the same old soldier shrug."
+      },
+      {
+        "time": 121.85,
+        "endTime": 131.26,
+        "text": "Rand carries the weight of prophecy, Perrin carries the axe,"
+      },
+      {
+        "time": 131.26,
+        "endTime": 140.66,
+        "text": "I carry a cemetery that never stops coming back."
+      },
+      {
+        "time": 143.16,
+        "endTime": 154.31,
+        "text": "At three AM the boundaries blur between the living and the gone,"
+      },
+      {
+        "time": 154.31,
+        "endTime": 166.15,
+        "text": "and I do not know if Matrim Cauthon is still the one who is on."
+      },
+      {
+        "time": 168.15,
+        "endTime": 177,
+        "text": "Dead men dice... rolling in the dark... whose life is this..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "One Eye Open": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.66,
+        "text": "The tower has no door until you draw one with a knife,"
+      },
+      {
+        "time": 9.66,
+        "endTime": 18.93,
+        "text": "the rules inside are written by the things that feed on life."
+      },
+      {
+        "time": 18.93,
+        "endTime": 26.35,
+        "text": "Music, fire, and iron — three wards against the Finn,"
+      },
+      {
+        "time": 26.35,
+        "endTime": 35.63,
+        "text": "Thom plays his harp like breathing while the serpents close us in."
+      },
+      {
+        "time": 35.63,
+        "endTime": 44.91,
+        "text": "I promised Moiraine, told her I would come and get her out,"
+      },
+      {
+        "time": 44.91,
+        "endTime": 56.04,
+        "text": "and promises to dead women are the ones you do not get out of."
+      },
+      {
+        "time": 58.04,
+        "endTime": 66.28,
+        "text": "Half the light of the world — that was the bargain that I made,"
+      },
+      {
+        "time": 66.28,
+        "endTime": 75.12,
+        "text": "they plucked it from the socket like a coin that had been paid."
+      },
+      {
+        "time": 75.12,
+        "endTime": 82.77,
+        "text": "One eye open, stumbling through the corridors of bone,"
+      },
+      {
+        "time": 82.77,
+        "endTime": 91.02,
+        "text": "I gave half of everything I see to bring her home."
+      },
+      {
+        "time": 92.52,
+        "endTime": 100.56,
+        "text": "Noal stood at the passage like a wall of flesh and grin,"
+      },
+      {
+        "time": 100.56,
+        "endTime": 107.98,
+        "text": "said tell them Jain Farstrider died fighting the Finn."
+      },
+      {
+        "time": 107.98,
+        "endTime": 116.63,
+        "text": "We ran and left him there because the math demanded blood,"
+      },
+      {
+        "time": 116.63,
+        "endTime": 125.91,
+        "text": "Moiraine weighed nothing — skin and light — she floated through the mud."
+      },
+      {
+        "time": 125.91,
+        "endTime": 135.19,
+        "text": "My ashandarei cut the wall and daylight screamed us free,"
+      },
+      {
+        "time": 135.19,
+        "endTime": 143.84,
+        "text": "half-blind and holding everyone except the part of me."
+      },
+      {
+        "time": 146.34,
+        "endTime": 156.65,
+        "text": "I see the world in halves now — left side dark forever more,"
+      },
+      {
+        "time": 156.65,
+        "endTime": 166.27,
+        "text": "some debts you pay in pieces that you did not know you wore."
+      },
+      {
+        "time": 168.27,
+        "endTime": 177,
+        "text": "Half the light... Noal standing... one eye watching the door..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "Field of Merrilor": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.6,
+        "text": "A hundred thousand soldiers and the dice are screaming loud,"
+      },
+      {
+        "time": 9.6,
+        "endTime": 18.2,
+        "text": "Demandred voice is thunder and the Shadow is the cloud."
+      },
+      {
+        "time": 18.2,
+        "endTime": 28.03,
+        "text": "I move the cavalry like cards across a table made of bone,"
+      },
+      {
+        "time": 28.03,
+        "endTime": 36.02,
+        "text": "the dead men in my head agree — this gamble all my own."
+      },
+      {
+        "time": 36.02,
+        "endTime": 44.62,
+        "text": "Rand is somewhere fighting God and I am here with men,"
+      },
+      {
+        "time": 44.62,
+        "endTime": 53.22,
+        "text": "arranging pawns on murder fields and rolling dice again."
+      },
+      {
+        "time": 55.22,
+        "endTime": 63.42,
+        "text": "The Field of Merrilor where the last bets hit the table,"
+      },
+      {
+        "time": 63.42,
+        "endTime": 73.36,
+        "text": "every move I make is right and every right move is fatal."
+      },
+      {
+        "time": 73.36,
+        "endTime": 81.56,
+        "text": "I am the gambler and the game, the dealer and the dealt,"
+      },
+      {
+        "time": 81.56,
+        "endTime": 90.33,
+        "text": "the final hand of every war the Pattern ever felt."
+      },
+      {
+        "time": 91.83,
+        "endTime": 99.82,
+        "text": "Talmanes holds the left, the Aiel hold the broken ground,"
+      },
+      {
+        "time": 99.82,
+        "endTime": 109.04,
+        "text": "Lan rides for Demandred and the earth gives back no sound."
+      },
+      {
+        "time": 109.04,
+        "endTime": 119.48,
+        "text": "I send ten thousand to their deaths because the numbers say they will hold,"
+      },
+      {
+        "time": 119.48,
+        "endTime": 128.7,
+        "text": "a farm boy from the Two Rivers playing chess with lives and gold."
+      },
+      {
+        "time": 128.7,
+        "endTime": 136.07,
+        "text": "The dice stop... silence... and the Shadow starts to crack,"
+      },
+      {
+        "time": 136.07,
+        "endTime": 144.67,
+        "text": "Fain falls, the dagger breaks, and something in me clicks back."
+      },
+      {
+        "time": 147.17,
+        "endTime": 155.36,
+        "text": "When the dice stop rolling it does not mean you won,"
+      },
+      {
+        "time": 155.36,
+        "endTime": 165.6,
+        "text": "it means the game is over and you are still the only one."
+      },
+      {
+        "time": 167.6,
+        "endTime": 177,
+        "text": "Merrilor... the dice stop... silence where the thunder was..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "The Hat": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.83,
+        "text": "The dust is settling on a hundred thousand stories stopped,"
+      },
+      {
+        "time": 9.83,
+        "endTime": 18.65,
+        "text": "I walk between the bodies where the flags and standards dropped."
+      },
+      {
+        "time": 18.65,
+        "endTime": 26.89,
+        "text": "My coat is torn, my eye is gone, my boots are full of red,"
+      },
+      {
+        "time": 26.89,
+        "endTime": 35.13,
+        "text": "the dice have stopped their rolling and the quiet fills my head."
+      },
+      {
+        "time": 35.13,
+        "endTime": 43.37,
+        "text": "And there, between two broken shields — I almost did not see —"
+      },
+      {
+        "time": 43.37,
+        "endTime": 51.6,
+        "text": "my hat. My bloody hat. Still here. Still waiting just for me."
+      },
+      {
+        "time": 53.6,
+        "endTime": 63.13,
+        "text": "I put it on and nothing changes and everything has changed,"
+      },
+      {
+        "time": 63.13,
+        "endTime": 70.98,
+        "text": "the boy from Emond Field is still the man who rearranged"
+      },
+      {
+        "time": 70.98,
+        "endTime": 79.94,
+        "text": "a hundred thousand lives today and walked away with this —"
+      },
+      {
+        "time": 79.94,
+        "endTime": 90.03,
+        "text": "a wide-brimmed hat and scarred-up hands and something close to bliss."
+      },
+      {
+        "time": 91.53,
+        "endTime": 98.59,
+        "text": "Thom is playing something soft. Tuon is on her throne."
+      },
+      {
+        "time": 98.59,
+        "endTime": 106.83,
+        "text": "The ravens circle overhead but I am walking home."
+      },
+      {
+        "time": 106.83,
+        "endTime": 116.24,
+        "text": "They will write me in the histories — the Gambler, Prince of Ravens —"
+      },
+      {
+        "time": 116.24,
+        "endTime": 125.66,
+        "text": "but I was just a farm boy who got lucky against the heavens."
+      },
+      {
+        "time": 125.66,
+        "endTime": 135.07,
+        "text": "I whistle something tuneless, tip my hat against the sun,"
+      },
+      {
+        "time": 135.07,
+        "endTime": 143.31,
+        "text": "half the light is plenty when the war is finally done."
+      },
+      {
+        "time": 145.81,
+        "endTime": 153,
+        "text": "Some men carry crowns. Some carry swords that sing."
+      },
+      {
+        "time": 153,
+        "endTime": 167.39,
+        "text": "I carry a hat and a half-blind grin and a marriage to an empress who calls me Toy."
+      },
+      {
+        "time": 169.39,
+        "endTime": 177,
+        "text": "The hat... the whistle... half the light is plenty..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "Prince of Ravens": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.29,
+        "text": "The throne room smells like incense that I cannot learn to name,"
+      },
+      {
+        "time": 9.29,
+        "endTime": 17.57,
+        "text": "the ravens on my shoulders mean I cannot leave the game."
+      },
+      {
+        "time": 17.57,
+        "endTime": 25.26,
+        "text": "She tells me I am Prince now — I tell her I am Mat,"
+      },
+      {
+        "time": 25.26,
+        "endTime": 33.55,
+        "text": "she says the Prince of Ravens does not sleep in just a hat."
+      },
+      {
+        "time": 33.55,
+        "endTime": 41.84,
+        "text": "The servants bow, the omens read, the prophecies align,"
+      },
+      {
+        "time": 41.84,
+        "endTime": 51.3,
+        "text": "and somewhere past the ceremony, she puts her hand in mine."
+      },
+      {
+        "time": 53.3,
+        "endTime": 61.76,
+        "text": "I never asked for palaces or titles made of birds,"
+      },
+      {
+        "time": 61.76,
+        "endTime": 70.78,
+        "text": "I never asked for anything that could not be won with words."
+      },
+      {
+        "time": 70.78,
+        "endTime": 78.67,
+        "text": "But she is carrying a life that is half of her and me,"
+      },
+      {
+        "time": 78.67,
+        "endTime": 88.81,
+        "text": "the biggest gamble of them all — and I did not roll. I just believed."
+      },
+      {
+        "time": 90.31,
+        "endTime": 99.78,
+        "text": "I teach the guards to play at dice and Selucia disapproves,"
+      },
+      {
+        "time": 99.78,
+        "endTime": 108.07,
+        "text": "I sneak out through the kitchens because royalty removes"
+      },
+      {
+        "time": 108.07,
+        "endTime": 116.35,
+        "text": "the simple things — a drink alone, a card game with the Band,"
+      },
+      {
+        "time": 116.35,
+        "endTime": 124.64,
+        "text": "but I come back because the thing I want is in her hand."
+      },
+      {
+        "time": 124.64,
+        "endTime": 134.11,
+        "text": "The Two Rivers boy would laugh at this — the Prince who hates his crown,"
+      },
+      {
+        "time": 134.11,
+        "endTime": 142.99,
+        "text": "but some things you do not gamble on — you put the dice back down."
+      },
+      {
+        "time": 145.49,
+        "endTime": 154.03,
+        "text": "A cage becomes a room when you stop trying to leave,"
+      },
+      {
+        "time": 154.03,
+        "endTime": 164.56,
+        "text": "a room becomes a home when someone you love is what you see."
+      },
+      {
+        "time": 166.56,
+        "endTime": 177,
+        "text": "Prince of Ravens... the dice put down... the room becomes a home..."
+      },
+      {
+        "time": 177,
+        "endTime": 178.5,
+        "text": "============================================================"
+      }
+    ]
+  },
+  "The Dice Stop Rolling": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.8,
+        "text": "I was the boy who stole the apple, took the dare, and ran,"
+      },
+      {
+        "time": 8.8,
+        "endTime": 16.6,
+        "text": "I was the curse, the hanging, the memories of dead men hands."
+      },
+      {
+        "time": 16.6,
+        "endTime": 25.43,
+        "text": "I was the general who flinched and then commanded anyway,"
+      },
+      {
+        "time": 25.43,
+        "endTime": 33.75,
+        "text": "I was the gambler betting daylight against the price I would pay."
+      },
+      {
+        "time": 33.75,
+        "endTime": 41.03,
+        "text": "Every throw I ever made was weighted and I knew,"
+      },
+      {
+        "time": 41.03,
+        "endTime": 48.31,
+        "text": "but the trick was never winning — it was playing it all through."
+      },
+      {
+        "time": 50.31,
+        "endTime": 56.25,
+        "text": "The dice stop rolling and the silence is not death,"
+      },
+      {
+        "time": 56.25,
+        "endTime": 62.69,
+        "text": "it is just the space between the heartbeats — just a breath."
+      },
+      {
+        "time": 62.69,
+        "endTime": 71.1,
+        "text": "I am the luck that bends the arrow, I am the coin that always lands,"
+      },
+      {
+        "time": 71.1,
+        "endTime": 78.53,
+        "text": "I am Matrim bloody Cauthon with his hat between his hands."
+      },
+      {
+        "time": 78.53,
+        "endTime": 85.96,
+        "text": "And when the Wheel has turned its last and spun the final thread,"
+      },
+      {
+        "time": 85.96,
+        "endTime": 94.37,
+        "text": "I will be the one still shuffling cards among the living and the dead."
+      },
+      {
+        "time": 95.87,
+        "endTime": 102.63,
+        "text": "They say the Wheel weaves as the Wheel wills — fine, agreed,"
+      },
+      {
+        "time": 102.63,
+        "endTime": 110.43,
+        "text": "but I wove a couple patterns of my own from dirt and need."
+      },
+      {
+        "time": 110.43,
+        "endTime": 119.27,
+        "text": "I kissed an empress, killed a god, and walked away one-eyed,"
+      },
+      {
+        "time": 119.27,
+        "endTime": 127.58,
+        "text": "I taught ten thousand men to sing a song about the time they died."
+      },
+      {
+        "time": 127.58,
+        "endTime": 135.38,
+        "text": "The Two Rivers mud is in my blood, the ravens on my back,"
+      },
+      {
+        "time": 135.38,
+        "endTime": 144.74,
+        "text": "I am everything that happened and the one thing that stayed on track."
+      },
+      {
+        "time": 147.24,
+        "endTime": 155.33,
+        "text": "So roll the dice or put them down — the game was never fair,"
+      },
+      {
+        "time": 155.33,
+        "endTime": 163.99,
+        "text": "but I played every hand I got and I am still right here."
+      },
+      {
+        "time": 165.99,
+        "endTime": 169.05,
+        "text": "The dice stop rolling..."
+      },
+      {
+        "time": 169.05,
+        "endTime": 173.33,
+        "text": "the silence after thunder..."
+      },
+      {
+        "time": 173.33,
+        "endTime": 174.83,
+        "text": "still here..."
+      },
+      {
+        "time": 174.83,
+        "endTime": 177.28,
+        "text": "still bloody here..."
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["nynaeve-al-meara"] = {
+  "Wisdom's Daughter": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.62,
+        "text": "They put the staff in my hands before I learned to hold my tongue"
+      },
+      {
+        "time": 10.62,
+        "endTime": 20.23,
+        "text": "Said you are the Wisdom now like it was something I had won"
+      },
+      {
+        "time": 20.23,
+        "endTime": 29.25,
+        "text": "But I was just a girl who knew which herbs could stop the bleeding"
+      },
+      {
+        "time": 29.25,
+        "endTime": 40.06,
+        "text": "While the village looked to me for answers I was never given"
+      },
+      {
+        "time": 42.06,
+        "endTime": 49.5,
+        "text": "Wisdom's daughter, carrying the weight of every door"
+      },
+      {
+        "time": 49.5,
+        "endTime": 58.66,
+        "text": "That opened onto grief and asked me please to find the cure"
+      },
+      {
+        "time": 58.66,
+        "endTime": 66.68,
+        "text": "Wisdom's daughter, younger than the trust they placed in me"
+      },
+      {
+        "time": 66.68,
+        "endTime": 74.69,
+        "text": "I wore the title like a shield nobody else could see"
+      },
+      {
+        "time": 76.19,
+        "endTime": 86.41,
+        "text": "The Women's Circle watched with knives behind their patient smiles"
+      },
+      {
+        "time": 86.41,
+        "endTime": 95.42,
+        "text": "Daise Congar counting every stumble, cataloguing trials"
+      },
+      {
+        "time": 95.42,
+        "endTime": 105.04,
+        "text": "But I learned the roots, the poultices, the way to set a bone"
+      },
+      {
+        "time": 105.04,
+        "endTime": 114.05,
+        "text": "I learned to keep my back straight even standing all alone"
+      },
+      {
+        "time": 116.55,
+        "endTime": 125.9,
+        "text": "Something moved inside me when the fever wouldn't break"
+      },
+      {
+        "time": 125.9,
+        "endTime": 135.25,
+        "text": "A warmth I couldn't name, a river I was scared to take"
+      },
+      {
+        "time": 135.25,
+        "endTime": 147.94,
+        "text": "I called it stubbornness, called it will, called it anything but true"
+      },
+      {
+        "time": 147.94,
+        "endTime": 156.62,
+        "text": "The Power was already mine — I just never knew"
+      },
+      {
+        "time": 158.62,
+        "endTime": 165.69,
+        "text": "They needed me before I needed them"
+      },
+      {
+        "time": 165.69,
+        "endTime": 173.46,
+        "text": "So I became the answer to the question"
+      },
+      {
+        "time": 173.46,
+        "endTime": 177,
+        "text": "No one thought to ask"
+      }
+    ]
+  },
+  "Pull My Braid": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.27,
+        "text": "You think this anger is a flaw, something to be tamed"
+      },
+      {
+        "time": 11.27,
+        "endTime": 22.9,
+        "text": "Every man who ever flinched just proved I wasn't playing games"
+      },
+      {
+        "time": 22.9,
+        "endTime": 33.85,
+        "text": "I learned to bite before I walked, to snarl before I spoke"
+      },
+      {
+        "time": 33.85,
+        "endTime": 42.75,
+        "text": "The braid is just a rope I use to keep from going broke"
+      },
+      {
+        "time": 44.75,
+        "endTime": 53.22,
+        "text": "Pull my braid and watch what happens when the line goes taut"
+      },
+      {
+        "time": 53.22,
+        "endTime": 62.35,
+        "text": "I am every lesson that was never gently taught"
+      },
+      {
+        "time": 62.35,
+        "endTime": 70.82,
+        "text": "Pull my braid, go on, I dare you, see how far it bends"
+      },
+      {
+        "time": 70.82,
+        "endTime": 79.29,
+        "text": "The fury isn't weakness — it's the thing that never ends"
+      },
+      {
+        "time": 80.79,
+        "endTime": 91.06,
+        "text": "Moiraine with her Aes Sedai calm, her measured little plans"
+      },
+      {
+        "time": 91.06,
+        "endTime": 100.64,
+        "text": "She thinks composure is a virtue — I think it's just a brand"
+      },
+      {
+        "time": 100.64,
+        "endTime": 110.22,
+        "text": "Egwene outgrew me, Elayne was born already crowned"
+      },
+      {
+        "time": 110.22,
+        "endTime": 119.81,
+        "text": "But I'm still standing in the dirt with both feet on the ground"
+      },
+      {
+        "time": 122.31,
+        "endTime": 129.91,
+        "text": "They say surrender and I hear a cage"
+      },
+      {
+        "time": 129.91,
+        "endTime": 137.51,
+        "text": "They say let go and all I feel is rage"
+      },
+      {
+        "time": 137.51,
+        "endTime": 147.4,
+        "text": "Maybe the anger is the only honest thing I've got"
+      },
+      {
+        "time": 147.4,
+        "endTime": 157.29,
+        "text": "The only part of me that never learned to rot"
+      },
+      {
+        "time": 159.29,
+        "endTime": 164.12,
+        "text": "So pull it, go ahead"
+      },
+      {
+        "time": 164.12,
+        "endTime": 170.56,
+        "text": "I've been angry since the cradle"
+      },
+      {
+        "time": 170.56,
+        "endTime": 177,
+        "text": "And I'll be angry when I'm dead"
+      }
+    ]
+  },
+  "The Blight": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.96,
+        "text": "The trees were wrong before I saw them — twisted, screaming green"
+      },
+      {
+        "time": 9.96,
+        "endTime": 18.28,
+        "text": "The air tasted like a wound that no one thought to clean"
+      },
+      {
+        "time": 18.28,
+        "endTime": 27.88,
+        "text": "He rode ahead like dying was a schedule he was keeping"
+      },
+      {
+        "time": 27.88,
+        "endTime": 39.4,
+        "text": "And I walked behind him hating every second he was breathing"
+      },
+      {
+        "time": 41.4,
+        "endTime": 49.32,
+        "text": "In the Blight where nothing grows except the things that kill"
+      },
+      {
+        "time": 49.32,
+        "endTime": 59.07,
+        "text": "I found the only truth I had and swallowed it like a pill"
+      },
+      {
+        "time": 59.07,
+        "endTime": 67.6,
+        "text": "He doesn't look at me, he looks through me, past me, to the grave"
+      },
+      {
+        "time": 67.6,
+        "endTime": 76.74,
+        "text": "And I am furious that loving him is all I want to save"
+      },
+      {
+        "time": 78.24,
+        "endTime": 87.84,
+        "text": "Lan with his stone face, his duty and his death wish on a leash"
+      },
+      {
+        "time": 87.84,
+        "endTime": 99.36,
+        "text": "I wanted to grab his collar and tell him he was worth more than the breach"
+      },
+      {
+        "time": 99.36,
+        "endTime": 108.32,
+        "text": "But you don't say those things when the ground is trying to eat you"
+      },
+      {
+        "time": 108.32,
+        "endTime": 117.92,
+        "text": "So I held my tongue and let the Blight teach me what silence cost"
+      },
+      {
+        "time": 120.42,
+        "endTime": 128.95,
+        "text": "Somewhere between the poisoned ground and sky"
+      },
+      {
+        "time": 128.95,
+        "endTime": 137.48,
+        "text": "I stopped pretending I was only angry"
+      },
+      {
+        "time": 137.48,
+        "endTime": 142.46,
+        "text": "And started wondering why"
+      },
+      {
+        "time": 142.46,
+        "endTime": 148.15,
+        "text": "His shoulders carried all that weight"
+      },
+      {
+        "time": 148.15,
+        "endTime": 152.41,
+        "text": "Without a single crack"
+      },
+      {
+        "time": 154.41,
+        "endTime": 165.71,
+        "text": "The Blight showed me something worse than any Trolloc horde"
+      },
+      {
+        "time": 165.71,
+        "endTime": 177,
+        "text": "That I would cross a dying land for a man who wouldn't cross a word"
+      }
+    ]
+  },
+  "I Will Not Break": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.68,
+        "text": "The collar closed around my throat and the world went very small"
+      },
+      {
+        "time": 10.68,
+        "endTime": 22.16,
+        "text": "Every breath belonged to someone else, every thought against a wall"
+      },
+      {
+        "time": 22.16,
+        "endTime": 33.05,
+        "text": "They called it training, called it purpose, called it being made complete"
+      },
+      {
+        "time": 33.05,
+        "endTime": 43.33,
+        "text": "I called it drowning with my lungs still full, still standing on my feet"
+      },
+      {
+        "time": 45.33,
+        "endTime": 53.39,
+        "text": "I will not break, I will not bend, I will not learn to kneel"
+      },
+      {
+        "time": 53.39,
+        "endTime": 63.18,
+        "text": "You can take the Power from my hands but you can't take the way I feel"
+      },
+      {
+        "time": 63.18,
+        "endTime": 70.67,
+        "text": "Chain me to the floor and watch me memorize the lock"
+      },
+      {
+        "time": 70.67,
+        "endTime": 77.58,
+        "text": "I will not break — I am the thing you cannot stop"
+      },
+      {
+        "time": 79.08,
+        "endTime": 89.36,
+        "text": "The sul'dam smiled like she was patient, like I was a child to teach"
+      },
+      {
+        "time": 89.36,
+        "endTime": 100.85,
+        "text": "Like obedience was a river I would learn if she just widened the reach"
+      },
+      {
+        "time": 100.85,
+        "endTime": 110.52,
+        "text": "But every time the a'dam pulsed I bit down on the pain"
+      },
+      {
+        "time": 110.52,
+        "endTime": 120.8,
+        "text": "Filed the edges of my fury into something I'd reclaim"
+      },
+      {
+        "time": 123.3,
+        "endTime": 132.71,
+        "text": "There is a place inside me where the leash does not arrive"
+      },
+      {
+        "time": 132.71,
+        "endTime": 143.46,
+        "text": "A room with no door, no window, just the stubborn fact I'm alive"
+      },
+      {
+        "time": 143.46,
+        "endTime": 155.55,
+        "text": "They can collar every woman from the shore to the Spine of the World"
+      },
+      {
+        "time": 155.55,
+        "endTime": 163.62,
+        "text": "But they will never cage the storm inside this girl"
+      },
+      {
+        "time": 165.62,
+        "endTime": 168.46,
+        "text": "I will not break"
+      },
+      {
+        "time": 168.46,
+        "endTime": 171.31,
+        "text": "Say it again"
+      },
+      {
+        "time": 171.31,
+        "endTime": 174.15,
+        "text": "I will not break"
+      },
+      {
+        "time": 174.15,
+        "endTime": 177,
+        "text": "I will not break"
+      }
+    ]
+  },
+  "Yellow Sister": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.78,
+        "text": "The sickness came in colors I could almost taste but couldn't name"
+      },
+      {
+        "time": 10.78,
+        "endTime": 18.61,
+        "text": "Yellow thread, gold thread, light thread — none of them the same"
+      },
+      {
+        "time": 18.61,
+        "endTime": 29.04,
+        "text": "They said surrender to the Power, let it flow, don't try to guide"
+      },
+      {
+        "time": 29.04,
+        "endTime": 40.78,
+        "text": "But every time I opened up I felt the current pull like tide"
+      },
+      {
+        "time": 42.78,
+        "endTime": 50.86,
+        "text": "Yellow sister, hands that mend what war has torn apart"
+      },
+      {
+        "time": 50.86,
+        "endTime": 58.93,
+        "text": "I'm learning that the healing doesn't start inside the art"
+      },
+      {
+        "time": 58.93,
+        "endTime": 68.25,
+        "text": "It starts inside the letting go, the exhale after years"
+      },
+      {
+        "time": 68.25,
+        "endTime": 76.94,
+        "text": "Of clenching every muscle against the weight of tears"
+      },
+      {
+        "time": 78.44,
+        "endTime": 90.18,
+        "text": "I watched a man die on the table while my block held like a dam"
+      },
+      {
+        "time": 90.18,
+        "endTime": 101.27,
+        "text": "The Power sat behind my anger waiting for me to understand"
+      },
+      {
+        "time": 101.27,
+        "endTime": 110.4,
+        "text": "That strength was never in the grip, the force, the iron will"
+      },
+      {
+        "time": 110.4,
+        "endTime": 118.88,
+        "text": "Strength was in the stillness at the center of the kill"
+      },
+      {
+        "time": 121.38,
+        "endTime": 130.8,
+        "text": "To heal you have to feel it — every wound you close"
+      },
+      {
+        "time": 130.8,
+        "endTime": 140.22,
+        "text": "Burns through your own body like a river through the rows"
+      },
+      {
+        "time": 140.22,
+        "endTime": 150.36,
+        "text": "I chose this path, the Yellow shawl, the mercy and the cost"
+      },
+      {
+        "time": 150.36,
+        "endTime": 161.96,
+        "text": "Because the only thing worth finding is the thing I almost lost"
+      },
+      {
+        "time": 163.96,
+        "endTime": 167.79,
+        "text": "Open hands, not fists"
+      },
+      {
+        "time": 167.79,
+        "endTime": 173.16,
+        "text": "That's what they kept telling me"
+      },
+      {
+        "time": 173.16,
+        "endTime": 177,
+        "text": "And maybe they were right"
+      }
+    ]
+  },
+  "He Is Mine": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.31,
+        "text": "They told him he was already dead, a sword that walks toward its end"
+      },
+      {
+        "time": 11.31,
+        "endTime": 21.01,
+        "text": "And he believed them, every one, like grief was just a friend"
+      },
+      {
+        "time": 21.01,
+        "endTime": 33.14,
+        "text": "But I looked at this man, this wall, this stone-faced beautiful disaster"
+      },
+      {
+        "time": 33.14,
+        "endTime": 42.24,
+        "text": "And I decided that his ending answers to no master"
+      },
+      {
+        "time": 44.24,
+        "endTime": 51.74,
+        "text": "He is mine and I am saying this to every throne"
+      },
+      {
+        "time": 51.74,
+        "endTime": 61.56,
+        "text": "Every Aes Sedai who sealed his fate and left him on his own"
+      },
+      {
+        "time": 61.56,
+        "endTime": 69.65,
+        "text": "He is mine, I claimed him with a bond that cuts through bone"
+      },
+      {
+        "time": 69.65,
+        "endTime": 77.15,
+        "text": "And if the Blight wants him back it goes through me alone"
+      },
+      {
+        "time": 78.65,
+        "endTime": 88.96,
+        "text": "The warder bond was just a formality, a thread to match the chain"
+      },
+      {
+        "time": 88.96,
+        "endTime": 99.27,
+        "text": "Already wrapped around my chest the moment I first felt his pain"
+      },
+      {
+        "time": 99.27,
+        "endTime": 108.97,
+        "text": "Lan looked at me like I'd gone mad — maybe I had, maybe that's the point"
+      },
+      {
+        "time": 108.97,
+        "endTime": 118.68,
+        "text": "When you love a man sworn to die you either break or you anoint"
+      },
+      {
+        "time": 121.18,
+        "endTime": 133.3,
+        "text": "I am not gentle, I am not soft, I am not the queen he deserved"
+      },
+      {
+        "time": 133.3,
+        "endTime": 145.43,
+        "text": "I am the woman who grabbed his reins and said, you will be preserved"
+      },
+      {
+        "time": 145.43,
+        "endTime": 153.52,
+        "text": "Not because I asked, not because he wanted"
+      },
+      {
+        "time": 153.52,
+        "endTime": 164.3,
+        "text": "But because I am too stubborn to let death take what I've claimed"
+      },
+      {
+        "time": 166.3,
+        "endTime": 168.44,
+        "text": "He is mine"
+      },
+      {
+        "time": 168.44,
+        "endTime": 177,
+        "text": "And that is the last word anyone will hear on this"
+      }
+    ]
+  },
+  "Unbraided": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.17,
+        "text": "Twenty years of rage as fuel, twenty years of fire as key"
+      },
+      {
+        "time": 10.17,
+        "endTime": 20.66,
+        "text": "Every weave I ever wove was lit by what was burning me"
+      },
+      {
+        "time": 20.66,
+        "endTime": 31.14,
+        "text": "They said the block would hold forever, said I'd always need the flame"
+      },
+      {
+        "time": 31.14,
+        "endTime": 40.97,
+        "text": "That Nynaeve without her anger was a woman without name"
+      },
+      {
+        "time": 42.47,
+        "endTime": 52.96,
+        "text": "Moghedien took the braid and cut it — no, that's wrong, I cut it too"
+      },
+      {
+        "time": 52.96,
+        "endTime": 62.13,
+        "text": "Somewhere in the drowning, in the water rising blue"
+      },
+      {
+        "time": 62.13,
+        "endTime": 71.96,
+        "text": "I felt the anger die like embers in a rain that wouldn't stop"
+      },
+      {
+        "time": 71.96,
+        "endTime": 81.14,
+        "text": "And underneath the fury, underneath the years on top"
+      },
+      {
+        "time": 81.14,
+        "endTime": 84.42,
+        "text": "There was a river"
+      },
+      {
+        "time": 86.42,
+        "endTime": 93.9,
+        "text": "Unbraided, unbound, the Power came like morning"
+      },
+      {
+        "time": 93.9,
+        "endTime": 100.77,
+        "text": "No rage required, no fury at the door"
+      },
+      {
+        "time": 100.77,
+        "endTime": 109.51,
+        "text": "Unbraided, I am the woman underneath the warning"
+      },
+      {
+        "time": 109.51,
+        "endTime": 115.75,
+        "text": "I am the healer who doesn't need the war"
+      },
+      {
+        "time": 118.25,
+        "endTime": 128.44,
+        "text": "The water filled my lungs and I stopped fighting it"
+      },
+      {
+        "time": 128.44,
+        "endTime": 140.82,
+        "text": "Stopped clenching, stopped resisting, stopped pretending that the grit"
+      },
+      {
+        "time": 140.82,
+        "endTime": 151.01,
+        "text": "Was all I had — because beneath the anger, past the wall"
+      },
+      {
+        "time": 151.01,
+        "endTime": 162.66,
+        "text": "There was a woman who was powerful enough to simply fall"
+      },
+      {
+        "time": 164.66,
+        "endTime": 166.98,
+        "text": "I let go"
+      },
+      {
+        "time": 166.98,
+        "endTime": 171.6,
+        "text": "And the river caught me"
+      },
+      {
+        "time": 171.6,
+        "endTime": 177,
+        "text": "Like it was always going to"
+      }
+    ]
+  },
+  "The River Does Not Ask": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 12.65,
+        "text": "The braid is gone but I still reach for it some mornings in the dark"
+      },
+      {
+        "time": 12.65,
+        "endTime": 24.3,
+        "text": "Old armor leaves a phantom weight, a ghost of every mark"
+      },
+      {
+        "time": 24.3,
+        "endTime": 38.13,
+        "text": "I am not the girl who left the Two Rivers with her fists clenched at her side"
+      },
+      {
+        "time": 38.13,
+        "endTime": 49.78,
+        "text": "I am not the Wisdom anymore, but I have not lost my pride"
+      },
+      {
+        "time": 51.78,
+        "endTime": 60.1,
+        "text": "The river does not ask permission, it just flows"
+      },
+      {
+        "time": 60.1,
+        "endTime": 70.5,
+        "text": "Through the broken and the mended, through the doors nobody chose"
+      },
+      {
+        "time": 70.5,
+        "endTime": 80.9,
+        "text": "The river does not ask and neither do I, not anymore"
+      },
+      {
+        "time": 80.9,
+        "endTime": 91.3,
+        "text": "I am the current and the bank, the opening and the door"
+      },
+      {
+        "time": 92.8,
+        "endTime": 103.72,
+        "text": "Lan sleeps beside me now — still restless, still mapping wars in dreams"
+      },
+      {
+        "time": 103.72,
+        "endTime": 115.37,
+        "text": "But when he reaches for me in the dark he finds me, and that means"
+      },
+      {
+        "time": 115.37,
+        "endTime": 127.02,
+        "text": "More than any shawl or title or the deference of a queen"
+      },
+      {
+        "time": 127.02,
+        "endTime": 138.67,
+        "text": "I am Nynaeve al'Meara, and I am the strongest thing you've seen"
+      },
+      {
+        "time": 141.17,
+        "endTime": 145.21,
+        "text": "Not because I fight"
+      },
+      {
+        "time": 145.21,
+        "endTime": 149.26,
+        "text": "Not because I rage"
+      },
+      {
+        "time": 149.26,
+        "endTime": 158.96,
+        "text": "But because I learned to put the fury down"
+      },
+      {
+        "time": 158.96,
+        "endTime": 163.01,
+        "text": "And still turn the page"
+      },
+      {
+        "time": 165.01,
+        "endTime": 170.15,
+        "text": "The river does not ask"
+      },
+      {
+        "time": 170.15,
+        "endTime": 173.57,
+        "text": "It just moves"
+      },
+      {
+        "time": 173.57,
+        "endTime": 177,
+        "text": "And so do I"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["the-chess-player"] = {
+  "The Oath": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 13.56,
+        "text": "Three oaths carved into my bones before I learned to lie with truth"
+      },
+      {
+        "time": 13.56,
+        "endTime": 26.81,
+        "text": "I swore to speak no word that is not true and found the silences are deeper"
+      },
+      {
+        "time": 26.81,
+        "endTime": 32.39,
+        "text": "than any promise ever sworn"
+      },
+      {
+        "time": 32.39,
+        "endTime": 42.16,
+        "text": "The Rod burned white against my palms and I did not flinch"
+      },
+      {
+        "time": 42.16,
+        "endTime": 52.62,
+        "text": "because the Pattern needed someone willing to be the knife"
+      },
+      {
+        "time": 54.62,
+        "endTime": 59.94,
+        "text": "I took the oath, I took the chain"
+      },
+      {
+        "time": 59.94,
+        "endTime": 65.26,
+        "text": "I let them think they held the reins"
+      },
+      {
+        "time": 65.26,
+        "endTime": 71.24,
+        "text": "But every vow I ever swore"
+      },
+      {
+        "time": 71.24,
+        "endTime": 76.55,
+        "text": "was just another open door"
+      },
+      {
+        "time": 78.05,
+        "endTime": 87.12,
+        "text": "They think the oaths constrain me, these sisters in their shawls"
+      },
+      {
+        "time": 87.12,
+        "endTime": 98.28,
+        "text": "They cannot see the architecture built between the words I choose"
+      },
+      {
+        "time": 98.28,
+        "endTime": 107.35,
+        "text": "to say and all the words I hold inside like weapons"
+      },
+      {
+        "time": 107.35,
+        "endTime": 115.03,
+        "text": "Truth is not a cage, it is a corridor"
+      },
+      {
+        "time": 115.03,
+        "endTime": 125.49,
+        "text": "and I have walked its length a thousand times in darkness"
+      },
+      {
+        "time": 127.99,
+        "endTime": 133.42,
+        "text": "You want to know what binds me."
+      },
+      {
+        "time": 133.42,
+        "endTime": 138.84,
+        "text": "Not the Rod. Not the Tower."
+      },
+      {
+        "time": 138.84,
+        "endTime": 144.27,
+        "text": "The boy who will break the world"
+      },
+      {
+        "time": 144.27,
+        "endTime": 152.02,
+        "text": "unless I break myself around him first"
+      },
+      {
+        "time": 154.02,
+        "endTime": 157.3,
+        "text": "I took the oath"
+      },
+      {
+        "time": 157.3,
+        "endTime": 163.87,
+        "text": "and the oath took everything"
+      },
+      {
+        "time": 163.87,
+        "endTime": 170.43,
+        "text": "but I was already empty"
+      },
+      {
+        "time": 170.43,
+        "endTime": 177,
+        "text": "so the taking felt like breathing"
+      }
+    ]
+  },
+  "New Spring": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.67,
+        "text": "Snow falling on Dragonmount the day the prophecy was born"
+      },
+      {
+        "time": 11.67,
+        "endTime": 21.63,
+        "text": "and I was nothing then, just a girl with a clever tongue"
+      },
+      {
+        "time": 21.63,
+        "endTime": 30.16,
+        "text": "and a question nobody wanted answered"
+      },
+      {
+        "time": 30.16,
+        "endTime": 40.83,
+        "text": "Gitara spoke in fire and collapsed into forever"
+      },
+      {
+        "time": 40.83,
+        "endTime": 52.22,
+        "text": "and I stood in that room knowing the world had just changed owners"
+      },
+      {
+        "time": 54.22,
+        "endTime": 58.28,
+        "text": "New spring, new world, same war"
+      },
+      {
+        "time": 58.28,
+        "endTime": 65.73,
+        "text": "they have been fighting since the first door closed"
+      },
+      {
+        "time": 65.73,
+        "endTime": 71.15,
+        "text": "I was twenty and the future"
+      },
+      {
+        "time": 71.15,
+        "endTime": 77.93,
+        "text": "chose me like a wound chooses a body"
+      },
+      {
+        "time": 79.43,
+        "endTime": 91.52,
+        "text": "Siuan and I mapped the darkness in a language only we could read"
+      },
+      {
+        "time": 91.52,
+        "endTime": 102.19,
+        "text": "Two girls against a prophecy that would eat nations whole"
+      },
+      {
+        "time": 102.19,
+        "endTime": 112.15,
+        "text": "We trusted no one, not the Tower, not the Amyrlin"
+      },
+      {
+        "time": 112.15,
+        "endTime": 124.24,
+        "text": "because trust is a luxury for people who can afford to lose"
+      },
+      {
+        "time": 126.74,
+        "endTime": 133.06,
+        "text": "Twenty years searching for a child"
+      },
+      {
+        "time": 133.06,
+        "endTime": 139.39,
+        "text": "who would grow into a weapon"
+      },
+      {
+        "time": 139.39,
+        "endTime": 147.29,
+        "text": "or a savior, or a funeral pyre"
+      },
+      {
+        "time": 147.29,
+        "endTime": 152.82,
+        "text": "and all I had was patience"
+      },
+      {
+        "time": 152.82,
+        "endTime": 159.94,
+        "text": "threaded through with calculated fear"
+      },
+      {
+        "time": 161.94,
+        "endTime": 163.61,
+        "text": "New spring"
+      },
+      {
+        "time": 163.61,
+        "endTime": 168.63,
+        "text": "but I have been winter"
+      },
+      {
+        "time": 168.63,
+        "endTime": 171.98,
+        "text": "for so long now"
+      },
+      {
+        "time": 171.98,
+        "endTime": 177,
+        "text": "the thaw feels like breaking"
+      }
+    ]
+  },
+  "The Game of Houses": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.36,
+        "text": "Daes Daemar taught me everything the Tower never could"
+      },
+      {
+        "time": 11.36,
+        "endTime": 21.02,
+        "text": "That power is not what you hold but what they think you hold"
+      },
+      {
+        "time": 21.02,
+        "endTime": 32.07,
+        "text": "I learned to read a room before the door was fully open"
+      },
+      {
+        "time": 32.07,
+        "endTime": 43.81,
+        "text": "learned to plant a word like a seed and watch it grow into a war"
+      },
+      {
+        "time": 45.81,
+        "endTime": 51.73,
+        "text": "The game of houses has no winners"
+      },
+      {
+        "time": 51.73,
+        "endTime": 56.99,
+        "text": "only those who have not lost yet"
+      },
+      {
+        "time": 56.99,
+        "endTime": 62.25,
+        "text": "I move my pieces in the dark"
+      },
+      {
+        "time": 62.25,
+        "endTime": 68.17,
+        "text": "and call the wreckage architecture"
+      },
+      {
+        "time": 69.67,
+        "endTime": 79.34,
+        "text": "Cairhien raised me on deception like a mother tongue"
+      },
+      {
+        "time": 79.34,
+        "endTime": 90.38,
+        "text": "My father played the game and lost and I learned from his losing"
+      },
+      {
+        "time": 90.38,
+        "endTime": 102.81,
+        "text": "Every conversation is a duel, every silence is a blade"
+      },
+      {
+        "time": 102.81,
+        "endTime": 114.55,
+        "text": "and I have been armed since childhood with a smile that means nothing"
+      },
+      {
+        "time": 117.05,
+        "endTime": 125.49,
+        "text": "They call me cold. They call me calculating."
+      },
+      {
+        "time": 125.49,
+        "endTime": 128.56,
+        "text": "They are not wrong."
+      },
+      {
+        "time": 128.56,
+        "endTime": 133.16,
+        "text": "But cold keeps you alive"
+      },
+      {
+        "time": 133.16,
+        "endTime": 140.84,
+        "text": "when the world is burning down around you"
+      },
+      {
+        "time": 140.84,
+        "endTime": 146.97,
+        "text": "and calculation is just love"
+      },
+      {
+        "time": 146.97,
+        "endTime": 153.88,
+        "text": "wearing a mask it cannot remove"
+      },
+      {
+        "time": 155.88,
+        "endTime": 161.57,
+        "text": "Every piece on the board"
+      },
+      {
+        "time": 161.57,
+        "endTime": 167.25,
+        "text": "was placed there by someone"
+      },
+      {
+        "time": 167.25,
+        "endTime": 173.75,
+        "text": "and I have placed more than most"
+      },
+      {
+        "time": 173.75,
+        "endTime": 177,
+        "text": "will ever know"
+      }
+    ]
+  },
+  "Lan": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.18,
+        "text": "I found him in the borderlands where hope goes to be buried"
+      },
+      {
+        "time": 11.18,
+        "endTime": 22.04,
+        "text": "A king without a country carrying his crown like a funeral"
+      },
+      {
+        "time": 22.04,
+        "endTime": 34.26,
+        "text": "I bonded him because I needed a weapon and he needed a war"
+      },
+      {
+        "time": 34.26,
+        "endTime": 45.12,
+        "text": "and neither of us mentioned that the other felt like shelter"
+      },
+      {
+        "time": 47.12,
+        "endTime": 54.88,
+        "text": "I do not love you, that is what I told myself"
+      },
+      {
+        "time": 54.88,
+        "endTime": 61.99,
+        "text": "while braiding your life into mine like rope"
+      },
+      {
+        "time": 61.99,
+        "endTime": 65.23,
+        "text": "I do not love you"
+      },
+      {
+        "time": 65.23,
+        "endTime": 71.69,
+        "text": "is the most honest lie I ever spoke"
+      },
+      {
+        "time": 73.19,
+        "endTime": 83.37,
+        "text": "He follows me through nations, through disasters, through the silence"
+      },
+      {
+        "time": 83.37,
+        "endTime": 94.91,
+        "text": "of long roads where the only conversation is the sound of hooves"
+      },
+      {
+        "time": 94.91,
+        "endTime": 103.74,
+        "text": "I feel his rage like weather, his grief like a low tide"
+      },
+      {
+        "time": 103.74,
+        "endTime": 114.6,
+        "text": "pulling at the edges of a bond I chose and cannot unchoose"
+      },
+      {
+        "time": 117.1,
+        "endTime": 125.4,
+        "text": "The day I passed his bond I felt it tear"
+      },
+      {
+        "time": 125.4,
+        "endTime": 131.43,
+        "text": "like removing my own shadow"
+      },
+      {
+        "time": 131.43,
+        "endTime": 138.97,
+        "text": "I told Myrelle to keep him alive"
+      },
+      {
+        "time": 138.97,
+        "endTime": 142.74,
+        "text": "because someone should"
+      },
+      {
+        "time": 142.74,
+        "endTime": 151.04,
+        "text": "even if that someone is no longer me"
+      },
+      {
+        "time": 153.04,
+        "endTime": 157.03,
+        "text": "I do not love you"
+      },
+      {
+        "time": 157.03,
+        "endTime": 164.22,
+        "text": "but my hands remember your silence"
+      },
+      {
+        "time": 164.22,
+        "endTime": 168.22,
+        "text": "and my spine recalls"
+      },
+      {
+        "time": 168.22,
+        "endTime": 177,
+        "text": "the exact temperature of your loyalty"
+      }
+    ]
+  },
+  "The Doorframe": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 14.15,
+        "text": "I walked through the doorframe knowing what waited on the other side"
+      },
+      {
+        "time": 14.15,
+        "endTime": 24.99,
+        "text": "which was nothing, which was everything, which was the price"
+      },
+      {
+        "time": 24.99,
+        "endTime": 39.69,
+        "text": "They warned me about the Finns and I listened very carefully"
+      },
+      {
+        "time": 39.69,
+        "endTime": 50.52,
+        "text": "and then I went in anyway because the math was clear"
+      },
+      {
+        "time": 52.52,
+        "endTime": 57.68,
+        "text": "The doorframe is not a door"
+      },
+      {
+        "time": 57.68,
+        "endTime": 60.63,
+        "text": "it is a mouth"
+      },
+      {
+        "time": 60.63,
+        "endTime": 68,
+        "text": "and I fed myself to it willingly"
+      },
+      {
+        "time": 68,
+        "endTime": 73.16,
+        "text": "because the world was hungrier"
+      },
+      {
+        "time": 74.66,
+        "endTime": 84.72,
+        "text": "Lanfear was falling through and the only net was me"
+      },
+      {
+        "time": 84.72,
+        "endTime": 95.55,
+        "text": "So I became the net, I became the trap, I became"
+      },
+      {
+        "time": 95.55,
+        "endTime": 105.61,
+        "text": "the small thing wedged between two enormous forces"
+      },
+      {
+        "time": 105.61,
+        "endTime": 117.22,
+        "text": "and the doorframe swallowed all of us like we were nothing"
+      },
+      {
+        "time": 119.72,
+        "endTime": 126.6,
+        "text": "You want to call it sacrifice"
+      },
+      {
+        "time": 126.6,
+        "endTime": 138.64,
+        "text": "but sacrifice implies a choice between living and dying"
+      },
+      {
+        "time": 138.64,
+        "endTime": 145.51,
+        "text": "I chose between two kinds of death"
+      },
+      {
+        "time": 145.51,
+        "endTime": 154.97,
+        "text": "and picked the one that bought the world more time"
+      },
+      {
+        "time": 156.97,
+        "endTime": 161.52,
+        "text": "The doorframe closed"
+      },
+      {
+        "time": 161.52,
+        "endTime": 166.99,
+        "text": "and the silence after"
+      },
+      {
+        "time": 166.99,
+        "endTime": 171.54,
+        "text": "was the loudest sound"
+      },
+      {
+        "time": 171.54,
+        "endTime": 177,
+        "text": "the Pattern ever made"
+      }
+    ]
+  },
+  "The Tower of Ghenjei": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 12.05,
+        "text": "They found me in the tower where the Finns keep what they take"
+      },
+      {
+        "time": 12.05,
+        "endTime": 23.1,
+        "text": "and I was less than I had been, more than I expected"
+      },
+      {
+        "time": 23.1,
+        "endTime": 31,
+        "text": "They bargained. I had already won."
+      },
+      {
+        "time": 31,
+        "endTime": 46,
+        "text": "Because the Finns do not understand someone who enters a trap on purpose"
+      },
+      {
+        "time": 48,
+        "endTime": 54.01,
+        "text": "The tower stands between the worlds"
+      },
+      {
+        "time": 54.01,
+        "endTime": 60.03,
+        "text": "where time is just a suggestion"
+      },
+      {
+        "time": 60.03,
+        "endTime": 65.29,
+        "text": "and I survived by being"
+      },
+      {
+        "time": 65.29,
+        "endTime": 72.81,
+        "text": "exactly what they never thought to fear"
+      },
+      {
+        "time": 74.31,
+        "endTime": 86.94,
+        "text": "Mat came with his hat and his luck and his impossible courage"
+      },
+      {
+        "time": 86.94,
+        "endTime": 97.2,
+        "text": "the gambler who does not know the odds he is defying"
+      },
+      {
+        "time": 97.2,
+        "endTime": 108.26,
+        "text": "Thom came because Thom always comes for things he loves"
+      },
+      {
+        "time": 108.26,
+        "endTime": 121.68,
+        "text": "and I stood in the tower knowing rescue was another kind of chess"
+      },
+      {
+        "time": 124.18,
+        "endTime": 130.32,
+        "text": "I lost something in there"
+      },
+      {
+        "time": 130.32,
+        "endTime": 137.33,
+        "text": "I cannot name it exactly"
+      },
+      {
+        "time": 137.33,
+        "endTime": 143.47,
+        "text": "but when I hold the Source now"
+      },
+      {
+        "time": 143.47,
+        "endTime": 146.98,
+        "text": "it is smaller"
+      },
+      {
+        "time": 146.98,
+        "endTime": 153.12,
+        "text": "like looking through a window"
+      },
+      {
+        "time": 153.12,
+        "endTime": 160.14,
+        "text": "that someone partially closed"
+      },
+      {
+        "time": 162.14,
+        "endTime": 165.85,
+        "text": "The tower stands"
+      },
+      {
+        "time": 165.85,
+        "endTime": 170.5,
+        "text": "and I walked out"
+      },
+      {
+        "time": 170.5,
+        "endTime": 174.21,
+        "text": "diminished"
+      },
+      {
+        "time": 174.21,
+        "endTime": 177,
+        "text": "but walking"
+      }
+    ]
+  },
+  "Returned": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.23,
+        "text": "I came back smaller than I left and the world was louder"
+      },
+      {
+        "time": 11.23,
+        "endTime": 24.39,
+        "text": "Everything I planned for twenty years had happened without me"
+      },
+      {
+        "time": 24.39,
+        "endTime": 36.82,
+        "text": "and I stood in the wreckage of my own careful architecture"
+      },
+      {
+        "time": 36.82,
+        "endTime": 44.86,
+        "text": "watching someone else live in the house I built"
+      },
+      {
+        "time": 46.86,
+        "endTime": 51.73,
+        "text": "Returned, but not the same"
+      },
+      {
+        "time": 51.73,
+        "endTime": 58,
+        "text": "the woman who walked through the door"
+      },
+      {
+        "time": 58,
+        "endTime": 64.26,
+        "text": "is not the woman who walked back"
+      },
+      {
+        "time": 64.26,
+        "endTime": 69.14,
+        "text": "and no one wants to say it"
+      },
+      {
+        "time": 70.64,
+        "endTime": 81.6,
+        "text": "Rand looks at me like I am a ghost he is afraid to trust"
+      },
+      {
+        "time": 81.6,
+        "endTime": 91.84,
+        "text": "and he is right because ghosts do not come back for nothing"
+      },
+      {
+        "time": 91.84,
+        "endTime": 102.8,
+        "text": "I came back because the Pattern is not finished with me"
+      },
+      {
+        "time": 102.8,
+        "endTime": 114.5,
+        "text": "or because I am not finished with myself, I cannot tell"
+      },
+      {
+        "time": 117,
+        "endTime": 121.87,
+        "text": "They want the old Moiraine"
+      },
+      {
+        "time": 121.87,
+        "endTime": 129.18,
+        "text": "the one with answers, the one with plans"
+      },
+      {
+        "time": 129.18,
+        "endTime": 138.12,
+        "text": "but I have seen the other side of planning"
+      },
+      {
+        "time": 138.12,
+        "endTime": 146.24,
+        "text": "and it looks exactly like surrender"
+      },
+      {
+        "time": 146.24,
+        "endTime": 154.36,
+        "text": "dressed in very expensive clothes"
+      },
+      {
+        "time": 156.36,
+        "endTime": 159.8,
+        "text": "I returned"
+      },
+      {
+        "time": 159.8,
+        "endTime": 166.68,
+        "text": "but the woman they remember"
+      },
+      {
+        "time": 166.68,
+        "endTime": 169.26,
+        "text": "stayed behind"
+      },
+      {
+        "time": 169.26,
+        "endTime": 172.7,
+        "text": "in the tower"
+      },
+      {
+        "time": 172.7,
+        "endTime": 177,
+        "text": "playing chess with shadows"
+      }
+    ]
+  },
+  "The Last Weave": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.38,
+        "text": "Shayol Ghul smells like the end of mathematics"
+      },
+      {
+        "time": 8.38,
+        "endTime": 19.79,
+        "text": "where every equation breaks down and the variables are screaming"
+      },
+      {
+        "time": 19.79,
+        "endTime": 29.85,
+        "text": "I stand beside the Dragon at the edge of everything"
+      },
+      {
+        "time": 29.85,
+        "endTime": 38.58,
+        "text": "holding the Source like a candle in a hurricane"
+      },
+      {
+        "time": 40.58,
+        "endTime": 45.69,
+        "text": "The last weave is not the strongest"
+      },
+      {
+        "time": 45.69,
+        "endTime": 49.52,
+        "text": "it is the one you throw"
+      },
+      {
+        "time": 49.52,
+        "endTime": 54.64,
+        "text": "knowing there is nothing after"
+      },
+      {
+        "time": 54.64,
+        "endTime": 59.11,
+        "text": "no second chance, no morning"
+      },
+      {
+        "time": 60.61,
+        "endTime": 72.02,
+        "text": "I have spent my life preparing for a moment I cannot control"
+      },
+      {
+        "time": 72.02,
+        "endTime": 80.07,
+        "text": "threading myself through the Pattern like a needle"
+      },
+      {
+        "time": 80.07,
+        "endTime": 90.81,
+        "text": "and now the cloth is burning and the needle is all that is left"
+      },
+      {
+        "time": 90.81,
+        "endTime": 103.56,
+        "text": "and I weave because weaving is the only language I have ever spoken"
+      },
+      {
+        "time": 106.06,
+        "endTime": 112.77,
+        "text": "Let the Tower write their histories"
+      },
+      {
+        "time": 112.77,
+        "endTime": 121.71,
+        "text": "let them say I was cold, I was calculating"
+      },
+      {
+        "time": 121.71,
+        "endTime": 129.91,
+        "text": "let them say I manipulated nations"
+      },
+      {
+        "time": 129.91,
+        "endTime": 132.9,
+        "text": "They are not wrong."
+      },
+      {
+        "time": 132.9,
+        "endTime": 140.35,
+        "text": "But I also loved this world enough"
+      },
+      {
+        "time": 140.35,
+        "endTime": 147.06,
+        "text": "to feed myself to it piece by piece"
+      },
+      {
+        "time": 147.06,
+        "endTime": 152.28,
+        "text": "until there was nothing left"
+      },
+      {
+        "time": 152.28,
+        "endTime": 155.26,
+        "text": "but the weaving"
+      },
+      {
+        "time": 157.26,
+        "endTime": 160.42,
+        "text": "The last weave holds"
+      },
+      {
+        "time": 160.42,
+        "endTime": 165.16,
+        "text": "not because it is strong"
+      },
+      {
+        "time": 165.16,
+        "endTime": 170.68,
+        "text": "but because I refused"
+      },
+      {
+        "time": 170.68,
+        "endTime": 177,
+        "text": "to let it be anything else"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["duty-heavier-than-a-mountain"] = {
+  "The Last Malkieri": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.82,
+        "text": "Born in fire, kingdom gone"
+      },
+      {
+        "time": 6.82,
+        "endTime": 13.62,
+        "text": "Carried out before the dawn"
+      },
+      {
+        "time": 13.62,
+        "endTime": 21.38,
+        "text": "A crown of ash upon my head"
+      },
+      {
+        "time": 21.38,
+        "endTime": 29.14,
+        "text": "Last son of the Malkieri dead"
+      },
+      {
+        "time": 30.64,
+        "endTime": 40.35,
+        "text": "They taught me steel before they taught me words"
+      },
+      {
+        "time": 40.35,
+        "endTime": 50.05,
+        "text": "A blade speaks louder than a prayer unheard"
+      },
+      {
+        "time": 50.05,
+        "endTime": 58.78,
+        "text": "The blight took everything I was"
+      },
+      {
+        "time": 58.78,
+        "endTime": 67.52,
+        "text": "Now I walk because a dead man does"
+      },
+      {
+        "time": 69.52,
+        "endTime": 76.91,
+        "text": "I am the last, the final wall"
+      },
+      {
+        "time": 76.91,
+        "endTime": 84.3,
+        "text": "When Malkier fell I swore to fall"
+      },
+      {
+        "time": 84.3,
+        "endTime": 91.7,
+        "text": "No home, no throne, just open road"
+      },
+      {
+        "time": 91.7,
+        "endTime": 98.17,
+        "text": "A dead man carrying his load"
+      },
+      {
+        "time": 100.67,
+        "endTime": 109.29,
+        "text": "Seven towers burned to black"
+      },
+      {
+        "time": 109.29,
+        "endTime": 117.92,
+        "text": "A thousand years won't bring them back"
+      },
+      {
+        "time": 117.92,
+        "endTime": 127.62,
+        "text": "But every shadow that I cleave"
+      },
+      {
+        "time": 127.62,
+        "endTime": 137.33,
+        "text": "Is one more debt the darkness leaves"
+      },
+      {
+        "time": 139.33,
+        "endTime": 149.6,
+        "text": "Last of the bloodline, last of the name"
+      },
+      {
+        "time": 149.6,
+        "endTime": 158.73,
+        "text": "Walking through ruin, walking through flame"
+      },
+      {
+        "time": 158.73,
+        "endTime": 167.87,
+        "text": "Malkier is gone but I remain"
+      },
+      {
+        "time": 167.87,
+        "endTime": 177,
+        "text": "The last Malkieri, born from pain"
+      }
+    ]
+  },
+  "The Bond": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.74,
+        "text": "She put her hand upon my soul"
+      },
+      {
+        "time": 8.74,
+        "endTime": 18.41,
+        "text": "And pulled the thread that made me whole"
+      },
+      {
+        "time": 18.41,
+        "endTime": 27.11,
+        "text": "I fought it harder than any blade"
+      },
+      {
+        "time": 27.11,
+        "endTime": 34.85,
+        "text": "But the bond was already made"
+      },
+      {
+        "time": 36.35,
+        "endTime": 44.09,
+        "text": "I wanted nothing but the grave"
+      },
+      {
+        "time": 44.09,
+        "endTime": 52.79,
+        "text": "She gave me something I could save"
+      },
+      {
+        "time": 52.79,
+        "endTime": 60.53,
+        "text": "A thread of gold inside my chest"
+      },
+      {
+        "time": 60.53,
+        "endTime": 66.33,
+        "text": "That would not let me rest"
+      },
+      {
+        "time": 68.33,
+        "endTime": 75.7,
+        "text": "The bond runs deeper than the steel"
+      },
+      {
+        "time": 75.7,
+        "endTime": 83.07,
+        "text": "It shows me what I cannot feel"
+      },
+      {
+        "time": 83.07,
+        "endTime": 93.2,
+        "text": "I spent a lifetime learning how to die"
+      },
+      {
+        "time": 93.2,
+        "endTime": 100.57,
+        "text": "She taught me reasons not to try"
+      },
+      {
+        "time": 103.07,
+        "endTime": 111.66,
+        "text": "I feel her anger like a storm"
+      },
+      {
+        "time": 111.66,
+        "endTime": 120.26,
+        "text": "I feel her heartbeat keeping warm"
+      },
+      {
+        "time": 120.26,
+        "endTime": 128.86,
+        "text": "The coldest places I have been"
+      },
+      {
+        "time": 128.86,
+        "endTime": 137.45,
+        "text": "She reaches through and pulls me in"
+      },
+      {
+        "time": 139.45,
+        "endTime": 148.56,
+        "text": "I broke my sword upon the stone"
+      },
+      {
+        "time": 148.56,
+        "endTime": 157.66,
+        "text": "I swore to walk this road alone"
+      },
+      {
+        "time": 157.66,
+        "endTime": 167.9,
+        "text": "But the bond won't let me fall that far"
+      },
+      {
+        "time": 167.9,
+        "endTime": 177,
+        "text": "She is my open wound, my scar"
+      }
+    ]
+  },
+  "Sheathing the Sword": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.81,
+        "text": "There is a place beyond the fear"
+      },
+      {
+        "time": 7.81,
+        "endTime": 16.57,
+        "text": "Where every cut becomes clear"
+      },
+      {
+        "time": 16.57,
+        "endTime": 24.35,
+        "text": "You let the blade pass through your guard"
+      },
+      {
+        "time": 24.35,
+        "endTime": 32.14,
+        "text": "And trade your flesh for killing hard"
+      },
+      {
+        "time": 33.64,
+        "endTime": 41.42,
+        "text": "They call it sheathing of the sword"
+      },
+      {
+        "time": 41.42,
+        "endTime": 49.2,
+        "text": "To die and strike in one accord"
+      },
+      {
+        "time": 49.2,
+        "endTime": 56.99,
+        "text": "No flinch, no mercy, no retreat"
+      },
+      {
+        "time": 56.99,
+        "endTime": 64.77,
+        "text": "Just blood on stone beneath your feet"
+      },
+      {
+        "time": 66.77,
+        "endTime": 75.11,
+        "text": "Sheathing the sword, embracing the end"
+      },
+      {
+        "time": 75.11,
+        "endTime": 83.45,
+        "text": "Taking the wound that no one can mend"
+      },
+      {
+        "time": 83.45,
+        "endTime": 92.72,
+        "text": "To kill the thing that cannot be killed"
+      },
+      {
+        "time": 92.72,
+        "endTime": 100.13,
+        "text": "You let your own blood be spilled"
+      },
+      {
+        "time": 102.63,
+        "endTime": 112.36,
+        "text": "I learned this lesson long ago"
+      },
+      {
+        "time": 112.36,
+        "endTime": 121.01,
+        "text": "The dead have nothing left to owe"
+      },
+      {
+        "time": 121.01,
+        "endTime": 129.66,
+        "text": "When you accept the final cost"
+      },
+      {
+        "time": 129.66,
+        "endTime": 137.23,
+        "text": "Then nothing else can be lost"
+      },
+      {
+        "time": 139.23,
+        "endTime": 147.24,
+        "text": "Steel meets steel and flesh meets fate"
+      },
+      {
+        "time": 147.24,
+        "endTime": 155.25,
+        "text": "I step beyond the final gate"
+      },
+      {
+        "time": 155.25,
+        "endTime": 164.41,
+        "text": "The sword goes home, the body falls"
+      },
+      {
+        "time": 164.41,
+        "endTime": 177,
+        "text": "But the enemy falls with me through these walls"
+      }
+    ]
+  },
+  "Nynaeve": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.21,
+        "text": "She came at me with fire and thorns"
+      },
+      {
+        "time": 8.21,
+        "endTime": 15.42,
+        "text": "A village girl who would not mourn"
+      },
+      {
+        "time": 15.42,
+        "endTime": 24.43,
+        "text": "She grabbed my collar, called me fool"
+      },
+      {
+        "time": 24.43,
+        "endTime": 34.34,
+        "text": "Broke every single one of my rules"
+      },
+      {
+        "time": 35.84,
+        "endTime": 43.96,
+        "text": "I built these walls with iron and time"
+      },
+      {
+        "time": 43.96,
+        "endTime": 52.07,
+        "text": "She walked right through them, paid no mind"
+      },
+      {
+        "time": 52.07,
+        "endTime": 59.28,
+        "text": "A healer with her stubborn hands"
+      },
+      {
+        "time": 59.28,
+        "endTime": 67.39,
+        "text": "Who somehow made a dead man stand"
+      },
+      {
+        "time": 69.39,
+        "endTime": 77.11,
+        "text": "Nynaeve, you pulled the arrow out"
+      },
+      {
+        "time": 77.11,
+        "endTime": 85.69,
+        "text": "Nynaeve, you silenced every doubt"
+      },
+      {
+        "time": 85.69,
+        "endTime": 92.56,
+        "text": "I was a weapon with no sheath"
+      },
+      {
+        "time": 92.56,
+        "endTime": 100.29,
+        "text": "You gave me something underneath"
+      },
+      {
+        "time": 102.79,
+        "endTime": 111.8,
+        "text": "I do not deserve this gentle thing"
+      },
+      {
+        "time": 111.8,
+        "endTime": 120.81,
+        "text": "This warmth that makes the winter sing"
+      },
+      {
+        "time": 120.81,
+        "endTime": 128.82,
+        "text": "But she would burn the world to coal"
+      },
+      {
+        "time": 128.82,
+        "endTime": 136.83,
+        "text": "Before she let me lose my soul"
+      },
+      {
+        "time": 138.83,
+        "endTime": 148.37,
+        "text": "For every battle I have bled"
+      },
+      {
+        "time": 148.37,
+        "endTime": 158.98,
+        "text": "For every oath carved in my head"
+      },
+      {
+        "time": 158.98,
+        "endTime": 168.52,
+        "text": "There is one truth I finally see"
+      },
+      {
+        "time": 168.52,
+        "endTime": 177,
+        "text": "She is worth more than death to me"
+      }
+    ]
+  },
+  "Alone": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.77,
+        "text": "I ride alone through empty lands"
+      },
+      {
+        "time": 8.77,
+        "endTime": 16.53,
+        "text": "With bloodied knees and broken hands"
+      },
+      {
+        "time": 16.53,
+        "endTime": 24.3,
+        "text": "The shadow stretches long behind"
+      },
+      {
+        "time": 24.3,
+        "endTime": 32.07,
+        "text": "No company of any kind"
+      },
+      {
+        "time": 33.57,
+        "endTime": 43.28,
+        "text": "They follow sometimes, young and brave"
+      },
+      {
+        "time": 43.28,
+        "endTime": 51.05,
+        "text": "I send them back, I will not pave"
+      },
+      {
+        "time": 51.05,
+        "endTime": 59.78,
+        "text": "A road of bones for other men"
+      },
+      {
+        "time": 59.78,
+        "endTime": 67.55,
+        "text": "I walk alone and will again"
+      },
+      {
+        "time": 69.55,
+        "endTime": 76.95,
+        "text": "Alone, the way it has to be"
+      },
+      {
+        "time": 76.95,
+        "endTime": 84.35,
+        "text": "No army standing next to me"
+      },
+      {
+        "time": 84.35,
+        "endTime": 91.74,
+        "text": "One man against the rising dark"
+      },
+      {
+        "time": 91.74,
+        "endTime": 99.14,
+        "text": "One flickering and stubborn spark"
+      },
+      {
+        "time": 101.64,
+        "endTime": 110.27,
+        "text": "The silence is a heavy friend"
+      },
+      {
+        "time": 110.27,
+        "endTime": 118.9,
+        "text": "It walks beside me to the end"
+      },
+      {
+        "time": 118.9,
+        "endTime": 127.53,
+        "text": "No songs, no banners, no parade"
+      },
+      {
+        "time": 127.53,
+        "endTime": 136.16,
+        "text": "Just one man and his rusted blade"
+      },
+      {
+        "time": 138.16,
+        "endTime": 147.3,
+        "text": "I chose this road before the dawn"
+      },
+      {
+        "time": 147.3,
+        "endTime": 156.44,
+        "text": "I chose to keep on moving on"
+      },
+      {
+        "time": 156.44,
+        "endTime": 166.72,
+        "text": "Alone beneath the blackened sky"
+      },
+      {
+        "time": 166.72,
+        "endTime": 177,
+        "text": "One man who never learned to cry"
+      }
+    ]
+  },
+  "The Golden Crane": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.49,
+        "text": "I raised the banner in the square"
+      },
+      {
+        "time": 9.49,
+        "endTime": 17.03,
+        "text": "The golden crane upon the air"
+      },
+      {
+        "time": 17.03,
+        "endTime": 24.57,
+        "text": "A dead flag for a dead nation"
+      },
+      {
+        "time": 24.57,
+        "endTime": 34,
+        "text": "One final desperate declaration"
+      },
+      {
+        "time": 35.5,
+        "endTime": 43.04,
+        "text": "They came from farmsteads, came from towns"
+      },
+      {
+        "time": 43.04,
+        "endTime": 51.53,
+        "text": "Put down their plows and picked up crowns"
+      },
+      {
+        "time": 51.53,
+        "endTime": 58.13,
+        "text": "Men who never held a sword"
+      },
+      {
+        "time": 58.13,
+        "endTime": 65.67,
+        "text": "Answered to a dead king's word"
+      },
+      {
+        "time": 67.67,
+        "endTime": 76.65,
+        "text": "The golden crane flies for Tarmon Gaidon"
+      },
+      {
+        "time": 76.65,
+        "endTime": 84.74,
+        "text": "Malkier rides though Malkier is gone"
+      },
+      {
+        "time": 84.74,
+        "endTime": 91.92,
+        "text": "A hundred, then a thousand strong"
+      },
+      {
+        "time": 91.92,
+        "endTime": 99.1,
+        "text": "The dead march where the dead belong"
+      },
+      {
+        "time": 101.6,
+        "endTime": 112.08,
+        "text": "I never asked them for their lives"
+      },
+      {
+        "time": 112.08,
+        "endTime": 121.51,
+        "text": "Their children and their weeping wives"
+      },
+      {
+        "time": 121.51,
+        "endTime": 128.84,
+        "text": "But they came, they came, they came"
+      },
+      {
+        "time": 128.84,
+        "endTime": 136.18,
+        "text": "Shouting out my father's name"
+      },
+      {
+        "time": 138.18,
+        "endTime": 147.05,
+        "text": "The golden crane against the night"
+      },
+      {
+        "time": 147.05,
+        "endTime": 155.92,
+        "text": "One final charge into the fight"
+      },
+      {
+        "time": 155.92,
+        "endTime": 165.91,
+        "text": "Malkier lives in every man"
+      },
+      {
+        "time": 165.91,
+        "endTime": 177,
+        "text": "Who rides behind Lan Mandragoran"
+      }
+    ]
+  },
+  "Demandred": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.95,
+        "text": "He stands across the field of blood"
+      },
+      {
+        "time": 8.95,
+        "endTime": 16.9,
+        "text": "A god of war, a burning flood"
+      },
+      {
+        "time": 16.9,
+        "endTime": 25.85,
+        "text": "Ten thousand years of hate compressed"
+      },
+      {
+        "time": 25.85,
+        "endTime": 33.8,
+        "text": "Into the blade against my chest"
+      },
+      {
+        "time": 35.3,
+        "endTime": 42.26,
+        "text": "He wanted Lews Therin's head"
+      },
+      {
+        "time": 42.26,
+        "endTime": 50.21,
+        "text": "He got a shepherd boy instead"
+      },
+      {
+        "time": 50.21,
+        "endTime": 58.16,
+        "text": "And now he gets a broken king"
+      },
+      {
+        "time": 58.16,
+        "endTime": 66.12,
+        "text": "With nothing left but one last swing"
+      },
+      {
+        "time": 68.12,
+        "endTime": 74.74,
+        "text": "Come, Demandred, face the last"
+      },
+      {
+        "time": 74.74,
+        "endTime": 82.32,
+        "text": "A mortal man against the vast"
+      },
+      {
+        "time": 82.32,
+        "endTime": 89.89,
+        "text": "You wanted glory, wanted fame"
+      },
+      {
+        "time": 89.89,
+        "endTime": 97.46,
+        "text": "You got a dead man with no name"
+      },
+      {
+        "time": 99.96,
+        "endTime": 107.69,
+        "text": "He is faster, he is strong"
+      },
+      {
+        "time": 107.69,
+        "endTime": 115.42,
+        "text": "He has waited far too long"
+      },
+      {
+        "time": 115.42,
+        "endTime": 125.36,
+        "text": "But I have something he has not"
+      },
+      {
+        "time": 125.36,
+        "endTime": 136.41,
+        "text": "I have already given all I got"
+      },
+      {
+        "time": 138.41,
+        "endTime": 146.6,
+        "text": "Steel on steel the mountains shake"
+      },
+      {
+        "time": 146.6,
+        "endTime": 155.95,
+        "text": "One of us will finally break"
+      },
+      {
+        "time": 155.95,
+        "endTime": 165.31,
+        "text": "I sheathe the sword one final time"
+      },
+      {
+        "time": 165.31,
+        "endTime": 177,
+        "text": "And Demandred falls with me in the grime"
+      }
+    ]
+  },
+  "Duty Done": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.94,
+        "text": "The field is quiet, smoke and dust"
+      },
+      {
+        "time": 7.94,
+        "endTime": 15.88,
+        "text": "My blade is red with blood and rust"
+      },
+      {
+        "time": 15.88,
+        "endTime": 23.82,
+        "text": "The shadow broke against the dawn"
+      },
+      {
+        "time": 23.82,
+        "endTime": 32.75,
+        "text": "And somehow I am not yet gone"
+      },
+      {
+        "time": 34.25,
+        "endTime": 42.19,
+        "text": "She found me in the trampled mud"
+      },
+      {
+        "time": 42.19,
+        "endTime": 51.11,
+        "text": "Her golden light burned through the blood"
+      },
+      {
+        "time": 51.11,
+        "endTime": 60.04,
+        "text": "Her hands upon my shattered frame"
+      },
+      {
+        "time": 60.04,
+        "endTime": 67.98,
+        "text": "Whispering my forgotten name"
+      },
+      {
+        "time": 69.98,
+        "endTime": 77.54,
+        "text": "Duty done, the mountain moved"
+      },
+      {
+        "time": 77.54,
+        "endTime": 84.15,
+        "text": "Nothing left I need to prove"
+      },
+      {
+        "time": 84.15,
+        "endTime": 90.77,
+        "text": "Heavier than a mountain's weight"
+      },
+      {
+        "time": 90.77,
+        "endTime": 96.44,
+        "text": "Lighter now beyond the gate"
+      },
+      {
+        "time": 98.94,
+        "endTime": 107.76,
+        "text": "I carried it from Malkier's fall"
+      },
+      {
+        "time": 107.76,
+        "endTime": 118.78,
+        "text": "Through every fight, through every wall"
+      },
+      {
+        "time": 118.78,
+        "endTime": 126.5,
+        "text": "The duty heavier than stone"
+      },
+      {
+        "time": 126.5,
+        "endTime": 135.31,
+        "text": "I never had to bear alone"
+      },
+      {
+        "time": 137.31,
+        "endTime": 146.65,
+        "text": "The golden crane rests on the field"
+      },
+      {
+        "time": 146.65,
+        "endTime": 157.16,
+        "text": "The sword is down, the wounds are healed"
+      },
+      {
+        "time": 157.16,
+        "endTime": 167.66,
+        "text": "A dead man finally learns to breathe"
+      },
+      {
+        "time": 167.66,
+        "endTime": 177,
+        "text": "With nothing heavier left to grieve"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["spear-and-flame"] = {
+  "Far Dareis Mai": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.1,
+        "text": "I was born with dust in my teeth and a blade in my hand"
+      },
+      {
+        "time": 9.1,
+        "endTime": 16.63,
+        "text": "Walked the Threefold Land before I learned to stand"
+      },
+      {
+        "time": 16.63,
+        "endTime": 23.58,
+        "text": "Every Maiden knows the price — we pay it clean"
+      },
+      {
+        "time": 23.58,
+        "endTime": 30.53,
+        "text": "No tears for the fallen, no mercy for the mean"
+      },
+      {
+        "time": 30.53,
+        "endTime": 36.89,
+        "text": "My spear is not a weapon, it is a prayer"
+      },
+      {
+        "time": 36.89,
+        "endTime": 43.84,
+        "text": "A promise to the sand that I was always there"
+      },
+      {
+        "time": 45.84,
+        "endTime": 51.35,
+        "text": "Far Dareis Mai — we dance where others bleed"
+      },
+      {
+        "time": 51.35,
+        "endTime": 56.87,
+        "text": "Far Dareis Mai — the desert plants the seed"
+      },
+      {
+        "time": 56.87,
+        "endTime": 61.83,
+        "text": "You will not break what the Waste has made"
+      },
+      {
+        "time": 61.83,
+        "endTime": 66.24,
+        "text": "I am the spear, I am the blade"
+      },
+      {
+        "time": 67.74,
+        "endTime": 74.11,
+        "text": "Sisters at my back, we move like wind through stone"
+      },
+      {
+        "time": 74.11,
+        "endTime": 82.79,
+        "text": "Every scar a chapter, every kill a stepping stone"
+      },
+      {
+        "time": 82.79,
+        "endTime": 89.74,
+        "text": "Wetlanders call us savage — let them speak their fill"
+      },
+      {
+        "time": 89.74,
+        "endTime": 97.27,
+        "text": "They have never tasted what it takes to hold still"
+      },
+      {
+        "time": 97.27,
+        "endTime": 103.63,
+        "text": "In the heat of battle when the world goes red"
+      },
+      {
+        "time": 103.63,
+        "endTime": 109.42,
+        "text": "Far Dareis Mai remembers what was said"
+      },
+      {
+        "time": 111.42,
+        "endTime": 116.94,
+        "text": "Far Dareis Mai — we dance where others bleed"
+      },
+      {
+        "time": 116.94,
+        "endTime": 122.45,
+        "text": "Far Dareis Mai — the desert plants the seed"
+      },
+      {
+        "time": 122.45,
+        "endTime": 127.41,
+        "text": "You will not break what the Waste has made"
+      },
+      {
+        "time": 127.41,
+        "endTime": 131.82,
+        "text": "I am the spear, I am the blade"
+      },
+      {
+        "time": 134.32,
+        "endTime": 140.11,
+        "text": "I have held dying sisters in the sand"
+      },
+      {
+        "time": 140.11,
+        "endTime": 147.19,
+        "text": "Watched their eyes go empty, spear still in hand"
+      },
+      {
+        "time": 147.19,
+        "endTime": 152.98,
+        "text": "The Waste does not mourn — neither do I"
+      },
+      {
+        "time": 152.98,
+        "endTime": 160.7,
+        "text": "But sometimes at night the wind sounds like goodbye"
+      },
+      {
+        "time": 162.7,
+        "endTime": 168.83,
+        "text": "Far Dareis Mai — the dance never ends"
+      },
+      {
+        "time": 168.83,
+        "endTime": 177,
+        "text": "We carry the dead in our bones, not our hands"
+      }
+    ]
+  },
+  "Wetlander": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.29,
+        "text": "Your green land makes me sick with how easy it breathes"
+      },
+      {
+        "time": 8.29,
+        "endTime": 14.02,
+        "text": "Water running open like it grows on trees"
+      },
+      {
+        "time": 14.02,
+        "endTime": 19.74,
+        "text": "I watch you waste everything — food, time, tears"
+      },
+      {
+        "time": 19.74,
+        "endTime": 25.47,
+        "text": "Soft people building soft walls against soft fears"
+      },
+      {
+        "time": 25.47,
+        "endTime": 32.24,
+        "text": "But something in this wetness pulls at me like toh"
+      },
+      {
+        "time": 32.24,
+        "endTime": 39.01,
+        "text": "A curiosity I carry that I cannot throw"
+      },
+      {
+        "time": 41.01,
+        "endTime": 45.96,
+        "text": "Wetlander world, you confuse me like rain"
+      },
+      {
+        "time": 45.96,
+        "endTime": 52.41,
+        "text": "Everything abundant, everything in vain"
+      },
+      {
+        "time": 52.41,
+        "endTime": 58.36,
+        "text": "I hate how I study your strange useless things"
+      },
+      {
+        "time": 58.36,
+        "endTime": 64.81,
+        "text": "The way your doors have handles, the way your metal sings"
+      },
+      {
+        "time": 66.31,
+        "endTime": 73.6,
+        "text": "I took apart your box with lights — you called it a clock"
+      },
+      {
+        "time": 73.6,
+        "endTime": 79.32,
+        "text": "Broke your carriage wheels to see how axles lock"
+      },
+      {
+        "time": 79.32,
+        "endTime": 86.09,
+        "text": "Every object is a riddle wrapped in shame"
+      },
+      {
+        "time": 86.09,
+        "endTime": 92.34,
+        "text": "Why build what the Pattern already gave a name"
+      },
+      {
+        "time": 92.34,
+        "endTime": 99.11,
+        "text": "Your customs are ridiculous, your honor unclear"
+      },
+      {
+        "time": 99.11,
+        "endTime": 105.35,
+        "text": "But I keep watching, keep dissecting what is here"
+      },
+      {
+        "time": 107.35,
+        "endTime": 112.31,
+        "text": "Wetlander world, you confuse me like rain"
+      },
+      {
+        "time": 112.31,
+        "endTime": 118.76,
+        "text": "Everything abundant, everything in vain"
+      },
+      {
+        "time": 118.76,
+        "endTime": 124.71,
+        "text": "I hate how I study your strange useless things"
+      },
+      {
+        "time": 124.71,
+        "endTime": 131.16,
+        "text": "The way your doors have handles, the way your metal sings"
+      },
+      {
+        "time": 133.66,
+        "endTime": 139.44,
+        "text": "Maybe the Waste taught me too well to survive"
+      },
+      {
+        "time": 139.44,
+        "endTime": 145.8,
+        "text": "And not well enough to simply be alive"
+      },
+      {
+        "time": 145.8,
+        "endTime": 152.17,
+        "text": "These green lands whisper something I resist"
+      },
+      {
+        "time": 152.17,
+        "endTime": 159.69,
+        "text": "A softness in the Pattern I had always missed"
+      },
+      {
+        "time": 161.69,
+        "endTime": 169.04,
+        "text": "I will never be wetlander — that truth is bone"
+      },
+      {
+        "time": 169.04,
+        "endTime": 177,
+        "text": "But I understand now why you do not walk alone"
+      }
+    ]
+  },
+  "Toh": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.43,
+        "text": "I owe a debt to a woman I wanted to hate"
+      },
+      {
+        "time": 8.43,
+        "endTime": 17.01,
+        "text": "Golden-haired and gentle — everything I am not, straight"
+      },
+      {
+        "time": 17.01,
+        "endTime": 24.44,
+        "text": "She loves the same man and I cannot look away"
+      },
+      {
+        "time": 24.44,
+        "endTime": 30.73,
+        "text": "Toh is the chain that honor makes you pay"
+      },
+      {
+        "time": 30.73,
+        "endTime": 37.59,
+        "text": "Every Aiel knows: the debt must be resolved"
+      },
+      {
+        "time": 37.59,
+        "endTime": 45.03,
+        "text": "Not with blood, not with blades — with the self dissolved"
+      },
+      {
+        "time": 47.03,
+        "endTime": 51.93,
+        "text": "Toh — heavier than any spear I've thrown"
+      },
+      {
+        "time": 51.93,
+        "endTime": 57.92,
+        "text": "Toh — a wound I carved into my own bone"
+      },
+      {
+        "time": 57.92,
+        "endTime": 63.36,
+        "text": "I will pay what honor demands of me"
+      },
+      {
+        "time": 63.36,
+        "endTime": 69.9,
+        "text": "Even if the price is who I used to be"
+      },
+      {
+        "time": 71.4,
+        "endTime": 78.83,
+        "text": "Elayne smiles like she has never starved for rain"
+      },
+      {
+        "time": 78.83,
+        "endTime": 86.26,
+        "text": "I want to despise her but she carries her own pain"
+      },
+      {
+        "time": 86.26,
+        "endTime": 93.7,
+        "text": "She is brave — I give her that, it costs me to admit"
+      },
+      {
+        "time": 93.7,
+        "endTime": 99.99,
+        "text": "A wetlander queen who does not flinch or quit"
+      },
+      {
+        "time": 99.99,
+        "endTime": 106.85,
+        "text": "The debt between us is a bridge I have to cross"
+      },
+      {
+        "time": 106.85,
+        "endTime": 114.28,
+        "text": "Not because I want to — because honor knows the cost"
+      },
+      {
+        "time": 116.28,
+        "endTime": 121.18,
+        "text": "Toh — heavier than any spear I've thrown"
+      },
+      {
+        "time": 121.18,
+        "endTime": 127.17,
+        "text": "Toh — a wound I carved into my own bone"
+      },
+      {
+        "time": 127.17,
+        "endTime": 132.62,
+        "text": "I will pay what honor demands of me"
+      },
+      {
+        "time": 132.62,
+        "endTime": 139.15,
+        "text": "Even if the price is who I used to be"
+      },
+      {
+        "time": 141.65,
+        "endTime": 148.64,
+        "text": "Three must love him — the Wise Ones said it plain"
+      },
+      {
+        "time": 148.64,
+        "endTime": 155.63,
+        "text": "Three women bound to one man through joy and pain"
+      },
+      {
+        "time": 155.63,
+        "endTime": 164.52,
+        "text": "I chose to see her as my sister, not my enemy"
+      },
+      {
+        "time": 164.52,
+        "endTime": 171.51,
+        "text": "And in that choosing, found I set myself free"
+      },
+      {
+        "time": 173.51,
+        "endTime": 180.91,
+        "text": "The debt is paid in full with an open hand"
+      },
+      {
+        "time": 180.91,
+        "endTime": 191,
+        "text": "Not surrender — something wetlanders never understand"
+      }
+    ]
+  },
+  "The Columns": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.2,
+        "text": "I walked into the glass and the glass walked into me"
+      },
+      {
+        "time": 10.2,
+        "endTime": 18.17,
+        "text": "Showed me who we were before we crossed the sea"
+      },
+      {
+        "time": 18.17,
+        "endTime": 24.91,
+        "text": "The Aiel were not warriors — that is what it said"
+      },
+      {
+        "time": 24.91,
+        "endTime": 32.27,
+        "text": "We were servants, builders, people of peace instead"
+      },
+      {
+        "time": 32.27,
+        "endTime": 39.63,
+        "text": "My hands that hold a spear once held an open door"
+      },
+      {
+        "time": 39.63,
+        "endTime": 46.37,
+        "text": "The truth cuts deeper than any blade of war"
+      },
+      {
+        "time": 47.87,
+        "endTime": 55.23,
+        "text": "The Jenn Aiel carried the covenant through the sand"
+      },
+      {
+        "time": 55.23,
+        "endTime": 62.59,
+        "text": "Never raised a weapon, died with empty hands"
+      },
+      {
+        "time": 62.59,
+        "endTime": 69.95,
+        "text": "We descended from the ones who broke the vow"
+      },
+      {
+        "time": 69.95,
+        "endTime": 76.69,
+        "text": "Picked up spears and forgot what we were now"
+      },
+      {
+        "time": 76.69,
+        "endTime": 86.5,
+        "text": "Century after century the memory turned to ash"
+      },
+      {
+        "time": 86.5,
+        "endTime": 95.09,
+        "text": "Until we were the opposite of what we were asked"
+      },
+      {
+        "time": 97.09,
+        "endTime": 104.1,
+        "text": "The columns showed me everything we lost"
+      },
+      {
+        "time": 104.1,
+        "endTime": 109.94,
+        "text": "The truth of who we were, and what it cost"
+      },
+      {
+        "time": 109.94,
+        "endTime": 116.36,
+        "text": "Every spear is a betrayal of the Leaf"
+      },
+      {
+        "time": 116.36,
+        "endTime": 123.37,
+        "text": "Every kill a step away from our belief"
+      },
+      {
+        "time": 125.87,
+        "endTime": 134.04,
+        "text": "Some who walked the columns could not bear the weight"
+      },
+      {
+        "time": 134.04,
+        "endTime": 143.58,
+        "text": "Walked back out with hollow eyes, stripped of name and fate"
+      },
+      {
+        "time": 143.58,
+        "endTime": 152.44,
+        "text": "I stood. I watched. I swallowed every scene."
+      },
+      {
+        "time": 152.44,
+        "endTime": 161.29,
+        "text": "I am Aiel — even if Aiel is not what Aiel has been"
+      },
+      {
+        "time": 163.29,
+        "endTime": 170.51,
+        "text": "The glass remembers what the sand forgot"
+      },
+      {
+        "time": 170.51,
+        "endTime": 177,
+        "text": "I carry both — the spear and the knot"
+      }
+    ]
+  },
+  "Wise One": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.31,
+        "text": "They told me to put down the spear and I almost died"
+      },
+      {
+        "time": 7.31,
+        "endTime": 13.13,
+        "text": "A Maiden does not surrender — that is Aiel pride"
+      },
+      {
+        "time": 13.13,
+        "endTime": 19.92,
+        "text": "But the One Power burns inside me like a second sun"
+      },
+      {
+        "time": 19.92,
+        "endTime": 26.71,
+        "text": "Channeling is not a choice, it is what I have become"
+      },
+      {
+        "time": 26.71,
+        "endTime": 31.56,
+        "text": "Amys says to learn, Melaine says to feel"
+      },
+      {
+        "time": 31.56,
+        "endTime": 36.9,
+        "text": "Bair says the dream world will teach me what is real"
+      },
+      {
+        "time": 38.9,
+        "endTime": 43.52,
+        "text": "Wise One — I do not know who that is yet"
+      },
+      {
+        "time": 43.52,
+        "endTime": 49.07,
+        "text": "Wise One — a title I have not earned, not met"
+      },
+      {
+        "time": 49.07,
+        "endTime": 54.61,
+        "text": "The power in my hands was never mine to claim"
+      },
+      {
+        "time": 54.61,
+        "endTime": 60.62,
+        "text": "But it answers when I call it, and it knows my name"
+      },
+      {
+        "time": 62.12,
+        "endTime": 68.43,
+        "text": "I dream in Tel'aran'rhiod, walking between the seams"
+      },
+      {
+        "time": 68.43,
+        "endTime": 75.22,
+        "text": "The world of dreams is sharper than the waking world it seems"
+      },
+      {
+        "time": 75.22,
+        "endTime": 82.01,
+        "text": "Aes Sedai think they own the Power — let them think it twice"
+      },
+      {
+        "time": 82.01,
+        "endTime": 89.77,
+        "text": "An Aiel woman channels without asking permission or advice"
+      },
+      {
+        "time": 89.77,
+        "endTime": 97.05,
+        "text": "I was a spear, now I am flame, now I am something more"
+      },
+      {
+        "time": 97.05,
+        "endTime": 104.33,
+        "text": "A bridge between the old ways and the war that waits at the door"
+      },
+      {
+        "time": 106.33,
+        "endTime": 110.95,
+        "text": "Wise One — I do not know who that is yet"
+      },
+      {
+        "time": 110.95,
+        "endTime": 116.49,
+        "text": "Wise One — a title I have not earned, not met"
+      },
+      {
+        "time": 116.49,
+        "endTime": 122.04,
+        "text": "The power in my hands was never mine to claim"
+      },
+      {
+        "time": 122.04,
+        "endTime": 128.04,
+        "text": "But it answers when I call it, and it knows my name"
+      },
+      {
+        "time": 130.54,
+        "endTime": 138.09,
+        "text": "The hardest part is stillness — sitting when I want to fight"
+      },
+      {
+        "time": 138.09,
+        "endTime": 145.64,
+        "text": "Learning that true power means knowing when to hold your might"
+      },
+      {
+        "time": 145.64,
+        "endTime": 153.18,
+        "text": "A Wise One sees the Pattern where a Maiden sees the spear"
+      },
+      {
+        "time": 153.18,
+        "endTime": 160.73,
+        "text": "Both are needed, both are deadly — that is finally clear"
+      },
+      {
+        "time": 162.73,
+        "endTime": 169.58,
+        "text": "I was forged in sand and reshaped in flame"
+      },
+      {
+        "time": 169.58,
+        "endTime": 177,
+        "text": "Wise One — I am learning what it means to claim the name"
+      }
+    ]
+  },
+  "The Car'a'carn's Woman": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.18,
+        "text": "He looks at me and I want to throw a spear at his face"
+      },
+      {
+        "time": 8.18,
+        "endTime": 15.87,
+        "text": "This man who stumbled into prophecy with wetlander grace"
+      },
+      {
+        "time": 15.87,
+        "endTime": 22.02,
+        "text": "Rand al'Thor, Car'a'carn, the Dragon they all fear"
+      },
+      {
+        "time": 22.02,
+        "endTime": 28.17,
+        "text": "I do not fear him — I am angry he is here"
+      },
+      {
+        "time": 28.17,
+        "endTime": 34.84,
+        "text": "In my chest, in my dreams, in the way I lose my breath"
+      },
+      {
+        "time": 34.84,
+        "endTime": 40.99,
+        "text": "This feeling is a sickness worse than any death"
+      },
+      {
+        "time": 42.99,
+        "endTime": 47.87,
+        "text": "I did not choose to love the Car'a'carn"
+      },
+      {
+        "time": 47.87,
+        "endTime": 52.76,
+        "text": "It chose me like the sun chooses to burn"
+      },
+      {
+        "time": 52.76,
+        "endTime": 58.13,
+        "text": "He is impossible, infuriating, kind"
+      },
+      {
+        "time": 58.13,
+        "endTime": 64.48,
+        "text": "The most dangerous thing I have ever held in mind"
+      },
+      {
+        "time": 65.98,
+        "endTime": 72.64,
+        "text": "He treats me like I might break — fool does not understand"
+      },
+      {
+        "time": 72.64,
+        "endTime": 78.79,
+        "text": "An Aiel woman is not porcelain, she is sand"
+      },
+      {
+        "time": 78.79,
+        "endTime": 86.48,
+        "text": "I kissed him once and ran because the feeling was too vast"
+      },
+      {
+        "time": 86.48,
+        "endTime": 93.15,
+        "text": "A warrior should not tremble — that weakness cannot last"
+      },
+      {
+        "time": 93.15,
+        "endTime": 99.81,
+        "text": "But he smiles and the desert in me floods with green"
+      },
+      {
+        "time": 99.81,
+        "endTime": 105.45,
+        "text": "And I become someone I have never been"
+      },
+      {
+        "time": 107.45,
+        "endTime": 112.34,
+        "text": "I did not choose to love the Car'a'carn"
+      },
+      {
+        "time": 112.34,
+        "endTime": 117.22,
+        "text": "It chose me like the sun chooses to burn"
+      },
+      {
+        "time": 117.22,
+        "endTime": 122.59,
+        "text": "He is impossible, infuriating, kind"
+      },
+      {
+        "time": 122.59,
+        "endTime": 128.94,
+        "text": "The most dangerous thing I have ever held in mind"
+      },
+      {
+        "time": 131.44,
+        "endTime": 137.7,
+        "text": "Three women, one man, the Pattern drew the thread"
+      },
+      {
+        "time": 137.7,
+        "endTime": 145.11,
+        "text": "I share him because the Wheel demanded it be said"
+      },
+      {
+        "time": 145.11,
+        "endTime": 152.51,
+        "text": "Not because I am weak — because I am strong enough"
+      },
+      {
+        "time": 152.51,
+        "endTime": 159.92,
+        "text": "To love without possession, to hold without a cuff"
+      },
+      {
+        "time": 161.92,
+        "endTime": 167.95,
+        "text": "He is my toh, my flame, my greenest fear"
+      },
+      {
+        "time": 167.95,
+        "endTime": 177,
+        "text": "And I would cross the Waste a thousand times to stand right here"
+      }
+    ]
+  },
+  "The Glass Columns Again": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.22,
+        "text": "I walked the columns once and saw the past unwind"
+      },
+      {
+        "time": 7.22,
+        "endTime": 13.45,
+        "text": "Now I walk again and see the future left behind"
+      },
+      {
+        "time": 13.45,
+        "endTime": 20.15,
+        "text": "The Aiel shattered — scattered — fewer every year"
+      },
+      {
+        "time": 20.15,
+        "endTime": 26.37,
+        "text": "Without a purpose, without honor, stripped of spear"
+      },
+      {
+        "time": 26.37,
+        "endTime": 32.12,
+        "text": "I saw my people fade to nothing in the sand"
+      },
+      {
+        "time": 32.12,
+        "endTime": 39.3,
+        "text": "Begging at the gates of kingdoms with an outstretched hand"
+      },
+      {
+        "time": 41.3,
+        "endTime": 46.31,
+        "text": "The glass shows what will be if we do not change"
+      },
+      {
+        "time": 46.31,
+        "endTime": 51.33,
+        "text": "A future where the Aiel are forgotten, strange"
+      },
+      {
+        "time": 51.33,
+        "endTime": 57.26,
+        "text": "Every vision was a knife pressed to my throat"
+      },
+      {
+        "time": 57.26,
+        "endTime": 63.64,
+        "text": "I swallowed blood and kept reading what the Pattern wrote"
+      },
+      {
+        "time": 65.14,
+        "endTime": 71.36,
+        "text": "The Seanchan put our women in their chains of silver"
+      },
+      {
+        "time": 71.36,
+        "endTime": 79.02,
+        "text": "The wetlands swallowed everything the Waste would deliver"
+      },
+      {
+        "time": 79.02,
+        "endTime": 85.25,
+        "text": "No more ji, no more toh, no more honor in the blood"
+      },
+      {
+        "time": 85.25,
+        "endTime": 91.95,
+        "text": "Just a people who were once the tide reduced to mud"
+      },
+      {
+        "time": 91.95,
+        "endTime": 98.65,
+        "text": "I saw it — I breathed it — I lived inside that death"
+      },
+      {
+        "time": 98.65,
+        "endTime": 105.35,
+        "text": "And I walked out the other side with fire on my breath"
+      },
+      {
+        "time": 107.35,
+        "endTime": 112.37,
+        "text": "The glass shows what will be if we do not change"
+      },
+      {
+        "time": 112.37,
+        "endTime": 117.38,
+        "text": "A future where the Aiel are forgotten, strange"
+      },
+      {
+        "time": 117.38,
+        "endTime": 123.31,
+        "text": "Every vision was a knife pressed to my throat"
+      },
+      {
+        "time": 123.31,
+        "endTime": 129.7,
+        "text": "I swallowed blood and kept reading what the Pattern wrote"
+      },
+      {
+        "time": 132.2,
+        "endTime": 139.11,
+        "text": "The past showed us the lie — that we were always war"
+      },
+      {
+        "time": 139.11,
+        "endTime": 145.49,
+        "text": "The future shows the price — if war is all we are"
+      },
+      {
+        "time": 145.49,
+        "endTime": 152.41,
+        "text": "Between the two truths lives the narrow path I walk"
+      },
+      {
+        "time": 152.41,
+        "endTime": 160.92,
+        "text": "Not the Way of the Leaf, not the spear — something the Columns taught"
+      },
+      {
+        "time": 162.92,
+        "endTime": 169.68,
+        "text": "I am the one who saw both ends of who we are"
+      },
+      {
+        "time": 169.68,
+        "endTime": 177,
+        "text": "I carry the warning like a scar beneath a scar"
+      }
+    ]
+  },
+  "The Last Dance": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.84,
+        "text": "Tarmon Gai'don opens like a mouth of black fire"
+      },
+      {
+        "time": 6.84,
+        "endTime": 13.16,
+        "text": "Every thread the Pattern wove pulled to the wire"
+      },
+      {
+        "time": 13.16,
+        "endTime": 19.96,
+        "text": "I stand with sisters, Wise Ones, spears aligned as one"
+      },
+      {
+        "time": 19.96,
+        "endTime": 25.8,
+        "text": "The last battle of the world beneath a dying sun"
+      },
+      {
+        "time": 25.8,
+        "endTime": 32.61,
+        "text": "Everything I trained for, everything I lost"
+      },
+      {
+        "time": 32.61,
+        "endTime": 38.93,
+        "text": "Comes down to this moment — every single cost"
+      },
+      {
+        "time": 40.93,
+        "endTime": 46.02,
+        "text": "The last dance, the last stand, the last breath of sand"
+      },
+      {
+        "time": 46.02,
+        "endTime": 52.51,
+        "text": "Aviendha of the Nine Valleys with a spear in her hand"
+      },
+      {
+        "time": 52.51,
+        "endTime": 58.99,
+        "text": "If this is where the Pattern ends, then let it end in flame"
+      },
+      {
+        "time": 58.99,
+        "endTime": 64.55,
+        "text": "I will dance the spears until they forget my name"
+      },
+      {
+        "time": 66.05,
+        "endTime": 71.88,
+        "text": "Dreadlords, Shadowspawn — the air itself is screaming"
+      },
+      {
+        "time": 71.88,
+        "endTime": 79.18,
+        "text": "Channeling through weaves I learned while I was dreaming"
+      },
+      {
+        "time": 79.18,
+        "endTime": 85.01,
+        "text": "Beside me Maiden sisters fight and fall and rise"
+      },
+      {
+        "time": 85.01,
+        "endTime": 92.31,
+        "text": "The Waste prepared us for this — we were born for scorching skies"
+      },
+      {
+        "time": 92.31,
+        "endTime": 98.63,
+        "text": "Rand fights his war at Shayol Ghul — I fight mine on this field"
+      },
+      {
+        "time": 98.63,
+        "endTime": 103.98,
+        "text": "An Aiel does not retreat, an Aiel does not yield"
+      },
+      {
+        "time": 105.98,
+        "endTime": 111.07,
+        "text": "The last dance, the last stand, the last breath of sand"
+      },
+      {
+        "time": 111.07,
+        "endTime": 117.55,
+        "text": "Aviendha of the Nine Valleys with a spear in her hand"
+      },
+      {
+        "time": 117.55,
+        "endTime": 124.04,
+        "text": "If this is where the Pattern ends, then let it end in flame"
+      },
+      {
+        "time": 124.04,
+        "endTime": 129.59,
+        "text": "I will dance the spears until they forget my name"
+      },
+      {
+        "time": 132.09,
+        "endTime": 139.12,
+        "text": "And when the Light returns — if the Light returns at all"
+      },
+      {
+        "time": 139.12,
+        "endTime": 146.14,
+        "text": "I want to stand in green fields and remember the fall"
+      },
+      {
+        "time": 146.14,
+        "endTime": 154.25,
+        "text": "Not as defeat, not as survival — as a choice to remain"
+      },
+      {
+        "time": 154.25,
+        "endTime": 161.27,
+        "text": "The Aiel who chose the future, who danced through the pain"
+      },
+      {
+        "time": 163.27,
+        "endTime": 170.71,
+        "text": "The dance is never over — it just changes its beat"
+      },
+      {
+        "time": 170.71,
+        "endTime": 177,
+        "text": "Far Dareis Mai, from the sand to the concrete"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["daughter-of-the-night"] = {
+  "The Bore": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 3.65,
+        "text": "I found the thread the world was hiding"
+      },
+      {
+        "time": 3.65,
+        "endTime": 6.3,
+        "text": "A pulse beneath the Pattern, shining"
+      },
+      {
+        "time": 6.3,
+        "endTime": 8.95,
+        "text": "They said the power had a ceiling"
+      },
+      {
+        "time": 8.95,
+        "endTime": 11.31,
+        "text": "I said the ceiling was a door"
+      },
+      {
+        "time": 11.31,
+        "endTime": 13.96,
+        "text": "My hands against the skin of heaven"
+      },
+      {
+        "time": 13.96,
+        "endTime": 16.31,
+        "text": "Beidomon beside me, shaking"
+      },
+      {
+        "time": 16.31,
+        "endTime": 18.67,
+        "text": "I told him we were made for more"
+      },
+      {
+        "time": 20.67,
+        "endTime": 23.19,
+        "text": "Every wall is just a question"
+      },
+      {
+        "time": 23.19,
+        "endTime": 25.44,
+        "text": "Every lock, a lack of will"
+      },
+      {
+        "time": 27.44,
+        "endTime": 31.64,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 31.64,
+        "endTime": 35.85,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 35.85,
+        "endTime": 37.81,
+        "text": "Now the world cracks at the seam"
+      },
+      {
+        "time": 37.81,
+        "endTime": 41.46,
+        "text": "And nobody remembers what it cost to be free"
+      },
+      {
+        "time": 41.46,
+        "endTime": 45.67,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 47.17,
+        "endTime": 49.82,
+        "text": "The Sharom fell like burning paper"
+      },
+      {
+        "time": 49.82,
+        "endTime": 51.88,
+        "text": "Black fire where the light had been"
+      },
+      {
+        "time": 51.88,
+        "endTime": 54.53,
+        "text": "They pointed fingers at the crater"
+      },
+      {
+        "time": 54.53,
+        "endTime": 57.47,
+        "text": "But I was staring at what opened"
+      },
+      {
+        "time": 57.47,
+        "endTime": 60.12,
+        "text": "A source of power with no equal"
+      },
+      {
+        "time": 60.12,
+        "endTime": 62.48,
+        "text": "A well that had no bottom floor"
+      },
+      {
+        "time": 62.48,
+        "endTime": 64.84,
+        "text": "They saw the shadow and the ruin"
+      },
+      {
+        "time": 64.84,
+        "endTime": 67.49,
+        "text": "I saw the thing I was searching for"
+      },
+      {
+        "time": 68.99,
+        "endTime": 71.93,
+        "text": "They blamed me for the world collapsing"
+      },
+      {
+        "time": 71.93,
+        "endTime": 74.58,
+        "text": "I blame them for their small ambition"
+      },
+      {
+        "time": 74.58,
+        "endTime": 77.82,
+        "text": "They called me monster, called me traitor"
+      },
+      {
+        "time": 77.82,
+        "endTime": 79.88,
+        "text": "Wrote my name in ash and shame"
+      },
+      {
+        "time": 79.88,
+        "endTime": 82.83,
+        "text": "But none of them had seen the other side"
+      },
+      {
+        "time": 82.83,
+        "endTime": 85.77,
+        "text": "And none of them would ever be the same"
+      },
+      {
+        "time": 87.77,
+        "endTime": 90.3,
+        "text": "Every wall is just a question"
+      },
+      {
+        "time": 90.3,
+        "endTime": 92.54,
+        "text": "Every lock, a lack of will"
+      },
+      {
+        "time": 94.54,
+        "endTime": 98.75,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 98.75,
+        "endTime": 102.95,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 102.95,
+        "endTime": 104.92,
+        "text": "Now the world cracks at the seam"
+      },
+      {
+        "time": 104.92,
+        "endTime": 108.56,
+        "text": "And nobody remembers what it cost to be free"
+      },
+      {
+        "time": 108.56,
+        "endTime": 112.77,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 115.27,
+        "endTime": 118.54,
+        "text": "They wanted safety, I wanted truth"
+      },
+      {
+        "time": 118.54,
+        "endTime": 121.49,
+        "text": "They wanted limits, I wanted proof"
+      },
+      {
+        "time": 121.49,
+        "endTime": 124.76,
+        "text": "The Bore was never the mistake they claim"
+      },
+      {
+        "time": 124.76,
+        "endTime": 128.36,
+        "text": "The mistake was building cages out of fear"
+      },
+      {
+        "time": 128.36,
+        "endTime": 131.96,
+        "text": "I offered them an ocean without chains"
+      },
+      {
+        "time": 131.96,
+        "endTime": 133.92,
+        "text": "They chose to plug their ears"
+      },
+      {
+        "time": 135.42,
+        "endTime": 138.37,
+        "text": "Now madness rides the threads of saidin"
+      },
+      {
+        "time": 138.37,
+        "endTime": 141.02,
+        "text": "The Taint a fingerprint of contact"
+      },
+      {
+        "time": 141.02,
+        "endTime": 143.67,
+        "text": "A hundred years and men will falter"
+      },
+      {
+        "time": 143.67,
+        "endTime": 146.02,
+        "text": "A thousand years and they'll forget"
+      },
+      {
+        "time": 146.02,
+        "endTime": 148.38,
+        "text": "That someone had to crack the seal"
+      },
+      {
+        "time": 148.38,
+        "endTime": 150.74,
+        "text": "Before the wheel could turn again"
+      },
+      {
+        "time": 152.74,
+        "endTime": 155.26,
+        "text": "Every wall is just a question"
+      },
+      {
+        "time": 155.26,
+        "endTime": 157.5,
+        "text": "Every lock, a lack of will"
+      },
+      {
+        "time": 157.5,
+        "endTime": 160.03,
+        "text": "Every ending holds a doorway"
+      },
+      {
+        "time": 160.03,
+        "endTime": 161.99,
+        "text": "And the door is open still"
+      },
+      {
+        "time": 163.99,
+        "endTime": 168.2,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 168.2,
+        "endTime": 172.4,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 172.4,
+        "endTime": 174.37,
+        "text": "Now the world cracks at the seam"
+      },
+      {
+        "time": 174.37,
+        "endTime": 178.01,
+        "text": "And nobody remembers what it cost to be free"
+      },
+      {
+        "time": 178.01,
+        "endTime": 182.22,
+        "text": "I drilled into the dark and the dark drilled into me"
+      },
+      {
+        "time": 184.22,
+        "endTime": 186.65,
+        "text": "I drilled into the dark"
+      },
+      {
+        "time": 186.65,
+        "endTime": 189.42,
+        "text": "And the dark drilled into me"
+      },
+      {
+        "time": 189.42,
+        "endTime": 192.19,
+        "text": "And I would do it all again"
+      },
+      {
+        "time": 192.19,
+        "endTime": 194.27,
+        "text": "The ceiling was a door"
+      },
+      {
+        "time": 194.27,
+        "endTime": 196,
+        "text": "And I walked through"
+      }
+    ]
+  },
+  "Daughter of the Night": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 3.61,
+        "text": "Mierin died in the Hall of Servants"
+      },
+      {
+        "time": 3.61,
+        "endTime": 5.65,
+        "text": "Stood before them, spoke her name"
+      },
+      {
+        "time": 5.65,
+        "endTime": 7.97,
+        "text": "Not the name my mother gave me"
+      },
+      {
+        "time": 7.97,
+        "endTime": 10.3,
+        "text": "I chose it. Daughter of the Night."
+      },
+      {
+        "time": 10.3,
+        "endTime": 12.91,
+        "text": "I wore it like a crown of black flame"
+      },
+      {
+        "time": 12.91,
+        "endTime": 15.82,
+        "text": "Let them learn what happens when you shame me"
+      },
+      {
+        "time": 17.32,
+        "endTime": 20.51,
+        "text": "They whispered traitor in the corridors"
+      },
+      {
+        "time": 20.51,
+        "endTime": 22.84,
+        "text": "They said I broke the world for him"
+      },
+      {
+        "time": 22.84,
+        "endTime": 26.03,
+        "text": "But I was boring holes through heaven's floors"
+      },
+      {
+        "time": 26.03,
+        "endTime": 28.65,
+        "text": "Before Lews Therin touched my skin"
+      },
+      {
+        "time": 28.65,
+        "endTime": 31.84,
+        "text": "I found the Dark One's prison on my own"
+      },
+      {
+        "time": 31.84,
+        "endTime": 34.75,
+        "text": "I drilled the Bore, I cracked the stone"
+      },
+      {
+        "time": 36.75,
+        "endTime": 38.41,
+        "text": "You wanted me gentle"
+      },
+      {
+        "time": 38.41,
+        "endTime": 39.91,
+        "text": "You wanted me small"
+      },
+      {
+        "time": 39.91,
+        "endTime": 41.84,
+        "text": "You wanted me grateful"
+      },
+      {
+        "time": 41.84,
+        "endTime": 43.34,
+        "text": "I wanted it all"
+      },
+      {
+        "time": 45.34,
+        "endTime": 48.39,
+        "text": "I am the night that swallows every dawn"
+      },
+      {
+        "time": 48.39,
+        "endTime": 51.15,
+        "text": "Mierin is buried, Lanfear carries on"
+      },
+      {
+        "time": 51.15,
+        "endTime": 54.2,
+        "text": "I am the night that swallows every dawn"
+      },
+      {
+        "time": 54.2,
+        "endTime": 56.96,
+        "text": "Mierin is buried, Lanfear carries on"
+      },
+      {
+        "time": 58.46,
+        "endTime": 61.08,
+        "text": "The Dark One whispered, I said yes"
+      },
+      {
+        "time": 61.08,
+        "endTime": 63.4,
+        "text": "Not from weakness, not from breaking"
+      },
+      {
+        "time": 63.4,
+        "endTime": 66.31,
+        "text": "From the fury of a woman blessed"
+      },
+      {
+        "time": 66.31,
+        "endTime": 69.21,
+        "text": "With everything except a reason"
+      },
+      {
+        "time": 69.21,
+        "endTime": 71.54,
+        "text": "To kneel before a lesser throne"
+      },
+      {
+        "time": 71.54,
+        "endTime": 73.86,
+        "text": "Ambition is the only home"
+      },
+      {
+        "time": 75.36,
+        "endTime": 77.68,
+        "text": "Lews Therin, you beautiful fool"
+      },
+      {
+        "time": 77.68,
+        "endTime": 80.59,
+        "text": "You looked at me and saw a warning"
+      },
+      {
+        "time": 80.59,
+        "endTime": 83.2,
+        "text": "I looked at you and saw a tool"
+      },
+      {
+        "time": 83.2,
+        "endTime": 85.82,
+        "text": "A stepping stone to endless morning"
+      },
+      {
+        "time": 85.82,
+        "endTime": 88.14,
+        "text": "You chose Ilyena, soft and kind"
+      },
+      {
+        "time": 88.14,
+        "endTime": 90.76,
+        "text": "I chose the power you left behind"
+      },
+      {
+        "time": 92.76,
+        "endTime": 94.26,
+        "text": "You wanted me tame"
+      },
+      {
+        "time": 94.26,
+        "endTime": 95.76,
+        "text": "You wanted me true"
+      },
+      {
+        "time": 95.76,
+        "endTime": 97.42,
+        "text": "You wanted devotion"
+      },
+      {
+        "time": 97.42,
+        "endTime": 99.08,
+        "text": "I wanted to rule"
+      },
+      {
+        "time": 101.08,
+        "endTime": 104.12,
+        "text": "I am the night that swallows every dawn"
+      },
+      {
+        "time": 104.12,
+        "endTime": 106.89,
+        "text": "Mierin is buried, Lanfear carries on"
+      },
+      {
+        "time": 106.89,
+        "endTime": 109.93,
+        "text": "I am the night that swallows every dawn"
+      },
+      {
+        "time": 109.93,
+        "endTime": 112.7,
+        "text": "Mierin is buried, Lanfear carries on"
+      },
+      {
+        "time": 115.2,
+        "endTime": 118.42,
+        "text": "Every Forsaken chose a master"
+      },
+      {
+        "time": 118.42,
+        "endTime": 119.92,
+        "text": "I chose myself"
+      },
+      {
+        "time": 119.92,
+        "endTime": 123.15,
+        "text": "They gave me a title, I gave it teeth"
+      },
+      {
+        "time": 123.15,
+        "endTime": 126.38,
+        "text": "They gave me a leash, I made it a belt"
+      },
+      {
+        "time": 126.38,
+        "endTime": 128.96,
+        "text": "Three thousand years inside the Bore"
+      },
+      {
+        "time": 128.96,
+        "endTime": 131.87,
+        "text": "Dreaming in the dark, and keeping score"
+      },
+      {
+        "time": 131.87,
+        "endTime": 134.45,
+        "text": "They thought the prison held me still"
+      },
+      {
+        "time": 134.45,
+        "endTime": 137.35,
+        "text": "It only sharpened up my will"
+      },
+      {
+        "time": 138.85,
+        "endTime": 141.76,
+        "text": "In Tel'aran'rhiod I walk like a queen"
+      },
+      {
+        "time": 141.76,
+        "endTime": 144.66,
+        "text": "Shaping the World of Dreams to my design"
+      },
+      {
+        "time": 144.66,
+        "endTime": 147.57,
+        "text": "Every sleeper feels me pass unseen"
+      },
+      {
+        "time": 147.57,
+        "endTime": 150.47,
+        "text": "Every nightmare wears a face of mine"
+      },
+      {
+        "time": 150.47,
+        "endTime": 153.67,
+        "text": "Moghedien hides, Graendal plays her games"
+      },
+      {
+        "time": 153.67,
+        "endTime": 156.57,
+        "text": "But none of them remember how to burn"
+      },
+      {
+        "time": 156.57,
+        "endTime": 159.48,
+        "text": "I set the pattern wreathed in flames"
+      },
+      {
+        "time": 159.48,
+        "endTime": 162.38,
+        "text": "And history bends at every turn"
+      },
+      {
+        "time": 164.38,
+        "endTime": 167.43,
+        "text": "I am the night that swallows every dawn"
+      },
+      {
+        "time": 167.43,
+        "endTime": 170.19,
+        "text": "Mierin is buried, Lanfear carries on"
+      },
+      {
+        "time": 170.19,
+        "endTime": 173.24,
+        "text": "I am the night that swallows every dawn"
+      },
+      {
+        "time": 173.24,
+        "endTime": 176,
+        "text": "Mierin is buried, Lanfear carries on"
+      },
+      {
+        "time": 178,
+        "endTime": 181.42,
+        "text": "They'll write my name across the sky in ash"
+      },
+      {
+        "time": 181.42,
+        "endTime": 184.84,
+        "text": "They'll speak it soft and feel the ground give way"
+      },
+      {
+        "time": 184.84,
+        "endTime": 188.26,
+        "text": "Mierin was the prayer, Lanfear is the lash"
+      },
+      {
+        "time": 188.26,
+        "endTime": 191.68,
+        "text": "The Daughter of the Night is here to stay"
+      }
+    ]
+  },
+  "You Were Mine": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 5.23,
+        "text": "Three thousand years and I still taste your name"
+      },
+      {
+        "time": 5.23,
+        "endTime": 9.47,
+        "text": "Lews Therin, I held galaxies for you"
+      },
+      {
+        "time": 9.47,
+        "endTime": 14.55,
+        "text": "I broke the sky, I bent the rules of nature"
+      },
+      {
+        "time": 14.55,
+        "endTime": 19.63,
+        "text": "You looked at me and chose somebody new"
+      },
+      {
+        "time": 19.63,
+        "endTime": 24.29,
+        "text": "You left me for a woman made of nothing"
+      },
+      {
+        "time": 24.29,
+        "endTime": 28.52,
+        "text": "You left me and I never understand"
+      },
+      {
+        "time": 30.52,
+        "endTime": 33.75,
+        "text": "Was I too bright, too sharp, too real"
+      },
+      {
+        "time": 33.75,
+        "endTime": 36.57,
+        "text": "For a man afraid to feel"
+      },
+      {
+        "time": 38.57,
+        "endTime": 43.41,
+        "text": "You were mine before the world had words for wanting"
+      },
+      {
+        "time": 43.41,
+        "endTime": 49.86,
+        "text": "Every age, every name, every life you are reborn"
+      },
+      {
+        "time": 49.86,
+        "endTime": 52.28,
+        "text": "You were mine. You were mine."
+      },
+      {
+        "time": 52.28,
+        "endTime": 57.12,
+        "text": "You were mine before the world had words for wanting"
+      },
+      {
+        "time": 58.62,
+        "endTime": 63.28,
+        "text": "I crashed your wedding like a burning star"
+      },
+      {
+        "time": 63.28,
+        "endTime": 68.36,
+        "text": "You smiled at her the way you smiled at me"
+      },
+      {
+        "time": 68.36,
+        "endTime": 73.44,
+        "text": "But softer, like you feared my kind of violence"
+      },
+      {
+        "time": 73.44,
+        "endTime": 77.67,
+        "text": "You knew me. Knew the furnace in my chest."
+      },
+      {
+        "time": 77.67,
+        "endTime": 82.75,
+        "text": "If you had stayed, we would have ruled together."
+      },
+      {
+        "time": 82.75,
+        "endTime": 87.41,
+        "text": "Instead you built a cage and called it free."
+      },
+      {
+        "time": 89.41,
+        "endTime": 94.25,
+        "text": "You were mine before the world had words for wanting"
+      },
+      {
+        "time": 94.25,
+        "endTime": 100.7,
+        "text": "Every age, every name, every life you are reborn"
+      },
+      {
+        "time": 100.7,
+        "endTime": 103.12,
+        "text": "You were mine. You were mine."
+      },
+      {
+        "time": 103.12,
+        "endTime": 107.96,
+        "text": "You were mine before the world had words for wanting"
+      },
+      {
+        "time": 110.46,
+        "endTime": 112.81,
+        "text": "I do not love you."
+      },
+      {
+        "time": 112.81,
+        "endTime": 116.1,
+        "text": "I love what we could have been."
+      },
+      {
+        "time": 116.1,
+        "endTime": 119.87,
+        "text": "The throne of two, the Pattern bent,"
+      },
+      {
+        "time": 119.87,
+        "endTime": 123.63,
+        "text": "The world remade to let us in."
+      },
+      {
+        "time": 123.63,
+        "endTime": 129.28,
+        "text": "You could have held me, changed me, kept me whole."
+      },
+      {
+        "time": 129.28,
+        "endTime": 133.98,
+        "text": "Instead you turned and doomed us both."
+      },
+      {
+        "time": 135.98,
+        "endTime": 140.82,
+        "text": "You were mine before the world had words for wanting"
+      },
+      {
+        "time": 140.82,
+        "endTime": 147.27,
+        "text": "Every age, every name, every life you are reborn"
+      },
+      {
+        "time": 147.27,
+        "endTime": 149.69,
+        "text": "You were mine. You were mine."
+      },
+      {
+        "time": 149.69,
+        "endTime": 154.53,
+        "text": "You were mine before the world had words for wanting"
+      },
+      {
+        "time": 156.53,
+        "endTime": 159.52,
+        "text": "You were mine. You were mine."
+      },
+      {
+        "time": 159.52,
+        "endTime": 164,
+        "text": "Before the world had words for wanting."
+      }
+    ]
+  },
+  "Selene": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 4.11,
+        "text": "I dressed in silk and called myself a stranger"
+      },
+      {
+        "time": 4.11,
+        "endTime": 6.27,
+        "text": "Helpless girl lost in another world"
+      },
+      {
+        "time": 6.27,
+        "endTime": 9.15,
+        "text": "He reached for me, the hero and the savior"
+      },
+      {
+        "time": 9.15,
+        "endTime": 11.54,
+        "text": "So easy when you let them feel like gods"
+      },
+      {
+        "time": 11.54,
+        "endTime": 14.66,
+        "text": "Every touch, every glance was architecture"
+      },
+      {
+        "time": 14.66,
+        "endTime": 17.05,
+        "text": "I built the trap from tenderness and lies"
+      },
+      {
+        "time": 19.05,
+        "endTime": 21.56,
+        "text": "Smile soft enough and they see what they want"
+      },
+      {
+        "time": 21.56,
+        "endTime": 23.39,
+        "text": "Cry once and they never let go"
+      },
+      {
+        "time": 25.39,
+        "endTime": 27.9,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 27.9,
+        "endTime": 30.41,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 30.41,
+        "endTime": 33.14,
+        "text": "He holds my hand and never thinks to wonder why"
+      },
+      {
+        "time": 33.14,
+        "endTime": 35.65,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 37.15,
+        "endTime": 39.55,
+        "text": "I wore the faces like a wardrobe. Sylvie."
+      },
+      {
+        "time": 39.55,
+        "endTime": 41.71,
+        "text": "Else. Keille. Names like paper masks."
+      },
+      {
+        "time": 41.71,
+        "endTime": 44.1,
+        "text": "Behind each one the Daughter of the Night"
+      },
+      {
+        "time": 44.1,
+        "endTime": 46.26,
+        "text": "Was studying the boy who held the past"
+      },
+      {
+        "time": 46.26,
+        "endTime": 49.13,
+        "text": "Lews Therin burned like fury in a palace"
+      },
+      {
+        "time": 49.13,
+        "endTime": 51.29,
+        "text": "This one burns like kindling, soft and slow"
+      },
+      {
+        "time": 53.29,
+        "endTime": 55.8,
+        "text": "Smile soft enough and they see what they want"
+      },
+      {
+        "time": 55.8,
+        "endTime": 57.63,
+        "text": "Cry once and they never let go"
+      },
+      {
+        "time": 59.63,
+        "endTime": 62.14,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 62.14,
+        "endTime": 64.65,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 64.65,
+        "endTime": 67.38,
+        "text": "He holds my hand and never thinks to wonder why"
+      },
+      {
+        "time": 67.38,
+        "endTime": 69.89,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 72.39,
+        "endTime": 75.32,
+        "text": "I walked through his dreams like I owned them"
+      },
+      {
+        "time": 75.32,
+        "endTime": 77.98,
+        "text": "Because I did. Tel'aran'rhiod is mine."
+      },
+      {
+        "time": 77.98,
+        "endTime": 80.91,
+        "text": "I shaped the world between his waking hours"
+      },
+      {
+        "time": 80.91,
+        "endTime": 83.84,
+        "text": "I bent the shadows into shapes he'd trust"
+      },
+      {
+        "time": 83.84,
+        "endTime": 87.03,
+        "text": "And when he reached for comfort in the darkness"
+      },
+      {
+        "time": 87.03,
+        "endTime": 89.96,
+        "text": "He was reaching into me, into my dust"
+      },
+      {
+        "time": 91.46,
+        "endTime": 94.1,
+        "text": "He thinks the final battle is with Shai'tan"
+      },
+      {
+        "time": 94.1,
+        "endTime": 96.49,
+        "text": "He thinks the Dark One is the only war"
+      },
+      {
+        "time": 96.49,
+        "endTime": 98.89,
+        "text": "But I was never loyal to the Shadow"
+      },
+      {
+        "time": 98.89,
+        "endTime": 101.29,
+        "text": "I was loyal to myself and nothing more"
+      },
+      {
+        "time": 101.29,
+        "endTime": 103.68,
+        "text": "When the ashes cool I will be standing"
+      },
+      {
+        "time": 103.68,
+        "endTime": 106.32,
+        "text": "And every knee that bends will bend my way"
+      },
+      {
+        "time": 108.32,
+        "endTime": 111.42,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 111.42,
+        "endTime": 114.52,
+        "text": "I am Selene, I am the beautiful lie"
+      },
+      {
+        "time": 114.52,
+        "endTime": 117.9,
+        "text": "He holds my hand and never thinks to wonder why"
+      },
+      {
+        "time": 117.9,
+        "endTime": 119.4,
+        "text": "I am Selene"
+      },
+      {
+        "time": 119.4,
+        "endTime": 121.37,
+        "text": "I am the beautiful lie"
+      }
+    ]
+  },
+  "The Docks": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 5.81,
+        "text": "Kadere told me everything. He told me"
+      },
+      {
+        "time": 5.81,
+        "endTime": 10.18,
+        "text": "how you touched her in the frozen waste"
+      },
+      {
+        "time": 10.18,
+        "endTime": 14.11,
+        "text": "Aviendha. Say her name and watch me"
+      },
+      {
+        "time": 14.11,
+        "endTime": 18.05,
+        "text": "watch the calm drain out of Lanfear's face"
+      },
+      {
+        "time": 18.05,
+        "endTime": 22.86,
+        "text": "Three thousand years I waited in the nothing"
+      },
+      {
+        "time": 22.86,
+        "endTime": 27.23,
+        "text": "Three thousand years of dreamless frozen black"
+      },
+      {
+        "time": 27.23,
+        "endTime": 32.03,
+        "text": "I clawed my way back to the world for you"
+      },
+      {
+        "time": 32.03,
+        "endTime": 35.53,
+        "text": "and this is what you give me. This."
+      },
+      {
+        "time": 37.53,
+        "endTime": 40.86,
+        "text": "You will not look away from me"
+      },
+      {
+        "time": 40.86,
+        "endTime": 43.36,
+        "text": "You will not look away"
+      },
+      {
+        "time": 45.36,
+        "endTime": 52.02,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 52.02,
+        "endTime": 58.68,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 58.68,
+        "endTime": 62.84,
+        "text": "I gave you the stars, you gave me a grave"
+      },
+      {
+        "time": 62.84,
+        "endTime": 69.51,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 71.01,
+        "endTime": 75.38,
+        "text": "Egwene screams but I am past the hearing"
+      },
+      {
+        "time": 75.38,
+        "endTime": 79.31,
+        "text": "I am past the mercy past the grace"
+      },
+      {
+        "time": 79.31,
+        "endTime": 84.56,
+        "text": "I held the world inside my open palms for you"
+      },
+      {
+        "time": 84.56,
+        "endTime": 88.49,
+        "text": "and you chose another woman's face"
+      },
+      {
+        "time": 88.49,
+        "endTime": 93.3,
+        "text": "You cannot even kill me. That's the cruelest."
+      },
+      {
+        "time": 93.3,
+        "endTime": 97.67,
+        "text": "You stand there with your sword and still you pause."
+      },
+      {
+        "time": 97.67,
+        "endTime": 102.04,
+        "text": "A man who will not strike a woman down"
+      },
+      {
+        "time": 102.04,
+        "endTime": 106.41,
+        "text": "even when she is the earthquake's cause"
+      },
+      {
+        "time": 108.41,
+        "endTime": 111.74,
+        "text": "You will not look away from me"
+      },
+      {
+        "time": 111.74,
+        "endTime": 114.24,
+        "text": "You will not look away"
+      },
+      {
+        "time": 116.24,
+        "endTime": 122.9,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 122.9,
+        "endTime": 129.56,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 129.56,
+        "endTime": 133.72,
+        "text": "I gave you the stars, you gave me a grave"
+      },
+      {
+        "time": 133.72,
+        "endTime": 140.38,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 142.88,
+        "endTime": 147.26,
+        "text": "If I cannot have you, no one will"
+      },
+      {
+        "time": 147.26,
+        "endTime": 151.63,
+        "text": "If I cannot hold you, I will break"
+      },
+      {
+        "time": 151.63,
+        "endTime": 156,
+        "text": "the Pattern, the Wheel, the sky itself"
+      },
+      {
+        "time": 156,
+        "endTime": 160.85,
+        "text": "until you feel the weight of my mistake"
+      },
+      {
+        "time": 162.85,
+        "endTime": 169.52,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 169.52,
+        "endTime": 176.18,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      },
+      {
+        "time": 176.18,
+        "endTime": 180.34,
+        "text": "I gave you the stars, you gave me a grave"
+      },
+      {
+        "time": 180.34,
+        "endTime": 187,
+        "text": "Burn it down, burn it all, everything you touched betrays me"
+      }
+    ]
+  },
+  "Into the Doorway": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.24,
+        "text": "Moiraine. That small woman with her steady hands."
+      },
+      {
+        "time": 6.24,
+        "endTime": 11.48,
+        "text": "She grabbed me from behind, she held me tight."
+      },
+      {
+        "time": 11.48,
+        "endTime": 16.73,
+        "text": "We fell together through the twisted doorway"
+      },
+      {
+        "time": 16.73,
+        "endTime": 21.97,
+        "text": "and the world above us folded shut like night."
+      },
+      {
+        "time": 21.97,
+        "endTime": 27.69,
+        "text": "I was winning. I was burning everything."
+      },
+      {
+        "time": 27.69,
+        "endTime": 32.45,
+        "text": "Then her arms around my waist like iron."
+      },
+      {
+        "time": 32.45,
+        "endTime": 38.17,
+        "text": "Smaller than me. Stronger than anything I feel."
+      },
+      {
+        "time": 39.67,
+        "endTime": 44.44,
+        "text": "I had Rand's little farm boy by the throat,"
+      },
+      {
+        "time": 44.44,
+        "endTime": 49.2,
+        "text": "had the world bending underneath my will."
+      },
+      {
+        "time": 49.2,
+        "endTime": 54.92,
+        "text": "I was Lanfear. I was first among the Chosen."
+      },
+      {
+        "time": 54.92,
+        "endTime": 60.64,
+        "text": "I loved Lews Therin before the world was torn."
+      },
+      {
+        "time": 60.64,
+        "endTime": 67.31,
+        "text": "Three thousand years of wanting, three thousand years of fury,"
+      },
+      {
+        "time": 67.31,
+        "endTime": 73.51,
+        "text": "and this shepherd boy won't even say my name at dawn."
+      },
+      {
+        "time": 75.51,
+        "endTime": 77.78,
+        "text": "Falling is not dying"
+      },
+      {
+        "time": 77.78,
+        "endTime": 81.86,
+        "text": "Falling is forgetting how to land"
+      },
+      {
+        "time": 83.86,
+        "endTime": 90.22,
+        "text": "Through the door, through the dark, through the silence I am falling"
+      },
+      {
+        "time": 90.22,
+        "endTime": 96.57,
+        "text": "Through the door, through the dark, through the silence I am falling"
+      },
+      {
+        "time": 96.57,
+        "endTime": 101.11,
+        "text": "The Aelfinn taste my power like a feast"
+      },
+      {
+        "time": 101.11,
+        "endTime": 105.65,
+        "text": "Through the door, through the dark, I keep falling"
+      },
+      {
+        "time": 107.15,
+        "endTime": 111.44,
+        "text": "The Eelfinn fed on what I carried,"
+      },
+      {
+        "time": 111.44,
+        "endTime": 116.2,
+        "text": "drained the channel dry, the river gone."
+      },
+      {
+        "time": 116.2,
+        "endTime": 120.49,
+        "text": "They peeled me open like a fruit,"
+      },
+      {
+        "time": 120.49,
+        "endTime": 124.78,
+        "text": "took everything that made me strong."
+      },
+      {
+        "time": 124.78,
+        "endTime": 129.07,
+        "text": "My face, my name, my thread of power,"
+      },
+      {
+        "time": 129.07,
+        "endTime": 133.83,
+        "text": "and left me humming someone else's song."
+      },
+      {
+        "time": 135.33,
+        "endTime": 139.62,
+        "text": "Moridin came like death in velvet,"
+      },
+      {
+        "time": 139.62,
+        "endTime": 144.39,
+        "text": "pulled me from the tower of spirals,"
+      },
+      {
+        "time": 144.39,
+        "endTime": 148.68,
+        "text": "laid me on a table, cold and black."
+      },
+      {
+        "time": 148.68,
+        "endTime": 153.44,
+        "text": "Then killed me. Clean. A mercy killing."
+      },
+      {
+        "time": 153.44,
+        "endTime": 157.73,
+        "text": "The Dark One caught me at the bottom,"
+      },
+      {
+        "time": 157.73,
+        "endTime": 164.88,
+        "text": "stitched me up and called me Cyndane. Called me Last Chance."
+      },
+      {
+        "time": 166.88,
+        "endTime": 169.15,
+        "text": "Falling is not dying"
+      },
+      {
+        "time": 169.15,
+        "endTime": 173.23,
+        "text": "Falling is forgetting how to land"
+      },
+      {
+        "time": 175.23,
+        "endTime": 181.59,
+        "text": "Through the door, through the dark, through the silence I am falling"
+      },
+      {
+        "time": 181.59,
+        "endTime": 187.94,
+        "text": "Through the door, through the dark, through the silence I am falling"
+      },
+      {
+        "time": 187.94,
+        "endTime": 192.48,
+        "text": "The Aelfinn taste my power like a feast"
+      },
+      {
+        "time": 192.48,
+        "endTime": 197.02,
+        "text": "Through the door, through the dark, I keep falling"
+      },
+      {
+        "time": 198.52,
+        "endTime": 203.76,
+        "text": "I remember opening the Bore itself."
+      },
+      {
+        "time": 203.76,
+        "endTime": 209,
+        "text": "I drilled into the Dark One's prison"
+      },
+      {
+        "time": 209,
+        "endTime": 214.72,
+        "text": "because Lews Therin loved somebody else."
+      },
+      {
+        "time": 214.72,
+        "endTime": 218.54,
+        "text": "I broke the world for jealousy,"
+      },
+      {
+        "time": 218.54,
+        "endTime": 223.78,
+        "text": "cracked the age like an egg against the floor."
+      },
+      {
+        "time": 223.78,
+        "endTime": 229.02,
+        "text": "And I would do it all again tomorrow"
+      },
+      {
+        "time": 229.02,
+        "endTime": 235.21,
+        "text": "just to stand beside him one more time before the door."
+      },
+      {
+        "time": 237.21,
+        "endTime": 243.57,
+        "text": "Through the door, through the dark, through the silence I am falling"
+      },
+      {
+        "time": 243.57,
+        "endTime": 249.92,
+        "text": "Through the door, through the dark, through the silence I am falling"
+      },
+      {
+        "time": 249.92,
+        "endTime": 254.46,
+        "text": "The Aelfinn taste my power like a feast"
+      },
+      {
+        "time": 254.46,
+        "endTime": 259,
+        "text": "Through the door, through the dark, I keep falling"
+      }
+    ]
+  },
+  "Last Chance": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 4.04,
+        "text": "Cyndane. Last chance. That is what they call me now."
+      },
+      {
+        "time": 4.04,
+        "endTime": 6.52,
+        "text": "Smaller body. Weaker hands. The same"
+      },
+      {
+        "time": 6.52,
+        "endTime": 9.28,
+        "text": "hunger underneath the borrowed skin."
+      },
+      {
+        "time": 9.28,
+        "endTime": 12.04,
+        "text": "They think the fire dimmed. They think I'm tame."
+      },
+      {
+        "time": 12.04,
+        "endTime": 15.08,
+        "text": "Moridin holds my mindtrap in his pocket."
+      },
+      {
+        "time": 15.08,
+        "endTime": 17.84,
+        "text": "Every channel burns against the leash."
+      },
+      {
+        "time": 17.84,
+        "endTime": 21.15,
+        "text": "I smile the way a cornered animal"
+      },
+      {
+        "time": 21.15,
+        "endTime": 23.91,
+        "text": "bares its teeth before it starts to teach."
+      },
+      {
+        "time": 25.91,
+        "endTime": 28.28,
+        "text": "Diminished is not defeated"
+      },
+      {
+        "time": 28.28,
+        "endTime": 29.78,
+        "text": "Smaller is not gone"
+      },
+      {
+        "time": 31.78,
+        "endTime": 35.2,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 35.2,
+        "endTime": 38.61,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 38.61,
+        "endTime": 40.98,
+        "text": "Break me down, drain me dry, strip me bare"
+      },
+      {
+        "time": 40.98,
+        "endTime": 44.4,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 45.9,
+        "endTime": 48.66,
+        "text": "Graendal looks at me and does not see it."
+      },
+      {
+        "time": 48.66,
+        "endTime": 50.87,
+        "text": "Aran'gar knows but does not say."
+      },
+      {
+        "time": 50.87,
+        "endTime": 53.9,
+        "text": "The Forsaken whisper, was she always this."
+      },
+      {
+        "time": 53.9,
+        "endTime": 56.66,
+        "text": "I was the strongest woman of the Age."
+      },
+      {
+        "time": 56.66,
+        "endTime": 59.7,
+        "text": "I drilled the Bore when no one else would dare."
+      },
+      {
+        "time": 59.7,
+        "endTime": 63.01,
+        "text": "I touched the Dark One's prison, felt it give."
+      },
+      {
+        "time": 63.01,
+        "endTime": 66.05,
+        "text": "They owe their war to me, their second lives."
+      },
+      {
+        "time": 66.05,
+        "endTime": 68.81,
+        "text": "And still they talk as if I don't exist."
+      },
+      {
+        "time": 70.81,
+        "endTime": 73.18,
+        "text": "Diminished is not defeated"
+      },
+      {
+        "time": 73.18,
+        "endTime": 74.68,
+        "text": "Smaller is not gone"
+      },
+      {
+        "time": 76.68,
+        "endTime": 80.1,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 80.1,
+        "endTime": 83.51,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 83.51,
+        "endTime": 85.88,
+        "text": "Break me down, drain me dry, strip me bare"
+      },
+      {
+        "time": 85.88,
+        "endTime": 89.3,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 90.8,
+        "endTime": 93.56,
+        "text": "Rand greets me as Mierin in his dreamshard."
+      },
+      {
+        "time": 93.56,
+        "endTime": 96.04,
+        "text": "Speaks my old name like he means no harm."
+      },
+      {
+        "time": 96.04,
+        "endTime": 99.08,
+        "text": "I try the damsel act, the helpless weeping."
+      },
+      {
+        "time": 99.08,
+        "endTime": 101.56,
+        "text": "He sees through it. Tells me what I am."
+      },
+      {
+        "time": 101.56,
+        "endTime": 104.6,
+        "text": "He stands there with that calm I cannot shatter."
+      },
+      {
+        "time": 104.6,
+        "endTime": 107.08,
+        "text": "Light around him, steady as the dawn."
+      },
+      {
+        "time": 107.08,
+        "endTime": 110.12,
+        "text": "I wanted him to flinch. I wanted fury."
+      },
+      {
+        "time": 110.12,
+        "endTime": 112.88,
+        "text": "He just looked at me and I was drawn."
+      },
+      {
+        "time": 115.38,
+        "endTime": 118.45,
+        "text": "He said he never loved me. Not once."
+      },
+      {
+        "time": 118.45,
+        "endTime": 121.52,
+        "text": "Said what he felt for Mierin was not love."
+      },
+      {
+        "time": 121.52,
+        "endTime": 124.58,
+        "text": "Said he learned to love with Ilyena."
+      },
+      {
+        "time": 124.58,
+        "endTime": 127.65,
+        "text": "I stood there with no answer, just the blood"
+      },
+      {
+        "time": 127.65,
+        "endTime": 130.72,
+        "text": "pounding in a body I did not choose."
+      },
+      {
+        "time": 130.72,
+        "endTime": 134.09,
+        "text": "Three thousand years I carried him inside me,"
+      },
+      {
+        "time": 134.09,
+        "endTime": 137.16,
+        "text": "a splinter made of longing and of rage."
+      },
+      {
+        "time": 137.16,
+        "endTime": 140.23,
+        "text": "He put it down like setting down a stone."
+      },
+      {
+        "time": 140.23,
+        "endTime": 143.29,
+        "text": "I could not even make him turn the page."
+      },
+      {
+        "time": 145.29,
+        "endTime": 147.66,
+        "text": "Diminished is not defeated"
+      },
+      {
+        "time": 147.66,
+        "endTime": 149.16,
+        "text": "Smaller is not gone"
+      },
+      {
+        "time": 151.16,
+        "endTime": 154.58,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 154.58,
+        "endTime": 158,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 158,
+        "endTime": 160.36,
+        "text": "Break me down, drain me dry, strip me bare"
+      },
+      {
+        "time": 160.36,
+        "endTime": 163.78,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 165.28,
+        "endTime": 168.32,
+        "text": "The Last Battle comes. The sky is breaking."
+      },
+      {
+        "time": 168.32,
+        "endTime": 171.35,
+        "text": "Every Forsaken scrambles for a throne."
+      },
+      {
+        "time": 171.35,
+        "endTime": 174.11,
+        "text": "Moridin wants oblivion for all things."
+      },
+      {
+        "time": 174.11,
+        "endTime": 177.15,
+        "text": "I just want something I can call my own."
+      },
+      {
+        "time": 177.15,
+        "endTime": 180.46,
+        "text": "They gave me back a life I never asked for."
+      },
+      {
+        "time": 180.46,
+        "endTime": 182.95,
+        "text": "Smaller frame but still the same old fire."
+      },
+      {
+        "time": 182.95,
+        "endTime": 185.71,
+        "text": "If this body is the cage they built me,"
+      },
+      {
+        "time": 185.71,
+        "endTime": 188.19,
+        "text": "I will be the blaze inside the wire."
+      },
+      {
+        "time": 190.19,
+        "endTime": 193.61,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 193.61,
+        "endTime": 197.03,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 197.03,
+        "endTime": 199.4,
+        "text": "Break me down, drain me dry, strip me bare"
+      },
+      {
+        "time": 199.4,
+        "endTime": 202.81,
+        "text": "I am less than I was but I am more than enough"
+      },
+      {
+        "time": 204.81,
+        "endTime": 206.31,
+        "text": "Cyndane. Last chance."
+      },
+      {
+        "time": 206.31,
+        "endTime": 210.21,
+        "text": "They named me right without knowing what it means."
+      },
+      {
+        "time": 210.21,
+        "endTime": 212.48,
+        "text": "A last chance is still a chance."
+      },
+      {
+        "time": 212.48,
+        "endTime": 214.76,
+        "text": "A last chance is still a chance."
+      }
+    ]
+  },
+  "The Dream That Ate the Dreamer": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 4.27,
+        "text": "Perrin's hands around my neck feel honest."
+      },
+      {
+        "time": 4.27,
+        "endTime": 8.51,
+        "text": "The first honest thing to touch me in three thousand years."
+      },
+      {
+        "time": 8.51,
+        "endTime": 12.43,
+        "text": "Tel'aran'rhiod dissolves around the edges"
+      },
+      {
+        "time": 12.43,
+        "endTime": 16.68,
+        "text": "and my body shifts from Lanfear back to what I fear."
+      },
+      {
+        "time": 16.68,
+        "endTime": 20.6,
+        "text": "Cyndane in death. The small one. The diminished."
+      },
+      {
+        "time": 20.6,
+        "endTime": 25.17,
+        "text": "The dream that ate the dreamer. The spell that spelled itself."
+      },
+      {
+        "time": 27.17,
+        "endTime": 30.28,
+        "text": "What did I want. What did I really want."
+      },
+      {
+        "time": 30.28,
+        "endTime": 33.08,
+        "text": "Was it him. Or was it just the throne."
+      },
+      {
+        "time": 35.08,
+        "endTime": 39.13,
+        "text": "I wanted to be chosen, I wanted to be seen"
+      },
+      {
+        "time": 39.13,
+        "endTime": 44.1,
+        "text": "But the girl who drilled the bore was always standing in between"
+      },
+      {
+        "time": 44.1,
+        "endTime": 48.15,
+        "text": "I wanted to be chosen, I wanted to be seen"
+      },
+      {
+        "time": 49.65,
+        "endTime": 52.92,
+        "text": "Mierin at the Collam Daan, so brilliant"
+      },
+      {
+        "time": 52.92,
+        "endTime": 56.18,
+        "text": "so hungry for a name that never came."
+      },
+      {
+        "time": 56.18,
+        "endTime": 59.77,
+        "text": "I told myself it was about the power."
+      },
+      {
+        "time": 59.77,
+        "endTime": 63.04,
+        "text": "I told myself it was about the throne."
+      },
+      {
+        "time": 63.04,
+        "endTime": 68.59,
+        "text": "But underneath every mask, every scheme, every fury"
+      },
+      {
+        "time": 68.59,
+        "endTime": 72.19,
+        "text": "was a woman terrified of being alone."
+      },
+      {
+        "time": 74.19,
+        "endTime": 78.23,
+        "text": "I wanted to be chosen, I wanted to be seen"
+      },
+      {
+        "time": 78.23,
+        "endTime": 83.21,
+        "text": "But the girl who drilled the bore was always standing in between"
+      },
+      {
+        "time": 83.21,
+        "endTime": 87.25,
+        "text": "I wanted to be chosen, I wanted to be seen"
+      },
+      {
+        "time": 88.75,
+        "endTime": 93.65,
+        "text": "I held the Choedan Kal and felt the world bow down beneath me."
+      },
+      {
+        "time": 93.65,
+        "endTime": 97.25,
+        "text": "I could have burned the Pattern thread by thread."
+      },
+      {
+        "time": 97.25,
+        "endTime": 102.15,
+        "text": "But what I wanted was for him to turn around and need me."
+      },
+      {
+        "time": 102.15,
+        "endTime": 106.72,
+        "text": "To hear him say my name the way he said it to the dead."
+      },
+      {
+        "time": 106.72,
+        "endTime": 111.29,
+        "text": "Ilyena. Always Ilyena. Her ghost between the sheets."
+      },
+      {
+        "time": 111.29,
+        "endTime": 117.17,
+        "text": "I wore her face once, wore her smile, I tried to be the shape he loved."
+      },
+      {
+        "time": 117.17,
+        "endTime": 122.4,
+        "text": "But the mirror always cracked and the mask was never enough."
+      },
+      {
+        "time": 124.9,
+        "endTime": 126.71,
+        "text": "Daughter of the Night."
+      },
+      {
+        "time": 126.71,
+        "endTime": 130.34,
+        "text": "Moonhunter. Forsaken. Chosen. Cyndane."
+      },
+      {
+        "time": 130.34,
+        "endTime": 133.61,
+        "text": "So many names for a woman"
+      },
+      {
+        "time": 133.61,
+        "endTime": 136.51,
+        "text": "who never found the one that fit."
+      },
+      {
+        "time": 136.51,
+        "endTime": 141.96,
+        "text": "I touched the Dark One's hand and called it partnership."
+      },
+      {
+        "time": 141.96,
+        "endTime": 146.31,
+        "text": "I touched Lews Therin's face and called it love."
+      },
+      {
+        "time": 146.31,
+        "endTime": 149.22,
+        "text": "But the dark does not have partners"
+      },
+      {
+        "time": 149.22,
+        "endTime": 151.76,
+        "text": "and the dead do not look up."
+      },
+      {
+        "time": 153.26,
+        "endTime": 157.18,
+        "text": "In the Pit of Doom I made my final offer."
+      },
+      {
+        "time": 157.18,
+        "endTime": 161.1,
+        "text": "He looked at me the way you look through windows,"
+      },
+      {
+        "time": 161.1,
+        "endTime": 165.34,
+        "text": "the way you look at weather, the way you look at rain."
+      },
+      {
+        "time": 165.34,
+        "endTime": 169.26,
+        "text": "Not cruel. Not angry. Something worse than either."
+      },
+      {
+        "time": 169.26,
+        "endTime": 172.85,
+        "text": "He looked at me like I had never been."
+      },
+      {
+        "time": 172.85,
+        "endTime": 177.1,
+        "text": "And I understood at last what I'd been running from,"
+      },
+      {
+        "time": 177.1,
+        "endTime": 181.02,
+        "text": "that the bore I drilled was always drilling in."
+      },
+      {
+        "time": 183.02,
+        "endTime": 187.07,
+        "text": "I wanted to be chosen, I wanted to be seen"
+      },
+      {
+        "time": 187.07,
+        "endTime": 192.04,
+        "text": "But the girl who drilled the bore was always standing in between"
+      },
+      {
+        "time": 192.04,
+        "endTime": 196.09,
+        "text": "I wanted to be chosen, I wanted to be seen"
+      },
+      {
+        "time": 198.09,
+        "endTime": 203.47,
+        "text": "The dream that ate the dreamer, the spell that spelled itself"
+      },
+      {
+        "time": 203.47,
+        "endTime": 206.16,
+        "text": "I wanted to be chosen"
+      },
+      {
+        "time": 206.16,
+        "endTime": 210,
+        "text": "but I was only ever the machine"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["the-gleemans-tale"] = {
+  "The Great Game": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 13.92,
+        "text": "Every throne room is a chessboard, and I learned the moves in blood"
+      },
+      {
+        "time": 13.92,
+        "endTime": 25.4,
+        "text": "Whispering behind the curtain while the foolish played at flood"
+      },
+      {
+        "time": 25.4,
+        "endTime": 36.88,
+        "text": "I could topple any tower with a rumor and a smile"
+      },
+      {
+        "time": 36.88,
+        "endTime": 46.92,
+        "text": "Court-bard in the shadows, I was poison all the while"
+      },
+      {
+        "time": 48.92,
+        "endTime": 57.12,
+        "text": "The Great Game never ends, it only changes hands"
+      },
+      {
+        "time": 57.12,
+        "endTime": 66.69,
+        "text": "The knives stay sharp in Cairhien, the silk conceals the plans"
+      },
+      {
+        "time": 66.69,
+        "endTime": 75.58,
+        "text": "I played it like a master, I played it like a fool"
+      },
+      {
+        "time": 75.58,
+        "endTime": 85.83,
+        "text": "The Game does not forgive you, the Game becomes your rule"
+      },
+      {
+        "time": 87.33,
+        "endTime": 98.09,
+        "text": "Lords and ladies leaning close to hear the stories that I spin"
+      },
+      {
+        "time": 98.09,
+        "endTime": 107.42,
+        "text": "Never once suspecting that the gleeman plays to win"
+      },
+      {
+        "time": 107.42,
+        "endTime": 118.18,
+        "text": "I have moved the pieces, I have watched the houses fall"
+      },
+      {
+        "time": 118.18,
+        "endTime": 128.23,
+        "text": "And the cruelest part of Daes Dae'mar, I remember all"
+      },
+      {
+        "time": 130.73,
+        "endTime": 141.89,
+        "text": "They think a gleeman is a beggar with a pretty voice"
+      },
+      {
+        "time": 141.89,
+        "endTime": 153.05,
+        "text": "They never see the calculations underneath the choice"
+      },
+      {
+        "time": 155.05,
+        "endTime": 165.18,
+        "text": "The Great Game never ends, it only learns your name"
+      },
+      {
+        "time": 165.18,
+        "endTime": 177,
+        "text": "And every player swears they quit, then plays again the same"
+      }
+    ]
+  },
+  "Owyn": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.94,
+        "text": "They found you in a farmhouse with the Power burning bright"
+      },
+      {
+        "time": 10.94,
+        "endTime": 19.46,
+        "text": "My nephew, my own blood, they came for you at night"
+      },
+      {
+        "time": 19.46,
+        "endTime": 29.41,
+        "text": "The Aes Sedai were gentle in the way a blade is clean"
+      },
+      {
+        "time": 29.41,
+        "endTime": 40.77,
+        "text": "They severed what was sacred and they called it quarantine"
+      },
+      {
+        "time": 42.77,
+        "endTime": 51.56,
+        "text": "Owyn, I was not there when they cut the light from you"
+      },
+      {
+        "time": 51.56,
+        "endTime": 59.68,
+        "text": "Owyn, I was playing courts while your world fell through"
+      },
+      {
+        "time": 59.68,
+        "endTime": 69.82,
+        "text": "A gleeman has a thousand tales but none of them explain"
+      },
+      {
+        "time": 69.82,
+        "endTime": 78.61,
+        "text": "How I let my brother's son die howling in the rain"
+      },
+      {
+        "time": 80.11,
+        "endTime": 89.35,
+        "text": "They said you wandered after, hollow-eyed and thin"
+      },
+      {
+        "time": 89.35,
+        "endTime": 100,
+        "text": "That the thing they call gentling leaves a silence deep within"
+      },
+      {
+        "time": 100,
+        "endTime": 111.36,
+        "text": "You stopped eating, stopped sleeping, stopped knowing who you were"
+      },
+      {
+        "time": 111.36,
+        "endTime": 121.3,
+        "text": "And I was tuning strings in Caemlyn, polishing my blur"
+      },
+      {
+        "time": 123.8,
+        "endTime": 134.85,
+        "text": "I have killed a king for less than what they did to you"
+      },
+      {
+        "time": 134.85,
+        "endTime": 148.26,
+        "text": "But the White Tower is not a man, there is no throat to run steel through"
+      },
+      {
+        "time": 150.26,
+        "endTime": 163.63,
+        "text": "Owyn, every story that I tell is half apology"
+      },
+      {
+        "time": 163.63,
+        "endTime": 177,
+        "text": "The other half is fury that I buried under melody"
+      }
+    ]
+  },
+  "The Gleeman's Cloak": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 13.35,
+        "text": "A hundred colored patches stitched from every road I walked"
+      },
+      {
+        "time": 13.35,
+        "endTime": 22.96,
+        "text": "Each one is a city where I sang and where I talked"
+      },
+      {
+        "time": 22.96,
+        "endTime": 33.26,
+        "text": "This cloak is not a costume, it is cartography of scars"
+      },
+      {
+        "time": 33.26,
+        "endTime": 44.92,
+        "text": "Every thread a tavern, every seam a night beneath the stars"
+      },
+      {
+        "time": 46.92,
+        "endTime": 55.42,
+        "text": "The cloak is all I carry, the cloak is all I own"
+      },
+      {
+        "time": 55.42,
+        "endTime": 64.57,
+        "text": "A gleeman's life is borrowed, you never quite go home"
+      },
+      {
+        "time": 64.57,
+        "endTime": 73.72,
+        "text": "I wear the road like armor and the stories like a shield"
+      },
+      {
+        "time": 73.72,
+        "endTime": 83.53,
+        "text": "Every patch a promise that I made and never sealed"
+      },
+      {
+        "time": 85.03,
+        "endTime": 94.64,
+        "text": "There is Tear in the crimson, there is Illian in the gold"
+      },
+      {
+        "time": 94.64,
+        "endTime": 104.24,
+        "text": "Cairhien gray where I was young and Andor where I grew old"
+      },
+      {
+        "time": 104.24,
+        "endTime": 115.23,
+        "text": "A man who carries everything eventually carries none"
+      },
+      {
+        "time": 115.23,
+        "endTime": 126.21,
+        "text": "And a gleeman with a hundred tales is still a man who runs"
+      },
+      {
+        "time": 128.71,
+        "endTime": 139.38,
+        "text": "They clap and throw their coppers, they forget me by the dawn"
+      },
+      {
+        "time": 139.38,
+        "endTime": 151.58,
+        "text": "But the cloak remembers every stage that I have stood upon"
+      },
+      {
+        "time": 153.58,
+        "endTime": 164.08,
+        "text": "Fold me in the patches when the final story ends"
+      },
+      {
+        "time": 164.08,
+        "endTime": 177,
+        "text": "Let the road be what receives me, I was never one for friends"
+      }
+    ]
+  },
+  "Morgase": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.33,
+        "text": "You were already queen when I first played your court"
+      },
+      {
+        "time": 9.33,
+        "endTime": 18.35,
+        "text": "A lion throne, a copper crown, a woman no one taught"
+      },
+      {
+        "time": 18.35,
+        "endTime": 28.07,
+        "text": "I should have kept my distance, I was court-bard, nothing more"
+      },
+      {
+        "time": 28.07,
+        "endTime": 39.18,
+        "text": "But you looked at me like music was the only honest door"
+      },
+      {
+        "time": 41.18,
+        "endTime": 49.11,
+        "text": "Morgase, I left you in the night without a word"
+      },
+      {
+        "time": 49.11,
+        "endTime": 58.37,
+        "text": "I vanished like a verse from a ballad no one heard"
+      },
+      {
+        "time": 58.37,
+        "endTime": 68.94,
+        "text": "A gleeman loves in whispers and a queen deserves a roar"
+      },
+      {
+        "time": 68.94,
+        "endTime": 78.2,
+        "text": "I gave you all the quiet and then walked out through the door"
+      },
+      {
+        "time": 79.7,
+        "endTime": 90.8,
+        "text": "They say Compulsion took you after, and a man named Gaebril"
+      },
+      {
+        "time": 90.8,
+        "endTime": 101.91,
+        "text": "Poured his poison in the throne room where we once were standing still"
+      },
+      {
+        "time": 101.91,
+        "endTime": 113.02,
+        "text": "I was halfway to the Waste before I learned what he had done"
+      },
+      {
+        "time": 113.02,
+        "endTime": 124.82,
+        "text": "And the rage in me was useless, I was already on the run"
+      },
+      {
+        "time": 127.32,
+        "endTime": 138.12,
+        "text": "The honest truth is uglier than any tale I spin"
+      },
+      {
+        "time": 138.12,
+        "endTime": 149.68,
+        "text": "I left because I loved you and I knew I could not win"
+      },
+      {
+        "time": 151.68,
+        "endTime": 163.12,
+        "text": "Morgase, if stories could rebuild what running tears apart"
+      },
+      {
+        "time": 163.12,
+        "endTime": 177,
+        "text": "I would write you every ballad I have memorized by heart"
+      }
+    ]
+  },
+  "Knives in the Dark": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.26,
+        "text": "I killed a king in his own hall with nothing but a blade"
+      },
+      {
+        "time": 11.26,
+        "endTime": 21.51,
+        "text": "Not a soldier, not an assassin, just a gleeman unpaid"
+      },
+      {
+        "time": 21.51,
+        "endTime": 31.77,
+        "text": "He deserved it, that I promise, though the law would not agree"
+      },
+      {
+        "time": 31.77,
+        "endTime": 42.03,
+        "text": "And the blood across my knuckles was the first truth I set free"
+      },
+      {
+        "time": 43.53,
+        "endTime": 53.1,
+        "text": "People think a gleeman juggles, flips, and tells his jokes"
+      },
+      {
+        "time": 53.1,
+        "endTime": 64.04,
+        "text": "They forget we learn the target, every gap between the cloaks"
+      },
+      {
+        "time": 64.04,
+        "endTime": 74.3,
+        "text": "I can put a knife through candlelight at forty paces clean"
+      },
+      {
+        "time": 74.3,
+        "endTime": 85.24,
+        "text": "And I learned to throw at twelve years old in alleys no one seen"
+      },
+      {
+        "time": 87.24,
+        "endTime": 95.05,
+        "text": "Knives in the dark, that is how a gleeman fights"
+      },
+      {
+        "time": 95.05,
+        "endTime": 104.82,
+        "text": "Not with honor, not with glory, just precision and the night"
+      },
+      {
+        "time": 104.82,
+        "endTime": 114.59,
+        "text": "I am older now, my hands are stiff, the aim is not as true"
+      },
+      {
+        "time": 114.59,
+        "endTime": 125.66,
+        "text": "But I still carry six blades hidden, and I know what they can do"
+      },
+      {
+        "time": 128.16,
+        "endTime": 140.32,
+        "text": "The boy from Whitebridge wanted fame, wanted stages, wanted song"
+      },
+      {
+        "time": 140.32,
+        "endTime": 152.47,
+        "text": "The man who left the palace had a different skill all along"
+      },
+      {
+        "time": 154.47,
+        "endTime": 165.74,
+        "text": "Every gleeman knows a trick the audience never sees"
+      },
+      {
+        "time": 165.74,
+        "endTime": 177,
+        "text": "The knife that flies the fastest is the one thrown on your knees"
+      }
+    ]
+  },
+  "Moiraine": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 11.51,
+        "text": "She walked into my life like winter walking into spring"
+      },
+      {
+        "time": 11.51,
+        "endTime": 22.72,
+        "text": "Small and still and dangerous, an Aes Sedai with everything"
+      },
+      {
+        "time": 22.72,
+        "endTime": 33.23,
+        "text": "I swore I hated sisters, every one who wore the shawl"
+      },
+      {
+        "time": 33.23,
+        "endTime": 45.14,
+        "text": "But Moiraine was the one exception that dismantled every wall"
+      },
+      {
+        "time": 47.14,
+        "endTime": 55.81,
+        "text": "Moiraine, I followed you through deserts, through the dark"
+      },
+      {
+        "time": 55.81,
+        "endTime": 65.16,
+        "text": "I told myself it was the Pattern, but it was the spark"
+      },
+      {
+        "time": 65.16,
+        "endTime": 74.5,
+        "text": "A gleeman and a sister, what a pair we never were"
+      },
+      {
+        "time": 74.5,
+        "endTime": 84.51,
+        "text": "I loved you in the margins of a world that could not hear"
+      },
+      {
+        "time": 86.01,
+        "endTime": 95.11,
+        "text": "You fell through the doorway fighting Lanfear hand to hand"
+      },
+      {
+        "time": 95.11,
+        "endTime": 105.62,
+        "text": "And the sound of nothing after was too large to understand"
+      },
+      {
+        "time": 105.62,
+        "endTime": 115.43,
+        "text": "I carried on for years with your blue stone against my chest"
+      },
+      {
+        "time": 115.43,
+        "endTime": 125.24,
+        "text": "Playing taverns, playing villages, pretending I was blessed"
+      },
+      {
+        "time": 127.74,
+        "endTime": 140.2,
+        "text": "They told me you were dead, that the Finn had swallowed you whole"
+      },
+      {
+        "time": 140.2,
+        "endTime": 151.1,
+        "text": "I nodded and kept walking with a canyon in my soul"
+      },
+      {
+        "time": 153.1,
+        "endTime": 165.46,
+        "text": "Moiraine, I am coming for you, even if the door leads down"
+      },
+      {
+        "time": 165.46,
+        "endTime": 177,
+        "text": "A gleeman's final wager is the only game in town"
+      }
+    ]
+  },
+  "The Tower of Ghenjei": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 12.06,
+        "text": "A silver tower with no entrance on a plain that has no name"
+      },
+      {
+        "time": 12.06,
+        "endTime": 23.11,
+        "text": "I drew the sign upon the metal and I fed it to the flame"
+      },
+      {
+        "time": 23.11,
+        "endTime": 32.79,
+        "text": "Mat said I was a fool, and he was right about the odds"
+      },
+      {
+        "time": 32.79,
+        "endTime": 43.15,
+        "text": "But a fool in love with purpose is the closest thing to gods"
+      },
+      {
+        "time": 45.15,
+        "endTime": 53.71,
+        "text": "Into the tower, into the maze, into the deal"
+      },
+      {
+        "time": 53.71,
+        "endTime": 62.92,
+        "text": "The Finn trade in memory and they never let you heal"
+      },
+      {
+        "time": 62.92,
+        "endTime": 72.13,
+        "text": "I brought my harp, I brought my voice, I brought one final trick"
+      },
+      {
+        "time": 72.13,
+        "endTime": 80.69,
+        "text": "A gleeman in the dark negotiating with the sick"
+      },
+      {
+        "time": 82.19,
+        "endTime": 93.25,
+        "text": "The hallways shift like dreaming, every door a different cost"
+      },
+      {
+        "time": 93.25,
+        "endTime": 104.3,
+        "text": "They offered me my memories, the very ones I lost"
+      },
+      {
+        "time": 104.3,
+        "endTime": 113.98,
+        "text": "I told them I would trade my eyes before I trade her name"
+      },
+      {
+        "time": 113.98,
+        "endTime": 125.03,
+        "text": "And somewhere in the darkness, Moiraine called out just the same"
+      },
+      {
+        "time": 127.53,
+        "endTime": 137.51,
+        "text": "The Finn do not do mercy and they do not do fair"
+      },
+      {
+        "time": 137.51,
+        "endTime": 149.8,
+        "text": "But a gleeman with nothing left to lose has nothing left to spare"
+      },
+      {
+        "time": 151.8,
+        "endTime": 163.18,
+        "text": "We walked out through the fire, Mat and Moiraine and the light"
+      },
+      {
+        "time": 163.18,
+        "endTime": 177,
+        "text": "And the tower sealed behind us like a wound closed overnight"
+      }
+    ]
+  },
+  "The Last Story": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.26,
+        "text": "I have told ten thousand stories in a hundred tavern halls"
+      },
+      {
+        "time": 9.26,
+        "endTime": 18.07,
+        "text": "I have made the mighty weep and I have held the drunk enthralled"
+      },
+      {
+        "time": 18.07,
+        "endTime": 25.78,
+        "text": "But the story that I carry, the one I never speak"
+      },
+      {
+        "time": 25.78,
+        "endTime": 34.04,
+        "text": "Is the one about the gleeman who was too afraid to seek"
+      },
+      {
+        "time": 36.04,
+        "endTime": 43.38,
+        "text": "This is the last story, the one I tell myself at night"
+      },
+      {
+        "time": 43.38,
+        "endTime": 50.73,
+        "text": "About a man who had the words but never had the right"
+      },
+      {
+        "time": 50.73,
+        "endTime": 57.54,
+        "text": "To say I love you plainly, to say I am afraid"
+      },
+      {
+        "time": 57.54,
+        "endTime": 65.41,
+        "text": "To say the greatest performance was the silence I displayed"
+      },
+      {
+        "time": 66.91,
+        "endTime": 75.17,
+        "text": "The Dragon saved the world and Moiraine stands beside the dawn"
+      },
+      {
+        "time": 75.17,
+        "endTime": 83.43,
+        "text": "The Wheel has turned its Pattern and the Last Battle is gone"
+      },
+      {
+        "time": 83.43,
+        "endTime": 91.14,
+        "text": "But what about the gleeman, the one who patched his cloak"
+      },
+      {
+        "time": 91.14,
+        "endTime": 99.4,
+        "text": "And wandered through the aftermath still looking for the joke"
+      },
+      {
+        "time": 101.9,
+        "endTime": 108.63,
+        "text": "I am Thom Merrilin, court-bard, killer, fool"
+      },
+      {
+        "time": 108.63,
+        "endTime": 118.42,
+        "text": "I have played the Game of Houses and I broke every rule"
+      },
+      {
+        "time": 118.42,
+        "endTime": 127.6,
+        "text": "The only thing I never learned in all my wasted years"
+      },
+      {
+        "time": 127.6,
+        "endTime": 136.78,
+        "text": "Is how to tell a simple truth without hiding it in tears"
+      },
+      {
+        "time": 138.78,
+        "endTime": 149.14,
+        "text": "So this is how the gleeman ends, not with a stage, not with applause"
+      },
+      {
+        "time": 149.14,
+        "endTime": 157.56,
+        "text": "Just an old man by a fire, finally giving pause"
+      },
+      {
+        "time": 157.56,
+        "endTime": 165.99,
+        "text": "The stories were the armor, the cloak was just the proof"
+      },
+      {
+        "time": 165.99,
+        "endTime": 177,
+        "text": "That a man who lives in fiction spent a lifetime dodging truth"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["the-viewings"] = {
+  "The Viewings": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.54,
+        "text": "I saw death wearing your face before you even told me your name"
+      },
+      {
+        "time": 8.54,
+        "endTime": 15.62,
+        "text": "A halo made of swords and fire, I kept walking just the same"
+      },
+      {
+        "time": 15.62,
+        "endTime": 23.16,
+        "text": "They think I read the stars or shuffle cards like some back-alley fraud"
+      },
+      {
+        "time": 23.16,
+        "endTime": 29.76,
+        "text": "But I just open my eyes and the Pattern shows me god"
+      },
+      {
+        "time": 29.76,
+        "endTime": 38.72,
+        "text": "Every stranger on the street is wearing something only I can see"
+      },
+      {
+        "time": 38.72,
+        "endTime": 46.27,
+        "text": "Roses blooming out of skulls, a crown of thorns on a child of three"
+      },
+      {
+        "time": 46.27,
+        "endTime": 53.34,
+        "text": "I learned to hold my face still when the visions hit like glass"
+      },
+      {
+        "time": 53.34,
+        "endTime": 62.3,
+        "text": "Smile at the woman with the death shroud, tell her that her dress is nice, and pass"
+      },
+      {
+        "time": 64.3,
+        "endTime": 69.24,
+        "text": "The viewings come whether I want them or not"
+      },
+      {
+        "time": 69.24,
+        "endTime": 72.83,
+        "text": "Sight that cuts deeper than knowing"
+      },
+      {
+        "time": 72.83,
+        "endTime": 77.32,
+        "text": "I see the thread before it unravels"
+      },
+      {
+        "time": 77.32,
+        "endTime": 81.81,
+        "text": "I see the blood before it starts flowing"
+      },
+      {
+        "time": 81.81,
+        "endTime": 87.2,
+        "text": "The viewings, the viewings, the uninvited light"
+      },
+      {
+        "time": 87.2,
+        "endTime": 93.94,
+        "text": "Showing me every ending in the middle of the night"
+      },
+      {
+        "time": 95.44,
+        "endTime": 102.51,
+        "text": "My father thought I was broken, the neighbors thought I was strange"
+      },
+      {
+        "time": 102.51,
+        "endTime": 111,
+        "text": "I learned to swallow the pictures whole, smile through the rearrange"
+      },
+      {
+        "time": 111,
+        "endTime": 117.6,
+        "text": "But silence has a half-life and mine finally decayed"
+      },
+      {
+        "time": 117.6,
+        "endTime": 126.09,
+        "text": "The first time I saw someone die and they died exactly the way I said"
+      },
+      {
+        "time": 128.59,
+        "endTime": 132.25,
+        "text": "I did not choose to see this"
+      },
+      {
+        "time": 132.25,
+        "endTime": 135.4,
+        "text": "I cannot choose to stop"
+      },
+      {
+        "time": 135.4,
+        "endTime": 140.11,
+        "text": "Every face a loaded weapon"
+      },
+      {
+        "time": 140.11,
+        "endTime": 144.3,
+        "text": "Every crowd a ticking clock"
+      },
+      {
+        "time": 144.3,
+        "endTime": 152.16,
+        "text": "So I wear my coat like armor and I keep my mouth shut tight"
+      },
+      {
+        "time": 152.16,
+        "endTime": 160.02,
+        "text": "And carry other people's futures burning through the night"
+      },
+      {
+        "time": 162.02,
+        "endTime": 165.35,
+        "text": "The viewings, the viewings"
+      },
+      {
+        "time": 165.35,
+        "endTime": 169.79,
+        "text": "The gift nobody asked for"
+      },
+      {
+        "time": 169.79,
+        "endTime": 173.67,
+        "text": "The gift that keeps on taking"
+      },
+      {
+        "time": 173.67,
+        "endTime": 177,
+        "text": "The gift that never stops"
+      }
+    ]
+  },
+  "Baerlon": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.59,
+        "text": "Small-town boy walks into a bar and the world splits open around him"
+      },
+      {
+        "time": 9.59,
+        "endTime": 18.18,
+        "text": "Colors I have never seen before, wrapping tight like burial linen"
+      },
+      {
+        "time": 18.18,
+        "endTime": 24.75,
+        "text": "Dragon banners, broken crowns, a wound that will not close"
+      },
+      {
+        "time": 24.75,
+        "endTime": 32.83,
+        "text": "I ordered another drink and pretended I just saw ghosts"
+      },
+      {
+        "time": 32.83,
+        "endTime": 40.92,
+        "text": "Three boys from the same nowhere village, each one lit up like a pyre"
+      },
+      {
+        "time": 40.92,
+        "endTime": 47.99,
+        "text": "The dark one trailing shadows, the golden one trailing wire"
+      },
+      {
+        "time": 47.99,
+        "endTime": 55.07,
+        "text": "And you, you wore the sunrise like a wound across your chest"
+      },
+      {
+        "time": 55.07,
+        "endTime": 61.13,
+        "text": "I should have turned around and walked back west"
+      },
+      {
+        "time": 63.13,
+        "endTime": 67.94,
+        "text": "Baerlon was just a stop along the road"
+      },
+      {
+        "time": 67.94,
+        "endTime": 76.13,
+        "text": "But I looked at you and saw the end of everything I know"
+      },
+      {
+        "time": 76.13,
+        "endTime": 80.94,
+        "text": "Baerlon was just a name I would forget"
+      },
+      {
+        "time": 80.94,
+        "endTime": 88.16,
+        "text": "But the viewing hit so hard I am still bleeding from it yet"
+      },
+      {
+        "time": 89.66,
+        "endTime": 98.25,
+        "text": "The innkeeper said you were trouble, the Aes Sedai said you were fate"
+      },
+      {
+        "time": 98.25,
+        "endTime": 107.34,
+        "text": "I said you were a tall boy with sad eyes and I was already too late"
+      },
+      {
+        "time": 107.34,
+        "endTime": 115.43,
+        "text": "The Pattern does not ask permission when it tangles up your thread"
+      },
+      {
+        "time": 115.43,
+        "endTime": 124.02,
+        "text": "It just grabs you by the viewing and drags you into the fire instead"
+      },
+      {
+        "time": 126.52,
+        "endTime": 131.01,
+        "text": "I told myself it was nothing"
+      },
+      {
+        "time": 131.01,
+        "endTime": 136.06,
+        "text": "Just another stranger passing through"
+      },
+      {
+        "time": 136.06,
+        "endTime": 141.11,
+        "text": "But the Pattern does not lie to me"
+      },
+      {
+        "time": 141.11,
+        "endTime": 146.17,
+        "text": "And neither did the light around you"
+      },
+      {
+        "time": 146.17,
+        "endTime": 152.91,
+        "text": "So I finished my drink and I followed"
+      },
+      {
+        "time": 152.91,
+        "endTime": 161.33,
+        "text": "Because walking away was never something I could do"
+      },
+      {
+        "time": 163.33,
+        "endTime": 164.83,
+        "text": "Baerlon"
+      },
+      {
+        "time": 164.83,
+        "endTime": 170.18,
+        "text": "Where I lost the life I had before"
+      },
+      {
+        "time": 170.18,
+        "endTime": 171.68,
+        "text": "Baerlon"
+      },
+      {
+        "time": 171.68,
+        "endTime": 177.62,
+        "text": "Where I walked through someone else's door"
+      }
+    ]
+  },
+  "Falling for the Dragon": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.54,
+        "text": "I saw three women standing in his light before I even learned his name"
+      },
+      {
+        "time": 9.54,
+        "endTime": 14.93,
+        "text": "The Pattern drew it clear as morning, sharp as blame"
+      },
+      {
+        "time": 14.93,
+        "endTime": 20.33,
+        "text": "Two queens and me, the girl in trousers with the knife"
+      },
+      {
+        "time": 20.33,
+        "endTime": 25.27,
+        "text": "And I chose him anyway, I chose this life"
+      },
+      {
+        "time": 25.27,
+        "endTime": 32.01,
+        "text": "He smelled like wool and sunlight back when he was just a boy"
+      },
+      {
+        "time": 32.01,
+        "endTime": 38.31,
+        "text": "Before the weight of every nation crushed his joy"
+      },
+      {
+        "time": 38.31,
+        "endTime": 45.05,
+        "text": "I remember how he laughed, it was ordinary, small"
+      },
+      {
+        "time": 45.05,
+        "endTime": 50.89,
+        "text": "Now the Dragon Reborn does not really laugh at all"
+      },
+      {
+        "time": 52.89,
+        "endTime": 58.03,
+        "text": "Falling for the Dragon is not a thing you plan"
+      },
+      {
+        "time": 58.03,
+        "endTime": 64.45,
+        "text": "It is more like tripping off a cliff and finding out you can"
+      },
+      {
+        "time": 64.45,
+        "endTime": 70.44,
+        "text": "Survive the drop but not the landing, not the part that stays"
+      },
+      {
+        "time": 70.44,
+        "endTime": 76.86,
+        "text": "Falling for the Dragon is the fire that does not blaze, it grays"
+      },
+      {
+        "time": 78.36,
+        "endTime": 84.21,
+        "text": "They say love is blind but mine has twenty-twenty sight"
+      },
+      {
+        "time": 84.21,
+        "endTime": 90.5,
+        "text": "I watched his futures stack like kindling for a fire"
+      },
+      {
+        "time": 90.5,
+        "endTime": 96.34,
+        "text": "Every path led somewhere terrible and bright"
+      },
+      {
+        "time": 96.34,
+        "endTime": 101.74,
+        "text": "And I followed him like moths follow a pyre"
+      },
+      {
+        "time": 101.74,
+        "endTime": 108.03,
+        "text": "He holds the world together with his bare hands and his pain"
+      },
+      {
+        "time": 108.03,
+        "endTime": 114.32,
+        "text": "And I hold him together in the spaces in between"
+      },
+      {
+        "time": 114.32,
+        "endTime": 120.61,
+        "text": "The prophecies say nothing about what the Dragon feels"
+      },
+      {
+        "time": 120.61,
+        "endTime": 126.91,
+        "text": "But I have read his silences, I know what goes unseen"
+      },
+      {
+        "time": 129.41,
+        "endTime": 134.9,
+        "text": "People ask me why, what do you see in him"
+      },
+      {
+        "time": 134.9,
+        "endTime": 141.89,
+        "text": "I see a man the world refuses to let be a man"
+      },
+      {
+        "time": 141.89,
+        "endTime": 147.88,
+        "text": "I see the boy behind the titles and the flame"
+      },
+      {
+        "time": 147.88,
+        "endTime": 154.38,
+        "text": "And I would choose him every time they speak his name"
+      },
+      {
+        "time": 156.38,
+        "endTime": 159.55,
+        "text": "Falling for the Dragon"
+      },
+      {
+        "time": 159.55,
+        "endTime": 164.84,
+        "text": "I knew the cost before I kissed you"
+      },
+      {
+        "time": 164.84,
+        "endTime": 171.71,
+        "text": "I saw the ending and I missed you already"
+      },
+      {
+        "time": 171.71,
+        "endTime": 177,
+        "text": "I walked into this burning steady"
+      }
+    ]
+  },
+  "Choosing to Stay": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.31,
+        "text": "Everybody leaves, that is the lesson this world teaches first"
+      },
+      {
+        "time": 9.31,
+        "endTime": 19.57,
+        "text": "The Aes Sedai leave, the heroes leave, the ones you love rehearse their exit lines"
+      },
+      {
+        "time": 19.57,
+        "endTime": 28.36,
+        "text": "But I am still here with my boots on and my visions and my stubborn chest"
+      },
+      {
+        "time": 28.36,
+        "endTime": 37.16,
+        "text": "Loving someone doomed is still loving, I just do it under protest"
+      },
+      {
+        "time": 37.16,
+        "endTime": 45.95,
+        "text": "They offered me a room in the Tower, a title and a quiet life"
+      },
+      {
+        "time": 45.95,
+        "endTime": 55.24,
+        "text": "A salary for cataloging visions like a clerk with a butter knife"
+      },
+      {
+        "time": 55.24,
+        "endTime": 62.57,
+        "text": "But I looked at the hallway and I looked at the door"
+      },
+      {
+        "time": 62.57,
+        "endTime": 70.87,
+        "text": "And I chose the man on fire over everything that felt secure"
+      },
+      {
+        "time": 72.87,
+        "endTime": 75.67,
+        "text": "I am choosing to stay"
+      },
+      {
+        "time": 75.67,
+        "endTime": 79.86,
+        "text": "Not because the Pattern told me to"
+      },
+      {
+        "time": 79.86,
+        "endTime": 84.04,
+        "text": "Not because the viewings say I should"
+      },
+      {
+        "time": 84.04,
+        "endTime": 91.95,
+        "text": "I am choosing to stay because I looked at all the futures"
+      },
+      {
+        "time": 91.95,
+        "endTime": 97.54,
+        "text": "And not one of them was any good without you"
+      },
+      {
+        "time": 99.04,
+        "endTime": 105.39,
+        "text": "Min Farshaw does not kneel, does not curtsy, does not fold"
+      },
+      {
+        "time": 105.39,
+        "endTime": 111.25,
+        "text": "I just stay, and staying is the bravest thing I know"
+      },
+      {
+        "time": 111.25,
+        "endTime": 118.1,
+        "text": "They call it reckless, they call it foolish, they call it young"
+      },
+      {
+        "time": 118.1,
+        "endTime": 125.43,
+        "text": "I call it the only honest thing my hands have ever done"
+      },
+      {
+        "time": 127.93,
+        "endTime": 131.73,
+        "text": "Destiny is just a word"
+      },
+      {
+        "time": 131.73,
+        "endTime": 137.15,
+        "text": "For people who have never had to choose"
+      },
+      {
+        "time": 137.15,
+        "endTime": 142.04,
+        "text": "I chose you in every viewing"
+      },
+      {
+        "time": 142.04,
+        "endTime": 146.93,
+        "text": "Even the ones where we both lose"
+      },
+      {
+        "time": 146.93,
+        "endTime": 152.36,
+        "text": "So here I am with my boots laced tight"
+      },
+      {
+        "time": 152.36,
+        "endTime": 158.33,
+        "text": "And my coat over my shoulders in the cold"
+      },
+      {
+        "time": 160.33,
+        "endTime": 162.63,
+        "text": "Choosing to stay"
+      },
+      {
+        "time": 162.63,
+        "endTime": 165.5,
+        "text": "Boots on, eyes open"
+      },
+      {
+        "time": 165.5,
+        "endTime": 167.8,
+        "text": "Choosing to stay"
+      },
+      {
+        "time": 167.8,
+        "endTime": 171.25,
+        "text": "Not because I have to"
+      },
+      {
+        "time": 171.25,
+        "endTime": 174.13,
+        "text": "Because I want to"
+      },
+      {
+        "time": 174.13,
+        "endTime": 177,
+        "text": "Because I want to"
+      }
+    ]
+  },
+  "The Weight of Knowing": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.98,
+        "text": "I saw death on a woman's face today and I told her I liked her scarf"
+      },
+      {
+        "time": 8.98,
+        "endTime": 16.13,
+        "text": "She smiled and said she bought it in Caemlyn, was it not lovely"
+      },
+      {
+        "time": 16.13,
+        "endTime": 22.85,
+        "text": "I said yes, I said it was the prettiest scarf I had ever seen"
+      },
+      {
+        "time": 22.85,
+        "endTime": 29.16,
+        "text": "She will be dead by winter, the viewing was clear as morning"
+      },
+      {
+        "time": 29.16,
+        "endTime": 35.88,
+        "text": "This is the part they do not understand, the part that never heals"
+      },
+      {
+        "time": 35.88,
+        "endTime": 40.92,
+        "text": "I cannot warn them, warnings do not work, I tried"
+      },
+      {
+        "time": 40.92,
+        "endTime": 48.91,
+        "text": "The futures I see are fixed as iron, carved in something real"
+      },
+      {
+        "time": 48.91,
+        "endTime": 55.21,
+        "text": "And all I have are compliments to offer to the doomed"
+      },
+      {
+        "time": 57.21,
+        "endTime": 62.01,
+        "text": "The weight of knowing presses down like stone on glass"
+      },
+      {
+        "time": 62.01,
+        "endTime": 67.22,
+        "text": "I see the knife and I cannot take it from the fool"
+      },
+      {
+        "time": 67.22,
+        "endTime": 72.02,
+        "text": "I smile at people walking toward a cliff"
+      },
+      {
+        "time": 72.02,
+        "endTime": 76.82,
+        "text": "I cannot change it, I can only live with this"
+      },
+      {
+        "time": 78.32,
+        "endTime": 83.79,
+        "text": "A boy in the market has an aura bright as blood"
+      },
+      {
+        "time": 83.79,
+        "endTime": 90.09,
+        "text": "His mother holds his hand and haggles over the price of bread"
+      },
+      {
+        "time": 90.09,
+        "endTime": 95.55,
+        "text": "I want to scream, I want to grab her arm and say run"
+      },
+      {
+        "time": 95.55,
+        "endTime": 101.02,
+        "text": "But the viewing does not bend, what I have seen is said"
+      },
+      {
+        "time": 101.02,
+        "endTime": 106.48,
+        "text": "So I develop this, this talent for the surface"
+      },
+      {
+        "time": 106.48,
+        "endTime": 112.78,
+        "text": "This gift for small talk while the world is ending underneath"
+      },
+      {
+        "time": 112.78,
+        "endTime": 118.67,
+        "text": "I ask about the weather, I compliment their purpose"
+      },
+      {
+        "time": 118.67,
+        "endTime": 124.13,
+        "text": "And I carry all the funerals behind my teeth"
+      },
+      {
+        "time": 126.63,
+        "endTime": 133.63,
+        "text": "They call me cold sometimes, detached, a little hard"
+      },
+      {
+        "time": 133.63,
+        "endTime": 140.17,
+        "text": "They do not know I am a graveyard walking through a yard"
+      },
+      {
+        "time": 140.17,
+        "endTime": 146.71,
+        "text": "Every smile is an act of discipline, of grace"
+      },
+      {
+        "time": 146.71,
+        "endTime": 153.25,
+        "text": "Every conversation is a memorial in place"
+      },
+      {
+        "time": 155.25,
+        "endTime": 161.18,
+        "text": "The weight of knowing, so I carry it instead"
+      },
+      {
+        "time": 161.18,
+        "endTime": 168.6,
+        "text": "And every morning I wake up pre-mourning all the dead"
+      },
+      {
+        "time": 168.6,
+        "endTime": 171.07,
+        "text": "The weight of knowing"
+      },
+      {
+        "time": 171.07,
+        "endTime": 173.54,
+        "text": "The weight of knowing"
+      },
+      {
+        "time": 173.54,
+        "endTime": 177,
+        "text": "And still I open my eyes"
+      }
+    ]
+  },
+  "Tower Games": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.92,
+        "text": "The White Tower is a cage dressed up in marble and good intentions"
+      },
+      {
+        "time": 7.92,
+        "endTime": 16.75,
+        "text": "Every Aes Sedai smiles with purpose, every kindness is a chess move in disguise"
+      },
+      {
+        "time": 16.75,
+        "endTime": 24.05,
+        "text": "They measured me for usefulness the moment I walked through the door"
+      },
+      {
+        "time": 24.05,
+        "endTime": 30.97,
+        "text": "A woman who sees futures is a weapon they have been waiting for"
+      },
+      {
+        "time": 30.97,
+        "endTime": 36.73,
+        "text": "Cadsuane thinks I am a nuisance, the Reds think I am too loud"
+      },
+      {
+        "time": 36.73,
+        "endTime": 43.26,
+        "text": "The Greens want to recruit me and the Whites want me to write things down"
+      },
+      {
+        "time": 43.26,
+        "endTime": 50.56,
+        "text": "I wear my trousers like a declaration of war in silk and satin halls"
+      },
+      {
+        "time": 50.56,
+        "endTime": 56.71,
+        "text": "And every day I play their game while leaning on their walls"
+      },
+      {
+        "time": 58.71,
+        "endTime": 64.57,
+        "text": "Tower games, tower games, everybody pulling strings"
+      },
+      {
+        "time": 64.57,
+        "endTime": 70.42,
+        "text": "I am the only honest person in a building full of rings"
+      },
+      {
+        "time": 70.42,
+        "endTime": 76.28,
+        "text": "Tower games, tower games, smile and nod and do not blink"
+      },
+      {
+        "time": 76.28,
+        "endTime": 81.76,
+        "text": "I will play along but I will think exactly what I think"
+      },
+      {
+        "time": 83.26,
+        "endTime": 89.41,
+        "text": "They tried to dress me up like porcelain, I handed back the gown"
+      },
+      {
+        "time": 89.41,
+        "endTime": 96.71,
+        "text": "Proper ladies do not argue with the Amyrlin, but I am not from this town"
+      },
+      {
+        "time": 96.71,
+        "endTime": 104.01,
+        "text": "I earned my place with something they cannot teach or channel or command"
+      },
+      {
+        "time": 104.01,
+        "endTime": 110.54,
+        "text": "I see the truth on people's faces and the truth does not shake my hand"
+      },
+      {
+        "time": 110.54,
+        "endTime": 117.84,
+        "text": "Elaida thought she owned the future, wrapped it up in proclamations"
+      },
+      {
+        "time": 117.84,
+        "endTime": 125.53,
+        "text": "But the future does not answer to a woman with delusions and a station"
+      },
+      {
+        "time": 125.53,
+        "endTime": 132.44,
+        "text": "I sat in corners reading prophecy while towers burned above"
+      },
+      {
+        "time": 132.44,
+        "endTime": 138.98,
+        "text": "And the only thing the Tower taught me was the politics of love"
+      },
+      {
+        "time": 141.48,
+        "endTime": 146.17,
+        "text": "You can disapprove of me from here to Tear"
+      },
+      {
+        "time": 146.17,
+        "endTime": 152.57,
+        "text": "I have been disapproved of by professionals, my dear"
+      },
+      {
+        "time": 152.57,
+        "endTime": 157.7,
+        "text": "I will take your judgment and I will fold it small"
+      },
+      {
+        "time": 157.7,
+        "endTime": 163.25,
+        "text": "And tuck it in a pocket I do not own at all"
+      },
+      {
+        "time": 165.25,
+        "endTime": 167.06,
+        "text": "Tower games"
+      },
+      {
+        "time": 167.06,
+        "endTime": 171.12,
+        "text": "I am done pretending that I care"
+      },
+      {
+        "time": 171.12,
+        "endTime": 172.93,
+        "text": "Tower games"
+      },
+      {
+        "time": 172.93,
+        "endTime": 177,
+        "text": "I have got a dragon to repair"
+      }
+    ]
+  },
+  "Three of Us": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.63,
+        "text": "The punchline of a prophecy is three women love one man"
+      },
+      {
+        "time": 7.63,
+        "endTime": 13.37,
+        "text": "And two of them are royalty and one of them is me"
+      },
+      {
+        "time": 13.37,
+        "endTime": 18.67,
+        "text": "Elayne got the throne and Aviendha got the spear"
+      },
+      {
+        "time": 18.67,
+        "endTime": 25.3,
+        "text": "I got the reading chair and the sardonic commentary"
+      },
+      {
+        "time": 25.3,
+        "endTime": 31.04,
+        "text": "I should hate them, that would be the normal thing to do"
+      },
+      {
+        "time": 31.04,
+        "endTime": 36.78,
+        "text": "But Elayne is golden and Aviendha burns like noon"
+      },
+      {
+        "time": 36.78,
+        "endTime": 43.41,
+        "text": "And the truth is they both love him with the same reckless resolve"
+      },
+      {
+        "time": 43.41,
+        "endTime": 50.48,
+        "text": "And hatred is a luxury when the world is coming undone"
+      },
+      {
+        "time": 52.48,
+        "endTime": 58.37,
+        "text": "The three of us, the three of us, absurd and brave and true"
+      },
+      {
+        "time": 58.37,
+        "endTime": 64.26,
+        "text": "I saw it in a viewing and I chose to see it through"
+      },
+      {
+        "time": 64.26,
+        "endTime": 70.15,
+        "text": "It is not romantic, it is not a fairy tale"
+      },
+      {
+        "time": 70.15,
+        "endTime": 76.46,
+        "text": "It is three women loving one disaster on a scale"
+      },
+      {
+        "time": 77.96,
+        "endTime": 85.03,
+        "text": "Aviendha would have killed me once, that is not a metaphor"
+      },
+      {
+        "time": 85.03,
+        "endTime": 91.21,
+        "text": "Now we sit across from each other counting prophecies"
+      },
+      {
+        "time": 91.21,
+        "endTime": 97.84,
+        "text": "Elayne writes me letters sealed with the Lion of Andor"
+      },
+      {
+        "time": 97.84,
+        "endTime": 103.14,
+        "text": "And I write back with ink stains and obscenities"
+      },
+      {
+        "time": 103.14,
+        "endTime": 108.88,
+        "text": "Sharing is not splitting, we are not dividing him"
+      },
+      {
+        "time": 108.88,
+        "endTime": 115.95,
+        "text": "He is stretched so thin already, bone and duty, blood and sin"
+      },
+      {
+        "time": 115.95,
+        "endTime": 122.58,
+        "text": "We each hold a different piece of someone falling apart"
+      },
+      {
+        "time": 122.58,
+        "endTime": 128.32,
+        "text": "And between the three of us, we almost make a heart"
+      },
+      {
+        "time": 130.82,
+        "endTime": 138.19,
+        "text": "If you think this is easy you have never loved at all"
+      },
+      {
+        "time": 138.19,
+        "endTime": 145.55,
+        "text": "If you think this is weakness, you have never watched him fall"
+      },
+      {
+        "time": 145.55,
+        "endTime": 152.42,
+        "text": "And chosen to stand next to someone else who caught him too"
+      },
+      {
+        "time": 152.42,
+        "endTime": 157.33,
+        "text": "And nodded, and said, alright, I trust you"
+      },
+      {
+        "time": 159.33,
+        "endTime": 166.09,
+        "text": "Three of us, ridiculous, impossible, enough"
+      },
+      {
+        "time": 166.09,
+        "endTime": 169.2,
+        "text": "Three threads in one weaving"
+      },
+      {
+        "time": 169.2,
+        "endTime": 172.84,
+        "text": "And none of us chose this thing"
+      },
+      {
+        "time": 172.84,
+        "endTime": 177,
+        "text": "But all of us chose to hold on"
+      }
+    ]
+  },
+  "Tarmon Gai'don": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.49,
+        "text": "The sky cracked open like a wound that would not close"
+      },
+      {
+        "time": 6.49,
+        "endTime": 12.83,
+        "text": "And every viewing I had ever seen came true at once"
+      },
+      {
+        "time": 12.83,
+        "endTime": 18.33,
+        "text": "The dead were walking and the living were on their knees"
+      },
+      {
+        "time": 18.33,
+        "endTime": 25.93,
+        "text": "And somewhere in the chaos he was holding back the dark with bloody hands"
+      },
+      {
+        "time": 25.93,
+        "endTime": 31,
+        "text": "I could not channel, could not fight with sword or spear"
+      },
+      {
+        "time": 31,
+        "endTime": 38.19,
+        "text": "But I could read the battlefield in futures no one else could see"
+      },
+      {
+        "time": 38.19,
+        "endTime": 44.1,
+        "text": "Every soldier wearing auras, some already gone"
+      },
+      {
+        "time": 44.1,
+        "endTime": 52.13,
+        "text": "And I stood in the rubble calling out which ones would make it to the dawn"
+      },
+      {
+        "time": 54.13,
+        "endTime": 59.36,
+        "text": "Tarmon Gai'don, the last battle, the world on a knife"
+      },
+      {
+        "time": 59.36,
+        "endTime": 65,
+        "text": "And I am just a woman with a viewing and a life"
+      },
+      {
+        "time": 65,
+        "endTime": 70.63,
+        "text": "Tarmon Gai'don, the sky is falling and the earth is torn"
+      },
+      {
+        "time": 70.63,
+        "endTime": 76.26,
+        "text": "But I have seen the morning and the morning will be born"
+      },
+      {
+        "time": 77.76,
+        "endTime": 85.37,
+        "text": "He walked into the dark alone and the thread went thin as thread can go"
+      },
+      {
+        "time": 85.37,
+        "endTime": 90.44,
+        "text": "I felt it in my chest, a cold that was not cold"
+      },
+      {
+        "time": 90.44,
+        "endTime": 96.78,
+        "text": "The kind of emptiness that eats the space where hope was stored"
+      },
+      {
+        "time": 96.78,
+        "endTime": 102.27,
+        "text": "Rand al'Thor at Shayol Ghul with his hand upon the sword"
+      },
+      {
+        "time": 102.27,
+        "endTime": 108.19,
+        "text": "And all I could do was fight beside the ones who stayed"
+      },
+      {
+        "time": 108.19,
+        "endTime": 114.53,
+        "text": "Keep my knife in hand and keep my visions sharp and read the fray"
+      },
+      {
+        "time": 114.53,
+        "endTime": 121.71,
+        "text": "I am not the blade, I am not the flame, I am not the chosen one"
+      },
+      {
+        "time": 121.71,
+        "endTime": 127.21,
+        "text": "But I am the woman who was there when it was done"
+      },
+      {
+        "time": 129.71,
+        "endTime": 135.34,
+        "text": "He chose the light, he chose the world, he chose the pain"
+      },
+      {
+        "time": 135.34,
+        "endTime": 140.97,
+        "text": "Not for me, I am not that arrogant or vain"
+      },
+      {
+        "time": 140.97,
+        "endTime": 148.02,
+        "text": "He chose because of something bigger than a person's love"
+      },
+      {
+        "time": 148.02,
+        "endTime": 154.12,
+        "text": "But I will take the morning after, that is enough"
+      },
+      {
+        "time": 156.12,
+        "endTime": 160.59,
+        "text": "Tarmon Gai'don, the world survived"
+      },
+      {
+        "time": 160.59,
+        "endTime": 166.56,
+        "text": "And somewhere in that miracle, so did I"
+      },
+      {
+        "time": 166.56,
+        "endTime": 172.03,
+        "text": "The battle's over, the prophecies are spent"
+      },
+      {
+        "time": 172.03,
+        "endTime": 177,
+        "text": "And I am still standing where my heart went"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["the-fisher-queen"] = {
+  "Tear River Daughter": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.03,
+        "text": "I learned to gut a fish before I learned to read"
+      },
+      {
+        "time": 10.03,
+        "endTime": 16.47,
+        "text": "My father's hands were salt and rope and reed"
+      },
+      {
+        "time": 16.47,
+        "endTime": 22.92,
+        "text": "The Erinin ran copper in the dawn"
+      },
+      {
+        "time": 22.92,
+        "endTime": 30.65,
+        "text": "I was just a girl the river kept moving on"
+      },
+      {
+        "time": 32.15,
+        "endTime": 39.25,
+        "text": "He never asked me why I saw the sparks"
+      },
+      {
+        "time": 39.25,
+        "endTime": 45.69,
+        "text": "Why the water spoke to me after dark"
+      },
+      {
+        "time": 45.69,
+        "endTime": 52.14,
+        "text": "He packed my bag, he kissed my head"
+      },
+      {
+        "time": 52.14,
+        "endTime": 61.16,
+        "text": "He said go where the current pulls, wherever you are led"
+      },
+      {
+        "time": 63.16,
+        "endTime": 68.07,
+        "text": "I am the tear river daughter"
+      },
+      {
+        "time": 68.07,
+        "endTime": 72.37,
+        "text": "Born in the blood of the catch"
+      },
+      {
+        "time": 72.37,
+        "endTime": 77.9,
+        "text": "You can take the girl from the water"
+      },
+      {
+        "time": 77.9,
+        "endTime": 83.42,
+        "text": "But the water will always come back"
+      },
+      {
+        "time": 84.92,
+        "endTime": 92.01,
+        "text": "They dressed me white and taught me how to kneel"
+      },
+      {
+        "time": 92.01,
+        "endTime": 99.11,
+        "text": "But I still smell the dock, I still feel the reel"
+      },
+      {
+        "time": 99.11,
+        "endTime": 106.84,
+        "text": "The Tower said forget, the Tower said refine"
+      },
+      {
+        "time": 106.84,
+        "endTime": 113.29,
+        "text": "But my hands remember the gutting line"
+      },
+      {
+        "time": 115.29,
+        "endTime": 120.2,
+        "text": "I am the tear river daughter"
+      },
+      {
+        "time": 120.2,
+        "endTime": 124.5,
+        "text": "Born in the blood of the catch"
+      },
+      {
+        "time": 124.5,
+        "endTime": 130.02,
+        "text": "You can take the girl from the water"
+      },
+      {
+        "time": 130.02,
+        "endTime": 135.55,
+        "text": "But the water will always come back"
+      },
+      {
+        "time": 138.05,
+        "endTime": 145.21,
+        "text": "Father, I became a queen they feared"
+      },
+      {
+        "time": 145.21,
+        "endTime": 151.66,
+        "text": "I wore the stole, I bent the years"
+      },
+      {
+        "time": 151.66,
+        "endTime": 160.25,
+        "text": "But every night I dream of scales and fins"
+      },
+      {
+        "time": 160.25,
+        "endTime": 167.42,
+        "text": "And the river where my story begins"
+      },
+      {
+        "time": 169.42,
+        "endTime": 173.21,
+        "text": "Tear river daughter"
+      },
+      {
+        "time": 173.21,
+        "endTime": 177,
+        "text": "Always coming back"
+      }
+    ]
+  },
+  "Youngest to Wear the Stole": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.71,
+        "text": "They thought I was too young to hold the flame"
+      },
+      {
+        "time": 7.71,
+        "endTime": 13.08,
+        "text": "Too raw, too sharp, too wild to tame"
+      },
+      {
+        "time": 13.08,
+        "endTime": 21.14,
+        "text": "But I walked into that chamber made of stone"
+      },
+      {
+        "time": 21.14,
+        "endTime": 28.53,
+        "text": "And every woman there bent to my throne"
+      },
+      {
+        "time": 30.03,
+        "endTime": 36.74,
+        "text": "I was not gentle and I was not kind"
+      },
+      {
+        "time": 36.74,
+        "endTime": 43.45,
+        "text": "I had a war to win inside my mind"
+      },
+      {
+        "time": 43.45,
+        "endTime": 50.84,
+        "text": "The Dragon was coming, I could taste the storm"
+      },
+      {
+        "time": 50.84,
+        "endTime": 60.24,
+        "text": "I stripped the Tower back to its original form"
+      },
+      {
+        "time": 62.24,
+        "endTime": 66.71,
+        "text": "Youngest to wear the stole"
+      },
+      {
+        "time": 66.71,
+        "endTime": 70.55,
+        "text": "Youngest to pay the toll"
+      },
+      {
+        "time": 70.55,
+        "endTime": 75.67,
+        "text": "They knelt because they had no choice"
+      },
+      {
+        "time": 75.67,
+        "endTime": 82.06,
+        "text": "I ruled them with a fisherman's voice"
+      },
+      {
+        "time": 83.56,
+        "endTime": 90.27,
+        "text": "I played the Ajahs like a net of twine"
+      },
+      {
+        "time": 90.27,
+        "endTime": 96.99,
+        "text": "Pulled Blue against Red, kept Green in line"
+      },
+      {
+        "time": 96.99,
+        "endTime": 104.37,
+        "text": "They hated me, oh yes, they surely did"
+      },
+      {
+        "time": 104.37,
+        "endTime": 111.76,
+        "text": "But I kept the world from sliding off the grid"
+      },
+      {
+        "time": 113.76,
+        "endTime": 118.23,
+        "text": "Youngest to wear the stole"
+      },
+      {
+        "time": 118.23,
+        "endTime": 122.07,
+        "text": "Youngest to pay the toll"
+      },
+      {
+        "time": 122.07,
+        "endTime": 127.18,
+        "text": "They knelt because they had no choice"
+      },
+      {
+        "time": 127.18,
+        "endTime": 133.58,
+        "text": "I ruled them with a fisherman's voice"
+      },
+      {
+        "time": 136.08,
+        "endTime": 141.3,
+        "text": "Twenty years I held that seat"
+      },
+      {
+        "time": 141.3,
+        "endTime": 146.52,
+        "text": "Twenty years of no defeat"
+      },
+      {
+        "time": 146.52,
+        "endTime": 153.24,
+        "text": "Until the ones I trusted most"
+      },
+      {
+        "time": 153.24,
+        "endTime": 159.2,
+        "text": "Turned my name into a ghost"
+      },
+      {
+        "time": 161.2,
+        "endTime": 165.94,
+        "text": "The stole was heavy"
+      },
+      {
+        "time": 165.94,
+        "endTime": 169.89,
+        "text": "But my back was strong"
+      },
+      {
+        "time": 169.89,
+        "endTime": 173.05,
+        "text": "They never knew"
+      },
+      {
+        "time": 173.05,
+        "endTime": 177,
+        "text": "How long I held on"
+      }
+    ]
+  },
+  "The Dragon Is a Fish on My Line": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.55,
+        "text": "I found him in the prophecies at night"
+      },
+      {
+        "time": 7.55,
+        "endTime": 14.77,
+        "text": "A boy born on the slopes of Dragonmount"
+      },
+      {
+        "time": 14.77,
+        "endTime": 21.32,
+        "text": "They all pretended he would never come"
+      },
+      {
+        "time": 21.32,
+        "endTime": 27.88,
+        "text": "I started counting down from the amount"
+      },
+      {
+        "time": 29.38,
+        "endTime": 35.93,
+        "text": "Every sister thought she had the right"
+      },
+      {
+        "time": 35.93,
+        "endTime": 42.48,
+        "text": "To cage him or to kill him or to bend"
+      },
+      {
+        "time": 42.48,
+        "endTime": 48.38,
+        "text": "But I was the one who cast the net"
+      },
+      {
+        "time": 48.38,
+        "endTime": 54.94,
+        "text": "I am the fisherwoman, not his friend"
+      },
+      {
+        "time": 56.94,
+        "endTime": 62.56,
+        "text": "The Dragon is a fish on my line"
+      },
+      {
+        "time": 62.56,
+        "endTime": 68.18,
+        "text": "I will pull him to the shore in time"
+      },
+      {
+        "time": 68.18,
+        "endTime": 73.17,
+        "text": "He does not know my name or face"
+      },
+      {
+        "time": 73.17,
+        "endTime": 79.41,
+        "text": "But I have been preparing for this place"
+      },
+      {
+        "time": 80.91,
+        "endTime": 89.43,
+        "text": "I sent my eyes to every corner of the map"
+      },
+      {
+        "time": 89.43,
+        "endTime": 95.33,
+        "text": "Moiraine was my blade, my closest trap"
+      },
+      {
+        "time": 95.33,
+        "endTime": 102.54,
+        "text": "We spoke in code, we burned each letter clean"
+      },
+      {
+        "time": 102.54,
+        "endTime": 110.41,
+        "text": "Two women running the longest game you have seen"
+      },
+      {
+        "time": 112.41,
+        "endTime": 118.03,
+        "text": "The Dragon is a fish on my line"
+      },
+      {
+        "time": 118.03,
+        "endTime": 123.65,
+        "text": "I will pull him to the shore in time"
+      },
+      {
+        "time": 123.65,
+        "endTime": 128.64,
+        "text": "He does not know my name or face"
+      },
+      {
+        "time": 128.64,
+        "endTime": 134.88,
+        "text": "But I have been preparing for this place"
+      },
+      {
+        "time": 137.38,
+        "endTime": 144.67,
+        "text": "They call it arrogance, I call it sight"
+      },
+      {
+        "time": 144.67,
+        "endTime": 151.22,
+        "text": "Someone has to steer him through the night"
+      },
+      {
+        "time": 151.22,
+        "endTime": 159.96,
+        "text": "If I do not hold this line, the whole world drowns"
+      },
+      {
+        "time": 159.96,
+        "endTime": 166.52,
+        "text": "So I will keep pulling till he's found"
+      },
+      {
+        "time": 168.52,
+        "endTime": 170.83,
+        "text": "Cast the net"
+      },
+      {
+        "time": 170.83,
+        "endTime": 173.14,
+        "text": "Hold the line"
+      },
+      {
+        "time": 173.14,
+        "endTime": 177,
+        "text": "The Dragon is mine"
+      }
+    ]
+  },
+  "Stilled": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.74,
+        "text": "They cut the thread that tied me to the sun"
+      },
+      {
+        "time": 7.74,
+        "endTime": 14.47,
+        "text": "I felt every color drain to none"
+      },
+      {
+        "time": 14.47,
+        "endTime": 19.86,
+        "text": "The world went flat, the air went thin"
+      },
+      {
+        "time": 19.86,
+        "endTime": 25.92,
+        "text": "I became a stranger in my skin"
+      },
+      {
+        "time": 27.42,
+        "endTime": 34.83,
+        "text": "Yesterday I could have moved a mountain"
+      },
+      {
+        "time": 34.83,
+        "endTime": 40.89,
+        "text": "Today I cannot feel the fountain"
+      },
+      {
+        "time": 40.89,
+        "endTime": 46.95,
+        "text": "The source that ran beneath my bones"
+      },
+      {
+        "time": 46.95,
+        "endTime": 53.69,
+        "text": "Is silent now, replaced by stones"
+      },
+      {
+        "time": 55.69,
+        "endTime": 60.82,
+        "text": "Stilled, like a river dammed"
+      },
+      {
+        "time": 60.82,
+        "endTime": 65.95,
+        "text": "Stilled, like a door that slammed"
+      },
+      {
+        "time": 65.95,
+        "endTime": 71.72,
+        "text": "They took the thing that made me whole"
+      },
+      {
+        "time": 71.72,
+        "endTime": 77.5,
+        "text": "And left me standing in a hole"
+      },
+      {
+        "time": 79,
+        "endTime": 87.08,
+        "text": "I keep reaching for the weave like a phantom limb"
+      },
+      {
+        "time": 87.08,
+        "endTime": 92.47,
+        "text": "The absence hums, the edges dim"
+      },
+      {
+        "time": 92.47,
+        "endTime": 99.88,
+        "text": "I used to hold the world between my hands"
+      },
+      {
+        "time": 99.88,
+        "endTime": 108.63,
+        "text": "Now I cannot even light a candle with commands"
+      },
+      {
+        "time": 110.63,
+        "endTime": 115.76,
+        "text": "Stilled, like a river dammed"
+      },
+      {
+        "time": 115.76,
+        "endTime": 120.89,
+        "text": "Stilled, like a door that slammed"
+      },
+      {
+        "time": 120.89,
+        "endTime": 126.67,
+        "text": "They took the thing that made me whole"
+      },
+      {
+        "time": 126.67,
+        "endTime": 132.44,
+        "text": "And left me standing in a hole"
+      },
+      {
+        "time": 134.94,
+        "endTime": 143.92,
+        "text": "Do not tell me I am lucky to be alive"
+      },
+      {
+        "time": 143.92,
+        "endTime": 152.9,
+        "text": "Do not tell me I should be glad I survived"
+      },
+      {
+        "time": 152.9,
+        "endTime": 158.89,
+        "text": "You did not lose what I have lost"
+      },
+      {
+        "time": 158.89,
+        "endTime": 167.87,
+        "text": "You do not know the cost, you do not know the cost"
+      },
+      {
+        "time": 169.87,
+        "endTime": 171.45,
+        "text": "Stilled"
+      },
+      {
+        "time": 171.45,
+        "endTime": 175.42,
+        "text": "But not finished"
+      },
+      {
+        "time": 175.42,
+        "endTime": 177,
+        "text": "Not yet"
+      }
+    ]
+  },
+  "Exile Tastes Like Copper": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.84,
+        "text": "They gave me a new name and a smaller room"
+      },
+      {
+        "time": 7.84,
+        "endTime": 14.05,
+        "text": "Swept the Amyrlin's quarters with a broom"
+      },
+      {
+        "time": 14.05,
+        "endTime": 20.88,
+        "text": "The women who once knelt now walk past my face"
+      },
+      {
+        "time": 20.88,
+        "endTime": 27.1,
+        "text": "As if I am a stain upon this place"
+      },
+      {
+        "time": 28.6,
+        "endTime": 33.57,
+        "text": "I wash the floors, I chop the roots"
+      },
+      {
+        "time": 33.57,
+        "endTime": 40.4,
+        "text": "My hands that signed the wars now peel the fruits"
+      },
+      {
+        "time": 40.4,
+        "endTime": 46.62,
+        "text": "Leane watches me with eyes that understand"
+      },
+      {
+        "time": 46.62,
+        "endTime": 54.07,
+        "text": "Two fallen queens in a penitent's wasteland"
+      },
+      {
+        "time": 56.07,
+        "endTime": 62.58,
+        "text": "Exile tastes like copper on my tongue"
+      },
+      {
+        "time": 62.58,
+        "endTime": 69.68,
+        "text": "Like the blood of every song I have not sung"
+      },
+      {
+        "time": 69.68,
+        "endTime": 75.6,
+        "text": "They stripped my title, stripped my name"
+      },
+      {
+        "time": 75.6,
+        "endTime": 80.93,
+        "text": "But they could not strip away the flame"
+      },
+      {
+        "time": 82.43,
+        "endTime": 89.26,
+        "text": "I smile at the ones who spit my way"
+      },
+      {
+        "time": 89.26,
+        "endTime": 97.34,
+        "text": "I remember every face, I file each day"
+      },
+      {
+        "time": 97.34,
+        "endTime": 102.93,
+        "text": "A fisherman's daughter knows the tide"
+      },
+      {
+        "time": 102.93,
+        "endTime": 108.53,
+        "text": "I will ride it back. I will not hide"
+      },
+      {
+        "time": 110.53,
+        "endTime": 117.04,
+        "text": "Exile tastes like copper on my tongue"
+      },
+      {
+        "time": 117.04,
+        "endTime": 124.14,
+        "text": "Like the blood of every song I have not sung"
+      },
+      {
+        "time": 124.14,
+        "endTime": 130.05,
+        "text": "They stripped my title, stripped my name"
+      },
+      {
+        "time": 130.05,
+        "endTime": 135.38,
+        "text": "But they could not strip away the flame"
+      },
+      {
+        "time": 137.88,
+        "endTime": 144.09,
+        "text": "You think I am broken on this floor"
+      },
+      {
+        "time": 144.09,
+        "endTime": 150.31,
+        "text": "You think I have nothing left in store"
+      },
+      {
+        "time": 150.31,
+        "endTime": 157.21,
+        "text": "But I have gutted fish since I was five"
+      },
+      {
+        "time": 157.21,
+        "endTime": 165.5,
+        "text": "I know how to survive, I know how to survive"
+      },
+      {
+        "time": 167.5,
+        "endTime": 171.15,
+        "text": "Copper on my tongue"
+      },
+      {
+        "time": 171.15,
+        "endTime": 174.08,
+        "text": "Fire in my lungs"
+      },
+      {
+        "time": 174.08,
+        "endTime": 177,
+        "text": "I am still here"
+      }
+    ]
+  },
+  "The Blue Ajah Web": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.2,
+        "text": "Every Blue has an ear in a different court"
+      },
+      {
+        "time": 9.2,
+        "endTime": 15.5,
+        "text": "We trade in whispers, we deal in report"
+      },
+      {
+        "time": 15.5,
+        "endTime": 21.81,
+        "text": "The network stretches from Tear to the Waste"
+      },
+      {
+        "time": 21.81,
+        "endTime": 28.11,
+        "text": "Nothing is spoken, nothing is traced"
+      },
+      {
+        "time": 29.61,
+        "endTime": 36.55,
+        "text": "I built the web before I wore the stole"
+      },
+      {
+        "time": 36.55,
+        "endTime": 44.74,
+        "text": "Information is the only thing that is whole"
+      },
+      {
+        "time": 44.74,
+        "endTime": 51.68,
+        "text": "A rumor in Cairhien, a nod in Illian"
+      },
+      {
+        "time": 51.68,
+        "endTime": 57.35,
+        "text": "I knew the truth before a million"
+      },
+      {
+        "time": 59.35,
+        "endTime": 65.36,
+        "text": "The Blue Ajah web, invisible thread"
+      },
+      {
+        "time": 65.36,
+        "endTime": 70.76,
+        "text": "We hear the words before they are said"
+      },
+      {
+        "time": 70.76,
+        "endTime": 79.17,
+        "text": "Every spy, every eye, every trusted source"
+      },
+      {
+        "time": 79.17,
+        "endTime": 86.37,
+        "text": "I am the spider at the center of the course"
+      },
+      {
+        "time": 87.87,
+        "endTime": 93.55,
+        "text": "Moiraine ran the field, I held the strings"
+      },
+      {
+        "time": 93.55,
+        "endTime": 99.85,
+        "text": "Two Blue sisters pulling on the world's wings"
+      },
+      {
+        "time": 99.85,
+        "endTime": 106.16,
+        "text": "They never saw us working side by side"
+      },
+      {
+        "time": 106.16,
+        "endTime": 113.73,
+        "text": "The greatest partnership the Tower tried to hide"
+      },
+      {
+        "time": 115.73,
+        "endTime": 121.73,
+        "text": "The Blue Ajah web, invisible thread"
+      },
+      {
+        "time": 121.73,
+        "endTime": 127.13,
+        "text": "We hear the words before they are said"
+      },
+      {
+        "time": 127.13,
+        "endTime": 135.54,
+        "text": "Every spy, every eye, every trusted source"
+      },
+      {
+        "time": 135.54,
+        "endTime": 142.75,
+        "text": "I am the spider at the center of the course"
+      },
+      {
+        "time": 145.25,
+        "endTime": 150.85,
+        "text": "Even stilled, the web still holds"
+      },
+      {
+        "time": 150.85,
+        "endTime": 157.16,
+        "text": "They cut my power but not my roads"
+      },
+      {
+        "time": 157.16,
+        "endTime": 163.46,
+        "text": "The eyes still report, the birds still sing"
+      },
+      {
+        "time": 163.46,
+        "endTime": 169.07,
+        "text": "I am still pulling on the string"
+      },
+      {
+        "time": 171.07,
+        "endTime": 173.29,
+        "text": "The web holds"
+      },
+      {
+        "time": 173.29,
+        "endTime": 177,
+        "text": "The web always holds"
+      }
+    ]
+  },
+  "Gareth Bryne (I Did Not Ask for You)": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.3,
+        "text": "You followed me across the muddy roads"
+      },
+      {
+        "time": 7.3,
+        "endTime": 15.32,
+        "text": "I did not ask for company, I carried my own loads"
+      },
+      {
+        "time": 15.32,
+        "endTime": 21.05,
+        "text": "A general with nothing left to lead"
+      },
+      {
+        "time": 21.05,
+        "endTime": 28.5,
+        "text": "Chasing a woman for a debt she would not concede"
+      },
+      {
+        "time": 30,
+        "endTime": 35.73,
+        "text": "You are stubborn and you are proud and gray"
+      },
+      {
+        "time": 35.73,
+        "endTime": 41.46,
+        "text": "I am broken in a different way"
+      },
+      {
+        "time": 41.46,
+        "endTime": 48.34,
+        "text": "Two people stripped of everything they were"
+      },
+      {
+        "time": 48.34,
+        "endTime": 52.92,
+        "text": "Walking together through the blur"
+      },
+      {
+        "time": 54.92,
+        "endTime": 59.83,
+        "text": "I did not ask for you, Gareth Bryne"
+      },
+      {
+        "time": 59.83,
+        "endTime": 67.47,
+        "text": "I did not ask for steady and I did not ask for kind"
+      },
+      {
+        "time": 67.47,
+        "endTime": 74.02,
+        "text": "But you came anyway, you foolish, stubborn man"
+      },
+      {
+        "time": 74.02,
+        "endTime": 79.48,
+        "text": "And somehow I am holding your hand"
+      },
+      {
+        "time": 80.98,
+        "endTime": 87.28,
+        "text": "I have ruled the world, I have lost the sun"
+      },
+      {
+        "time": 87.28,
+        "endTime": 93.58,
+        "text": "I have gutted fish and I have been undone"
+      },
+      {
+        "time": 93.58,
+        "endTime": 99.88,
+        "text": "But I never knew what terrified me most"
+      },
+      {
+        "time": 99.88,
+        "endTime": 105.61,
+        "text": "Until you stood there, solid as a post"
+      },
+      {
+        "time": 107.61,
+        "endTime": 112.52,
+        "text": "I did not ask for you, Gareth Bryne"
+      },
+      {
+        "time": 112.52,
+        "endTime": 120.16,
+        "text": "I did not ask for steady and I did not ask for kind"
+      },
+      {
+        "time": 120.16,
+        "endTime": 126.71,
+        "text": "But you came anyway, you foolish, stubborn man"
+      },
+      {
+        "time": 126.71,
+        "endTime": 132.17,
+        "text": "And somehow I am holding your hand"
+      },
+      {
+        "time": 134.67,
+        "endTime": 141.03,
+        "text": "Love is a net I never meant to cast"
+      },
+      {
+        "time": 141.03,
+        "endTime": 146.13,
+        "text": "But you swam in and held on fast"
+      },
+      {
+        "time": 146.13,
+        "endTime": 153.77,
+        "text": "The fisher queen caught something unforeseen"
+      },
+      {
+        "time": 153.77,
+        "endTime": 159.5,
+        "text": "The only thing she could not gut clean"
+      },
+      {
+        "time": 161.5,
+        "endTime": 164.19,
+        "text": "I did not ask"
+      },
+      {
+        "time": 164.19,
+        "endTime": 168.24,
+        "text": "But I am glad you came"
+      },
+      {
+        "time": 168.24,
+        "endTime": 170.26,
+        "text": "Gareth Bryne"
+      },
+      {
+        "time": 170.26,
+        "endTime": 177,
+        "text": "I will not say your name without the ache"
+      }
+    ]
+  },
+  "Rebuilt from Bones": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 7.06,
+        "text": "They thought the story ended when I fell"
+      },
+      {
+        "time": 7.06,
+        "endTime": 13.11,
+        "text": "They wrote my epitaph, they rang the bell"
+      },
+      {
+        "time": 13.11,
+        "endTime": 19.17,
+        "text": "But I have been rebuilding in the dark"
+      },
+      {
+        "time": 19.17,
+        "endTime": 25.22,
+        "text": "Stacking every bone back to a spark"
+      },
+      {
+        "time": 26.72,
+        "endTime": 31.57,
+        "text": "I lost the Source, I lost the chair"
+      },
+      {
+        "time": 31.57,
+        "endTime": 37.62,
+        "text": "I lost the title and the braided hair"
+      },
+      {
+        "time": 37.62,
+        "endTime": 43.68,
+        "text": "But a fisherman's daughter knows the sea"
+      },
+      {
+        "time": 43.68,
+        "endTime": 49.73,
+        "text": "You cannot drown what was born to be free"
+      },
+      {
+        "time": 51.73,
+        "endTime": 56.92,
+        "text": "Rebuilt from bones, I stand again"
+      },
+      {
+        "time": 56.92,
+        "endTime": 62.11,
+        "text": "Not the woman that I was back then"
+      },
+      {
+        "time": 62.11,
+        "endTime": 66.15,
+        "text": "Smaller maybe, scarred for sure"
+      },
+      {
+        "time": 66.15,
+        "endTime": 73.07,
+        "text": "But the foundation holds, the foundation holds pure"
+      },
+      {
+        "time": 74.57,
+        "endTime": 82.44,
+        "text": "I am gathering the broken pieces in my hands"
+      },
+      {
+        "time": 82.44,
+        "endTime": 89.1,
+        "text": "The Salidar rebels, the fractured bands"
+      },
+      {
+        "time": 89.1,
+        "endTime": 95.16,
+        "text": "Leading from behind, leading from below"
+      },
+      {
+        "time": 95.16,
+        "endTime": 102.42,
+        "text": "The tide is turning, I can feel the undertow"
+      },
+      {
+        "time": 104.42,
+        "endTime": 109.61,
+        "text": "Rebuilt from bones, I stand again"
+      },
+      {
+        "time": 109.61,
+        "endTime": 114.8,
+        "text": "Not the woman that I was back then"
+      },
+      {
+        "time": 114.8,
+        "endTime": 118.84,
+        "text": "Smaller maybe, scarred for sure"
+      },
+      {
+        "time": 118.84,
+        "endTime": 125.76,
+        "text": "But the foundation holds, the foundation holds pure"
+      },
+      {
+        "time": 128.26,
+        "endTime": 135.66,
+        "text": "I was the Amyrlin Seat, I was the flame"
+      },
+      {
+        "time": 135.66,
+        "endTime": 142.39,
+        "text": "They tried to snuff me out, they tried to tame"
+      },
+      {
+        "time": 142.39,
+        "endTime": 149.79,
+        "text": "But fire remembers where it burned before"
+      },
+      {
+        "time": 149.79,
+        "endTime": 157.19,
+        "text": "And I remember what I am fighting for"
+      },
+      {
+        "time": 159.19,
+        "endTime": 162.75,
+        "text": "Rebuilt from bones"
+      },
+      {
+        "time": 162.75,
+        "endTime": 166.31,
+        "text": "River stone and salt"
+      },
+      {
+        "time": 166.31,
+        "endTime": 170.59,
+        "text": "The fisher queen returns"
+      },
+      {
+        "time": 170.59,
+        "endTime": 177,
+        "text": "And it is nobody's fault but theirs"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["the-shepherds-sword"] = {
+  "The Blade": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.41,
+        "text": "I learned to kill before I learned to pray"
+      },
+      {
+        "time": 9.41,
+        "endTime": 16.41,
+        "text": "Steel was my scripture, blood my holy day"
+      },
+      {
+        "time": 16.41,
+        "endTime": 24.81,
+        "text": "A heron on the hilt, a crown upon the hill"
+      },
+      {
+        "time": 24.81,
+        "endTime": 35.32,
+        "text": "Every form I mastered was another way to still"
+      },
+      {
+        "time": 35.32,
+        "endTime": 42.33,
+        "text": "The breathing of a man who had a name"
+      },
+      {
+        "time": 42.33,
+        "endTime": 50.73,
+        "text": "Who had a mother, had a life before I came"
+      },
+      {
+        "time": 52.73,
+        "endTime": 61.4,
+        "text": "The blade remembers what the shepherd tries to forget"
+      },
+      {
+        "time": 61.4,
+        "endTime": 70.74,
+        "text": "Every scar a sentence that the steel has not read yet"
+      },
+      {
+        "time": 70.74,
+        "endTime": 77.41,
+        "text": "I buried who I was beneath the plow"
+      },
+      {
+        "time": 77.41,
+        "endTime": 85.42,
+        "text": "But the blade remembers, the blade remembers now"
+      },
+      {
+        "time": 86.92,
+        "endTime": 95.32,
+        "text": "They called me captain, called me second-sworn"
+      },
+      {
+        "time": 95.32,
+        "endTime": 105.13,
+        "text": "I answered every call until my hands were torn"
+      },
+      {
+        "time": 105.13,
+        "endTime": 112.13,
+        "text": "From holding what I held too tight, too long"
+      },
+      {
+        "time": 112.13,
+        "endTime": 119.14,
+        "text": "The battlefield kept singing me its song"
+      },
+      {
+        "time": 119.14,
+        "endTime": 126.14,
+        "text": "But songs like that, they hollow out the bone"
+      },
+      {
+        "time": 126.14,
+        "endTime": 134.55,
+        "text": "Until you realize you are fighting all alone"
+      },
+      {
+        "time": 137.05,
+        "endTime": 144.83,
+        "text": "I put the sword away, I chose the soil"
+      },
+      {
+        "time": 144.83,
+        "endTime": 153.39,
+        "text": "Let calluses grow soft from different toil"
+      },
+      {
+        "time": 153.39,
+        "endTime": 161.17,
+        "text": "A man can change his hands but not his dreams"
+      },
+      {
+        "time": 161.17,
+        "endTime": 164.29,
+        "text": "The blade still gleams"
+      },
+      {
+        "time": 166.29,
+        "endTime": 170.41,
+        "text": "The blade remembers"
+      },
+      {
+        "time": 170.41,
+        "endTime": 177,
+        "text": "What the shepherd tries to forget"
+      }
+    ]
+  },
+  "The Baby on the Mountain": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.56,
+        "text": "Snow on Dragonmount, the sky was torn apart"
+      },
+      {
+        "time": 8.56,
+        "endTime": 18.19,
+        "text": "I found you in the ashes with your mothers stopping heart"
+      },
+      {
+        "time": 18.19,
+        "endTime": 27.12,
+        "text": "A woman I had never met lay dying in the cold"
+      },
+      {
+        "time": 27.12,
+        "endTime": 36.75,
+        "text": "She pressed you to my chest and said nothing left to hold"
+      },
+      {
+        "time": 36.75,
+        "endTime": 44.31,
+        "text": "Your fingers gripped my collar like you knew"
+      },
+      {
+        "time": 44.31,
+        "endTime": 54.62,
+        "text": "That everything was ending and beginning there with you"
+      },
+      {
+        "time": 56.62,
+        "endTime": 65.13,
+        "text": "I carried you down the mountain through the breaking dawn"
+      },
+      {
+        "time": 65.13,
+        "endTime": 73.64,
+        "text": "A soldier with a baby and the war still going on"
+      },
+      {
+        "time": 73.64,
+        "endTime": 81.5,
+        "text": "I did not know your name, I did not know your fate"
+      },
+      {
+        "time": 81.5,
+        "endTime": 89.36,
+        "text": "I only knew I could not leave you at that gate"
+      },
+      {
+        "time": 90.86,
+        "endTime": 99.79,
+        "text": "The Aiel crossed the river, blood on every stone"
+      },
+      {
+        "time": 99.79,
+        "endTime": 109.42,
+        "text": "A thousand men were dying but I walked that path alone"
+      },
+      {
+        "time": 109.42,
+        "endTime": 117.67,
+        "text": "You never cried, not once, like silence was your shield"
+      },
+      {
+        "time": 117.67,
+        "endTime": 125.92,
+        "text": "The smallest thing alive on that forsaken field"
+      },
+      {
+        "time": 125.92,
+        "endTime": 134.16,
+        "text": "I wrapped you in my cloak and turned my back"
+      },
+      {
+        "time": 134.16,
+        "endTime": 143.79,
+        "text": "On every war I ever fought. I am not going back"
+      },
+      {
+        "time": 146.29,
+        "endTime": 154.69,
+        "text": "Some men find purpose at the point of a sword"
+      },
+      {
+        "time": 154.69,
+        "endTime": 165.38,
+        "text": "I found mine in the weight of a child I could not afford"
+      },
+      {
+        "time": 165.38,
+        "endTime": 166.91,
+        "text": "To lose"
+      },
+      {
+        "time": 168.91,
+        "endTime": 172.96,
+        "text": "I carried you down"
+      },
+      {
+        "time": 172.96,
+        "endTime": 177,
+        "text": "Through the breaking dawn"
+      }
+    ]
+  },
+  "Two Rivers": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.96,
+        "text": "The Waterwood is quiet in the morning when the mist"
+      },
+      {
+        "time": 9.96,
+        "endTime": 20.3,
+        "text": "Hangs low across the river like a secret never kissed"
+      },
+      {
+        "time": 20.3,
+        "endTime": 29.96,
+        "text": "I built these fences post by post, I know each stone by name"
+      },
+      {
+        "time": 29.96,
+        "endTime": 38.92,
+        "text": "Twenty years of silence and I would not trade the shame"
+      },
+      {
+        "time": 38.92,
+        "endTime": 48.57,
+        "text": "Of who I was for who I am, this dirt beneath my nails"
+      },
+      {
+        "time": 48.57,
+        "endTime": 60.29,
+        "text": "Is worth more than every battle in those old forgotten tales"
+      },
+      {
+        "time": 62.29,
+        "endTime": 69.51,
+        "text": "Two Rivers holds me like the roots hold the tree"
+      },
+      {
+        "time": 69.51,
+        "endTime": 76.73,
+        "text": "No crown, no title, just the soil and the seed"
+      },
+      {
+        "time": 76.73,
+        "endTime": 85.27,
+        "text": "The wind through the apple rows, the frost on the eaves"
+      },
+      {
+        "time": 85.27,
+        "endTime": 91.84,
+        "text": "Two Rivers is the only war I need"
+      },
+      {
+        "time": 93.34,
+        "endTime": 102.3,
+        "text": "Bel Tine fires burning, children laughing in the square"
+      },
+      {
+        "time": 102.3,
+        "endTime": 111.95,
+        "text": "My boy stands taller every spring, red hair catching air"
+      },
+      {
+        "time": 111.95,
+        "endTime": 120.22,
+        "text": "He does not know the mountain, does not know the snow"
+      },
+      {
+        "time": 120.22,
+        "endTime": 129.87,
+        "text": "And if this shepherd has his way he never needs to know"
+      },
+      {
+        "time": 129.87,
+        "endTime": 136.77,
+        "text": "Let the world beyond the Taren keep its thorns"
+      },
+      {
+        "time": 136.77,
+        "endTime": 143.66,
+        "text": "My son was born to sunlight, not to storms"
+      },
+      {
+        "time": 146.16,
+        "endTime": 155.35,
+        "text": "I traded steel for seasons, traded rank for rain"
+      },
+      {
+        "time": 155.35,
+        "endTime": 166.08,
+        "text": "Every harvest is a victory without the pain"
+      },
+      {
+        "time": 168.08,
+        "endTime": 172.13,
+        "text": "Two Rivers holds me"
+      },
+      {
+        "time": 172.13,
+        "endTime": 177,
+        "text": "Like the roots hold the tree"
+      }
+    ]
+  },
+  "The Fever": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.2,
+        "text": "The poison in my blood is pulling words out of my mouth"
+      },
+      {
+        "time": 10.2,
+        "endTime": 18.75,
+        "text": "Things I swore I buried, things I carried from the south"
+      },
+      {
+        "time": 18.75,
+        "endTime": 27.96,
+        "text": "You are not my son, I say, and hate myself for speaking"
+      },
+      {
+        "time": 27.96,
+        "endTime": 37.82,
+        "text": "The walls between us crack and I can hear the truth come leaking"
+      },
+      {
+        "time": 37.82,
+        "endTime": 44.39,
+        "text": "Through the fever and the fire and the sweat"
+      },
+      {
+        "time": 44.39,
+        "endTime": 54.91,
+        "text": "Every promise that I made begins to bend and then forget"
+      },
+      {
+        "time": 56.91,
+        "endTime": 64.43,
+        "text": "The fever tells the truth the man would never say"
+      },
+      {
+        "time": 64.43,
+        "endTime": 74.44,
+        "text": "It strips the shepherd down and shows the soldier underneath the clay"
+      },
+      {
+        "time": 74.44,
+        "endTime": 81.33,
+        "text": "I am burning from the inside, burning clean"
+      },
+      {
+        "time": 81.33,
+        "endTime": 89.47,
+        "text": "Saying everything I fought so hard to leave unseen"
+      },
+      {
+        "time": 90.97,
+        "endTime": 100.18,
+        "text": "Dragonmount, I whisper, and your eyes go somewhere cold"
+      },
+      {
+        "time": 100.18,
+        "endTime": 110.04,
+        "text": "A story written on your skin that I was wrong to withhold"
+      },
+      {
+        "time": 110.04,
+        "endTime": 119.24,
+        "text": "Your mother was a maiden, red-haired, dying in the snow"
+      },
+      {
+        "time": 119.24,
+        "endTime": 127.79,
+        "text": "I took you from the mountain, boy, that is all I know"
+      },
+      {
+        "time": 127.79,
+        "endTime": 134.36,
+        "text": "The fever has no mercy, has no shame"
+      },
+      {
+        "time": 134.36,
+        "endTime": 144.23,
+        "text": "It speaks the things a father hides to keep his son from blame"
+      },
+      {
+        "time": 146.73,
+        "endTime": 155.49,
+        "text": "When the sickness breaks, will you still call me father"
+      },
+      {
+        "time": 155.49,
+        "endTime": 163.53,
+        "text": "Will you still sit beside me, will it matter"
+      },
+      {
+        "time": 163.53,
+        "endTime": 165.72,
+        "text": "That I lied"
+      },
+      {
+        "time": 167.72,
+        "endTime": 172.36,
+        "text": "The fever tells the truth"
+      },
+      {
+        "time": 172.36,
+        "endTime": 177,
+        "text": "The man would never say"
+      }
+    ]
+  },
+  "The Sword in the Wardrobe": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 10.16,
+        "text": "Behind the winter coats, behind the wool and mending thread"
+      },
+      {
+        "time": 10.16,
+        "endTime": 18.02,
+        "text": "A heron-mark blade sleeps where I have made its bed"
+      },
+      {
+        "time": 18.02,
+        "endTime": 25.87,
+        "text": "I oil it once a year when Rand has gone to town"
+      },
+      {
+        "time": 25.87,
+        "endTime": 33.73,
+        "text": "I hold the grip and feel the old forms pulling down"
+      },
+      {
+        "time": 33.73,
+        "endTime": 41.58,
+        "text": "Through muscle memory, through bone and sinew deep"
+      },
+      {
+        "time": 41.58,
+        "endTime": 50.74,
+        "text": "A blademaster does not retire, he just learns to sleep"
+      },
+      {
+        "time": 52.74,
+        "endTime": 59.6,
+        "text": "The sword in the wardrobe knows my other name"
+      },
+      {
+        "time": 59.6,
+        "endTime": 67.71,
+        "text": "The one I answer to in nightmares, not in day"
+      },
+      {
+        "time": 67.71,
+        "endTime": 75.81,
+        "text": "I keep it wrapped in cloth, I keep it out of light"
+      },
+      {
+        "time": 75.81,
+        "endTime": 83.91,
+        "text": "A shepherd has no use for what was forged to fight"
+      },
+      {
+        "time": 85.41,
+        "endTime": 93.27,
+        "text": "My son asks me of swords, I teach him just the bow"
+      },
+      {
+        "time": 93.27,
+        "endTime": 102.43,
+        "text": "Enough to hunt, enough to live, but nothing of the flow"
+      },
+      {
+        "time": 102.43,
+        "endTime": 110.29,
+        "text": "Of water over stone, of wind across the hill"
+      },
+      {
+        "time": 110.29,
+        "endTime": 119.45,
+        "text": "The forms would make him dangerous and I have had my fill"
+      },
+      {
+        "time": 119.45,
+        "endTime": 127.96,
+        "text": "Of dangerous young men who think the blade is power"
+      },
+      {
+        "time": 127.96,
+        "endTime": 137.12,
+        "text": "The blade is just the last thing standing at the final hour"
+      },
+      {
+        "time": 139.62,
+        "endTime": 147.62,
+        "text": "One day he will find it, one day he will know"
+      },
+      {
+        "time": 147.62,
+        "endTime": 157.8,
+        "text": "That his father was a killer with a long time ago"
+      },
+      {
+        "time": 157.8,
+        "endTime": 166.53,
+        "text": "And the heron is a mark that never fades"
+      },
+      {
+        "time": 168.53,
+        "endTime": 173.15,
+        "text": "The sword in the wardrobe"
+      },
+      {
+        "time": 173.15,
+        "endTime": 177,
+        "text": "Knows my other name"
+      }
+    ]
+  },
+  "Letting Go": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.06,
+        "text": "She calls herself Moiraine and her eyes are full of wheels"
+      },
+      {
+        "time": 9.06,
+        "endTime": 17.73,
+        "text": "Turning plans I cannot see, making bargains, making deals"
+      },
+      {
+        "time": 17.73,
+        "endTime": 26.4,
+        "text": "My boy stands at the doorway with a pack across his back"
+      },
+      {
+        "time": 26.4,
+        "endTime": 35.7,
+        "text": "And everything I built these twenty years begins to crack"
+      },
+      {
+        "time": 35.7,
+        "endTime": 44.99,
+        "text": "He is leaving and the road goes only one direction out"
+      },
+      {
+        "time": 44.99,
+        "endTime": 56.15,
+        "text": "This is what the mountain always meant, this is what the war was all about"
+      },
+      {
+        "time": 58.15,
+        "endTime": 67,
+        "text": "Letting go is not surrender, letting go is not defeat"
+      },
+      {
+        "time": 67,
+        "endTime": 75.85,
+        "text": "It is standing in the doorway watching your own heart retreat"
+      },
+      {
+        "time": 75.85,
+        "endTime": 84.11,
+        "text": "Down the road toward the river, past the bridge, beyond the bend"
+      },
+      {
+        "time": 84.11,
+        "endTime": 94.15,
+        "text": "Letting go is where the father ends and where the story starts again"
+      },
+      {
+        "time": 95.65,
+        "endTime": 104.32,
+        "text": "I should have told him sooner, should have given him the truth"
+      },
+      {
+        "time": 104.32,
+        "endTime": 114.23,
+        "text": "Instead of handing him to strangers and the hunger of his youth"
+      },
+      {
+        "time": 114.23,
+        "endTime": 123.53,
+        "text": "But what father tells a boy that he was born beneath a curse"
+      },
+      {
+        "time": 123.53,
+        "endTime": 132.82,
+        "text": "That the world will try to break him, that the pattern will get worse"
+      },
+      {
+        "time": 132.82,
+        "endTime": 142.74,
+        "text": "So I say be careful, son. I say come home when you are done"
+      },
+      {
+        "time": 142.74,
+        "endTime": 150.79,
+        "text": "Knowing that the boy who leaves will not be the one"
+      },
+      {
+        "time": 153.29,
+        "endTime": 160.18,
+        "text": "The door stays open and the fire stays lit"
+      },
+      {
+        "time": 160.18,
+        "endTime": 168.44,
+        "text": "For a son who may not find his way back to it"
+      },
+      {
+        "time": 170.44,
+        "endTime": 172.63,
+        "text": "Letting go"
+      },
+      {
+        "time": 172.63,
+        "endTime": 177,
+        "text": "Is where the father ends"
+      }
+    ]
+  },
+  "Perrin's Army": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.94,
+        "text": "The boy came back with golden eyes and wolves behind his heels"
+      },
+      {
+        "time": 9.94,
+        "endTime": 18.28,
+        "text": "An army at the Emond Field, and Trollocs in the fields"
+      },
+      {
+        "time": 18.28,
+        "endTime": 26.62,
+        "text": "Twenty years since I held steel but my hands remember still"
+      },
+      {
+        "time": 26.62,
+        "endTime": 34.37,
+        "text": "The captain wakes inside the shepherd on the hill"
+      },
+      {
+        "time": 34.37,
+        "endTime": 43.31,
+        "text": "I organize the lines, I place the men, I read the ground"
+      },
+      {
+        "time": 43.31,
+        "endTime": 52.84,
+        "text": "The old voice comes back steady, comes back sure without a sound"
+      },
+      {
+        "time": 54.84,
+        "endTime": 62.79,
+        "text": "Perrin brought the hammer, I brought what I tried to bury"
+      },
+      {
+        "time": 62.79,
+        "endTime": 71.87,
+        "text": "The soldier and the shepherd standing in the same cemetery"
+      },
+      {
+        "time": 71.87,
+        "endTime": 79.24,
+        "text": "Of the man I used to be. He is needed now"
+      },
+      {
+        "time": 79.24,
+        "endTime": 86.62,
+        "text": "So I pick up what I put down, I remember how"
+      },
+      {
+        "time": 88.12,
+        "endTime": 95.27,
+        "text": "Tam al Thor, the farmer, with a bow and quiet grin"
+      },
+      {
+        "time": 95.27,
+        "endTime": 103.62,
+        "text": "Nobody asks where I learned to place the archers thin"
+      },
+      {
+        "time": 103.62,
+        "endTime": 111.96,
+        "text": "Along the ridgeline, flanking, reading terrain like text"
+      },
+      {
+        "time": 111.96,
+        "endTime": 121.49,
+        "text": "They just follow where I point and do not question what comes next"
+      },
+      {
+        "time": 121.49,
+        "endTime": 130.43,
+        "text": "Because a steady voice in chaos is worth more than any crown"
+      },
+      {
+        "time": 130.43,
+        "endTime": 138.77,
+        "text": "And the shepherd who can fight is the last man standing down"
+      },
+      {
+        "time": 141.27,
+        "endTime": 150.54,
+        "text": "My son is out there somewhere, saving the world they say"
+      },
+      {
+        "time": 150.54,
+        "endTime": 159.81,
+        "text": "But here in Two Rivers, today, this is my war to pay"
+      },
+      {
+        "time": 159.81,
+        "endTime": 163.78,
+        "text": "And I will hold this line"
+      },
+      {
+        "time": 165.78,
+        "endTime": 170.69,
+        "text": "The soldier and the shepherd"
+      },
+      {
+        "time": 170.69,
+        "endTime": 177,
+        "text": "Standing in the same cemetery"
+      }
+    ]
+  },
+  "The Apple Orchard": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 9.46,
+        "text": "The Tarmon Gai don is over and the world has not burned down"
+      },
+      {
+        "time": 9.46,
+        "endTime": 17.91,
+        "text": "My boy came back with scars I cannot see and left without a sound"
+      },
+      {
+        "time": 17.91,
+        "endTime": 25.84,
+        "text": "But the apples do not care about the Dragon or the Dark"
+      },
+      {
+        "time": 25.84,
+        "endTime": 33.24,
+        "text": "They only know the seasons, only answer to the bark"
+      },
+      {
+        "time": 33.24,
+        "endTime": 40.64,
+        "text": "And root and rain and patience, which is all I ever had"
+      },
+      {
+        "time": 40.64,
+        "endTime": 48.04,
+        "text": "The orchard does not judge me as a soldier or a dad"
+      },
+      {
+        "time": 50.04,
+        "endTime": 57.59,
+        "text": "I am tending what I planted, I am pruning what has grown"
+      },
+      {
+        "time": 57.59,
+        "endTime": 66.15,
+        "text": "Every apple is a morning that I earned and that I own"
+      },
+      {
+        "time": 66.15,
+        "endTime": 73.2,
+        "text": "The sword is in the wardrobe and the war is in the ground"
+      },
+      {
+        "time": 73.2,
+        "endTime": 80.75,
+        "text": "And the only thing still standing is this ordinary sound"
+      },
+      {
+        "time": 80.75,
+        "endTime": 87.3,
+        "text": "Of wind through the branches in the late September light"
+      },
+      {
+        "time": 87.3,
+        "endTime": 94.85,
+        "text": "The shepherd finally resting at the far side of the fight"
+      },
+      {
+        "time": 96.35,
+        "endTime": 104.8,
+        "text": "They will write his name in histories, the Dragon Reborn, the one"
+      },
+      {
+        "time": 104.8,
+        "endTime": 112.2,
+        "text": "But I remember smaller things, his laughter in the sun"
+      },
+      {
+        "time": 112.2,
+        "endTime": 119.08,
+        "text": "Teaching him to notch an arrow, watching him grow tall"
+      },
+      {
+        "time": 119.08,
+        "endTime": 127,
+        "text": "The pride of ordinary days before the world made its call"
+      },
+      {
+        "time": 127,
+        "endTime": 132.82,
+        "text": "Let them have the legend. Let them have the throne"
+      },
+      {
+        "time": 132.82,
+        "endTime": 139.16,
+        "text": "I will take the orchard and the quiet and the home"
+      },
+      {
+        "time": 141.66,
+        "endTime": 148.71,
+        "text": "A man is not his war, a man is not his blade"
+      },
+      {
+        "time": 148.71,
+        "endTime": 156.34,
+        "text": "A man is what he grows in the life that he has made"
+      },
+      {
+        "time": 158.34,
+        "endTime": 163.32,
+        "text": "The shepherd finally resting"
+      },
+      {
+        "time": 163.32,
+        "endTime": 167.67,
+        "text": "At the far side of the fight"
+      },
+      {
+        "time": 167.67,
+        "endTime": 172.65,
+        "text": "I am tending what I planted"
+      },
+      {
+        "time": 172.65,
+        "endTime": 177,
+        "text": "I am pruning what has grown"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["shadow-and-the-flame"] = {
+  "Elan Morin Tedronai": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 5.62,
+        "text": "They called me philosopher before the world learned how to scream"
+      },
+      {
+        "time": 5.62,
+        "endTime": 10.77,
+        "text": "In the Age of Legends I was lauded, praised, revered for what I'd seen"
+      },
+      {
+        "time": 10.77,
+        "endTime": 15.39,
+        "text": "But every theorem led me closer to the fracture underneath"
+      },
+      {
+        "time": 15.39,
+        "endTime": 20.55,
+        "text": "The gleaming towers of Paaran Disen built on mathematics of deceit"
+      },
+      {
+        "time": 22.05,
+        "endTime": 26.39,
+        "text": "I could taste the entropy in every perfect garden wall"
+      },
+      {
+        "time": 26.39,
+        "endTime": 30.74,
+        "text": "Count the half-lives of their happiness before the coming fall"
+      },
+      {
+        "time": 30.74,
+        "endTime": 34.81,
+        "text": "The Aes Sedai wove channels through a Pattern fraying at the seam"
+      },
+      {
+        "time": 34.81,
+        "endTime": 38.61,
+        "text": "And I alone could hear the grinding underneath the dream"
+      },
+      {
+        "time": 40.61,
+        "endTime": 42.42,
+        "text": "Elan Morin Tedronai"
+      },
+      {
+        "time": 42.42,
+        "endTime": 45.78,
+        "text": "The name they spoke with such respect and admiration"
+      },
+      {
+        "time": 45.78,
+        "endTime": 49.66,
+        "text": "Before I showed them what their precious Pattern truly was"
+      },
+      {
+        "time": 49.66,
+        "endTime": 52.25,
+        "text": "A cage disguised as constellation"
+      },
+      {
+        "time": 52.25,
+        "endTime": 54.06,
+        "text": "Elan Morin Tedronai"
+      },
+      {
+        "time": 54.06,
+        "endTime": 57.16,
+        "text": "The voice that dared to question the foundation"
+      },
+      {
+        "time": 57.16,
+        "endTime": 60,
+        "text": "While everyone else knelt before the Wheel"
+      },
+      {
+        "time": 60,
+        "endTime": 63.11,
+        "text": "I refused my genuflection to creation"
+      },
+      {
+        "time": 64.61,
+        "endTime": 68.68,
+        "text": "Lews Therin smiled and called me brother, called me friend"
+      },
+      {
+        "time": 68.68,
+        "endTime": 72.75,
+        "text": "He never understood the kindness in wanting things to end"
+      },
+      {
+        "time": 72.75,
+        "endTime": 76.55,
+        "text": "His optimism was a sickness wrapped in golden light"
+      },
+      {
+        "time": 76.55,
+        "endTime": 81.17,
+        "text": "I loved the world enough to see it did not earn another night"
+      },
+      {
+        "time": 82.67,
+        "endTime": 86.74,
+        "text": "They say I chose the Shadow like a coward running scared"
+      },
+      {
+        "time": 86.74,
+        "endTime": 91.36,
+        "text": "But I had done the mathematics and the numbers never spared"
+      },
+      {
+        "time": 91.36,
+        "endTime": 95.16,
+        "text": "A single soul from turning on the Wheel's relentless track"
+      },
+      {
+        "time": 95.16,
+        "endTime": 99.5,
+        "text": "Every life a repetition and there is no turning back"
+      },
+      {
+        "time": 102,
+        "endTime": 103.81,
+        "text": "I did not fall from grace"
+      },
+      {
+        "time": 103.81,
+        "endTime": 107.43,
+        "text": "I walked down every step with open eyes"
+      },
+      {
+        "time": 107.43,
+        "endTime": 110.15,
+        "text": "Counting the cost of perpetuity"
+      },
+      {
+        "time": 110.15,
+        "endTime": 113.16,
+        "text": "Until the sum could not be justified"
+      },
+      {
+        "time": 113.16,
+        "endTime": 114.97,
+        "text": "I did not lose my mind"
+      },
+      {
+        "time": 114.97,
+        "endTime": 118.29,
+        "text": "I simply followed reason to its end"
+      },
+      {
+        "time": 118.29,
+        "endTime": 122.51,
+        "text": "Where every proof converged upon a single point"
+      },
+      {
+        "time": 122.51,
+        "endTime": 125.53,
+        "text": "That nothing broken ever truly mends"
+      },
+      {
+        "time": 127.03,
+        "endTime": 130.83,
+        "text": "Three thousand years of madness is what history records"
+      },
+      {
+        "time": 130.83,
+        "endTime": 134.9,
+        "text": "But madness is a label pinned by men who fear the words"
+      },
+      {
+        "time": 134.9,
+        "endTime": 138.71,
+        "text": "Of anyone who looked behind the curtain of the real"
+      },
+      {
+        "time": 138.71,
+        "endTime": 142.51,
+        "text": "And had the nerve to publish what the numbers would reveal"
+      },
+      {
+        "time": 144.51,
+        "endTime": 146.32,
+        "text": "Elan Morin Tedronai"
+      },
+      {
+        "time": 146.32,
+        "endTime": 149.68,
+        "text": "The name they spoke with such respect and admiration"
+      },
+      {
+        "time": 149.68,
+        "endTime": 153.56,
+        "text": "Before I showed them what their precious Pattern truly was"
+      },
+      {
+        "time": 153.56,
+        "endTime": 156.14,
+        "text": "A cage disguised as constellation"
+      },
+      {
+        "time": 156.14,
+        "endTime": 157.95,
+        "text": "Elan Morin Tedronai"
+      },
+      {
+        "time": 157.95,
+        "endTime": 161.05,
+        "text": "The voice that dared to question the foundation"
+      },
+      {
+        "time": 161.05,
+        "endTime": 163.9,
+        "text": "While everyone else knelt before the Wheel"
+      },
+      {
+        "time": 163.9,
+        "endTime": 167,
+        "text": "I refused my genuflection to creation"
+      },
+      {
+        "time": 169,
+        "endTime": 170.5,
+        "text": "Elan Morin"
+      },
+      {
+        "time": 170.5,
+        "endTime": 174.02,
+        "text": "The philosopher who read the final proof"
+      },
+      {
+        "time": 174.02,
+        "endTime": 177.21,
+        "text": "And found that existence was the error"
+      },
+      {
+        "time": 177.21,
+        "endTime": 179.45,
+        "text": "Hiding underneath the truth"
+      },
+      {
+        "time": 179.45,
+        "endTime": 181.68,
+        "text": "Elan Morin Tedronai"
+      },
+      {
+        "time": 181.68,
+        "endTime": 185.2,
+        "text": "Who loved the world enough to let it go"
+      },
+      {
+        "time": 185.2,
+        "endTime": 188.71,
+        "text": "The last equation written on the blackboard"
+      },
+      {
+        "time": 188.71,
+        "endTime": 192.22,
+        "text": "The answer everyone refused to know"
+      }
+    ]
+  },
+  "The Bore": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.31,
+        "text": "Mierin drilled the hole but I had drawn the map for years"
+      },
+      {
+        "time": 6.31,
+        "endTime": 11.63,
+        "text": "A cartography of silence where the Pattern disappears"
+      },
+      {
+        "time": 11.63,
+        "endTime": 17.29,
+        "text": "They touched the Dark One's prison thinking power lay inside"
+      },
+      {
+        "time": 17.29,
+        "endTime": 24.73,
+        "text": "I touched it knowing something else entirely — that the cage itself must die"
+      },
+      {
+        "time": 26.23,
+        "endTime": 32.25,
+        "text": "The Bore was not a wound, it was a window finally opened"
+      },
+      {
+        "time": 32.25,
+        "endTime": 37.92,
+        "text": "A crack in the machinery that let the truth come pouring in"
+      },
+      {
+        "time": 37.92,
+        "endTime": 43.59,
+        "text": "For one brief shining moment every living soul could feel it"
+      },
+      {
+        "time": 43.59,
+        "endTime": 48.9,
+        "text": "The weight of what the Wheel demanded and the price of being spun"
+      },
+      {
+        "time": 50.9,
+        "endTime": 54.61,
+        "text": "This is not corruption, this is diagnosis"
+      },
+      {
+        "time": 54.61,
+        "endTime": 58.66,
+        "text": "I am not the sickness — I am the physician"
+      },
+      {
+        "time": 58.66,
+        "endTime": 63.72,
+        "text": "The only honest answer to a wheel that grinds forever"
+      },
+      {
+        "time": 63.72,
+        "endTime": 68.78,
+        "text": "Is to put your hand upon the spoke and make a decision"
+      },
+      {
+        "time": 70.28,
+        "endTime": 75.59,
+        "text": "They sealed me near the surface, not as deep as those who slept"
+      },
+      {
+        "time": 75.59,
+        "endTime": 81.61,
+        "text": "Three thousand years of partial freedom while the world around me wept"
+      },
+      {
+        "time": 81.61,
+        "endTime": 87.28,
+        "text": "I could reach through dreams and shadows, plant my seeds in every age"
+      },
+      {
+        "time": 87.28,
+        "endTime": 92.59,
+        "text": "A gardener of endings tending every turning page"
+      },
+      {
+        "time": 95.09,
+        "endTime": 97.85,
+        "text": "The Bore is just a question"
+      },
+      {
+        "time": 97.85,
+        "endTime": 101.78,
+        "text": "Asked in language older than the Light"
+      },
+      {
+        "time": 101.78,
+        "endTime": 104.54,
+        "text": "If creation is a circle"
+      },
+      {
+        "time": 104.54,
+        "endTime": 108.87,
+        "text": "Who decided there was no exit in sight"
+      },
+      {
+        "time": 110.37,
+        "endTime": 115.33,
+        "text": "The Wheel spins out its heroes like a loom that cannot stop"
+      },
+      {
+        "time": 115.33,
+        "endTime": 120.28,
+        "text": "Lews Therin at the summit, Lews Therin who has to drop"
+      },
+      {
+        "time": 120.28,
+        "endTime": 125.6,
+        "text": "It dressed him up in glory, wound his purpose tight as wire"
+      },
+      {
+        "time": 125.6,
+        "endTime": 130.56,
+        "text": "Then handed him the madness and it set his world on fire"
+      },
+      {
+        "time": 132.56,
+        "endTime": 136.27,
+        "text": "This is not corruption, this is diagnosis"
+      },
+      {
+        "time": 136.27,
+        "endTime": 140.31,
+        "text": "I am not the sickness — I am the physician"
+      },
+      {
+        "time": 140.31,
+        "endTime": 145.37,
+        "text": "The only honest answer to a wheel that grinds forever"
+      },
+      {
+        "time": 145.37,
+        "endTime": 150.43,
+        "text": "Is to put your hand upon the spoke and make a decision"
+      },
+      {
+        "time": 151.93,
+        "endTime": 156.89,
+        "text": "He could have ended it, you know — the boy stood at the edge"
+      },
+      {
+        "time": 156.89,
+        "endTime": 162.21,
+        "text": "One moment of true silence, one release from every pledge"
+      },
+      {
+        "time": 162.21,
+        "endTime": 167.52,
+        "text": "But Rand al'Thor refused me, chose the laughter and the tears"
+      },
+      {
+        "time": 167.52,
+        "endTime": 172.83,
+        "text": "Chose the fleeting over freedom, chose the turning of the years"
+      },
+      {
+        "time": 174.83,
+        "endTime": 178.17,
+        "text": "They sealed the Bore with saidin"
+      },
+      {
+        "time": 178.17,
+        "endTime": 181.08,
+        "text": "And the backlash broke the world"
+      },
+      {
+        "time": 181.08,
+        "endTime": 184.83,
+        "text": "But the question I had asked it"
+      },
+      {
+        "time": 184.83,
+        "endTime": 187.33,
+        "text": "Kept on echoing, unheard"
+      },
+      {
+        "time": 187.33,
+        "endTime": 190.25,
+        "text": "The Bore remains my question"
+      },
+      {
+        "time": 190.25,
+        "endTime": 194,
+        "text": "And the Wheel has no answer to trade"
+      }
+    ]
+  },
+  "Three Thousand Years Awake": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 4.81,
+        "text": "While the other Chosen slept in dreamless dark I walked the centuries"
+      },
+      {
+        "time": 4.81,
+        "endTime": 8.21,
+        "text": "Three thousand years of watching empires rise and crumble into dust"
+      },
+      {
+        "time": 8.21,
+        "endTime": 11.82,
+        "text": "The Trolloc Wars were mine — I conducted every note of suffering"
+      },
+      {
+        "time": 11.82,
+        "endTime": 15.22,
+        "text": "Hawkwing's madness, my design — I poisoned every well of trust"
+      },
+      {
+        "time": 16.72,
+        "endTime": 20.53,
+        "text": "I wore a hundred faces, spoke in languages that died between my visits"
+      },
+      {
+        "time": 20.53,
+        "endTime": 24.53,
+        "text": "Every prophet that you followed I had whispered to the night before"
+      },
+      {
+        "time": 24.53,
+        "endTime": 28.34,
+        "text": "Your history is my handwriting scrawled across the bones of nations"
+      },
+      {
+        "time": 28.34,
+        "endTime": 31.74,
+        "text": "And every time you built a door I was already through the door"
+      },
+      {
+        "time": 33.24,
+        "endTime": 36.65,
+        "text": "I sat in courts of kings who never knew the hand that steered their ruin"
+      },
+      {
+        "time": 36.65,
+        "endTime": 40.05,
+        "text": "Poured wine for generals the night before I led their armies wrong"
+      },
+      {
+        "time": 40.05,
+        "endTime": 43.46,
+        "text": "I taught your scholars half the truth and let them build on broken logic"
+      },
+      {
+        "time": 43.46,
+        "endTime": 47.06,
+        "text": "And every anthem that you sang was just a variation of my song"
+      },
+      {
+        "time": 49.06,
+        "endTime": 51.73,
+        "text": "Three thousand years awake while the world slept around me"
+      },
+      {
+        "time": 51.73,
+        "endTime": 54.21,
+        "text": "Three thousand years of patience, three thousand years of proof"
+      },
+      {
+        "time": 54.21,
+        "endTime": 56.89,
+        "text": "That nothing you construct can outlast its own foundations"
+      },
+      {
+        "time": 56.89,
+        "endTime": 59.75,
+        "text": "And every golden age is just the setup for the truth"
+      },
+      {
+        "time": 61.25,
+        "endTime": 65.25,
+        "text": "I broke the Compact and I shattered every alliance that you treasured"
+      },
+      {
+        "time": 65.25,
+        "endTime": 68.06,
+        "text": "Not from cruelty but from the calm arithmetic of time"
+      },
+      {
+        "time": 68.06,
+        "endTime": 72.06,
+        "text": "When you have watched enough tomorrows bleed into the same repeating pattern"
+      },
+      {
+        "time": 72.06,
+        "endTime": 75.27,
+        "text": "Burning it all down becomes the only merciful design"
+      },
+      {
+        "time": 76.77,
+        "endTime": 80.57,
+        "text": "I walked among the Aiel before they crossed the Dragonwall in fury"
+      },
+      {
+        "time": 80.57,
+        "endTime": 84.38,
+        "text": "I blessed the blades of Artur Hawkwing's sons before they sailed away"
+      },
+      {
+        "time": 84.38,
+        "endTime": 87.58,
+        "text": "The White Tower thinks its secrets sleep in vaults beneath the marble"
+      },
+      {
+        "time": 87.58,
+        "endTime": 91.39,
+        "text": "But I was reading every page before the ink was dry upon the clay"
+      },
+      {
+        "time": 93.89,
+        "endTime": 95.89,
+        "text": "Partially sealed, partially free"
+      },
+      {
+        "time": 95.89,
+        "endTime": 98.12,
+        "text": "Not quite alive, not quite a memory"
+      },
+      {
+        "time": 98.12,
+        "endTime": 100.34,
+        "text": "Just enough existence to keep working"
+      },
+      {
+        "time": 100.34,
+        "endTime": 103.46,
+        "text": "Just enough shadow to keep the centuries company"
+      },
+      {
+        "time": 103.46,
+        "endTime": 107.46,
+        "text": "I learned to love the weight of years the way a river loves the stone"
+      },
+      {
+        "time": 107.46,
+        "endTime": 110.8,
+        "text": "Slowly wearing down the world until the shape is mine alone"
+      },
+      {
+        "time": 112.8,
+        "endTime": 115.47,
+        "text": "Three thousand years awake while the world slept around me"
+      },
+      {
+        "time": 115.47,
+        "endTime": 117.95,
+        "text": "Three thousand years of patience, three thousand years of proof"
+      },
+      {
+        "time": 117.95,
+        "endTime": 120.62,
+        "text": "That nothing you construct can outlast its own foundations"
+      },
+      {
+        "time": 120.62,
+        "endTime": 123.49,
+        "text": "And every golden age is just the setup for the truth"
+      },
+      {
+        "time": 124.99,
+        "endTime": 128.79,
+        "text": "The other Forsaken woke with rage and hunger, clumsy in their arrogance"
+      },
+      {
+        "time": 128.79,
+        "endTime": 131.6,
+        "text": "They grasped for power like children snatching at a flame"
+      },
+      {
+        "time": 131.6,
+        "endTime": 135.6,
+        "text": "But I had already set the board and moved the pieces into position"
+      },
+      {
+        "time": 135.6,
+        "endTime": 139.21,
+        "text": "Before they even learned the rules I had already won the game"
+      },
+      {
+        "time": 140.71,
+        "endTime": 144.31,
+        "text": "You think the Dragon Reborn will save you from the shadow that is coming"
+      },
+      {
+        "time": 144.31,
+        "endTime": 148.52,
+        "text": "You pin your desperate hopes upon a prophecy you barely understand"
+      },
+      {
+        "time": 148.52,
+        "endTime": 152.52,
+        "text": "But prophecy is just another language I have studied for three thousand years"
+      },
+      {
+        "time": 152.52,
+        "endTime": 156.13,
+        "text": "And every word of destiny has passed already through my hands"
+      },
+      {
+        "time": 158.63,
+        "endTime": 160.63,
+        "text": "Do you know what patience really means"
+      },
+      {
+        "time": 160.63,
+        "endTime": 165.31,
+        "text": "It means watching every harvest fail and planting something new between the ruins"
+      },
+      {
+        "time": 165.31,
+        "endTime": 168.42,
+        "text": "It means outliving every hero born to stop you"
+      },
+      {
+        "time": 168.42,
+        "endTime": 172.65,
+        "text": "It means becoming the foundation underneath the thing they think they're building"
+      },
+      {
+        "time": 174.65,
+        "endTime": 177.32,
+        "text": "Three thousand years awake while the world slept around me"
+      },
+      {
+        "time": 177.32,
+        "endTime": 179.8,
+        "text": "Three thousand years of patience, three thousand years of proof"
+      },
+      {
+        "time": 179.8,
+        "endTime": 182.47,
+        "text": "That nothing you construct can outlast its own foundations"
+      },
+      {
+        "time": 182.47,
+        "endTime": 185.33,
+        "text": "And every golden age is just the setup for the truth"
+      },
+      {
+        "time": 187.33,
+        "endTime": 188.83,
+        "text": "Three thousand years"
+      },
+      {
+        "time": 188.83,
+        "endTime": 191.19,
+        "text": "And every one of them confirmed"
+      },
+      {
+        "time": 191.19,
+        "endTime": 193.78,
+        "text": "What I already knew when I first stepped"
+      },
+      {
+        "time": 193.78,
+        "endTime": 196.37,
+        "text": "Into the dark and watched the Wheel still turn"
+      },
+      {
+        "time": 196.37,
+        "endTime": 198.97,
+        "text": "The Wheel still turns but I have learned its rhythm"
+      },
+      {
+        "time": 198.97,
+        "endTime": 201.56,
+        "text": "And rhythm is just another word for control"
+      }
+    ]
+  },
+  "Ba'alzamon Rising": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.75,
+        "text": "They needed something to be terrified of, something with a name"
+      },
+      {
+        "time": 6.75,
+        "endTime": 12.51,
+        "text": "So I gave them Ba'alzamon — Heart of the Dark — and watched their courage drain"
+      },
+      {
+        "time": 12.51,
+        "endTime": 16.66,
+        "text": "Horns of shadow, eyes of fire, the throne of molten stone"
+      },
+      {
+        "time": 16.66,
+        "endTime": 21.46,
+        "text": "A performance built for prophets and for children left alone"
+      },
+      {
+        "time": 22.96,
+        "endTime": 28.07,
+        "text": "I walked the World of Dreams wearing devastation like a coat"
+      },
+      {
+        "time": 28.07,
+        "endTime": 33.5,
+        "text": "Every Darkfriend knelt because the theater demanded they devote"
+      },
+      {
+        "time": 33.5,
+        "endTime": 39.9,
+        "text": "Their little lives to something grander than their petty hungers could conceive"
+      },
+      {
+        "time": 39.9,
+        "endTime": 44.69,
+        "text": "Ba'alzamon was the sermon — terror was what made them believe"
+      },
+      {
+        "time": 46.19,
+        "endTime": 50.67,
+        "text": "Three thousand years I wore the title like a second skin"
+      },
+      {
+        "time": 50.67,
+        "endTime": 55.14,
+        "text": "Each Age remembered fire and forgot the man within"
+      },
+      {
+        "time": 55.14,
+        "endTime": 59.3,
+        "text": "At Shayol Ghul the bore still wept its poison through the stone"
+      },
+      {
+        "time": 59.3,
+        "endTime": 64.09,
+        "text": "But Ba'alzamon was the story — and a story needs a throne"
+      },
+      {
+        "time": 66.09,
+        "endTime": 67.92,
+        "text": "Ba'alzamon, Ba'alzamon"
+      },
+      {
+        "time": 67.92,
+        "endTime": 71.57,
+        "text": "The mask of flame, the voice from underneath the world"
+      },
+      {
+        "time": 71.57,
+        "endTime": 74.31,
+        "text": "I gave you something pure to fear"
+      },
+      {
+        "time": 74.31,
+        "endTime": 79.18,
+        "text": "So you would never see the quiet horror of the Wheel unfurled"
+      },
+      {
+        "time": 79.18,
+        "endTime": 81.01,
+        "text": "Ba'alzamon, Ba'alzamon"
+      },
+      {
+        "time": 81.01,
+        "endTime": 85.88,
+        "text": "The name that mothers whispered when the candles guttered low"
+      },
+      {
+        "time": 85.88,
+        "endTime": 88.62,
+        "text": "I was the dark you chose to worship"
+      },
+      {
+        "time": 88.62,
+        "endTime": 92.57,
+        "text": "Because the real dark was too ordinary to know"
+      },
+      {
+        "time": 94.07,
+        "endTime": 97.91,
+        "text": "Ishamael was the scholar, Ishamael could weep"
+      },
+      {
+        "time": 97.91,
+        "endTime": 102.38,
+        "text": "But Ba'alzamon — Ba'alzamon was the thing that never sleeps"
+      },
+      {
+        "time": 102.38,
+        "endTime": 106.54,
+        "text": "I found the Dragon's cradle, I found his mother's grave"
+      },
+      {
+        "time": 106.54,
+        "endTime": 112.93,
+        "text": "I touched the world at every turning, every hero, every knave"
+      },
+      {
+        "time": 115.43,
+        "endTime": 121.47,
+        "text": "And when the Dragon stood before me with his fragile mortal blade"
+      },
+      {
+        "time": 121.47,
+        "endTime": 127.51,
+        "text": "I almost told him everything — how every war was staged"
+      },
+      {
+        "time": 127.51,
+        "endTime": 132.12,
+        "text": "How the Wheel just turns and turns and none of it will stay"
+      },
+      {
+        "time": 132.12,
+        "endTime": 137.45,
+        "text": "But Ba'alzamon does not confess — Ba'alzamon does not explain"
+      },
+      {
+        "time": 139.45,
+        "endTime": 141.28,
+        "text": "Ba'alzamon, Ba'alzamon"
+      },
+      {
+        "time": 141.28,
+        "endTime": 144.93,
+        "text": "The mask of flame, the voice from underneath the world"
+      },
+      {
+        "time": 144.93,
+        "endTime": 147.67,
+        "text": "I gave you something pure to fear"
+      },
+      {
+        "time": 147.67,
+        "endTime": 152.54,
+        "text": "So you would never see the quiet horror of the Wheel unfurled"
+      },
+      {
+        "time": 152.54,
+        "endTime": 154.37,
+        "text": "Ba'alzamon, Ba'alzamon"
+      },
+      {
+        "time": 154.37,
+        "endTime": 159.24,
+        "text": "The name that mothers whispered when the candles guttered low"
+      },
+      {
+        "time": 159.24,
+        "endTime": 161.98,
+        "text": "I was the dark you chose to worship"
+      },
+      {
+        "time": 161.98,
+        "endTime": 165.93,
+        "text": "Because the real dark was too ordinary to know"
+      },
+      {
+        "time": 167.93,
+        "endTime": 169.44,
+        "text": "Let the fire climb"
+      },
+      {
+        "time": 169.44,
+        "endTime": 172.82,
+        "text": "Let the horns cast shadows on the wall"
+      },
+      {
+        "time": 172.82,
+        "endTime": 176.21,
+        "text": "Ba'alzamon was never the monster"
+      },
+      {
+        "time": 176.21,
+        "endTime": 179.59,
+        "text": "Ba'alzamon was just the honest call"
+      },
+      {
+        "time": 179.59,
+        "endTime": 181.47,
+        "text": "Let the ages turn"
+      },
+      {
+        "time": 181.47,
+        "endTime": 184.86,
+        "text": "Let the Pattern weave its ancient thread"
+      },
+      {
+        "time": 184.86,
+        "endTime": 188.62,
+        "text": "Ba'alzamon was the truth you couldn't carry"
+      },
+      {
+        "time": 188.62,
+        "endTime": 192,
+        "text": "So you gave it horns and fire instead"
+      }
+    ]
+  },
+  "The Hunt Across Ages": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.54,
+        "text": "I have hunted the Dragon through every turning of the Wheel"
+      },
+      {
+        "time": 6.54,
+        "endTime": 12.42,
+        "text": "Different faces, different names, but the wound is always real"
+      },
+      {
+        "time": 12.42,
+        "endTime": 17.96,
+        "text": "He builds the world and I unmake it — breathing in and breathing out"
+      },
+      {
+        "time": 17.96,
+        "endTime": 23.5,
+        "text": "Two lungs inside a body that the Pattern cannot do without"
+      },
+      {
+        "time": 25,
+        "endTime": 30.54,
+        "text": "In Tel'aran'rhiod I found him sleeping, armor stripped away"
+      },
+      {
+        "time": 30.54,
+        "endTime": 36.08,
+        "text": "The boy from Emond's Field who did not know what he would have to pay"
+      },
+      {
+        "time": 36.08,
+        "endTime": 41.97,
+        "text": "I came not bearing weapons but the weight of every life before"
+      },
+      {
+        "time": 41.97,
+        "endTime": 47.16,
+        "text": "Whispering the mathematics of a war without a score"
+      },
+      {
+        "time": 49.16,
+        "endTime": 53.44,
+        "text": "Every age I find you, every age we dance"
+      },
+      {
+        "time": 53.44,
+        "endTime": 57.07,
+        "text": "You with your salvation, me with my advance"
+      },
+      {
+        "time": 57.07,
+        "endTime": 61.36,
+        "text": "The Dragon and his shadow stitched into the weave"
+      },
+      {
+        "time": 61.36,
+        "endTime": 65.64,
+        "text": "You will save the world again and I will make you grieve"
+      },
+      {
+        "time": 67.14,
+        "endTime": 72.34,
+        "text": "Rand al'Thor, Lews Therin, a thousand names I cannot count"
+      },
+      {
+        "time": 72.34,
+        "endTime": 78.22,
+        "text": "Each one convinced their suffering is special, that their pain will mount"
+      },
+      {
+        "time": 78.22,
+        "endTime": 84.11,
+        "text": "To something meaningful — redemption, glory, some eternal prize"
+      },
+      {
+        "time": 84.11,
+        "endTime": 89.3,
+        "text": "I come to show them what the silence looks like behind their eyes"
+      },
+      {
+        "time": 90.8,
+        "endTime": 95.3,
+        "text": "At Shayol Ghul I waited where the Bore was thin as breath"
+      },
+      {
+        "time": 95.3,
+        "endTime": 100.49,
+        "text": "Where time itself unraveled and the air tasted like death"
+      },
+      {
+        "time": 100.49,
+        "endTime": 105.34,
+        "text": "He came with his companions, with his women, with his sword"
+      },
+      {
+        "time": 105.34,
+        "endTime": 110.53,
+        "text": "But I had come with patience, and patience is the longer cord"
+      },
+      {
+        "time": 112.53,
+        "endTime": 116.82,
+        "text": "Every age I find you, every age we dance"
+      },
+      {
+        "time": 116.82,
+        "endTime": 120.44,
+        "text": "You with your salvation, me with my advance"
+      },
+      {
+        "time": 120.44,
+        "endTime": 124.73,
+        "text": "The Dragon and his shadow stitched into the weave"
+      },
+      {
+        "time": 124.73,
+        "endTime": 129.02,
+        "text": "You will save the world again and I will make you grieve"
+      },
+      {
+        "time": 131.52,
+        "endTime": 134.59,
+        "text": "The hunt is not for victory"
+      },
+      {
+        "time": 134.59,
+        "endTime": 138.44,
+        "text": "Victory resets with every age"
+      },
+      {
+        "time": 138.44,
+        "endTime": 141.13,
+        "text": "The hunt is for the moment"
+      },
+      {
+        "time": 141.13,
+        "endTime": 144.6,
+        "text": "When the Dragon reads the final page"
+      },
+      {
+        "time": 144.6,
+        "endTime": 147.29,
+        "text": "And understands the story"
+      },
+      {
+        "time": 147.29,
+        "endTime": 150.36,
+        "text": "Was written long before his birth"
+      },
+      {
+        "time": 151.86,
+        "endTime": 157.06,
+        "text": "The Forsaken were my fingers and I played them like a harp"
+      },
+      {
+        "time": 157.06,
+        "endTime": 161.9,
+        "text": "Ishamael, Ba'alzamon — every mask was razor-sharp"
+      },
+      {
+        "time": 161.9,
+        "endTime": 166.4,
+        "text": "But underneath the titles and the fire in my eyes"
+      },
+      {
+        "time": 166.4,
+        "endTime": 172.64,
+        "text": "There's just a man who saw the Pattern and refused to call it wise"
+      },
+      {
+        "time": 174.64,
+        "endTime": 177.89,
+        "text": "Across the ages, through the dreams"
+      },
+      {
+        "time": 177.89,
+        "endTime": 182.37,
+        "text": "I am the shadow that the light has earned"
+      },
+      {
+        "time": 182.37,
+        "endTime": 185.23,
+        "text": "The Wheel will keep on turning"
+      },
+      {
+        "time": 185.23,
+        "endTime": 188.89,
+        "text": "And the Dragon will be born once more"
+      },
+      {
+        "time": 188.89,
+        "endTime": 191.74,
+        "text": "And I will cross the threshold"
+      },
+      {
+        "time": 191.74,
+        "endTime": 195,
+        "text": "Like I have always done before"
+      }
+    ]
+  },
+  "Moridin": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.34,
+        "text": "The Dark One gave me back a body and I chose a simple name"
+      },
+      {
+        "time": 6.34,
+        "endTime": 11.68,
+        "text": "Moridin — Death — because the second time there is no need for shame"
+      },
+      {
+        "time": 11.68,
+        "endTime": 16.69,
+        "text": "No theater, no fire, no Ba'alzamon's elaborate disguise"
+      },
+      {
+        "time": 16.69,
+        "endTime": 22.7,
+        "text": "Just the clean geometry of someone who has finished being surprised"
+      },
+      {
+        "time": 24.2,
+        "endTime": 30.54,
+        "text": "Three thousand years I argued with the Dragon about the nature of the wheel"
+      },
+      {
+        "time": 30.54,
+        "endTime": 37.55,
+        "text": "He called it hope, I called it repetition — neither of us learned to feel"
+      },
+      {
+        "time": 37.55,
+        "endTime": 43.89,
+        "text": "We burned through Ages like two equations set to cancel every sum"
+      },
+      {
+        "time": 43.89,
+        "endTime": 50.23,
+        "text": "The Bore was just a window and I pressed my face against the dark to come"
+      },
+      {
+        "time": 52.23,
+        "endTime": 54.78,
+        "text": "Moridin walks where shadows fold"
+      },
+      {
+        "time": 54.78,
+        "endTime": 58.91,
+        "text": "A new mask for the same eternal calculation"
+      },
+      {
+        "time": 58.91,
+        "endTime": 61.45,
+        "text": "Death is just the clinical word"
+      },
+      {
+        "time": 61.45,
+        "endTime": 65.58,
+        "text": "For what compassion looks like without hesitation"
+      },
+      {
+        "time": 67.08,
+        "endTime": 73.43,
+        "text": "I play sha'rah against myself because there are no worthy opponents left"
+      },
+      {
+        "time": 73.43,
+        "endTime": 78.77,
+        "text": "Moving pieces on a board that maps the architecture of theft"
+      },
+      {
+        "time": 78.77,
+        "endTime": 85.11,
+        "text": "The Fisher King bleeds on the center square, balanced between the light and shade"
+      },
+      {
+        "time": 85.11,
+        "endTime": 91.78,
+        "text": "I move him gently toward the shadow — every gentleness a kind of blade"
+      },
+      {
+        "time": 93.28,
+        "endTime": 98.63,
+        "text": "The Nae'blis — highest of the Chosen — lowest rung of what remains"
+      },
+      {
+        "time": 98.63,
+        "endTime": 104.63,
+        "text": "When you have given up everything, a title is a set of chains"
+      },
+      {
+        "time": 104.63,
+        "endTime": 111.31,
+        "text": "I want the board cleared, every piece removed, every square wiped clean"
+      },
+      {
+        "time": 113.81,
+        "endTime": 116.78,
+        "text": "Stripped of flame, stripped of name"
+      },
+      {
+        "time": 116.78,
+        "endTime": 120.11,
+        "text": "What survives is just the theorem"
+      },
+      {
+        "time": 120.11,
+        "endTime": 122.71,
+        "text": "Elan Morin's final proof"
+      },
+      {
+        "time": 122.71,
+        "endTime": 126.05,
+        "text": "Wearing a body like a diagram"
+      },
+      {
+        "time": 128.05,
+        "endTime": 130.59,
+        "text": "Moridin walks where shadows fold"
+      },
+      {
+        "time": 130.59,
+        "endTime": 134.72,
+        "text": "A new mask for the same eternal calculation"
+      },
+      {
+        "time": 134.72,
+        "endTime": 137.27,
+        "text": "Death is just the clinical word"
+      },
+      {
+        "time": 137.27,
+        "endTime": 141.4,
+        "text": "For what compassion looks like without hesitation"
+      },
+      {
+        "time": 142.9,
+        "endTime": 148.91,
+        "text": "I found Rand al'Thor and felt the tether pull like sutures through my mind"
+      },
+      {
+        "time": 148.91,
+        "endTime": 154.58,
+        "text": "Two threads woven on one loom, impossible to cut or to unbind"
+      },
+      {
+        "time": 154.58,
+        "endTime": 160.59,
+        "text": "When he reached for saidin I could taste it — copper, lightning, distant rain"
+      },
+      {
+        "time": 160.59,
+        "endTime": 167.27,
+        "text": "And when I reached for the True Power he received a fraction of the pain"
+      },
+      {
+        "time": 169.77,
+        "endTime": 173.85,
+        "text": "The philosopher became the nihilist"
+      },
+      {
+        "time": 173.85,
+        "endTime": 176.81,
+        "text": "The nihilist became the blade"
+      },
+      {
+        "time": 176.81,
+        "endTime": 180.15,
+        "text": "The blade became the hand that held it"
+      },
+      {
+        "time": 180.15,
+        "endTime": 182.75,
+        "text": "And the hand began to fade"
+      },
+      {
+        "time": 184.25,
+        "endTime": 190.26,
+        "text": "At Shayol Ghul the air tastes thin, like breathing at the edge of what is real"
+      },
+      {
+        "time": 190.26,
+        "endTime": 196.6,
+        "text": "I do not kneel because devotion asks it, I kneel because the math is done"
+      },
+      {
+        "time": 196.6,
+        "endTime": 202.94,
+        "text": "When every proof converges on the void, you serve the void or you serve none"
+      },
+      {
+        "time": 204.94,
+        "endTime": 207.48,
+        "text": "Moridin walks where shadows fold"
+      },
+      {
+        "time": 207.48,
+        "endTime": 211.62,
+        "text": "A new mask for the same eternal calculation"
+      },
+      {
+        "time": 211.62,
+        "endTime": 214.16,
+        "text": "Death is just the clinical word"
+      },
+      {
+        "time": 214.16,
+        "endTime": 218.29,
+        "text": "For what compassion looks like without hesitation"
+      },
+      {
+        "time": 220.29,
+        "endTime": 224.61,
+        "text": "The wheel keeps turning but the spoke is cracked"
+      },
+      {
+        "time": 224.61,
+        "endTime": 228.54,
+        "text": "The pattern frays where Elan Morin bled"
+      },
+      {
+        "time": 228.54,
+        "endTime": 232.47,
+        "text": "And somewhere past the last equation"
+      },
+      {
+        "time": 232.47,
+        "endTime": 236,
+        "text": "Even nothing learns that it is dead"
+      }
+    ]
+  },
+  "The Fisher King": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.1,
+        "text": "Two men across a board that maps the architecture of creation"
+      },
+      {
+        "time": 6.1,
+        "endTime": 11.83,
+        "text": "One dressed in light, one dressed in absence — both exhausted by the game"
+      },
+      {
+        "time": 11.83,
+        "endTime": 16.61,
+        "text": "The Fisher King bleeds from one eye, sees glory with the other"
+      },
+      {
+        "time": 16.61,
+        "endTime": 21.39,
+        "text": "And neither player can determine who is which or what became"
+      },
+      {
+        "time": 22.89,
+        "endTime": 28.63,
+        "text": "Rand and I are tangled at the level where the Pattern writes its source"
+      },
+      {
+        "time": 28.63,
+        "endTime": 33.73,
+        "text": "His pain is mine, my darkness his — a symmetry without remorse"
+      },
+      {
+        "time": 33.73,
+        "endTime": 39.78,
+        "text": "When he channels I can feel it, when I reach for the True Power he can taste"
+      },
+      {
+        "time": 39.78,
+        "endTime": 44.88,
+        "text": "The ash and copper on his tongue — two minds in the same wounded space"
+      },
+      {
+        "time": 46.88,
+        "endTime": 49.61,
+        "text": "Black piece, white piece, the same hand trembling"
+      },
+      {
+        "time": 49.61,
+        "endTime": 52.95,
+        "text": "The Fisher King game was never meant to end"
+      },
+      {
+        "time": 52.95,
+        "endTime": 56.29,
+        "text": "He holds the world together out of duty"
+      },
+      {
+        "time": 56.29,
+        "endTime": 60.23,
+        "text": "I am trying to show him duty is a dead man's friend"
+      },
+      {
+        "time": 61.73,
+        "endTime": 66.51,
+        "text": "He thinks our war is light against the darkness in the mirror"
+      },
+      {
+        "time": 66.51,
+        "endTime": 71.61,
+        "text": "I know our war is just the engine that the Pattern needs to run"
+      },
+      {
+        "time": 71.61,
+        "endTime": 76.39,
+        "text": "Save the world, unmake the world, inhale and then exhale"
+      },
+      {
+        "time": 76.39,
+        "endTime": 82.12,
+        "text": "The Wheel requires both of us — the Dragon and the shadow of the sun"
+      },
+      {
+        "time": 83.62,
+        "endTime": 88.4,
+        "text": "The madness that I gave him was a gift he won't acknowledge"
+      },
+      {
+        "time": 88.4,
+        "endTime": 93.82,
+        "text": "Every voice he hears is mine, dressed up in someone else's face"
+      },
+      {
+        "time": 93.82,
+        "endTime": 99.56,
+        "text": "Lews Therin weeping in the corridors of a mind that I constructed"
+      },
+      {
+        "time": 99.56,
+        "endTime": 104.65,
+        "text": "Three souls fighting for the wheel inside a single fractured place"
+      },
+      {
+        "time": 107.15,
+        "endTime": 112.46,
+        "text": "Every Age he rises and every Age I meet him"
+      },
+      {
+        "time": 112.46,
+        "endTime": 118.13,
+        "text": "At the summit where the world decides to turn or turns to rust"
+      },
+      {
+        "time": 118.13,
+        "endTime": 122.02,
+        "text": "He calls it courage, I call it compulsion"
+      },
+      {
+        "time": 122.02,
+        "endTime": 127.33,
+        "text": "The Wheel does not distinguish between devotion and disgust"
+      },
+      {
+        "time": 129.33,
+        "endTime": 132.07,
+        "text": "Black piece, white piece, the same hand trembling"
+      },
+      {
+        "time": 132.07,
+        "endTime": 135.4,
+        "text": "The Fisher King game was never meant to end"
+      },
+      {
+        "time": 135.4,
+        "endTime": 138.74,
+        "text": "He holds the world together out of duty"
+      },
+      {
+        "time": 138.74,
+        "endTime": 142.69,
+        "text": "I am trying to show him duty is a dead man's friend"
+      },
+      {
+        "time": 142.69,
+        "endTime": 146.33,
+        "text": "And the board keeps spinning underneath our fingers"
+      },
+      {
+        "time": 146.33,
+        "endTime": 149.36,
+        "text": "And the pieces fall and rearrange like sand"
+      },
+      {
+        "time": 149.36,
+        "endTime": 153.61,
+        "text": "Every game we play is just the last game's echo"
+      },
+      {
+        "time": 153.61,
+        "endTime": 157.25,
+        "text": "Two gods pretending that the other has a plan"
+      },
+      {
+        "time": 158.75,
+        "endTime": 163.53,
+        "text": "At Shayol Ghul the air itself will forget how to carry sound"
+      },
+      {
+        "time": 163.53,
+        "endTime": 168.63,
+        "text": "The earth will open like a question neither one of us can close"
+      },
+      {
+        "time": 168.63,
+        "endTime": 173.73,
+        "text": "He will reach for Callandor and I will reach for everything"
+      },
+      {
+        "time": 173.73,
+        "endTime": 178.51,
+        "text": "And the world will hold its breath between the Dragon and the rose"
+      },
+      {
+        "time": 180.51,
+        "endTime": 183.51,
+        "text": "Checkmate was never possible"
+      },
+      {
+        "time": 183.51,
+        "endTime": 186.88,
+        "text": "The game resets when the last piece falls"
+      },
+      {
+        "time": 186.88,
+        "endTime": 191.38,
+        "text": "The Fisher King bleeds on through every turning"
+      },
+      {
+        "time": 191.38,
+        "endTime": 195.13,
+        "text": "The board is set, the pieces never free"
+      },
+      {
+        "time": 195.13,
+        "endTime": 199.25,
+        "text": "He will forget my name a thousand times"
+      },
+      {
+        "time": 199.25,
+        "endTime": 203,
+        "text": "And a thousand times remember me"
+      }
+    ]
+  },
+  "Let the Wheel Stop": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 8.38,
+        "text": "Every soul that ever breathed is breathing still inside the loom"
+      },
+      {
+        "time": 8.38,
+        "endTime": 14.9,
+        "text": "Spun and cut and spun again, recycled through an endless room"
+      },
+      {
+        "time": 14.9,
+        "endTime": 20.98,
+        "text": "The Pattern does not care about your grief or love or name"
+      },
+      {
+        "time": 20.98,
+        "endTime": 27.06,
+        "text": "It only needs the thread — and you are woven back the same"
+      },
+      {
+        "time": 28.56,
+        "endTime": 35.51,
+        "text": "I have stood at Shayol Ghul and felt the Dark One press against the seal"
+      },
+      {
+        "time": 35.51,
+        "endTime": 43.33,
+        "text": "Not with malice but with something closer to a plea, something real"
+      },
+      {
+        "time": 43.33,
+        "endTime": 50.28,
+        "text": "Even gods grow tired of watching the machinery repeat"
+      },
+      {
+        "time": 50.28,
+        "endTime": 58.53,
+        "text": "Even darkness wants to rest when every turning tastes like a defeat"
+      },
+      {
+        "time": 60.53,
+        "endTime": 63.02,
+        "text": "Let the Wheel stop turning"
+      },
+      {
+        "time": 63.02,
+        "endTime": 66.74,
+        "text": "Let the last thread snap and come undone"
+      },
+      {
+        "time": 66.74,
+        "endTime": 70.88,
+        "text": "Let the silence after everything"
+      },
+      {
+        "time": 70.88,
+        "endTime": 74.6,
+        "text": "Be the mercy that was never won"
+      },
+      {
+        "time": 76.1,
+        "endTime": 84.79,
+        "text": "They call this evil — wanting it to end, wanting rest for every living thing"
+      },
+      {
+        "time": 84.79,
+        "endTime": 91.74,
+        "text": "As if exhaustion were a crime and sleep a kind of treachery"
+      },
+      {
+        "time": 91.74,
+        "endTime": 100.42,
+        "text": "I have counted every joy and weighed it on the scale of what it cost"
+      },
+      {
+        "time": 100.42,
+        "endTime": 108.24,
+        "text": "And the cost is always paid by someone who did not agree to the exhaust"
+      },
+      {
+        "time": 110.74,
+        "endTime": 116.53,
+        "text": "I am not the villain in this architecture"
+      },
+      {
+        "time": 116.53,
+        "endTime": 122.32,
+        "text": "I am the only one who read the final draft"
+      },
+      {
+        "time": 122.32,
+        "endTime": 125.7,
+        "text": "And came back to inform you"
+      },
+      {
+        "time": 125.7,
+        "endTime": 132.46,
+        "text": "That the ending was the point of every paragraph"
+      },
+      {
+        "time": 134.46,
+        "endTime": 136.94,
+        "text": "Let the Wheel stop turning"
+      },
+      {
+        "time": 136.94,
+        "endTime": 141.49,
+        "text": "Let the Pattern fold and finally dissolve"
+      },
+      {
+        "time": 141.49,
+        "endTime": 145.22,
+        "text": "Let the nothing after something"
+      },
+      {
+        "time": 145.22,
+        "endTime": 148.94,
+        "text": "Be the only problem left to solve"
+      },
+      {
+        "time": 150.94,
+        "endTime": 152.98,
+        "text": "Let the Wheel stop"
+      },
+      {
+        "time": 152.98,
+        "endTime": 158.09,
+        "text": "Not in anger, not in conflagration"
+      },
+      {
+        "time": 158.09,
+        "endTime": 162.18,
+        "text": "Let it stop the way a heart stops"
+      },
+      {
+        "time": 162.18,
+        "endTime": 168.31,
+        "text": "When the body has made peace with its duration"
+      },
+      {
+        "time": 168.31,
+        "endTime": 169.85,
+        "text": "Let it stop"
+      },
+      {
+        "time": 169.85,
+        "endTime": 171.38,
+        "text": "Let it stop"
+      },
+      {
+        "time": 171.38,
+        "endTime": 177,
+        "text": "The way everything was always going to"
+      }
+    ]
+  }
+};
+
+window.lyricsTimings["kinslayer-sessions"] = {
+  "I Named Him After My Father": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 4.9,
+        "text": "I gave him the old man's name"
+      },
+      {
+        "time": 4.9,
+        "endTime": 10.47,
+        "text": "Pressed it into his skull like a crown"
+      },
+      {
+        "time": 10.47,
+        "endTime": 14.93,
+        "text": "My father's father bore it well"
+      },
+      {
+        "time": 14.93,
+        "endTime": 20.5,
+        "text": "They say it meant \"the one who holds the dawn\""
+      },
+      {
+        "time": 20.5,
+        "endTime": 24.96,
+        "text": "He had my mother's eyes, that boy"
+      },
+      {
+        "time": 24.96,
+        "endTime": 31.65,
+        "text": "And fingers small enough to wrap around my thumb"
+      },
+      {
+        "time": 31.65,
+        "endTime": 37.22,
+        "text": "I held him up against the morning light"
+      },
+      {
+        "time": 37.22,
+        "endTime": 42.79,
+        "text": "And told him he would never need to run"
+      },
+      {
+        "time": 44.79,
+        "endTime": 49.57,
+        "text": "I named him after my father"
+      },
+      {
+        "time": 49.57,
+        "endTime": 54.34,
+        "text": "Then I burned them both to the ground"
+      },
+      {
+        "time": 54.34,
+        "endTime": 59.12,
+        "text": "The name lives on in no one now"
+      },
+      {
+        "time": 59.12,
+        "endTime": 64.42,
+        "text": "There is nobody left to make a sound"
+      },
+      {
+        "time": 65.92,
+        "endTime": 70.94,
+        "text": "My father told me once, be gentle"
+      },
+      {
+        "time": 70.94,
+        "endTime": 76.51,
+        "text": "The world will teach them cruelty soon enough"
+      },
+      {
+        "time": 76.51,
+        "endTime": 82.08,
+        "text": "I kissed my son and called his name"
+      },
+      {
+        "time": 82.08,
+        "endTime": 87.65,
+        "text": "And the Power answered in my blood"
+      },
+      {
+        "time": 87.65,
+        "endTime": 92.11,
+        "text": "The room went white, the walls went soft"
+      },
+      {
+        "time": 92.11,
+        "endTime": 97.68,
+        "text": "His cradle folded like a paper thing"
+      },
+      {
+        "time": 97.68,
+        "endTime": 103.26,
+        "text": "I do not remember what I did next"
+      },
+      {
+        "time": 103.26,
+        "endTime": 109.39,
+        "text": "Only the silence where he used to sing"
+      },
+      {
+        "time": 111.39,
+        "endTime": 116.16,
+        "text": "I named him after my father"
+      },
+      {
+        "time": 116.16,
+        "endTime": 120.94,
+        "text": "Then I burned them both to the ground"
+      },
+      {
+        "time": 120.94,
+        "endTime": 125.71,
+        "text": "The name lives on in no one now"
+      },
+      {
+        "time": 125.71,
+        "endTime": 131.02,
+        "text": "There is nobody left to make a sound"
+      },
+      {
+        "time": 133.52,
+        "endTime": 138.47,
+        "text": "Three thousand years the wind has blown"
+      },
+      {
+        "time": 138.47,
+        "endTime": 144.04,
+        "text": "Across the place where his cradle stood"
+      },
+      {
+        "time": 144.04,
+        "endTime": 150.24,
+        "text": "I cannot die enough to pay the debt"
+      },
+      {
+        "time": 150.24,
+        "endTime": 156.43,
+        "text": "I cannot bleed enough to make it good"
+      },
+      {
+        "time": 158.43,
+        "endTime": 163.2,
+        "text": "I named him after my father"
+      },
+      {
+        "time": 163.2,
+        "endTime": 167.98,
+        "text": "Then I burned them both to the ground"
+      },
+      {
+        "time": 167.98,
+        "endTime": 172.75,
+        "text": "The name carries nothing anymore"
+      },
+      {
+        "time": 172.75,
+        "endTime": 177,
+        "text": "Just ashes drifting without sound"
+      }
+    ]
+  },
+  "The Taint Whispers": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 5.85,
+        "text": "It starts like water dripping in a cave"
+      },
+      {
+        "time": 5.85,
+        "endTime": 10.71,
+        "text": "A voice that is not yours but knows your thoughts"
+      },
+      {
+        "time": 10.71,
+        "endTime": 16.05,
+        "text": "It tells you things you always feared were true"
+      },
+      {
+        "time": 16.05,
+        "endTime": 21.39,
+        "text": "That every kindness you have shown was bought"
+      },
+      {
+        "time": 21.39,
+        "endTime": 25.76,
+        "text": "It speaks in your dead brother's cadence"
+      },
+      {
+        "time": 25.76,
+        "endTime": 31.1,
+        "text": "Wearing the skin of everyone you've loved"
+      },
+      {
+        "time": 31.1,
+        "endTime": 34.98,
+        "text": "And when you answer back, it laughs"
+      },
+      {
+        "time": 34.98,
+        "endTime": 40.32,
+        "text": "Because the conversation proves you're done"
+      },
+      {
+        "time": 42.32,
+        "endTime": 46.02,
+        "text": "The taint whispers and I listen"
+      },
+      {
+        "time": 46.02,
+        "endTime": 49.72,
+        "text": "Because the silence is far worse"
+      },
+      {
+        "time": 49.72,
+        "endTime": 54.34,
+        "text": "At least the madness keeps me company"
+      },
+      {
+        "time": 54.34,
+        "endTime": 58.04,
+        "text": "At least this poison feels like verse"
+      },
+      {
+        "time": 59.54,
+        "endTime": 64.88,
+        "text": "It told me I was chosen, I was blessed"
+      },
+      {
+        "time": 64.88,
+        "endTime": 69.73,
+        "text": "That saidin was a river just for me"
+      },
+      {
+        "time": 69.73,
+        "endTime": 74.59,
+        "text": "It told me that my hands were instruments"
+      },
+      {
+        "time": 74.59,
+        "endTime": 78.96,
+        "text": "Of something beautiful and free"
+      },
+      {
+        "time": 78.96,
+        "endTime": 83.81,
+        "text": "And when I wove destruction through the halls"
+      },
+      {
+        "time": 83.81,
+        "endTime": 88.18,
+        "text": "It hummed along in perfect key"
+      },
+      {
+        "time": 88.18,
+        "endTime": 92.55,
+        "text": "The taint does not make you a monster"
+      },
+      {
+        "time": 92.55,
+        "endTime": 96.43,
+        "text": "It simply lets the monster breathe"
+      },
+      {
+        "time": 98.43,
+        "endTime": 102.13,
+        "text": "The taint whispers and I listen"
+      },
+      {
+        "time": 102.13,
+        "endTime": 105.83,
+        "text": "Because the silence is far worse"
+      },
+      {
+        "time": 105.83,
+        "endTime": 110.45,
+        "text": "At least the madness keeps me company"
+      },
+      {
+        "time": 110.45,
+        "endTime": 114.15,
+        "text": "At least this poison feels like verse"
+      },
+      {
+        "time": 116.65,
+        "endTime": 122.05,
+        "text": "Sometimes I think the voice is mine"
+      },
+      {
+        "time": 122.05,
+        "endTime": 126.9,
+        "text": "The part of me I locked away"
+      },
+      {
+        "time": 126.9,
+        "endTime": 132.3,
+        "text": "The part that always knew what I would do"
+      },
+      {
+        "time": 132.3,
+        "endTime": 137.15,
+        "text": "And waited patiently for the day"
+      },
+      {
+        "time": 138.65,
+        "endTime": 143.99,
+        "text": "Now every man who channels hears the hum"
+      },
+      {
+        "time": 143.99,
+        "endTime": 148.84,
+        "text": "A thousand years of rot upon the Source"
+      },
+      {
+        "time": 148.84,
+        "endTime": 153.7,
+        "text": "They think they are the first to hear the voice"
+      },
+      {
+        "time": 153.7,
+        "endTime": 157.58,
+        "text": "They think they can control its course"
+      },
+      {
+        "time": 157.58,
+        "endTime": 163.41,
+        "text": "I was the Dragon, I was the Lord of Morning"
+      },
+      {
+        "time": 163.41,
+        "endTime": 167.29,
+        "text": "And the taint took me just the same"
+      },
+      {
+        "time": 167.29,
+        "endTime": 172.15,
+        "text": "So tell me, boy, you think you're different"
+      },
+      {
+        "time": 172.15,
+        "endTime": 177,
+        "text": "You'll learn to love the sound of your own shame"
+      }
+    ]
+  },
+  "Blood on the Dragon": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.31,
+        "text": "The silence came first, then the color"
+      },
+      {
+        "time": 6.31,
+        "endTime": 11.63,
+        "text": "Red against white marble, spreading slow"
+      },
+      {
+        "time": 11.63,
+        "endTime": 17.53,
+        "text": "I stood in the hall of my own making"
+      },
+      {
+        "time": 17.53,
+        "endTime": 23.43,
+        "text": "And did not recognize the world below"
+      },
+      {
+        "time": 23.43,
+        "endTime": 28.74,
+        "text": "My hands were still warm from the weaving"
+      },
+      {
+        "time": 28.74,
+        "endTime": 33.47,
+        "text": "Saidin still singing in my veins"
+      },
+      {
+        "time": 33.47,
+        "endTime": 39.37,
+        "text": "But something was wrong with the morning"
+      },
+      {
+        "time": 39.37,
+        "endTime": 45.27,
+        "text": "Something had severed from the chain"
+      },
+      {
+        "time": 47.27,
+        "endTime": 52.33,
+        "text": "Blood on the Dragon, blood on the throne"
+      },
+      {
+        "time": 52.33,
+        "endTime": 57.39,
+        "text": "Blood on the hands that once held her own"
+      },
+      {
+        "time": 57.39,
+        "endTime": 63.58,
+        "text": "The moment I saw what the Power had done"
+      },
+      {
+        "time": 63.58,
+        "endTime": 68.64,
+        "text": "I understood what I had become"
+      },
+      {
+        "time": 70.14,
+        "endTime": 75.45,
+        "text": "She lay where the garden met the stone"
+      },
+      {
+        "time": 75.45,
+        "endTime": 80.17,
+        "text": "Her dress the color of the spring"
+      },
+      {
+        "time": 80.17,
+        "endTime": 86.07,
+        "text": "I called her name three times, then four"
+      },
+      {
+        "time": 86.07,
+        "endTime": 92.57,
+        "text": "As though repetition changes anything"
+      },
+      {
+        "time": 92.57,
+        "endTime": 97.88,
+        "text": "The children were scattered like dolls"
+      },
+      {
+        "time": 97.88,
+        "endTime": 103.19,
+        "text": "In rooms I had built for their laughter"
+      },
+      {
+        "time": 103.19,
+        "endTime": 109.09,
+        "text": "I walked through every one of them"
+      },
+      {
+        "time": 109.09,
+        "endTime": 114.41,
+        "text": "And the silence grew louder after"
+      },
+      {
+        "time": 116.41,
+        "endTime": 121.47,
+        "text": "Blood on the Dragon, blood on the throne"
+      },
+      {
+        "time": 121.47,
+        "endTime": 126.53,
+        "text": "Blood on the hands that once held her own"
+      },
+      {
+        "time": 126.53,
+        "endTime": 132.71,
+        "text": "The moment I saw what the Power had done"
+      },
+      {
+        "time": 132.71,
+        "endTime": 137.77,
+        "text": "I understood what I had become"
+      },
+      {
+        "time": 140.27,
+        "endTime": 148.8,
+        "text": "They say I screamed so loud the earth cracked open"
+      },
+      {
+        "time": 148.8,
+        "endTime": 155.36,
+        "text": "That Dragonmount was born from my despair"
+      },
+      {
+        "time": 155.36,
+        "endTime": 160.6,
+        "text": "I do not remember screaming"
+      },
+      {
+        "time": 160.6,
+        "endTime": 166.51,
+        "text": "I only remember standing there"
+      },
+      {
+        "time": 166.51,
+        "endTime": 171.75,
+        "text": "Looking at my hands and knowing"
+      },
+      {
+        "time": 171.75,
+        "endTime": 177,
+        "text": "These same hands had brushed her hair"
+      }
+    ]
+  },
+  "She Never Screamed": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.54,
+        "text": "Ilyena, light of my collapsing world"
+      },
+      {
+        "time": 6.54,
+        "endTime": 13.19,
+        "text": "Stood in the doorway with her hands at her sides"
+      },
+      {
+        "time": 13.19,
+        "endTime": 18.17,
+        "text": "She saw me coming wreathed in fire"
+      },
+      {
+        "time": 18.17,
+        "endTime": 23.16,
+        "text": "And she did not run, she did not hide"
+      },
+      {
+        "time": 23.16,
+        "endTime": 29.25,
+        "text": "Her mouth moved once, I think she said my name"
+      },
+      {
+        "time": 29.25,
+        "endTime": 34.79,
+        "text": "The way she always did when I came home"
+      },
+      {
+        "time": 34.79,
+        "endTime": 40.33,
+        "text": "As though nothing had changed between us"
+      },
+      {
+        "time": 40.33,
+        "endTime": 45.87,
+        "text": "As though I was not made of bone and foam"
+      },
+      {
+        "time": 47.87,
+        "endTime": 52.62,
+        "text": "She never screamed, she never fought"
+      },
+      {
+        "time": 52.62,
+        "endTime": 57.37,
+        "text": "She looked at me and understood"
+      },
+      {
+        "time": 57.37,
+        "endTime": 62.65,
+        "text": "That the man she married died before her"
+      },
+      {
+        "time": 62.65,
+        "endTime": 67.39,
+        "text": "And what remained was nothing good"
+      },
+      {
+        "time": 68.89,
+        "endTime": 74.43,
+        "text": "I have killed generals on the field"
+      },
+      {
+        "time": 74.43,
+        "endTime": 79.42,
+        "text": "I have broken armies with a thought"
+      },
+      {
+        "time": 79.42,
+        "endTime": 84.41,
+        "text": "But nothing cuts like quiet acceptance"
+      },
+      {
+        "time": 84.41,
+        "endTime": 89.95,
+        "text": "From the woman whose love you always sought"
+      },
+      {
+        "time": 89.95,
+        "endTime": 94.93,
+        "text": "She could have woven Air against me"
+      },
+      {
+        "time": 94.93,
+        "endTime": 100.47,
+        "text": "She could have raised the stones and fled"
+      },
+      {
+        "time": 100.47,
+        "endTime": 105.46,
+        "text": "Instead she stood like mercy waiting"
+      },
+      {
+        "time": 105.46,
+        "endTime": 109.89,
+        "text": "And let the monster take her thread"
+      },
+      {
+        "time": 111.89,
+        "endTime": 116.64,
+        "text": "She never screamed, she never fought"
+      },
+      {
+        "time": 116.64,
+        "endTime": 121.39,
+        "text": "She looked at me and understood"
+      },
+      {
+        "time": 121.39,
+        "endTime": 126.66,
+        "text": "That the man she married died before her"
+      },
+      {
+        "time": 126.66,
+        "endTime": 131.41,
+        "text": "And what remained was nothing good"
+      },
+      {
+        "time": 133.91,
+        "endTime": 139.45,
+        "text": "Ilyena, I have called your name"
+      },
+      {
+        "time": 139.45,
+        "endTime": 144.38,
+        "text": "Across three thousand years of death"
+      },
+      {
+        "time": 144.38,
+        "endTime": 151.15,
+        "text": "And every time the word leaves my lips"
+      },
+      {
+        "time": 151.15,
+        "endTime": 156.07,
+        "text": "It costs me what is left of breath"
+      },
+      {
+        "time": 156.07,
+        "endTime": 161,
+        "text": "You gave me grace I did not earn"
+      },
+      {
+        "time": 161,
+        "endTime": 165.92,
+        "text": "You gave me peace I could not keep"
+      },
+      {
+        "time": 165.92,
+        "endTime": 171.46,
+        "text": "The last thing that you ever gave me"
+      },
+      {
+        "time": 171.46,
+        "endTime": 177,
+        "text": "Was a silence I will never sleep"
+      }
+    ]
+  },
+  "The Dragon's Last Laugh": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.95,
+        "text": "You know what is funny about genocide"
+      },
+      {
+        "time": 6.95,
+        "endTime": 12.37,
+        "text": "The paperwork survives the people"
+      },
+      {
+        "time": 12.37,
+        "endTime": 17.78,
+        "text": "Somewhere in the ruins of my palace"
+      },
+      {
+        "time": 17.78,
+        "endTime": 22.11,
+        "text": "There is a list of feast-day meals"
+      },
+      {
+        "time": 22.11,
+        "endTime": 26.44,
+        "text": "Dated the morning of the end"
+      },
+      {
+        "time": 26.44,
+        "endTime": 31.31,
+        "text": "Roast lamb, sweet wine, bread for the children"
+      },
+      {
+        "time": 31.31,
+        "endTime": 37.26,
+        "text": "I had ordered flowers for the table"
+      },
+      {
+        "time": 37.26,
+        "endTime": 42.13,
+        "text": "White roses, because she loved them"
+      },
+      {
+        "time": 44.13,
+        "endTime": 48.77,
+        "text": "Laugh with me now, laugh with the Dragon"
+      },
+      {
+        "time": 48.77,
+        "endTime": 53.93,
+        "text": "Because the alternative is the floor"
+      },
+      {
+        "time": 53.93,
+        "endTime": 59.08,
+        "text": "If I stop laughing for a single breath"
+      },
+      {
+        "time": 59.08,
+        "endTime": 64.75,
+        "text": "I will start screaming and never stop once more"
+      },
+      {
+        "time": 66.25,
+        "endTime": 71.12,
+        "text": "They call me Kinslayer like a title"
+      },
+      {
+        "time": 71.12,
+        "endTime": 75.99,
+        "text": "As though it was a rank I earned"
+      },
+      {
+        "time": 75.99,
+        "endTime": 80.86,
+        "text": "Lord of the Morning, Prince of the Dawn"
+      },
+      {
+        "time": 80.86,
+        "endTime": 85.19,
+        "text": "Kinslayer, who lovingly burned"
+      },
+      {
+        "time": 85.19,
+        "endTime": 90.06,
+        "text": "I would correct them but honestly"
+      },
+      {
+        "time": 90.06,
+        "endTime": 94.93,
+        "text": "The accuracy is hard to fight"
+      },
+      {
+        "time": 94.93,
+        "endTime": 102.51,
+        "text": "I killed everyone who ever called me father"
+      },
+      {
+        "time": 102.51,
+        "endTime": 107.38,
+        "text": "And most of those who called me light"
+      },
+      {
+        "time": 109.38,
+        "endTime": 114.02,
+        "text": "Laugh with me now, laugh with the Dragon"
+      },
+      {
+        "time": 114.02,
+        "endTime": 119.18,
+        "text": "Because the alternative is the floor"
+      },
+      {
+        "time": 119.18,
+        "endTime": 124.33,
+        "text": "If I stop laughing for a single breath"
+      },
+      {
+        "time": 124.33,
+        "endTime": 130,
+        "text": "I will start screaming and never stop once more"
+      },
+      {
+        "time": 132.5,
+        "endTime": 137.31,
+        "text": "Humor is the last wall standing"
+      },
+      {
+        "time": 137.31,
+        "endTime": 143.93,
+        "text": "When everything else has burned away"
+      },
+      {
+        "time": 143.93,
+        "endTime": 149.34,
+        "text": "If I can make the darkness funny"
+      },
+      {
+        "time": 149.34,
+        "endTime": 154.75,
+        "text": "Maybe I can survive another day"
+      },
+      {
+        "time": 154.75,
+        "endTime": 160.16,
+        "text": "But the joke is always the same one"
+      },
+      {
+        "time": 160.16,
+        "endTime": 165.57,
+        "text": "And the punchline is always the dead"
+      },
+      {
+        "time": 165.57,
+        "endTime": 171.59,
+        "text": "So I laugh because I am the Dragon"
+      },
+      {
+        "time": 171.59,
+        "endTime": 177,
+        "text": "And the Dragon laughs because he bled"
+      }
+    ]
+  },
+  "Saidin Burns": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 5.57,
+        "text": "The first time I touched the Source"
+      },
+      {
+        "time": 5.57,
+        "endTime": 10.15,
+        "text": "It was like swallowing the sun"
+      },
+      {
+        "time": 10.15,
+        "endTime": 14.72,
+        "text": "Every nerve became a wire"
+      },
+      {
+        "time": 14.72,
+        "endTime": 19.29,
+        "text": "Every thought became a drum"
+      },
+      {
+        "time": 19.29,
+        "endTime": 23.29,
+        "text": "They told me I was gifted"
+      },
+      {
+        "time": 23.29,
+        "endTime": 28.44,
+        "text": "The strongest channeler in an Age"
+      },
+      {
+        "time": 28.44,
+        "endTime": 33.01,
+        "text": "They did not mention that the gift"
+      },
+      {
+        "time": 33.01,
+        "endTime": 37.58,
+        "text": "Comes locked inside a cage"
+      },
+      {
+        "time": 39.58,
+        "endTime": 43.4,
+        "text": "Saidin burns, it always burns"
+      },
+      {
+        "time": 43.4,
+        "endTime": 47.75,
+        "text": "The Power and the rot are one"
+      },
+      {
+        "time": 47.75,
+        "endTime": 52.11,
+        "text": "You reach for light and pull back filth"
+      },
+      {
+        "time": 52.11,
+        "endTime": 56.46,
+        "text": "You reach for God and find the gun"
+      },
+      {
+        "time": 57.96,
+        "endTime": 61.96,
+        "text": "I built cities with a thought"
+      },
+      {
+        "time": 61.96,
+        "endTime": 67.11,
+        "text": "I healed wounds that should have killed"
+      },
+      {
+        "time": 67.11,
+        "endTime": 71.68,
+        "text": "I held the Pattern in my hands"
+      },
+      {
+        "time": 71.68,
+        "endTime": 75.11,
+        "text": "And bent it to my will"
+      },
+      {
+        "time": 75.11,
+        "endTime": 80.83,
+        "text": "But every time I seized the Source"
+      },
+      {
+        "time": 80.83,
+        "endTime": 84.26,
+        "text": "The darkness came along"
+      },
+      {
+        "time": 84.26,
+        "endTime": 89.4,
+        "text": "A film of oil on living water"
+      },
+      {
+        "time": 89.4,
+        "endTime": 93.97,
+        "text": "Turning every right to wrong"
+      },
+      {
+        "time": 95.97,
+        "endTime": 99.79,
+        "text": "Saidin burns, it always burns"
+      },
+      {
+        "time": 99.79,
+        "endTime": 104.14,
+        "text": "The Power and the rot are one"
+      },
+      {
+        "time": 104.14,
+        "endTime": 108.5,
+        "text": "You reach for light and pull back filth"
+      },
+      {
+        "time": 108.5,
+        "endTime": 112.85,
+        "text": "You reach for God and find the gun"
+      },
+      {
+        "time": 115.35,
+        "endTime": 121.07,
+        "text": "They sealed the Dark One and they won"
+      },
+      {
+        "time": 121.07,
+        "endTime": 124.88,
+        "text": "But saidin paid the price"
+      },
+      {
+        "time": 124.88,
+        "endTime": 130.59,
+        "text": "A hundred years of creeping madness"
+      },
+      {
+        "time": 130.59,
+        "endTime": 135.68,
+        "text": "Turning every paradise"
+      },
+      {
+        "time": 135.68,
+        "endTime": 141.39,
+        "text": "Into an abattoir of angels"
+      },
+      {
+        "time": 141.39,
+        "endTime": 145.84,
+        "text": "And I was patient zero"
+      },
+      {
+        "time": 145.84,
+        "endTime": 151.55,
+        "text": "The first to fall, the strongest fallen"
+      },
+      {
+        "time": 151.55,
+        "endTime": 156.64,
+        "text": "The world's most dangerous hero"
+      },
+      {
+        "time": 158.14,
+        "endTime": 163.85,
+        "text": "So when they tell you about the Dragon"
+      },
+      {
+        "time": 163.85,
+        "endTime": 168.43,
+        "text": "About his glory and his might"
+      },
+      {
+        "time": 168.43,
+        "endTime": 173.57,
+        "text": "Remember that the fire consumes"
+      },
+      {
+        "time": 173.57,
+        "endTime": 177,
+        "text": "The hand that holds the light"
+      }
+    ]
+  },
+  "What Was Promised": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 6.04,
+        "text": "They promised me a golden age"
+      },
+      {
+        "time": 6.04,
+        "endTime": 10.52,
+        "text": "A world remade by righteous hands"
+      },
+      {
+        "time": 10.52,
+        "endTime": 15.56,
+        "text": "The Prophecies were clear as water"
+      },
+      {
+        "time": 15.56,
+        "endTime": 20.6,
+        "text": "The Dragon Reborn would save all lands"
+      },
+      {
+        "time": 20.6,
+        "endTime": 26.2,
+        "text": "But prophecy is a crooked mirror"
+      },
+      {
+        "time": 26.2,
+        "endTime": 30.68,
+        "text": "Showing you the shape, not the cost"
+      },
+      {
+        "time": 30.68,
+        "endTime": 35.71,
+        "text": "Nobody mentioned the blood price"
+      },
+      {
+        "time": 35.71,
+        "endTime": 40.19,
+        "text": "Nobody tallied what I lost"
+      },
+      {
+        "time": 42.19,
+        "endTime": 46.99,
+        "text": "What was promised was salvation"
+      },
+      {
+        "time": 46.99,
+        "endTime": 51.79,
+        "text": "What was delivered was the blade"
+      },
+      {
+        "time": 51.79,
+        "endTime": 57.12,
+        "text": "The prophecy said I would save the world"
+      },
+      {
+        "time": 57.12,
+        "endTime": 62.46,
+        "text": "It never said I would not be afraid"
+      },
+      {
+        "time": 63.96,
+        "endTime": 71.8,
+        "text": "I sealed the Dark One at the cost of everything"
+      },
+      {
+        "time": 71.8,
+        "endTime": 77.96,
+        "text": "Strikes and counter-strikes across the sky"
+      },
+      {
+        "time": 77.96,
+        "endTime": 83.55,
+        "text": "They wrote it in the Karaethon Cycle"
+      },
+      {
+        "time": 83.55,
+        "endTime": 88.59,
+        "text": "But left out the part where good men die"
+      },
+      {
+        "time": 88.59,
+        "endTime": 94.19,
+        "text": "The prophecy said \"born again to save\""
+      },
+      {
+        "time": 94.19,
+        "endTime": 99.23,
+        "text": "It did not say \"born again to grieve\""
+      },
+      {
+        "time": 99.23,
+        "endTime": 104.83,
+        "text": "The prophecy said the Dragon would triumph"
+      },
+      {
+        "time": 104.83,
+        "endTime": 109.31,
+        "text": "It did not say the man would leave"
+      },
+      {
+        "time": 111.31,
+        "endTime": 116.11,
+        "text": "What was promised was salvation"
+      },
+      {
+        "time": 116.11,
+        "endTime": 120.91,
+        "text": "What was delivered was the blade"
+      },
+      {
+        "time": 120.91,
+        "endTime": 126.24,
+        "text": "The prophecy said I would save the world"
+      },
+      {
+        "time": 126.24,
+        "endTime": 131.57,
+        "text": "It never said I would not be afraid"
+      },
+      {
+        "time": 134.07,
+        "endTime": 139.67,
+        "text": "I did what the Pattern demanded"
+      },
+      {
+        "time": 139.67,
+        "endTime": 144.65,
+        "text": "I broke myself against the Wheel"
+      },
+      {
+        "time": 144.65,
+        "endTime": 149.63,
+        "text": "And when the last thread was woven"
+      },
+      {
+        "time": 149.63,
+        "endTime": 155.23,
+        "text": "Nobody asked me how I feel"
+      },
+      {
+        "time": 155.23,
+        "endTime": 160.2,
+        "text": "The Dragon served his purpose"
+      },
+      {
+        "time": 160.2,
+        "endTime": 165.8,
+        "text": "The world was saved, the Dark One bound"
+      },
+      {
+        "time": 165.8,
+        "endTime": 171.4,
+        "text": "And Lews Therin stood in the ashes"
+      },
+      {
+        "time": 171.4,
+        "endTime": 177,
+        "text": "Listening for a familiar sound"
+      }
+    ]
+  },
+  "Let the Lord of Chaos Rule": {
+    "lines": [
+      {
+        "time": 1,
+        "endTime": 5.84,
+        "text": "I am tired of being the weapon"
+      },
+      {
+        "time": 5.84,
+        "endTime": 10.15,
+        "text": "Tired of being the righteous flame"
+      },
+      {
+        "time": 10.15,
+        "endTime": 15.53,
+        "text": "Tired of every broken morning"
+      },
+      {
+        "time": 15.53,
+        "endTime": 20.91,
+        "text": "Where I wake up and remember my name"
+      },
+      {
+        "time": 20.91,
+        "endTime": 25.22,
+        "text": "The Pattern can have its Dragon"
+      },
+      {
+        "time": 25.22,
+        "endTime": 29.52,
+        "text": "The Wheel can turn without my hands"
+      },
+      {
+        "time": 29.52,
+        "endTime": 34.37,
+        "text": "I am surrendering the morning"
+      },
+      {
+        "time": 34.37,
+        "endTime": 38.13,
+        "text": "I am giving back the lands"
+      },
+      {
+        "time": 40.13,
+        "endTime": 43.72,
+        "text": "Let the Lord of Chaos rule"
+      },
+      {
+        "time": 43.72,
+        "endTime": 47.31,
+        "text": "Let the darkness have its throne"
+      },
+      {
+        "time": 47.31,
+        "endTime": 51.92,
+        "text": "I have bled enough for prophecy"
+      },
+      {
+        "time": 51.92,
+        "endTime": 56.02,
+        "text": "Let me lay down. Let me go home."
+      },
+      {
+        "time": 57.52,
+        "endTime": 62.37,
+        "text": "Madness is not a cliff you fall from"
+      },
+      {
+        "time": 62.37,
+        "endTime": 66.67,
+        "text": "It is a tide that rises slow"
+      },
+      {
+        "time": 66.67,
+        "endTime": 72.59,
+        "text": "First it takes the edges of your thinking"
+      },
+      {
+        "time": 72.59,
+        "endTime": 76.36,
+        "text": "Then the center starts to go"
+      },
+      {
+        "time": 76.36,
+        "endTime": 81.74,
+        "text": "I felt it coming for a hundred years"
+      },
+      {
+        "time": 81.74,
+        "endTime": 86.58,
+        "text": "A gentle loosening of the seams"
+      },
+      {
+        "time": 86.58,
+        "endTime": 92.5,
+        "text": "Until the man I was became a stranger"
+      },
+      {
+        "time": 92.5,
+        "endTime": 96.27,
+        "text": "Wandering through my own dreams"
+      },
+      {
+        "time": 98.27,
+        "endTime": 101.86,
+        "text": "Let the Lord of Chaos rule"
+      },
+      {
+        "time": 101.86,
+        "endTime": 105.45,
+        "text": "Let the darkness have its throne"
+      },
+      {
+        "time": 105.45,
+        "endTime": 110.06,
+        "text": "I have bled enough for prophecy"
+      },
+      {
+        "time": 110.06,
+        "endTime": 114.16,
+        "text": "Let me lay down. Let me go home."
+      },
+      {
+        "time": 116.66,
+        "endTime": 120.85,
+        "text": "Dragonmount is calling me"
+      },
+      {
+        "time": 120.85,
+        "endTime": 126.23,
+        "text": "The place where I will finally rest"
+      },
+      {
+        "time": 126.23,
+        "endTime": 130.41,
+        "text": "One last weaving, one last fire"
+      },
+      {
+        "time": 130.41,
+        "endTime": 134.6,
+        "text": "One last scream inside my chest"
+      },
+      {
+        "time": 134.6,
+        "endTime": 139.98,
+        "text": "The earth will open and receive me"
+      },
+      {
+        "time": 139.98,
+        "endTime": 144.76,
+        "text": "The mountain born from my despair"
+      },
+      {
+        "time": 144.76,
+        "endTime": 150.74,
+        "text": "And when the smoke has finished rising"
+      },
+      {
+        "time": 150.74,
+        "endTime": 156.13,
+        "text": "There will be nothing. And that is fair."
+      },
+      {
+        "time": 157.63,
+        "endTime": 161.93,
+        "text": "So let the lord of chaos rule"
+      },
+      {
+        "time": 161.93,
+        "endTime": 166.77,
+        "text": "Let every dark thing have its day"
+      },
+      {
+        "time": 166.77,
+        "endTime": 172.16,
+        "text": "I was the Dragon, I was the morning"
+      },
+      {
+        "time": 172.16,
+        "endTime": 177,
+        "text": "And the morning has burned away"
       }
     ]
   }

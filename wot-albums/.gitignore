@@ -1,1 +1,4 @@
 .audio-cache/
+*/audio/
+__pycache__/
+*.pyc
